@@ -1,0 +1,69 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "chingling-1",
+            "pokemon": "chingling",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 1.8,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_spooky",
+                    "#cobblemon:is_taiga"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "chingling-2",
+            "pokemon": "chingling",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 5.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_magical"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "chingling-3",
+            "pokemon": "chingling",
+            "presets": [],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "4-29",
+            "weight": 90,
+            "condition": {
+                "timeRange": "night",
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:bell"
+                ]
+            }
+        }
+    ]
+}

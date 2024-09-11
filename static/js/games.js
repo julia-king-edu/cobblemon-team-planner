@@ -210,5 +210,14 @@ export default {
         "mega": true,
         "gmax": true,
         "tera": true,
+    }, 
+    "cobblemon": {
+        "name": "Cobblemon",
+        "gen": 9,
+        "dex_slugs": [
+            "cobblemon", 
+            "hiddenmons"
+        ], 
+        "mega": true
     }
 };

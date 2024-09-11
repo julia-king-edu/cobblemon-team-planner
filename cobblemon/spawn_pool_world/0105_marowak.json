@@ -1,0 +1,66 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "marowak-1",
+            "pokemon": "marowak",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "28-43",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_sandy"
+                ]
+            }
+        },
+        {
+            "id": "marowak-2",
+            "pokemon": "marowak",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "28-43",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
+            }
+        },
+        {
+            "id": "marowak-3",
+            "pokemon": "marowak",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "28-43",
+            "weight": 0.6,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_desert",
+                    "#cobblemon:nether/is_soul_fire"
+                ]
+            }
+        }
+    ]
+}

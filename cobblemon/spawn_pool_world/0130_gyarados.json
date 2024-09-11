@@ -1,0 +1,92 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "gyarados-1",
+            "pokemon": "gyarados",
+            "presets": [
+                "freshwater",
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "20-54",
+            "weight": 0.1,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_freshwater"
+                ]
+            }
+        },
+        {
+            "id": "gyarados-2",
+            "pokemon": "gyarados",
+            "presets": [
+                "freshwater",
+                "water_surface"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "uncommon",
+            "level": "20-54",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_freshwater"
+                ]
+            }
+        },
+        {
+            "id": "gyarados-3",
+            "pokemon": "gyarados",
+            "presets": [
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "20-54",
+            "weight": 0.1,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_ocean"
+                ]
+            }
+        },
+        {
+            "id": "gyarados-4",
+            "pokemon": "gyarados",
+            "presets": [
+                "water_surface"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "uncommon",
+            "level": "20-54",
+            "weight": 0.2,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_ocean"
+                ]
+            }
+        },
+        {
+            "id": "gyarados-fishing-4",
+            "pokemon": "gyarados",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "20-54",
+            "weight": 9.00
+        }
+    ]
+}

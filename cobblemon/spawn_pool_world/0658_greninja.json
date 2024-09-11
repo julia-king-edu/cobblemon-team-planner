@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "greninja-1",
+            "pokemon": "greninja",
+            "presets": [
+                "natural",
+                "freshwater"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "36-53",
+            "weight": 0.1,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15
+            }
+        },
+        {
+            "id": "greninja-2",
+            "pokemon": "greninja",
+            "presets": [
+                "freshwater",
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "ultra-rare",
+            "level": "36-53",
+            "weight": 0.1,
+            "condition": {
+                "canSeeSky": true
+            }
+        }
+    ]
+}
