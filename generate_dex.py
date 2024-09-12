@@ -4,7 +4,7 @@ import json
 
 def get_occuring_pokemon(spawn_pool_world_location) -> list:
     # get the names of all pokemon that spawn in the wild
-    spawn_filenames = os.listdir(spawn_pool_world_location)
+    spawn_filenames = sorted(os.listdir(spawn_pool_world_location))
     poke_filenames = [spawn_file.split("_")[1].replace(".json", "") for spawn_file in spawn_filenames]
     return poke_filenames
 
@@ -22,11 +22,66 @@ def fix_names(poke_names) -> list:
     }
     return [rename_dict.get(poke_name, poke_name) for poke_name in poke_names]
 
-def get_evolution_ids(poke_name, species_json) -> list:
+def insert_missing(forms_keys) -> list:
+    # generate docstring by typing """
+    return forms_keys
+
+def is_exception(poke_name) -> bool:
+    # generate docstring by typing """
+    if "-gmax" in poke_name:
+        return True
+    
+    exceptions = [
+        "sandshrew-alola", 
+        "sandslash-alola", 
+        "growlithe-hisui",
+        "arcanine-hisui", 
+        "geodude-alola", 
+        "graveler-alola", 
+        "golem-alola", 
+        "slowpoke-galar", 
+        "slowbro-galar", 
+        "slowking-galar", 
+        "grimer-alola", 
+        "muk-alola", 
+        "weezing-galar", 
+        "mr-mime-galar",
+        "mr-rime", 
+        "tauros-paldea-combat",
+        "tauros-paldea-blaze",
+        "tauros-paldea-aqua",
+        "darumaka-galar", 
+        "darmanitan-galar", 
+        "yamask-galar", 
+        "runerigus", 
+        "avalugg-hisui", 
+        "heracross-mega", 
+        "sceptile-mega", 
+        "blaziken-mega", 
+        "swampert-mega", 
+        "aggron-mega", 
+        "camerupt-mega", 
+        "metagross-mega", 
+        "lopunny-mega", 
+        "lucario-mega"
+    ]
+    
+    if poke_name in exceptions:
+        return True
+    return False
+
+def poke_name_by_id(base_id, form_id, species_json) -> str:
+    # generate docstring by typing """
+    for name, ids in species_json.items():
+        if ids["base_id"] == base_id and ids["form_id"] == form_id:
+            return name
+    return None  # if no match is found
+
+def get_evolution_names(poke_name, species_json) -> list:
     # generate docstring by typing """
     if not("evolution_ids" in species_json[poke_name]):
         return []
-    return species_json[poke_name]["evolution_ids"]
+    return [poke_name_by_id(evo_id, evo_form_id, species_json) for evo_id, evo_form_id in species_json[poke_name]["evolution_ids"]]
     
 def generate_dex(poke_names, poke_filepath) -> dict:
     # generate docstring by typing """
@@ -51,18 +106,21 @@ def generate_dex(poke_names, poke_filepath) -> dict:
         if not(poke_name in species_keys):
             raise ValueError(poke_name + " needs to be edited")
         forms_keys = list(reversed([poke_name] + [form for form in species_keys if poke_name + "-" in form]))
-        print(forms_keys)
+        forms_keys = insert_missing(forms_keys)
+        
+        #print(forms_keys)
         
         # per form, add the form and its evolutions to the dex. exception for gmax forms.
         while len(forms_keys) > 0:
             key = forms_keys.pop()
-            if "-gmax" in key: 
-                continue
             # check if form is already in it. if not, add to dex
-            if not([[species_json[key]["base_id"],species_json[key]["form_id"] ]] in dex_order.values()):
-                dex_order[str(len(dex_order) + 1)] = [[species_json[key]["base_id"],species_json[key]["form_id"] ]]
-            for evo_id in get_evolution_ids(key, species_json):
-                dex_order[str(len(dex_order) + 1)] = [evo_id]
+            if not([[species_json[key]["base_id"],species_json[key]["form_id"] ]] in dex_order.values()): # do not include if pokemon is already in dex
+                if not(is_exception(key)):
+                    dex_order[str(len(dex_order) + 1)] = [[species_json[key]["base_id"],species_json[key]["form_id"] ]]
+            # add evolutions to front of dex so they are done immediately
+            evo_names = list(reversed(get_evolution_names(key, species_json)))
+            for evo_name in evo_names:
+                forms_keys.append(evo_name)
             
     dex = {
         "cobblemon" : 
@@ -85,7 +143,7 @@ def main():
 
     # Save the result to a file
     with open('cobblemon_dict.json', 'w', encoding='utf-8') as f:
-        json.dump(dex, f, ensure_ascii=False, indent=4)
+        json.dump(dex, f)
     
     
 if __name__ == "__main__":
