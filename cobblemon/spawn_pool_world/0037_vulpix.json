@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
-            "weight": 5.4,
+            "weight": 5.52,
             "weightMultiplier": {
                 "multiplier": 2.5,
                 "condition": {
@@ -44,7 +44,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "5-30",
-            "weight": 1.8,
+            "weight": 1.9,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_forest"
@@ -66,7 +66,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
-            "weight": 5.4,
+            "weight": 5.52,
             "weightMultiplier": {
                 "multiplier": 2.5,
                 "condition": {
@@ -92,7 +92,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "5-30",
-            "weight": 1.8,
+            "weight": 1.9,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_frozen"

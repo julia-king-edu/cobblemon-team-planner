@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "34-51",
-            "weight": 0.6,
+            "weight": 0.48,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -37,7 +37,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "34-51",
-            "weight": 0.2,
+            "weight": 0.16,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_basalt"

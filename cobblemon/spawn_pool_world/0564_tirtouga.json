@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "15-40",
-            "weight": 9.0,
+            "weight": 6.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -26,13 +26,13 @@
             "id": "tirtouga-2",
             "pokemon": "tirtouga",
             "presets": [
-                "underwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "submerged",
             "bucket": "ultra-rare",
             "level": "15-40",
-            "weight": 9.0,
+            "weight": 6.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,

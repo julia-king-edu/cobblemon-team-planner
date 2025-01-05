@@ -14,15 +14,40 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "48-60",
-            "weight": 0.06,
+            "weight": 0.25,
             "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
                 "biomes": [
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_mountain"
+                ],
+                "minY": 0
+            }
+        },
+        {
+            "id": "garchomp-2",
+            "pokemon": "garchomp",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "48-60",
+            "weight": 0.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_badlands",
                     "#cobblemon:is_mountain"
                 ]
             }
         },
         {
-            "id": "garchomp-2",
+            "id": "garchomp-3",
             "pokemon": "garchomp",
             "presets": [
                 "natural"
@@ -31,7 +56,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "48-60",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -42,6 +67,7 @@
             },
             "anticondition": {
                 "biomes": [
+                    "#cobblemon:is_badlands",
                     "#cobblemon:is_deep_dark",
                     "#cobblemon:is_mountain"
                 ]

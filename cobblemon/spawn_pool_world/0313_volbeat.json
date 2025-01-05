@@ -7,7 +7,6 @@
             "id": "volbeat-1",
             "pokemon": "volbeat",
             "presets": [
-                "freshwater",
                 "natural",
                 "treetop"
             ],
@@ -24,14 +23,18 @@
                 ],
                 "timeRange": "night",
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
             "id": "volbeat-2",
             "pokemon": "volbeat",
             "presets": [
-                "freshwater",
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -46,6 +49,11 @@
                 ],
                 "timeRange": "night",
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
@@ -71,7 +79,7 @@
             "id": "volbeat-4",
             "pokemon": "volbeat",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

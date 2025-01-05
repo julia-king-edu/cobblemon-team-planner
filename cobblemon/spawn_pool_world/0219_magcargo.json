@@ -24,7 +24,7 @@
             "id": "magcargo-2",
             "pokemon": "magcargo",
             "presets": [
-                "lava_surface"
+                "lava"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -41,7 +41,7 @@
             "id": "magcargo-3",
             "pokemon": "magcargo",
             "presets": [
-                "lava_surface"
+                "lava"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -83,7 +83,7 @@
             "id": "magcargo-5",
             "pokemon": "magcargo",
             "presets": [
-                "lava_surface"
+                "lava"
             ],
             "type": "pokemon",
             "context": "surface",

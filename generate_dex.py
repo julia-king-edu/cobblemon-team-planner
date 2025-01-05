@@ -30,6 +30,8 @@ def is_exception(poke_name) -> bool:
     # generate docstring by typing """
     if "-gmax" in poke_name:
         return True
+    if "-mega" in poke_name:
+        return True
     
     exceptions = [
         "sandshrew-alola", 
@@ -110,7 +112,7 @@ def generate_dex(poke_names, poke_filepath) -> dict:
         
         #print(forms_keys)
         
-        # per form, add the form and its evolutions to the dex. exception for gmax forms.
+        # per form, add the form and its evolutions to the dex. exception for gmax forms and megas.
         while len(forms_keys) > 0:
             key = forms_keys.pop()
             # check if form is already in it. if not, add to dex
@@ -137,6 +139,7 @@ def generate_dex(poke_names, poke_filepath) -> dict:
 ## executing code
 
 def main():
+    print("start")
     poke_names = get_occuring_pokemon(os.path.join("cobblemon", "spawn_pool_world"))
     poke_names = fix_names(poke_names)
     dex = generate_dex(poke_names, os.path.join("static", "js"))
@@ -144,7 +147,7 @@ def main():
     # Save the result to a file
     with open('cobblemon_dict.json', 'w', encoding='utf-8') as f:
         json.dump(dex, f)
-    
+    print("done")
     
 if __name__ == "__main__":
     main()

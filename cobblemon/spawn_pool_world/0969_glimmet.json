@@ -7,8 +7,7 @@
             "id": "glimmet-1",
             "pokemon": "glimmet",
             "presets": [
-                "natural",
-                "gemstones"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -20,6 +19,9 @@
                 "maxSkyLight": 7,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:gemstones"
                 ]
             }
         },

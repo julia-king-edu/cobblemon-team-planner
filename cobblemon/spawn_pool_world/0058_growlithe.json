@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "10-35",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -32,19 +32,21 @@
             "id": "growlithe-2",
             "pokemon": "growlithe",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "10-35",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             },
             "anticondition": {

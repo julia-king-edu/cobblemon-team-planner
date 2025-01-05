@@ -63,7 +63,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "1-25",
-            "weight": 9.0,
+            "weight": 8.4,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -112,7 +112,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "1-25",
-            "weight": 9.0,
+            "weight": 8.4,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -156,7 +156,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "1-25",
-            "weight": 9.0,
+            "weight": 8.4,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [

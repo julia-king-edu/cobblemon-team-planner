@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "17-45",
-            "weight": 0.9,
+            "weight": 1.125,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -33,14 +33,13 @@
             "id": "chansey-2",
             "pokemon": "chansey",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "17-45",
-            "weight": 0.9,
+            "weight": 1.125,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -52,6 +51,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

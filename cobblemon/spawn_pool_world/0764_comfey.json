@@ -20,15 +20,15 @@
                 "biomes": [
                     "#cobblemon:is_floral",
                     "#cobblemon:is_tropical_island"
-                ]
+                ],
+                "isRaining": false
             }
         },
         {
             "id": "comfey-2",
             "pokemon": "comfey",
             "presets": [
-                "natural",
-                "flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -40,6 +40,10 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "isRaining": false,
+                "neededNearbyBlocks": [
+                    "#cobblemon:flowers"
                 ]
             }
         },
@@ -54,7 +58,8 @@
             "condition": {
                 "biomes": [
                     "the_bumblezone:floral_meadow"
-                ]
+                ],
+                "isRaining": false
             },
             "anticondition": {
                 "structures": [

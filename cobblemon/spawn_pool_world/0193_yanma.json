@@ -7,14 +7,13 @@
             "id": "yanma-1",
             "pokemon": "yanma",
             "presets": [
-                "freshwater",
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "14-39",
-            "weight": 5.4,
+            "weight": 5.04,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -23,38 +22,50 @@
                 ],
                 "timeRange": "day",
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
             "id": "yanma-2",
             "pokemon": "yanma",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "14-39",
-            "weight": 1.8,
+            "weight": 1.68,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
                     "#cobblemon:is_lush"
                 ]
+            },
+            "anticondition": {
+                "structures": [
+                    "cobblemon:shipwreck_coves/lush_shipwreck_cove"
+                ],
+                "minY": -41,
+                "maxY": 9
             }
         },
         {
             "id": "yanma-3",
             "pokemon": "yanma",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "14-39",
-            "weight": 1.8,
+            "weight": 1.68,
             "condition": {
                 "biomes": [
                     "#the_bumblezone:the_bumblezone"
@@ -63,6 +74,35 @@
             "anticondition": {
                 "structures": [
                     "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "yanma-4",
+            "pokemon": "yanma",
+            "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "uncommon",
+            "level": "14-39",
+            "weight": 1.68,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "cobblemon:shipwreck_coves/lush_shipwreck_cove"
+                ],
+                "minY": -41,
+                "maxY": 9
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_lush"
                 ]
             }
         }

@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
-            "weight": 5.4,
+            "weight": 5.04,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -29,7 +29,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
-            "weight": 5.4,
+            "weight": 5.04,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,

@@ -32,8 +32,7 @@
             "id": "herdier-2",
             "pokemon": "herdier",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -45,6 +44,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             },
             "anticondition": {

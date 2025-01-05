@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "40-54",
-            "weight": 0.1,
+            "weight": 0.125,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -33,14 +33,13 @@
             "id": "blissey-2",
             "pokemon": "blissey",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "40-54",
-            "weight": 0.1,
+            "weight": 0.125,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -52,6 +51,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

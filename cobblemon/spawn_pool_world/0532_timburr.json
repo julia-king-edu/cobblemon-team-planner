@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "6-31",
-            "weight": 1.8,
+            "weight": 5.4,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -39,14 +39,13 @@
             "id": "timburr-2",
             "pokemon": "timburr",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "6-31",
-            "weight": 1.8,
+            "weight": 5.4,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -58,6 +57,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             },
             "anticondition": {

@@ -30,9 +30,6 @@
                 "isRaining": false
             },
             "anticondition": {
-                "structures": [
-                    "#minecraft:village"
-                ],
                 "biomes": [
                     "#cobblemon:is_arid",
                     "#cobblemon:is_freezing",
@@ -44,8 +41,7 @@
             "id": "meowth-2",
             "pokemon": "meowth",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -64,7 +60,10 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
-                "isRaining": false
+                "isRaining": false,
+                "structures": [
+                    "#minecraft:village"
+                ]
             },
             "anticondition": {
                 "biomes": [
@@ -98,19 +97,13 @@
                 "biomes": [
                     "#cobblemon:is_arid"
                 ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#minecraft:village"
-                ]
             }
         },
         {
             "id": "meowth-4",
             "pokemon": "meowth",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -128,6 +121,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_arid"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },
@@ -201,7 +197,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "4-29",
-            "weight": 54.0,
+            "weight": 50.4,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -235,19 +231,13 @@
                     "#cobblemon:is_freezing",
                     "#cobblemon:is_taiga"
                 ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#minecraft:village"
-                ]
             }
         },
         {
             "id": "meowth-galarian-9",
             "pokemon": "meowth galarian",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -266,6 +256,9 @@
                 "biomes": [
                     "#cobblemon:is_freezing",
                     "#cobblemon:is_taiga"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

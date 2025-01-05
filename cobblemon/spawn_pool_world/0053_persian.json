@@ -30,9 +30,6 @@
                 "isRaining": false
             },
             "anticondition": {
-                "structures": [
-                    "#minecraft:village"
-                ],
                 "biomes": [
                     "#cobblemon:is_arid",
                     "#cobblemon:is_freezing",
@@ -44,8 +41,7 @@
             "id": "persian-2",
             "pokemon": "persian",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -64,7 +60,10 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
-                "isRaining": false
+                "isRaining": false,
+                "structures": [
+                    "#minecraft:village"
+                ]
             },
             "anticondition": {
                 "biomes": [
@@ -98,19 +97,13 @@
                 "biomes": [
                     "#cobblemon:is_arid"
                 ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#minecraft:village"
-                ]
             }
         },
         {
             "id": "persian-4",
             "pokemon": "persian",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -128,6 +121,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_arid"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },
@@ -201,7 +197,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "28-44",
-            "weight": 6.0,
+            "weight": 9.6,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [

@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
-            "weight": 0.2,
+            "weight": 0.32,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -36,7 +36,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
-            "weight": 0.6,
+            "weight": 0.96,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -49,17 +49,16 @@
         {
             "id": "chimecho-3",
             "pokemon": "chimecho",
-            "presets": [],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
-            "weight": 10,
+            "weight": 16.0,
             "condition": {
-                "timeRange": "night",
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
+                "timeRange": "night",
                 "neededNearbyBlocks": [
                     "minecraft:bell"
                 ]

@@ -27,11 +27,11 @@
             "id": "lotad-2",
             "pokemon": "lotad",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
-            "bucket": "uncommon",
+            "bucket": "common",
             "level": "1-22",
             "weight": 5.4,
             "condition": {
@@ -40,6 +40,58 @@
                 "biomes": [
                     "#cobblemon:is_swamp"
                 ]
+            }
+        },
+        {
+            "id": "lotad-3",
+            "pokemon": "lotad",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "1-22",
+            "weight": 9.0,
+            "weightMultiplier": {
+                "multiplier": 0.6,
+                "condition": {
+                    "minLureLevel": "0",
+                    "maxLureLevel": "1"
+                }
+            },
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_swamp"
+                ],
+                "isRaining": true
+            }
+        },
+        {
+            "id": "lotad-4",
+            "pokemon": "lotad",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "1-22",
+            "weight": 9.0,
+            "weightMultiplier": {
+                "multiplier": 0.6,
+                "condition": {
+                    "minLureLevel": "0",
+                    "maxLureLevel": "1"
+                }
+            },
+            "condition": {
+                "canSeeSky": false,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_swamp"
+                ],
+                "isRaining": true
             }
         }
     ]

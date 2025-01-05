@@ -20,7 +20,7 @@
                     "#cobblemon:is_mountain"
                 ],
                 "neededNearbyBlocks": [
-                    "minecraft:iron_ore"
+                    "#minecraft:iron_ores"
                 ]
             },
             "anticondition": {
@@ -39,7 +39,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "8-33",
-            "weight": 9.0,
+            "weight": 8.4,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -47,7 +47,7 @@
                     "#cobblemon:is_overworld"
                 ],
                 "neededNearbyBlocks": [
-                    "minecraft:iron_ore"
+                    "#minecraft:iron_ores"
                 ]
             },
             "anticondition": {

@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "6-31",
-            "weight": 9.0,
+            "weight": 1.68,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -33,14 +33,13 @@
             "id": "smoochum-2",
             "pokemon": "smoochum",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
             "level": "6-31",
-            "weight": 9.0,
+            "weight": 1.68,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -52,6 +51,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_freezing"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

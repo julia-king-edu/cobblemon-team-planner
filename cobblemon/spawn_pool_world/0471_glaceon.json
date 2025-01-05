@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "28-53",
-            "weight": 1.0,
+            "weight": 1.2,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -46,8 +46,7 @@
             "id": "glaceon-3",
             "pokemon": "glaceon",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -59,6 +58,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },

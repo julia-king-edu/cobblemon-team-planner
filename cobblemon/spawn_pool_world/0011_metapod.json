@@ -78,7 +78,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "7-21",
-            "weight": 2.0,
+            "weight": 1.0,
             "condition": {
                 "biomes": [
                     "the_bumblezone:floral_meadow"

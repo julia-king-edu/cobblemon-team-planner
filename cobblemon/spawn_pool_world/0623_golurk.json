@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "43-48",
-            "weight": 10.0,
+            "weight": 16.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -26,19 +26,21 @@
             "id": "golurk-2",
             "pokemon": "golurk",
             "presets": [
-                "natural",
-                "ruins"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "43-48",
-            "weight": 2.0,
+            "weight": 5.0,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#cobblemon:ruin"
                 ]
             }
         },

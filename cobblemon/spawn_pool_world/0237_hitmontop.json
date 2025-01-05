@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "20-46",
-            "weight": 0.2,
+            "weight": 0.32,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {

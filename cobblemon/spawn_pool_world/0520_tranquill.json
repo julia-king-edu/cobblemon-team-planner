@@ -56,8 +56,7 @@
             "id": "tranquill-4",
             "pokemon": "tranquill",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -70,7 +69,10 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
-                "timeRange": "day"
+                "timeRange": "day",
+                "structures": [
+                    "#minecraft:village"
+                ]
             },
             "anticondition": {
                 "biomes": [

@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "59-64",
-            "weight": 10.0,
+            "weight": 16.0,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -34,7 +34,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "59-64",
-            "weight": 10.0,
+            "weight": 16.0,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -54,7 +54,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "59-64",
-            "weight": 1.0,
+            "weight": 1.6,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_crimson",

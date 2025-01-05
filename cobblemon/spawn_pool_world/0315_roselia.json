@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-40",
-            "weight": 0.9,
+            "weight": 0.95,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -29,7 +29,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-40",
-            "weight": 0.9,
+            "weight": 0.95,
             "condition": {
                 "biomes": [
                     "the_bumblezone:floral_meadow"

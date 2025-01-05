@@ -8,19 +8,21 @@
             "pokemon": "tinkaton",
             "presets": [
                 "natural",
-                "ruins",
                 "wild"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "38-51",
-            "weight": 0.6,
+            "weight": 0.2,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#cobblemon:ruin"
                 ]
             }
         }

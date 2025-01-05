@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "30-52",
-            "weight": 0.05,
+            "weight": 0.1875,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -35,7 +35,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "30-52",
-            "weight": 0.01,
+            "weight": 0.0375,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -48,19 +48,21 @@
             "id": "gardevoir-3",
             "pokemon": "gardevoir",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "30-52",
-            "weight": 0.01,
+            "weight": 0.0375,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },
@@ -74,7 +76,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "30-52",
-            "weight": 0.01,
+            "weight": 0.0075,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [

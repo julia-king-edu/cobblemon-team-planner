@@ -25,8 +25,7 @@
             "id": "klefki-2",
             "pokemon": "klefki",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -36,6 +35,9 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },

@@ -4,6 +4,28 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
+            "id": "sigilyph-1",
+            "pokemon": "sigilyph",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "24-49",
+            "weight": 60.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_sandy"
+                ],
+                "structures": [
+                    "#cobblemon:ruin"
+                ]
+            }
+        },
+        {
             "id": "sigilyph-2",
             "pokemon": "sigilyph",
             "presets": [
@@ -47,26 +69,6 @@
             }
         },
         {
-            "id": "sigilyph-1",
-            "pokemon": "sigilyph",
-            "presets": [
-                "natural",
-                "ruins"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "rare",
-            "level": "24-49",
-            "weight": 100.0,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_sandy"
-                ]
-            }
-        },
-        {
             "id": "sigilyph-4",
             "pokemon": "sigilyph",
             "presets": [
@@ -99,7 +101,7 @@
             "weight": 6.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:is_end"
+                    "#cobblemon:is_end"
                 ]
             }
         },

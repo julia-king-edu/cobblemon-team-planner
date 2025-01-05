@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "30-50",
-            "weight": 0.18,
+            "weight": 0.19,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_forest",
@@ -31,7 +31,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "30-50",
-            "weight": 0.18,
+            "weight": 0.19,
             "condition": {
                 "biomes": [
                     "the_bumblezone:crystal_canyon",

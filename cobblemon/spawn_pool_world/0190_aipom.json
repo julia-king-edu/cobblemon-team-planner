@@ -23,6 +23,27 @@
                     "#cobblemon:is_tropical_island"
                 ]
             }
+        },
+        {
+            "id": "aipom-2",
+            "pokemon": "aipom",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "11-36",
+            "weight": 5.4,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "cobblemon:shipwreck_coves/lush_shipwreck_cove"
+                ],
+                "minY": -41,
+                "maxY": 9
+            }
         }
     ]
 }

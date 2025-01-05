@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "19-44",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "minSkyLight": 1,
                 "maxSkyLight": 7,
@@ -33,7 +33,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "19-44",
-            "weight": 1.8,
+            "weight": 1.9,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -53,7 +53,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "19-44",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
@@ -72,7 +72,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "19-44",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -92,11 +92,31 @@
             "context": "grounded",
             "bucket": "common",
             "level": "19-44",
-            "weight": 5.4,
+            "weight": 5.7,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_warped"
                 ]
+            }
+        },
+        {
+            "id": "misdreavus-6",
+            "pokemon": "misdreavus",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "19-44",
+            "weight": 5.7,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#cobblemon:shipwreck_cove"
+                ],
+                "minY": -41,
+                "maxY": 9
             }
         }
     ]

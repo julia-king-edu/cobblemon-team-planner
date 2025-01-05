@@ -33,8 +33,7 @@
             "id": "drowzee-2",
             "pokemon": "drowzee",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -47,7 +46,10 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
-                "timeRange": "night"
+                "timeRange": "night",
+                "structures": [
+                    "#minecraft:village"
+                ]
             },
             "anticondition": {
                 "biomes": [

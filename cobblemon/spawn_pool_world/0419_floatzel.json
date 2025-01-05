@@ -7,8 +7,7 @@
             "id": "floatzel-1",
             "pokemon": "floatzel",
             "presets": [
-                "natural",
-                "freshwater"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -21,14 +20,18 @@
                 "biomes": [
                     "#cobblemon:is_freshwater"
                 ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
             "id": "floatzel-2",
             "pokemon": "floatzel",
             "presets": [
-                "underwater",
-                "freshwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "submerged",
@@ -36,9 +39,15 @@
             "level": "26-50",
             "weight": 0.2,
             "condition": {
-                "canSeeSky": true,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_freshwater"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
                 ]
             }
         },
@@ -46,19 +55,64 @@
             "id": "floatzel-3",
             "pokemon": "floatzel",
             "presets": [
-                "water_surface",
-                "freshwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "26-50",
-            "weight": 0.2,
+            "weight": 0.32,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_freshwater"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
+            }
+        },
+        {
+            "id": "floatzel-4",
+            "pokemon": "floatzel",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "common",
+            "level": "26-50",
+            "weight": 0.2,
+            "weightMultipliers": [
+                {
+                    "multiplier": 3.0,
+                    "condition": {
+                        "minLureLevel": "2",
+                        "maxLureLevel": "2"
+                    }
+                },
+                {
+                    "multiplier": 5.0,
+                    "condition": {
+                        "minLureLevel": "3"
+                    }
+                }
+            ],
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_freshwater",
+                    "#cobblemon:is_grassland",
+                    "#cobblemon:is_hills",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_taiga"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
                 ]
             }
         }

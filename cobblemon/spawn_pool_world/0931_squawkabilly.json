@@ -31,6 +31,7 @@
             "pokemon": "squawkabilly",
             "presets": [
                 "urban",
+                "natural",
                 "treetop"
             ],
             "type": "pokemon",
@@ -58,7 +59,7 @@
             "id": "squawkabilly-3",
             "pokemon": "squawkabilly",
             "presets": [
-                "village",
+                "natural",
                 "treetop"
             ],
             "type": "pokemon",
@@ -73,7 +74,10 @@
                     "#cobblemon:is_overworld"
                 ],
                 "timeRange": "day",
-                "isRaining": false
+                "isRaining": false,
+                "structures": [
+                    "#minecraft:village"
+                ]
             },
             "anticondition": {
                 "biomes": [

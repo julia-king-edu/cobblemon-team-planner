@@ -7,14 +7,13 @@
             "id": "surskit-1",
             "pokemon": "surskit",
             "presets": [
-                "water_surface",
-                "freshwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "2-27",
-            "weight": 5.4,
+            "weight": 5.04,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -22,19 +21,24 @@
                     "#cobblemon:is_freshwater"
                 ],
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
             "id": "surskit-2",
             "pokemon": "surskit",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "uncommon",
             "level": "2-27",
-            "weight": 9.0,
+            "weight": 8.4,
             "condition": {
                 "biomes": [
                     "#the_bumblezone:the_bumblezone"

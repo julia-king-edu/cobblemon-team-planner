@@ -14,11 +14,11 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
-            "weight": 0.6,
+            "weight": 0.96,
             "weightMultiplier": {
                 "multiplier": 5.0,
                 "condition": {
-                    "moonPhase": "5"
+                    "moonPhase": "4"
                 }
             },
             "condition": {
@@ -46,11 +46,11 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
-            "weight": 0.6,
+            "weight": 0.96,
             "weightMultiplier": {
                 "multiplier": 5.0,
                 "condition": {
-                    "moonPhase": "5"
+                    "moonPhase": "4"
                 }
             },
             "condition": {
@@ -74,7 +74,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
-            "weight": 10.0,
+            "weight": 16.0,
             "condition": {
                 "biomes": [
                     "#minecraft:is_nether"

@@ -13,13 +13,14 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "4-29",
-            "weight": 2.0,
+            "weight": 10.0,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
+                ],
+                "isSlimeChunk": true
             },
             "anticondition": {
                 "biomes": [
@@ -37,7 +38,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "4-29",
-            "weight": 10.0,
+            "weight": 6.0,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,

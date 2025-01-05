@@ -23,7 +23,7 @@
             }
         },
         {
-            "id": "arbok-legacy-1",
+            "id": "arbok-legacy-2",
             "pokemon": "arbok snake_pattern=legacy",
             "presets": [
                 "natural"
@@ -42,7 +42,7 @@
             }
         },
         {
-            "id": "arbok-attack-1",
+            "id": "arbok-attack-2",
             "pokemon": "arbok snake_pattern=attack",
             "presets": [
                 "natural"
@@ -61,7 +61,7 @@
             }
         },
         {
-            "id": "arbok-speed-1",
+            "id": "arbok-speed-2",
             "pokemon": "arbok snake_pattern=speed",
             "presets": [
                 "natural"
@@ -80,7 +80,7 @@
             }
         },
         {
-            "id": "arbok-elusive-1",
+            "id": "arbok-elusive-2",
             "pokemon": "arbok snake_pattern=elusive",
             "presets": [
                 "natural"
@@ -99,7 +99,7 @@
             }
         },
         {
-            "id": "arbok-sound-1",
+            "id": "arbok-sound-2",
             "pokemon": "arbok snake_pattern=sound",
             "presets": [
                 "natural"
@@ -118,7 +118,7 @@
             }
         },
         {
-            "id": "arbok-dark-2",
+            "id": "arbok-dark-3",
             "pokemon": "arbok snake_pattern=dark",
             "presets": [
                 "natural"

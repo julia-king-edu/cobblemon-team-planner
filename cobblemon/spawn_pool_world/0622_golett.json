@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
-            "weight": 90.0,
+            "weight": 84.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -26,19 +26,21 @@
             "id": "golett-2",
             "pokemon": "golett",
             "presets": [
-                "natural",
-                "ruins"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "5-30",
-            "weight": 18.0,
+            "weight": 15.0,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#cobblemon:ruin"
                 ]
             }
         },

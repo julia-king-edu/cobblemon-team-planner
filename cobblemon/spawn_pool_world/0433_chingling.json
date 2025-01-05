@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "4-29",
-            "weight": 1.8,
+            "weight": 1.68,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -36,7 +36,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "4-29",
-            "weight": 5.4,
+            "weight": 5.04,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -49,17 +49,16 @@
         {
             "id": "chingling-3",
             "pokemon": "chingling",
-            "presets": [],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
             "level": "4-29",
-            "weight": 90,
+            "weight": 84.0,
             "condition": {
-                "timeRange": "night",
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
+                "timeRange": "night",
                 "neededNearbyBlocks": [
                     "minecraft:bell"
                 ]

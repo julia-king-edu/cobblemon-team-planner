@@ -12,9 +12,9 @@
             ],
             "type": "pokemon",
             "context": "grounded",
-            "bucket": "common",
+            "bucket": "uncommon",
             "level": "1-26",
-            "weight": 90.0,
+            "weight": 92.0,
             "condition": {
                 "biomes": [
                     "#minecraft:is_nether"
@@ -48,7 +48,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "1-26",
-            "weight": 18.0,
+            "weight": 18.4,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_overworld"

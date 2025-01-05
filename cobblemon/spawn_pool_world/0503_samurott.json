@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -31,13 +31,13 @@
             "id": "samurott-2",
             "pokemon": "samurott",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "ultra-rare",
             "level": "36-53",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -52,7 +52,30 @@
             }
         },
         {
-            "id": "samurott-hisuian-3",
+            "id": "samurott-3",
+            "pokemon": "samurott",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "ultra-rare",
+            "level": "36-53",
+            "weight": 0.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_beach",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_tropical_island"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_cold"
+                ]
+            }
+        },
+        {
+            "id": "samurott-hisuian-4",
             "pokemon": "samurott hisuian",
             "presets": [
                 "natural"
@@ -61,31 +84,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
-            "weight": 0.1,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_coast"
-                ]
-            },
-            "anticondition": {
-                "biomes": [
-                    "#cobblemon:is_beach"
-                ]
-            }
-        },
-        {
-            "id": "samurott-hisuian-4",
-            "pokemon": "samurott hisuian",
-            "presets": [
-                "water_surface"
-            ],
-            "type": "pokemon",
-            "context": "surface",
-            "bucket": "ultra-rare",
-            "level": "36-53",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -103,13 +102,37 @@
             "id": "samurott-hisuian-5",
             "pokemon": "samurott hisuian",
             "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "context": "surface",
+            "bucket": "ultra-rare",
+            "level": "36-53",
+            "weight": 0.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_coast"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_beach"
+                ]
+            }
+        },
+        {
+            "id": "samurott-hisuian-6",
+            "pokemon": "samurott hisuian",
+            "presets": [
                 "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -119,21 +142,43 @@
             }
         },
         {
-            "id": "samurott-hisuian-6",
+            "id": "samurott-hisuian-7",
             "pokemon": "samurott hisuian",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
             "bucket": "ultra-rare",
             "level": "36-53",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "minecraft:snowy_beach"
+                ]
+            }
+        },
+        {
+            "id": "samurott-hisuian-8",
+            "pokemon": "samurott hisuian",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "ultra-rare",
+            "level": "36-53",
+            "weight": 0.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_coast",
+                    "#cobblemon:is_cold_ocean"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_beach"
                 ]
             }
         }

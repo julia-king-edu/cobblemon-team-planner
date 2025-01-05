@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "1-22",
-            "weight": 9.0,
+            "weight": 8.75,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -33,14 +33,13 @@
             "id": "happiny-2",
             "pokemon": "happiny",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "1-22",
-            "weight": 9.0,
+            "weight": 8.75,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -52,6 +51,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

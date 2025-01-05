@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "45-60",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_jungle"
@@ -33,7 +33,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "45-60",
-            "weight": 0.1,
+            "weight": 0.25,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_tropical_island"

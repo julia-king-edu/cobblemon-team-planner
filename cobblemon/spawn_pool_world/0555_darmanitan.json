@@ -7,8 +7,7 @@
             "id": "darmanitan-1",
             "pokemon": "darmanitan",
             "presets": [
-                "natural",
-                "ruins"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -21,6 +20,9 @@
                 "biomes": [
                     "#cobblemon:is_desert",
                     "#cobblemon:is_jungle"
+                ],
+                "structures": [
+                    "#cobblemon:ruin"
                 ]
             }
         },

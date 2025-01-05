@@ -25,7 +25,13 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#cobblemon:is_mountain",
                     "#cobblemon:is_savanna"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_cold"
                 ]
             }
         }

@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "42-49",
-            "weight": 0.18,
+            "weight": 0.19,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -25,7 +25,13 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#cobblemon:is_mountain",
                     "#cobblemon:is_savanna"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_cold"
                 ]
             }
         }

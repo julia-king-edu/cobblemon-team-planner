@@ -25,9 +25,6 @@
         {
             "id": "spiritomb-2",
             "pokemon": "spiritomb",
-            "presets": [
-                "ruins"
-            ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
@@ -37,15 +34,15 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
+                "structures": [
+                    "#cobblemon:ruin"
+                ],
                 "minY": 48
             }
         },
         {
             "id": "spiritomb-3",
             "pokemon": "spiritomb",
-            "presets": [
-                "underground_ruins"
-            ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "uncommon",
@@ -54,6 +51,9 @@
             "condition": {
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#cobblemon:ruins/arch"
                 ],
                 "minY": -37,
                 "maxY": 10

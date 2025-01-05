@@ -7,7 +7,6 @@
             "id": "illumise-1",
             "pokemon": "illumise",
             "presets": [
-                "freshwater",
                 "natural",
                 "treetop"
             ],
@@ -24,14 +23,18 @@
                 ],
                 "timeRange": "night",
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
             "id": "illumise-2",
             "pokemon": "illumise",
             "presets": [
-                "freshwater",
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -46,6 +49,11 @@
                 ],
                 "timeRange": "night",
                 "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
             }
         },
         {
@@ -71,7 +79,7 @@
             "id": "illumise-4",
             "pokemon": "illumise",
             "presets": [
-                "water_surface"
+                "water"
             ],
             "type": "pokemon",
             "context": "surface",

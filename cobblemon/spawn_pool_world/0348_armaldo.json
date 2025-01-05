@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "40-50",
-            "weight": 1.0,
+            "weight": 4.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
@@ -26,13 +26,13 @@
             "id": "armaldo-2",
             "pokemon": "armaldo",
             "presets": [
-                "underwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "submerged",
             "bucket": "ultra-rare",
             "level": "40-50",
-            "weight": 1.0,
+            "weight": 4.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,

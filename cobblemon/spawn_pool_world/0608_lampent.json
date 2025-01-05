@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "41-46",
-            "weight": 0.18,
+            "weight": 0.19,
             "condition": {
                 "biomes": [
                     "#cobblemon:nether/is_soul_fire"
@@ -30,7 +30,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "41-46",
-            "weight": 0.9,
+            "weight": 0.95,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [

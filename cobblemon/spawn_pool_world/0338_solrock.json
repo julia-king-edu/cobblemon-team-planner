@@ -67,6 +67,34 @@
                 ],
                 "timeRange": "day"
             }
+        },
+        {
+            "id": "solrock-4",
+            "pokemon": "solrock",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "21-46",
+            "weight": 20.0,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "cobblemon:ruins/sol_henge_ruins"
+                ]
+            }
         }
     ]
 }

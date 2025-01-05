@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "45-60",
-            "weight": 0.1,
+            "weight": 0.4,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_dripstone",
@@ -31,10 +31,10 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "45-60",
-            "weight": 0.1,
+            "weight": 0.25,
             "condition": {
                 "biomes": [
-                    "#minecraft:is_end"
+                    "#cobblemon:is_end"
                 ]
             }
         },
@@ -45,7 +45,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "45-60",
-            "weight": 0.1,
+            "weight": 0.25,
             "condition": {
                 "biomes": [
                     "the_bumblezone:howling_constructs"

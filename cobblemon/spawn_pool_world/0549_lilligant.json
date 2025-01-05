@@ -14,7 +14,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-48",
-            "weight": 1.0,
+            "weight": 0.5,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -45,7 +45,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-48",
-            "weight": 0.2,
+            "weight": 0.1,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -75,7 +75,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-48",
-            "weight": 1.0,
+            "weight": 0.5,
             "condition": {
                 "biomes": [
                     "the_bumblezone:floral_meadow"
@@ -98,7 +98,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "23-48",
-            "weight": 0.6,
+            "weight": 0.3,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {

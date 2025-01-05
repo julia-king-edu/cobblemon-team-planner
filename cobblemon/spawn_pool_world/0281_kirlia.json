@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "20-29",
-            "weight": 0.9,
+            "weight": 2.25,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -35,7 +35,7 @@
             "context": "grounded",
             "bucket": "rare",
             "level": "20-29",
-            "weight": 0.18,
+            "weight": 0.45,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
@@ -48,19 +48,21 @@
             "id": "kirlia-3",
             "pokemon": "kirlia",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "rare",
             "level": "20-29",
-            "weight": 0.18,
+            "weight": 0.45,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         },
@@ -74,7 +76,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "20-29",
-            "weight": 0.18,
+            "weight": 0.19,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [

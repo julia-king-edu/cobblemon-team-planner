@@ -7,14 +7,13 @@
             "id": "florges-red-1",
             "pokemon": "florges flower=red",
             "presets": [
-                "natural",
-                "red_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -26,19 +25,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:poppy",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:red_flowers"
                 ]
             }
         },
@@ -46,14 +35,13 @@
             "id": "florges-yellow-2",
             "pokemon": "florges flower=yellow",
             "presets": [
-                "natural",
-                "yellow_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -65,19 +53,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:dandelion",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:yellow_flowers"
                 ]
             }
         },
@@ -85,14 +63,13 @@
             "id": "florges-orange-3",
             "pokemon": "florges flower=orange",
             "presets": [
-                "natural",
-                "orange_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -104,19 +81,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:orange_tulip",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:orange_flowers"
                 ]
             }
         },
@@ -124,14 +91,13 @@
             "id": "florges-blue-4",
             "pokemon": "florges flower=blue",
             "presets": [
-                "natural",
-                "blue_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -143,19 +109,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:cornflower",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:blue_flowers"
                 ]
             }
         },
@@ -163,14 +119,13 @@
             "id": "florges-white-5",
             "pokemon": "florges flower=white",
             "presets": [
-                "natural",
-                "white_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -182,19 +137,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:oxeye_daisy",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:white_flowers"
                 ]
             }
         },
@@ -202,14 +147,13 @@
             "id": "florges-pink-6",
             "pokemon": "florges flower=pink",
             "presets": [
-                "natural",
-                "pink_flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -221,19 +165,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_overworld"
-                ]
-            },
-            "drops": {
-                "amount": 4,
-                "entries": [
-                    {
-                        "item": "minecraft:allium",
-                        "quantityRange": "0-3"
-                    },
-                    {
-                        "item": "cobblemon:kebia_berry",
-                        "percentage": 10.0
-                    }
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:pink_flowers"
                 ]
             }
         },
@@ -244,7 +178,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -269,7 +203,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -294,7 +228,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -319,7 +253,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -344,7 +278,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -369,7 +303,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "32-55",
-            "weight": 0.1,
+            "weight": 0.05,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {

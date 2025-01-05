@@ -20,7 +20,7 @@
                     "#cobblemon:is_thermal"
                 ],
                 "neededNearbyBlocks": [
-                    "minecraft:coal_ore"
+                    "#minecraft:coal_ores"
                 ]
             }
         },
@@ -42,7 +42,7 @@
                     "#cobblemon:is_overworld"
                 ],
                 "neededNearbyBlocks": [
-                    "minecraft:coal_ore"
+                    "#minecraft:coal_ores"
                 ]
             },
             "anticondition": {

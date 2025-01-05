@@ -34,8 +34,7 @@
             "id": "perrserker-2",
             "pokemon": "perrserker",
             "presets": [
-                "natural",
-                "village"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -54,6 +53,9 @@
                 "biomes": [
                     "#cobblemon:is_freezing",
                     "#cobblemon:is_taiga"
+                ],
+                "structures": [
+                    "#minecraft:village"
                 ]
             }
         }

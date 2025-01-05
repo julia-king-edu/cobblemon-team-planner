@@ -21,8 +21,8 @@
                     "#cobblemon:is_overworld"
                 ],
                 "neededNearbyBlocks": [
-                    "#c:redstone_ores",
-                    "minecraft:rail"
+                    "#minecraft:redstone_ores",
+                    "#c:redstone_ores"
                 ]
             },
             "anticondition": {
@@ -35,7 +35,25 @@
             "id": "klink-2",
             "pokemon": "klink",
             "presets": [
+                "natural",
                 "redstone"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.8,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "klink-3",
+            "pokemon": "klink",
+            "presets": [
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",

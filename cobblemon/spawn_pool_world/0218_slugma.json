@@ -25,7 +25,7 @@
             "id": "slugma-2",
             "pokemon": "slugma",
             "presets": [
-                "lava_surface"
+                "lava"
             ],
             "type": "pokemon",
             "context": "surface",
@@ -43,7 +43,7 @@
             "id": "slugma-3",
             "pokemon": "slugma",
             "presets": [
-                "lava_surface"
+                "lava"
             ],
             "type": "pokemon",
             "context": "surface",

@@ -28,8 +28,7 @@
             "id": "cutiefly-2",
             "pokemon": "cutiefly",
             "presets": [
-                "natural",
-                "flowers"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
@@ -43,7 +42,10 @@
                     "#cobblemon:is_overworld"
                 ],
                 "timeRange": "day",
-                "isRaining": false
+                "isRaining": false,
+                "neededNearbyBlocks": [
+                    "#cobblemon:flowers"
+                ]
             },
             "anticondition": {
                 "biomes": [

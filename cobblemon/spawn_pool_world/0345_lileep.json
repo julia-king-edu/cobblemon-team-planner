@@ -7,13 +7,13 @@
             "id": "lileep-1",
             "pokemon": "lileep",
             "presets": [
-                "underwater"
+                "water"
             ],
             "type": "pokemon",
             "context": "seafloor",
             "bucket": "ultra-rare",
             "level": "11-36",
-            "weight": 9.0,
+            "weight": 6.0,
             "condition": {
                 "minSkyLight": 0,
                 "maxSkyLight": 7,

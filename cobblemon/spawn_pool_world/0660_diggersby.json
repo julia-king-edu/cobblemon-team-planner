@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "common",
             "level": "20-42",
-            "weight": 1.0,
+            "weight": 0.6,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_hills",

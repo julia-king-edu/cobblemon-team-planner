@@ -7,33 +7,77 @@
             "id": "drizzile-1",
             "pokemon": "drizzile",
             "presets": [
-                "natural",
-                "freshwater"
+                "natural"
             ],
             "type": "pokemon",
             "context": "grounded",
             "bucket": "ultra-rare",
             "level": "16-42",
-            "weight": 0.9,
+            "weight": 3.6,
             "condition": {
                 "minSkyLight": 8,
-                "maxSkyLight": 15
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_swamp"
+                ]
             }
         },
         {
             "id": "drizzile-2",
             "pokemon": "drizzile",
             "presets": [
-                "freshwater",
-                "underwater"
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "16-42",
+            "weight": 3.6,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_jungle"
+                ],
+                "neededNearbyBlocks": [
+                    "#minecraft:water"
+                ]
+            }
+        },
+        {
+            "id": "drizzile-3",
+            "pokemon": "drizzile",
+            "presets": [
+                "water"
             ],
             "type": "pokemon",
             "context": "submerged",
             "bucket": "ultra-rare",
             "level": "16-42",
-            "weight": 0.9,
+            "weight": 3.6,
             "condition": {
-                "canSeeSky": true
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_swamp"
+                ]
+            }
+        },
+        {
+            "id": "drizzile-4",
+            "pokemon": "drizzile",
+            "type": "pokemon",
+            "context": "fishing",
+            "bucket": "ultra-rare",
+            "level": "16-42",
+            "weight": 3.6,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_swamp"
+                ]
             }
         }
     ]
