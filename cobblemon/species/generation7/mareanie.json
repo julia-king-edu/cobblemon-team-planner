@@ -1,12 +1,26 @@
 {
-  "name": "Mareanie",
+  "implemented": true,
   "nationalPokedexNumber": 747,
+  "name": "Mareanie",
   "primaryType": "poison",
   "secondaryType": "water",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 80,
+  "pokedex": [
+    "cobblemon.species.mareanie.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "merciless",
     "limber",
     "h:regenerator"
+  ],
+  "eggGroups": [
+    "water_1"
   ],
   "baseStats": {
     "hp": 50,
@@ -16,50 +30,96 @@
     "special_defence": 52,
     "speed": 45
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 61,
   "experienceGroup": "medium_fast",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": "0.1"
+      },
+      "swim": {
+        "swimSpeed": "0.1",
+        "canSwimInWater": false,
+        "canBreatheUnderwater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:peck",
     "1:poisonsting",
+    "1:peck",
     "5:wideguard",
     "10:bite",
     "15:venoshock",
     "20:recover",
     "25:pinmissile",
-    "29:spikecannon",
     "30:toxicspikes",
     "35:liquidation",
     "40:acidspray",
-    "40:venomdrench",
     "45:poisonjab",
     "50:toxic",
     "egg:haze",
     "egg:infestation",
+    "egg:spikecannon",
     "egg:spitup",
     "egg:stockpile",
     "egg:swallow",
     "tm:acidspray",
-    "tm:attract",
+    "tm:afteryou",
     "tm:blizzard",
     "tm:brine",
     "tm:chillingwater",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:covet",
     "tm:endure",
     "tm:facade",
     "tm:frostbreath",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gunkshot",
     "tm:hail",
     "tm:haze",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icespinner",
@@ -68,6 +128,7 @@
     "tm:irondefense",
     "tm:liquidation",
     "tm:lunge",
+    "tm:magiccoat",
     "tm:muddywater",
     "tm:mudshot",
     "tm:painsplit",
@@ -78,17 +139,13 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:scald",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
+    "tm:snatch",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:terablast",
     "tm:toxic",
     "tm:toxicspikes",
@@ -99,25 +156,30 @@
     "tutor:covet",
     "tutor:gastroacid",
     "tutor:gunkshot",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
-    "tutor:knockoff",
     "tutor:liquidation",
     "tutor:magiccoat",
     "tutor:painsplit",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:spite",
-    "tutor:stockpile",
-    "tutor:swallow",
-    "tutor:toxic",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.mareanie.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:knockoff",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:snore",
+    "legacy:spite",
+    "legacy:swagger"
   ],
   "evolutions": [
     {
@@ -135,41 +197,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 80,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:slime_ball",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:poison_barb",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:pecha_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

@@ -1,13 +1,82 @@
 {
   "implemented": true,
-  "name": "Meowscarada",
   "nationalPokedexNumber": 908,
+  "name": "Meowscarada",
   "primaryType": "grass",
   "secondaryType": "dark",
+  "maleRatio": 0.875,
+  "height": 15,
+  "weight": 312,
+  "pokedex": [
+    "cobblemon.species.meowscarada.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:protean"
   ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 76,
+    "attack": 110,
+    "defence": 70,
+    "special_attack": 81,
+    "special_defence": 70,
+    "speed": 123
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "baseExperienceYield": 265,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.67,
+  "hitbox": {
+    "width": 1,
+    "height": 3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "5"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -17,51 +86,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 76,
-    "attack": 110,
-    "defence": 70,
-    "special_attack": 81,
-    "special_defence": 70,
-    "speed": 123
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 265,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.3
-      }
-    }
-  },
   "moves": [
-    "1:doubleteam",
     "1:flowertrick",
     "1:leafage",
     "1:scratch",
     "1:tailwhip",
+    "1:doubleteam",
     "1:trick",
     "7:bite",
     "10:honeclaws",
@@ -77,9 +107,15 @@
     "52:knockoff",
     "58:grassyterrain",
     "64:leafstorm",
+    "egg:allyswitch",
+    "egg:copycat",
+    "egg:leechseed",
+    "egg:petalblizzard",
+    "egg:suckerpunch",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
+    "tm:allyswitch",
     "tm:aurasphere",
     "tm:brickbreak",
     "tm:bulletseed",
@@ -102,6 +138,7 @@
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
+    "tm:honeclaws",
     "tm:hyperbeam",
     "tm:knockoff",
     "tm:lashout",
@@ -126,6 +163,7 @@
     "tm:solarbeam",
     "tm:spikes",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
@@ -138,24 +176,41 @@
     "tm:trick",
     "tm:trickroom",
     "tm:tripleaxel",
-    "tm:uturn"
+    "tm:uturn",
+    "tm:worryseed",
+    "tutor:aerialace",
+    "tutor:allyswitch",
+    "tutor:darkpulse",
+    "tutor:energyball",
+    "tutor:foulplay",
+    "tutor:frenzyplant",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:lowkick",
+    "tutor:magicalleaf",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:thunderpunch",
+    "tutor:trick",
+    "tutor:tripleaxel",
+    "tutor:worryseed"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 15,
-  "weight": 312,
   "preEvolution": "floragato",
-  "evolutions": [],
-  "baseScale": 0.67,
-  "hitbox": {
-    "width": 1,
-    "height": 3.0,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.meowscarada.desc"
-  ]
+  "evolutions": []
 }

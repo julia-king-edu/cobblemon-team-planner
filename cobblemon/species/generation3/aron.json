@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Aron",
   "nationalPokedexNumber": 304,
+  "name": "Aron",
   "primaryType": "steel",
   "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 600,
+  "pokedex": [
+    "cobblemon.species.aron.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "rockhead",
     "h:heavymetal"
+  ],
+  "eggGroups": [
+    "monster"
   ],
   "baseStats": {
     "hp": 50,
@@ -17,156 +30,6 @@
     "special_defence": 40,
     "speed": 30
   },
-  "catchRate": 180,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "slow",
-  "eggCycles": 35,
-  "eggGroups": [
-    "monster"
-  ],
-  "moves": [
-    "1:harden",
-    "1:tackle",
-    "4:metalclaw",
-    "4:mudslap",
-    "8:rocktomb",
-    "12:roar",
-    "16:headbutt",
-    "20:protect",
-    "24:rockslide",
-    "28:ironhead",
-    "33:metalsound",
-    "36:takedown",
-    "40:autotomize",
-    "44:irontail",
-    "48:irondefense",
-    "52:heavyslam",
-    "56:doubleedge",
-    "60:metalburst",
-    "egg:bodyslam",
-    "egg:curse",
-    "egg:dragonrush",
-    "egg:endeavor",
-    "egg:headsmash",
-    "egg:ironhead",
-    "egg:mudslap",
-    "egg:reversal",
-    "egg:screech",
-    "egg:smellingsalts",
-    "egg:stealthrock",
-    "egg:stomp",
-    "egg:superpower",
-    "tm:aerialace",
-    "tm:attract",
-    "tm:bodypress",
-    "tm:bodyslam",
-    "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
-    "tm:cut",
-    "tm:dig",
-    "tm:doubleteam",
-    "tm:earthpower",
-    "tm:earthquake",
-    "tm:endure",
-    "tm:facade",
-    "tm:frustration",
-    "tm:heavyslam",
-    "tm:hiddenpower",
-    "tm:honeclaws",
-    "tm:irondefense",
-    "tm:ironhead",
-    "tm:irontail",
-    "tm:naturalgift",
-    "tm:protect",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:reversal",
-    "tm:roar",
-    "tm:rockpolish",
-    "tm:rockslide",
-    "tm:rocksmash",
-    "tm:rocktomb",
-    "tm:round",
-    "tm:sandstorm",
-    "tm:screech",
-    "tm:secretpower",
-    "tm:shadowclaw",
-    "tm:shockwave",
-    "tm:sleeptalk",
-    "tm:snore",
-    "tm:stealthrock",
-    "tm:strength",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:superpower",
-    "tm:swagger",
-    "tm:toxic",
-    "tm:uproar",
-    "tm:waterpulse",
-    "tutor:ancientpower",
-    "tutor:bodyslam",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:earthpower",
-    "tutor:endeavor",
-    "tutor:endure",
-    "tutor:furycutter",
-    "tutor:harden",
-    "tutor:headbutt",
-    "tutor:headsmash",
-    "tutor:irondefense",
-    "tutor:ironhead",
-    "tutor:irontail",
-    "tutor:magnetrise",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:rockslide",
-    "tutor:rollout",
-    "tutor:shockwave",
-    "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:spite",
-    "tutor:stealthrock",
-    "tutor:steelbeam",
-    "tutor:steelroller",
-    "tutor:substitute",
-    "tutor:superpower",
-    "tutor:swagger",
-    "tutor:uproar",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.aron.desc"
-  ],
-  "evolutions": [
-    {
-      "id": "aron_lairon",
-      "variant": "level_up",
-      "result": "lairon",
-      "consumeHeldItem": false,
-      "learnableMoves": [],
-      "requirements": [
-        {
-          "variant": "level",
-          "minLevel": 32
-        }
-      ]
-    }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 35,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -175,10 +38,64 @@
     "special_defence": 0,
     "speed": 0
   },
-  "height": 4,
-  "weight": 600,
-  "aspects": [],
-  "cannotDynamax": false,
+  "baseExperienceYield": 66,
+  "experienceGroup": "slow",
+  "catchRate": 180,
+  "eggCycles": 35,
+  "baseFriendship": 35,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "itemInteract": {
+      "desiredItems": [
+        {
+          "item": "minecraft:iron_ingot",
+          "pickupPriority": 1,
+          "fullnessValue": 1,
+          "onUseEffect": "q.entity.heal(1)"
+        }
+      ]
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "lairon",
+          "tier": 1
+        },
+        {
+          "pokemon": "aggron mega=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "aggron mega",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -195,5 +112,138 @@
         "percentage": 2.5
       }
     ]
-  }
+  },
+  "moves": [
+    "1:tackle",
+    "1:harden",
+    "4:metalclaw",
+    "8:rocktomb",
+    "12:roar",
+    "16:headbutt",
+    "20:protect",
+    "24:rockslide",
+    "28:ironhead",
+    "33:metalsound",
+    "36:takedown",
+    "40:autotomize",
+    "44:irontail",
+    "48:irondefense",
+    "52:heavyslam",
+    "56:doubleedge",
+    "60:metalburst",
+    "egg:curse",
+    "egg:dragonrush",
+    "egg:endeavor",
+    "egg:headsmash",
+    "egg:mudslap",
+    "egg:smellingsalts",
+    "egg:stomp",
+    "tm:aerialace",
+    "tm:ancientpower",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:curse",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:furycutter",
+    "tm:headbutt",
+    "tm:heavyslam",
+    "tm:honeclaws",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:magnetrise",
+    "tm:metalclaw",
+    "tm:metalsound",
+    "tm:mudslap",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:reversal",
+    "tm:roar",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:sandstorm",
+    "tm:screech",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:spite",
+    "tm:stealthrock",
+    "tm:steelbeam",
+    "tm:steelroller",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:uproar",
+    "tm:waterpulse",
+    "tutor:aerialace",
+    "tutor:ancientpower",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:furycutter",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:irontail",
+    "tutor:magnetrise",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:shadowclaw",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:stealthrock",
+    "tutor:steelbeam",
+    "tutor:steelroller",
+    "tutor:superpower",
+    "tutor:uproar",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
+  ],
+  "evolutions": [
+    {
+      "id": "aron_lairon",
+      "variant": "level_up",
+      "result": "lairon",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    }
+  ]
 }

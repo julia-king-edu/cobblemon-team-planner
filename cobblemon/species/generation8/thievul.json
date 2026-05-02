@@ -1,13 +1,75 @@
 {
   "implemented": true,
-  "name": "Thievul",
   "nationalPokedexNumber": 828,
+  "name": "Thievul",
   "primaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 199,
+  "pokedex": [
+    "cobblemon.species.thievul.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "unburden",
     "h:stakeout"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 70,
+    "attack": 58,
+    "defence": 58,
+    "special_attack": 87,
+    "special_defence": 92,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 159,
+  "experienceGroup": "fast",
+  "catchRate": 127,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -25,36 +87,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 70,
-    "attack": 58,
-    "defence": 58,
-    "special_attack": 87,
-    "special_defence": 92,
-    "speed": 90
-  },
-  "catchRate": 127,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 159,
-  "experienceGroup": "fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:beatup",
-    "1:honeclaws",
+    "1:thief",
     "1:quickattack",
     "1:tailwhip",
+    "1:beatup",
+    "1:honeclaws",
     "12:snarl",
     "16:assurance",
     "22:nastyplot",
@@ -63,12 +101,16 @@
     "40:tailslap",
     "46:foulplay",
     "52:partingshot",
+    "egg:howl",
+    "egg:knockoff",
+    "egg:quickguard",
+    "egg:torment",
     "tm:acrobatics",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:beatup",
+    "tm:burningjealousy",
     "tm:crunch",
     "tm:darkpulse",
     "tm:dig",
@@ -79,56 +121,55 @@
     "tm:foulplay",
     "tm:gigaimpact",
     "tm:grassknot",
+    "tm:honeclaws",
     "tm:hyperbeam",
     "tm:icefang",
+    "tm:knockoff",
+    "tm:lashout",
     "tm:mudshot",
     "tm:nastyplot",
     "tm:playrough",
     "tm:protect",
     "tm:psychic",
     "tm:rest",
-    "tm:round",
     "tm:screech",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:tailslap",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderfang",
+    "tm:torment",
     "tm:uturn",
     "tutor:burningjealousy",
-    "tutor:lashout"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.thievul.desc"
+    "tutor:darkpulse",
+    "tutor:firefang",
+    "tutor:foulplay",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icefang",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:playrough",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:thunderfang",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "nickit",
-  "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1.2,
-    "height": 2.0,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 199,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,11 +1,25 @@
 {
-  "name": "Dondozo",
+  "implemented": true,
   "nationalPokedexNumber": 977,
+  "name": "Dondozo",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 120,
+  "weight": 2200,
+  "pokedex": [
+    "cobblemon.species.dondozo.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "unaware",
     "oblivious",
     "h:waterveil"
+  ],
+  "eggGroups": [
+    "water_2"
   ],
   "baseStats": {
     "hp": 150,
@@ -15,10 +29,6 @@
     "special_defence": 65,
     "speed": 35
   },
-  "catchRate": 25,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 265,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 3,
     "attack": 0,
@@ -27,14 +37,145 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 265,
   "experienceGroup": "slow",
+  "catchRate": 25,
   "eggCycles": 40,
-  "eggGroups": [
-    "water_2"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 2,
+    "fixed": false,
+    "width": 3.5
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/submarine",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "submerged": false,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.underwater.stereo",
+            "submerged": true,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "hitboxBreachPercentage": 0.7,
+        "stats": {
+          "ACCELERATION": "45-65",
+          "JUMP": "10-25",
+          "SKILL": "50-75",
+          "SPEED": "25-45",
+          "STAMINA": "60-75"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      },
+      {
+        "locator": "seat_3"
+      },
+      {
+        "locator": "seat_4"
+      },
+      {
+        "locator": "seat_5"
+      },
+      {
+        "locator": "seat_6"
+      },
+      {
+        "locator": "seat_7"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dondozo",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": 0.2
+      },
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": 0.172
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:supersonic",
     "1:tackle",
+    "1:supersonic",
     "1:watergun",
     "5:tickle",
     "10:flail",
@@ -54,6 +195,7 @@
     "egg:fissure",
     "egg:thrash",
     "egg:yawn",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:bodypress",
     "tm:bodyslam",
@@ -61,6 +203,7 @@
     "tm:chillingwater",
     "tm:crunch",
     "tm:curse",
+    "tm:dive",
     "tm:doubleedge",
     "tm:earthquake",
     "tm:endure",
@@ -85,29 +228,21 @@
     "tm:terablast",
     "tm:waterfall",
     "tm:waterpulse",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:aquatail",
+    "tutor:bulldoze",
+    "tutor:dive",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icefang",
+    "tutor:liquidation",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:waterpulse",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 120,
-  "weight": 2200,
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.dondozo.desc"
-  ],
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:salmon"
-      },
-      {
-        "item": "minecraft:bone_meal",
-        "percentage": 5.0
-      }
-    ]
-  }
+  "evolutions": []
 }

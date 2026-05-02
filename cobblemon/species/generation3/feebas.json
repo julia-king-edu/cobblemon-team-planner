@@ -1,11 +1,26 @@
 {
-  "name": "Feebas",
+  "implemented": true,
   "nationalPokedexNumber": 349,
+  "name": "Feebas",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 74,
+  "pokedex": [
+    "cobblemon.species.feebas.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "oblivious",
     "h:adaptability"
+  ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
   ],
   "baseStats": {
     "hp": 20,
@@ -15,99 +30,149 @@
     "special_defence": 55,
     "speed": 80
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 40,
   "experienceGroup": "erratic",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "magikarp",
+          "tier": 1
+        },
+        {
+          "pokemon": "feebas",
+          "tier": 1
+        },
+        {
+          "pokemon": "milotic",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:prism_scale",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:splash",
     "15:tackle",
     "25:flail",
-    "egg:brine",
     "egg:captivate",
     "egg:confuseray",
     "egg:dragonbreath",
-    "egg:dragonpulse",
     "egg:haze",
     "egg:hypnosis",
-    "egg:irontail",
-    "egg:lightscreen",
     "egg:mirrorcoat",
     "egg:mist",
     "egg:mudsport",
     "egg:tickle",
-    "tm:attract",
     "tm:blizzard",
     "tm:brine",
     "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragonpulse",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:hail",
     "tm:haze",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:icywind",
     "tm:irontail",
     "tm:lightscreen",
     "tm:muddywater",
     "tm:mudshot",
-    "tm:naturalgift",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scald",
     "tm:scaleshot",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:terablast",
-    "tm:toxic",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tutor:captivate",
     "tutor:dive",
-    "tutor:doubleedge",
     "tutor:dragonpulse",
-    "tutor:endure",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irontail",
-    "tutor:mimic",
-    "tutor:mirrorcoat",
+    "tutor:rest",
     "tutor:scaleshot",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:splash",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.feebas.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -125,40 +190,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 6,
-  "weight": 74,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:salmon"
-      },
-      {
-        "item": "minecraft:bone_meal",
-        "percentage": 5.0
-      },
-      {
-        "item": "cobblemon:prism_scale",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

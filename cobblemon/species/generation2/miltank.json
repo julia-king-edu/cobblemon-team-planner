@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Miltank",
   "nationalPokedexNumber": 241,
+  "name": "Miltank",
   "primaryType": "normal",
+  "maleRatio": 0,
+  "height": 12,
+  "weight": 755,
+  "pokedex": [
+    "cobblemon.species.miltank.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "scrappy",
     "h:sapsipper"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 95,
@@ -16,26 +29,83 @@
     "special_defence": 70,
     "speed": 100
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1.1,
+    "height": 2,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "lightningHit": {
+      "rotateFeatures": [
+        {
+          "key": "mooshtank",
+          "chain": [
+            "red",
+            "brown"
+          ]
+        }
+      ]
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bouffalant",
+          "tier": 1
+        },
+        {
+          "pokemon": "tauros",
+          "tier": 2
+        },
+        {
+          "pokemon": "tauros bull_breed=combat",
+          "tier": 2
+        },
+        {
+          "pokemon": "tauros bull_breed=aqua",
+          "tier": 3
+        },
+        {
+          "pokemon": "tauros bull_breed=blaze",
+          "tier": 3
+        },
+        {
+          "pokemon": "miltank",
+          "tier": 4
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "baseExperienceYield": 172,
-  "experienceGroup": "slow",
-  "eggCycles": 20,
-  "features": [
-    "milkable"
-  ],
-  "eggGroups": [
-    "field"
-  ],
   "drops": {
     "amount": 6,
     "entries": [
@@ -54,49 +124,44 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
+    "1:bide",
+    "1:wakeupslap",
     "5:rollout",
     "10:defensecurl",
-    "15:bide",
     "15:stomp",
     "20:healbell",
     "25:headbutt",
     "30:zenheadbutt",
-    "35:captivate",
     "35:milkdrink",
     "40:bodyslam",
-    "41:gyroball",
     "45:playrough",
     "50:charm",
-    "50:wakeupslap",
     "55:highhorsepower",
     "egg:belch",
+    "egg:captivate",
     "egg:curse",
     "egg:dizzypunch",
     "egg:doubleedge",
-    "egg:endure",
     "egg:focuspunch",
     "egg:hammerarm",
     "egg:heartstamp",
-    "egg:helpinghand",
     "egg:naturalgift",
     "egg:present",
-    "egg:psychup",
     "egg:punishment",
-    "egg:reversal",
     "egg:seismictoss",
-    "egg:sleeptalk",
-    "tm:attract",
+    "tm:afteryou",
     "tm:blizzard",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
     "tm:captivate",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:curse",
+    "tm:doubleedge",
     "tm:earthquake",
     "tm:echoedvoice",
     "tm:endure",
@@ -105,12 +170,12 @@
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:gyroball",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:icebeam",
@@ -121,6 +186,7 @@
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
+    "tm:mudslap",
     "tm:naturalgift",
     "tm:playrough",
     "tm:poweruppunch",
@@ -129,127 +195,79 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stealthrock",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:surf",
-    "tm:swagger",
+    "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:workup",
     "tm:zenheadbutt",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:blizzard",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:endure",
+    "tutor:bulldoze",
     "tutor:firepunch",
     "tutor:focuspunch",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
+    "tutor:highhorsepower",
     "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:ironhead",
     "tutor:irontail",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:milkdrink",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:present",
-    "tutor:protect",
-    "tutor:psychup",
-    "tutor:raindance",
+    "tutor:playrough",
     "tutor:rest",
-    "tutor:return",
-    "tutor:reversal",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:sandstorm",
-    "tutor:seismictoss",
     "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:steelroller",
-    "tutor:stomp",
     "tutor:stompingtantrum",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:tackle",
-    "tutor:thunder",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
-    "tutor:toxic",
     "tutor:waterpulse",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.miltank.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 1.1,
-    "height": 2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 755,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

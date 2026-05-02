@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "21-46",
             "weight": 10.0,
@@ -30,7 +30,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "21-46",
             "weight": 10.0,
@@ -55,7 +55,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "21-46",
             "weight": 2.0,
@@ -75,7 +75,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "21-46",
             "weight": 20.0,
@@ -93,6 +93,24 @@
                 ],
                 "structures": [
                     "cobblemon:ruins/sol_henge_ruins"
+                ]
+            }
+        },
+        {
+            "id": "solrock-5",
+            "pokemon": "solrock",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "21-46",
+            "weight": 6.0,
+            "condition": {
+                "biomes": [
+                    "aether:skyroot_grove",
+                    "aether:skyroot_meadow"
                 ]
             }
         }

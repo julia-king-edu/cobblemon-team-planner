@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Tyrogue",
   "nationalPokedexNumber": 236,
+  "name": "Tyrogue",
   "primaryType": "fighting",
+  "maleRatio": 1,
+  "height": 7,
+  "weight": 210,
+  "pokedex": [
+    "cobblemon.species.tyrogue.desc"
+  ],
+  "labels": [
+    "gen2",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "guts",
     "steadfast",
     "h:vitalspirit"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 35,
@@ -16,15 +30,62 @@
     "special_defence": 35,
     "speed": 35
   },
-  "catchRate": 75,
-  "maleRatio": 1,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 42,
   "experienceGroup": "medium_fast",
+  "catchRate": 75,
   "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.45,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "hitmonchan",
+          "tier": 1
+        },
+        {
+          "pokemon": "hitmonlee",
+          "tier": 1
+        },
+        {
+          "pokemon": "hitmontop",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -38,151 +99,101 @@
       }
     ]
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:fakeout",
-    "1:focusenergy",
-    "1:foresight",
-    "1:helpinghand",
     "1:tackle",
+    "1:helpinghand",
+    "1:fakeout",
+    "1:foresight",
+    "1:focusenergy",
     "egg:bulletpunch",
     "egg:counter",
-    "egg:endure",
     "egg:feint",
-    "egg:helpinghand",
     "egg:highjumpkick",
     "egg:machpunch",
     "egg:mindreader",
     "egg:pursuit",
     "egg:rapidspin",
     "egg:vacuumwave",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
-    "tm:doubleteam",
-    "tm:earthquake",
+    "tm:covet",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
+    "tm:laserfocus",
     "tm:lowkick",
     "tm:lowsweep",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:roleplay",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:upperhand",
     "tm:uproar",
     "tm:vacuumwave",
     "tm:workup",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:counter",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:covet",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:fakeout",
-    "tutor:feint",
-    "tutor:frustration",
-    "tutor:headbutt",
+    "tutor:focusenergy",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
-    "tutor:highjumpkick",
     "tutor:laserfocus",
     "tutor:lowkick",
-    "tutor:machpunch",
-    "tutor:megakick",
-    "tutor:mimic",
-    "tutor:mindreader",
-    "tutor:mudslap",
-    "tutor:protect",
-    "tutor:rapidspin",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:roleplay",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:tackle",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:uproar",
-    "tutor:vacuumwave"
-  ],
-  "labels": [
-    "gen2",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.tyrogue.desc"
+    "tutor:vacuumwave",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:earthquake",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
-    {
-      "id": "tyrogue_hitmonlee",
-      "variant": "level_up",
-      "result": "hitmonlee",
-      "consumeHeldItem": false,
-      "learnableMoves": [],
-      "requirements": [
-        {
-          "variant": "level",
-          "minLevel": 20
-        },
-        {
-          "variant": "stat_compare",
-          "highStat": "atk",
-          "lowStat": "def"
-        }
-      ]
-    },
     {
       "id": "tyrogue_hitmonchan",
       "variant": "level_up",
       "result": "hitmonchan",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "cometpunch",
+        "drainpunch"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -190,8 +201,29 @@
         },
         {
           "variant": "stat_compare",
-          "highStat": "def",
-          "lowStat": "atk"
+          "highStat": "defence",
+          "lowStat": "attack"
+        }
+      ]
+    },
+    {
+      "id": "tyrogue_hitmonlee",
+      "variant": "level_up",
+      "result": "hitmonlee",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "doublekick",
+        "brickbreak"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        },
+        {
+          "variant": "stat_compare",
+          "highStat": "attack",
+          "lowStat": "defence"
         }
       ]
     },
@@ -201,6 +233,7 @@
       "result": "hitmontop",
       "consumeHeldItem": false,
       "learnableMoves": [
+        "rollingkick",
         "triplekick"
       ],
       "requirements": [
@@ -210,29 +243,10 @@
         },
         {
           "variant": "stat_equal",
-          "statOne": "atk",
-          "statTwo": "def"
+          "statOne": "attack",
+          "statTwo": "defence"
         }
       ]
     }
-  ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.45,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 210,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

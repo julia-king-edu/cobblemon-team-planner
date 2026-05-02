@@ -11,7 +11,7 @@
                 "urban"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "17-45",
             "weight": 1.125,
@@ -36,7 +36,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "17-45",
             "weight": 1.125,
@@ -54,6 +54,25 @@
                 ],
                 "structures": [
                     "#minecraft:village"
+                ]
+            }
+        },
+        {
+            "id": "chansey-3",
+            "pokemon": "chansey",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "rare",
+            "level": "17-45",
+            "weight": 1.125,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether"
                 ]
             }
         }

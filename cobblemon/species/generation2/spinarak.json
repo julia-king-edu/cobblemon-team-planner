@@ -1,14 +1,55 @@
 {
   "implemented": true,
-  "name": "Spinarak",
   "nationalPokedexNumber": 167,
+  "name": "Spinarak",
   "primaryType": "bug",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 85,
+  "pokedex": [
+    "cobblemon.species.spinarak.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "swarm",
     "insomnia",
     "h:sniper"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 60,
+    "defence": 40,
+    "special_attack": 40,
+    "special_defence": 40,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 50,
+  "experienceGroup": "fast",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -30,103 +71,75 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 60,
-    "defence": 40,
-    "special_attack": 40,
-    "special_defence": 40,
-    "speed": 30
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 50,
-  "experienceGroup": "fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
   "moves": [
-    "1:constrict",
     "1:poisonsting",
     "1:stringshot",
+    "1:constrict",
     "5:absorb",
     "8:infestation",
-    "12:leechlife",
     "12:scaryface",
     "15:nightshade",
     "19:shadowsneak",
     "22:furyswipes",
     "26:suckerpunch",
-    "29:agility",
     "29:spiderweb",
-    "33:agility",
     "33:pinmissile",
     "36:psychic",
     "40:poisonjab",
     "44:crosspoison",
     "47:stickyweb",
     "51:toxicthread",
-    "egg:batonpass",
     "egg:disable",
-    "egg:electroweb",
     "egg:lunge",
     "egg:megahorn",
     "egg:nightslash",
-    "egg:poisonjab",
-    "egg:psybeam",
     "egg:pursuit",
     "egg:ragepowder",
-    "egg:signalbeam",
     "egg:sonicboom",
-    "egg:toxicspikes",
     "egg:twineedle",
     "tm:acidspray",
     "tm:agility",
-    "tm:attract",
+    "tm:assurance",
     "tm:batonpass",
+    "tm:bounce",
     "tm:bugbite",
     "tm:bugbuzz",
-    "tm:captivate",
-    "tm:confide",
+    "tm:crosspoison",
     "tm:dig",
-    "tm:doubleteam",
     "tm:electroweb",
     "tm:endure",
     "tm:facade",
     "tm:flash",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:infestation",
     "tm:knockoff",
     "tm:leechlife",
     "tm:lunge",
-    "tm:naturalgift",
+    "tm:megahorn",
     "tm:nightshade",
+    "tm:pinmissile",
     "tm:poisonjab",
     "tm:pounce",
     "tm:protect",
     "tm:psychic",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
+    "tm:signalbeam",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
     "tm:solarbeam",
     "tm:spite",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:terablast",
     "tm:thief",
     "tm:toxic",
@@ -134,59 +147,43 @@
     "tm:trailblaze",
     "tm:venoshock",
     "tm:xscissor",
-    "tutor:agility",
-    "tutor:attract",
-    "tutor:batonpass",
-    "tutor:bodyslam",
     "tutor:bounce",
     "tutor:bugbite",
-    "tutor:constrict",
-    "tutor:curse",
-    "tutor:dig",
-    "tutor:disable",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:electroweb",
-    "tutor:endure",
-    "tutor:flash",
     "tutor:foulplay",
-    "tutor:frustration",
-    "tutor:furyswipes",
     "tutor:gigadrain",
-    "tutor:hiddenpower",
+    "tutor:knockoff",
     "tutor:leechlife",
-    "tutor:mimic",
-    "tutor:nightshade",
-    "tutor:poisonsting",
-    "tutor:protect",
-    "tutor:psybeam",
+    "tutor:megahorn",
+    "tutor:poisonjab",
     "tutor:psychic",
-    "tutor:pursuit",
-    "tutor:refresh",
     "tutor:rest",
-    "tutor:return",
-    "tutor:scaryface",
-    "tutor:screech",
     "tutor:signalbeam",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:sonicboom",
-    "tutor:spiderweb",
+    "tutor:spite",
     "tutor:stringshot",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:thief",
-    "tutor:toxic"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.spinarak.desc"
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:bodyslam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:psybeam",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -194,32 +191,65 @@
       "variant": "level_up",
       "result": "ariados",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "swordsdance"
+      ],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 22
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 85,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "walking": {
+        "walkSpeed": 0.13
+      },
+      "resting": {
+        "canSleep": true,
+        "light": "0-4"
+      },
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ariados",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "blockInteract": {
+      "immuneToCobwebBlock": true
+    }
+  }
 }

@@ -1,11 +1,27 @@
 {
   "implemented": true,
-  "name": "Alcremie",
   "nationalPokedexNumber": 869,
+  "name": "Alcremie",
   "primaryType": "fairy",
+  "maleRatio": 0,
+  "height": 3,
+  "weight": 5,
+  "pokedex": [
+    "cobblemon.species.alcremie.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [
+    "cream-vanilla"
+  ],
   "abilities": [
     "sweetveil",
     "h:aromaveil"
+  ],
+  "eggGroups": [
+    "fairy",
+    "amorphous"
   ],
   "baseStats": {
     "hp": 65,
@@ -15,69 +31,54 @@
     "special_defence": 121,
     "speed": 64
   },
-  "catchRate": 100,
-  "maleRatio": 0,
-  "shoulderMountable": true,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "fairy",
-      "abilities": [
-        "sweetveil",
-        "h:aromaveil"
-      ],
-      "baseStats": {
-        "hp": 65,
-        "attack": 60,
-        "defence": 75,
-        "special_attack": 110,
-        "special_defence": 121,
-        "speed": 64
-      },
-      "catchRate": 100,
-      "maleRatio": 0,
-      "baseExperienceYield": 173,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "fairy",
-        "amorphous"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 300,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
   "baseExperienceYield": 173,
   "experienceGroup": "medium_fast",
+  "catchRate": 100,
   "eggCycles": 20,
-  "eggGroups": [
-    "fairy",
-    "amorphous"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.7,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "slurpuff",
+          "tier": 1
+        },
+        {
+          "pokemon": "alcremie",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -94,12 +95,13 @@
     ]
   },
   "moves": [
+    "1:decorate",
+    "1:tackle",
     "1:aromaticmist",
     "1:sweetkiss",
     "1:sweetscent",
-    "1:tackle",
+    "1:aromatherapy",
     "15:drainingkiss",
-    "20:aromatherapy",
     "20:charm",
     "25:attract",
     "30:acidarmor",
@@ -107,8 +109,11 @@
     "40:recover",
     "45:mistyterrain",
     "50:entrainment",
+    "egg:babydolleyes",
+    "egg:lastresort",
     "tm:alluringvoice",
     "tm:attract",
+    "tm:babydolleyes",
     "tm:calmmind",
     "tm:charm",
     "tm:dazzlinggleam",
@@ -127,6 +132,7 @@
     "tm:helpinghand",
     "tm:hyperbeam",
     "tm:imprison",
+    "tm:lastresort",
     "tm:lightscreen",
     "tm:magicalleaf",
     "tm:magicroom",
@@ -141,43 +147,213 @@
     "tm:psychup",
     "tm:psyshock",
     "tm:rest",
-    "tm:round",
     "tm:safeguard",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:storedpower",
     "tm:substitute",
     "tm:terablast",
     "tm:triattack",
     "tm:wonderroom",
-    "tutor:mistyexplosion"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.alcremie.desc"
+    "tutor:babydolleyes",
+    "tutor:calmmind",
+    "tutor:dazzlinggleam",
+    "tutor:drainpunch",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:lastresort",
+    "tutor:magicalleaf",
+    "tutor:magicroom",
+    "tutor:mistyexplosion",
+    "tutor:mysticalfire",
+    "tutor:painsplit",
+    "tutor:playrough",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:wonderroom",
+    "legacy:round",
+    "legacy:snore",
+    "special:celebrate"
   ],
   "preEvolution": "milcery",
   "evolutions": [],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1.2,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 5,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Ruby-Cream",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-rubycream.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-ruby"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Matcha-Cream",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-matchacream.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-matcha"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Mint-Cream",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-mintcream.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-mint"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Lemon-Cream",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-lemoncream.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-lemon"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Salted-Cream",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-saltedcream.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-salted"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Ruby-Swirl",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-rubyswirl.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-ruby_swirl"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Caramel-Swirl",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-caramelswirl.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-caramel_swirl"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Rainbow-Swirl",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 3,
+      "weight": 5,
+      "pokedex": [
+        "cobblemon.species.alcremie-rainbowswirl.desc"
+      ],
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "cream-rainbow_swirl"
+      ],
+      "preEvolution": "milcery",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Gmax",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 300,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.alcremie-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
 }

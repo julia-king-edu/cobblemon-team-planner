@@ -1,21 +1,26 @@
 {
   "implemented": true,
-  "name": "Exploud",
   "nationalPokedexNumber": 295,
+  "name": "Exploud",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 15,
+  "weight": 840,
+  "pokedex": [
+    "cobblemon.species.exploud.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "soundproof",
     "h:scrappy"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 10.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "monster",
+    "field"
+  ],
   "baseStats": {
     "hp": 104,
     "attack": 91,
@@ -24,49 +29,81 @@
     "special_defence": 73,
     "speed": 68
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 245,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 1.4,
+    "height": 1.7,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:throat_spray",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
+    "1:icefang",
+    "1:firefang",
+    "1:thunderfang",
+    "1:pound",
     "1:astonish",
+    "1:howl",
     "1:bite",
     "1:crunch",
+    "1:synchronoise",
     "1:echoedvoice",
-    "1:firefang",
-    "1:howl",
-    "1:icefang",
-    "1:pound",
-    "1:thunderfang",
     "15:rest",
     "15:sleeptalk",
     "23:stomp",
     "29:roar",
     "36:supersonic",
     "45:uproar",
-    "53:synchronoise",
     "54:screech",
     "63:hypervoice",
     "72:boomburst",
     "81:hyperbeam",
-    "tm:attract",
+    "egg:circlethrow",
+    "egg:disarmingvoice",
+    "egg:endeavor",
+    "egg:extrasensory",
+    "egg:hammerarm",
+    "egg:smellingsalts",
+    "egg:smokescreen",
+    "egg:snore",
+    "egg:swagger",
+    "egg:synchronoise",
+    "egg:takedown",
+    "egg:whirlwind",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
-    "tm:doubleteam",
+    "tm:disarmingvoice",
     "tm:earthquake",
     "tm:echoedvoice",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:faketears",
@@ -76,9 +113,8 @@
     "tm:flamethrower",
     "tm:fling",
     "tm:focusblast",
-    "tm:frustration",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:hypervoice",
@@ -90,7 +126,7 @@
     "tm:lowkick",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:outrage",
     "tm:overheat",
     "tm:poweruppunch",
@@ -98,15 +134,13 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
     "tm:sleeptalk",
@@ -119,80 +153,90 @@
     "tm:sunnyday",
     "tm:surf",
     "tm:swagger",
+    "tm:takedown",
     "tm:taunt",
+    "tm:terablast",
+    "tm:terrainpulse",
     "tm:thunderfang",
     "tm:thunderpunch",
     "tm:torment",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:workup",
     "tm:zenheadbutt",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
+    "tutor:bulldoze",
     "tutor:endeavor",
-    "tutor:endure",
+    "tutor:firefang",
     "tutor:firepunch",
-    "tutor:headbutt",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
     "tutor:hyperbeam",
     "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icefang",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:outrage",
-    "tutor:psychup",
     "tutor:rest",
-    "tutor:roar",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:screech",
-    "tutor:seismictoss",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
     "tutor:snore",
-    "tutor:stomp",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:terrainpulse",
+    "tutor:thunderfang",
     "tutor:thunderpunch",
     "tutor:uproar",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.exploud.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:psychup",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:toxic",
+    "special:teeterdance"
   ],
   "preEvolution": "loudred",
   "evolutions": [],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 1.4,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 3,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 15,
-  "weight": 840,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "6"
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
 }

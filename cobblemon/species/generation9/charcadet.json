@@ -1,12 +1,98 @@
 {
   "implemented": true,
-  "name": "Charcadet",
   "nationalPokedexNumber": 935,
+  "name": "Charcadet",
   "primaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 105,
+  "pokedex": [
+    "cobblemon.species.charcadet.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "flashfire",
     "h:flamebody"
   ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 50,
+    "defence": 40,
+    "special_attack": 50,
+    "special_defence": 40,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 51,
+  "experienceGroup": "slow",
+  "catchRate": 90,
+  "eggCycles": 35,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "standingEyeHeight": 0.67,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "charcadet",
+          "tier": 1
+        },
+        {
+          "pokemon": "armarouge",
+          "tier": 2
+        },
+        {
+          "pokemon": "ceruledge",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -24,50 +110,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 50,
-    "defence": 40,
-    "special_attack": 50,
-    "special_defence": 40,
-    "speed": 35
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    }
-  },
-  "shoulderMountable": true,
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 51,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "slow",
-  "eggCycles": 35,
-  "eggGroups": [
-    "human_like"
-  ],
   "moves": [
-    "1:astonish",
-    "1:ember",
     "1:leer",
+    "1:ember",
+    "1:astonish",
     "8:clearsmog",
     "12:firespin",
     "16:willowisp",
@@ -88,6 +134,7 @@
     "tm:flareblitz",
     "tm:heatwave",
     "tm:helpinghand",
+    "tm:incinerate",
     "tm:nightshade",
     "tm:overheat",
     "tm:protect",
@@ -98,14 +145,15 @@
     "tm:sunnyday",
     "tm:takedown",
     "tm:terablast",
-    "tm:willowisp"
+    "tm:willowisp",
+    "tutor:flamethrower",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "special:celebrate"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 6,
-  "weight": 105,
   "evolutions": [
     {
       "id": "charcadet_armarouge",
@@ -130,14 +178,8 @@
       "requiredContext": "cobblemon:malicious_armor"
     }
   ],
-  "baseScale": 0.55,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.3,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.charcadet.desc"
-  ]
+  "lightingData": {
+    "lightLevel": 7,
+    "liquidGlowMode": "LAND"
+  }
 }

@@ -1,13 +1,93 @@
 {
   "implemented": true,
-  "name": "Klang",
   "nationalPokedexNumber": 600,
+  "name": "Klang",
   "primaryType": "steel",
+  "maleRatio": -1,
+  "height": 6,
+  "weight": 510,
+  "pokedex": [
+    "cobblemon.species.klang.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "plus",
     "minus",
     "h:clearbody"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 80,
+    "defence": 95,
+    "special_attack": 70,
+    "special_defence": 85,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 154,
+  "experienceGroup": "medium_slow",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.5,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "klang",
+          "tier": 1
+        },
+        {
+          "pokemon": "klinklang",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -17,36 +97,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 80,
-    "defence": 95,
-    "special_attack": 70,
-    "special_defence": 85,
-    "speed": 50
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 60,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 154,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
-    "1:bind",
+    "1:visegrip",
     "1:charge",
     "1:thundershock",
-    "1:visegrip",
+    "1:bind",
+    "1:mirrorshot",
     "12:chargebeam",
     "16:metalsound",
     "20:autotomize",
@@ -54,65 +110,77 @@
     "28:screech",
     "32:geargrind",
     "36:lockon",
-    "36:mirrorshot",
     "42:shiftgear",
     "48:zapcannon",
     "54:hyperbeam",
     "tm:allyswitch",
     "tm:assurance",
+    "tm:bind",
+    "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:gravity",
     "tm:hyperbeam",
     "tm:irondefense",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:metalsound",
     "tm:powergem",
     "tm:protect",
+    "tm:recycle",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:rockpolish",
     "tm:rocksmash",
-    "tm:round",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:steelbeam",
+    "tm:steelroller",
     "tm:substitute",
-    "tm:swagger",
+    "tm:telekinesis",
+    "tm:terablast",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:uproar",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:allyswitch",
     "tutor:bind",
     "tutor:chargebeam",
+    "tutor:flashcannon",
     "tutor:gravity",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:magiccoat",
     "tutor:magnetrise",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:risingvoltage",
+    "tutor:rocksmash",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:steelbeam",
     "tutor:steelroller",
     "tutor:telekinesis",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.klang.desc"
+    "tutor:thunderbolt",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "klink",
   "evolutions": [
@@ -121,7 +189,9 @@
       "variant": "level_up",
       "result": "klinklang",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "magneticflux"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -129,24 +199,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.5,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 510,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

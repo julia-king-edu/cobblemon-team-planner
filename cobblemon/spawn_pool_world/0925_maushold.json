@@ -4,17 +4,17 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "maushold-1",
-            "pokemon": "maushold",
+            "id": "maushold-four-1",
+            "pokemon": "maushold maushold_family=four",
             "presets": [
                 "natural",
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "25-47",
-            "weight": 0.2,
+            "weight": 0.198,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -30,17 +30,43 @@
             }
         },
         {
-            "id": "maushold-2",
-            "pokemon": "maushold",
+            "id": "maushold-three-2",
+            "pokemon": "maushold maushold_family=three",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.002,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_temperate"
+                ]
+            }
+        },
+        {
+            "id": "maushold-four-3",
+            "pokemon": "maushold maushold_family=four",
             "presets": [
                 "natural",
                 "urban"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "25-47",
-            "weight": 0.6,
+            "weight": 0.594,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -62,16 +88,48 @@
             }
         },
         {
-            "id": "maushold-3",
-            "pokemon": "maushold",
+            "id": "maushold-three-4",
+            "pokemon": "maushold maushold_family=three",
+            "presets": [
+                "natural",
+                "urban"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.006,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_sandy"
+                ]
+            }
+        },
+        {
+            "id": "maushold-four-5",
+            "pokemon": "maushold maushold_family=four",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "25-47",
-            "weight": 0.6,
+            "weight": 0.594,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -96,20 +154,110 @@
             }
         },
         {
-            "id": "maushold-4",
-            "pokemon": "maushold",
+            "id": "maushold-three-6",
+            "pokemon": "maushold maushold_family=three",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.006,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "day"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "structures": [
+                    "#minecraft:village"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing",
+                    "#cobblemon:is_sandy"
+                ]
+            }
+        },
+        {
+            "id": "maushold-four-7",
+            "pokemon": "maushold maushold_family=four",
             "presets": [
                 "mansion"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "25-47",
-            "weight": 1.0,
+            "weight": 0.99,
             "condition": {
                 "canSeeSky": false,
                 "biomes": [
                     "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "maushold-three-8",
+            "pokemon": "maushold maushold_family=three",
+            "presets": [
+                "mansion"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.01,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        },
+        {
+            "id": "maushold-four-9",
+            "pokemon": "maushold maushold_family=four",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.198,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether"
+                ]
+            }
+        },
+        {
+            "id": "maushold-three-10",
+            "pokemon": "maushold maushold_family=three",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "25-47",
+            "weight": 0.002,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether"
                 ]
             }
         }

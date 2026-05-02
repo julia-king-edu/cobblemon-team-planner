@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Dratini",
   "nationalPokedexNumber": 147,
+  "name": "Dratini",
   "primaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 33,
+  "pokedex": [
+    "cobblemon.species.dratini.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "shedskin",
     "h:marvelscale"
+  ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
   ],
   "baseStats": {
     "hp": 41,
@@ -15,29 +29,66 @@
     "special_defence": 50,
     "speed": 50
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 60,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 40,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
+  "baseFriendship": 35,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1.8,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
-        "canSwimInWater": true,
         "canBreatheUnderwater": true,
+        "swimSpeed": "0.2",
         "canWalkOnWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dratini",
+          "tier": 1
+        },
+        {
+          "pokemon": "milotic",
+          "tier": 2
+        },
+        {
+          "pokemon": "dragonair",
+          "tier": 3
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -62,12 +113,11 @@
     ]
   },
   "moves": [
-    "1:leer",
     "1:wrap",
+    "1:leer",
     "5:twister",
     "10:thunderwave",
     "15:dragonrage",
-    "15:dragontail",
     "20:agility",
     "25:slam",
     "31:aquatail",
@@ -79,26 +129,18 @@
     "60:hyperbeam",
     "egg:aquajet",
     "egg:dragonbreath",
-    "egg:dragondance",
-    "egg:dragonpulse",
-    "egg:dragonrush",
     "egg:extremespeed",
-    "egg:haze",
-    "egg:irontail",
-    "egg:lightscreen",
     "egg:mist",
     "egg:supersonic",
     "egg:waterpulse",
     "tm:agility",
-    "tm:attract",
+    "tm:aquatail",
+    "tm:bind",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brutalswing",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragondance",
@@ -109,12 +151,11 @@
     "tm:fireblast",
     "tm:firespin",
     "tm:flamethrower",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
@@ -123,103 +164,72 @@
     "tm:ironhead",
     "tm:irontail",
     "tm:lightscreen",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:scaleshot",
-    "tm:secretpower",
     "tm:shockwave",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
-    "tm:whirlpool",
-    "tutor:agility",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:bubblebeam",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dracometeor",
-    "tutor:dragonbreath",
     "tutor:dragonpulse",
-    "tutor:dragonrage",
-    "tutor:dragontail",
-    "tutor:endure",
-    "tutor:extremespeed",
-    "tutor:facade",
-    "tutor:fireblast",
     "tutor:flamethrower",
-    "tutor:frustration",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:icebeam",
     "tutor:icywind",
+    "tutor:ironhead",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:lightscreen",
-    "tutor:mimic",
-    "tutor:mist",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
-    "tutor:safeguard",
     "tutor:scaleshot",
     "tutor:shockwave",
-    "tutor:skullbash",
-    "tutor:slam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:supersonic",
-    "tutor:surf",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:takedown",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:thunderwave",
-    "tutor:toxic",
     "tutor:twister",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:wrap",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.dratini.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:watergun",
+    "legacy:whirlpool",
+    "legacy:zapcannon"
   ],
   "evolutions": [
     {
@@ -233,26 +243,39 @@
           "variant": "level",
           "minLevel": 30
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 33,
-  "aspects": [],
-  "cannotDynamax": false
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": "20-40"
+      },
+      "ACCELERATION": {
+        "ranges": "50-100"
+      },
+      "SKILL": {
+        "ranges": "5-10"
+      },
+      "JUMP": {
+        "ranges": "5-10"
+      },
+      "STAMINA": {
+        "ranges": "25-50"
+      }
+    },
+    "seats": [],
+    "behaviour": null
+  }
 }

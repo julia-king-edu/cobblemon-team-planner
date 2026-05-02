@@ -1,11 +1,80 @@
 {
   "implemented": true,
-  "name": "Mismagius",
   "nationalPokedexNumber": 429,
+  "name": "Mismagius",
   "primaryType": "ghost",
-  "abilities": [
-    "levitate"
+  "maleRatio": 0.5,
+  "height": 9,
+  "weight": 44,
+  "pokedex": [
+    "cobblemon.species.mismagius.desc"
   ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "abilities": [
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 60,
+    "defence": 60,
+    "special_attack": 105,
+    "special_defence": 105,
+    "speed": 105
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "fast",
+  "catchRate": 45,
+  "eggCycles": 25,
+  "baseFriendship": 35,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 2.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -23,46 +92,38 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 60,
-    "defence": 60,
-    "special_attack": 105,
-    "special_defence": 105,
-    "speed": 105
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 173,
-  "experienceGroup": "fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "amorphous"
-  ],
   "moves": [
-    "1:astonish",
-    "1:growl",
     "1:luckychant",
     "1:magicalleaf",
-    "1:mysticalfire",
-    "1:phantomforce",
-    "1:powergem",
+    "1:growl",
     "1:psywave",
     "1:spite",
-    "tm:aerialace",
-    "tm:attract",
+    "1:astonish",
+    "1:mysticalfire",
+    "1:powergem",
+    "1:phantomforce",
+    "1:meanlook",
+    "1:perishsong",
+    "1:confusion",
+    "egg:curse",
+    "egg:destinybond",
+    "egg:imprison",
+    "egg:mefirst",
+    "egg:memento",
+    "egg:screech",
+    "egg:shadowsneak",
+    "egg:spite",
+    "egg:suckerpunch",
+    "egg:wonderroom",
+    "tm:allyswitch",
     "tm:burningjealousy",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:darkpulse",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:dreameater",
     "tm:echoedvoice",
@@ -73,22 +134,27 @@
     "tm:faketears",
     "tm:flash",
     "tm:foulplay",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
+    "tm:grudge",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:hypervoice",
     "tm:icywind",
     "tm:imprison",
+    "tm:laserfocus",
     "tm:lashout",
     "tm:magicalleaf",
+    "tm:magiccoat",
+    "tm:magicroom",
+    "tm:mysticalfire",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:painsplit",
     "tm:payback",
     "tm:phantomforce",
@@ -102,10 +168,8 @@
     "tm:psyshock",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shadowball",
     "tm:shockwave",
     "tm:skillswap",
@@ -115,8 +179,8 @@
     "tm:spite",
     "tm:storedpower",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:taunt",
     "tm:telekinesis",
@@ -126,60 +190,73 @@
     "tm:thunderbolt",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:willowisp",
+    "tm:wonderroom",
     "tutor:allyswitch",
+    "tutor:burningjealousy",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
+    "tutor:dazzlinggleam",
+    "tutor:energyball",
     "tutor:foulplay",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:hypervoice",
     "tutor:icywind",
     "tutor:laserfocus",
+    "tutor:lashout",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
     "tutor:magicroom",
+    "tutor:mysticalfire",
     "tutor:ominouswind",
     "tutor:painsplit",
+    "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
     "tutor:suckerpunch",
     "tutor:swift",
     "tutor:telekinesis",
+    "tutor:thunderbolt",
     "tutor:trick",
-    "tutor:uproar",
-    "tutor:wonderroom"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.mismagius.desc"
+    "tutor:wonderroom",
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:inferno",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar",
+    "legacy:zapcannon"
   ],
   "preEvolution": "misdreavus",
   "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 44,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 6,
+    "liquidGlowMode": "BOTH"
+  }
 }

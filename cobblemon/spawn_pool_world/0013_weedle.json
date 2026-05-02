@@ -11,7 +11,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-20",
             "weight": 7.0,
@@ -20,7 +20,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_forest",
-                    "#cobblemon:is_jungle"
+                    "#cobblemon:is_jungle",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
                 ]
             },
             "anticondition": {
@@ -33,7 +35,7 @@
             "id": "weedle-2",
             "pokemon": "weedle",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-20",
             "weight": 3.0,

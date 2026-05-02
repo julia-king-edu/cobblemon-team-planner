@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "22-46",
             "weight": 0.18,
@@ -38,7 +38,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "22-46",
             "weight": 0.18,
@@ -70,7 +70,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "22-46",
             "weight": 0.9,
@@ -102,7 +102,7 @@
                 "derelict"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "22-46",
             "weight": 1.52,
@@ -133,7 +133,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "22-46",
             "weight": 0.9,
@@ -159,7 +159,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "22-46",
             "weight": 1.52,
@@ -168,6 +168,25 @@
                 "maxSkyLight": 7,
                 "biomes": [
                     "#cobblemon:is_deep_dark"
+                ]
+            }
+        },
+        {
+            "id": "golbat-9",
+            "pokemon": "golbat",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "22-46",
+            "weight": 0.9,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
                 ]
             }
         }

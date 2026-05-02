@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Litten",
   "nationalPokedexNumber": 725,
+  "name": "Litten",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 43,
+  "pokedex": [
+    "cobblemon.species.litten.desc"
+  ],
+  "labels": [
+    "gen7",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:intimidate"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 45,
@@ -15,15 +29,70 @@
     "special_defence": 40,
     "speed": 70
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 64,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "standingEyeHeight": 0.7,
+  "swimmingEyeHeight": 0.7,
+  "flyingEyeHeight": 0.7,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.15,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.13
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "times": [
+        "167-11833,13702-22299"
+      ],
+      "drowsyChance": 0.0021,
+      "rouseChance": 0.0042
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "litten",
+          "tier": 1
+        },
+        {
+          "pokemon": "torracat",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -38,12 +107,12 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:scratch",
+    "1:growl",
+    "1:leer",
     "3:ember",
     "6:lick",
     "9:roar",
-    "11:leer",
     "12:furyswipes",
     "15:bite",
     "18:doublekick",
@@ -53,23 +122,15 @@
     "30:flamethrower",
     "33:thrash",
     "36:flareblitz",
-    "46:outrage",
-    "egg:bodyslam",
-    "egg:crunch",
     "egg:fakeout",
-    "egg:heatwave",
-    "egg:nastyplot",
     "egg:partingshot",
     "egg:powertrip",
-    "egg:revenge",
     "tm:acrobatics",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulkup",
-    "tm:confide",
+    "tm:covet",
     "tm:crunch",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
@@ -80,10 +141,8 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:leechlife",
     "tm:nastyplot",
     "tm:outrage",
@@ -91,14 +150,11 @@
     "tm:payday",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
     "tm:roar",
-    "tm:round",
     "tm:scaryface",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
     "tm:swagger",
@@ -108,23 +164,32 @@
     "tm:temperflare",
     "tm:terablast",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uturn",
     "tm:willowisp",
     "tm:workup",
+    "tutor:bulkup",
     "tutor:covet",
     "tutor:endeavor",
+    "tutor:firefang",
     "tutor:firepledge",
+    "tutor:flamethrower",
     "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:leechlife",
     "tutor:outrage",
-    "tutor:snore"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.litten.desc"
+    "tutor:rest",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -140,24 +205,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 4,
-  "weight": 43,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

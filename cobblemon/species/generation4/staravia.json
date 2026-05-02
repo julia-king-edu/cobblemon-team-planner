@@ -1,13 +1,101 @@
 {
   "implemented": true,
-  "name": "Staravia",
   "nationalPokedexNumber": 397,
+  "name": "Staravia",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 155,
+  "pokedex": [
+    "cobblemon.species.staravia.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "intimidate",
     "h:reckless"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 75,
+    "defence": 50,
+    "special_attack": 40,
+    "special_defence": 40,
+    "speed": 80
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 119,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "pidgeotto",
+          "tier": 1
+        },
+        {
+          "pokemon": "tranquill",
+          "tier": 1
+        },
+        {
+          "pokemon": "pidgeot mega=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "unfezant",
+          "tier": 2
+        },
+        {
+          "pokemon": "pidgeot mega",
+          "tier": 3
+        },
+        {
+          "pokemon": "staravia",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -28,34 +116,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 75,
-    "defence": 50,
-    "special_attack": 40,
-    "special_defence": 40,
-    "speed": 80
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 119,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
+    "1:tackle",
     "1:growl",
     "1:quickattack",
-    "1:tackle",
     "9:wingattack",
     "13:doubleteam",
     "18:endeavor",
@@ -65,15 +129,22 @@
     "38:agility",
     "43:bravebird",
     "48:finalgambit",
+    "egg:astonish",
+    "egg:detect",
+    "egg:doubleedge",
+    "egg:featherdance",
+    "egg:foresight",
+    "egg:furyattack",
+    "egg:mirrormove",
+    "egg:pursuit",
+    "egg:sandattack",
+    "egg:uproar",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:bravebird",
-    "tm:captivate",
-    "tm:confide",
     "tm:defog",
     "tm:doubleedge",
     "tm:doubleteam",
@@ -84,56 +155,58 @@
     "tm:facade",
     "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hurricane",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
+    "tm:revenge",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:twister",
     "tm:uproar",
     "tm:uturn",
     "tm:workup",
+    "tutor:aerialace",
     "tutor:aircutter",
     "tutor:defog",
+    "tutor:dualwingbeat",
     "tutor:endeavor",
-    "tutor:featherdance",
     "tutor:heatwave",
-    "tutor:mudslap",
+    "tutor:helpinghand",
     "tutor:ominouswind",
+    "tutor:rest",
     "tutor:roost",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:swift",
     "tutor:tailwind",
     "tutor:twister",
     "tutor:uproar",
-    "tutor:wingattack"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.staravia.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "starly",
   "evolutions": [
@@ -152,24 +225,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 6,
-  "weight": 155,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,23 +1,27 @@
 {
   "implemented": true,
-  "name": "Yanma",
   "nationalPokedexNumber": 193,
+  "name": "Yanma",
   "primaryType": "bug",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 380,
+  "pokedex": [
+    "cobblemon.species.yanma.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "speedboost",
     "compoundeyes",
     "h:frisk"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:charti_berry",
-        "percentage": 2.5
-      }
-    ]
-  },
+  "eggGroups": [
+    "bug"
+  ],
   "baseStats": {
     "hp": 65,
     "attack": 65,
@@ -26,36 +30,68 @@
     "special_defence": 45,
     "speed": 95
   },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 78,
   "experienceGroup": "medium_fast",
+  "catchRate": 75,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.99,
+    "height": 0.75,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
       },
       "swim": {
-        "canWalkOnWater": true
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
       }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     }
   },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:wide_lens",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:foresight",
     "1:tackle",
+    "1:foresight",
+    "1:sonicboom",
     "6:quickattack",
     "11:doubleteam",
     "14:aircutter",
-    "14:sonicboom",
     "17:detect",
     "22:supersonic",
     "27:uproar",
-    "30:bugbite",
     "30:pursuit",
     "33:ancientpower",
     "38:hypnosis",
@@ -67,21 +103,15 @@
     "egg:doubleedge",
     "egg:feint",
     "egg:feintattack",
-    "egg:leechlife",
     "egg:pursuit",
-    "egg:reversal",
     "egg:secretpower",
-    "egg:signalbeam",
-    "egg:silverwind",
     "egg:whirlwind",
     "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bugbite",
     "tm:bugbuzz",
-    "tm:captivate",
-    "tm:confide",
     "tm:defog",
     "tm:doubleedge",
     "tm:doubleteam",
@@ -89,94 +119,73 @@
     "tm:endure",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:gigadrain",
-    "tm:hiddenpower",
+    "tm:gust",
+    "tm:headbutt",
     "tm:leechlife",
     "tm:lunge",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:pounce",
     "tm:protect",
     "tm:psychic",
     "tm:psychicnoise",
     "tm:psychup",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roost",
-    "tm:round",
+    "tm:screech",
     "tm:secretpower",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:silverwind",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:steelwing",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:uproar",
     "tm:uturn",
+    "tutor:aerialace",
     "tutor:aircutter",
     "tutor:ancientpower",
-    "tutor:attract",
     "tutor:bugbite",
-    "tutor:curse",
     "tutor:defog",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
-    "tutor:endure",
-    "tutor:feint",
-    "tutor:flash",
-    "tutor:foresight",
-    "tutor:frustration",
     "tutor:gigadrain",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:leechlife",
-    "tutor:mimic",
     "tutor:ominouswind",
-    "tutor:protect",
-    "tutor:quickattack",
+    "tutor:psychic",
     "tutor:rest",
-    "tutor:return",
-    "tutor:reversal",
     "tutor:roost",
-    "tutor:screech",
+    "tutor:shadowball",
     "tutor:signalbeam",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:sonicboom",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:supersonic",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:tackle",
     "tutor:tailwind",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:uproar",
-    "tutor:whirlwind",
-    "tutor:wingattack"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.yanma.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -190,26 +199,18 @@
           "variant": "has_move",
           "move": "ancientpower"
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.99,
-    "height": 0.75,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 12,
-  "weight": 380,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

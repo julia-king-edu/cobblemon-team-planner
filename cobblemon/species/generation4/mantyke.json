@@ -1,12 +1,27 @@
 {
-  "name": "Mantyke",
+  "implemented": true,
   "nationalPokedexNumber": 458,
+  "name": "Mantyke",
   "primaryType": "water",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 650,
+  "pokedex": [
+    "cobblemon.species.mantyke.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "waterabsorb",
     "h:waterveil"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 45,
@@ -16,128 +31,169 @@
     "special_defence": 120,
     "speed": 50
   },
-  "catchRate": 25,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 69,
   "experienceGroup": "slow",
+  "catchRate": 25,
   "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.3,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "mantyke",
+          "tier": 1
+        },
+        {
+          "pokemon": "mantine",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:cod",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:wacan_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:bubble",
     "1:tackle",
+    "1:bubble",
     "1:watergun",
-    "3:supersonic",
     "4:supersonic",
-    "7:bubblebeam",
     "8:wingattack",
-    "10:bubblebeam",
-    "11:confuseray",
     "12:waterpulse",
-    "13:headbutt",
-    "14:wingattack",
-    "16:headbutt",
     "16:wideguard",
-    "19:agility",
-    "19:waterpulse",
     "20:agility",
-    "22:wingattack",
-    "23:wideguard",
     "24:bubblebeam",
-    "27:takedown",
     "28:headbutt",
-    "28:waterpulse",
-    "31:takedown",
-    "32:agility",
     "32:airslash",
-    "36:airslash",
     "36:aquaring",
-    "37:confuseray",
-    "39:aquaring",
     "40:bounce",
     "44:takedown",
-    "46:aquaring",
-    "46:bounce",
     "48:hydropump",
-    "49:hydropump",
-    "egg:amnesia",
     "egg:confuseray",
     "egg:haze",
-    "egg:hydropump",
     "egg:mirrorcoat",
     "egg:mudsport",
-    "egg:rockslide",
-    "egg:signalbeam",
     "egg:slam",
     "egg:splash",
     "egg:tailwind",
     "egg:twister",
     "egg:watersport",
-    "egg:wideguard",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
+    "tm:aircutter",
     "tm:airslash",
     "tm:amnesia",
-    "tm:attract",
     "tm:blizzard",
     "tm:bounce",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
+    "tm:confuseray",
     "tm:dive",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:hail",
+    "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
-    "tm:round",
     "tm:scald",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
-    "tm:toxic",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
+    "tutor:aerialace",
     "tutor:aircutter",
     "tutor:bounce",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:headbutt",
     "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:swift",
     "tutor:tailwind",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen4",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.mantyke.desc"
+    "tutor:twister",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -154,37 +210,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 650,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:cod",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:wacan_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

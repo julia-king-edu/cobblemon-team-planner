@@ -11,7 +11,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "17-38",
             "weight": 0.54,
@@ -34,7 +34,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "17-38",
             "weight": 0.54,
@@ -47,6 +47,27 @@
             "anticondition": {
                 "biomes": [
                     "#cobblemon:nether/is_warped"
+                ]
+            }
+        },
+        {
+            "id": "fletchinder-4",
+            "pokemon": "fletchinder",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "17-38",
+            "weight": 0.54,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
                 ]
             }
         }

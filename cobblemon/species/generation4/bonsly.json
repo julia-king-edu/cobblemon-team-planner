@@ -1,13 +1,81 @@
 {
   "implemented": true,
-  "name": "Bonsly",
   "nationalPokedexNumber": 438,
+  "name": "Bonsly",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 150,
+  "pokedex": [
+    "cobblemon.species.bonsly.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "rockhead",
     "h:rattled"
   ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 80,
+    "defence": 95,
+    "special_attack": 10,
+    "special_defence": 45,
+    "speed": 10
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "sudowoodo",
+          "tier": 1
+        }
+      ]
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,98 +89,38 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 50,
-    "attack": 80,
-    "defence": 95,
-    "special_attack": 10,
-    "special_defence": 45,
-    "speed": 10
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 58,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:copycat",
     "1:faketears",
+    "1:copycat",
     "4:flail",
-    "5:flail",
-    "6:flail",
-    "8:lowkick",
     "8:rockthrow",
-    "9:lowkick",
     "12:block",
-    "12:rockthrow",
-    "14:rockthrow",
-    "15:mimic",
     "16:mimic",
-    "17:mimic",
-    "19:feintattack",
     "20:rocktomb",
-    "22:block",
-    "22:rocktomb",
-    "22:tearfullook",
     "24:tearfullook",
-    "25:feintattack",
-    "26:block",
-    "26:rocktomb",
     "28:suckerpunch",
-    "29:block",
-    "29:rockslide",
-    "30:rocktomb",
     "32:rockslide",
-    "33:counter",
-    "33:rockslide",
-    "36:counter",
     "36:lowkick",
-    "36:suckerpunch",
-    "38:slam",
     "40:counter",
-    "40:doubleedge",
-    "40:suckerpunch",
-    "41:suckerpunch",
-    "43:doubleedge",
     "44:doubleedge",
-    "46:doubleedge",
     "egg:curse",
     "egg:defensecurl",
-    "egg:endure",
+    "egg:feintattack",
     "egg:harden",
     "egg:headbutt",
     "egg:rockpolish",
     "egg:rollout",
-    "egg:sandtomb",
-    "egg:selfdestruct",
-    "egg:stealthrock",
-    "tm:attract",
+    "egg:slam",
+    "tm:afteryou",
+    "tm:block",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
+    "tm:covet",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -120,68 +128,73 @@
     "tm:facade",
     "tm:faketears",
     "tm:foulplay",
-    "tm:frustration",
     "tm:grassknot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:lowkick",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:powergem",
     "tm:protect",
     "tm:psychup",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:spikes",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
-    "tm:uproar",
     "tutor:afteryou",
     "tutor:block",
+    "tutor:bulldoze",
+    "tutor:calmmind",
     "tutor:covet",
     "tutor:earthpower",
     "tutor:foulplay",
-    "tutor:headbutt",
     "tutor:helpinghand",
     "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:roleplay",
     "tutor:rollout",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:spikes",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:suckerpunch",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen4",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.bonsly.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "evolutions": [
     {
@@ -199,24 +212,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.5,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 150,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

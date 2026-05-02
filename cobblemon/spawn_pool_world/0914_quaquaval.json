@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -23,7 +23,7 @@
                     "#cobblemon:is_river"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             },
             "anticondition": {
@@ -36,7 +36,7 @@
             "id": "quaquaval-2",
             "pokemon": "quaquaval",
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -59,7 +59,7 @@
             "id": "quaquaval-3",
             "pokemon": "quaquaval",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,

@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Fearow",
   "nationalPokedexNumber": 22,
+  "name": "Fearow",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 380,
+  "pokedex": [
+    "cobblemon.species.fearow.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "h:sniper"
+  ],
+  "eggGroups": [
+    "flying"
   ],
   "baseStats": {
     "hp": 65,
@@ -16,29 +29,52 @@
     "special_defence": 61,
     "speed": 100
   },
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
   "baseExperienceYield": 155,
   "experienceGroup": "medium_fast",
+  "catchRate": 90,
   "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.35,
+    "height": 2,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
       },
-      "walk": {
-        "canWalk": true
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
-      "canSleep": false,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "fearow",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
   "drops": {
@@ -62,134 +98,152 @@
     ]
   },
   "moves": [
-    "1:drillrun",
+    "1:pluck",
+    "1:peck",
     "1:growl",
     "1:leer",
-    "1:peck",
-    "1:pluck",
     "1:pursuit",
+    "1:drillrun",
+    "8:assurance",
     "11:furyattack",
     "15:aerialace",
     "18:mirrormove",
-    "23:assurance",
+    "23:takedown",
     "27:agility",
     "32:focusenergy",
     "36:roost",
     "41:drillpeck",
+    "egg:astonish",
+    "egg:feintattack",
+    "egg:quickattack",
+    "egg:razorwind",
+    "egg:whirlwind",
     "tm:aerialace",
-    "tm:attract",
-    "tm:captivate",
-    "tm:confide",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:assurance",
+    "tm:batonpass",
+    "tm:bravebird",
     "tm:defog",
-    "tm:doubleteam",
+    "tm:drillrun",
+    "tm:dualwingbeat",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
+    "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
+    "tm:focusenergy",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:heatwave",
     "tm:hyperbeam",
-    "tm:naturalgift",
+    "tm:laserfocus",
+    "tm:mudslap",
+    "tm:ominouswind",
+    "tm:payday",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
+    "tm:scaryface",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:throatchop",
+    "tm:triattack",
+    "tm:twister",
+    "tm:uproar",
     "tm:uturn",
+    "tm:wingattack",
     "tm:workup",
-    "tutor:agility",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:curse",
     "tutor:defog",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:drillpeck",
     "tutor:drillrun",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fly",
+    "tutor:dualwingbeat",
+    "tutor:falseswipe",
     "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:furyattack",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:heatwave",
-    "tutor:hiddenpower",
     "tutor:hyperbeam",
     "tutor:laserfocus",
-    "tutor:leer",
-    "tutor:mimic",
-    "tutor:mirrormove",
     "tutor:mudslap",
     "tutor:ominouswind",
-    "tutor:peck",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:quickattack",
-    "tutor:rage",
-    "tutor:razorwind",
     "tutor:rest",
-    "tutor:return",
     "tutor:roost",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelwing",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:swift",
     "tutor:tailwind",
-    "tutor:takedown",
-    "tutor:thief",
     "tutor:throatchop",
-    "tutor:toxic",
-    "tutor:triattack",
     "tutor:twister",
     "tutor:uproar",
-    "tutor:uturn",
-    "tutor:whirlwind"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.fearow.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
   "preEvolution": "spearow",
   "evolutions": [],
-  "baseScale": 1.3,
-  "hitbox": {
-    "width": 1,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 12,
-  "weight": 380,
-  "aspects": [],
-  "cannotDynamax": false
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": {
+          "LAND": "10-20",
+          "AIR": "30-74"
+        }
+      },
+      "ACCELERATION": {
+        "ranges": {
+          "LAND": "5-100",
+          "AIR": "25-60"
+        }
+      },
+      "SKILL": {
+        "ranges": {
+          "LAND": "15-30",
+          "AIR": "30-50"
+        }
+      },
+      "JUMP": {
+        "ranges": {
+          "LAND": "10-20",
+          "AIR": "25-50"
+        }
+      },
+      "STAMINA": {
+        "ranges": {
+          "LAND": "15-30",
+          "AIR": "25-60"
+        }
+      }
+    },
+    "seats": [],
+    "behaviour": {
+      "key": "cobblemon:land/horse"
+    }
+  }
 }

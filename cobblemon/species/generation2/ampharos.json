@@ -1,12 +1,88 @@
 {
   "implemented": true,
-  "name": "Ampharos",
   "nationalPokedexNumber": 181,
+  "name": "Ampharos",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 615,
+  "pokedex": [
+    "cobblemon.species.ampharos.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "static",
     "h:plus"
   ],
+  "eggGroups": [
+    "monster",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 75,
+    "defence": 85,
+    "special_attack": 115,
+    "special_defence": 90,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 255,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 2.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ampharos mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "ampharos mega",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -20,94 +96,17 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 90,
-    "attack": 75,
-    "defence": 85,
-    "special_attack": 115,
-    "special_defence": 90,
-    "speed": 55
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "electric",
-      "secondaryType": "dragon",
-      "abilities": [
-        "moldbreaker"
-      ],
-      "baseStats": {
-        "hp": 90,
-        "attack": 95,
-        "defence": 105,
-        "special_attack": 165,
-        "special_defence": 110,
-        "speed": 45
-      },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 230,
-      "baseFriendship": 70,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 3,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "field"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 14,
-      "weight": 615,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
-  "baseExperienceYield": 230,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:dragonpulse",
     "1:firepunch",
-    "1:growl",
-    "1:iondeluge",
-    "1:magneticflux",
     "1:tackle",
-    "1:thunderpunch",
+    "1:growl",
     "1:thundershock",
     "1:thunderwave",
+    "1:thunderpunch",
     "1:zapcannon",
+    "1:magneticflux",
+    "1:iondeluge",
+    "1:dragonpulse",
     "11:cottonspore",
     "16:charge",
     "20:takedown",
@@ -117,25 +116,29 @@
     "40:discharge",
     "46:cottonguard",
     "51:dazzlinggleam",
-    "51:signalbeam",
     "57:lightscreen",
     "62:thunder",
+    "egg:afteryou",
+    "egg:agility",
+    "egg:eerieimpulse",
+    "egg:electricterrain",
+    "egg:electroweb",
+    "egg:flatter",
+    "egg:odorsleuth",
+    "egg:sandattack",
+    "tm:afteryou",
     "tm:agility",
-    "tm:attract",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
     "tm:dazzlinggleam",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragoncheer",
     "tm:dragonpulse",
     "tm:dragontail",
@@ -152,17 +155,20 @@
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icepunch",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:lightscreen",
     "tm:lowkick",
+    "tm:magnetrise",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:meteorbeam",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:powergem",
     "tm:poweruppunch",
@@ -170,21 +176,20 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:roar",
     "tm:rockclimb",
     "tm:rocksmash",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:supercellslam",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
@@ -192,87 +197,130 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:cottonspore",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
     "tutor:dragonpulse",
-    "tutor:dynamicpunch",
     "tutor:electroweb",
-    "tutor:endure",
+    "tutor:endeavor",
     "tutor:firepunch",
-    "tutor:flash",
     "tutor:focuspunch",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
+    "tutor:icepunch",
     "tutor:irontail",
     "tutor:laserfocus",
-    "tutor:lightscreen",
+    "tutor:lowkick",
     "tutor:magnetrise",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
+    "tutor:meteorbeam",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
+    "tutor:risingvoltage",
     "tutor:rocksmash",
-    "tutor:seismictoss",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swift",
-    "tutor:tackle",
-    "tutor:thunder",
+    "tutor:stompingtantrum",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thundershock",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.ampharos.desc"
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:zapcannon",
+    "special:holdback"
   ],
   "preEvolution": "flaaffy",
   "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 2.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 14,
-  "weight": 615,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "electric",
+      "secondaryType": "dragon",
+      "maleRatio": 0.5,
+      "height": 14,
+      "weight": 615,
+      "pokedex": [
+        "cobblemon.species.ampharos-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "moldbreaker",
+        "h:moldbreaker"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 95,
+        "defence": 105,
+        "special_attack": 165,
+        "special_defence": 110,
+        "speed": 45
+      },
+      "baseExperienceYield": 305,
+      "dynamaxBlocked": true,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.2
+          },
+          "swim": {
+            "avoidsWater": true,
+            "canSwimInWater": false
+          }
+        },
+        "resting": {
+          "canSleep": true,
+          "light": "0-4",
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        },
+        "herd": {
+          "maxSize": "9"
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "lightingData": {
+        "lightLevel": 13,
+        "liquidGlowMode": "BOTH"
+      }
+    }
+  ],
+  "lightingData": {
+    "lightLevel": 12,
+    "liquidGlowMode": "BOTH"
+  }
 }

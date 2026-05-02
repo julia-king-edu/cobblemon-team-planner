@@ -7,7 +7,7 @@
             "id": "palossand-1",
             "pokemon": "palossand",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "42-48",
             "weight": 0.2,

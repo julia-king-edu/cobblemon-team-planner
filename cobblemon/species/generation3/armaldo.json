@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Armaldo",
   "nationalPokedexNumber": 348,
+  "name": "Armaldo",
   "primaryType": "rock",
   "secondaryType": "bug",
+  "maleRatio": 0.875,
+  "height": 15,
+  "weight": 682,
+  "pokedex": [
+    "cobblemon.species.armaldo.desc"
+  ],
+  "labels": [
+    "gen3",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "battlearmor",
     "h:swiftswim"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 75,
@@ -16,42 +30,66 @@
     "special_defence": 80,
     "speed": 45
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "erratic",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 2.2,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
         "swimSpeed": 0.3,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
+        "canBreatheUnderwater": true
       },
       "walk": {
-        "avoidsLand": false,
         "walkSpeed": 0.16
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 173,
-  "experienceGroup": "erratic",
-  "eggCycles": 30,
-  "eggGroups": [
-    "water_3"
-  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:quick_claw",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
-    "1:furycutter",
+    "1:scratch",
     "1:harden",
     "1:mudsport",
-    "1:scratch",
-    "1:smackdown",
     "1:watergun",
+    "1:furycutter",
+    "1:smackdown",
     "12:metalclaw",
     "16:ancientpower",
     "20:bugbite",
@@ -61,130 +99,119 @@
     "36:rockblast",
     "43:protect",
     "48:xscissor",
+    "egg:aquajet",
+    "egg:curse",
+    "egg:knockoff",
+    "egg:rapidspin",
+    "egg:sandattack",
+    "egg:waterpulse",
     "tm:aerialace",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
+    "tm:block",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brine",
     "tm:brutalswing",
+    "tm:bugbite",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crosspoison",
+    "tm:curse",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:irondefense",
     "tm:irontail",
+    "tm:knockoff",
     "tm:liquidation",
     "tm:lowkick",
+    "tm:metalclaw",
+    "tm:meteorbeam",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterpulse",
     "tm:xscissor",
+    "tutor:aerialace",
     "tutor:ancientpower",
     "tutor:aquatail",
     "tutor:block",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:doubleedge",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:endure",
+    "tutor:falseswipe",
+    "tutor:flashcannon",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:liquidation",
     "tutor:lowkick",
     "tutor:meteorbeam",
-    "tutor:mimic",
     "tutor:mudslap",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:stringshot",
-    "tutor:substitute",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.armaldo.desc"
+    "tutor:waterpulse",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "anorith",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 15,
-  "weight": 682,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:turtle_scute",
-        "quantityRange": "0-3"
-      }
-    ]
-  }
+  "evolutions": []
 }

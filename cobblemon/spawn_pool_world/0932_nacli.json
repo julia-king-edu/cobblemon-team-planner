@@ -11,7 +11,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "3-28",
             "weight": 5.4,
@@ -32,7 +32,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "3-28",
             "weight": 9.0
@@ -41,7 +41,7 @@
             "id": "nacli-3",
             "pokemon": "nacli",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "3-28",
             "weight": 9.0,

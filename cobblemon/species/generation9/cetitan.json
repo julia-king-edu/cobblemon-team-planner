@@ -1,13 +1,83 @@
 {
   "implemented": true,
-  "name": "Cetitan",
   "nationalPokedexNumber": 975,
+  "name": "Cetitan",
   "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 45,
+  "weight": 7000,
+  "pokedex": [
+    "cobblemon.species.cetitan.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "slushrush",
     "h:sheerforce"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 170,
+    "attack": 113,
+    "defence": 65,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 73
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 182,
+  "experienceGroup": "medium_slow",
+  "catchRate": 50,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 2.8,
+    "height": 2.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cetitan",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -21,47 +91,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 170,
-    "attack": 113,
-    "defence": 65,
-    "special_attack": 45,
-    "special_defence": 55,
-    "speed": 73
-  },
-  "catchRate": 50,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 182,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 25,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:powdersnow",
     "1:tackle",
+    "1:powdersnow",
     "6:growl",
     "9:echoedvoice",
     "12:iceshard",
@@ -75,17 +107,24 @@
     "44:icespinner",
     "49:doubleedge",
     "53:blizzard",
+    "egg:bellydrum",
+    "egg:entrainment",
+    "egg:iciclecrash",
+    "egg:superpower",
+    "egg:yawn",
     "tm:amnesia",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodypress",
     "tm:bodyslam",
+    "tm:bounce",
     "tm:bulldoze",
     "tm:charm",
     "tm:chillingwater",
     "tm:curse",
     "tm:doubleedge",
     "tm:earthquake",
+    "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:gigaimpact",
@@ -111,26 +150,30 @@
     "tm:snowscape",
     "tm:stompingtantrum",
     "tm:substitute",
+    "tm:superpower",
     "tm:takedown",
     "tm:terablast",
-    "tm:waterpulse"
+    "tm:waterpulse",
+    "tutor:bounce",
+    "tutor:bulldoze",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:waterpulse"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 45,
-  "weight": 7000,
   "preEvolution": "cetoddle",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 2.8,
-    "height": 2.8,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.cetitan.desc"
-  ]
+  "evolutions": []
 }

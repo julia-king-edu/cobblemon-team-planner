@@ -1,19 +1,82 @@
 {
   "implemented": true,
-  "name": "Maractus",
   "nationalPokedexNumber": 556,
+  "name": "Maractus",
   "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 280,
+  "pokedex": [
+    "cobblemon.species.maractus.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "waterabsorb",
     "chlorophyll",
     "h:stormdrain"
   ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 86,
+    "defence": 67,
+    "special_attack": 106,
+    "special_defence": 67,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 161,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "walk": {
+      "walkSpeed": 0.27
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
-    "amount": 4,
+    "amount": 5,
     "entries": [
       {
         "item": "minecraft:cactus",
         "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:grassy_seed",
+        "percentage": 5.0
       },
       {
         "item": "cobblemon:miracle_seed",
@@ -25,35 +88,18 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 75,
-    "attack": 86,
-    "defence": 67,
-    "special_attack": 106,
-    "special_defence": 67,
-    "speed": 60
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 161,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
   "moves": [
-    "1:absorb",
-    "1:afteryou",
-    "1:ingrain",
     "1:peck",
+    "1:absorb",
+    "1:needlearm",
+    "1:ingrain",
+    "1:afteryou",
     "1:spikyshield",
     "4:growth",
     "8:megadrain",
     "12:leechseed",
     "16:suckerpunch",
     "20:pinmissile",
-    "22:needlearm",
     "24:gigadrain",
     "28:sweetscent",
     "32:synthesis",
@@ -64,101 +110,82 @@
     "52:acupressure",
     "56:petaldance",
     "60:cottonguard",
-    "egg:bounce",
-    "egg:bulletseed",
     "egg:grasswhistle",
-    "egg:grassyterrain",
     "egg:leechseed",
-    "egg:seedbomb",
-    "egg:spikes",
     "egg:woodhammer",
     "egg:worryseed",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:assurance",
-    "tm:attract",
     "tm:bounce",
     "tm:bulletseed",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:drainpunch",
+    "tm:endeavor",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
+    "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hypervoice",
+    "tm:knockoff",
     "tm:leafstorm",
     "tm:naturepower",
+    "tm:petalblizzard",
     "tm:pinmissile",
     "tm:poisonjab",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:screech",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spikes",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:synthesis",
+    "tm:terablast",
     "tm:throatchop",
-    "tm:toxic",
     "tm:uproar",
     "tm:weatherball",
+    "tm:worryseed",
+    "tutor:aerialace",
     "tutor:afteryou",
     "tutor:bounce",
     "tutor:drainpunch",
     "tutor:endeavor",
+    "tutor:energyball",
     "tutor:gigadrain",
     "tutor:grassyglide",
     "tutor:helpinghand",
     "tutor:hypervoice",
     "tutor:knockoff",
-    "tutor:leechseed",
-    "tutor:pinmissile",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:spikes",
+    "tutor:suckerpunch",
     "tutor:synthesis",
     "tutor:throatchop",
     "tutor:uproar",
-    "tutor:worryseed"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.maractus.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 280,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

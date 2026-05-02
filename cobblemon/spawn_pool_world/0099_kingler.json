@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "28-48",
             "weight": 1.0,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "common",
             "level": "28-48",
             "weight": 0.2,
@@ -45,15 +45,15 @@
             "id": "kingler-3",
             "pokemon": "kingler",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "28-48",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "0",
-                    "maxLureLevel": "1"
+                    "minLureLevel": 0,
+                    "maxLureLevel": 1
                 }
             },
             "condition": {
@@ -68,15 +68,15 @@
             "id": "kingler-4",
             "pokemon": "kingler",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "28-48",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "0",
-                    "maxLureLevel": "1"
+                    "minLureLevel": 0,
+                    "maxLureLevel": 1
                 }
             },
             "condition": {
@@ -96,7 +96,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "common",
             "level": "28-48",
             "weight": 0.2,
@@ -116,15 +116,15 @@
             "id": "kingler-6",
             "pokemon": "kingler",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "28-48",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "0",
-                    "maxLureLevel": "1"
+                    "minLureLevel": 0,
+                    "maxLureLevel": 1
                 }
             },
             "condition": {

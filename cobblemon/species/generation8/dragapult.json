@@ -1,13 +1,28 @@
 {
   "implemented": true,
-  "name": "Dragapult",
   "nationalPokedexNumber": 887,
+  "name": "Dragapult",
   "primaryType": "dragon",
   "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 30,
+  "weight": 500,
+  "pokedex": [
+    "cobblemon.species.dragapult.desc"
+  ],
+  "labels": [
+    "gen8",
+    "powerhouse"
+  ],
+  "aspects": [],
   "abilities": [
     "clearbody",
     "infiltrator",
     "h:cursedbody"
+  ],
+  "eggGroups": [
+    "amorphous",
+    "dragon"
   ],
   "baseStats": {
     "hp": 88,
@@ -17,43 +32,147 @@
     "special_defence": 75,
     "speed": 142
   },
-  "behaviour": {
-    "moving": {
-      "swim": {
-        "swimSpeed": 0.3,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "baseExperienceYield": 300,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "height": 3,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.33, 0, 1)",
+        "key": "cobblemon:air/jet",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "gravity": "q.gravity * (0.1 + (q.passenger_count - 1) * 0.1)",
+        "jumpVector": [
+          0,
+          "0.3*q.jump_strength/50",
+          0
+        ],
+        "stats": {
+          "ACCELERATION": "60-85",
+          "JUMP": "45-80",
+          "SKILL": "55-70",
+          "SPEED": "55-90",
+          "STAMINA": "25-35"
+        }
       },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "60-85",
+          "JUMP": "40-55",
+          "SKILL": "55-70",
+          "SPEED": "50-65",
+          "STAMINA": "25-35"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dragapult",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": 0.3
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "drowsyChance": 0.0021,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "167-11833,13702-22299"
+      ]
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 300,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "amorphous",
-    "dragon"
-  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
     "1:dragondarts",
-    "1:astonish",
-    "1:bite",
     "1:dragonbreath",
+    "1:astonish",
     "1:infestation",
     "1:quickattack",
-    "1:suckerpunch",
+    "1:bite",
     "6:lockon",
     "12:assurance",
     "18:hex",
@@ -66,11 +185,17 @@
     "63:dragonrush",
     "70:doubleedge",
     "78:lastresort",
+    "egg:confuseray",
+    "egg:curse",
+    "egg:disable",
+    "egg:doubleteam",
+    "egg:dragontail",
+    "egg:grudge",
+    "egg:suckerpunch",
     "tm:acrobatics",
     "tm:agility",
     "tm:allyswitch",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:beatup",
     "tm:bodyslam",
@@ -80,6 +205,7 @@
     "tm:curse",
     "tm:dive",
     "tm:doubleedge",
+    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonclaw",
@@ -96,6 +222,8 @@
     "tm:hex",
     "tm:hydropump",
     "tm:hyperbeam",
+    "tm:infestation",
+    "tm:lastresort",
     "tm:lightscreen",
     "tm:nightshade",
     "tm:outrage",
@@ -105,14 +233,12 @@
     "tm:psychicfangs",
     "tm:reflect",
     "tm:rest",
-    "tm:round",
-    "tm:scald",
     "tm:shadowball",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:steelwing",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
     "tm:surf",
     "tm:swift",
@@ -125,47 +251,27 @@
     "tm:triattack",
     "tm:uturn",
     "tm:willowisp",
-    "tutor:dracometeor"
-  ],
-  "labels": [
-    "gen8",
-    "pseudo_legendary"
-  ],
-  "pokedex": [
-    "cobblemon.species.dragapult.desc"
+    "tutor:allyswitch",
+    "tutor:dive",
+    "tutor:dracometeor",
+    "tutor:dragonpulse",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:lastresort",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:snore"
   ],
   "preEvolution": "drakloak",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.2,
-    "height": 3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 30,
-  "weight": 500,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:phantom_membrane",
-        "percentage": 10.0
-      },
-      {
-        "item": "cobblemon:haban_berry",
-        "percentage": 10.0
-      }
-    ]
-  }
+  "evolutions": []
 }

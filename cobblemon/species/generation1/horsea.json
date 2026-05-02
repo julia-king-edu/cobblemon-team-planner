@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Horsea",
   "nationalPokedexNumber": 116,
+  "name": "Horsea",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 80,
+  "pokedex": [
+    "cobblemon.species.horsea.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "sniper",
     "h:damp"
+  ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
   ],
   "baseStats": {
     "hp": 30,
@@ -16,27 +30,72 @@
     "special_defence": 25,
     "speed": 60
   },
-  "catchRate": 225,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 59,
   "experienceGroup": "medium_fast",
+  "catchRate": 225,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
+      "walk": {
+        "walkSpeed": 0.2,
+        "avoidsLand": true
+      },
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "horsea",
+          "tier": 1
+        },
+        {
+          "pokemon": "seadra",
+          "tier": 2
+        },
+        {
+          "pokemon": "kingdra",
+          "tier": 3
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     }
   },
   "drops": {
-    "amount": 2,
+    "amount": 3,
     "entries": [
+      {
+        "item": "minecraft:ink_sac",
+        "quantityRange": "0-1"
+      },
       {
         "item": "minecraft:prismarine_shard",
         "quantityRange": "0-1"
@@ -57,8 +116,6 @@
     "20:dragonbreath",
     "25:bubblebeam",
     "30:agility",
-    "31:brine",
-    "35:laserfocus",
     "35:waterpulse",
     "40:dragonpulse",
     "45:hydropump",
@@ -67,26 +124,17 @@
     "egg:aurorabeam",
     "egg:clearsmog",
     "egg:disable",
-    "egg:dragonbreath",
     "egg:dragonrage",
     "egg:flail",
-    "egg:muddywater",
     "egg:octazooka",
-    "egg:outrage",
     "egg:razorwind",
-    "egg:signalbeam",
     "egg:splash",
-    "egg:waterpulse",
     "tm:agility",
-    "tm:attract",
     "tm:blizzard",
     "tm:bounce",
     "tm:brine",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:dive",
-    "tm:doubleteam",
     "tm:dragondance",
     "tm:dragonpulse",
     "tm:endure",
@@ -94,99 +142,69 @@
     "tm:flashcannon",
     "tm:flipturn",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
+    "tm:laserfocus",
     "tm:liquidation",
     "tm:muddywater",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scald",
     "tm:scaleshot",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:terablast",
-    "tm:toxic",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
-    "tutor:agility",
-    "tutor:attract",
-    "tutor:aurorabeam",
-    "tutor:bide",
-    "tutor:blizzard",
     "tutor:bounce",
-    "tutor:brine",
-    "tutor:bubble",
-    "tutor:bubblebeam",
-    "tutor:curse",
-    "tutor:disable",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dragonbreath",
     "tutor:dragonpulse",
-    "tutor:dragonrage",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flail",
     "tutor:flashcannon",
     "tutor:flipturn",
     "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
     "tutor:icebeam",
     "tutor:icywind",
-    "tutor:leer",
-    "tutor:mimic",
-    "tutor:octazooka",
+    "tutor:laserfocus",
+    "tutor:liquidation",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
-    "tutor:scald",
     "tutor:scaleshot",
     "tutor:signalbeam",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:smokescreen",
-    "tutor:snore",
-    "tutor:splash",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:takedown",
-    "tutor:toxic",
     "tutor:twister",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.horsea.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -202,24 +220,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.5,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 80,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

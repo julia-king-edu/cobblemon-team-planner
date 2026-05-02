@@ -1,12 +1,90 @@
 {
   "implemented": true,
-  "name": "Fuecoco",
   "nationalPokedexNumber": 909,
+  "name": "Fuecoco",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 98,
+  "pokedex": [
+    "cobblemon.species.fuecoco.desc"
+  ],
+  "labels": [
+    "gen9",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:unaware"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 67,
+    "attack": 45,
+    "defence": 59,
+    "special_attack": 63,
+    "special_defence": 40,
+    "speed": 36
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "fuecoco",
+          "tier": 1
+        },
+        {
+          "pokemon": "crocalor",
+          "tier": 2
+        },
+        {
+          "pokemon": "skeledirge",
+          "tier": 3
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true,
+        "canWalkOnLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,43 +94,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 67,
-    "attack": 45,
-    "defence": 59,
-    "special_attack": 63,
-    "special_defence": 40,
-    "speed": 36
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 62,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:ember",
-    "1:leer",
     "1:tackle",
+    "1:leer",
+    "1:ember",
     "7:round",
     "12:bite",
     "15:incinerate",
@@ -84,12 +129,14 @@
     "tm:heatwave",
     "tm:helpinghand",
     "tm:hypervoice",
+    "tm:incinerate",
     "tm:mudslap",
     "tm:outrage",
     "tm:overheat",
     "tm:protect",
     "tm:rest",
     "tm:roar",
+    "tm:round",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:snarl",
@@ -101,14 +148,23 @@
     "tm:terablast",
     "tm:thunderfang",
     "tm:willowisp",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:firefang",
+    "tutor:firepledge",
+    "tutor:flamethrower",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:stompingtantrum",
+    "tutor:thunderfang",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 4,
-  "weight": 98,
   "evolutions": [
     {
       "id": "fuecoco_crocalor",
@@ -124,14 +180,8 @@
       ]
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.1,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.fuecoco.desc"
-  ]
+  "lightingData": {
+    "lightLevel": 9,
+    "liquidGlowMode": "LAND"
+  }
 }

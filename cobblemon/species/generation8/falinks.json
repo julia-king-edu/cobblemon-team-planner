@@ -1,12 +1,83 @@
 {
   "implemented": true,
-  "name": "Falinks",
   "nationalPokedexNumber": 870,
+  "name": "Falinks",
   "primaryType": "fighting",
+  "maleRatio": -1,
+  "height": 30,
+  "weight": 620,
+  "pokedex": [
+    "cobblemon.species.falinks.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "battlearmor",
     "h:defiant"
   ],
+  "eggGroups": [
+    "fairy",
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 65,
+    "attack": 100,
+    "defence": 100,
+    "special_attack": 70,
+    "special_defence": 60,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 165,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 2,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "falinks",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+	  "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,35 +91,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 65,
-    "attack": 100,
-    "defence": 100,
-    "special_attack": 70,
-    "special_defence": 60,
-    "speed": 75
-  },
-  "behaviour": {
-    "moving": {
-      "canLook": false,
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 165,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "fairy",
-    "mineral"
-  ],
   "moves": [
-    "1:protect",
     "1:tackle",
+    "1:protect",
     "5:rocksmash",
     "10:focusenergy",
     "15:headbutt",
@@ -77,6 +122,7 @@
     "tm:focusblast",
     "tm:focusenergy",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:helpinghand",
     "tm:highhorsepower",
     "tm:hyperbeam",
@@ -95,12 +141,11 @@
     "tm:revenge",
     "tm:reversal",
     "tm:rockslide",
+    "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:screech",
     "tm:sleeptalk",
     "tm:smartstrike",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
@@ -112,32 +157,30 @@
     "tm:upperhand",
     "tm:uproar",
     "tm:zenheadbutt",
-    "tutor:coaching"
+    "tutor:bulkup",
+    "tutor:coaching",
+    "tutor:endeavor",
+    "tutor:falseswipe",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:knockoff",
+    "tutor:megahorn",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:sleeptalk",
+    "tutor:superpower",
+    "tutor:throatchop",
+    "tutor:uproar",
+    "tutor:zenheadbutt",
+    "legacy:round",
+    "legacy:snore"
   ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.falinks.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 2,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 30,
-  "weight": 620,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

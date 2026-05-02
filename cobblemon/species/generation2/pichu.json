@@ -1,15 +1,62 @@
 {
   "implemented": true,
-  "name": "Pichu",
   "nationalPokedexNumber": 172,
+  "name": "Pichu",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 20,
+  "pokedex": [
+    "cobblemon.species.pichu.desc"
+  ],
+  "labels": [
+    "gen2",
+    "baby",
+    "johtonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "static",
     "h:lightningrod"
   ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 20,
+    "attack": 40,
+    "defence": 15,
+    "special_attack": 35,
+    "special_defence": 35,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 41,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 10,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.4,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.9,
+    "fixed": false
+  },
   "drops": {
-    "amount": 2,
+    "amount": 3,
     "entries": [
+      {
+        "item": "cobblemon:light_ball",
+        "percentage": 2.5
+      },
       {
         "item": "cobblemon:thunder_stone",
         "percentage": 2.5
@@ -20,151 +67,31 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 20,
-    "attack": 40,
-    "defence": 15,
-    "special_attack": 35,
-    "special_defence": 35,
-    "speed": 60
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "forms": [
-    {
-      "name": "Spiky-eared",
-      "primaryType": "electric",
-      "abilities": [
-        "static"
-      ],
-      "baseStats": {
-        "hp": 20,
-        "attack": 40,
-        "defence": 15,
-        "special_attack": 35,
-        "special_defence": 35,
-        "speed": 60
-      },
-      "catchRate": 190,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 41,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 1
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 10,
-      "eggGroups": [
-        "undiscovered"
-      ],
-      "moves": [
-        "1:charm",
-        "1:thundershock",
-        "5:tailwhip",
-        "10:thunderwave",
-        "13:sweetkiss",
-        "18:nastyplot",
-        "tm:attract",
-        "tm:captivate",
-        "tm:chargebeam",
-        "tm:doubleteam",
-        "tm:endure",
-        "tm:facade",
-        "tm:flash",
-        "tm:fling",
-        "tm:frustration",
-        "tm:grassknot",
-        "tm:hiddenpower",
-        "tm:irontail",
-        "tm:lightscreen",
-        "tm:naturalgift",
-        "tm:protect",
-        "tm:raindance",
-        "tm:rest",
-        "tm:return",
-        "tm:secretpower",
-        "tm:shockwave",
-        "tm:sleeptalk",
-        "tm:substitute",
-        "tm:swagger",
-        "tm:thunder",
-        "tm:thunderbolt",
-        "tm:thunderwave",
-        "tm:toxic",
-        "tutor:headbutt",
-        "tutor:helpinghand",
-        "tutor:magnetrise",
-        "tutor:mudslap",
-        "tutor:painsplit",
-        "tutor:rollout",
-        "tutor:signalbeam",
-        "tutor:snore",
-        "tutor:swagger",
-        "tutor:swift",
-        "tutor:uproar",
-        "tutor:volttackle"
-      ],
-      "labels": [
-        "gen4",
-        "baby"
-      ],
-      "aspects": [
-        "spiky-eared"
-      ],
-      "height": 3,
-      "weight": 20,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
-  "baseExperienceYield": 41,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 10,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:tailwhip",
     "1:thundershock",
+    "1:tailwhip",
     "4:playnice",
     "8:sweetkiss",
     "12:nuzzle",
     "16:nastyplot",
-    "18:thunderwave",
     "20:charm",
     "egg:bestow",
     "egg:bide",
     "egg:charge",
     "egg:disarmingvoice",
     "egg:doubleslap",
-    "egg:electricterrain",
-    "egg:encore",
-    "egg:endure",
     "egg:fakeout",
     "egg:flail",
     "egg:luckychant",
     "egg:present",
-    "egg:reversal",
-    "egg:thunderpunch",
     "egg:tickle",
-    "egg:volttackle",
     "egg:wish",
-    "form_change:volttackle",
-    "tm:attract",
+    "tm:babydolleyes",
     "tm:bodyslam",
-    "tm:captivate",
     "tm:charge",
-    "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:disarmingvoice",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:electricterrain",
     "tm:electroball",
@@ -174,31 +101,27 @@
     "tm:facade",
     "tm:flash",
     "tm:fling",
-    "tm:frustration",
     "tm:grassknot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:irontail",
     "tm:lightscreen",
+    "tm:magnetrise",
     "tm:megakick",
     "tm:megapunch",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:playrough",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
@@ -206,73 +129,55 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
-    "tm:uproar",
     "tm:voltswitch",
+    "tm:volttackle",
     "tm:wildcharge",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:charm",
-    "tutor:counter",
+    "tutor:babydolleyes",
     "tutor:covet",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleslap",
-    "tutor:doubleteam",
     "tutor:electroweb",
-    "tutor:encore",
     "tutor:endeavor",
-    "tutor:flash",
-    "tutor:followme",
-    "tutor:frustration",
-    "tutor:grassknot",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:irontail",
     "tutor:magnetrise",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:present",
-    "tutor:protect",
-    "tutor:raindance",
+    "tutor:playrough",
     "tutor:rest",
-    "tutor:return",
-    "tutor:reversal",
     "tutor:rollout",
-    "tutor:seismictoss",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:sweetkiss",
     "tutor:swift",
-    "tutor:tailwhip",
-    "tutor:teeterdance",
-    "tutor:thunder",
     "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thundershock",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:uproar",
-    "tutor:wish",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.pichu.desc"
+    "tutor:volttackle",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:chargebeam",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar",
+    "legacy:zapcannon",
+    "special:endeavor",
+    "special:followme",
+    "special:teeterdance"
   ],
   "evolutions": [
     {
@@ -289,23 +194,96 @@
       ]
     }
   ],
-  "baseScale": 0.4,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 20,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Alola-Bias",
+      "primaryType": "electric",
+      "maleRatio": 0.5,
+      "height": 3,
+      "weight": 20,
+      "pokedex": [
+        "cobblemon.species.pichu-alolabias.desc"
+      ],
+      "labels": [
+        "gen7",
+        "baby",
+        "customized_official",
+        "alolan_form"
+      ],
+      "aspects": [
+        "region-bias-alola"
+      ],
+      "dynamaxBlocked": false,
+      "evolutions": [
+        {
+          "id": "pichu_pikachu",
+          "variant": "level_up",
+          "result": "pikachu",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "friendship",
+              "amount": 160
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "swim": {
+        "swimSpeed": 0.125,
+        "canWalkOnWater": true,
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "pichu",
+          "tier": 1
+        },
+        {
+          "pokemon": "dedenne",
+          "tier": 1
+        },
+        {
+          "pokemon": "plusle",
+          "tier": 2
+        },
+        {
+          "pokemon": "minun",
+          "tier": 2
+        },
+        {
+          "pokemon": "morpeko",
+          "tier": 2
+        },
+        {
+          "pokemon": "pikachu",
+          "tier": 3
+        },
+        {
+          "pokemon": "raichu",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

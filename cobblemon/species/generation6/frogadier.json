@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Frogadier",
   "nationalPokedexNumber": 657,
+  "name": "Frogadier",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 6,
+  "weight": 109,
+  "pokedex": [
+    "cobblemon.species.frogadier.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:protean"
+  ],
+  "eggGroups": [
+    "water_1"
   ],
   "baseStats": {
     "hp": 54,
@@ -15,29 +28,61 @@
     "special_defence": 56,
     "speed": 97
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.9,
+    "height": 2,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
     },
     "moving": {
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "greninja ash=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "greninja ash",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -52,9 +97,9 @@
     ]
   },
   "moves": [
-    "1:bubble",
-    "1:growl",
     "1:pound",
+    "1:growl",
+    "1:bubble",
     "1:watergun",
     "8:quickattack",
     "10:lick",
@@ -67,14 +112,22 @@
     "45:bounce",
     "50:doubleteam",
     "56:hydropump",
+    "egg:bestow",
+    "egg:camouflage",
+    "egg:counter",
+    "egg:mindreader",
+    "egg:mudsport",
+    "egg:retaliate",
+    "egg:spikes",
+    "egg:switcheroo",
+    "egg:toxicspikes",
+    "egg:watersport",
     "tm:acrobatics",
     "tm:aerialace",
-    "tm:attract",
     "tm:blizzard",
+    "tm:bounce",
     "tm:chillingwater",
-    "tm:confide",
     "tm:cut",
-    "tm:darkpulse",
     "tm:dig",
     "tm:dive",
     "tm:doubleteam",
@@ -83,11 +136,9 @@
     "tm:facade",
     "tm:falseswipe",
     "tm:fling",
-    "tm:frustration",
     "tm:grassknot",
     "tm:gunkshot",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icepunch",
@@ -100,28 +151,26 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
+    "tm:retaliate",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
+    "tm:roleplay",
     "tm:round",
-    "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
+    "tm:snatch",
     "tm:snowscape",
     "tm:spikes",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:toxicspikes",
     "tm:trailblaze",
     "tm:uturn",
@@ -129,23 +178,40 @@
     "tm:waterpledge",
     "tm:waterpulse",
     "tm:workup",
+    "tutor:aerialace",
     "tutor:bounce",
+    "tutor:dive",
+    "tutor:falseswipe",
     "tutor:gunkshot",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
+    "tutor:liquidation",
     "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:roleplay",
+    "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:spite",
+    "tutor:spikes",
+    "tutor:swift",
     "tutor:waterpledge",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.frogadier.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:darkpulse",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:spite",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "froakie",
   "evolutions": [
@@ -164,24 +230,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.9,
-    "height": 2,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 6,
-  "weight": 109,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

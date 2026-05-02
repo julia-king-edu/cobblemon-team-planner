@@ -12,7 +12,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "13-38",
             "weight": 10.0,
@@ -41,7 +41,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "13-38",
             "weight": 8.75,
@@ -60,7 +60,7 @@
             },
             "anticondition": {
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             }
         }

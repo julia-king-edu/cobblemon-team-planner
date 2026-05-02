@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -38,7 +38,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -66,7 +66,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -94,7 +94,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -122,7 +122,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -150,7 +150,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
@@ -172,113 +172,35 @@
             }
         },
         {
-            "id": "flabebe-red-7",
-            "pokemon": "flabebe flower=red",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "5-30",
-            "weight": 9.0,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "flabebe-yellow-7",
-            "pokemon": "flabebe flower=yellow",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "5-30",
-            "weight": 9.0,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "flabebe-orange-7",
-            "pokemon": "flabebe flower=orange",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "5-30",
-            "weight": 9.0,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "flabebe-blue-7",
-            "pokemon": "flabebe flower=blue",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "5-30",
-            "weight": 9.0,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
             "id": "flabebe-white-7",
             "pokemon": "flabebe flower=white",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
             "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:white_flowers"
+                ]
+            }
+        },
+        {
+            "id": "flabebe-red-8",
+            "pokemon": "flabebe flower=red",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.5,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -297,13 +219,113 @@
             }
         },
         {
-            "id": "flabebe-pink-7",
-            "pokemon": "flabebe flower=pink",
+            "id": "flabebe-yellow-8",
+            "pokemon": "flabebe flower=yellow",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "5-30",
-            "weight": 9.0,
+            "weight": 1.5,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "flabebe-orange-8",
+            "pokemon": "flabebe flower=orange",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.5,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "flabebe-blue-8",
+            "pokemon": "flabebe flower=blue",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.5,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "flabebe-white-8",
+            "pokemon": "flabebe flower=white",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.5,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "flabebe-pink-8",
+            "pokemon": "flabebe flower=pink",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 1.5,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {

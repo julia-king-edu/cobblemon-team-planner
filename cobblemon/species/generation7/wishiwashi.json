@@ -1,11 +1,129 @@
 {
   "implemented": true,
-  "name": "Wishiwashi",
   "nationalPokedexNumber": 746,
+  "name": "Wishiwashi",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 3,
+  "pokedex": [
+    "cobblemon.species.wishiwashi.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [
+    "solo-form"
+  ],
   "abilities": [
+    "schooling",
+    "h:schooling"
+  ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 20,
+    "defence": 20,
+    "special_attack": 25,
+    "special_defence": 25,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "fast",
+  "catchRate": 60,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "features": [
     "schooling"
   ],
+  "baseScale": 0.4,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "goldeen",
+          "tier": 1
+        },
+        {
+          "pokemon": "magikarp",
+          "tier": 1
+        },
+        {
+          "pokemon": "remoraid",
+          "tier": 1
+        },
+        {
+          "pokemon": "barboach",
+          "tier": 1
+        },
+        {
+          "pokemon": "feebas",
+          "tier": 1
+        },
+        {
+          "pokemon": "relicanth",
+          "tier": 1
+        },
+        {
+          "pokemon": "luvdisc",
+          "tier": 1
+        },
+        {
+          "pokemon": "finneon",
+          "tier": 1
+        },
+        {
+          "pokemon": "tatsugiri",
+          "tier": 1
+        },
+        {
+          "pokemon": "alomomola",
+          "tier": 2
+        },
+        {
+          "pokemon": "wishiwashi school=false",
+          "tier": 3
+        },
+        {
+          "pokemon": "wishiwashi school",
+          "tier": 4
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 5
+        }
+      ]
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -18,120 +136,16 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 45,
-    "attack": 20,
-    "defence": 20,
-    "special_attack": 25,
-    "special_defence": 25,
-    "speed": 40
-  },
-  "features": [
-    "schooling"
-  ],
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "School",
-      "primaryType": "water",
-      "abilities": [
-        "schooling"
-      ],
-      "baseStats": {
-        "hp": 45,
-        "attack": 140,
-        "defence": 130,
-        "special_attack": 140,
-        "special_defence": 135,
-        "speed": 30
-      },
-      "catchRate": 60,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 61,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 1,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "fast",
-      "eggCycles": 15,
-      "eggGroups": [
-        "water_2"
-      ],
-      "behaviour": {
-        "moving": {
-          "walk": {
-            "avoidsLand": true
-          },
-          "swim": {
-            "canSwimInWater": true,
-            "canBreatheUnderwater": true
-          }
-        }
-      },
-      "labels": [
-        "gen7"
-      ],
-      "aspects": [
-        "schooling"
-      ],
-      "height": 82,
-      "weight": 786,
-      "baseScale": 2,
-      "hitbox": {
-        "width": 3.0,
-        "height": 3.0,
-        "fixed": false
-      },
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
-  "baseExperienceYield": 61,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "water_2"
-  ],
-  "behaviour": {
-    "moving": {
-      "canLook": false,
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.1,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
-    "1:growl",
     "1:watergun",
+    "1:growl",
+    "1:feintattack",
     "4:helpinghand",
     "8:beatup",
-    "9:feintattack",
     "12:brine",
     "16:tearfullook",
     "20:dive",
     "24:soak",
-    "25:takedown",
     "28:uproar",
     "32:aquatail",
     "36:aquaring",
@@ -139,25 +153,23 @@
     "44:hydropump",
     "48:doubleedge",
     "egg:mist",
-    "egg:muddywater",
     "egg:takedown",
     "egg:waterpulse",
     "egg:watersport",
-    "egg:whirlpool",
-    "tm:attract",
+    "tm:aquatail",
     "tm:beatup",
     "tm:brine",
     "tm:bulldoze",
-    "tm:confide",
+    "tm:covet",
     "tm:dive",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:earthquake",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:flipturn",
     "tm:hail",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:irontail",
@@ -167,44 +179,107 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scald",
+    "tm:scaleshot",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:takedown",
+    "tm:terablast",
     "tm:uproar",
     "tm:uturn",
     "tm:waterfall",
+    "tm:waterpulse",
     "tm:whirlpool",
     "tutor:aquatail",
+    "tutor:bulldoze",
     "tutor:covet",
+    "tutor:dive",
     "tutor:endeavor",
     "tutor:flipturn",
     "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:rest",
     "tutor:scaleshot",
-    "tutor:snore",
-    "tutor:waterpulse"
+    "tutor:sleeptalk",
+    "tutor:uproar",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.wishiwashi.desc"
-  ],
-  "height": 2,
-  "weight": 3,
   "evolutions": [],
-  "baseScale": 0.4,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.6,
-    "fixed": false
-  },
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "School",
+      "primaryType": "water",
+      "maleRatio": 0.5,
+      "height": 82,
+      "weight": 786,
+      "pokedex": [
+        "cobblemon.species.wishiwashi-school.desc"
+      ],
+      "labels": [
+        "gen7"
+      ],
+      "aspects": [
+        "school-form"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 140,
+        "defence": 130,
+        "special_attack": 140,
+        "special_defence": 135,
+        "speed": 30
+      },
+      "baseExperienceYield": 217,
+      "baseScale": 2,
+      "hitbox": {
+        "width": 3,
+        "height": 3,
+        "fixed": false
+      },
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "avoidsLand": true
+          },
+          "swim": {
+            "swimSpeed": "0.2",
+            "canBreatheUnderwater": true
+          }
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "manaphy",
+              "tier": 1
+            }
+          ]
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
 }

@@ -1,13 +1,106 @@
 {
-  "name": "Ducklett",
+  "implemented": true,
   "nationalPokedexNumber": 580,
+  "name": "Ducklett",
   "primaryType": "water",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 55,
+  "pokedex": [
+    "cobblemon.species.ducklett.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "bigpecks",
     "h:hydration"
   ],
+  "eggGroups": [
+    "water_1",
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 62,
+    "attack": 44,
+    "defence": 50,
+    "special_attack": 44,
+    "special_defence": 50,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.28
+      },
+      "swim": {
+        "swimSpeed": 0.17,
+        "canWalkOnWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ducklett",
+          "tier": 1
+        },
+        {
+          "pokemon": "quaxly",
+          "tier": 1
+        },
+        {
+          "pokemon": "farfetchd galarian=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "quaxwell",
+          "tier": 3
+        },
+        {
+          "pokemon": "quaquaval",
+          "tier": 4
+        },
+        {
+          "pokemon": "swanna",
+          "tier": 5
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -24,27 +117,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 62,
-    "attack": 44,
-    "defence": 50,
-    "special_attack": 44,
-    "special_defence": 50,
-    "speed": 55
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 61,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "flying"
-  ],
   "moves": [
     "1:watergun",
-    "3:watersport",
+    "1:watersport",
     "6:defog",
     "9:wingattack",
     "13:waterpulse",
@@ -58,7 +133,6 @@
     "37:tailwind",
     "41:bravebird",
     "46:hurricane",
-    "egg:aircutter",
     "egg:aquajet",
     "egg:brine",
     "egg:dive",
@@ -70,25 +144,22 @@
     "egg:mudsport",
     "egg:steelwing",
     "tm:aerialace",
-    "tm:attract",
     "tm:aircutter",
     "tm:airslash",
     "tm:bravebird",
+    "tm:brine",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:defog",
     "tm:disarmingvoice",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
     "tm:hail",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:icebeam",
     "tm:icywind",
@@ -97,41 +168,45 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tutor:brine",
+    "tutor:aerialace",
+    "tutor:aircutter",
     "tutor:defog",
+    "tutor:dive",
     "tutor:endeavor",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:liquidation",
-    "tutor:mefirst",
+    "tutor:rest",
     "tutor:roost",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:swift",
     "tutor:tailwind",
-    "tutor:uproar",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.ducklett.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "evolutions": [
     {
@@ -147,24 +222,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 55,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

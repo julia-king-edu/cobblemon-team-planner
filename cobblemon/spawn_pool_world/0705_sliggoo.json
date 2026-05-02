@@ -11,7 +11,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -32,7 +32,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "40-45",
             "weight": 3.6,
@@ -56,7 +56,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -74,7 +74,7 @@
             "id": "sliggoo-4",
             "pokemon": "sliggoo",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "40-45",
             "weight": 3.6,
@@ -93,7 +93,7 @@
             "id": "sliggoo-5",
             "pokemon": "sliggoo",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -110,7 +110,7 @@
             "id": "sliggoo-6",
             "pokemon": "sliggoo",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "40-45",
             "weight": 3.6,
@@ -139,7 +139,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -159,7 +159,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "40-45",
             "weight": 3.6,
@@ -170,7 +170,7 @@
                     "#cobblemon:is_overworld"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             },
             "anticondition": {
@@ -188,7 +188,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -214,7 +214,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -237,14 +237,14 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "40-45",
             "weight": 0.18,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -264,7 +264,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "40-45",
             "weight": 3.6,
@@ -291,7 +291,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -319,7 +319,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "40-45",
             "weight": 0.18,
@@ -346,7 +346,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "40-45",
             "weight": 2.25,
@@ -373,14 +373,14 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "40-45",
             "weight": 0.18,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

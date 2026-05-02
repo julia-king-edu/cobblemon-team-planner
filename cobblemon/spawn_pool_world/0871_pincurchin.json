@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "uncommon",
             "level": "19-44",
             "weight": 10.0,
@@ -30,7 +30,7 @@
             "id": "pincurchin-2",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "19-44",
             "weight": 6.0,
@@ -49,14 +49,14 @@
             "id": "pincurchin-3",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "19-44",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -72,7 +72,7 @@
             "id": "pincurchin-4",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "19-44",
             "weight": 6.0,
@@ -93,14 +93,14 @@
             "id": "pincurchin-5",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "19-44",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -121,7 +121,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "uncommon",
             "level": "19-44",
             "weight": 10.0,
@@ -141,7 +141,7 @@
             "id": "pincurchin-7",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "19-44",
             "weight": 6.0,
@@ -164,14 +164,14 @@
             "id": "pincurchin-8",
             "pokemon": "pincurchin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "19-44",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

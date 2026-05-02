@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Torracat",
   "nationalPokedexNumber": 726,
+  "name": "Torracat",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 250,
+  "pokedex": [
+    "cobblemon.species.torracat.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:intimidate"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 65,
@@ -15,15 +28,57 @@
     "special_defence": 50,
     "speed": 90
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
   "baseExperienceYield": 147,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.19
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "times": [
+        "167-11833,13702-22299"
+      ],
+      "drowsyChance": 0.0021,
+      "rouseChance": 0.0042
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -38,12 +93,12 @@
     ]
   },
   "moves": [
+    "1:scratch",
     "1:ember",
     "1:growl",
     "1:lick",
-    "1:scratch",
+    "1:leer",
     "9:roar",
-    "11:leer",
     "12:furyswipes",
     "15:bite",
     "20:doublekick",
@@ -53,15 +108,16 @@
     "40:flamethrower",
     "45:thrash",
     "50:flareblitz",
-    "55:outrage",
+    "egg:fakeout",
+    "egg:partingshot",
+    "egg:powertrip",
     "tm:acrobatics",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulkup",
-    "tm:confide",
+    "tm:covet",
     "tm:crunch",
     "tm:doubleedge",
-    "tm:doubleteam",
+    "tm:dualchop",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
@@ -72,10 +128,8 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:leechlife",
     "tm:nastyplot",
     "tm:outrage",
@@ -83,14 +137,11 @@
     "tm:payday",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
     "tm:roar",
-    "tm:round",
     "tm:scaryface",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
     "tm:swagger",
@@ -100,24 +151,33 @@
     "tm:temperflare",
     "tm:terablast",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uturn",
     "tm:willowisp",
     "tm:workup",
+    "tutor:bulkup",
     "tutor:covet",
     "tutor:dualchop",
     "tutor:endeavor",
+    "tutor:firefang",
     "tutor:firepledge",
+    "tutor:flamethrower",
     "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:leechlife",
     "tutor:outrage",
-    "tutor:snore"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.torracat.desc"
+    "tutor:rest",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "preEvolution": "litten",
   "evolutions": [
@@ -137,23 +197,8 @@
       ]
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 7,
-  "weight": 250,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 10,
+    "liquidGlowMode": "LAND"
+  }
 }

@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Lapras",
   "nationalPokedexNumber": 131,
+  "name": "Lapras",
   "primaryType": "water",
   "secondaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 25,
+  "weight": 2200,
+  "pokedex": [
+    "cobblemon.species.lapras.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "waterabsorb",
     "shellarmor",
     "h:hydration"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
   ],
   "baseStats": {
     "hp": 130,
@@ -17,82 +31,111 @@
     "special_defence": 95,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "water",
-      "secondaryType": "ice",
-      "abilities": [
-        "waterabsorb",
-        "shellarmor",
-        "h:hydration"
-      ],
-      "baseStats": {
-        "hp": 130,
-        "attack": 85,
-        "defence": 80,
-        "special_attack": 85,
-        "special_defence": 95,
-        "speed": 60
-      },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 187,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 2,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 40,
-      "eggGroups": [
-        "monster",
-        "water_1"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 240,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 187,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 40,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "height": 2.8,
+    "fixed": false,
+    "width": 2.4
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/boat",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "30-55",
+          "JUMP": "20-30",
+          "SKILL": "50-75",
+          "SPEED": "25-40",
+          "STAMINA": "45-75"
+        },
+        "surfaceLevelOffset": -1.6
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
   "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "lapras",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
     "moving": {
       "swim": {
-        "canSwimInWater": true,
         "canBreatheUnderwater": true,
         "canWalkOnWater": true,
         "swimSpeed": 0.3
       },
       "walk": {
+        "avoidsLand": true,
         "walkSpeed": 0.15
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
     }
   },
   "drops": {
@@ -127,46 +170,37 @@
     "30:waterpulse",
     "35:brine",
     "40:bodyslam",
-    "43:safeguard",
     "45:icebeam",
     "50:raindance",
     "55:hydropump",
     "60:perishsong",
     "65:sheercold",
     "egg:ancientpower",
-    "egg:avalanche",
     "egg:curse",
-    "egg:dragondance",
-    "egg:dragonpulse",
     "egg:fissure",
     "egg:foresight",
     "egg:freezedry",
-    "egg:futuresight",
     "egg:horndrill",
     "egg:refresh",
-    "egg:sleeptalk",
     "egg:sparklingaria",
-    "egg:substitute",
     "egg:tickle",
-    "egg:whirlpool",
     "tm:alluringvoice",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:blizzard",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:disarmingvoice",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragoncheer",
     "tm:dragondance",
     "tm:dragonpulse",
@@ -177,13 +211,12 @@
     "tm:endure",
     "tm:facade",
     "tm:frostbreath",
-    "tm:frustration",
-    "tm:futuresight",
     "tm:gigaimpact",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:hypervoice",
@@ -195,7 +228,6 @@
     "tm:liquidation",
     "tm:megahorn",
     "tm:muddywater",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:psychic",
@@ -203,26 +235,20 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:roar",
     "tm:rocksmash",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:smartstrike",
-    "tm:snore",
     "tm:snowscape",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
-    "tm:toxic",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
@@ -230,102 +256,100 @@
     "tm:zenheadbutt",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:aurorabeam",
-    "tutor:bide",
-    "tutor:blizzard",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:bubblebeam",
-    "tutor:confuseray",
-    "tutor:curse",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dragonbreath",
     "tutor:dragonpulse",
-    "tutor:dragonrage",
-    "tutor:dreameater",
     "tutor:drillrun",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:foresight",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
-    "tutor:hiddenpower",
-    "tutor:horndrill",
-    "tutor:hydropump",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:hypervoice",
     "tutor:icebeam",
-    "tutor:iceshard",
     "tutor:icywind",
     "tutor:ironhead",
     "tutor:irontail",
+    "tutor:liquidation",
     "tutor:megahorn",
-    "tutor:mimic",
-    "tutor:mist",
-    "tutor:nightmare",
     "tutor:outrage",
-    "tutor:perishsong",
-    "tutor:protect",
     "tutor:psychic",
-    "tutor:psywave",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rocksmash",
-    "tutor:safeguard",
     "tutor:shockwave",
     "tutor:signalbeam",
-    "tutor:sing",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.lapras.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:aurorabeam",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:dragonbreath",
+    "legacy:dragonrage",
+    "legacy:frustration",
+    "legacy:futuresight",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:psywave",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:solarbeam",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
   "evolutions": [],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 2.4,
-    "height": 2.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 25,
-  "weight": 2200,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "water",
+      "secondaryType": "ice",
+      "maleRatio": 0.5,
+      "height": 240,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.lapras-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "behaviour": {
+        "moving": {
+          "swim": {
+            "canBreatheUnderwater": true,
+            "canSwimInLava": false,
+            "canSwimInWater": true,
+            "canWalkOnWater": true,
+            "swimSpeed": "0.2"
+          },
+          "walk": {
+            "walkSpeed": 0.15
+          }
+        },
+        "resting": {
+          "canSleep": true,
+          "light": "0-4"
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    }
+  ]
 }

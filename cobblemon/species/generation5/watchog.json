@@ -1,13 +1,78 @@
 {
   "implemented": true,
-  "name": "Watchog",
   "nationalPokedexNumber": 505,
+  "name": "Watchog",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 270,
+  "pokedex": [
+    "cobblemon.species.watchog.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "illuminate",
     "keeneye",
     "h:analytic"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 85,
+    "defence": 69,
+    "special_attack": 60,
+    "special_defence": 69,
+    "speed": 77
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 147,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.8,
+    "height": 2.55,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "watchog",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -17,38 +82,13 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 85,
-    "defence": 69,
-    "special_attack": 60,
-    "special_defence": 69,
-    "speed": 77
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 147,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:bite",
-    "1:confuseray",
-    "1:leer",
-    "1:lowkick",
-    "1:rototiller",
     "1:tackle",
+    "1:leer",
+    "1:bite",
+    "1:lowkick",
+    "1:confuseray",
+    "1:rototiller",
     "8:bide",
     "11:detect",
     "13:sandattack",
@@ -63,94 +103,124 @@
     "43:meanlook",
     "46:batonpass",
     "50:slam",
-    "tm:attract",
-    "tm:confide",
+    "egg:assurance",
+    "egg:bulletseed",
+    "egg:flail",
+    "egg:foresight",
+    "egg:irontail",
+    "egg:pursuit",
+    "egg:revenge",
+    "egg:screech",
+    "egg:tearfullook",
+    "tm:afteryou",
+    "tm:aquatail",
+    "tm:assurance",
+    "tm:batonpass",
+    "tm:bulletseed",
+    "tm:confuseray",
+    "tm:covet",
+    "tm:crunch",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:dreameater",
+    "tm:endeavor",
+    "tm:endure",
     "tm:facade",
+    "tm:firepunch",
     "tm:flamethrower",
     "tm:flash",
     "tm:fling",
     "tm:focusblast",
-    "tm:frustration",
+    "tm:focusenergy",
+    "tm:focuspunch",
     "tm:gigaimpact",
     "tm:grassknot",
-    "tm:hiddenpower",
+    "tm:gunkshot",
+    "tm:helpinghand",
     "tm:hyperbeam",
+    "tm:icepunch",
+    "tm:irontail",
+    "tm:knockoff",
+    "tm:laserfocus",
+    "tm:lastresort",
     "tm:lightscreen",
+    "tm:lowkick",
+    "tm:nastyplot",
     "tm:poweruppunch",
     "tm:protect",
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
+    "tm:revenge",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:screech",
+    "tm:seedbomb",
     "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
+    "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superfang",
+    "tm:swift",
     "tm:swordsdance",
+    "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
+    "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:workup",
+    "tm:zenheadbutt",
     "tutor:afteryou",
     "tutor:aquatail",
     "tutor:covet",
     "tutor:endeavor",
     "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
+    "tutor:gigaimpact",
     "tutor:gunkshot",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:icepunch",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:laserfocus",
     "tutor:lastresort",
     "tutor:lowkick",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:seedbomb",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stompingtantrum",
     "tutor:superfang",
+    "tutor:swift",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.watchog.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "patrat",
   "evolutions": [],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.8,
-    "height": 2.55,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 11,
-  "weight": 270,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 6,
+    "liquidGlowMode": "BOTH"
+  }
 }

@@ -1,11 +1,25 @@
 {
-  "name": "Absol",
+  "implemented": true,
   "nationalPokedexNumber": 359,
+  "name": "Absol",
   "primaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 470,
+  "pokedex": [
+    "cobblemon.species.absol.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "pressure",
     "superluck",
     "h:justified"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 65,
@@ -15,115 +29,87 @@
     "special_defence": 60,
     "speed": 75
   },
-  "catchRate": 30,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "dark",
-      "abilities": [
-        "magicbounce"
-      ],
-      "baseStats": {
-        "hp": 65,
-        "attack": 150,
-        "defence": 60,
-        "special_attack": 115,
-        "special_defence": 60,
-        "speed": 115
-      },
-      "catchRate": 30,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 163,
-      "baseFriendship": 35,
-      "evYield": {
-        "hp": 0,
-        "attack": 2,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 25,
-      "eggGroups": [
-        "field"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 12,
-      "weight": 490,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 163,
   "experienceGroup": "medium_slow",
+  "catchRate": 30,
   "eggCycles": 25,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 35,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.1,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:razor_claw",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:life_orb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:roseli_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
+    "1:scratch",
     "1:feint",
     "1:leer",
     "1:quickattack",
-    "1:scratch",
+    "1:razorwind",
+    "1:pursuit",
+    "1:bite",
+    "1:mefirst",
     "5:doubleteam",
     "10:knockoff",
-    "10:pursuit",
     "15:detect",
-    "16:bite",
     "20:taunt",
     "25:slash",
     "30:nightslash",
     "35:focusenergy",
-    "37:psychocut",
     "40:suckerpunch",
-    "41:mefirst",
     "45:swordsdance",
-    "49:razorwind",
     "50:futuresight",
     "55:perishsong",
-    "egg:assurance",
-    "egg:batonpass",
     "egg:bite",
     "egg:curse",
     "egg:doubleedge",
     "egg:feint",
     "egg:feintattack",
-    "egg:hex",
     "egg:magiccoat",
     "egg:meanlook",
     "egg:mefirst",
-    "egg:megahorn",
     "egg:perishsong",
-    "egg:playrough",
     "egg:punishment",
-    "egg:substitute",
-    "egg:suckerpunch",
-    "egg:zenheadbutt",
     "tm:aerialace",
     "tm:airslash",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bounce",
     "tm:brutalswing",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:closecombat",
-    "tm:confide",
+    "tm:curse",
     "tm:cut",
     "tm:darkpulse",
+    "tm:doubleedge",
     "tm:doubleteam",
     "tm:dreameater",
     "tm:echoedvoice",
@@ -135,20 +121,23 @@
     "tm:flash",
     "tm:focusenergy",
     "tm:foulplay",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:hail",
+    "tm:headbutt",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:incinerate",
     "tm:irontail",
+    "tm:knockoff",
+    "tm:laserfocus",
+    "tm:magiccoat",
     "tm:megahorn",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:payback",
     "tm:playrough",
     "tm:protect",
@@ -157,125 +146,150 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
     "tm:sandstorm",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:snarl",
     "tm:snatch",
-    "tm:snore",
+    "tm:spite",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:throatchop",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:waterpulse",
     "tm:willowisp",
     "tm:xscissor",
     "tm:zenheadbutt",
-    "tutor:bite",
-    "tutor:bodyslam",
+    "tutor:aerialace",
     "tutor:bounce",
-    "tutor:counter",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
-    "tutor:endure",
-    "tutor:feint",
+    "tutor:falseswipe",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:foulplay",
     "tutor:furycutter",
-    "tutor:futuresight",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:laserfocus",
-    "tutor:leer",
     "tutor:magiccoat",
     "tutor:megahorn",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:perishsong",
-    "tutor:psychup",
-    "tutor:razorwind",
+    "tutor:playrough",
+    "tutor:psychocut",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:roleplay",
-    "tutor:scratch",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:shockwave",
-    "tutor:slash",
     "tutor:sleeptalk",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
+    "tutor:stoneedge",
     "tutor:suckerpunch",
     "tutor:superpower",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
     "tutor:throatchop",
-    "tutor:thunderwave",
+    "tutor:thunderbolt",
     "tutor:waterpulse",
-    "tutor:wish",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.absol.desc"
+    "tutor:xscissor",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:wish"
   ],
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 470,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "cobblemon:razor_claw",
-        "percentage": 5.0
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "dark",
+      "maleRatio": 0.5,
+      "height": 12,
+      "weight": 490,
+      "pokedex": [
+        "cobblemon.species.absol-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "magicbounce",
+        "h:magicbounce"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 150,
+        "defence": 60,
+        "special_attack": 115,
+        "special_defence": 60,
+        "speed": 115
       },
-      {
-        "item": "cobblemon:roseli_berry",
-        "percentage": 5.0
+      "baseExperienceYield": 198,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ],
+  "behaviour": {
+    "resting": {
+      "times": [
+        "167-11833,13702-22299"
+      ],
+      "drowsyChance": 0.0021,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
       }
-    ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
   }
 }

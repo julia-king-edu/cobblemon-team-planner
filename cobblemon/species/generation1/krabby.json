@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Krabby",
   "nationalPokedexNumber": 98,
+  "name": "Krabby",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 65,
+  "pokedex": [
+    "cobblemon.species.krabby.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "hypercutter",
     "shellarmor",
     "h:sheerforce"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 30,
@@ -16,15 +29,25 @@
     "special_defence": 25,
     "speed": 50
   },
-  "catchRate": 225,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 65,
   "experienceGroup": "medium_fast",
+  "catchRate": 225,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_3"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1,
+    "height": 0.7,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
@@ -32,6 +55,30 @@
         "canSwimInWater": false,
         "canBreatheUnderwater": true
       }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "krabby",
+          "tier": 1
+        },
+        {
+          "pokemon": "kingler",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -48,12 +95,12 @@
     ]
   },
   "moves": [
-    "1:bubble",
-    "1:leer",
     "1:mudsport",
+    "1:bubble",
+    "1:visegrip",
+    "1:leer",
     "1:watergun",
     "4:harden",
-    "5:visegrip",
     "8:metalclaw",
     "12:mudshot",
     "16:protect",
@@ -62,147 +109,100 @@
     "29:flail",
     "32:razorshell",
     "36:slam",
-    "39:brine",
     "40:swordsdance",
     "44:crabhammer",
     "48:guillotine",
-    "egg:agility",
-    "egg:allyswitch",
-    "egg:amnesia",
     "egg:ancientpower",
     "egg:bide",
     "egg:chipaway",
-    "egg:dig",
-    "egg:endure",
-    "egg:flail",
     "egg:hammerarm",
-    "egg:haze",
     "egg:knockoff",
     "egg:nightslash",
-    "egg:slam",
     "egg:slash",
-    "egg:swordsdance",
     "egg:tickle",
     "tm:agility",
     "tm:allyswitch",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brine",
-    "tm:captivate",
-    "tm:confide",
     "tm:cut",
     "tm:dig",
     "tm:dive",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
     "tm:fling",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:haze",
     "tm:honeclaws",
     "tm:icebeam",
     "tm:icywind",
     "tm:irondefense",
+    "tm:knockoff",
     "tm:liquidation",
+    "tm:metalclaw",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:raindance",
     "tm:razorshell",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:xscissor",
     "tutor:allyswitch",
-    "tutor:amnesia",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
-    "tutor:bubble",
-    "tutor:bubblebeam",
-    "tutor:crabhammer",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:dig",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flail",
-    "tutor:frustration",
+    "tutor:falseswipe",
     "tutor:furycutter",
-    "tutor:guillotine",
-    "tutor:harden",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:knockoff",
-    "tutor:leer",
     "tutor:liquidation",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
-    "tutor:scald",
-    "tutor:secretpower",
-    "tutor:slam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:stomp",
-    "tutor:strength",
-    "tutor:substitute",
     "tutor:superpower",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
-    "tutor:visegrip",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:xscissor"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.krabby.desc"
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -216,26 +216,18 @@
           "variant": "level",
           "minLevel": 28
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 65,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

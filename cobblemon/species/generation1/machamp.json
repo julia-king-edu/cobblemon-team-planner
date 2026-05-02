@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Machamp",
   "nationalPokedexNumber": 68,
+  "name": "Machamp",
   "primaryType": "fighting",
+  "maleRatio": 0.75,
+  "height": 16,
+  "weight": 1300,
+  "pokedex": [
+    "cobblemon.species.machamp.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "guts",
     "noguard",
     "h:steadfast"
+  ],
+  "eggGroups": [
+    "human_like"
   ],
   "baseStats": {
     "hp": 90,
@@ -16,62 +29,25 @@
     "special_defence": 85,
     "speed": 55
   },
-  "catchRate": 45,
-  "maleRatio": 0.75,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "fighting",
-      "abilities": [
-        "guts",
-        "noguard",
-        "h:steadfast"
-      ],
-      "baseStats": {
-        "hp": 90,
-        "attack": 130,
-        "defence": 80,
-        "special_attack": 65,
-        "special_defence": 85,
-        "speed": 55
-      },
-      "catchRate": 45,
-      "maleRatio": 0.75,
-      "baseExperienceYield": 253,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 3,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "human_like"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 250,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 253,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "human_like"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.2,
+  "hitbox": {
+    "width": 1,
+    "height": 1.8,
+    "fixed": false
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -90,39 +66,48 @@
     ]
   },
   "moves": [
+    "1:lowkick",
+    "1:leer",
     "1:focusenergy",
     "1:karatechop",
-    "1:leer",
-    "1:lowkick",
+    "1:foresight",
     "1:revenge",
+    "1:submission",
+    "1:wakeupslap",
     "1:wideguard",
-    "9:foresight",
     "12:lowsweep",
     "16:knockoff",
     "20:scaryface",
     "24:vitalthrow",
-    "27:wakeupslap",
     "31:strength",
     "36:dualchop",
-    "37:submission",
     "42:bulkup",
     "48:seismictoss",
     "54:dynamicpunch",
     "60:crosschop",
     "66:doubleedge",
+    "egg:bulletpunch",
+    "egg:counter",
+    "egg:meditate",
+    "egg:powertrick",
+    "egg:quickguard",
+    "egg:rollingkick",
+    "egg:smellingsalts",
+    "egg:submission",
+    "egg:tickle",
+    "egg:wakeupslap",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:closecombat",
-    "tm:confide",
+    "tm:coaching",
     "tm:crosspoison",
     "tm:darkestlariat",
     "tm:dig",
-    "tm:doubleteam",
+    "tm:doubleedge",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:encore",
     "tm:endure",
@@ -134,22 +119,22 @@
     "tm:focusblast",
     "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:icepunch",
     "tm:incinerate",
+    "tm:knockoff",
     "tm:lightscreen",
     "tm:lowkick",
     "tm:lowsweep",
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:payback",
     "tm:poisonjab",
     "tm:poweruppunch",
@@ -157,7 +142,6 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
     "tm:rockblast",
@@ -165,123 +149,136 @@
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
+    "tm:terablast",
     "tm:thief",
     "tm:throatchop",
     "tm:thunderpunch",
-    "tm:toxic",
+    "tm:vacuumwave",
     "tm:workup",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
     "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:coaching",
-    "tutor:counter",
-    "tutor:crosschop",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dualchop",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:encore",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fireblast",
     "tutor:firepunch",
-    "tutor:fissure",
     "tutor:flamethrower",
     "tutor:focusenergy",
     "tutor:focuspunch",
-    "tutor:foresight",
-    "tutor:frustration",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
+    "tutor:highhorsepower",
     "tutor:hyperbeam",
     "tutor:icepunch",
-    "tutor:karatechop",
     "tutor:knockoff",
-    "tutor:leer",
-    "tutor:lightscreen",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:poisonjab",
-    "tutor:protect",
-    "tutor:quickguard",
-    "tutor:rage",
     "tutor:rest",
-    "tutor:return",
-    "tutor:revenge",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:roleplay",
-    "tutor:scaryface",
-    "tutor:seismictoss",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stompingtantrum",
     "tutor:stoneedge",
-    "tutor:strength",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:sunnyday",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:thief",
     "tutor:throatchop",
     "tutor:thunderpunch",
-    "tutor:toxic",
     "tutor:vacuumwave",
-    "tutor:vitalthrow",
-    "tutor:wideguard"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.machamp.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:fissure",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic"
   ],
   "preEvolution": "machoke",
   "evolutions": [],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 1,
-    "height": 1.8,
-    "fixed": false
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "fighting",
+      "maleRatio": 0.75,
+      "height": 250,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.machamp-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ],
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": "10-25"
+      },
+      "ACCELERATION": {
+        "ranges": "5-100"
+      },
+      "SKILL": {
+        "ranges": "45-90"
+      },
+      "JUMP": {
+        "ranges": "5-10"
+      },
+      "STAMINA": {
+        "ranges": "20-40"
+      }
+    },
+    "seats": [],
+    "behaviour": {
+      "key": "cobblemon:land/horse"
+    }
   },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 1300,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  }
 }

@@ -1,13 +1,94 @@
 {
   "implemented": true,
-  "name": "Corvisquire",
   "nationalPokedexNumber": 822,
+  "name": "Corvisquire",
   "primaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 160,
+  "pokedex": [
+    "cobblemon.species.corvisquire.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "unnerve",
     "h:bigpecks"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 68,
+    "attack": 67,
+    "defence": 55,
+    "special_attack": 43,
+    "special_defence": 55,
+    "speed": 77
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 128,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.65,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.18
+      },
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "corvisquire",
+          "tier": 1
+        },
+        {
+          "pokemon": "honchkrow",
+          "tier": 2
+        },
+        {
+          "pokemon": "corviknight",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -28,41 +109,11 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 68,
-    "attack": 67,
-    "defence": 55,
-    "special_attack": 43,
-    "special_defence": 55,
-    "speed": 77
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 128,
-  "experienceGroup": "medium_slow",
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
   "moves": [
-    "1:honeclaws",
-    "1:leer",
     "1:peck",
+    "1:leer",
     "1:powertrip",
+    "1:honeclaws",
     "12:furyattack",
     "16:pluck",
     "22:taunt",
@@ -70,34 +121,45 @@
     "34:drillpeck",
     "40:swagger",
     "46:bravebird",
+    "egg:defog",
+    "egg:rocksmash",
+    "egg:roost",
+    "egg:sandattack",
+    "egg:skyattack",
+    "egg:spite",
+    "egg:tailwind",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
     "tm:assurance",
-    "tm:attract",
     "tm:bravebird",
+    "tm:defog",
     "tm:dualwingbeat",
     "tm:endure",
     "tm:facade",
     "tm:faketears",
     "tm:fly",
     "tm:focusenergy",
+    "tm:honeclaws",
     "tm:hurricane",
     "tm:nastyplot",
     "tm:payback",
+    "tm:pluck",
     "tm:protect",
     "tm:rest",
     "tm:retaliate",
     "tm:revenge",
     "tm:reversal",
-    "tm:round",
+    "tm:rocksmash",
+    "tm:roost",
     "tm:scaryface",
+    "tm:skyattack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:spite",
     "tm:substitute",
     "tm:sunnyday",
+    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
@@ -106,13 +168,22 @@
     "tm:thief",
     "tm:uturn",
     "tm:workup",
-    "tutor:dualwingbeat"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.corvisquire.desc"
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:focusenergy",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:swift",
+    "tutor:tailwind",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "rookidee",
   "evolutions": [
@@ -131,24 +202,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.65,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 8,
-  "weight": 160,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

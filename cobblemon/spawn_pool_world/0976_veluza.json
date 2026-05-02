@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -25,7 +25,7 @@
             "id": "veluza-2",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -43,14 +43,14 @@
             "id": "veluza-3",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "23-48",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -68,7 +68,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -85,7 +85,7 @@
             "id": "veluza-5",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -105,14 +105,14 @@
             "id": "veluza-6",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "23-48",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -132,7 +132,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -152,7 +152,7 @@
             "id": "veluza-8",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "23-48",
             "weight": 10.0,
@@ -175,14 +175,14 @@
             "id": "veluza-9",
             "pokemon": "veluza",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "23-48",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

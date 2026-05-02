@@ -1,14 +1,73 @@
 {
   "implemented": true,
-  "name": "Stufful",
   "nationalPokedexNumber": 759,
+  "name": "Stufful",
   "primaryType": "normal",
   "secondaryType": "fighting",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 68,
+  "pokedex": [
+    "cobblemon.species.stufful.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "fluffy",
     "klutz",
     "h:cutecharm"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 70,
+    "attack": 75,
+    "defence": 50,
+    "special_attack": 45,
+    "special_defence": 50,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 68,
+  "experienceGroup": "medium_fast",
+  "catchRate": 140,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -18,36 +77,11 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 70,
-    "attack": 75,
-    "defence": 50,
-    "special_attack": 45,
-    "special_defence": 50,
-    "speed": 50
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 140,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 68,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:leer",
     "1:tackle",
+    "1:leer",
+    "1:bide",
     "4:babydolleyes",
-    "5:bide",
     "8:payback",
     "12:brutalswing",
     "16:endure",
@@ -60,75 +94,83 @@
     "44:doubleedge",
     "48:superpower",
     "egg:defensecurl",
-    "egg:endure",
     "egg:forcepalm",
-    "egg:icepunch",
-    "egg:megakick",
     "egg:rollout",
     "egg:stomp",
-    "egg:stompingtantrum",
-    "egg:thunderpunch",
     "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
+    "tm:babydolleyes",
+    "tm:bind",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulkup",
     "tm:bulldoze",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:coaching",
+    "tm:doubleedge",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:fling",
     "tm:focusblast",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:focuspunch",
     "tm:icepunch",
     "tm:ironhead",
     "tm:lowsweep",
     "tm:megakick",
     "tm:megapunch",
+    "tm:painsplit",
     "tm:payback",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
+    "tm:rollout",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:stompingtantrum",
+    "tm:strength",
     "tm:substitute",
     "tm:superpower",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:takedown",
     "tm:taunt",
+    "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:workup",
     "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:babydolleyes",
     "tutor:bind",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:coaching",
     "tutor:dualchop",
     "tutor:focuspunch",
     "tutor:icepunch",
     "tutor:ironhead",
     "tutor:painsplit",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:roleplay",
-    "tutor:snore",
+    "tutor:rollout",
+    "tutor:sleeptalk",
     "tutor:stompingtantrum",
     "tutor:superpower",
     "tutor:thunderpunch",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.stufful.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -146,24 +188,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 68,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

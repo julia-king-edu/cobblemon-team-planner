@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
             "weight": 5.04,
@@ -26,7 +26,7 @@
             "id": "varoom-2",
             "pokemon": "varoom",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "5-30",
             "weight": 5.04,

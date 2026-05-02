@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Koffing",
   "nationalPokedexNumber": 109,
+  "name": "Koffing",
   "primaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 10,
+  "pokedex": [
+    "cobblemon.species.koffing.desc"
+  ],
+  "labels": [
+    "gen1",
+    "kantonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "levitate",
     "neutralizinggas",
     "h:stench"
+  ],
+  "eggGroups": [
+    "amorphous"
   ],
   "baseStats": {
     "hp": 40,
@@ -16,20 +30,62 @@
     "special_defence": 45,
     "speed": 35
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 68,
   "experienceGroup": "medium_fast",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
+  "baseFriendship": 50,
+  "features": [
+    "galarian"
   ],
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.2,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
       }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "koffing",
+          "tier": 1
+        },
+        {
+          "pokemon": "weezing",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -55,7 +111,6 @@
     "20:sludge",
     "24:haze",
     "28:selfdestruct",
-    "29:gyroball",
     "32:sludgebomb",
     "36:toxic",
     "40:belch",
@@ -63,64 +118,48 @@
     "48:memento",
     "52:destinybond",
     "egg:curse",
-    "egg:destinybond",
     "egg:grudge",
     "egg:painsplit",
-    "egg:psybeam",
     "egg:psywave",
-    "egg:screech",
     "egg:spite",
     "egg:spitup",
     "egg:stockpile",
     "egg:swallow",
-    "egg:toxicspikes",
-    "egg:venomdrench",
-    "egg:willowisp",
     "tm:acidspray",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
-    "tm:captivate",
-    "tm:confide",
+    "tm:corrosivegas",
     "tm:curse",
     "tm:darkpulse",
-    "tm:doubleteam",
     "tm:endure",
     "tm:explosion",
     "tm:facade",
     "tm:fireblast",
     "tm:flamethrower",
     "tm:flash",
-    "tm:frustration",
     "tm:gunkshot",
     "tm:gyroball",
     "tm:haze",
-    "tm:hiddenpower",
     "tm:incinerate",
     "tm:infestation",
-    "tm:naturalgift",
     "tm:painsplit",
     "tm:payback",
     "tm:protect",
     "tm:psybeam",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:rollout",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:shadowball",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
     "tm:spite",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
@@ -130,67 +169,40 @@
     "tm:torment",
     "tm:toxic",
     "tm:toxicspikes",
-    "tm:uproar",
     "tm:venomdrench",
     "tm:venoshock",
     "tm:willowisp",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:clearsmog",
     "tutor:corrosivegas",
-    "tutor:curse",
     "tutor:darkpulse",
-    "tutor:destinybond",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:explosion",
-    "tutor:facade",
-    "tutor:fireblast",
     "tutor:flamethrower",
-    "tutor:frustration",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:mimic",
+    "tutor:gunkshot",
     "tutor:painsplit",
-    "tutor:poisongas",
-    "tutor:protect",
-    "tutor:psybeam",
-    "tutor:psywave",
-    "tutor:rage",
     "tutor:rest",
-    "tutor:return",
     "tutor:rollout",
-    "tutor:screech",
-    "tutor:selfdestruct",
     "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:sludge",
     "tutor:sludgebomb",
-    "tutor:sludgewave",
-    "tutor:smog",
-    "tutor:smokescreen",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:taunt",
-    "tutor:thief",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:toxic",
-    "tutor:uproar",
-    "tutor:willowisp",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.koffing.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:uproar",
+    "legacy:zapcannon"
   ],
   "evolutions": [
     {
@@ -209,7 +221,7 @@
       ]
     },
     {
-      "id": "koffing_weezing",
+      "id": "koffing_weezinggalar",
       "variant": "level_up",
       "result": "weezing galarian",
       "consumeHeldItem": false,
@@ -220,30 +232,69 @@
         {
           "variant": "level",
           "minLevel": 35
+        },
+        {
+          "variant": "biome",
+          "biomeCondition": "#cobblemon:evolution/regional/koffing_galarbiome"
         }
       ]
     }
   ],
-  "features": [
-    "galarian"
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 10,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Galar-Bias",
+      "primaryType": "poison",
+      "maleRatio": 0.5,
+      "height": 6,
+      "weight": 10,
+      "pokedex": [
+        "cobblemon.species.koffing-galarbias.desc"
+      ],
+      "labels": [
+        "gen8",
+        "customized_official",
+        "galarian_form"
+      ],
+      "aspects": [
+        "region-bias-galar"
+      ],
+      "dynamaxBlocked": false,
+      "evolutions": [
+        {
+          "id": "koffing_weezing",
+          "variant": "level_up",
+          "result": "weezing",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "doublehit"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 35
+            },
+            {
+              "variant": "biome",
+              "biomeCondition": "#cobblemon:evolution/regional/koffing_kantobiome"
+            }
+          ]
+        },
+        {
+          "id": "koffing_weezinggalar",
+          "variant": "level_up",
+          "result": "weezing galarian",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "doublehit"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 35
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

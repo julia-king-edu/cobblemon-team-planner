@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Mudkip",
   "nationalPokedexNumber": 258,
+  "name": "Mudkip",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 76,
+  "pokedex": [
+    "cobblemon.species.mudkip.desc"
+  ],
+  "labels": [
+    "gen3",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:damp"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
   ],
   "baseStats": {
     "hp": 50,
@@ -15,22 +30,63 @@
     "special_defence": 50,
     "speed": 40
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 62,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "standingEyeHeight": 0.7,
+  "swimmingEyeHeight": 0.7,
+  "flyingEyeHeight": 0.7,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.8,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "mudkip",
+          "tier": 1
+        },
+        {
+          "pokemon": "marshtomp",
+          "tier": 2
+        },
+        {
+          "pokemon": "swampert mega=false",
+          "tier": 3
+        },
+        {
+          "pokemon": "swampert mega",
+          "tier": 4
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -47,66 +103,58 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
+    "1:foresight",
     "3:watergun",
     "6:rocksmash",
-    "9:mudslap",
     "9:rockthrow",
-    "12:foresight",
     "12:protect",
     "15:supersonic",
-    "17:bide",
     "18:waterpulse",
-    "20:mudsport",
     "21:rockslide",
     "24:takedown",
     "27:amnesia",
     "30:surf",
     "33:screech",
-    "33:whirlpool",
     "36:endeavor",
     "39:hydropump",
     "egg:ancientpower",
-    "egg:avalanche",
     "egg:barrier",
+    "egg:bide",
     "egg:bite",
     "egg:counter",
     "egg:curse",
     "egg:doubleedge",
-    "egg:iceball",
     "egg:mirrorcoat",
     "egg:mudbomb",
     "egg:mudslap",
+    "egg:mudsport",
     "egg:refresh",
     "egg:sludge",
     "egg:stomp",
-    "egg:uproar",
-    "egg:whirlpool",
     "egg:wideguard",
     "egg:yawn",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodyslam",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:echoedvoice",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hydropump",
+    "tm:iceball",
     "tm:icebeam",
     "tm:icywind",
     "tm:irontail",
@@ -115,30 +163,23 @@
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
+    "tm:rollout",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:sludgewave",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterfall",
     "tm:waterpledge",
@@ -147,37 +188,41 @@
     "tm:workup",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:bodyslam",
-    "tutor:defensecurl",
     "tutor:dive",
-    "tutor:doubleedge",
     "tutor:earthpower",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:iceball",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:liquidation",
     "tutor:lowkick",
-    "tutor:mimic",
     "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:tackle",
     "tutor:uproar",
-    "tutor:watergun",
     "tutor:waterpledge",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.mudkip.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -195,24 +240,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 76,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

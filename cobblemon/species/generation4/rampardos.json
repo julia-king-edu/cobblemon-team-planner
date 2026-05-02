@@ -1,12 +1,85 @@
 {
   "implemented": true,
-  "name": "Rampardos",
   "nationalPokedexNumber": 409,
+  "name": "Rampardos",
   "primaryType": "rock",
+  "maleRatio": 0.875,
+  "height": 16,
+  "weight": 1025,
+  "pokedex": [
+    "cobblemon.species.rampardos.desc"
+  ],
+  "labels": [
+    "gen4",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "moldbreaker",
     "h:sheerforce"
   ],
+  "eggGroups": [
+    "monster"
+  ],
+  "baseStats": {
+    "hp": 97,
+    "attack": 165,
+    "defence": 60,
+    "special_attack": 65,
+    "special_defence": 50,
+    "speed": 58
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "erratic",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "height": 2.5,
+    "fixed": false,
+    "width": 1.6
+  },
+  "behaviour": {
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "rampardos",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      },
+      "walk": {
+        "walkSpeed": 0.19
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -16,60 +89,29 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 97,
-    "attack": 165,
-    "defence": 60,
-    "special_attack": 65,
-    "special_defence": 50,
-    "speed": 58
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 173,
-  "experienceGroup": "erratic",
-  "eggCycles": 30,
-  "eggGroups": [
-    "monster"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving" : {
-      "walk": {
-        "walkSpeed": 0.19
-      }
-    }
-  },
   "moves": [
-    "1:endeavor",
-    "1:focusenergy",
     "1:headbutt",
     "1:leer",
+    "1:focusenergy",
     "1:pursuit",
-    "6:focusenergy",
-    "10:pursuit",
+    "1:endeavor",
+    "1:chipaway",
     "10:rocksmash",
     "15:takedown",
     "19:scaryface",
     "24:assurance",
-    "28:ancientpower",
-    "28:chipaway",
     "28:slam",
-    "30:endeavor",
     "36:ancientpower",
-    "36:zenheadbutt",
-    "43:screech",
     "43:zenheadbutt",
     "51:screech",
-    "52:headsmash",
     "58:headsmash",
-    "tm:attract",
+    "egg:hammerarm",
+    "egg:slam",
+    "egg:stomp",
+    "egg:thrash",
+    "egg:whirlwind",
+    "tm:ancientpower",
+    "tm:assurance",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodypress",
@@ -77,14 +119,11 @@
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragoncheer",
     "tm:dragonclaw",
     "tm:dragonpulse",
@@ -99,25 +138,25 @@
     "tm:flamethrower",
     "tm:fling",
     "tm:focusblast",
+    "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:incinerate",
     "tm:ironhead",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:payback",
+    "tm:powershift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockblast",
     "tm:rockclimb",
@@ -125,10 +164,9 @@
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:smackdown",
@@ -139,8 +177,8 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:supercellslam",
+    "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
@@ -148,60 +186,57 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
-    "tm:whirlpool",
     "tm:zenheadbutt",
     "tutor:ancientpower",
+    "tutor:bulldoze",
     "tutor:dragonpulse",
     "tutor:earthpower",
     "tutor:endeavor",
     "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:ironhead",
     "tutor:irontail",
     "tutor:laserfocus",
     "tutor:mudslap",
     "tutor:outrage",
-    "tutor:painsplit",
+    "tutor:powershift",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:spite",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
     "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.rampardos.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:painsplit",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:spite",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:whirlpool"
   ],
   "preEvolution": "cranidos",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.6,
-    "height": 2.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 1025,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

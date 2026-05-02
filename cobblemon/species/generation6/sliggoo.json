@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Sliggoo",
   "nationalPokedexNumber": 705,
+  "name": "Sliggoo",
   "primaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 175,
+  "pokedex": [
+    "cobblemon.species.sliggoo.desc"
+  ],
+  "labels": [
+    "gen6",
+    "kalosian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "sapsipper",
     "hydration",
     "h:gooey"
+  ],
+  "eggGroups": [
+    "dragon"
   ],
   "baseStats": {
     "hp": 68,
@@ -16,171 +30,54 @@
     "special_defence": 113,
     "speed": 60
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 158,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
   "features": [
     "hisuian"
   ],
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Hisui",
-      "primaryType": "steel",
-      "secondaryType": "dragon",
-      "abilities": [
-        "sapsipper",
-        "shellarmor",
-        "h:gooey"
-      ],
-      "baseStats": {
-        "hp": 58,
-        "attack": 75,
-        "defence": 83,
-        "special_attack": 83,
-        "special_defence": 113,
-        "speed": 40
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.65,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-2"
       },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 158,
-      "baseFriendship": 35,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
+      {
+        "item": "cobblemon:shed_shell",
+        "percentage": 5.0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 40,
-      "eggGroups": [
-        "dragon"
-      ],
-      "moves": [
-        "1:absorb",
-        "1:acidarmor",
-        "1:dragonbreath",
-        "1:tackle",
-        "1:watergun",
-        "15:protect",
-        "20:flail",
-        "25:waterpulse",
-        "30:raindance",
-        "35:dragonpulse",
-        "43:curse",
-        "49:ironhead",
-        "56:muddywater",
-        "tm:acidspray",
-        "tm:blizzard",
-        "tm:bodyslam",
-        "tm:charm",
-        "tm:chillingwater",
-        "tm:curse",
-        "tm:dracometeor",
-        "tm:dragonpulse",
-        "tm:endure",
-        "tm:facade",
-        "tm:flashcannon",
-        "tm:gyroball",
-        "tm:heavyslam",
-        "tm:icebeam",
-        "tm:icespinner",
-        "tm:ironhead",
-        "tm:muddywater",
-        "tm:mudshot",
-        "tm:outrage",
-        "tm:protect",
-        "tm:raindance",
-        "tm:rest",
-        "tm:rockslide",
-        "tm:rocktomb",
-        "tm:sandstorm",
-        "tm:skittersmack",
-        "tm:sleeptalk",
-        "tm:sludgebomb",
-        "tm:sludgewave",
-        "tm:steelbeam",
-        "tm:substitute",
-        "tm:sunnyday",
-        "tm:takedown",
-        "tm:terablast",
-        "tm:thunder",
-        "tm:thunderbolt",
-        "tm:waterpulse"
-      ],
-      "labels": [
-        "gen8",
-        "hisui_regional"
-      ],
-      "aspects": [
-        "hisuian"
-      ],
-      "height": 7,
-      "weight": 685,
-      "preEvolution": "goomy region_bias=hisui",
-      "baseScale": 0.65,
-      "hitbox": {
-        "width": 1.45,
-        "height": 1.75,
-        "fixed": false
-      },
-      "evolutions": [
-        {
-          "id": "hisui_sliggoo_hisui_goodra",
-          "variant": "level_up",
-          "result": "goodra hisuian",
-          "consumeHeldItem": false,
-          "learnableMoves": [
-            "irontail"
-          ],
-          "requirements": [
-            {
-              "variant": "level",
-              "minLevel": 50
-            },
-            {
-              "variant": "weather",
-              "isRaining": true
-            }
-          ]
-        }
-      ],
-      "cannotDynamax": false,
-      "battleOnly": false,
-      "drops": {
-        "amount": 5,
-        "entries": [
-          {
-            "item": "minecraft:slime_ball",
-            "quantityRange": "0-2"
-          },
-          {
-            "item": "minecraft:iron_ingot",
-            "quantityRange": "0-2"
-          },
-          {
-            "item": "cobblemon:bluk_berry",
-            "percentage": 5.0
-          }
-        ]
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 5.0
       }
-    }
-  ],
-  "baseExperienceYield": 158,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "dragon"
-  ],
+    ]
+  },
   "moves": [
-    "1:absorb",
-    "1:acidarmor",
-    "1:bubble",
-    "1:dragonbreath",
     "1:tackle",
+    "1:bubble",
+    "1:absorb",
+    "1:bide",
+    "1:dragonbreath",
+    "1:acidspray",
     "1:watergun",
-    "13:bide",
+    "1:acidarmor",
     "15:protect",
     "20:flail",
     "25:waterpulse",
@@ -189,21 +86,18 @@
     "43:curse",
     "49:bodyslam",
     "56:muddywater",
+    "egg:counter",
+    "egg:lifedew",
     "tm:acidspray",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:charm",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragonpulse",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:infestation",
     "tm:irontail",
@@ -213,18 +107,14 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
-    "tm:round",
-    "tm:secretpower",
+    "tm:shockwave",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
@@ -233,19 +123,28 @@
     "tm:waterpulse",
     "tutor:dracometeor",
     "tutor:dragonpulse",
+    "tutor:icebeam",
     "tutor:irontail",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:shockwave",
     "tutor:skittersmack",
-    "tutor:snore",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen6",
-    "kalos_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.sliggoo.desc"
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:thunderbolt",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:poisontail",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "preEvolution": "goomy",
   "evolutions": [
@@ -269,36 +168,199 @@
       ]
     }
   ],
-  "baseScale": 0.65,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.65,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 175,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:slime_ball",
-        "quantityRange": "0-2"
+  "forms": [
+    {
+      "name": "Hisui",
+      "primaryType": "steel",
+      "secondaryType": "dragon",
+      "maleRatio": 0.5,
+      "height": 7,
+      "weight": 685,
+      "pokedex": [
+        "cobblemon.species.sliggoo-hisui.desc"
+      ],
+      "labels": [
+        "gen8a",
+        "hisuian_form"
+      ],
+      "aspects": [
+        "hisuian"
+      ],
+      "abilities": [
+        "sapsipper",
+        "shellarmor",
+        "h:gooey"
+      ],
+      "baseStats": {
+        "hp": 58,
+        "attack": 75,
+        "defence": 83,
+        "special_attack": 83,
+        "special_defence": 113,
+        "speed": 40
       },
-      {
-        "item": "cobblemon:haban_berry",
-        "percentage": 5.0
+      "hitbox": {
+        "width": 1.45,
+        "height": 1.75,
+        "fixed": false
+      },
+      "drops": {
+        "amount": 6,
+        "entries": [
+          {
+            "item": "minecraft:slime_ball",
+            "quantityRange": "0-2"
+          },
+          {
+            "item": "cobblemon:shed_shell",
+            "percentage": 5.0
+          },
+          {
+            "item": "minecraft:iron_ingot",
+            "quantityRange": "0-2"
+          },
+          {
+            "item": "cobblemon:bluk_berry",
+            "percentage": 5.0
+          }
+        ]
+      },
+      "moves": [
+        "1:bubble",
+        "1:shelter",
+        "1:tackle",
+        "1:watergun",
+        "1:absorb",
+        "1:acidarmor",
+        "1:dragonbreath",
+        "1:bide",
+        "15:protect",
+        "20:flail",
+        "25:waterpulse",
+        "30:raindance",
+        "35:dragonpulse",
+        "43:curse",
+        "49:ironhead",
+        "56:muddywater",
+        "egg:counter",
+        "egg:lifedew",
+        "tm:acidspray",
+        "tm:blizzard",
+        "tm:bodyslam",
+        "tm:charm",
+        "tm:chillingwater",
+        "tm:curse",
+        "tm:dracometeor",
+        "tm:dragonpulse",
+        "tm:endure",
+        "tm:facade",
+        "tm:flashcannon",
+        "tm:gyroball",
+        "tm:heavyslam",
+        "tm:icebeam",
+        "tm:icespinner",
+        "tm:ironhead",
+        "tm:irontail",
+        "tm:muddywater",
+        "tm:mudshot",
+        "tm:outrage",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:rockslide",
+        "tm:rocktomb",
+        "tm:sandstorm",
+        "tm:skittersmack",
+        "tm:sleeptalk",
+        "tm:sludgebomb",
+        "tm:sludgewave",
+        "tm:steelbeam",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:waterpulse",
+        "tutor:dracometeor",
+        "tutor:dragonpulse",
+        "tutor:flashcannon",
+        "tutor:icebeam",
+        "tutor:ironhead",
+        "tutor:irontail",
+        "tutor:outrage",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:skittersmack",
+        "tutor:sleeptalk",
+        "tutor:sludgebomb",
+        "tutor:steelbeam",
+        "tutor:thunderbolt",
+        "tutor:waterpulse",
+        "legacy:attract",
+        "legacy:confide",
+        "legacy:doubleteam",
+        "legacy:frustration",
+        "legacy:hiddenpower",
+        "legacy:poisontail",
+        "legacy:return",
+        "legacy:round",
+        "legacy:secretpower",
+        "legacy:snore",
+        "legacy:swagger",
+        "legacy:toxic"
+      ],
+      "preEvolution": "goomy",
+      "evolutions": [
+        {
+          "id": "sliggoo_goodrahisui",
+          "variant": "level_up",
+          "result": "goodra hisuian",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "irontail"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 50
+            },
+            {
+              "variant": "weather",
+              "isRaining": true
+            }
+          ]
+        }
+      ],
+      "battleOnly": false,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.15
+          }
+        },
+        "combat": {
+          "willDefendOwner": true
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
       }
-    ]
+    }
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
   }
 }

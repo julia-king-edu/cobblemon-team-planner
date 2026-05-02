@@ -1,9 +1,27 @@
 {
-  "name": "Palafin",
+  "implemented": true,
   "nationalPokedexNumber": 964,
+  "name": "Palafin",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 602,
+  "pokedex": [
+    "cobblemon.species.palafin.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [
+    "zero-form"
+  ],
   "abilities": [
-    "zerotohero"
+    "zerotohero",
+    "h:zerotohero"
+  ],
+  "eggGroups": [
+    "field",
+    "water_2"
   ],
   "baseStats": {
     "hp": 100,
@@ -13,10 +31,6 @@
     "special_defence": 62,
     "speed": 100
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 160,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 2,
     "attack": 0,
@@ -25,17 +39,66 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 160,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 40,
-  "eggGroups": [
-    "field",
-    "water_2"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 1.25,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canBreatheUnderwater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "palafin hero=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "palafin hero",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:cod",
+        "quantityRange": "0-2"
+      }
+    ]
+  },
   "moves": [
+    "1:flipturn",
     "1:jetpunch",
     "1:supersonic",
     "1:watergun",
-    "1:flipturn",
     "7:astonish",
     "10:focusenergy",
     "13:aquajet",
@@ -49,16 +112,24 @@
     "50:hydropump",
     "55:focuspunch",
     "61:wavecrash",
+    "egg:boomburst",
+    "egg:bounce",
+    "egg:counter",
+    "egg:haze",
+    "egg:tickle",
     "tm:acrobatics",
     "tm:agility",
+    "tm:aquatail",
     "tm:aurasphere",
     "tm:blizzard",
     "tm:bodyslam",
+    "tm:bounce",
     "tm:bulkup",
     "tm:charm",
     "tm:chillingwater",
     "tm:closecombat",
     "tm:disarmingvoice",
+    "tm:dive",
     "tm:drainingkiss",
     "tm:drainpunch",
     "tm:encore",
@@ -68,6 +139,7 @@
     "tm:fling",
     "tm:flipturn",
     "tm:focusblast",
+    "tm:focusenergy",
     "tm:focuspunch",
     "tm:gigaimpact",
     "tm:grassknot",
@@ -99,23 +171,50 @@
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:aquatail",
+    "tutor:bounce",
+    "tutor:bulkup",
+    "tutor:dive",
+    "tutor:drainpunch",
+    "tutor:endeavor",
+    "tutor:flipturn",
+    "tutor:focusenergy",
+    "tutor:focuspunch",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:ironhead",
+    "tutor:liquidation",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:waterpulse",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 13,
-  "weight": 602,
   "preEvolution": "finizen",
   "evolutions": [],
-  "cannotDynamax": false,
   "forms": [
     {
       "name": "Hero",
       "primaryType": "water",
-      "abilities": [
-        "zerotohero"
+      "maleRatio": 0.5,
+      "height": 18,
+      "weight": 974,
+      "pokedex": [
+        "cobblemon.species.palafin-hero.desc"
+      ],
+      "labels": [
+        "gen9"
+      ],
+      "aspects": [
+        "hero-form"
       ],
       "baseStats": {
         "hp": 100,
@@ -125,46 +224,146 @@
         "special_defence": 87,
         "speed": 100
       },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 160,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 2,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
+      "baseExperienceYield": 228,
+      "hitbox": {
+        "width": 1.2,
+        "height": 2.5,
+        "fixed": false
       },
-      "experienceGroup": "slow",
-      "eggCycles": 40,
-      "eggGroups": [
-        "field",
-        "water_2"
+      "behaviour": {
+        "moving": {
+          "swim": {
+            "swimSpeed": "0.2",
+            "canBreatheUnderwater": true
+          }
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "palafin hero",
+              "tier": 1
+            },
+            {
+              "pokemon": "manaphy",
+              "tier": 2
+            }
+          ]
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
+      "moves": [
+        "1:flipturn",
+        "1:jetpunch",
+        "1:supersonic",
+        "1:watergun",
+        "7:astonish",
+        "10:focusenergy",
+        "13:aquajet",
+        "17:doublehit",
+        "21:dive",
+        "25:charm",
+        "29:acrobatics",
+        "34:encore",
+        "39:aquatail",
+        "44:mist",
+        "50:hydropump",
+        "55:focuspunch",
+        "61:wavecrash",
+        "tm:acrobatics",
+        "tm:agility",
+        "tm:aquatail",
+        "tm:aurasphere",
+        "tm:blizzard",
+        "tm:bodyslam",
+        "tm:boomburst",
+        "tm:bounce",
+        "tm:bulkup",
+        "tm:charm",
+        "tm:chillingwater",
+        "tm:closecombat",
+        "tm:counter",
+        "tm:disarmingvoice",
+        "tm:dive",
+        "tm:drainingkiss",
+        "tm:drainpunch",
+        "tm:encore",
+        "tm:endeavor",
+        "tm:endure",
+        "tm:facade",
+        "tm:fling",
+        "tm:flipturn",
+        "tm:focusblast",
+        "tm:focusenergy",
+        "tm:focuspunch",
+        "tm:gigaimpact",
+        "tm:grassknot",
+        "tm:hardpress",
+        "tm:haze",
+        "tm:helpinghand",
+        "tm:hydropump",
+        "tm:hyperbeam",
+        "tm:hypervoice",
+        "tm:icebeam",
+        "tm:icepunch",
+        "tm:icywind",
+        "tm:ironhead",
+        "tm:liquidation",
+        "tm:outrage",
+        "tm:protect",
+        "tm:psychup",
+        "tm:raindance",
+        "tm:rest",
+        "tm:reversal",
+        "tm:sleeptalk",
+        "tm:substitute",
+        "tm:surf",
+        "tm:swift",
+        "tm:takedown",
+        "tm:taunt",
+        "tm:terablast",
+        "tm:throatchop",
+        "tm:tickle",
+        "tm:waterfall",
+        "tm:waterpulse",
+        "tm:whirlpool",
+        "tm:zenheadbutt",
+        "tutor:aquatail",
+        "tutor:bounce",
+        "tutor:bulkup",
+        "tutor:dive",
+        "tutor:drainpunch",
+        "tutor:endeavor",
+        "tutor:flipturn",
+        "tutor:focusenergy",
+        "tutor:focuspunch",
+        "tutor:gigaimpact",
+        "tutor:helpinghand",
+        "tutor:hyperbeam",
+        "tutor:hypervoice",
+        "tutor:icebeam",
+        "tutor:icepunch",
+        "tutor:icywind",
+        "tutor:ironhead",
+        "tutor:liquidation",
+        "tutor:outrage",
+        "tutor:rest",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:throatchop",
+        "tutor:waterpulse",
+        "tutor:zenheadbutt"
       ],
-      "labels": [
-        "gen9"
-      ],
-      "aspects": [
-        "hero"
-      ],
-      "height": 18,
-      "weight": 974,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": true
     }
-  ],
-  "pokedex": [
-    "cobblemon.species.palafin.desc"
-  ],
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:cod",
-        "quantityRange": "0-2"
-      }
-    ]
-  }
+  ]
 }

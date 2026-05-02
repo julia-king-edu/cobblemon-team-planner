@@ -1,13 +1,106 @@
 {
   "implemented": true,
-  "name": "Lechonk",
   "nationalPokedexNumber": 915,
+  "name": "Lechonk",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 102,
+  "pokedex": [
+    "cobblemon.species.lechonk.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "aromaveil",
     "gluttony",
     "h:thickfat"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 54,
+    "attack": 45,
+    "defence": 40,
+    "special_attack": 35,
+    "special_defence": 45,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 51,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.12
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "spoink",
+          "tier": 1
+        },
+        {
+          "pokemon": "tepig",
+          "tier": 1
+        },
+        {
+          "pokemon": "lechonk",
+          "tier": 1
+        },
+        {
+          "pokemon": "grumpig",
+          "tier": 2
+        },
+        {
+          "pokemon": "pignite",
+          "tier": 2
+        },
+        {
+          "pokemon": "oinkologne",
+          "tier": 2
+        },
+        {
+          "pokemon": "emboar",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -20,44 +113,6 @@
         "percentage": 2.5
       }
     ]
-  },
-  "baseStats": {
-    "hp": 54,
-    "attack": 45,
-    "defence": 40,
-    "special_attack": 35,
-    "special_defence": 45,
-    "speed": 35
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 51,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.12
-      }
-    }
   },
   "moves": [
     "1:tackle",
@@ -82,13 +137,16 @@
     "tm:bulldoze",
     "tm:bulletseed",
     "tm:chillingwater",
+    "tm:covet",
     "tm:curse",
     "tm:dig",
     "tm:disarmingvoice",
     "tm:doubleedge",
+    "tm:echoedvoice",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
+    "tm:headbutt",
     "tm:helpinghand",
     "tm:hypervoice",
     "tm:ironhead",
@@ -108,50 +166,57 @@
     "tm:thief",
     "tm:trailblaze",
     "tm:uproar",
-    "tm:zenheadbutt"
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:bulldoze",
+    "tutor:covet",
+    "tutor:endeavor",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:ironhead",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:superfang",
+    "tutor:uproar",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 5,
-  "weight": 102,
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.6,
-    "fixed": false
-  },
   "evolutions": [
     {
       "id": "lechonk_oinkologne",
       "variant": "level_up",
-      "result": "oinkologne",
+      "result": "oinkologne male",
       "consumeHeldItem": false,
       "learnableMoves": [],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 18
+        },
+        {
+          "variant": "properties",
+          "target": "gender=male"
         }
       ]
     },
     {
-      "id": "lechonk_oinkologne",
+      "id": "lechonk_oinkolognef",
       "variant": "level_up",
-      "result": "oinkologne f",
+      "result": "oinkologne female",
       "consumeHeldItem": false,
       "learnableMoves": [],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 18
+        },
+        {
+          "variant": "properties",
+          "target": "gender=female"
         }
       ]
     }
-  ],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.lechonk.desc"
   ]
 }

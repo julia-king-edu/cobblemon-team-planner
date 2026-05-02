@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Tropius",
   "nationalPokedexNumber": 357,
+  "name": "Tropius",
   "primaryType": "grass",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 20,
+  "weight": 1000,
+  "pokedex": [
+    "cobblemon.species.tropius.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "chlorophyll",
     "solarpower",
     "h:harvest"
+  ],
+  "eggGroups": [
+    "monster",
+    "grass"
   ],
   "baseStats": {
     "hp": 99,
@@ -17,65 +31,161 @@
     "special_defence": 87,
     "speed": 51
   },
-  "catchRate": 200,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 161,
   "experienceGroup": "slow",
+  "catchRate": 200,
   "eggCycles": 25,
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 5,
+    "fixed": false,
+    "width": 2.2
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "20-45",
+          "JUMP": "70-90",
+          "SKILL": "20-40",
+          "SPEED": "20-45",
+          "STAMINA": "55-80"
+        }
+      },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-50",
+          "JUMP": "10-20",
+          "SKILL": "30-50",
+          "SPEED": "15-25",
+          "STAMINA": "55-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tropius",
+          "tier": 1
+        },
+        {
+          "pokemon": "aurorus",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.147
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:nanab_berry",
+        "quantityRange": "0-2"
+      }
+    ]
+  },
   "moves": [
-    "1:growth",
-    "1:gust",
-    "1:leafstorm",
     "1:leer",
+    "1:gust",
+    "1:growth",
     "1:razorleaf",
+    "1:leafstorm",
+    "1:bestow",
     "6:sweetscent",
     "10:stomp",
     "16:magicalleaf",
     "21:whirlwind",
-    "26:leaftornado",
-    "30:naturalgift",
     "30:wideguard",
     "36:airslash",
     "41:bodyslam",
-    "46:bestow",
     "46:outrage",
     "50:synthesis",
     "56:solarbeam",
-    "egg:bulletseed",
     "egg:curse",
     "egg:dragondance",
     "egg:dragonhammer",
     "egg:headbutt",
     "egg:leafblade",
-    "egg:leafstorm",
     "egg:leechseed",
     "egg:naturalgift",
-    "egg:naturepower",
     "egg:razorwind",
     "egg:slam",
-    "egg:synthesis",
     "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brutalswing",
     "tm:bulldoze",
     "tm:bulletseed",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragondance",
     "tm:dragonpulse",
     "tm:dragontail",
@@ -86,31 +196,31 @@
     "tm:facade",
     "tm:flash",
     "tm:fly",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hyperbeam",
+    "tm:leafblade",
     "tm:leafstorm",
+    "tm:leaftornado",
     "tm:magicalleaf",
     "tm:naturalgift",
     "tm:naturepower",
+    "tm:ominouswind",
     "tm:outrage",
     "tm:petalblizzard",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rocksmash",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:silverwind",
     "tm:sleeptalk",
@@ -122,80 +232,58 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
+    "tm:twister",
     "tm:uturn",
+    "tm:worryseed",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:airslash",
-    "tutor:bodyslam",
+    "tutor:bulldoze",
+    "tutor:calmmind",
     "tutor:defog",
-    "tutor:doubleedge",
     "tutor:dragonpulse",
-    "tutor:endure",
+    "tutor:dualwingbeat",
+    "tutor:energyball",
     "tutor:furycutter",
     "tutor:gigadrain",
-    "tutor:gust",
-    "tutor:headbutt",
-    "tutor:leechseed",
-    "tutor:mimic",
-    "tutor:mudslap",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:magicalleaf",
     "tutor:ominouswind",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:roost",
     "tutor:seedbomb",
-    "tutor:silverwind",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
+    "tutor:spite",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:swordsdance",
     "tutor:synthesis",
     "tutor:tailwind",
     "tutor:twister",
-    "tutor:worryseed"
+    "tutor:worryseed",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.tropius.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 2.2,
-    "height": 5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 1000,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "cobblemon:nanab_berry",
-        "quantityRange": "0-2"
-      }
-    ]
-  }
+  "evolutions": []
 }

@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "28-53",
             "weight": 1.2,
@@ -25,7 +25,7 @@
                     "#cobblemon:is_tropical_island"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             },
             "anticondition": {
@@ -41,7 +41,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "28-53",
             "weight": 1.2,
@@ -70,7 +70,7 @@
                 "urban"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.02,
@@ -89,7 +89,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.02,
@@ -111,7 +111,7 @@
                 "mansion"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.1,
@@ -126,7 +126,7 @@
             "id": "vaporeon-6",
             "pokemon": "vaporeon",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "28-53",
             "weight": 6.0,

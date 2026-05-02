@@ -11,7 +11,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "22-47",
             "weight": 10.0,
@@ -22,6 +22,11 @@
                     "#cobblemon:is_mountain",
                     "#cobblemon:is_snowy_forest",
                     "#cobblemon:is_taiga"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
                 ]
             }
         }

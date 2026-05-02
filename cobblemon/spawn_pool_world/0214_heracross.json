@@ -12,7 +12,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "25-50",
             "weight": 2.0,
@@ -30,6 +30,9 @@
                 ]
             },
             "anticondition": {
+                "neededNearbyBlocks": [
+                    "#cobblemon:saccharine_trees"
+                ],
                 "biomes": [
                     "#cobblemon:is_freezing",
                     "#cobblemon:is_spooky"
@@ -45,7 +48,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "25-50",
             "weight": 2.0,
@@ -60,15 +63,57 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_jungle",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland",
                     "#cobblemon:is_tropical_island"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "#cobblemon:saccharine_trees"
                 ]
             }
         },
         {
             "id": "heracross-3",
             "pokemon": "heracross",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "25-50",
+            "weight": 2.0,
+            "weightMultiplier": {
+                "multiplier": 5.0,
+                "condition": {
+                    "timeRange": "twilight"
+                }
+            },
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:saccharine_trees"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_freezing"
+                ]
+            }
+        },
+        {
+            "id": "heracross-4",
+            "pokemon": "heracross",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "25-50",
             "weight": 10.0,

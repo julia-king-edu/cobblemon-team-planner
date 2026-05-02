@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "49-52",
             "weight": 0.1,
@@ -39,7 +39,7 @@
                 "redstone"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "49-52",
             "weight": 0.02,
@@ -56,10 +56,10 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "49-52",
-            "weight": 0.1,
+            "weight": 0.02,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_overworld"

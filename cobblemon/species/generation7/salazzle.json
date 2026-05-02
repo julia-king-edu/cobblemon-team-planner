@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Salazzle",
   "nationalPokedexNumber": 758,
+  "name": "Salazzle",
   "primaryType": "poison",
   "secondaryType": "fire",
+  "maleRatio": 0,
+  "height": 12,
+  "weight": 222,
+  "pokedex": [
+    "cobblemon.species.salazzle.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "corrosion",
     "h:oblivious"
+  ],
+  "eggGroups": [
+    "monster",
+    "dragon"
   ],
   "baseStats": {
     "hp": 68,
@@ -16,168 +30,114 @@
     "special_defence": 60,
     "speed": 117
   },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Totem",
-      "primaryType": "poison",
-      "secondaryType": "fire",
-      "abilities": [
-        "corrosion"
-      ],
-      "baseStats": {
-        "hp": 68,
-        "attack": 64,
-        "defence": 60,
-        "special_attack": 111,
-        "special_defence": 60,
-        "speed": 117
-      },
-      "catchRate": 45,
-      "maleRatio": 0,
-      "baseExperienceYield": 168,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 2
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "dragon"
-      ],
-      "moves": [
-        "1:captivate",
-        "1:disable",
-        "1:ember",
-        "1:encore",
-        "1:poisongas",
-        "1:pound",
-        "1:swagger",
-        "1:sweetscent",
-        "1:torment",
-        "13:dragonrage",
-        "16:smog",
-        "21:doubleslap",
-        "24:flameburst",
-        "29:toxic",
-        "32:nastyplot",
-        "39:venoshock",
-        "44:flamethrower",
-        "51:venomdrench",
-        "56:dragonpulse",
-        "tm:acrobatics",
-        "tm:attract",
-        "tm:confide",
-        "tm:doubleteam",
-        "tm:dragonclaw",
-        "tm:dragontail",
-        "tm:facade",
-        "tm:fireblast",
-        "tm:flamecharge",
-        "tm:flamethrower",
-        "tm:fling",
-        "tm:frustration",
-        "tm:hiddenpower",
-        "tm:leechlife",
-        "tm:overheat",
-        "tm:payback",
-        "tm:poisonjab",
-        "tm:protect",
-        "tm:rest",
-        "tm:return",
-        "tm:round",
-        "tm:shadowclaw",
-        "tm:sleeptalk",
-        "tm:sludgebomb",
-        "tm:sludgewave",
-        "tm:substitute",
-        "tm:swagger",
-        "tm:taunt",
-        "tm:thief",
-        "tm:torment",
-        "tm:toxic",
-        "tm:venoshock",
-        "tm:willowisp",
-        "tutor:covet",
-        "tutor:doubleslap",
-        "tutor:dragonpulse",
-        "tutor:flameburst",
-        "tutor:foulplay",
-        "tutor:gunkshot",
-        "tutor:heatwave",
-        "tutor:helpinghand",
-        "tutor:irontail",
-        "tutor:knockoff",
-        "tutor:laserfocus",
-        "tutor:smog",
-        "tutor:snatch",
-        "tutor:snore",
-        "tutor:toxic"
-      ],
-      "labels": [
-        "gen7",
-        "totem"
-      ],
-      "aspects": [
-        "totem"
-      ],
-      "height": 21,
-      "weight": 810,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
   "baseExperienceYield": 168,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 1.4,
+    "height": 2.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "salazzle",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "fireImmune": true
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:rotten_flesh",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:smoke_ball",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
     "1:captivate",
     "1:disable",
-    "1:ember",
     "1:encore",
-    "1:endeavor",
-    "1:knockoff",
-    "1:poisongas",
-    "1:pound",
-    "1:scratch",
-    "1:smog",
-    "1:swagger",
     "1:torment",
-    "13:dragonrage",
+    "1:swagger",
+    "1:pound",
+    "1:poisongas",
+    "1:ember",
+    "1:dragonrage",
+    "1:smog",
+    "1:doubleslap",
+    "1:flameburst",
+    "1:knockoff",
+    "1:firelash",
+    "1:scratch",
+    "1:endeavor",
     "15:poisonfang",
     "20:sweetscent",
-    "21:doubleslap",
-    "24:flameburst",
     "25:nastyplot",
     "30:incinerate",
     "37:venoshock",
     "44:dragonpulse",
     "51:flamethrower",
-    "51:venomdrench",
     "58:toxic",
+    "egg:belch",
+    "egg:doubleslap",
+    "egg:fakeout",
+    "egg:flameburst",
+    "egg:mudslap",
+    "egg:sandattack",
     "tm:acidspray",
     "tm:acrobatics",
     "tm:agility",
-    "tm:attract",
     "tm:beatup",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:burningjealousy",
-    "tm:confide",
+    "tm:captivate",
+    "tm:corrosivegas",
+    "tm:covet",
     "tm:crosspoison",
-    "tm:doubleteam",
     "tm:dragoncheer",
     "tm:dragonclaw",
     "tm:dragondance",
@@ -195,16 +155,16 @@
     "tm:flareblitz",
     "tm:fling",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:gunkshot",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:hypervoice",
+    "tm:incinerate",
     "tm:irontail",
     "tm:knockoff",
+    "tm:laserfocus",
     "tm:leechlife",
     "tm:mudslap",
     "tm:nastyplot",
@@ -214,8 +174,6 @@
     "tm:poisontail",
     "tm:protect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scaleshot",
     "tm:scaryface",
     "tm:shadowclaw",
@@ -223,7 +181,7 @@
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
+    "tm:snatch",
     "tm:substitute",
     "tm:sunnyday",
     "tm:swagger",
@@ -241,63 +199,43 @@
     "tm:venomdrench",
     "tm:venoshock",
     "tm:willowisp",
+    "tutor:burningjealousy",
     "tutor:corrosivegas",
     "tutor:covet",
     "tutor:dragonpulse",
-    "tutor:fakeout",
+    "tutor:endeavor",
+    "tutor:firefang",
     "tutor:flamethrower",
     "tutor:foulplay",
+    "tutor:gigaimpact",
     "tutor:gunkshot",
     "tutor:heatwave",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:laserfocus",
+    "tutor:leechlife",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:scaleshot",
+    "tutor:shadowclaw",
     "tutor:skittersmack",
+    "tutor:sleeptalk",
     "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:toxic"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.salazzle.desc"
+    "tutor:swift",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "salandit",
-  "evolutions": [],
-  "baseScale": 0.85,
-  "hitbox": {
-    "width": 1.4,
-    "height": 2.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 12,
-  "weight": 222,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:rotten_flesh",
-        "quantityRange": "0-2"
-      },
-      {
-        "item": "cobblemon:shuca_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  "evolutions": []
 }

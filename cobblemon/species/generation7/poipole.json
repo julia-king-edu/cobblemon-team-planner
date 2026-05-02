@@ -1,11 +1,53 @@
 {
   "implemented": true,
-  "name": "Poipole",
   "nationalPokedexNumber": 803,
+  "name": "Poipole",
   "primaryType": "poison",
-  "abilities": [
-    "beastboost"
+  "maleRatio": -1,
+  "height": 6,
+  "weight": 18,
+  "pokedex": [
+    "cobblemon.species.poipole.desc"
   ],
+  "labels": [
+    "gen7",
+    "ultra_beast"
+  ],
+  "aspects": [],
+  "abilities": [
+    "beastboost",
+    "h:beastboost"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 67,
+    "attack": 73,
+    "defence": 67,
+    "special_attack": 73,
+    "special_defence": 67,
+    "speed": 73
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 210,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 120,
+  "baseFriendship": 0,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.4,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -15,29 +57,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 67,
-    "attack": 73,
-    "defence": 67,
-    "special_attack": 73,
-    "special_defence": 67,
-    "speed": 73
-  },
-  "catchRate": 45,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 210,
-  "experienceGroup": "slow",
-  "eggCycles": 120,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:acid",
     "1:dragonpulse",
+    "1:peck",
     "1:growl",
     "1:helpinghand",
-    "1:peck",
+    "1:acid",
     "7:furyattack",
     "14:fellstinger",
     "21:charm",
@@ -48,57 +73,51 @@
     "56:gastroacid",
     "63:toxic",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:dragonpulse",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gunkshot",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:irontail",
     "tm:nastyplot",
     "tm:pinmissile",
     "tm:poisonjab",
     "tm:protect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
+    "tm:snatch",
     "tm:substitute",
+    "tm:terablast",
     "tm:toxic",
     "tm:toxicspikes",
     "tm:uproar",
     "tm:venomdrench",
     "tm:venoshock",
-    "tutor:acid",
-    "tutor:charm",
     "tutor:covet",
     "tutor:dragonpulse",
-    "tutor:fellstinger",
-    "tutor:furyattack",
     "tutor:gastroacid",
     "tutor:gunkshot",
     "tutor:helpinghand",
     "tutor:irontail",
-    "tutor:nastyplot",
     "tutor:poisonjab",
+    "tutor:rest",
     "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:uproar",
-    "tutor:venomdrench"
-  ],
-  "labels": [
-    "gen7",
-    "ultra_beast"
-  ],
-  "pokedex": [
-    "cobblemon.species.poipole.desc"
+    "legacy:confide",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -114,26 +133,55 @@
           "variant": "has_move",
           "move": "dragonpulse"
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 0,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 6,
-  "weight": 18,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "poipole",
+          "tier": 1
+        },
+        {
+          "pokemon": "naganadel",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

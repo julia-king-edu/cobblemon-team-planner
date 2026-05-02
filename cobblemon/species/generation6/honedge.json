@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Honedge",
   "nationalPokedexNumber": 679,
+  "name": "Honedge",
   "primaryType": "steel",
   "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 20,
+  "pokedex": [
+    "cobblemon.species.honedge.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
-    "noguard"
+    "noguard",
+    "h:noguard"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 45,
@@ -15,15 +29,51 @@
     "special_defence": 37,
     "speed": 28
   },
-  "catchRate": 180,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 65,
   "experienceGroup": "medium_fast",
+  "catchRate": 180,
   "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.85,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "walkSpeed": 0.4,
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -42,12 +92,12 @@
     ]
   },
   "moves": [
-    "1:furycutter",
     "1:tackle",
+    "1:furycutter",
+    "1:pursuit",
     "4:shadowsneak",
     "8:autotomize",
     "12:aerialace",
-    "13:pursuit",
     "16:metalsound",
     "20:slash",
     "24:nightslash",
@@ -59,62 +109,74 @@
     "48:sacredsword",
     "egg:block",
     "egg:destinybond",
-    "egg:metalsound",
-    "egg:shadowsneak",
     "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
+    "tm:afteryou",
+    "tm:block",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:closecombat",
-    "tm:confide",
     "tm:cut",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gyroball",
-    "tm:hiddenpower",
     "tm:irondefense",
     "tm:ironhead",
+    "tm:laserfocus",
+    "tm:magnetrise",
+    "tm:metalsound",
     "tm:protect",
     "tm:psychocut",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
-    "tm:round",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowclaw",
+    "tm:shockwave",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarblade",
+    "tm:spite",
+    "tm:steelbeam",
     "tm:substitute",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
+    "tm:terablast",
+    "tutor:aerialace",
     "tutor:afteryou",
+    "tutor:block",
+    "tutor:falseswipe",
+    "tutor:flashcannon",
+    "tutor:furycutter",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:laserfocus",
     "tutor:magnetrise",
+    "tutor:psychocut",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:shockwave",
-    "tutor:snore",
+    "tutor:sleeptalk",
     "tutor:spite",
-    "tutor:steelbeam"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.honedge.desc"
+    "tutor:steelbeam",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -130,24 +192,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.85,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 20,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

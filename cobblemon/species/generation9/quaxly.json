@@ -1,12 +1,104 @@
 {
   "implemented": true,
-  "name": "Quaxly",
   "nationalPokedexNumber": 912,
+  "name": "Quaxly",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 5,
+  "weight": 61,
+  "pokedex": [
+    "cobblemon.species.quaxly.desc"
+  ],
+  "labels": [
+    "gen9",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:moxie"
   ],
+  "eggGroups": [
+    "flying",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 65,
+    "defence": 45,
+    "special_attack": 50,
+    "special_defence": 45,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.24
+      },
+      "swim": {
+        "swimSpeed": 0.14,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ducklett",
+          "tier": 1
+        },
+        {
+          "pokemon": "quaxly",
+          "tier": 1
+        },
+        {
+          "pokemon": "farfetchd galarian=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "swanna",
+          "tier": 3
+        },
+        {
+          "pokemon": "quaxwell",
+          "tier": 4
+        },
+        {
+          "pokemon": "quaquaval",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,54 +108,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 65,
-    "defence": 45,
-    "special_attack": 50,
-    "special_defence": 45,
-    "speed": 50
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 62,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "flying",
-    "water_1"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.24
-      },
-      "swim": {
-        "swimSpeed": 0.14,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:growl",
     "1:pound",
+    "1:growl",
     "1:watergun",
     "7:workup",
     "10:wingattack",
@@ -89,8 +136,10 @@
     "tm:encore",
     "tm:endure",
     "tm:facade",
+    "tm:focusenergy",
     "tm:helpinghand",
     "tm:hydropump",
+    "tm:lastresort",
     "tm:liquidation",
     "tm:lowkick",
     "tm:mistyterrain",
@@ -98,6 +147,7 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
+    "tm:roost",
     "tm:sleeptalk",
     "tm:substitute",
     "tm:surf",
@@ -105,14 +155,21 @@
     "tm:takedown",
     "tm:terablast",
     "tm:waterpledge",
-    "tm:whirlpool"
+    "tm:whirlpool",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:focusenergy",
+    "tutor:helpinghand",
+    "tutor:lastresort",
+    "tutor:liquidation",
+    "tutor:lowkick",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:waterpledge"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 5,
-  "weight": 61,
   "evolutions": [
     {
       "id": "quaxly_quaxwell",
@@ -127,15 +184,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.1,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.quaxly.desc"
   ]
 }

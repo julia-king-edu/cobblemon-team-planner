@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Kakuna",
   "nationalPokedexNumber": 14,
+  "name": "Kakuna",
   "primaryType": "bug",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 100,
+  "pokedex": [
+    "cobblemon.species.kakuna.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "shedskin",
     "h:shedskin"
+  ],
+  "eggGroups": [
+    "bug"
   ],
   "baseStats": {
     "hp": 45,
@@ -16,29 +29,47 @@
     "special_defence": 25,
     "speed": 35
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 72,
   "experienceGroup": "medium_fast",
+  "catchRate": 120,
   "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.9,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
         "canWalk": false
       },
       "swim": {
-        "canSwimInWater": false
+        "canSwimInWater": false,
+        "avoidsWater": true
       },
       "canLook": false
+    },
+    "herd": {
+      "maxSize": "9"
+    },
+    "combat": {
+      "willFlee": false
     }
   },
   "drops": {
@@ -56,17 +87,18 @@
   },
   "moves": [
     "1:harden",
+    "1:poisonsting",
+    "tm:bugbite",
+    "tm:electroweb",
+    "tm:irondefense",
+    "tm:skittersmack",
+    "tm:stringshot",
+    "tm:terablast",
     "tutor:bugbite",
     "tutor:electroweb",
-    "tutor:harden",
     "tutor:irondefense",
+    "tutor:skittersmack",
     "tutor:stringshot"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.kakuna.desc"
   ],
   "preEvolution": "weedle",
   "evolutions": [
@@ -75,32 +107,27 @@
       "variant": "level_up",
       "result": "beedrill",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "twineedle",
+        "furyattack"
+      ],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 10
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 100,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

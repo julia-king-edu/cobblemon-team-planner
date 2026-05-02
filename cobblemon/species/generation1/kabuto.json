@@ -1,13 +1,28 @@
 {
   "implemented": true,
-  "name": "Kabuto",
   "nationalPokedexNumber": 140,
+  "name": "Kabuto",
   "primaryType": "rock",
   "secondaryType": "water",
+  "maleRatio": 0.875,
+  "height": 5,
+  "weight": 115,
+  "pokedex": [
+    "cobblemon.species.kabuto.desc"
+  ],
+  "labels": [
+    "gen1",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "battlearmor",
     "h:weakarmor"
+  ],
+  "eggGroups": [
+    "water_1",
+    "water_3"
   ],
   "baseStats": {
     "hp": 30,
@@ -17,37 +32,61 @@
     "special_defence": 45,
     "speed": 55
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 71,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.4,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
         "swimSpeed": 0.2,
-        "canSwimInWater": true,
         "canBreatheUnderwater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "kabuto",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 71,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 30,
-  "eggGroups": [
-    "water_1",
-    "water_3"
-  ],
   "drops": {
-    "amount": 3,
+    "amount": 2,
     "entries": [
       {
-        "item": "minecraft:turtle_scute",
-        "quantityRange": "0-2"
+        "item": "cobblemon:razor_claw",
+        "percentage": 5.0
       },
       {
         "item": "minecraft:bone_meal",
@@ -56,157 +95,120 @@
     ]
   },
   "moves": [
-    "1:absorb",
     "1:harden",
+    "1:absorb",
     "5:scratch",
     "10:sandattack",
     "15:aquajet",
     "20:leer",
     "25:mudshot",
-    "26:endure",
     "30:ancientpower",
     "35:brine",
-    "36:megadrain",
     "41:protect",
     "45:leechlife",
-    "50:liquidation",
     "50:wringout",
     "55:metalsound",
     "60:stoneedge",
     "egg:aurorabeam",
     "egg:bubblebeam",
     "egg:confuseray",
-    "egg:dig",
     "egg:flail",
     "egg:foresight",
-    "egg:gigadrain",
-    "egg:icywind",
     "egg:knockoff",
     "egg:megadrain",
-    "egg:mudshot",
     "egg:rapidspin",
-    "egg:screech",
     "egg:takedown",
     "tm:aerialace",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brine",
-    "tm:captivate",
-    "tm:confide",
+    "tm:confuseray",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:hail",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
     "tm:irondefense",
+    "tm:knockoff",
     "tm:leechlife",
     "tm:liquidation",
+    "tm:metalsound",
+    "tm:meteorbeam",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scald",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tutor:absorb",
+    "tutor:aerialace",
     "tutor:ancientpower",
-    "tutor:aquajet",
-    "tutor:attract",
-    "tutor:aurorabeam",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:bubblebeam",
-    "tutor:confuseray",
-    "tutor:curse",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:earthpower",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flail",
-    "tutor:frustration",
     "tutor:gigadrain",
-    "tutor:harden",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
     "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:knockoff",
     "tutor:leechlife",
-    "tutor:leer",
-    "tutor:megadrain",
+    "tutor:liquidation",
     "tutor:meteorbeam",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:rapidspin",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
-    "tutor:rockthrow",
     "tutor:rollout",
-    "tutor:sandattack",
-    "tutor:sandstorm",
-    "tutor:scald",
-    "tutor:scratch",
-    "tutor:slash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.kabuto.desc"
+    "tutor:stoneedge",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:rockthrow",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:slash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:watergun"
   ],
   "evolutions": [
     {
@@ -222,26 +224,18 @@
           "variant": "level",
           "minLevel": 40
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 115,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

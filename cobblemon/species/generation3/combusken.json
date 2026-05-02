@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Combusken",
   "nationalPokedexNumber": 256,
+  "name": "Combusken",
   "primaryType": "fire",
   "secondaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 9,
+  "weight": 195,
+  "pokedex": [
+    "cobblemon.species.combusken.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:speedboost"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 60,
@@ -16,15 +29,25 @@
     "special_defence": 60,
     "speed": 55
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 142,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.65,
+    "fixed": false
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -42,16 +65,18 @@
     ]
   },
   "moves": [
-    "1:doublekick",
-    "1:ember",
-    "1:featherdance",
-    "1:flamethrower",
-    "1:growl",
-    "1:quickattack",
     "1:scratch",
+    "1:growl",
+    "1:ember",
+    "1:doublekick",
+    "1:peck",
+    "1:quickattack",
+    "1:mirrormove",
+    "1:skyuppercut",
+    "1:flamethrower",
+    "1:featherdance",
     "9:flamecharge",
     "12:detect",
-    "14:peck",
     "15:sandattack",
     "20:aerialace",
     "25:slash",
@@ -59,29 +84,34 @@
     "35:focusenergy",
     "40:blazekick",
     "45:bulkup",
-    "47:mirrormove",
     "50:reversal",
-    "53:skyuppercut",
     "55:flareblitz",
+    "egg:counter",
+    "egg:crushclaw",
+    "egg:feint",
+    "egg:flameburst",
+    "egg:lastresort",
+    "egg:mirrormove",
+    "egg:nightslash",
+    "egg:peck",
+    "egg:smellingsalts",
+    "egg:swagger",
     "tm:aerialace",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:blazekick",
     "tm:bodyslam",
     "tm:bounce",
     "tm:brickbreak",
     "tm:bulkup",
-    "tm:captivate",
     "tm:closecombat",
     "tm:coaching",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
+    "tm:dualchop",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
@@ -97,33 +127,29 @@
     "tm:focusblast",
     "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:incinerate",
+    "tm:lastresort",
     "tm:lowkick",
     "tm:lowsweep",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
     "tm:overheat",
     "tm:poisonjab",
     "tm:poweruppunch",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
@@ -135,49 +161,52 @@
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:uproar",
     "tm:vacuumwave",
     "tm:willowisp",
     "tm:workup",
-    "tutor:bodyslam",
+    "tutor:aerialace",
     "tutor:bounce",
+    "tutor:bulkup",
     "tutor:coaching",
-    "tutor:counter",
-    "tutor:defog",
-    "tutor:doubleedge",
     "tutor:dualchop",
-    "tutor:dynamicpunch",
-    "tutor:endure",
     "tutor:firepledge",
     "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
     "tutor:furycutter",
-    "tutor:headbutt",
     "tutor:heatwave",
     "tutor:helpinghand",
     "tutor:lastresort",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
     "tutor:thunderpunch",
-    "tutor:vacuumwave"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.combusken.desc"
+    "tutor:uproar",
+    "tutor:vacuumwave",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defog",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "preEvolution": "torchic",
   "evolutions": [
@@ -186,7 +215,9 @@
       "variant": "level_up",
       "result": "blaziken",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "blazekick"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -195,23 +226,35 @@
       ]
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 195,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "blaziken mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "blaziken mega",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "fireImmune": true
+  }
 }

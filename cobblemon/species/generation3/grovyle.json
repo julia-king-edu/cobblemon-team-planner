@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Grovyle",
   "nationalPokedexNumber": 253,
+  "name": "Grovyle",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 9,
+  "weight": 216,
+  "pokedex": [
+    "cobblemon.species.grovyle.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:unburden"
+  ],
+  "eggGroups": [
+    "monster",
+    "dragon"
   ],
   "baseStats": {
     "hp": 50,
@@ -15,24 +29,56 @@
     "special_defence": 65,
     "speed": 95
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1,
+    "height": 1.6,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "sceptile mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "sceptile mega",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "dragon"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -47,39 +93,49 @@
     ]
   },
   "moves": [
-    "1:absorb",
-    "1:energyball",
-    "1:falseswipe",
-    "1:furycutter",
-    "1:leafage",
-    "1:leer",
     "1:pound",
+    "1:leer",
+    "1:absorb",
     "1:quickattack",
+    "1:furycutter",
+    "1:pursuit",
+    "1:agility",
+    "1:falseswipe",
     "1:xscissor",
+    "1:energyball",
+    "1:leafage",
     "9:megadrain",
     "12:detect",
     "15:quickguard",
-    "18:pursuit",
     "20:assurance",
     "25:gigadrain",
-    "28:agility",
     "30:slam",
     "35:doubleteam",
     "40:leafblade",
     "45:screech",
     "50:endeavor",
     "55:leafstorm",
+    "egg:absorb",
+    "egg:crushclaw",
+    "egg:doublekick",
+    "egg:dragonbreath",
+    "egg:grasswhistle",
+    "egg:leechseed",
+    "egg:mudsport",
+    "egg:naturalgift",
+    "egg:nightslash",
+    "egg:pursuit",
+    "egg:razorwind",
+    "egg:slash",
+    "egg:synthesis",
+    "egg:worryseed",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
-    "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:cut",
     "tm:dig",
@@ -94,14 +150,14 @@
     "tm:flash",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grasspledge",
     "tm:grassyglide",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:irontail",
     "tm:leafblade",
     "tm:leafstorm",
@@ -115,71 +171,73 @@
     "tm:poweruppunch",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:screech",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
-    "tm:solarblade",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:upperhand",
     "tm:vacuumwave",
     "tm:workup",
+    "tm:worryseed",
     "tm:xscissor",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:doubleedge",
+    "tutor:aerialace",
     "tutor:drainpunch",
-    "tutor:dynamicpunch",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:focuspunch",
+    "tutor:energyball",
+    "tutor:falseswipe",
     "tutor:furycutter",
     "tutor:gigadrain",
     "tutor:grasspledge",
     "tutor:grassyglide",
-    "tutor:headbutt",
+    "tutor:helpinghand",
     "tutor:irontail",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:seedbomb",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
     "tutor:synthesis",
     "tutor:thunderpunch",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.grovyle.desc"
+    "tutor:vacuumwave",
+    "tutor:worryseed",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:bodyslam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:doubleedge",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:solarblade",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "treecko",
   "evolutions": [
@@ -189,33 +247,26 @@
       "result": "sceptile",
       "consumeHeldItem": false,
       "learnableMoves": [
-        "dualchop"
+        "dualchop",
+        "leafblade"
       ],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 36
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 1,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 9,
-  "weight": 216,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

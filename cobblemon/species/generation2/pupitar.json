@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Pupitar",
   "nationalPokedexNumber": 247,
+  "name": "Pupitar",
   "primaryType": "rock",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 1520,
+  "pokedex": [
+    "cobblemon.species.pupitar.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "shedskin",
     "h:shedskin"
+  ],
+  "eggGroups": [
+    "monster"
   ],
   "baseStats": {
     "hp": 70,
@@ -16,34 +29,74 @@
     "special_defence": 70,
     "speed": 51
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1,
+    "height": 1.65,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 144,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "monster"
-  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:chople_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
     "1:leer",
     "1:payback",
-    "1:rockthrow",
+    "1:irondefense",
+    "1:chipaway",
     "1:tackle",
+    "1:rockthrow",
     "9:bite",
     "12:scaryface",
-    "14:chipaway",
     "15:rockslide",
     "18:stompingtantrum",
     "21:screech",
-    "24:darkpulse",
     "24:smackdown",
     "27:crunch",
     "33:earthquake",
@@ -51,40 +104,44 @@
     "42:thrash",
     "47:sandstorm",
     "52:hyperbeam",
+    "egg:ancientpower",
+    "egg:assurance",
+    "egg:curse",
+    "egg:dragondance",
+    "egg:focusenergy",
+    "egg:irondefense",
+    "egg:ironhead",
+    "egg:outrage",
+    "egg:pursuit",
+    "egg:stomp",
     "tm:aerialace",
+    "tm:ancientpower",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:darkpulse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragondance",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
     "tm:lashout",
-    "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:payback",
     "tm:poweruppunch",
@@ -92,22 +149,18 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:snarl",
-    "tm:snore",
     "tm:spite",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -115,63 +168,53 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:torment",
-    "tm:toxic",
-    "tm:uproar",
+    "tutor:aerialace",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bite",
-    "tutor:bodyslam",
-    "tutor:crunch",
-    "tutor:curse",
+    "tutor:bulldoze",
     "tutor:darkpulse",
-    "tutor:detect",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:earthpower",
-    "tutor:earthquake",
-    "tutor:endure",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
     "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:mimic",
+    "tutor:lashout",
     "tutor:mudslap",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
-    "tutor:sandstorm",
-    "tutor:scaryface",
-    "tutor:screech",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:snarl",
     "tutor:spite",
     "tutor:stealthrock",
-    "tutor:substitute",
-    "tutor:sunnyday",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:thrash",
-    "tutor:toxic",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.pupitar.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:muddywater",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "larvitar",
   "evolutions": [
@@ -186,39 +229,18 @@
           "variant": "level",
           "minLevel": 55
         }
-      ]
-    }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 1,
-    "height": 1.65,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 1520,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "cobblemon:hard_stone",
-        "percentage": 5.0
-      },
-      {
-        "item": "cobblemon:chople_berry",
-        "percentage": 5.0
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }

@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
@@ -47,7 +47,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "20-43",
             "weight": 1.6,
@@ -65,7 +65,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "20-43",
             "weight": 1.6,
@@ -76,7 +76,7 @@
                     "#cobblemon:is_savanna"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             }
         },
@@ -84,7 +84,7 @@
             "id": "clodsire-5",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
@@ -99,7 +99,7 @@
             "id": "clodsire-6",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "20-43",
             "weight": 1.6,
@@ -117,15 +117,15 @@
             "id": "clodsire-7",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -143,7 +143,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
@@ -163,7 +163,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "20-43",
             "weight": 1.6,
@@ -180,7 +180,7 @@
             "id": "clodsire-10",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
@@ -197,7 +197,7 @@
             "id": "clodsire-11",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "20-43",
             "weight": 1.6,
@@ -217,15 +217,15 @@
             "id": "clodsire-12",
             "pokemon": "clodsire",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "20-43",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {

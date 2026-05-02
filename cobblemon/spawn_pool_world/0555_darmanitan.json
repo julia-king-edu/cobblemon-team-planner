@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "35-54",
             "weight": 5.4,
@@ -34,7 +34,7 @@
                 "desert_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "35-54",
             "weight": 5.4,
@@ -54,7 +54,7 @@
                 "jungle_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "35-54",
             "weight": 5.4,
@@ -73,7 +73,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "35-54",
             "weight": 0.6,

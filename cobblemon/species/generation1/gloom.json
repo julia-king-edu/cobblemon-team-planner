@@ -1,16 +1,86 @@
 {
   "implemented": true,
-  "name": "Gloom",
   "nationalPokedexNumber": 44,
+  "name": "Gloom",
   "primaryType": "grass",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 86,
+  "pokedex": [
+    "cobblemon.species.gloom.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "chlorophyll",
     "h:stench"
   ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 65,
+    "defence": 70,
+    "special_attack": 85,
+    "special_defence": 75,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 138,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "features": [
+    "valencian"
+  ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "depth": "comatose",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
-    "amount": 2,
+    "amount": 4,
     "entries": [
+      {
+        "item": "minecraft:honey_bottle",
+        "quantityRange": "0-2"
+      },
       {
         "item": "cobblemon:absorb_bulb",
         "percentage": 5.0
@@ -21,74 +91,50 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 65,
-    "defence": 70,
-    "special_attack": 85,
-    "special_defence": 75,
-    "speed": 40
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "features": [
-    "valencian"
-  ],
-  "baseExperienceYield": 138,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
   "moves": [
     "1:absorb",
-    "1:acid",
-    "1:growth",
     "1:sweetscent",
+    "1:acid",
+    "1:luckychant",
+    "1:growth",
+    "1:naturalgift",
     "12:megadrain",
     "14:poisonpowder",
     "16:stunspore",
     "18:sleeppowder",
     "20:gigadrain",
-    "24:luckychant",
     "26:toxic",
     "32:moonblast",
     "38:grassyterrain",
     "44:moonlight",
-    "44:naturalgift",
-    "49:petalblizzard",
     "50:petaldance",
+    "egg:afteryou",
+    "egg:flail",
+    "egg:ingrain",
+    "egg:leechseed",
+    "egg:luckychant",
+    "egg:naturalgift",
+    "egg:razorleaf",
+    "egg:secretpower",
+    "egg:strengthsap",
+    "egg:synthesis",
+    "egg:teeterdance",
+    "egg:tickle",
     "tm:acidspray",
-    "tm:attract",
+    "tm:afteryou",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:cut",
-    "tm:dazzlinggleam",
-    "tm:doubleteam",
-    "tm:drainpunch",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:fling",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:infestation",
     "tm:leafstorm",
     "tm:magicalleaf",
@@ -98,77 +144,54 @@
     "tm:pollenpuff",
     "tm:protect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:terablast",
     "tm:toxic",
     "tm:trailblaze",
     "tm:venoshock",
-    "tutor:absorb",
-    "tutor:acid",
+    "tm:worryseed",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:dazzlinggleam",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:drainpunch",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flash",
-    "tutor:frustration",
+    "tutor:energyball",
     "tutor:gastroacid",
     "tutor:gigadrain",
     "tutor:grassyglide",
-    "tutor:growth",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:moonblast",
-    "tutor:moonlight",
-    "tutor:petaldance",
-    "tutor:poisonpowder",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:razorleaf",
-    "tutor:reflect",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
     "tutor:rest",
-    "tutor:return",
     "tutor:seedbomb",
-    "tutor:sleeppowder",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:stunspore",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.gloom.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:dazzlinggleam",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:drainpunch",
+    "legacy:fling",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown"
   ],
   "preEvolution": "oddish",
   "evolutions": [
@@ -188,28 +211,12 @@
       "variant": "item_interact",
       "result": "bellossom",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "magicalleaf",
+        "petalblizzard"
+      ],
       "requirements": [],
       "requiredContext": "cobblemon:sun_stone"
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 86,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

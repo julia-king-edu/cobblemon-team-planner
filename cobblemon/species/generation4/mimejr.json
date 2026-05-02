@@ -1,14 +1,57 @@
 {
   "implemented": true,
-  "name": "Mime Jr.",
   "nationalPokedexNumber": 439,
+  "name": "Mime Jr.",
   "primaryType": "psychic",
   "secondaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 130,
+  "pokedex": [
+    "cobblemon.species.mimejr.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby",
+    "sinnohan_form"
+  ],
+  "aspects": [],
   "abilities": [
     "soundproof",
     "filter",
     "h:technician"
   ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 20,
+    "attack": 25,
+    "defence": 45,
+    "special_attack": 70,
+    "special_defence": 90,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_fast",
+  "catchRate": 145,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,90 +65,44 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 20,
-    "attack": 25,
-    "defence": 45,
-    "special_attack": 70,
-    "special_defence": 90,
-    "speed": 60
-  },
-  "catchRate": 145,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 62,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:barrier",
-    "1:confusion",
-    "1:copycat",
-    "1:pound",
     "1:tickle",
+    "1:barrier",
+    "1:copycat",
+    "1:meditate",
+    "1:doubleslap",
+    "1:pound",
     "4:batonpass",
-    "4:copycat",
     "8:encore",
-    "8:meditate",
-    "11:doubleslap",
-    "11:encore",
     "12:confusion",
-    "15:doubleslap",
-    "15:mimic",
     "16:roleplay",
-    "18:encore",
-    "18:mimic",
     "20:protect",
-    "22:lightscreen",
-    "22:reflect",
     "24:recycle",
-    "25:psybeam",
     "28:psybeam",
-    "29:substitute",
     "32:mimic",
-    "32:recycle",
     "36:lightscreen",
     "36:reflect",
     "36:safeguard",
-    "36:trick",
-    "39:psychic",
     "40:suckerpunch",
-    "43:roleplay",
     "44:dazzlinggleam",
-    "46:batonpass",
     "48:psychic",
-    "50:safeguard",
     "52:teeterdance",
-    "egg:charm",
     "egg:confuseray",
     "egg:fakeout",
-    "egg:futuresight",
     "egg:healingwish",
     "egg:hypnosis",
-    "egg:icywind",
-    "egg:magicroom",
-    "egg:mimic",
-    "egg:nastyplot",
     "egg:powersplit",
-    "egg:psychicterrain",
-    "egg:psychup",
-    "egg:teeterdance",
     "egg:tickle",
-    "egg:trick",
     "egg:wakeupslap",
     "tm:allyswitch",
-    "tm:attract",
     "tm:batonpass",
     "tm:brickbreak",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
+    "tm:confuseray",
+    "tm:covet",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:dreameater",
     "tm:encore",
@@ -114,19 +111,20 @@
     "tm:flash",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:futuresight",
     "tm:grassknot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icywind",
     "tm:infestation",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:mistyterrain",
+    "tm:mudslap",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:protect",
+    "tm:psybeam",
     "tm:psychic",
     "tm:psychicterrain",
     "tm:psychup",
@@ -135,62 +133,72 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
-    "tm:snore",
     "tm:solarbeam",
     "tm:storedpower",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:taunt",
     "tm:telekinesis",
+    "tm:terablast",
     "tm:thief",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
     "tm:wonderroom",
     "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:covet",
+    "tutor:dazzlinggleam",
     "tutor:drainpunch",
     "tutor:focuspunch",
-    "tutor:headbutt",
     "tutor:helpinghand",
     "tutor:icywind",
     "tutor:magiccoat",
     "tutor:magicroom",
     "tutor:mudslap",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:roleplay",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
+    "tutor:suckerpunch",
     "tutor:telekinesis",
+    "tutor:thunderbolt",
     "tutor:trick",
     "tutor:uproar",
-    "tutor:wonderroom"
-  ],
-  "labels": [
-    "gen4",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.mimejr.desc"
+    "tutor:wonderroom",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -207,7 +215,7 @@
       ]
     },
     {
-      "id": "mimejr_mrmime",
+      "id": "mimejr_mrmimegalar",
       "variant": "level_up",
       "result": "mrmime galarian",
       "consumeHeldItem": false,
@@ -216,27 +224,92 @@
         {
           "variant": "has_move",
           "move": "mimic"
+        },
+        {
+          "variant": "biome",
+          "biomeCondition": "#cobblemon:evolution/regional/mimejr_galarbiome"
         }
       ]
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 130,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Galar-Bias",
+      "primaryType": "psychic",
+      "secondaryType": "fairy",
+      "maleRatio": 0.5,
+      "height": 6,
+      "weight": 130,
+      "pokedex": [
+        "cobblemon.species.mimejr-galarbias.desc"
+      ],
+      "labels": [
+        "gen8",
+        "baby",
+        "customized_official",
+        "galarian_form"
+      ],
+      "aspects": [
+        "region-bias-galar"
+      ],
+      "dynamaxBlocked": false,
+      "evolutions": [
+        {
+          "id": "mimejr_mrmime",
+          "variant": "level_up",
+          "result": "mrmime",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "has_move",
+              "move": "mimic"
+            },
+            {
+              "variant": "biome",
+              "biomeCondition": "#cobblemon:evolution/regional/mimejr_sinnohbiome"
+            }
+          ]
+        },
+        {
+          "id": "mimejr_mrmimegalar",
+          "variant": "level_up",
+          "result": "mrmime galarian",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "has_move",
+              "move": "mimic"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "mrmime",
+          "tier": 1
+        },
+        {
+          "pokemon": "mrrime",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    }
+  }
 }

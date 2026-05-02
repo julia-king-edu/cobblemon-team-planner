@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "40-50",
             "weight": 0.32,
@@ -25,7 +25,7 @@
             "id": "wailord-2",
             "pokemon": "wailord",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "40-50",
             "weight": 0.32,
@@ -43,14 +43,14 @@
             "id": "wailord-3",
             "pokemon": "wailord",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "40-50",
             "weight": 0.32,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -68,7 +68,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "40-50",
             "weight": 0.32,
@@ -85,7 +85,7 @@
             "id": "wailord-5",
             "pokemon": "wailord",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "40-50",
             "weight": 0.32,
@@ -105,14 +105,14 @@
             "id": "wailord-6",
             "pokemon": "wailord",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "40-50",
             "weight": 0.32,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

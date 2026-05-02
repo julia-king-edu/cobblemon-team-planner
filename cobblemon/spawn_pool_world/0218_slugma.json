@@ -4,13 +4,13 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "slugma-1",
+            "id": "slugma-3",
             "pokemon": "slugma",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-25",
             "weight": 5.4,
@@ -22,13 +22,13 @@
             }
         },
         {
-            "id": "slugma-2",
+            "id": "slugma-4",
             "pokemon": "slugma",
             "presets": [
                 "lava"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "common",
             "level": "1-25",
             "weight": 9.0,
@@ -40,13 +40,13 @@
             }
         },
         {
-            "id": "slugma-3",
+            "id": "slugma-1",
             "pokemon": "slugma",
             "presets": [
                 "lava"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "common",
             "level": "1-25",
             "weight": 1.8,
@@ -62,13 +62,13 @@
             }
         },
         {
-            "id": "slugma-4",
+            "id": "slugma-2",
             "pokemon": "slugma",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-25",
             "weight": 9.0,
@@ -77,7 +77,7 @@
                     "#cobblemon:is_volcanic"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:lava"
+                    "minecraft:lava"
                 ]
             }
         }

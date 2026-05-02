@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Cinderace",
   "nationalPokedexNumber": 815,
+  "name": "Cinderace",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 14,
+  "weight": 330,
+  "pokedex": [
+    "cobblemon.species.cinderace.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:libero"
+  ],
+  "eggGroups": [
+    "field",
+    "human_like"
   ],
   "baseStats": {
     "hp": 80,
@@ -15,63 +29,57 @@
     "special_defence": 75,
     "speed": 119
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "fire",
-      "abilities": [
-        "blaze",
-        "h:libero"
-      ],
-      "baseStats": {
-        "hp": 80,
-        "attack": 116,
-        "defence": 75,
-        "special_attack": 65,
-        "special_defence": 75,
-        "speed": 119
-      },
-      "catchRate": 45,
-      "maleRatio": 0.875,
-      "baseExperienceYield": 265,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 3
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "field",
-        "human_like"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 30,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
   "baseExperienceYield": 265,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "human_like"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.9,
+    "height": 3,
+    "fixed": false
+  },
+  "standingEyeHeight": 0.85,
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.29
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cinderace",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -93,12 +101,12 @@
     ]
   },
   "moves": [
-    "1:ember",
-    "1:feint",
-    "1:growl",
-    "1:quickattack",
-    "1:tackle",
     "1:pyroball",
+    "1:feint",
+    "1:tackle",
+    "1:growl",
+    "1:ember",
+    "1:quickattack",
     "12:doublekick",
     "19:flamecharge",
     "24:agility",
@@ -107,11 +115,14 @@
     "46:bounce",
     "54:doubleedge",
     "62:courtchange",
+    "egg:highjumpkick",
+    "egg:sandattack",
+    "egg:suckerpunch",
+    "egg:superfang",
     "tm:acrobatics",
     "tm:agility",
     "tm:allyswitch",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:blastburn",
     "tm:blazekick",
@@ -136,6 +147,7 @@
     "tm:focusenergy",
     "tm:gigaimpact",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
     "tm:hyperbeam",
@@ -150,14 +162,13 @@
     "tm:rest",
     "tm:revenge",
     "tm:reversal",
-    "tm:round",
     "tm:scorchingsands",
     "tm:shadowball",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:snarl",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
     "tm:superfang",
     "tm:swift",
@@ -172,36 +183,60 @@
     "tm:willowisp",
     "tm:workup",
     "tm:zenheadbutt",
+    "tutor:allyswitch",
     "tutor:blastburn",
+    "tutor:bounce",
+    "tutor:bulkup",
+    "tutor:burningjealousy",
     "tutor:coaching",
+    "tutor:firefang",
     "tutor:firepledge",
-    "tutor:scorchingsands"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.cinderace.desc"
+    "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:ironhead",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:scorchingsands",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:suckerpunch",
+    "tutor:superfang",
+    "tutor:swift",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "raboot",
   "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.9,
-    "height": 2.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 14,
-  "weight": 330,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "fire",
+      "maleRatio": 0.875,
+      "height": 270,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.cinderace-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ]
 }

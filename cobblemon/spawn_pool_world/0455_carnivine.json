@@ -12,7 +12,7 @@
                 "foliage"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "20-45",
             "weight": 10.0,
@@ -20,6 +20,8 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland",
                     "#cobblemon:is_swamp"
                 ]
             }
@@ -31,7 +33,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "20-45",
             "weight": 2.0,
@@ -57,7 +59,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "20-45",
             "weight": 2.0,

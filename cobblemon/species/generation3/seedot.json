@@ -1,13 +1,54 @@
 {
   "implemented": true,
-  "name": "Seedot",
   "nationalPokedexNumber": 273,
+  "name": "Seedot",
   "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.seedot.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "chlorophyll",
     "earlybird",
     "h:pickpocket"
   ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 40,
+    "defence": 50,
+    "special_attack": 30,
+    "special_defence": 30,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 44,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.65,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,24 +62,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 40,
-    "defence": 50,
-    "special_attack": 30,
-    "special_defence": 30,
-    "speed": 30
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 44,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
   "moves": [
     "1:bide",
     "1:harden",
@@ -50,37 +73,25 @@
     "15:megadrain",
     "18:payback",
     "21:headbutt",
-    "21:naturepower",
     "24:sunnyday",
     "27:synthesis",
     "30:suckerpunch",
     "33:explosion",
-    "egg:amnesia",
-    "egg:beatup",
-    "egg:bulletseed",
     "egg:defog",
-    "egg:falseswipe",
-    "egg:foulplay",
-    "egg:grassyterrain",
     "egg:leechseed",
-    "egg:nastyplot",
     "egg:nightslash",
-    "egg:powerswap",
     "egg:quickattack",
     "egg:razorwind",
     "egg:takedown",
     "egg:worryseed",
     "tm:amnesia",
-    "tm:attract",
     "tm:beatup",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
+    "tm:defog",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:endeavor",
     "tm:endure",
     "tm:energyball",
@@ -89,16 +100,14 @@
     "tm:falseswipe",
     "tm:flash",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:leafstorm",
     "tm:magicalleaf",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:payback",
     "tm:powerswap",
@@ -106,59 +115,57 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:seedbomb",
     "tm:selfdestruct",
     "tm:shadowball",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spite",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
-    "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:bulletseed",
-    "tutor:defensecurl",
+    "tm:worryseed",
     "tutor:defog",
-    "tutor:doubleedge",
-    "tutor:endure",
-    "tutor:explosion",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:falseswipe",
     "tutor:foulplay",
     "tutor:gigadrain",
     "tutor:grassyglide",
-    "tutor:growth",
-    "tutor:harden",
-    "tutor:headbutt",
-    "tutor:mimic",
-    "tutor:refresh",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:secretpower",
     "tutor:seedbomb",
-    "tutor:selfdestruct",
+    "tutor:shadowball",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swordsdance",
+    "tutor:suckerpunch",
     "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.seedot.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swordsdance",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -177,23 +184,36 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.65,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 40,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "seedot",
+          "tier": 1
+        },
+        {
+          "pokemon": "nuzleaf",
+          "tier": 2
+        },
+        {
+          "pokemon": "shiftry",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

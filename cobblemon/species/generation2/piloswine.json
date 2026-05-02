@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Piloswine",
   "nationalPokedexNumber": 221,
+  "name": "Piloswine",
   "primaryType": "ice",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 558,
+  "pokedex": [
+    "cobblemon.species.piloswine.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "oblivious",
     "snowcloak",
     "h:thickfat"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 100,
@@ -17,23 +30,79 @@
     "special_defence": 60,
     "speed": 50
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
+  "evYield": {
+    "hp": 1,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
   },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
   "baseExperienceYield": 158,
   "experienceGroup": "slow",
+  "catchRate": 75,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.2,
+    "fixed": false,
+    "width": 1
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-50",
+          "JUMP": "5-10",
+          "SKILL": "30-45",
+          "SPEED": "10-25",
+          "STAMINA": "35-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "piloswine",
+          "tier": 1
+        },
+        {
+          "pokemon": "mamoswine",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.15
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -57,19 +126,18 @@
   },
   "moves": [
     "1:ancientpower",
-    "1:flail",
-    "1:furyattack",
-    "1:hornattack",
-    "1:mudslap",
-    "1:mudsport",
-    "1:odorsleuth",
     "1:peck",
+    "1:odorsleuth",
+    "1:mudsport",
     "1:powdersnow",
+    "1:mudslap",
+    "1:mudbomb",
+    "1:icefang",
+    "1:furyattack",
     "1:tackle",
+    "1:flail",
     "15:iceshard",
-    "18:mudbomb",
     "20:mist",
-    "24:icefang",
     "25:endure",
     "30:icywind",
     "37:amnesia",
@@ -77,57 +145,55 @@
     "51:earthquake",
     "58:blizzard",
     "65:thrash",
+    "egg:ancientpower",
+    "egg:bite",
+    "egg:curse",
+    "egg:doubleedge",
+    "egg:fissure",
+    "egg:freezedry",
+    "egg:iciclecrash",
+    "egg:mudbomb",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:avalanche",
+    "tm:babydolleyes",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:haze",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icefang",
     "tm:iciclespear",
     "tm:icywind",
-    "tm:lightscreen",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:protect",
     "tm:raindance",
-    "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:snowscape",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -135,93 +201,67 @@
     "tm:strength",
     "tm:substitute",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:throatchop",
-    "tm:toxic",
     "tm:trailblaze",
-    "tutor:amnesia",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:babydolleyes",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:earthquake",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:frustration",
-    "tutor:furyattack",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:gigaimpact",
+    "tutor:highhorsepower",
     "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icefang",
     "tutor:icywind",
-    "tutor:mimic",
-    "tutor:mist",
     "tutor:mudslap",
-    "tutor:powdersnow",
-    "tutor:protect",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
-    "tutor:roar",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:strength",
-    "tutor:substitute",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:toxic"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.piloswine.desc"
+    "tutor:throatchop",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:hornattack",
+    "legacy:lightscreen",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "swinub",
   "evolutions": [
     {
-      "id": "piloswine_mamoswine",
-      "variant": "level_up",
-      "result": "mamoswine",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "id": "piloswine_mamoswine",
+      "learnableMoves": [
+        "doublehit"
+      ],
       "requirements": [
         {
-          "variant": "has_move",
-          "move": "ancientpower"
+          "move": "ancientpower",
+          "variant": "has_move"
         }
-      ]
+      ],
+      "result": "mamoswine",
+      "variant": "level_up"
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 11,
-  "weight": 558,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

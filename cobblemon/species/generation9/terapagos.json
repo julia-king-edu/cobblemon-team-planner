@@ -1,9 +1,27 @@
 {
-  "name": "Terapagos",
   "nationalPokedexNumber": 1024,
+  "name": "Terapagos",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 65,
+  "pokedex": [
+    "cobblemon.species.terapagos.desc"
+  ],
+  "labels": [
+    "gen9",
+    "legendary",
+    "restricted"
+  ],
+  "aspects": [
+    "normal-form"
+  ],
   "abilities": [
-    "terashift"
+    "terashift",
+    "h:terashift"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 90,
@@ -13,10 +31,6 @@
     "special_defence": 85,
     "speed": 60
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 0,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -25,15 +39,15 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 90,
   "experienceGroup": "slow",
+  "catchRate": 255,
   "eggCycles": 5,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
   "moves": [
-    "1:rapidspin",
-    "1:triattack",
     "1:withdraw",
+    "1:triattack",
+    "1:rapidspin",
     "10:ancientpower",
     "20:headbutt",
     "30:protect",
@@ -43,6 +57,7 @@
     "70:doubleedge",
     "80:rockpolish",
     "90:gyroball",
+    "tm:ancientpower",
     "tm:aurasphere",
     "tm:bodypress",
     "tm:bodyslam",
@@ -64,6 +79,7 @@
     "tm:gigaimpact",
     "tm:gravity",
     "tm:gyroball",
+    "tm:headbutt",
     "tm:heatcrash",
     "tm:heavyslam",
     "tm:hyperbeam",
@@ -76,6 +92,7 @@
     "tm:raindance",
     "tm:rest",
     "tm:roar",
+    "tm:rockpolish",
     "tm:rockslide",
     "tm:scorchingsands",
     "tm:sleeptalk",
@@ -91,26 +108,59 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:toxic",
+    "tm:triattack",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:wildcharge",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:ancientpower",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dazzlinggleam",
+    "tutor:dragonpulse",
+    "tutor:earthpower",
+    "tutor:energyball",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:ironhead",
+    "tutor:meteorbeam",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:scorchingsands",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
+    "tutor:thunderbolt",
+    "tutor:waterpulse",
+    "tutor:wildcharge",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9",
-    "legendary"
-  ],
-  "aspects": [],
-  "height": 2,
-  "weight": 65,
   "evolutions": [],
-  "cannotDynamax": false,
   "forms": [
     {
       "name": "Terastal",
       "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 3,
+      "weight": 160,
+      "pokedex": [
+        "cobblemon.species.terapagos-terastal.desc"
+      ],
+      "labels": [
+        "gen9",
+        "legendary",
+        "restricted"
+      ],
+      "aspects": [
+        "terastal-form"
+      ],
       "abilities": [
-        "terashell"
+        "terashell",
+        "h:terashell"
       ],
       "baseStats": {
         "hp": 95,
@@ -120,10 +170,6 @@
         "special_defence": 110,
         "speed": 85
       },
-      "catchRate": 255,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 0,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 0,
         "attack": 0,
@@ -132,29 +178,53 @@
         "special_defence": 2,
         "speed": 0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 5,
-      "eggGroups": [
-        "undiscovered"
-      ],
-      "labels": [
-        "gen9",
-        "legendary"
-      ],
-      "aspects": [
-        "terastal"
-      ],
-      "height": 3,
-      "weight": 160,
+      "baseExperienceYield": 120,
       "evolutions": [],
-      "cannotDynamax": false,
-      "battleOnly": true
+      "battleOnly": true,
+      "behaviour": {
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          },
+          "fly": {
+            "canFly": true
+          }
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
+      "lightingData": {
+        "lightLevel": 10,
+        "liquidGlowMode": "BOTH"
+      }
     },
     {
       "name": "Stellar",
       "primaryType": "normal",
+      "maleRatio": 0.5,
+      "height": 17,
+      "weight": 770,
+      "pokedex": [
+        "cobblemon.species.terapagos-stellar.desc"
+      ],
+      "labels": [
+        "gen9",
+        "legendary",
+        "restricted"
+      ],
+      "aspects": [
+        "stellar-form"
+      ],
       "abilities": [
-        "teraformzero"
+        "teraformzero",
+        "h:teraformzero"
       ],
       "baseStats": {
         "hp": 160,
@@ -164,10 +234,6 @@
         "special_defence": 110,
         "speed": 85
       },
-      "catchRate": 255,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 0,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 3,
         "attack": 0,
@@ -176,23 +242,31 @@
         "special_defence": 0,
         "speed": 0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 5,
-      "eggGroups": [
-        "undiscovered"
-      ],
-      "labels": [
-        "gen9",
-        "legendary"
-      ],
-      "aspects": [
-        "stellar"
-      ],
-      "height": 17,
-      "weight": 770,
+      "baseExperienceYield": 140,
+      "dynamaxBlocked": true,
       "evolutions": [],
-      "cannotDynamax": false,
       "battleOnly": true
     }
-  ]
+  ],
+  "behaviour": {
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
+  "lightingData": {
+    "lightLevel": 7,
+    "liquidGlowMode": "BOTH"
+  }
 }

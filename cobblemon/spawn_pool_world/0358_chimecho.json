@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
             "weight": 0.32,
@@ -24,6 +24,11 @@
                     "#cobblemon:is_taiga"
                 ],
                 "timeRange": "night"
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
             }
         },
         {
@@ -33,7 +38,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
             "weight": 0.96,
@@ -50,7 +55,7 @@
             "id": "chimecho-3",
             "pokemon": "chimecho",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "24-46",
             "weight": 16.0,

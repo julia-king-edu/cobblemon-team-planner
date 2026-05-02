@@ -1,12 +1,26 @@
 {
-  "name": "Ledyba",
+  "implemented": true,
   "nationalPokedexNumber": 165,
+  "name": "Ledyba",
   "primaryType": "bug",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 108,
+  "pokedex": [
+    "cobblemon.species.ledyba.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "swarm",
     "earlybird",
     "h:rattled"
+  ],
+  "eggGroups": [
+    "bug"
   ],
   "baseStats": {
     "hp": 40,
@@ -16,15 +30,25 @@
     "special_defence": 80,
     "speed": 55
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 53,
   "experienceGroup": "fast",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
@@ -32,14 +56,44 @@
       },
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canWalkOnWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ledyba",
+          "tier": 1
+        },
+        {
+          "pokemon": "ledian",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
   },
   "moves": [
     "1:tackle",
@@ -49,7 +103,7 @@
     "12:reflect",
     "12:safeguard",
     "15:machpunch",
-    "19:silverwind",
+    "19:roost",
     "22:cometpunch",
     "26:batonpass",
     "29:agility",
@@ -57,118 +111,98 @@
     "36:airslash",
     "40:doubleedge",
     "egg:bide",
-    "egg:bugbite",
-    "egg:bugbuzz",
     "egg:counter",
     "egg:dizzypunch",
-    "egg:drainpunch",
-    "egg:encore",
-    "egg:endure",
-    "egg:focuspunch",
-    "egg:knockoff",
-    "egg:psybeam",
-    "egg:screech",
-    "egg:silverwind",
-    "egg:tailwind",
     "tm:acrobatics",
     "tm:aerialace",
-    "tm:attract",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:assurance",
+    "tm:batonpass",
     "tm:brickbreak",
-    "tm:captivate",
-    "tm:confide",
+    "tm:bugbite",
+    "tm:bugbuzz",
     "tm:dig",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:drainpunch",
+    "tm:dualwingbeat",
+    "tm:encore",
     "tm:endure",
     "tm:facade",
     "tm:flash",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigadrain",
-    "tm:hiddenpower",
+    "tm:headbutt",
+    "tm:icepunch",
     "tm:infestation",
+    "tm:knockoff",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:ominouswind",
     "tm:poweruppunch",
     "tm:protect",
+    "tm:psybeam",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
+    "tm:rollout",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
+    "tm:screech",
     "tm:silverwind",
     "tm:sleeptalk",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:swift",
     "tm:swordsdance",
+    "tm:tailwind",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:thunderpunch",
+    "tm:uproar",
     "tm:uturn",
     "tutor:aerialace",
-    "tutor:agility",
     "tutor:aircutter",
-    "tutor:attract",
-    "tutor:batonpass",
-    "tutor:bide",
     "tutor:bugbite",
-    "tutor:cometpunch",
-    "tutor:curse",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:drainpunch",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:flash",
+    "tutor:dualwingbeat",
     "tutor:focuspunch",
-    "tutor:frustration",
     "tutor:gigadrain",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:icepunch",
     "tutor:knockoff",
-    "tutor:lightscreen",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:ominouswind",
-    "tutor:protect",
-    "tutor:psybeam",
-    "tutor:reflect",
-    "tutor:refresh",
     "tutor:rest",
-    "tutor:return",
     "tutor:rollout",
     "tutor:roost",
-    "tutor:safeguard",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:supersonic",
-    "tutor:swagger",
-    "tutor:sweetscent",
     "tutor:swift",
-    "tutor:swordsdance",
-    "tutor:tackle",
     "tutor:tailwind",
-    "tutor:thief",
     "tutor:thunderpunch",
-    "tutor:toxic",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.ledyba.desc"
+    "tutor:uproar",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -182,35 +216,18 @@
           "variant": "level",
           "minLevel": 18
         }
-      ]
-    }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 108,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:charti_berry",
-        "percentage": 2.5
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }

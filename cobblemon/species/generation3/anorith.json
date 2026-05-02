@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Anorith",
   "nationalPokedexNumber": 347,
+  "name": "Anorith",
   "primaryType": "rock",
   "secondaryType": "bug",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 125,
+  "pokedex": [
+    "cobblemon.species.anorith.desc"
+  ],
+  "labels": [
+    "gen3",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "battlearmor",
     "h:swiftswim"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 45,
@@ -16,40 +30,73 @@
     "special_defence": 50,
     "speed": 75
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 71,
+  "experienceGroup": "erratic",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.2,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
-        "avoidsLand": false,
+        "avoidsLand": true,
         "walkSpeed": 0.17
       },
       "swim": {
         "swimSpeed": 0.1,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
+        "canBreatheUnderwater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "anorith",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": true,
-  "baseExperienceYield": 71,
-  "experienceGroup": "erratic",
-  "eggCycles": 30,
-  "eggGroups": [
-    "water_3"
-  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:quick_claw",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:furycutter",
-    "1:harden",
     "1:scratch",
-    "4:mudsport",
+    "1:harden",
+    "1:mudsport",
+    "1:furycutter",
     "4:watergun",
     "8:smackdown",
     "12:metalclaw",
@@ -62,94 +109,87 @@
     "41:protect",
     "44:xscissor",
     "egg:aquajet",
-    "egg:crosspoison",
     "egg:curse",
-    "egg:irondefense",
     "egg:knockoff",
     "egg:rapidspin",
-    "egg:rockslide",
     "egg:sandattack",
-    "egg:screech",
-    "egg:swordsdance",
     "egg:waterpulse",
     "tm:aerialace",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brine",
-    "tm:captivate",
-    "tm:confide",
+    "tm:bugbite",
     "tm:crosspoison",
+    "tm:curse",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:honeclaws",
     "tm:irondefense",
+    "tm:knockoff",
+    "tm:metalclaw",
+    "tm:meteorbeam",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterpulse",
     "tm:xscissor",
+    "tutor:aerialace",
     "tutor:ancientpower",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:crosspoison",
-    "tutor:doubleedge",
     "tutor:earthpower",
-    "tutor:endure",
+    "tutor:falseswipe",
     "tutor:furycutter",
-    "tutor:harden",
-    "tutor:headbutt",
     "tutor:irondefense",
     "tutor:knockoff",
     "tutor:meteorbeam",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:mudsport",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:scratch",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:watergun",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.anorith.desc"
+    "tutor:waterpulse",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -163,35 +203,18 @@
           "variant": "level",
           "minLevel": 40
         }
-      ]
-    }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 125,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:turtle_scute",
-        "quantityRange": "0-2"
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }

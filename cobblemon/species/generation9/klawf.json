@@ -1,11 +1,25 @@
 {
-  "name": "Klawf",
+  "implemented": true,
   "nationalPokedexNumber": 950,
+  "name": "Klawf",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 790,
+  "pokedex": [
+    "cobblemon.species.klawf.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "angershell",
     "shellarmor",
     "h:regenerator"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 70,
@@ -15,10 +29,6 @@
     "special_defence": 55,
     "speed": 75
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 158,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -27,14 +37,46 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 158,
   "experienceGroup": "medium_fast",
+  "catchRate": 120,
   "eggCycles": 35,
-  "eggGroups": [
-    "water_3"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 2.65,
+    "height": 1.25,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "swimSpeed": "0.2",
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:rockthrow",
     "1:visegrip",
+    "1:rockthrow",
     "6:harden",
     "9:rocksmash",
     "13:rocktomb",
@@ -52,6 +94,7 @@
     "egg:crabhammer",
     "egg:endeavor",
     "egg:knockoff",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
@@ -78,6 +121,7 @@
     "tm:reversal",
     "tm:rockblast",
     "tm:rockslide",
+    "tm:rocksmash",
     "tm:rocktomb",
     "tm:sandstorm",
     "tm:scaryface",
@@ -97,26 +141,32 @@
     "tm:thief",
     "tm:throatchop",
     "tm:trailblaze",
-    "tm:xscissor"
+    "tm:xscissor",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:throatchop",
+    "tutor:xscissor",
+    "special:block"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 13,
-  "weight": 790,
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.klawf.desc"
-  ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:pinap_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  "evolutions": []
 }

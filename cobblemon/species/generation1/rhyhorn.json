@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Rhyhorn",
   "nationalPokedexNumber": 111,
+  "name": "Rhyhorn",
   "primaryType": "ground",
   "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 1150,
+  "pokedex": [
+    "cobblemon.species.rhyhorn.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "lightningrod",
     "rockhead",
     "h:reckless"
+  ],
+  "eggGroups": [
+    "monster",
+    "field"
   ],
   "baseStats": {
     "hp": 80,
@@ -17,16 +31,75 @@
     "special_defence": 30,
     "speed": 25
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 69,
   "experienceGroup": "slow",
+  "catchRate": 120,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.4,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "5-20",
+          "JUMP": "5-15",
+          "SKILL": "5-25",
+          "SPEED": "25-60",
+          "STAMINA": "40-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "fireImmune": true,
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "rhyhorn",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      },
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -41,15 +114,14 @@
     ]
   },
   "moves": [
-    "1:tackle",
     "1:tailwhip",
-    "5:furyattack",
+    "1:furyattack",
+    "1:tackle",
     "5:smackdown",
     "10:bulldoze",
     "15:hornattack",
     "20:scaryface",
     "25:chipaway",
-    "25:stomp",
     "30:rockblast",
     "35:drillrun",
     "40:takedown",
@@ -58,36 +130,26 @@
     "55:megahorn",
     "60:horndrill",
     "egg:counter",
-    "egg:crunch",
     "egg:crushclaw",
     "egg:curse",
     "egg:dragonrush",
-    "egg:firefang",
     "egg:guardsplit",
-    "egg:icefang",
-    "egg:irontail",
     "egg:magnitude",
     "egg:metalburst",
-    "egg:reversal",
-    "egg:rockclimb",
     "egg:rockpolish",
-    "egg:rockslide",
     "egg:rototiller",
     "egg:skullbash",
-    "egg:swordsdance",
-    "egg:thunderfang",
-    "tm:attract",
+    "egg:stomp",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:blizzard",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragonpulse",
     "tm:drillrun",
     "tm:earthpower",
@@ -98,9 +160,8 @@
     "tm:fireblast",
     "tm:firefang",
     "tm:flamethrower",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:icebeam",
     "tm:icefang",
@@ -110,13 +171,11 @@
     "tm:megahorn",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:payback",
     "tm:poisonjab",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockblast",
@@ -125,16 +184,14 @@
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:smartstrike",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
@@ -143,7 +200,6 @@
     "tm:sunnyday",
     "tm:supercellslam",
     "tm:superpower",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
@@ -151,123 +207,78 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderfang",
-    "tm:toxic",
     "tm:uproar",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:crunch",
-    "tutor:curse",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
     "tutor:dragonpulse",
     "tutor:drillrun",
     "tutor:earthpower",
-    "tutor:earthquake",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fireblast",
-    "tutor:fissure",
+    "tutor:firefang",
     "tutor:flamethrower",
-    "tutor:frustration",
-    "tutor:furyattack",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hornattack",
-    "tutor:horndrill",
+    "tutor:highhorsepower",
     "tutor:icebeam",
+    "tutor:icefang",
     "tutor:icywind",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:magnitude",
     "tutor:megahorn",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:poisonjab",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:rage",
     "tutor:rest",
-    "tutor:return",
-    "tutor:reversal",
-    "tutor:roar",
     "tutor:rockslide",
     "tutor:rocksmash",
-    "tutor:rockthrow",
     "tutor:rollout",
-    "tutor:sandattack",
-    "tutor:sandstorm",
-    "tutor:scaryface",
     "tutor:scorchingsands",
     "tutor:shockwave",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:spite",
     "tutor:stealthrock",
-    "tutor:stomp",
     "tutor:stompingtantrum",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:tailwhip",
-    "tutor:takedown",
-    "tutor:thrash",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:toxic",
+    "tutor:thunderfang",
     "tutor:uproar",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.rhyhorn.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:fissure",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:leer",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:pursuit",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:rockthrow",
+    "legacy:round",
+    "legacy:sandattack",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:spite",
+    "legacy:swagger",
+    "legacy:thrash",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
   "evolutions": [
     {
-      "id": "rhyhorn_rhydon",
-      "variant": "level_up",
-      "result": "rhydon",
       "consumeHeldItem": false,
+      "id": "rhyhorn_rhydon",
       "learnableMoves": [
         "hammerarm"
       ],
       "requirements": [
         {
-          "variant": "level",
-          "minLevel": 42
+          "minLevel": 42,
+          "variant": "level"
         }
-      ]
+      ],
+      "result": "rhydon",
+      "variant": "level_up"
     }
-  ],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 1.2,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 1150,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

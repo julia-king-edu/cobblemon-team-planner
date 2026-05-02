@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 5.7,
@@ -21,6 +21,11 @@
                     "#cobblemon:is_spooky"
                 ],
                 "maxLight": 7
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
@@ -30,7 +35,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 1.9,
@@ -41,6 +46,11 @@
                     "#cobblemon:is_spooky",
                     "#cobblemon:is_swamp"
                 ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
@@ -50,7 +60,7 @@
                 "derelict"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 5.7,
@@ -59,6 +69,11 @@
                 "biomes": [
                     "#cobblemon:is_spooky",
                     "#cobblemon:is_swamp"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
                 ]
             }
         },
@@ -69,7 +84,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 5.7,
@@ -89,7 +104,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 5.7,
@@ -103,7 +118,7 @@
             "id": "misdreavus-6",
             "pokemon": "misdreavus",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-44",
             "weight": 5.7,
@@ -117,6 +132,11 @@
                 ],
                 "minY": -41,
                 "maxY": 9
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         }
     ]

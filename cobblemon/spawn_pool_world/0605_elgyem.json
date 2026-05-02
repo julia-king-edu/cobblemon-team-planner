@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "9-34",
             "weight": 8.4,
@@ -48,7 +48,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "9-34",
             "weight": 9.0,
@@ -65,10 +65,10 @@
             }
         },
         {
-            "id": "elgyem-3",
+            "id": "elgyem-5",
             "pokemon": "elgyem",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "9-34",
             "weight": 5.4,

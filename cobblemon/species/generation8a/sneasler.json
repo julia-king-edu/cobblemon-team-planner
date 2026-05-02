@@ -1,0 +1,231 @@
+{
+  "implemented": true,
+  "nationalPokedexNumber": 903,
+  "name": "Sneasler",
+  "primaryType": "fighting",
+  "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 430,
+  "pokedex": [
+    "cobblemon.species.sneasler.desc"
+  ],
+  "labels": [
+    "gen8a"
+  ],
+  "aspects": [
+    "hisuian"
+  ],
+  "abilities": [
+    "pressure",
+    "unburden",
+    "h:poisontouch"
+  ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 130,
+    "defence": 60,
+    "special_attack": 40,
+    "special_defence": 80,
+    "speed": 120
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 102,
+  "experienceGroup": "medium_slow",
+  "catchRate": 20,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "height": 2.5,
+    "fixed": false,
+    "width": 0.95
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "75-90",
+          "JUMP": "30-40",
+          "SKILL": "65-85",
+          "SPEED": "35-45",
+          "STAMINA": "10-20"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.35
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:razor_claw",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:payapa_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:rocksmash",
+    "1:direclaw",
+    "1:scratch",
+    "1:leer",
+    "1:fling",
+    "6:taunt",
+    "12:quickattack",
+    "18:metalclaw",
+    "24:poisonjab",
+    "30:brickbreak",
+    "36:honeclaws",
+    "42:slash",
+    "48:agility",
+    "54:screech",
+    "60:closecombat",
+    "egg:counter",
+    "egg:doublehit",
+    "egg:fakeout",
+    "egg:feint",
+    "egg:nightslash",
+    "egg:quickguard",
+    "egg:switcheroo",
+    "tm:acidspray",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:calmmind",
+    "tm:closecombat",
+    "tm:coaching",
+    "tm:dig",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:firepunch",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focusenergy",
+    "tm:focuspunch",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:gunkshot",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:irontail",
+    "tm:lashout",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:metalclaw",
+    "tm:nastyplot",
+    "tm:poisonjab",
+    "tm:poisontail",
+    "tm:powershift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:reversal",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:screech",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:spite",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:trailblaze",
+    "tm:upperhand",
+    "tm:uturn",
+    "tm:vacuumwave",
+    "tm:venoshock",
+    "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:bulkup",
+    "tutor:calmmind",
+    "tutor:coaching",
+    "tutor:falseswipe",
+    "tutor:firepunch",
+    "tutor:focusenergy",
+    "tutor:focuspunch",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:hyperbeam",
+    "tutor:irontail",
+    "tutor:lashout",
+    "tutor:lowkick",
+    "tutor:poisonjab",
+    "tutor:powershift",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spite",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:vacuumwave",
+    "tutor:xscissor"
+  ],
+  "preEvolution": "sneasel hisuian",
+  "evolutions": []
+}

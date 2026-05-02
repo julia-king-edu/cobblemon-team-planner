@@ -1,14 +1,90 @@
 {
   "implemented": true,
-  "name": "Hoothoot",
   "nationalPokedexNumber": 163,
+  "name": "Hoothoot",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 212,
+  "pokedex": [
+    "cobblemon.species.hoothoot.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "insomnia",
     "keeneye",
     "h:tintedlens"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 30,
+    "defence": 30,
+    "special_attack": 36,
+    "special_defence": 56,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 52,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "hoothoot",
+          "tier": 1
+        },
+        {
+          "pokemon": "rowlet",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -29,47 +105,15 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 30,
-    "defence": 30,
-    "special_attack": 36,
-    "special_defence": 56,
-    "speed": 50
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 52,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:foresight",
     "1:growl",
+    "1:foresight",
     "1:peck",
     "3:tackle",
     "6:echoedvoice",
     "9:confusion",
     "12:reflect",
-    "15:defog",
     "15:psychoshift",
-    "16:zenheadbutt",
     "18:airslash",
     "21:extrasensory",
     "24:takedown",
@@ -78,17 +122,13 @@
     "33:moonblast",
     "36:hypnosis",
     "39:dreameater",
-    "43:synchronoise",
-    "egg:agility",
-    "egg:defog",
     "egg:featherdance",
     "egg:feintattack",
-    "egg:hurricane",
     "egg:meanlook",
     "egg:mirrormove",
     "egg:nightshade",
-    "egg:skyattack",
     "egg:supersonic",
+    "egg:synchronoise",
     "egg:whirlwind",
     "egg:wingattack",
     "tm:acrobatics",
@@ -97,32 +137,26 @@
     "tm:aircutter",
     "tm:airslash",
     "tm:amnesia",
-    "tm:attract",
     "tm:bravebird",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
     "tm:confuseray",
     "tm:defog",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:dualwingbeat",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:featherdance",
-    "tm:flash",
     "tm:fly",
-    "tm:frustration",
     "tm:haze",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hypervoice",
     "tm:imprison",
+    "tm:magiccoat",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:pluck",
     "tm:protect",
     "tm:psybeam",
@@ -132,91 +166,70 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:silverwind",
     "tm:skillswap",
+    "tm:skyattack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:spite",
     "tm:steelwing",
     "tm:storedpower",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:twister",
     "tm:uproar",
     "tm:workup",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:attract",
-    "tutor:confusion",
-    "tutor:curse",
+    "tutor:calmmind",
     "tutor:defog",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
     "tutor:dualwingbeat",
-    "tutor:endure",
-    "tutor:feintattack",
-    "tutor:flash",
-    "tutor:fly",
-    "tutor:foresight",
-    "tutor:frustration",
-    "tutor:growl",
     "tutor:heatwave",
-    "tutor:hiddenpower",
     "tutor:hypervoice",
-    "tutor:hypnosis",
     "tutor:magiccoat",
-    "tutor:mimic",
-    "tutor:mirrormove",
-    "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:nightshade",
     "tutor:ominouswind",
-    "tutor:peck",
-    "tutor:protect",
+    "tutor:psychic",
     "tutor:recycle",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:roost",
+    "tutor:shadowball",
+    "tutor:skillswap",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelwing",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:supersonic",
-    "tutor:swagger",
+    "tutor:spite",
     "tutor:swift",
-    "tutor:tackle",
     "tutor:tailwind",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:twister",
     "tutor:uproar",
-    "tutor:whirlwind",
-    "tutor:wingattack",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.hoothoot.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:flash",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -232,24 +245,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 212,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

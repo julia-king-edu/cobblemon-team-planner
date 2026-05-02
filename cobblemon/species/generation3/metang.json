@@ -1,13 +1,93 @@
 {
   "implemented": true,
-  "name": "Metang",
   "nationalPokedexNumber": 375,
+  "name": "Metang",
   "primaryType": "steel",
   "secondaryType": "psychic",
+  "maleRatio": -1,
+  "height": 12,
+  "weight": 2025,
+  "pokedex": [
+    "cobblemon.species.metang.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "clearbody",
     "h:lightmetal"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 75,
+    "defence": 100,
+    "special_attack": 55,
+    "special_defence": 80,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 147,
+  "experienceGroup": "slow",
+  "catchRate": 3,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "metagross mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "metagross mega",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -21,48 +101,18 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 75,
-    "defence": 100,
-    "special_attack": 55,
-    "special_defence": 80,
-    "speed": 50
-  },
-  "catchRate": 3,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 147,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "mineral"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:bulletpunch",
-    "1:confusion",
-    "1:honeclaws",
     "1:metalclaw",
+    "1:confusion",
+    "1:pursuit",
+    "1:bulletpunch",
+    "1:miracleeye",
+    "1:honeclaws",
     "1:tackle",
     "6:zenheadbutt",
     "12:magnetrise",
     "18:flashcannon",
-    "23:pursuit",
     "26:takedown",
-    "29:miracleeye",
     "34:psychic",
     "42:scaryface",
     "50:meteormash",
@@ -75,11 +125,9 @@
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:confide",
     "tm:cosmicpower",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:expandingforce",
@@ -88,15 +136,15 @@
     "tm:flash",
     "tm:flashcannon",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:gravity",
     "tm:gyroball",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:icepunch",
@@ -104,9 +152,9 @@
     "tm:irondefense",
     "tm:ironhead",
     "tm:lightscreen",
+    "tm:magnetrise",
     "tm:metalclaw",
     "tm:meteorbeam",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:psychic",
@@ -117,81 +165,83 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:telekinesis",
     "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:allyswitch",
-    "tutor:bodyslam",
-    "tutor:confusion",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:endure",
+    "tutor:bulldoze",
     "tutor:expandingforce",
-    "tutor:explosion",
+    "tutor:flashcannon",
+    "tutor:focuspunch",
     "tutor:furycutter",
+    "tutor:gigaimpact",
     "tutor:gravity",
-    "tutor:headbutt",
+    "tutor:hyperbeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:magnetrise",
-    "tutor:metalclaw",
     "tutor:meteorbeam",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:psychup",
-    "tutor:refresh",
+    "tutor:psychic",
+    "tutor:psychocut",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:selfdestruct",
+    "tutor:shadowball",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
     "tutor:stealthrock",
     "tutor:steelbeam",
     "tutor:steelroller",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:takedown",
     "tutor:telekinesis",
     "tutor:thunderpunch",
     "tutor:trick",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.metang.desc"
+    "tutor:zenheadbutt",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:holdback",
+    "special:refresh"
   ],
   "preEvolution": "beldum",
   "evolutions": [
@@ -210,24 +260,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 2025,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

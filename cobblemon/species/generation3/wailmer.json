@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Wailmer",
   "nationalPokedexNumber": 320,
+  "name": "Wailmer",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 20,
+  "weight": 1300,
+  "pokedex": [
+    "cobblemon.species.wailmer.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "waterveil",
     "oblivious",
     "h:pressure"
+  ],
+  "eggGroups": [
+    "field",
+    "water_2"
   ],
   "baseStats": {
     "hp": 130,
@@ -16,29 +30,124 @@
     "special_defence": 35,
     "speed": 60
   },
-  "behaviour": {
-    "moving": {
-      "canLook": false,
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.1,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
   },
-  "catchRate": 125,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
   "baseExperienceYield": 80,
   "experienceGroup": "fluctuating",
+  "catchRate": 125,
   "eggCycles": 40,
-  "eggGroups": [
-    "field",
-    "water_2"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.8,
+  "hitbox": {
+    "height": 1,
+    "fixed": false,
+    "width": 1
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/submarine",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "submerged": false,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.underwater.stereo",
+            "submerged": true,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "hitboxBreachPercentage": 0.75,
+        "stats": {
+          "ACCELERATION": "30-55",
+          "JUMP": "25-40",
+          "SKILL": "30-55",
+          "SPEED": "30-50",
+          "STAMINA": "40-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "wailmer",
+          "tier": 1
+        },
+        {
+          "pokemon": "wailord",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      },
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": 0.14
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -56,7 +165,6 @@
     "1:splash",
     "3:growl",
     "6:astonish",
-    "10:rollout",
     "12:watergun",
     "15:mist",
     "18:waterpulse",
@@ -71,22 +179,18 @@
     "45:hydropump",
     "48:waterspout",
     "egg:aquaring",
-    "egg:bodyslam",
     "egg:clearsmog",
     "egg:curse",
     "egg:defensecurl",
     "egg:doubleedge",
     "egg:fissure",
     "egg:rollout",
-    "egg:sleeptalk",
     "egg:snore",
     "egg:soak",
     "egg:swagger",
     "egg:thrash",
     "egg:tickle",
-    "egg:zenheadbutt",
     "tm:amnesia",
-    "tm:attract",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodypress",
@@ -94,105 +198,82 @@
     "tm:bounce",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
+    "tm:curse",
     "tm:dive",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:earthquake",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:hail",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hypervoice",
     "tm:icebeam",
     "tm:icywind",
-    "tm:naturalgift",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:scald",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:snore",
+    "tm:steelroller",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
     "tm:swagger",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
     "tm:zenheadbutt",
-    "tutor:bodyslam",
     "tutor:bounce",
-    "tutor:defensecurl",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:endure",
-    "tutor:headbutt",
     "tutor:hypervoice",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:mimic",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:selfdestruct",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:steelroller",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.wailmer.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
-      "id": "wailmer_wailord",
-      "variant": "level_up",
-      "result": "wailord",
       "consumeHeldItem": false,
+      "id": "wailmer_wailord",
       "learnableMoves": [],
       "requirements": [
         {
-          "variant": "level",
-          "minLevel": 40
+          "minLevel": 40,
+          "variant": "level"
         }
-      ]
+      ],
+      "result": "wailord",
+      "variant": "level_up"
     }
-  ],
-  "baseScale": 1.8,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 1300,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

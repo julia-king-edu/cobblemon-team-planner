@@ -10,7 +10,7 @@
                 "ancient_city"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "43-48",
             "weight": 16.0,
@@ -29,7 +29,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "43-48",
             "weight": 5.0,
@@ -51,7 +51,7 @@
                 "trail_ruins"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "43-48",
             "weight": 2.0,
@@ -71,7 +71,7 @@
                 "desert_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "43-48",
             "weight": 2.0,
@@ -89,7 +89,7 @@
                 "jungle_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "43-48",
             "weight": 2.0,
@@ -103,7 +103,7 @@
             "id": "golurk-6",
             "pokemon": "golurk",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "43-48",
             "weight": 0.6,

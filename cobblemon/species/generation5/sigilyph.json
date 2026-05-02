@@ -1,14 +1,78 @@
 {
   "implemented": true,
-  "name": "Sigilyph",
   "nationalPokedexNumber": 561,
+  "name": "Sigilyph",
   "primaryType": "psychic",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 140,
+  "pokedex": [
+    "cobblemon.species.sigilyph.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "wonderskin",
     "magicguard",
     "h:tintedlens"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 72,
+    "attack": 58,
+    "defence": 80,
+    "special_attack": 103,
+    "special_defence": 80,
+    "speed": 97
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 1,
+    "height": 2.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -26,49 +90,19 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 72,
-    "attack": 58,
-    "defence": 80,
-    "special_attack": 103,
-    "special_defence": 80,
-    "speed": 97
-  },
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 172,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "flying"
-  ],
   "moves": [
-    "1:confusion",
     "1:gust",
     "1:miracleeye",
+    "1:psywave",
+    "1:synchronoise",
+    "1:mirrormove",
+    "1:confusion",
     "5:gravity",
-    "8:psywave",
     "10:hypnosis",
     "15:aircutter",
     "20:psybeam",
     "25:whirlwind",
     "30:cosmicpower",
-    "31:synchronoise",
-    "34:mirrormove",
     "35:airslash",
     "40:psychic",
     "45:tailwind",
@@ -77,43 +111,42 @@
     "55:skyattack",
     "60:skillswap",
     "egg:ancientpower",
-    "egg:futuresight",
     "egg:psychoshift",
     "egg:roost",
-    "egg:skillswap",
-    "egg:steelwing",
-    "egg:storedpower",
     "tm:aerialace",
+    "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:calmmind",
     "tm:chargebeam",
-    "tm:confide",
     "tm:cosmicpower",
     "tm:darkpulse",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
+    "tm:defog",
     "tm:dreameater",
+    "tm:dualwingbeat",
     "tm:endure",
     "tm:energyball",
+    "tm:expandingforce",
     "tm:facade",
     "tm:flash",
     "tm:flashcannon",
     "tm:fly",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
+    "tm:gravity",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:imprison",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:pluck",
     "tm:powerswap",
     "tm:protect",
+    "tm:psybeam",
     "tm:psychic",
     "tm:psychocut",
     "tm:psychup",
@@ -121,77 +154,75 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:solarbeam",
     "tm:speedswap",
     "tm:steelwing",
     "tm:storedpower",
     "tm:substitute",
-    "tm:swagger",
     "tm:swift",
+    "tm:tailwind",
     "tm:telekinesis",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:ancientpower",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
+    "tutor:dazzlinggleam",
     "tutor:defog",
     "tutor:dualwingbeat",
+    "tutor:energyball",
     "tutor:expandingforce",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
     "tutor:gravity",
     "tutor:heatwave",
-    "tutor:hypnosis",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:magiccoat",
     "tutor:magicroom",
+    "tutor:psychic",
+    "tutor:psychocut",
+    "tutor:rest",
     "tutor:roost",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:storedpower",
+    "tutor:swift",
     "tutor:tailwind",
     "tutor:telekinesis",
     "tutor:trick",
-    "tutor:zenheadbutt"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.sigilyph.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 14,
-  "weight": 140,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Gholdengo",
   "nationalPokedexNumber": 1000,
+  "name": "Gholdengo",
   "primaryType": "steel",
   "secondaryType": "ghost",
+  "maleRatio": -1,
+  "height": 12,
+  "weight": 300,
+  "pokedex": [
+    "cobblemon.species.gholdengo.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
-    "goodasgold"
+    "goodasgold",
+    "h:goodasgold"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 87,
@@ -15,10 +29,6 @@
     "special_defence": 91,
     "speed": 84
   },
-  "catchRate": 45,
-  "maleRatio": -1,
-  "baseExperienceYield": 275,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -27,29 +37,57 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 275,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 50,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.85,
+    "height": 2.15,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
     },
     "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
       "swim": {
-        "canWalkOnWater": true,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "swimSpeed": 0.35
+        "swimSpeed": 0.35,
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
       }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
+  "drops": {
+    "amount": 48,
+    "entries": [
+      {
+        "item": "cobblemon:relic_coin",
+        "quantityRange": "24-48"
+      }
+    ]
+  },
   "moves": [
-    "1:astonish",
     "1:tackle",
+    "1:astonish",
     "7:nightshade",
     "14:confuseray",
     "21:substitute",
@@ -99,33 +137,25 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:trick"
+    "tm:trick",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
+    "tutor:flashcannon",
+    "tutor:focuspunch",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:ironhead",
+    "tutor:lowkick",
+    "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:steelbeam",
+    "tutor:thunderbolt",
+    "tutor:thunderpunch",
+    "tutor:trick"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 12,
-  "weight": 300,
   "preEvolution": "gimmighoul",
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.gholdengo.desc"
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.85,
-    "height": 2.15,
-    "fixed": false
-  },
-  "drops": {
-    "amount": 48,
-    "entries": [
-      {
-        "item": "cobblemon:relic_coin",
-        "quantityRange": "24-48"
-      }
-    ]
-  }
+  "evolutions": []
 }

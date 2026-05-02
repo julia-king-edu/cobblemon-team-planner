@@ -1,14 +1,91 @@
 {
   "implemented": true,
-  "name": "Lanturn",
   "nationalPokedexNumber": 171,
+  "name": "Lanturn",
   "primaryType": "water",
   "secondaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 225,
+  "pokedex": [
+    "cobblemon.species.lanturn.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "voltabsorb",
     "illuminate",
     "h:waterabsorb"
   ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 125,
+    "attack": 58,
+    "defence": 58,
+    "special_attack": 76,
+    "special_defence": 76,
+    "speed": 67
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 161,
+  "experienceGroup": "slow",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.26,
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "lanturn",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -26,79 +103,47 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 125,
-    "attack": 58,
-    "defence": 58,
-    "special_attack": 76,
-    "special_defence": 76,
-    "speed": 67
-  },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 161,
-  "experienceGroup": "slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_2"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.26
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:bubble",
-    "1:eerieimpulse",
-    "1:electroball",
-    "1:spitup",
-    "1:spotlight",
-    "1:stockpile",
     "1:supersonic",
-    "1:swallow",
     "1:thunderwave",
     "1:watergun",
+    "1:stockpile",
+    "1:swallow",
+    "1:spitup",
+    "1:electroball",
+    "1:eerieimpulse",
+    "1:iondeluge",
+    "1:spotlight",
     "12:bubblebeam",
     "16:confuseray",
     "20:spark",
     "24:charge",
-    "29:signalbeam",
     "30:discharge",
     "36:aquaring",
     "42:flail",
     "48:takedown",
     "54:hydropump",
-    "54:iondeluge",
+    "egg:iondeluge",
+    "egg:mist",
+    "egg:psybeam",
+    "egg:soak",
+    "egg:suckerpunch",
+    "egg:waterpulse",
     "tm:agility",
     "tm:amnesia",
-    "tm:attract",
+    "tm:aquatail",
     "tm:blizzard",
     "tm:bounce",
     "tm:brine",
-    "tm:captivate",
     "tm:charge",
     "tm:chargebeam",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:dazzlinggleam",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:eerieimpulse",
     "tm:electricterrain",
     "tm:electroball",
@@ -107,112 +152,80 @@
     "tm:facade",
     "tm:flash",
     "tm:flipturn",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:healbell",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:liquidation",
     "tm:muddywater",
-    "tm:naturalgift",
     "tm:protect",
     "tm:psybeam",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:risingvoltage",
     "tm:scald",
     "tm:screech",
-    "tm:secretpower",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:voltswitch",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:wildcharge",
     "tutor:aquatail",
-    "tutor:attract",
     "tutor:bounce",
-    "tutor:bubble",
-    "tutor:confuseray",
-    "tutor:curse",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:flail",
-    "tutor:flash",
-    "tutor:frustration",
+    "tutor:electroweb",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
     "tutor:healbell",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
     "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:mimic",
-    "tutor:protect",
-    "tutor:raindance",
+    "tutor:liquidation",
     "tutor:rest",
-    "tutor:return",
     "tutor:risingvoltage",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:spark",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:supersonic",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:thunder",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
+    "tutor:thunderbolt",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.lanturn.desc"
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
   "preEvolution": "chinchou",
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 225,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 15,
+    "liquidGlowMode": "BOTH"
+  }
 }

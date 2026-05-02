@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Clamperl",
   "nationalPokedexNumber": 366,
+  "name": "Clamperl",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 525,
+  "pokedex": [
+    "cobblemon.species.clamperl.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "shellarmor",
     "h:rattled"
+  ],
+  "eggGroups": [
+    "water_1"
   ],
   "baseStats": {
     "hp": 35,
@@ -14,6 +27,25 @@
     "special_attack": 74,
     "special_defence": 55,
     "speed": 32
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 69,
+  "experienceGroup": "erratic",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.67,
+    "fixed": false
   },
   "behaviour": {
     "moving": {
@@ -29,82 +61,17 @@
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9"
     }
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 69,
-  "experienceGroup": "erratic",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1"
-  ],
-  "moves": [
-    "1:clamp",
-    "1:irondefense",
-    "1:watergun",
-    "1:whirlpool",
-    "51:shellsmash",
-    "egg:aquaring",
-    "egg:barrier",
-    "egg:bodyslam",
-    "egg:brine",
-    "egg:confuseray",
-    "egg:endure",
-    "egg:muddywater",
-    "egg:mudsport",
-    "egg:refresh",
-    "egg:supersonic",
-    "egg:waterpulse",
-    "tm:attract",
-    "tm:blizzard",
-    "tm:brine",
-    "tm:captivate",
-    "tm:confide",
-    "tm:dive",
-    "tm:doubleteam",
-    "tm:endure",
-    "tm:facade",
-    "tm:frustration",
-    "tm:hail",
-    "tm:hiddenpower",
-    "tm:icebeam",
-    "tm:naturalgift",
-    "tm:protect",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
-    "tm:sleeptalk",
-    "tm:substitute",
-    "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
-    "tm:waterfall",
-    "tm:waterpulse",
-    "tm:whirlpool",
-    "tutor:aquaring",
-    "tutor:bodyslam",
-    "tutor:captivate",
-    "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:endure",
-    "tutor:icywind",
-    "tutor:irondefense",
-    "tutor:mimic",
-    "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
   "drops": {
     "amount": 1,
     "entries": [
@@ -114,11 +81,62 @@
       }
     ]
   },
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.clamperl.desc"
+  "moves": [
+    "1:clamp",
+    "1:watergun",
+    "1:whirlpool",
+    "1:irondefense",
+    "50:shellsmash",
+    "egg:aquaring",
+    "egg:barrier",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:supersonic",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brine",
+    "tm:confuseray",
+    "tm:dive",
+    "tm:endure",
+    "tm:facade",
+    "tm:hail",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:muddywater",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scald",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:surf",
+    "tm:terablast",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:dive",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -147,24 +165,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.75,
-    "height": 0.67,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 525,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

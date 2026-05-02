@@ -11,12 +11,12 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "34-53",
             "weight": 0.2,
             "weightMultiplier": {
-                "multiplier": 1.5,
+                "multiplier": 5.0,
                 "condition": {
                     "isRaining": true
                 }

@@ -1,13 +1,89 @@
 {
   "implemented": true,
-  "name": "Luxray",
   "nationalPokedexNumber": 405,
+  "name": "Luxray",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 420,
+  "pokedex": [
+    "cobblemon.species.luxray.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "rivalry",
     "intimidate",
     "h:guts"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 120,
+    "defence": 79,
+    "special_attack": 95,
+    "special_defence": 79,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 262,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.15,
+  "hitbox": {
+    "width": 1,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "8",
+      "toleratedLeaders": [
+        {
+          "pokemon": "luxray female",
+          "tier": 1
+        },
+        {
+          "pokemon": "luxray male",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,61 +97,37 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 80,
-    "attack": 120,
-    "defence": 79,
-    "special_attack": 95,
-    "special_defence": 79,
-    "speed": 70
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 262,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
+    "1:tackle",
+    "1:leer",
     "1:charge",
     "1:electricterrain",
-    "1:leer",
-    "1:tackle",
     "1:thundershock",
     "12:bite",
-    "13:bite",
-    "13:spark",
-    "18:bite",
     "18:spark",
-    "23:roar",
     "24:roar",
-    "28:swagger",
     "33:voltswitch",
-    "35:crunch",
-    "35:thunderfang",
     "40:scaryface",
-    "42:crunch",
     "48:thunderwave",
-    "49:scaryface",
     "56:crunch",
-    "56:discharge",
-    "63:wildcharge",
     "64:discharge",
     "72:swagger",
     "80:wildcharge",
+    "egg:babydolleyes",
+    "egg:doublekick",
+    "egg:howl",
+    "egg:nightslash",
+    "egg:quickattack",
+    "egg:shockwave",
+    "egg:takedown",
     "tm:agility",
-    "tm:attract",
+    "tm:babydolleyes",
     "tm:bodyslam",
-    "tm:captivate",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
     "tm:crunch",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:eerieimpulse",
     "tm:electricterrain",
     "tm:electroball",
@@ -85,29 +137,28 @@
     "tm:faketears",
     "tm:firefang",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icefang",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:magnetrise",
     "tm:playrough",
     "tm:protect",
     "tm:psychicfangs",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:roar",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
@@ -123,51 +174,48 @@
     "tm:thunderbolt",
     "tm:thunderfang",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:voltswitch",
     "tm:wildcharge",
+    "tutor:babydolleyes",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:firefang",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icefang",
     "tutor:irontail",
     "tutor:laserfocus",
     "tutor:magnetrise",
-    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:risingvoltage",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:snarl",
     "tutor:superpower",
     "tutor:swift",
-    "tutor:throatchop"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.luxray.desc"
+    "tutor:throatchop",
+    "tutor:thunderbolt",
+    "tutor:thunderfang",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "preEvolution": "luxio",
-  "evolutions": [],
-  "baseScale": 1.15,
-  "hitbox": {
-    "width": 1.0,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 14,
-  "weight": 420,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

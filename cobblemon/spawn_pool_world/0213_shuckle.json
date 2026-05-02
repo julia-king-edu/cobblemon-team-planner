@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "16-51",
             "weight": 10.0,
@@ -33,7 +33,7 @@
             "id": "shuckle-2",
             "pokemon": "shuckle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "16-51",
             "weight": 6.0,
@@ -57,14 +57,14 @@
             "id": "shuckle-3",
             "pokemon": "shuckle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "16-51",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -90,7 +90,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "16-51",
             "weight": 10.0,
@@ -116,7 +116,7 @@
             "id": "shuckle-5",
             "pokemon": "shuckle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "16-51",
             "weight": 6.0,
@@ -143,14 +143,14 @@
             "id": "shuckle-6",
             "pokemon": "shuckle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "16-51",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

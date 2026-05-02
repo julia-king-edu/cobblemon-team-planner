@@ -11,7 +11,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "18-43",
             "weight": 5.0,
@@ -37,7 +37,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "uncommon",
             "level": "18-43",
             "weight": 5.0,
@@ -60,7 +60,7 @@
             "id": "illumise-3",
             "pokemon": "illumise",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "18-43",
             "weight": 3.0,
@@ -82,7 +82,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "uncommon",
             "level": "18-43",
             "weight": 3.0,

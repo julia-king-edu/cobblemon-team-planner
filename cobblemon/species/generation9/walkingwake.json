@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Walking Wake",
   "nationalPokedexNumber": 1009,
+  "name": "Walking Wake",
   "primaryType": "water",
   "secondaryType": "dragon",
+  "maleRatio": -1,
+  "height": 35,
+  "weight": 2800,
+  "pokedex": [
+    "cobblemon.species.walkingwake.desc"
+  ],
+  "labels": [
+    "gen9",
+    "paradox"
+  ],
+  "aspects": [],
   "abilities": [
-    "protosynthesis"
+    "protosynthesis",
+    "h:protosynthesis"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 99,
@@ -15,24 +30,6 @@
     "special_defence": 83,
     "speed": 109
   },
-  "catchRate": 5,
-  "maleRatio": -1,
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "swim": {
-        "canWalkOnWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
-  "baseExperienceYield": 295,
-  "baseFriendship": 0,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -41,18 +38,42 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 295,
   "experienceGroup": "slow",
+  "catchRate": 5,
   "eggCycles": 50,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 0,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.9,
+    "height": 3.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "canWalkOnWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "moves": [
-    "1:aquajet",
-    "1:honeclaws",
     "1:leer",
     "1:roar",
-    "1:sunnyday",
     "1:twister",
+    "1:aquajet",
+    "1:sunnyday",
+    "1:honeclaws",
     "7:bite",
     "14:waterpulse",
     "21:nobleroar",
@@ -82,6 +103,7 @@
     "tm:flamethrower",
     "tm:flipturn",
     "tm:gigaimpact",
+    "tm:honeclaws",
     "tm:hurricane",
     "tm:hydropump",
     "tm:hyperbeam",
@@ -104,24 +126,28 @@
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
-    "tm:whirlpool"
+    "tm:whirlpool",
+    "tutor:dracometeor",
+    "tutor:dragonpulse",
+    "tutor:firefang",
+    "tutor:flamethrower",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:lowkick",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:swift",
+    "tutor:twister",
+    "tutor:waterpulse"
   ],
-  "labels": [
-    "gen9",
-    "paradox"
-  ],
-  "aspects": [],
-  "height": 35,
-  "weight": 2800,
-  "evolutions": [],
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 1.9,
-    "height": 3.2,
-    "fixed": false
-  },
-  "cannotDynamax": false
+  "evolutions": []
 }

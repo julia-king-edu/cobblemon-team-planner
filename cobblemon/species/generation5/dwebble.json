@@ -1,23 +1,28 @@
 {
   "implemented": true,
-  "name": "Dwebble",
   "nationalPokedexNumber": 557,
+  "name": "Dwebble",
   "primaryType": "bug",
   "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 145,
+  "pokedex": [
+    "cobblemon.species.dwebble.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "shellarmor",
     "h:weakarmor"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:hard_stone",
-        "percentage": 2.5
-      }
-    ]
-  },
+  "eggGroups": [
+    "bug",
+    "mineral"
+  ],
   "baseStats": {
     "hp": 50,
     "attack": 65,
@@ -26,23 +31,46 @@
     "special_defence": 35,
     "speed": 55
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 65,
   "experienceGroup": "medium_fast",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug",
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.7,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:terracotta",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:furycutter",
     "1:sandattack",
+    "1:feintattack",
     "4:withdraw",
     "8:smackdown",
     "12:bugbite",
-    "13:feintattack",
     "16:flail",
     "20:slash",
     "24:rockslide",
@@ -55,46 +83,39 @@
     "egg:block",
     "egg:counter",
     "egg:curse",
-    "egg:endure",
-    "egg:irondefense",
     "egg:knockoff",
     "egg:nightslash",
     "egg:rototiller",
-    "egg:sandtomb",
-    "egg:spikes",
     "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
+    "tm:block",
+    "tm:bugbite",
     "tm:bulldoze",
-    "tm:confide",
+    "tm:curse",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:furycutter",
     "tm:honeclaws",
     "tm:irondefense",
+    "tm:knockoff",
     "tm:naturepower",
     "tm:poisonjab",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:shadowclaw",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spikes",
     "tm:stealthrock",
@@ -102,24 +123,38 @@
     "tm:strength",
     "tm:strugglebug",
     "tm:substitute",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
+    "tm:terablast",
     "tm:xscissor",
+    "tutor:aerialace",
     "tutor:block",
     "tutor:bugbite",
+    "tutor:bulldoze",
+    "tutor:furycutter",
     "tutor:irondefense",
     "tutor:knockoff",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:stealthrock"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.dwebble.desc"
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -133,26 +168,39 @@
           "variant": "level",
           "minLevel": 34
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 145,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.17
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

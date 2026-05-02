@@ -1,0 +1,145 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "sinistcha-unremarkable-1",
+            "pokemon": "sinistcha matcha_authenticity=unremarkable",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "26-51",
+            "weight": 0.792,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_bamboo",
+                    "#cobblemon:is_cherry_blossom",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_island",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_swamp",
+                    "#cobblemon:is_thermal",
+                    "#cobblemon:is_volcanic"
+                ],
+                "timeRange": "day",
+                "structures": [
+                    "#minecraft:village"
+                ],
+                "minY": 62
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_magical",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "sinistcha-masterpiece-2",
+            "pokemon": "sinistcha matcha_authenticity=masterpiece",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "26-51",
+            "weight": 0.008,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_bamboo",
+                    "#cobblemon:is_cherry_blossom",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_island",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_swamp",
+                    "#cobblemon:is_thermal",
+                    "#cobblemon:is_volcanic"
+                ],
+                "timeRange": "day",
+                "structures": [
+                    "#minecraft:village"
+                ],
+                "minY": 62
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_magical",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "sinistcha-unremarkable-3",
+            "pokemon": "sinistcha matcha_authenticity=unremarkable",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "26-51",
+            "weight": 0.792,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_bamboo",
+                    "#cobblemon:is_cherry_blossom",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_island",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_swamp",
+                    "#cobblemon:is_thermal",
+                    "#cobblemon:is_volcanic"
+                ],
+                "timeRange": "night",
+                "structures": [
+                    "#minecraft:village"
+                ],
+                "minY": 62
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_magical",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        },
+        {
+            "id": "sinistcha-masterpiece-4",
+            "pokemon": "sinistcha matcha_authenticity=masterpiece",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "26-51",
+            "weight": 0.008,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_bamboo",
+                    "#cobblemon:is_cherry_blossom",
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_island",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_ocean",
+                    "#cobblemon:is_swamp",
+                    "#cobblemon:is_thermal",
+                    "#cobblemon:is_volcanic"
+                ],
+                "timeRange": "night",
+                "structures": [
+                    "#minecraft:village"
+                ],
+                "minY": 62
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_magical",
+                    "#cobblemon:is_spooky"
+                ]
+            }
+        }
+    ]
+}

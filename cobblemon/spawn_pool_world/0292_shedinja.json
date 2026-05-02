@@ -10,8 +10,8 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
             "level": "20-24",
             "weight": 2.0,
             "condition": {
@@ -27,6 +27,26 @@
             "anticondition": {
                 "biomes": [
                     "#cobblemon:is_freezing"
+                ]
+            }
+        },
+        {
+            "id": "shedinja-2",
+            "pokemon": "shedinja",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "20-24",
+            "weight": 0.03,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
                 ]
             }
         }

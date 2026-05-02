@@ -1,12 +1,26 @@
 {
-  "name": "Trumbeak",
+  "implemented": true,
   "nationalPokedexNumber": 732,
+  "name": "Trumbeak",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 148,
+  "pokedex": [
+    "cobblemon.species.trumbeak.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "skilllink",
     "h:pickup"
+  ],
+  "eggGroups": [
+    "flying"
   ],
   "baseStats": {
     "hp": 55,
@@ -16,20 +30,77 @@
     "special_defence": 50,
     "speed": 75
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 124,
   "experienceGroup": "medium_fast",
+  "catchRate": 120,
   "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "trumbeak",
+          "tier": 1
+        },
+        {
+          "pokemon": "toucannon",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:echoedvoice",
-    "1:growl",
-    "1:peck",
     "1:rockblast",
+    "1:peck",
+    "1:growl",
+    "1:echoedvoice",
     "1:rocksmash",
     "13:supersonic",
     "16:pluck",
@@ -40,16 +111,18 @@
     "37:bulletseed",
     "40:featherdance",
     "45:hypervoice",
+    "egg:boomburst",
+    "egg:gunkshot",
+    "egg:mirrormove",
+    "egg:skyattack",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:bravebird",
     "tm:brickbreak",
     "tm:bulletseed",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:defog",
     "tm:dualwingbeat",
     "tm:echoedvoice",
     "tm:endeavor",
@@ -58,50 +131,61 @@
     "tm:featherdance",
     "tm:flamecharge",
     "tm:fly",
-    "tm:frustration",
     "tm:gunkshot",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hypervoice",
     "tm:knockoff",
+    "tm:pluck",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
+    "tm:rocksmash",
     "tm:roost",
-    "tm:round",
+    "tm:screech",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:uproar",
     "tm:uturn",
     "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
     "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:endeavor",
     "tutor:gunkshot",
     "tutor:heatwave",
+    "tutor:helpinghand",
     "tutor:hypervoice",
     "tutor:knockoff",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roost",
     "tutor:skyattack",
-    "tutor:snore",
+    "tutor:sleeptalk",
+    "tutor:swift",
     "tutor:tailwind",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.trumbeak.desc"
+    "tutor:uproar",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "pikipek",
   "evolutions": [
@@ -120,40 +204,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 148,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 4,
-    "entries": [
-      {
-        "item": "minecraft:feather",
-        "quantityRange": "0-2"
-      },
-      {
-        "item": "minecraft:chicken"
-      },
-      {
-        "item": "cobblemon:sharp_beak",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

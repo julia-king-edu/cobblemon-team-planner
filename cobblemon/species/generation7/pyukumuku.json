@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Pyukumuku",
   "nationalPokedexNumber": 771,
+  "name": "Pyukumuku",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 12,
+  "pokedex": [
+    "cobblemon.species.pyukumuku.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "innardsout",
     "h:unaware"
+  ],
+  "eggGroups": [
+    "water_1"
   ],
   "baseStats": {
     "hp": 55,
@@ -15,15 +28,48 @@
     "special_defence": 130,
     "speed": 5
   },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
   "baseExperienceYield": 144,
   "experienceGroup": "fast",
+  "catchRate": 60,
   "eggCycles": 15,
-  "eggGroups": [
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": false,
+        "walkSpeed": 0.175
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": true
+      },
+      "wanderChance": 360,
+      "canLook": false
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -33,25 +79,12 @@
       }
     ]
   },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.175
-      },
-      "swim": {
-        "swimSpeed": 0.1,
-        "canSwimInWater": false,
-        "canBreatheUnderwater": true
-      },
-      "wanderChance": 360
-    }
-  },
   "moves": [
     "1:batonpass",
-    "1:bide",
-    "1:harden",
-    "1:mudsport",
     "1:watersport",
+    "1:mudsport",
+    "1:harden",
+    "1:bide",
     "5:helpinghand",
     "10:taunt",
     "15:safeguard",
@@ -65,29 +98,30 @@
     "55:toxic",
     "60:memento",
     "egg:bestow",
-    "egg:endure",
     "egg:mirrorcoat",
     "egg:spite",
     "egg:swagger",
     "egg:tickle",
-    "egg:venomdrench",
-    "tm:attract",
     "tm:batonpass",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:block",
+    "tm:curse",
     "tm:endure",
+    "tm:gastroacid",
     "tm:hail",
     "tm:helpinghand",
     "tm:lightscreen",
+    "tm:painsplit",
     "tm:protect",
     "tm:psychup",
     "tm:quash",
     "tm:raindance",
+    "tm:recycle",
     "tm:reflect",
     "tm:rest",
     "tm:safeguard",
     "tm:screech",
     "tm:sleeptalk",
+    "tm:spite",
     "tm:substitute",
     "tm:swagger",
     "tm:taunt",
@@ -98,32 +132,12 @@
     "tutor:helpinghand",
     "tutor:painsplit",
     "tutor:recycle",
-    "tutor:spite"
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam"
   ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.pyukumuku.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.75,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 12,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

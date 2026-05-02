@@ -1,14 +1,154 @@
 {
   "implemented": true,
-  "name": "Corviknight",
   "nationalPokedexNumber": 823,
+  "name": "Corviknight",
   "primaryType": "flying",
   "secondaryType": "steel",
+  "maleRatio": 0.5,
+  "height": 22,
+  "weight": 750,
+  "pokedex": [
+    "cobblemon.species.corviknight.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "pressure",
     "unnerve",
     "h:mirrorarmor"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 98,
+    "attack": 87,
+    "defence": 105,
+    "special_attack": 53,
+    "special_defence": 85,
+    "speed": 67
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 3,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 248,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "height": 4.4,
+    "fixed": false,
+    "width": 2
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.plumage.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.plumage.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "35-55",
+          "JUMP": "80-100",
+          "SKILL": "20-35",
+          "SPEED": "25-40",
+          "STAMINA": "80-100"
+        }
+      },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "60-80",
+          "JUMP": "30-45",
+          "SKILL": "30-50",
+          "SPEED": "15-30",
+          "STAMINA": "60-80"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "corviknight",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.18
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -29,91 +169,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 98,
-    "attack": 87,
-    "defence": 105,
-    "special_attack": 53,
-    "special_defence": 85,
-    "speed": 67
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "flying",
-      "secondaryType": "steel",
-      "abilities": [
-        "pressure",
-        "unnerve",
-        "h:mirrorarmor"
-      ],
-      "baseStats": {
-        "hp": 98,
-        "attack": 87,
-        "defence": 105,
-        "special_attack": 53,
-        "special_defence": 85,
-        "speed": 67
-      },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 248,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 3,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 15,
-      "eggGroups": [
-        "flying"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 140,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
-  "baseExperienceYield": 248,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:honeclaws",
+    "1:steelwing",
     "1:irondefense",
-    "1:leer",
     "1:metalsound",
     "1:peck",
+    "1:leer",
     "1:powertrip",
+    "1:honeclaws",
     "1:screech",
     "12:furyattack",
     "16:pluck",
@@ -122,17 +185,24 @@
     "34:drillpeck",
     "42:swagger",
     "50:bravebird",
+    "egg:defog",
+    "egg:rocksmash",
+    "egg:roost",
+    "egg:sandattack",
+    "egg:skyattack",
+    "egg:spite",
+    "egg:tailwind",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
     "tm:assurance",
-    "tm:attract",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bravebird",
     "tm:bulkup",
     "tm:curse",
+    "tm:defog",
     "tm:doubleedge",
     "tm:dualwingbeat",
     "tm:endure",
@@ -143,6 +213,7 @@
     "tm:focusenergy",
     "tm:gigaimpact",
     "tm:heavyslam",
+    "tm:honeclaws",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:irondefense",
@@ -152,6 +223,7 @@
     "tm:metalsound",
     "tm:nastyplot",
     "tm:payback",
+    "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
@@ -159,16 +231,18 @@
     "tm:retaliate",
     "tm:revenge",
     "tm:reversal",
-    "tm:round",
+    "tm:rocksmash",
+    "tm:roost",
     "tm:scaryface",
     "tm:screech",
+    "tm:skyattack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:spite",
     "tm:steelbeam",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
+    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
@@ -177,34 +251,53 @@
     "tm:thief",
     "tm:uturn",
     "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:bulkup",
+    "tutor:defog",
     "tutor:dualwingbeat",
-    "tutor:steelbeam"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.corviknight.desc"
+    "tutor:flashcannon",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:steelbeam",
+    "tutor:swift",
+    "tutor:tailwind",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "corvisquire",
   "evolutions": [],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 2.0,
-    "height": 4.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 3,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 22,
-  "weight": 750,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "flying",
+      "secondaryType": "steel",
+      "maleRatio": 0.5,
+      "height": 140,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.corviknight-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    }
+  ]
 }

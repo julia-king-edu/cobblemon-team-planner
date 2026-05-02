@@ -1,13 +1,77 @@
 {
   "implemented": true,
-  "name": "Gurdurr",
   "nationalPokedexNumber": 533,
+  "name": "Gurdurr",
   "primaryType": "fighting",
+  "maleRatio": 0.75,
+  "height": 12,
+  "weight": 400,
+  "pokedex": [
+    "cobblemon.species.gurdurr.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "guts",
     "sheerforce",
     "h:ironfist"
   ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 105,
+    "defence": 85,
+    "special_attack": 40,
+    "special_defence": 50,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_slow",
+  "catchRate": 90,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.18
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,46 +85,16 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 85,
-    "attack": 105,
-    "defence": 85,
-    "special_attack": 40,
-    "special_defence": 50,
-    "speed": 40
-  },
-  "catchRate": 90,
-  "maleRatio": 0.75,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "human_like"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving" : {
-      "walk": {
-        "walkSpeed": 0.18
-      }
-    }
-  },
   "moves": [
-    "1:bide",
-    "1:leer",
-    "1:lowkick",
     "1:pound",
+    "1:leer",
+    "1:bide",
+    "1:lowkick",
     "1:rockthrow",
+    "1:chipaway",
     "12:focusenergy",
     "16:bulkup",
-    "20:rockslide",
     "20:wakeupslap",
-    "24:chipaway",
     "24:slam",
     "30:scaryface",
     "36:dynamicpunch",
@@ -68,17 +102,26 @@
     "48:stoneedge",
     "54:superpower",
     "60:focuspunch",
-    "tm:attract",
+    "egg:cometpunch",
+    "egg:counter",
+    "egg:defog",
+    "egg:detect",
+    "egg:forcepalm",
+    "egg:foresight",
+    "egg:machpunch",
+    "egg:slam",
+    "egg:smellingsalts",
+    "egg:wideguard",
+    "tm:block",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulkup",
     "tm:closecombat",
     "tm:coaching",
-    "tm:confide",
     "tm:curse",
+    "tm:defog",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:endure",
     "tm:facade",
@@ -87,10 +130,8 @@
     "tm:focusblast",
     "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:grassknot",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:icepunch",
     "tm:knockoff",
@@ -105,51 +146,57 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:workup",
     "tutor:block",
+    "tutor:bulkup",
     "tutor:coaching",
+    "tutor:defog",
     "tutor:drainpunch",
     "tutor:firepunch",
+    "tutor:focusenergy",
     "tutor:focuspunch",
     "tutor:helpinghand",
+    "tutor:highhorsepower",
     "tutor:icepunch",
     "tutor:knockoff",
     "tutor:lowkick",
-    "tutor:machpunch",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:thunderpunch"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.gurdurr.desc"
+    "tutor:thunderpunch",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "timburr",
   "evolutions": [
@@ -161,24 +208,5 @@
       "learnableMoves": [],
       "requirements": []
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 400,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

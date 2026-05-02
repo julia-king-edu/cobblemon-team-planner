@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Baltoy",
   "nationalPokedexNumber": 343,
+  "name": "Baltoy",
   "primaryType": "ground",
   "secondaryType": "psychic",
+  "maleRatio": -1,
+  "height": 5,
+  "weight": 215,
+  "pokedex": [
+    "cobblemon.species.baltoy.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
-    "levitate"
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 40,
@@ -15,15 +29,55 @@
     "special_defence": 70,
     "speed": 55
   },
-  "catchRate": 255,
-  "maleRatio": -1,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 60,
   "experienceGroup": "medium_fast",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "claydol",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -44,10 +98,10 @@
   "moves": [
     "1:harden",
     "1:mudslap",
+    "1:healblock",
     "3:rapidspin",
     "6:confusion",
     "9:rocktomb",
-    "10:healblock",
     "12:powertrick",
     "15:psybeam",
     "18:ancientpower",
@@ -61,35 +115,37 @@
     "39:sandstorm",
     "42:explosion",
     "tm:allyswitch",
+    "tm:ancientpower",
     "tm:bulldoze",
     "tm:calmmind",
     "tm:chargebeam",
-    "tm:confide",
     "tm:cosmicpower",
     "tm:dazzlinggleam",
     "tm:dig",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:drillrun",
     "tm:earthpower",
     "tm:earthquake",
     "tm:eerieimpulse",
     "tm:endure",
+    "tm:expandingforce",
     "tm:explosion",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:grassknot",
+    "tm:gravity",
     "tm:guardswap",
     "tm:gyroball",
+    "tm:headbutt",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:imprison",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:magiccoat",
+    "tm:mudslap",
     "tm:powerswap",
     "tm:protect",
+    "tm:psybeam",
     "tm:psychic",
     "tm:psychicterrain",
     "tm:psychup",
@@ -98,72 +154,70 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
+    "tm:scorchingsands",
     "tm:selfdestruct",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stealthrock",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:telekinesis",
-    "tm:toxic",
+    "tm:terablast",
     "tm:trick",
     "tm:trickroom",
     "tm:wonderroom",
     "tm:zenheadbutt",
     "tutor:allyswitch",
     "tutor:ancientpower",
-    "tutor:doubleedge",
-    "tutor:dreameater",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
     "tutor:drillrun",
     "tutor:earthpower",
-    "tutor:endure",
     "tutor:expandingforce",
-    "tutor:explosion",
     "tutor:gravity",
-    "tutor:headbutt",
+    "tutor:icebeam",
     "tutor:magiccoat",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:psybeam",
-    "tutor:psychup",
-    "tutor:rapidspin",
+    "tutor:psychic",
     "tutor:recycle",
-    "tutor:refresh",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:rocktomb",
     "tutor:scorchingsands",
-    "tutor:selfdestruct",
+    "tutor:shadowball",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:telekinesis",
     "tutor:trick",
     "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.baltoy.desc"
+    "tutor:zenheadbutt",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -181,24 +235,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 215,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

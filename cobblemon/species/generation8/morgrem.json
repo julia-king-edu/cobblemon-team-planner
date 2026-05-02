@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Morgrem",
   "nationalPokedexNumber": 860,
+  "name": "Morgrem",
   "primaryType": "dark",
   "secondaryType": "fairy",
+  "maleRatio": 1,
+  "height": 8,
+  "weight": 125,
+  "pokedex": [
+    "cobblemon.species.morgrem.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "prankster",
     "frisk",
     "h:pickpocket"
+  ],
+  "eggGroups": [
+    "fairy",
+    "human_like"
   ],
   "baseStats": {
     "hp": 65,
@@ -17,27 +31,74 @@
     "special_defence": 55,
     "speed": 70
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 130,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.85,
+    "height": 1.8,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "morgrem",
+          "tier": 1
+        },
+        {
+          "pokemon": "grimmsnarl",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "catchRate": 120,
-  "maleRatio": 1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 130,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "fairy",
-    "human_like"
-  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:roseli_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:bite",
-    "1:confide",
+    "1:falsesurrender",
     "1:fakeout",
+    "1:confide",
+    "1:bite",
     "1:flatter",
     "12:faketears",
     "16:assurance",
@@ -48,10 +109,11 @@
     "40:nastyplot",
     "46:playrough",
     "52:foulplay",
+    "egg:partingshot",
     "tm:assurance",
-    "tm:attract",
     "tm:burningjealousy",
     "tm:chillingwater",
+    "tm:confide",
     "tm:darkpulse",
     "tm:dazzlinggleam",
     "tm:drainingkiss",
@@ -77,29 +139,40 @@
     "tm:rest",
     "tm:retaliate",
     "tm:revenge",
-    "tm:round",
     "tm:scaryface",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
+    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thief",
     "tm:throatchop",
     "tm:thunderwave",
+    "tm:torment",
     "tm:trailblaze",
     "tm:trick",
-    "tm:uproar",
     "tutor:burningjealousy",
-    "tutor:lashout"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.morgrem.desc"
+    "tutor:darkpulse",
+    "tutor:dazzlinggleam",
+    "tutor:drainpunch",
+    "tutor:foulplay",
+    "tutor:lashout",
+    "tutor:leechlife",
+    "tutor:lowkick",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:throatchop",
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:uproar"
   ],
   "preEvolution": "impidimp",
   "evolutions": [
@@ -118,33 +191,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.85,
-    "height": 1.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 125,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:roseli_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  ]
 }

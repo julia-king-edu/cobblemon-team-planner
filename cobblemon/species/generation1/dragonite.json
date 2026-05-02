@@ -1,12 +1,27 @@
 {
   "implemented": true,
-  "name": "Dragonite",
   "nationalPokedexNumber": 149,
+  "name": "Dragonite",
   "primaryType": "dragon",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 22,
+  "weight": 2100,
+  "pokedex": [
+    "cobblemon.species.dragonite.desc"
+  ],
+  "labels": [
+    "gen1",
+    "powerhouse"
+  ],
+  "aspects": [],
   "abilities": [
     "innerfocus",
     "h:multiscale"
+  ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
   ],
   "baseStats": {
     "hp": 91,
@@ -16,29 +31,156 @@
     "special_defence": 100,
     "speed": 80
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 300,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 40,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
-  "behaviour": {
-    "moving": {
-      "swim": {
-        "canWalkOnWater": true,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+  "baseFriendship": 35,
+  "baseScale": 0.9,
+  "hitbox": {
+    "height": 3.2,
+    "fixed": false,
+    "width": 2
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/jet",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.leather.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.leather.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "35-50",
+          "JUMP": "50-70",
+          "SKILL": "50-85",
+          "SPEED": "40-60",
+          "STAMINA": "50-85"
+        }
       },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      },
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "submerged": false,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.underwater.stereo",
+            "submerged": true,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "30-65",
+          "JUMP": "55-85",
+          "SKILL": "35-50",
+          "SPEED": "30-50",
+          "STAMINA": "60-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       },
       "walk": {
         "walkSpeed": 0.2
       }
+    },
+    "resting": {
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
     }
   },
   "drops": {
@@ -63,17 +205,17 @@
     ]
   },
   "moves": [
-    "1:extremespeed",
     "1:firepunch",
-    "1:hurricane",
-    "1:leer",
-    "1:roost",
     "1:thunderpunch",
+    "1:roost",
+    "1:wrap",
+    "1:leer",
     "1:thunderwave",
     "1:twister",
+    "1:dragonrage",
     "1:wingattack",
-    "1:wrap",
-    "15:dragonrage",
+    "1:hurricane",
+    "1:extremespeed",
     "15:dragontail",
     "20:agility",
     "25:slam",
@@ -84,11 +226,18 @@
     "53:raindance",
     "62:dragondance",
     "80:hyperbeam",
+    "egg:aquajet",
+    "egg:dragonbreath",
+    "egg:extremespeed",
+    "egg:mist",
+    "egg:supersonic",
+    "egg:waterpulse",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
+    "tm:aquatail",
+    "tm:bind",
     "tm:blizzard",
     "tm:bodypress",
     "tm:bodyslam",
@@ -96,13 +245,10 @@
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:cut",
     "tm:defog",
     "tm:dive",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonclaw",
@@ -121,13 +267,13 @@
     "tm:fly",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hurricane",
     "tm:hydropump",
@@ -144,28 +290,24 @@
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:outrage",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scaleshot",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:shockwave",
     "tm:skydrop",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:steelwing",
     "tm:stompingtantrum",
@@ -175,7 +317,6 @@
     "tm:sunnyday",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
@@ -184,136 +325,85 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
-    "tm:whirlpool",
-    "tutor:agility",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:aquajet",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:barrier",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
-    "tutor:bubblebeam",
-    "tutor:curse",
+    "tutor:bulldoze",
     "tutor:defog",
-    "tutor:detect",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dracometeor",
-    "tutor:dragonbreath",
-    "tutor:dragonclaw",
-    "tutor:dragondance",
     "tutor:dragonpulse",
-    "tutor:dragonrage",
-    "tutor:dragonrush",
-    "tutor:dragontail",
-    "tutor:dualwingbeat",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:endure",
-    "tutor:extremespeed",
-    "tutor:facade",
-    "tutor:fireblast",
     "tutor:firepunch",
     "tutor:flamethrower",
-    "tutor:fly",
     "tutor:focuspunch",
-    "tutor:frustration",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
     "tutor:heatwave",
-    "tutor:hiddenpower",
-    "tutor:horndrill",
-    "tutor:hurricane",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:ironhead",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:lightscreen",
-    "tutor:mimic",
-    "tutor:mist",
-    "tutor:mudslap",
+    "tutor:lowkick",
     "tutor:ominouswind",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:razorwind",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:roost",
-    "tutor:safeguard",
-    "tutor:sandstorm",
     "tutor:scaleshot",
     "tutor:shockwave",
-    "tutor:skullbash",
-    "tutor:slam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelwing",
-    "tutor:strength",
-    "tutor:substitute",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:surf",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:tailwind",
-    "tutor:takedown",
-    "tutor:thunder",
     "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
-    "tutor:toxic",
     "tutor:twister",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:wingattack",
-    "tutor:wrap",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1",
-    "pseudo_legendary"
-  ],
-  "pokedex": [
-    "cobblemon.species.dragonite.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dualwingbeat",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:horndrill",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:razorwind",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:watergun",
+    "legacy:whirlpool",
+    "legacy:zapcannon",
+    "special:barrier",
+    "special:healbell"
   ],
   "preEvolution": "dragonair",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.5,
-    "height": 3.2,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 22,
-  "weight": 2100,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

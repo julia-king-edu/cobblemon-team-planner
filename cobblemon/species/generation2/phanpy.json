@@ -1,12 +1,89 @@
 {
   "implemented": true,
-  "name": "Phanpy",
   "nationalPokedexNumber": 231,
+  "name": "Phanpy",
   "primaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 335,
+  "pokedex": [
+    "cobblemon.species.phanpy.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "pickup",
     "h:sandveil"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 60,
+    "defence": 60,
+    "special_attack": 40,
+    "special_defence": 40,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.13
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "phanpy",
+          "tier": 1
+        },
+        {
+          "pokemon": "donphan",
+          "tier": 2
+        },
+        {
+          "pokemon": "greattusk",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,44 +97,13 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 90,
-    "attack": 60,
-    "defence": 60,
-    "special_attack": 40,
-    "special_defence": 40,
-    "speed": 40
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.13
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:defensecurl",
-    "1:growl",
     "1:odorsleuth",
     "1:tackle",
+    "1:growl",
+    "1:defensecurl",
     "6:flail",
     "10:rollout",
-    "15:bulldoze",
     "15:naturalgift",
     "19:endure",
     "24:slam",
@@ -75,19 +121,15 @@
     "egg:heavyslam",
     "egg:highhorsepower",
     "egg:iceshard",
-    "egg:mudslap",
     "egg:playrough",
     "egg:snore",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -95,16 +137,17 @@
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:focusenergy",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hypervoice",
     "tm:ironhead",
     "tm:irontail",
     "tm:knockoff",
+    "tm:lastresort",
     "tm:mudshot",
     "tm:mudslap",
     "tm:naturalgift",
@@ -112,82 +155,67 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:smackdown",
+    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superpower",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:earthquake",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:flail",
     "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:growl",
     "tutor:gunkshot",
-    "tutor:headbutt",
-    "tutor:heavyslam",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
     "tutor:hypervoice",
+    "tutor:ironhead",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:lastresort",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:protect",
+    "tutor:playrough",
     "tutor:rest",
-    "tutor:return",
-    "tutor:roar",
+    "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:sandstorm",
     "tutor:seedbomb",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:stealthrock",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:watergun"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.phanpy.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:watergun"
   ],
   "evolutions": [
     {
@@ -205,24 +233,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 335,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

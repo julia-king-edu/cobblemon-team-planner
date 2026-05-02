@@ -1,13 +1,130 @@
 {
   "implemented": true,
-  "name": "Volcarona",
   "nationalPokedexNumber": 637,
+  "name": "Volcarona",
   "primaryType": "bug",
   "secondaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 16,
+  "weight": 460,
+  "pokedex": [
+    "cobblemon.species.volcarona.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "flamebody",
     "h:swarm"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 60,
+    "defence": 65,
+    "special_attack": 135,
+    "special_defence": 105,
+    "speed": 100
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 275,
+  "experienceGroup": "slow",
+  "catchRate": 15,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "height": 2.4,
+    "fixed": false,
+    "width": 1.3
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/bird",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "45-65",
+          "JUMP": "25-35",
+          "SKILL": "55-75",
+          "SPEED": "30-50",
+          "STAMINA": "65-90"
+        }
+      },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "canJump": false,
+        "canSprint": false,
+        "stats": {
+          "ACCELERATION": "10-40",
+          "JUMP": "10-40",
+          "SKILL": "80-100",
+          "SPEED": "10-40",
+          "STAMINA": "10-40"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "fireImmune": true,
+    "herd": {
+      "maxSize": "5"
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -25,69 +142,46 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 85,
-    "attack": 60,
-    "defence": 65,
-    "special_attack": 135,
-    "special_defence": 105,
-    "speed": 100
-  },
-  "catchRate": 15,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 275,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "bug"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
-    "1:absorb",
-    "1:doubleedge",
     "1:ember",
-    "1:fierydance",
-    "1:firespin",
-    "1:flamecharge",
-    "1:flareblitz",
-    "1:gust",
-    "1:quiverdance",
     "1:stringshot",
-    "1:strugglebug",
-    "1:takedown",
-    "1:thrash",
+    "1:gust",
+    "1:firespin",
     "1:whirlwind",
+    "1:quiverdance",
+    "1:fierydance",
+    "1:flamecharge",
+    "1:strugglebug",
+    "1:flareblitz",
+    "1:thrash",
+    "1:absorb",
+    "1:takedown",
+    "1:doubleedge",
     "18:flamewheel",
     "24:bugbite",
     "30:screech",
     "36:leechlife",
     "42:bugbuzz",
     "48:heatwave",
-    "50:silverwind",
     "54:amnesia",
     "62:hurricane",
     "70:fireblast",
     "78:ragepowder",
+    "egg:absorb",
+    "egg:foresight",
+    "egg:harden",
+    "egg:morningsun",
+    "egg:thrash",
     "tm:acrobatics",
-    "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
     "tm:amnesia",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:calmmind",
-    "tm:confide",
+    "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:endure",
     "tm:facade",
@@ -97,17 +191,16 @@
     "tm:flamethrower",
     "tm:flareblitz",
     "tm:fly",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:incinerate",
     "tm:leechlife",
     "tm:lightscreen",
     "tm:lunge",
+    "tm:magnetrise",
     "tm:mysticalfire",
     "tm:overheat",
     "tm:poisonjab",
@@ -116,76 +209,63 @@
     "tm:psychic",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
     "tm:screech",
-    "tm:secretpower",
+    "tm:signalbeam",
+    "tm:silverwind",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uturn",
     "tm:wildcharge",
     "tm:willowisp",
     "tm:zenheadbutt",
+    "tutor:aircutter",
     "tutor:bugbite",
-    "tutor:bugbuzz",
+    "tutor:calmmind",
     "tutor:defog",
     "tutor:dualwingbeat",
-    "tutor:firespin",
+    "tutor:flamethrower",
     "tutor:gigadrain",
-    "tutor:gust",
+    "tutor:gigaimpact",
     "tutor:heatwave",
     "tutor:hyperbeam",
     "tutor:leechlife",
     "tutor:magnetrise",
-    "tutor:overheat",
-    "tutor:quiverdance",
+    "tutor:mysticalfire",
+    "tutor:poisonjab",
+    "tutor:psychic",
+    "tutor:rest",
     "tutor:roost",
     "tutor:signalbeam",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stringshot",
     "tutor:tailwind",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.volcarona.desc"
+    "tutor:wildcharge",
+    "tutor:zenheadbutt",
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "larvesta",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.3,
-    "height": 2.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 460,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

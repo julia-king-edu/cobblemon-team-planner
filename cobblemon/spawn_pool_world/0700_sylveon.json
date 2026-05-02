@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "28-53",
             "weight": 1.2,
@@ -19,7 +19,9 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_floral",
-                    "#cobblemon:is_magical"
+                    "#cobblemon:is_magical",
+                    "aether:skyroot_grove",
+                    "aether:skyroot_meadow"
                 ]
             },
             "anticondition": {
@@ -36,7 +38,7 @@
                 "urban"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.025,
@@ -55,7 +57,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.025,
@@ -77,7 +79,7 @@
                 "mansion"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "28-53",
             "weight": 0.125,

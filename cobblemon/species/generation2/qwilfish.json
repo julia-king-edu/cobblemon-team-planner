@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Qwilfish",
   "nationalPokedexNumber": 211,
+  "name": "Qwilfish",
   "primaryType": "water",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 39,
+  "pokedex": [
+    "cobblemon.species.qwilfish.desc"
+  ],
+  "labels": [
+    "gen2",
+    "johtonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "poisonpoint",
     "swiftswim",
     "h:intimidate"
+  ],
+  "eggGroups": [
+    "water_2"
   ],
   "baseStats": {
     "hp": 65,
@@ -17,6 +31,28 @@
     "special_defence": 55,
     "speed": 85
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 88,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "features": [
+    "hisuian"
+  ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.8,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
@@ -24,79 +60,213 @@
       },
       "swim": {
         "swimSpeed": 0.3,
-        "canSwimInWater": true,
         "canBreatheUnderwater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "qwilfish",
+          "tier": 1
+        },
+        {
+          "pokemon": "overqwil",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
-  "features": [
-    "hisuian"
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:pufferfish"
+      },
+      {
+        "item": "minecraft:prismarine_shard",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:poisonsting",
+    "1:bubble",
+    "4:harden",
+    "8:watergun",
+    "12:fellstinger",
+    "16:minimize",
+    "20:spikes",
+    "24:brine",
+    "28:poisonjab",
+    "32:pinmissile",
+    "36:toxicspikes",
+    "40:stockpile",
+    "40:spitup",
+    "44:toxic",
+    "48:aquatail",
+    "52:acupressure",
+    "56:destinybond",
+    "egg:acidspray",
+    "egg:aquajet",
+    "egg:astonish",
+    "egg:barbbarrage",
+    "egg:bubblebeam",
+    "egg:flail",
+    "egg:haze",
+    "egg:selfdestruct",
+    "egg:supersonic",
+    "egg:waterpulse",
+    "tm:acidspray",
+    "tm:agility",
+    "tm:aquatail",
+    "tm:assurance",
+    "tm:blizzard",
+    "tm:bounce",
+    "tm:brine",
+    "tm:chillingwater",
+    "tm:crunch",
+    "tm:curse",
+    "tm:dive",
+    "tm:doubleedge",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flipturn",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:gyroball",
+    "tm:hail",
+    "tm:haze",
+    "tm:headbutt",
+    "tm:hex",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:liquidation",
+    "tm:mudshot",
+    "tm:painsplit",
+    "tm:payback",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:poisontail",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:revenge",
+    "tm:reversal",
+    "tm:rollout",
+    "tm:scaleshot",
+    "tm:scaryface",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:spikes",
+    "tm:spite",
+    "tm:steelroller",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:aquatail",
+    "tutor:bounce",
+    "tutor:dive",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:liquidation",
+    "tutor:painsplit",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rollout",
+    "tutor:scaleshot",
+    "tutor:shadowball",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:spite",
+    "tutor:steelroller",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evolutions": [],
   "forms": [
     {
       "name": "Hisui",
       "primaryType": "dark",
       "secondaryType": "poison",
-      "abilities": [
-        "poisonpoint",
-        "swiftswim",
-        "h:intimidate"
-      ],
-      "baseStats": {
-        "hp": 65,
-        "attack": 95,
-        "defence": 85,
-        "special_attack": 55,
-        "special_defence": 55,
-        "speed": 85
-      },
-      "behaviour": {
-        "moving": {
-          "walk": {
-            "avoidsLand": true
-          },
-          "swim": {
-            "swimSpeed": 0.3,
-            "canSwimInWater": true,
-            "canBreatheUnderwater": true
-          }
-        },
-        "resting": {
-          "canSleep": true,
-          "willSleepOnBed": false,
-          "depth": "normal",
-          "light": "0-4"
-        }
-      },
-      "catchRate": 45,
       "maleRatio": 0.5,
-      "baseExperienceYield": 88,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 1,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "water_2"
+      "height": 5,
+      "weight": 39,
+      "pokedex": [
+        "cobblemon.species.qwilfish-hisui.desc"
+      ],
+      "labels": [
+        "gen8a",
+        "hisuian_form"
+      ],
+      "aspects": [
+        "hisuian"
       ],
       "moves": [
-        "1:poisonsting",
         "1:tackle",
+        "1:poisonsting",
         "4:harden",
         "8:bite",
         "12:fellstinger",
@@ -106,8 +276,8 @@
         "28:barbbarrage",
         "32:pinmissile",
         "36:toxicspikes",
-        "40:spitup",
         "40:stockpile",
+        "40:spitup",
         "44:toxic",
         "48:crunch",
         "52:acupressure",
@@ -124,7 +294,9 @@
         "egg:waterpulse",
         "tm:acidspray",
         "tm:agility",
+        "tm:aquatail",
         "tm:blizzard",
+        "tm:brine",
         "tm:chillingwater",
         "tm:crunch",
         "tm:curse",
@@ -138,12 +310,14 @@
         "tm:haze",
         "tm:hex",
         "tm:hydropump",
+        "tm:iceball",
         "tm:icebeam",
         "tm:icywind",
         "tm:lashout",
         "tm:liquidation",
         "tm:mudshot",
         "tm:painsplit",
+        "tm:pinmissile",
         "tm:poisonjab",
         "tm:poisontail",
         "tm:protect",
@@ -152,6 +326,7 @@
         "tm:reversal",
         "tm:scaleshot",
         "tm:scaryface",
+        "tm:selfdestruct",
         "tm:shadowball",
         "tm:sleeptalk",
         "tm:sludgebomb",
@@ -169,17 +344,29 @@
         "tm:toxicspikes",
         "tm:venoshock",
         "tm:waterfall",
-        "tm:waterpulse"
+        "tm:waterpulse",
+        "tutor:aquatail",
+        "tutor:darkpulse",
+        "tutor:gigaimpact",
+        "tutor:gunkshot",
+        "tutor:iceball",
+        "tutor:icebeam",
+        "tutor:icywind",
+        "tutor:lashout",
+        "tutor:liquidation",
+        "tutor:painsplit",
+        "tutor:poisonjab",
+        "tutor:rest",
+        "tutor:scaleshot",
+        "tutor:shadowball",
+        "tutor:sleeptalk",
+        "tutor:sludgebomb",
+        "tutor:spikes",
+        "tutor:spite",
+        "tutor:swift",
+        "tutor:throatchop",
+        "tutor:waterpulse"
       ],
-      "labels": [
-        "gen8",
-        "hisui_regional"
-      ],
-      "aspects": [
-        "hisuian"
-      ],
-      "height": 5,
-      "weight": 39,
       "evolutions": [
         {
           "id": "qwilfish_overqwil",
@@ -189,232 +376,49 @@
           "learnableMoves": [],
           "requirements": [
             {
-              "variant": "use_move",
-              "move": "barbbarrage",
-              "amount": 20
+              "variant": "has_move",
+              "move": "barbbarrage"
             }
           ]
         }
       ],
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
-  "baseExperienceYield": 88,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_2"
-  ],
-  "moves": [
-    "1:hydropump",
-    "1:poisonsting",
-    "1:tackle",
-    "4:harden",
-    "8:watergun",
-    "12:fellstinger",
-    "13:bubble",
-    "16:minimize",
-    "17:rollout",
-    "20:spikes",
-    "24:brine",
-    "28:poisonjab",
-    "28:revenge",
-    "32:pinmissile",
-    "36:toxicspikes",
-    "40:spitup",
-    "40:stockpile",
-    "44:toxic",
-    "48:aquatail",
-    "48:takedown",
-    "52:acupressure",
-    "56:destinybond",
-    "egg:acidspray",
-    "egg:aquajet",
-    "egg:astonish",
-    "egg:barbbarrage",
-    "egg:brine",
-    "egg:bubblebeam",
-    "egg:flail",
-    "egg:haze",
-    "egg:poisonjab",
-    "egg:selfdestruct",
-    "egg:signalbeam",
-    "egg:supersonic",
-    "egg:waterpulse",
-    "tm:acidspray",
-    "tm:agility",
-    "tm:assurance",
-    "tm:attract",
-    "tm:blizzard",
-    "tm:bounce",
-    "tm:brine",
-    "tm:captivate",
-    "tm:chillingwater",
-    "tm:confide",
-    "tm:crunch",
-    "tm:curse",
-    "tm:dive",
-    "tm:doubleedge",
-    "tm:doubleteam",
-    "tm:endure",
-    "tm:explosion",
-    "tm:facade",
-    "tm:flipturn",
-    "tm:frustration",
-    "tm:gigaimpact",
-    "tm:gunkshot",
-    "tm:gyroball",
-    "tm:hail",
-    "tm:haze",
-    "tm:hex",
-    "tm:hiddenpower",
-    "tm:hydropump",
-    "tm:icebeam",
-    "tm:icywind",
-    "tm:liquidation",
-    "tm:mudshot",
-    "tm:naturalgift",
-    "tm:painsplit",
-    "tm:payback",
-    "tm:pinmissile",
-    "tm:poisonjab",
-    "tm:poisontail",
-    "tm:protect",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:revenge",
-    "tm:reversal",
-    "tm:round",
-    "tm:scald",
-    "tm:scaleshot",
-    "tm:scaryface",
-    "tm:secretpower",
-    "tm:selfdestruct",
-    "tm:shadowball",
-    "tm:shockwave",
-    "tm:sleeptalk",
-    "tm:sludgebomb",
-    "tm:sludgewave",
-    "tm:snore",
-    "tm:spikes",
-    "tm:spite",
-    "tm:substitute",
-    "tm:surf",
-    "tm:swagger",
-    "tm:swift",
-    "tm:swordsdance",
-    "tm:takedown",
-    "tm:taunt",
-    "tm:terablast",
-    "tm:throatchop",
-    "tm:thunderwave",
-    "tm:toxic",
-    "tm:toxicspikes",
-    "tm:venomdrench",
-    "tm:venoshock",
-    "tm:waterfall",
-    "tm:waterpulse",
-    "tm:whirlpool",
-    "tutor:aquajet",
-    "tutor:aquatail",
-    "tutor:attract",
-    "tutor:blizzard",
-    "tutor:bounce",
-    "tutor:bubblebeam",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:flail",
-    "tutor:frustration",
-    "tutor:harden",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
-    "tutor:icywind",
-    "tutor:liquidation",
-    "tutor:mimic",
-    "tutor:minimize",
-    "tutor:painsplit",
-    "tutor:pinmissile",
-    "tutor:poisonsting",
-    "tutor:protect",
-    "tutor:raindance",
-    "tutor:rest",
-    "tutor:return",
-    "tutor:rollout",
-    "tutor:scaleshot",
-    "tutor:secretpower",
-    "tutor:selfdestruct",
-    "tutor:shockwave",
-    "tutor:signalbeam",
-    "tutor:sleeptalk",
-    "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:spikes",
-    "tutor:steelroller",
-    "tutor:substitute",
-    "tutor:supersonic",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:swift",
-    "tutor:swordsdance",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:throatchop",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
-    "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
-  "labels": [
-    "gen2",
-    "johto_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.qwilfish.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 39,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:pufferfish"
-      },
-      {
-        "item": "minecraft:prismarine_shard",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:poison_barb",
-        "percentage": 2.5
+      "battleOnly": false,
+      "behaviour": {
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "qwilfish",
+              "tier": 1
+            },
+            {
+              "pokemon": "overqwil",
+              "tier": 2
+            },
+            {
+              "pokemon": "manaphy",
+              "tier": 3
+            }
+          ]
+        },
+        "moving": {
+          "walk": {
+            "avoidsLand": true
+          },
+          "swim": {
+            "canBreatheUnderwater": true
+          }
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
       }
-    ]
-  }
+    }
+  ]
 }

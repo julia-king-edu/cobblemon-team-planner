@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Torchic",
   "nationalPokedexNumber": 255,
+  "name": "Torchic",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 25,
+  "pokedex": [
+    "cobblemon.species.torchic.desc"
+  ],
+  "labels": [
+    "gen3",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:speedboost"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 45,
@@ -15,15 +29,28 @@
     "special_defence": 50,
     "speed": 45
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 62,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "standingEyeHeight": 0.7,
+  "swimmingEyeHeight": 0.7,
+  "flyingEyeHeight": 0.7,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -41,56 +68,42 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:scratch",
+    "1:growl",
+    "1:peck",
     "3:ember",
     "6:quickattack",
     "9:flamecharge",
     "12:detect",
-    "14:peck",
     "15:sandattack",
     "18:aerialace",
-    "19:firespin",
     "21:slash",
     "24:bounce",
     "27:focusenergy",
-    "28:flameburst",
     "30:flamethrower",
     "33:featherdance",
     "36:reversal",
     "39:flareblitz",
-    "41:mirrormove",
-    "egg:agility",
-    "egg:batonpass",
     "egg:counter",
     "egg:crushclaw",
-    "egg:curse",
-    "egg:endure",
-    "egg:featherdance",
     "egg:feint",
     "egg:flameburst",
     "egg:lastresort",
-    "egg:lowkick",
+    "egg:mirrormove",
     "egg:nightslash",
     "egg:peck",
-    "egg:reversal",
-    "egg:rockslide",
     "egg:smellingsalts",
     "egg:swagger",
     "tm:aerialace",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:bodyslam",
     "tm:bounce",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
@@ -102,29 +115,24 @@
     "tm:flamethrower",
     "tm:flareblitz",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:incinerate",
+    "tm:lastresort",
     "tm:lowkick",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
     "tm:overheat",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
@@ -134,44 +142,41 @@
     "tm:takedown",
     "tm:temperflare",
     "tm:terablast",
-    "tm:toxic",
     "tm:uproar",
     "tm:willowisp",
     "tm:workup",
-    "tutor:bodyslam",
+    "tutor:aerialace",
     "tutor:bounce",
-    "tutor:counter",
-    "tutor:defog",
-    "tutor:doubleedge",
-    "tutor:ember",
-    "tutor:endure",
     "tutor:firepledge",
+    "tutor:flamethrower",
     "tutor:focusenergy",
-    "tutor:growl",
-    "tutor:headbutt",
     "tutor:heatwave",
     "tutor:helpinghand",
     "tutor:lastresort",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:scratch",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.torchic.desc"
+    "tutor:uproar",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defog",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -190,23 +195,46 @@
       ]
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 25,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "torchic",
+          "tier": 1
+        },
+        {
+          "pokemon": "combusken",
+          "tier": 2
+        },
+        {
+          "pokemon": "blaziken mega=false",
+          "tier": 3
+        },
+        {
+          "pokemon": "blaziken mega",
+          "tier": 4
+        }
+      ]
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.14
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  }
 }

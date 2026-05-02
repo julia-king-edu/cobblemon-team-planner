@@ -1,13 +1,96 @@
 {
   "implemented": true,
-  "name": "Klink",
   "nationalPokedexNumber": 599,
+  "name": "Klink",
   "primaryType": "steel",
+  "maleRatio": -1,
+  "height": 3,
+  "weight": 210,
+  "pokedex": [
+    "cobblemon.species.klink.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "plus",
     "minus",
     "h:clearbody"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 70,
+    "special_attack": 45,
+    "special_defence": 60,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "medium_slow",
+  "catchRate": 130,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "klink",
+          "tier": 1
+        },
+        {
+          "pokemon": "klang",
+          "tier": 2
+        },
+        {
+          "pokemon": "klinklang",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -17,34 +100,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 55,
-    "defence": 70,
-    "special_attack": 45,
-    "special_defence": 60,
-    "speed": 30
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 130,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 60,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
-    "1:thundershock",
     "1:visegrip",
+    "1:thundershock",
+    "1:mirrorshot",
     "4:bind",
     "8:charge",
     "12:chargebeam",
@@ -54,62 +113,75 @@
     "28:screech",
     "32:geargrind",
     "36:lockon",
-    "36:mirrorshot",
     "40:shiftgear",
     "44:zapcannon",
     "48:hyperbeam",
     "tm:assurance",
+    "tm:bind",
+    "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:gravity",
     "tm:hyperbeam",
     "tm:irondefense",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:metalsound",
     "tm:powergem",
     "tm:protect",
+    "tm:recycle",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:rockpolish",
     "tm:rocksmash",
-    "tm:round",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:steelbeam",
+    "tm:steelroller",
     "tm:substitute",
-    "tm:swagger",
+    "tm:telekinesis",
+    "tm:terablast",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:uproar",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:bind",
+    "tutor:chargebeam",
+    "tutor:flashcannon",
     "tutor:gravity",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:magiccoat",
     "tutor:magnetrise",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:risingvoltage",
+    "tutor:rocksmash",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:steelbeam",
     "tutor:steelroller",
     "tutor:telekinesis",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.klink.desc"
+    "tutor:thunderbolt",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -125,24 +197,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 210,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

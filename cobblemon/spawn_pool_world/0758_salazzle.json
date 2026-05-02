@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "33-48",
             "weight": 0.1,
@@ -27,7 +27,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "33-48",
             "weight": 0.1,
@@ -39,7 +39,7 @@
                     "#cobblemon:is_mountain"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:lava"
+                    "minecraft:lava"
                 ]
             },
             "anticondition": {
@@ -55,7 +55,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "33-48",
             "weight": 0.1,
@@ -72,7 +72,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "33-48",
             "weight": 0.06,

@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Florges",
   "nationalPokedexNumber": 671,
+  "name": "Florges",
   "primaryType": "fairy",
+  "maleRatio": 0,
+  "height": 11,
+  "weight": 100,
+  "pokedex": [
+    "cobblemon.species.florges.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [
+    "flower-red"
+  ],
   "abilities": [
     "flowerveil",
     "h:symbiosis"
+  ],
+  "eggGroups": [
+    "fairy"
   ],
   "baseStats": {
     "hp": 78,
@@ -15,128 +30,6 @@
     "special_defence": 154,
     "speed": 75
   },
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "baseExperienceYield": 248,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "fairy"
-  ],
-  "moves": [
-    "1:aromatherapy",
-    "1:disarmingvoice",
-    "1:flowershield",
-    "1:grassknot",
-    "1:grassyterrain",
-    "1:luckychant",
-    "1:magicalleaf",
-    "1:mistyterrain",
-    "1:petalblizzard",
-    "1:petaldance",
-    "1:safeguard",
-    "1:solarbeam",
-    "1:synthesis",
-    "1:wish",
-    "5:moonblast",
-    "tm:alluringvoice",
-    "tm:attract",
-    "tm:batonpass",
-    "tm:calmmind",
-    "tm:charm",
-    "tm:chillingwater",
-    "tm:confide",
-    "tm:dazzlinggleam",
-    "tm:disarmingvoice",
-    "tm:doubleteam",
-    "tm:drainingkiss",
-    "tm:echoedvoice",
-    "tm:endeavor",
-    "tm:endure",
-    "tm:energyball",
-    "tm:facade",
-    "tm:flash",
-    "tm:frustration",
-    "tm:gigadrain",
-    "tm:gigaimpact",
-    "tm:grassknot",
-    "tm:grassyterrain",
-    "tm:helpinghand",
-    "tm:hiddenpower",
-    "tm:hyperbeam",
-    "tm:lightscreen",
-    "tm:magicalleaf",
-    "tm:metronome",
-    "tm:mistyexplosion",
-    "tm:mistyterrain",
-    "tm:naturepower",
-    "tm:petalblizzard",
-    "tm:pollenpuff",
-    "tm:protect",
-    "tm:psychic",
-    "tm:psychicnoise",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:safeguard",
-    "tm:secretpower",
-    "tm:seedbomb",
-    "tm:skillswap",
-    "tm:sleeptalk",
-    "tm:solarbeam",
-    "tm:storedpower",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:swagger",
-    "tm:swift",
-    "tm:terablast",
-    "tm:toxic",
-    "tm:trailblaze",
-    "tm:trick",
-    "tutor:afteryou",
-    "tutor:allyswitch",
-    "tutor:covet",
-    "tutor:defog",
-    "tutor:endeavor",
-    "tutor:gigadrain",
-    "tutor:healbell",
-    "tutor:helpinghand",
-    "tutor:magiccoat",
-    "tutor:seedbomb",
-    "tutor:snore",
-    "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.florges.desc"
-  ],
-  "preEvolution": "floette",
-  "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1.3,
-    "height": 2.6,
-    "fixed": false
-  },
-  "baseFriendship": 70,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -145,10 +38,41 @@
     "special_defence": 3,
     "speed": 0
   },
-  "height": 11,
-  "weight": 100,
-  "aspects": [],
-  "cannotDynamax": false,
+  "baseExperienceYield": 276,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.3,
+    "height": 2.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -161,5 +85,201 @@
         "percentage": 10.0
       }
     ]
-  }
+  },
+  "moves": [
+    "1:disarmingvoice",
+    "1:luckychant",
+    "1:wish",
+    "1:magicalleaf",
+    "1:flowershield",
+    "1:grassknot",
+    "1:grassyterrain",
+    "1:petalblizzard",
+    "1:mistyterrain",
+    "1:petaldance",
+    "1:aromatherapy",
+    "1:solarbeam",
+    "1:safeguard",
+    "1:synthesis",
+    "1:tackle",
+    "1:vinewhip",
+    "1:fairywind",
+    "1:razorleaf",
+    "5:moonblast",
+    "egg:camouflage",
+    "egg:captivate",
+    "egg:copycat",
+    "egg:endeavor",
+    "egg:tearfullook",
+    "tm:afteryou",
+    "tm:alluringvoice",
+    "tm:allyswitch",
+    "tm:batonpass",
+    "tm:calmmind",
+    "tm:captivate",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:covet",
+    "tm:dazzlinggleam",
+    "tm:defog",
+    "tm:disarmingvoice",
+    "tm:drainingkiss",
+    "tm:echoedvoice",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:healbell",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:magiccoat",
+    "tm:metronome",
+    "tm:mistyexplosion",
+    "tm:mistyterrain",
+    "tm:naturepower",
+    "tm:petalblizzard",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychicnoise",
+    "tm:raindance",
+    "tm:rest",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:trick",
+    "tm:worryseed",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:defog",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:magicalleaf",
+    "tutor:magiccoat",
+    "tutor:mistyexplosion",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:trick",
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
+  ],
+  "preEvolution": "floette",
+  "evolutions": [],
+  "forms": [
+    {
+      "name": "Yellow",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 11,
+      "weight": 100,
+      "pokedex": [
+        "cobblemon.species.florges-yellow.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "flower-yellow"
+      ],
+      "preEvolution": "floette",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Orange",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 11,
+      "weight": 100,
+      "pokedex": [
+        "cobblemon.species.florges-orange.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "flower-orange"
+      ],
+      "preEvolution": "floette",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "Blue",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 11,
+      "weight": 100,
+      "pokedex": [
+        "cobblemon.species.florges-blue.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "flower-blue"
+      ],
+      "preEvolution": "floette",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "White",
+      "primaryType": "fairy",
+      "maleRatio": 0,
+      "height": 11,
+      "weight": 100,
+      "pokedex": [
+        "cobblemon.species.florges-white.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "flower-white"
+      ],
+      "preEvolution": "floette",
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
 }

@@ -1,12 +1,26 @@
 {
-  "name": "Farigiraf",
+  "implemented": true,
   "nationalPokedexNumber": 981,
+  "name": "Farigiraf",
   "primaryType": "normal",
   "secondaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 32,
+  "weight": 1600,
+  "pokedex": [
+    "cobblemon.species.farigiraf.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "cudchew",
     "armortail",
     "h:sapsipper"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 120,
@@ -16,10 +30,6 @@
     "special_defence": 70,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 260,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 3,
     "attack": 0,
@@ -28,17 +38,90 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 260,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 4.23,
+    "fixed": false,
+    "width": 1.4
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "40-60",
+          "JUMP": "45-55",
+          "SKILL": "35-50",
+          "SPEED": "45-60",
+          "STAMINA": "50-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "farigiraf",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "canWalk": true,
+      "swim": {
+        "avoidsWater": true
+      },
+      "walkSpeed": "0.35"
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:leather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:razor_fang",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:astonish",
-    "1:growl",
-    "1:guardswap",
-    "1:powerswap",
     "1:tackle",
+    "1:growl",
+    "1:astonish",
+    "1:powerswap",
+    "1:guardswap",
+    "1:odorsleuth",
     "5:confusion",
     "10:assurance",
     "14:stomp",
@@ -50,9 +133,24 @@
     "41:batonpass",
     "46:nastyplot",
     "50:psychic",
+    "egg:allyswitch",
+    "egg:beatup",
+    "egg:doublekick",
+    "egg:foresight",
+    "egg:futuresight",
+    "egg:meanlook",
+    "egg:mirrorcoat",
+    "egg:razorwind",
+    "egg:secretpower",
+    "egg:takedown",
+    "egg:uproar",
+    "egg:wish",
     "tm:agility",
+    "tm:allyswitch",
     "tm:amnesia",
+    "tm:assurance",
     "tm:batonpass",
+    "tm:beatup",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:calmmind",
@@ -73,6 +171,7 @@
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:gravity",
+    "tm:guardswap",
     "tm:helpinghand",
     "tm:highhorsepower",
     "tm:hyperbeam",
@@ -83,6 +182,7 @@
     "tm:lowkick",
     "tm:nastyplot",
     "tm:nightshade",
+    "tm:powerswap",
     "tm:protect",
     "tm:psybeam",
     "tm:psychic",
@@ -95,6 +195,7 @@
     "tm:reflect",
     "tm:rest",
     "tm:roar",
+    "tm:secretpower",
     "tm:shadowball",
     "tm:skillswap",
     "tm:sleeptalk",
@@ -113,41 +214,52 @@
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:allyswitch",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:expandingforce",
+    "tutor:foulplay",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:ironhead",
+    "tutor:lowkick",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:trick",
+    "tutor:uproar",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "baseScale": 0.95,
-  "hitbox": {
-    "width": 1.4,
-    "height": 4.23,
-    "fixed": false
-  },
-  "height": 32,
-  "weight": 1600,
   "preEvolution": "girafarig",
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.farigiraf.desc"
-  ],
-  "drops": {
-    "amount": 4,
-    "entries": [
-      {
-        "item": "minecraft:leather",
-        "quantityRange": "0-2"
-      },
-      {
-        "item": "cobblemon:razor_fang",
-        "percentage": 5.0
-      },
-      {
-        "item": "cobblemon:persim_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  "evolutions": []
 }

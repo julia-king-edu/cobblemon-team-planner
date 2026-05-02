@@ -1,13 +1,75 @@
 {
   "implemented": true,
-  "name": "Drowzee",
   "nationalPokedexNumber": 96,
+  "name": "Drowzee",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 324,
+  "pokedex": [
+    "cobblemon.species.drowzee.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "insomnia",
     "forewarn",
     "h:innerfocus"
   ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 48,
+    "defence": 45,
+    "special_attack": 43,
+    "special_defence": 90,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.22
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -17,50 +79,17 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 48,
-    "defence": 45,
-    "special_attack": 43,
-    "special_defence": 90,
-    "speed": 42
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "human_like"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.22
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:hypnosis",
     "1:pound",
+    "1:hypnosis",
     "5:disable",
     "9:confusion",
     "13:headbutt",
     "17:poisongas",
     "21:meditate",
-    "21:psybeam",
     "25:psychup",
     "29:wakeupslap",
-    "29:zenheadbutt",
     "33:swagger",
-    "37:psychic",
     "37:synchronoise",
     "41:nastyplot",
     "45:psyshock",
@@ -71,24 +100,18 @@
     "egg:flatter",
     "egg:guardswap",
     "egg:icepunch",
-    "egg:nastyplot",
     "egg:powersplit",
-    "egg:psychicterrain",
     "egg:psychocut",
     "egg:roleplay",
     "egg:secretpower",
-    "egg:skillswap",
     "egg:thunderpunch",
-    "tm:attract",
+    "tm:allyswitch",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:dazzlinggleam",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:drainpunch",
     "tm:dreameater",
@@ -103,21 +126,25 @@
     "tm:focusblast",
     "tm:focuspunch",
     "tm:foulplay",
-    "tm:frustration",
     "tm:futuresight",
     "tm:grassknot",
+    "tm:guardswap",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icepunch",
     "tm:imprison",
     "tm:knockoff",
     "tm:lightscreen",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:magiccoat",
+    "tm:magicroom",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metronome",
+    "tm:mindreader",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
     "tm:poweruppunch",
     "tm:protect",
@@ -125,17 +152,19 @@
     "tm:psychic",
     "tm:psychicnoise",
     "tm:psychicterrain",
+    "tm:psychocut",
     "tm:psychup",
     "tm:psyshock",
     "tm:raindance",
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
     "tm:secretpower",
+    "tm:selfdestruct",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
@@ -154,95 +183,64 @@
     "tm:torment",
     "tm:toxic",
     "tm:trailblaze",
+    "tm:triattack",
     "tm:trick",
     "tm:trickroom",
     "tm:zenheadbutt",
     "tutor:allyswitch",
-    "tutor:attract",
-    "tutor:barrier",
-    "tutor:bellydrum",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
     "tutor:calmmind",
-    "tutor:confusion",
-    "tutor:counter",
-    "tutor:curse",
     "tutor:dazzlinggleam",
-    "tutor:disable",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:drainpunch",
-    "tutor:dreameater",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:facade",
+    "tutor:endeavor",
+    "tutor:expandingforce",
     "tutor:firepunch",
-    "tutor:flash",
     "tutor:focuspunch",
     "tutor:foulplay",
-    "tutor:frustration",
-    "tutor:futuresight",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hypnosis",
+    "tutor:helpinghand",
     "tutor:icepunch",
-    "tutor:lightscreen",
+    "tutor:knockoff",
     "tutor:lowkick",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:meditate",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
-    "tutor:nastyplot",
-    "tutor:nightmare",
-    "tutor:poisongas",
-    "tutor:pound",
-    "tutor:protect",
-    "tutor:psybeam",
     "tutor:psychic",
     "tutor:psychocut",
-    "tutor:psychup",
-    "tutor:psywave",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:recycle",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:roleplay",
-    "tutor:seismictoss",
     "tutor:shadowball",
     "tutor:signalbeam",
     "tutor:skillswap",
-    "tutor:skullbash",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:taunt",
+    "tutor:swift",
     "tutor:telekinesis",
-    "tutor:teleport",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:triattack",
     "tutor:trick",
-    "tutor:wish",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.drowzee.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:psywave",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:seismictoss",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:submission",
+    "legacy:teleport",
+    "legacy:zapcannon",
+    "special:bellydrum",
+    "special:wish"
   ],
   "evolutions": [
     {
@@ -258,24 +256,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.85,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 324,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

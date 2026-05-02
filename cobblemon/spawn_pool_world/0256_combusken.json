@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -18,7 +18,9 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_plains"
+                    "#cobblemon:is_plains",
+                    "aether:skyroot_grove",
+                    "aether:skyroot_meadow"
                 ]
             }
         }

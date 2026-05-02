@@ -1,21 +1,26 @@
 {
   "implemented": true,
-  "name": "Loudred",
   "nationalPokedexNumber": 294,
+  "name": "Loudred",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 405,
+  "pokedex": [
+    "cobblemon.species.loudred.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "soundproof",
     "h:scrappy"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 5.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "monster",
+    "field"
+  ],
   "baseStats": {
     "hp": 84,
     "attack": 71,
@@ -24,41 +29,72 @@
     "special_defence": 43,
     "speed": 48
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 126,
   "experienceGroup": "medium_slow",
+  "catchRate": 120,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1,
+    "height": 1.3,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:throat_spray",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
+    "1:pound",
     "1:astonish",
+    "1:howl",
     "1:bite",
     "1:echoedvoice",
-    "1:howl",
-    "1:pound",
     "15:rest",
     "15:sleeptalk",
     "23:stomp",
     "29:roar",
     "36:supersonic",
     "43:uproar",
-    "50:screech",
     "50:synchronoise",
     "57:hypervoice",
-    "tm:attract",
+    "egg:circlethrow",
+    "egg:disarmingvoice",
+    "egg:endeavor",
+    "egg:extrasensory",
+    "egg:hammerarm",
+    "egg:smellingsalts",
+    "egg:smokescreen",
+    "egg:snore",
+    "egg:swagger",
+    "egg:synchronoise",
+    "egg:takedown",
+    "egg:whirlwind",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:disarmingvoice",
     "tm:earthquake",
     "tm:echoedvoice",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:faketears",
@@ -66,8 +102,7 @@
     "tm:firepunch",
     "tm:flamethrower",
     "tm:fling",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hypervoice",
     "tm:icebeam",
     "tm:icepunch",
@@ -76,21 +111,19 @@
     "tm:lowkick",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:overheat",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
     "tm:sleeptalk",
@@ -102,51 +135,57 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:swagger",
+    "tm:takedown",
     "tm:taunt",
+    "tm:terablast",
     "tm:thunderpunch",
     "tm:torment",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterpulse",
     "tm:workup",
     "tm:zenheadbutt",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
+    "tutor:bulldoze",
     "tutor:endeavor",
-    "tutor:endure",
     "tutor:firepunch",
-    "tutor:headbutt",
+    "tutor:flamethrower",
     "tutor:hypervoice",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:psychup",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:seismictoss",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:thunderpunch",
     "tutor:uproar",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.loudred.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:psychup",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:toxic",
+    "special:teeterdance"
   ],
   "preEvolution": "whismur",
   "evolutions": [
@@ -166,23 +205,32 @@
       ]
     }
   ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 405,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "exploud",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
 }

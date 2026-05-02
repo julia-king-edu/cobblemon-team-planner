@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.8,
@@ -30,7 +30,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -51,7 +51,7 @@
             "id": "starmie-3",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -77,7 +77,7 @@
             "id": "starmie-4",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "29-52",
             "weight": 0.16,
@@ -91,7 +91,7 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -112,7 +112,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -135,7 +135,7 @@
             "id": "starmie-6",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -163,7 +163,7 @@
             "id": "starmie-7",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "29-52",
             "weight": 0.16,
@@ -177,7 +177,7 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -200,7 +200,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -220,7 +220,7 @@
             "id": "starmie-9",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "29-52",
             "weight": 0.48,
@@ -243,14 +243,14 @@
             "id": "starmie-10",
             "pokemon": "starmie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "29-52",
             "weight": 0.16,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

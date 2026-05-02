@@ -7,7 +7,7 @@
             "id": "toxapex-1",
             "pokemon": "toxapex",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "38-50",
             "weight": 0.96,
@@ -31,7 +31,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "common",
             "level": "38-50",
             "weight": 0.2,
@@ -52,7 +52,7 @@
             "id": "toxapex-3",
             "pokemon": "toxapex",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "38-50",
             "weight": 1.6,
@@ -70,15 +70,15 @@
             "id": "toxapex-4",
             "pokemon": "toxapex",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "38-50",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -93,7 +93,7 @@
             "id": "toxapex-5",
             "pokemon": "toxapex",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "38-50",
             "weight": 1.6,
@@ -113,15 +113,15 @@
             "id": "toxapex-6",
             "pokemon": "toxapex",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "38-50",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {

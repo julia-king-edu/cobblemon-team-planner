@@ -11,7 +11,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "8-33",
             "weight": 1.8,
@@ -19,16 +19,50 @@
                 "biomes": [
                     "#cobblemon:is_forest",
                     "#cobblemon:is_mountain",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland",
                     "#cobblemon:is_taiga"
                 ],
                 "minY": 48
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "#cobblemon:saccharine_trees"
+                ],
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
             }
         },
         {
             "id": "teddiursa-2",
             "pokemon": "teddiursa",
+            "presets": [
+                "natural",
+                "wild"
+            ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "8-33",
+            "weight": 5.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether",
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:saccharine_trees"
+                ]
+            }
+        },
+        {
+            "id": "teddiursa-3",
+            "pokemon": "teddiursa",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "8-33",
             "weight": 1.8,

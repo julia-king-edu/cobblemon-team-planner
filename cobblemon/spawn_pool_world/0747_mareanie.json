@@ -7,7 +7,7 @@
             "id": "mareanie-1",
             "pokemon": "mareanie",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "6-31",
             "weight": 5.04,
@@ -31,7 +31,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "common",
             "level": "6-31",
             "weight": 1.8,
@@ -52,7 +52,7 @@
             "id": "mareanie-3",
             "pokemon": "mareanie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "6-31",
             "weight": 8.4,
@@ -70,15 +70,15 @@
             "id": "mareanie-4",
             "pokemon": "mareanie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "6-31",
             "weight": 10.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -93,7 +93,7 @@
             "id": "mareanie-5",
             "pokemon": "mareanie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "6-31",
             "weight": 8.4,
@@ -113,15 +113,15 @@
             "id": "mareanie-6",
             "pokemon": "mareanie",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "6-31",
             "weight": 10.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {

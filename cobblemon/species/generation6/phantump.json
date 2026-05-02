@@ -1,17 +1,101 @@
 {
   "implemented": true,
-  "name": "Phantump",
   "nationalPokedexNumber": 708,
+  "name": "Phantump",
   "primaryType": "ghost",
   "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 70,
+  "pokedex": [
+    "cobblemon.species.phantump.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "naturalcure",
     "frisk",
     "h:harvest"
   ],
+  "eggGroups": [
+    "grass",
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 43,
+    "attack": 70,
+    "defence": 48,
+    "special_attack": 50,
+    "special_defence": 60,
+    "speed": 38
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "phantump",
+          "tier": 1
+        },
+        {
+          "pokemon": "trevenant",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
-    "amount": 2,
+    "amount": 3,
     "entries": [
+      {
+        "item": "minecraft:jack_o_lantern",
+        "quantityRange": "0-1"
+      },
       {
         "item": "cobblemon:spell_tag",
         "percentage": 2.5
@@ -22,40 +106,13 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 43,
-    "attack": 70,
-    "defence": 48,
-    "special_attack": 50,
-    "special_defence": 60,
-    "speed": 38
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 62,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass",
-    "amorphous"
-  ],
   "moves": [
-    "1:astonish",
     "1:tackle",
+    "1:astonish",
     "4:branchpoke",
     "8:leechseed",
     "12:confuseray",
     "16:willowisp",
-    "19:feintattack",
     "20:hex",
     "24:growth",
     "28:hornleech",
@@ -68,97 +125,108 @@
     "egg:allyswitch",
     "egg:bestow",
     "egg:disable",
+    "egg:feintattack",
     "egg:grudge",
-    "egg:imprison",
-    "egg:poweruppunch",
     "egg:suckerpunch",
-    "egg:venomdrench",
     "tm:allyswitch",
-    "tm:attract",
     "tm:bulldoze",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:cut",
     "tm:darkpulse",
     "tm:dig",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:imprison",
     "tm:lashout",
     "tm:magicalleaf",
+    "tm:magiccoat",
     "tm:naturepower",
     "tm:nightshade",
     "tm:painsplit",
     "tm:phantomforce",
     "tm:poisonjab",
     "tm:poltergeist",
+    "tm:poweruppunch",
     "tm:protect",
     "tm:psychic",
     "tm:psychup",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:skillswap",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spite",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:trickroom",
     "tm:venomdrench",
     "tm:willowisp",
+    "tm:worryseed",
     "tutor:allyswitch",
+    "tutor:bulldoze",
+    "tutor:darkpulse",
+    "tutor:energyball",
     "tutor:foulplay",
     "tutor:gigadrain",
     "tutor:grassyglide",
+    "tutor:lashout",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
     "tutor:painsplit",
+    "tutor:poisonjab",
     "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:roleplay",
     "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:skillswap",
     "tutor:skittersmack",
-    "tutor:snore",
+    "tutor:sleeptalk",
     "tutor:spite",
+    "tutor:suckerpunch",
     "tutor:telekinesis",
     "tutor:trick",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.phantump.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -171,24 +239,5 @@
       ],
       "requirements": []
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 70,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

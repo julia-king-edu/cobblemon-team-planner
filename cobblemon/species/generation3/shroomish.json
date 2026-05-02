@@ -1,13 +1,112 @@
 {
   "implemented": true,
-  "name": "Shroomish",
   "nationalPokedexNumber": 285,
+  "name": "Shroomish",
   "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 45,
+  "pokedex": [
+    "cobblemon.species.shroomish.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "effectspore",
     "poisonheal",
     "h:quickfeet"
   ],
+  "eggGroups": [
+    "fairy",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 40,
+    "defence": 60,
+    "special_attack": 40,
+    "special_defence": 60,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 59,
+  "experienceGroup": "fluctuating",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "morelull",
+          "tier": 1
+        },
+        {
+          "pokemon": "foongus",
+          "tier": 2
+        },
+        {
+          "pokemon": "toedscool",
+          "tier": 3
+        },
+        {
+          "pokemon": "shroomish",
+          "tier": 4
+        },
+        {
+          "pokemon": "shiinotic",
+          "tier": 5
+        },
+        {
+          "pokemon": "amoonguss",
+          "tier": 6
+        },
+        {
+          "pokemon": "brutebonnet",
+          "tier": 7
+        },
+        {
+          "pokemon": "toedscruel",
+          "tier": 8
+        },
+        {
+          "pokemon": "breloom",
+          "tier": 9
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,32 +120,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 40,
-    "defence": 60,
-    "special_attack": 40,
-    "special_defence": 60,
-    "speed": 35
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 59,
-  "experienceGroup": "fluctuating",
-  "eggCycles": 15,
-  "eggGroups": [
-    "fairy",
-    "grass"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:absorb",
     "1:tackle",
@@ -55,31 +128,21 @@
     "12:megadrain",
     "15:headbutt",
     "19:poisonpowder",
-    "22:worryseed",
     "26:gigadrain",
     "29:growth",
     "33:toxic",
     "36:seedbomb",
     "40:spore",
-    "egg:bulletseed",
     "egg:charm",
-    "egg:drainpunch",
     "egg:faketears",
-    "egg:falseswipe",
-    "egg:focuspunch",
     "egg:helpinghand",
     "egg:naturalgift",
-    "egg:seedbomb",
     "egg:swagger",
     "egg:wakeupslap",
     "egg:worryseed",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:endure",
     "tm:energyball",
@@ -87,23 +150,19 @@
     "tm:faketears",
     "tm:falseswipe",
     "tm:flash",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyterrain",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:magicalleaf",
     "tm:naturalgift",
     "tm:pounce",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
@@ -113,41 +172,44 @@
     "tm:sunnyday",
     "tm:swagger",
     "tm:swift",
-    "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
     "tm:toxic",
     "tm:venoshock",
+    "tm:worryseed",
     "tm:zenheadbutt",
-    "tutor:bodyslam",
-    "tutor:bulletseed",
-    "tutor:doubleedge",
     "tutor:drainpunch",
-    "tutor:endure",
+    "tutor:energyball",
     "tutor:falseswipe",
-    "tutor:focuspunch",
     "tutor:gigadrain",
-    "tutor:headbutt",
+    "tutor:gunkshot",
     "tutor:helpinghand",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:refresh",
+    "tutor:magicalleaf",
+    "tutor:rest",
     "tutor:seedbomb",
     "tutor:sleeptalk",
+    "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:stunspore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swordsdance",
+    "tutor:swift",
     "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.shroomish.desc"
+    "tutor:worryseed",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:focuspunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swordsdance",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -165,24 +227,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 45,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

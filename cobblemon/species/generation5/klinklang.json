@@ -1,13 +1,126 @@
 {
   "implemented": true,
-  "name": "Klinklang",
   "nationalPokedexNumber": 601,
+  "name": "Klinklang",
   "primaryType": "steel",
+  "maleRatio": -1,
+  "height": 6,
+  "weight": 810,
+  "pokedex": [
+    "cobblemon.species.klinklang.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "plus",
     "minus",
     "h:clearbody"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 100,
+    "defence": 115,
+    "special_attack": 70,
+    "special_defence": 85,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 3,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 260,
+  "experienceGroup": "medium_slow",
+  "catchRate": 30,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.8,
+    "fixed": false,
+    "width": 1.8
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "40-60",
+          "JUMP": "15-25",
+          "SKILL": "40-60",
+          "SPEED": "30-40",
+          "STAMINA": "5-10"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "8",
+      "toleratedLeaders": [
+        {
+          "pokemon": "klinklang",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0014,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -17,38 +130,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 100,
-    "defence": 115,
-    "special_attack": 70,
-    "special_defence": 85,
-    "speed": 90
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 30,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 260,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
-    "1:bind",
-    "1:charge",
-    "1:gearup",
-    "1:magneticflux",
-    "1:thundershock",
     "1:visegrip",
+    "1:charge",
+    "1:thundershock",
+    "1:bind",
+    "1:mirrorshot",
+    "1:magneticflux",
+    "1:gearup",
     "12:chargebeam",
     "16:metalsound",
     "20:autotomize",
@@ -56,89 +145,84 @@
     "28:screech",
     "32:geargrind",
     "36:lockon",
-    "36:mirrorshot",
     "42:shiftgear",
     "48:zapcannon",
     "56:hyperbeam",
     "64:electricterrain",
     "tm:allyswitch",
     "tm:assurance",
+    "tm:bind",
+    "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:electricterrain",
     "tm:endure",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:gravity",
     "tm:hyperbeam",
     "tm:irondefense",
+    "tm:magiccoat",
+    "tm:magnetrise",
+    "tm:metalsound",
     "tm:powergem",
     "tm:protect",
+    "tm:recycle",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:rockpolish",
     "tm:rocksmash",
-    "tm:round",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:steelbeam",
+    "tm:steelroller",
     "tm:substitute",
-    "tm:swagger",
+    "tm:telekinesis",
+    "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trickroom",
     "tm:uproar",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:allyswitch",
     "tutor:bind",
+    "tutor:chargebeam",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
     "tutor:gravity",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:magiccoat",
     "tutor:magnetrise",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:risingvoltage",
+    "tutor:rocksmash",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:steelbeam",
     "tutor:steelroller",
     "tutor:telekinesis",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.klinklang.desc"
+    "tutor:thunderbolt",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "klang",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.8,
-    "height": 1.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 3,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 810,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

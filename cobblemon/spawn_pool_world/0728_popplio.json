@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "5-32",
             "weight": 6.0,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-32",
             "weight": 6.0,
@@ -43,27 +43,8 @@
         {
             "id": "popplio-3",
             "pokemon": "popplio",
-            "presets": [
-                "water"
-            ],
             "type": "pokemon",
-            "context": "surface",
-            "bucket": "ultra-rare",
-            "level": "5-32",
-            "weight": 6.0,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_coast"
-                ]
-            }
-        },
-        {
-            "id": "popplio-4",
-            "pokemon": "popplio",
-            "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-32",
             "weight": 6.0,
@@ -82,13 +63,13 @@
             }
         },
         {
-            "id": "popplio-5",
+            "id": "popplio-4",
             "pokemon": "popplio",
             "presets": [
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-32",
             "weight": 6.0,
@@ -102,10 +83,10 @@
             }
         },
         {
-            "id": "popplio-6",
+            "id": "popplio-5",
             "pokemon": "popplio",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-32",
             "weight": 6.0,

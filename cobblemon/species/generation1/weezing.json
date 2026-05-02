@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Weezing",
   "nationalPokedexNumber": 110,
+  "name": "Weezing",
   "primaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 95,
+  "pokedex": [
+    "cobblemon.species.weezing.desc"
+  ],
+  "labels": [
+    "gen1",
+    "kantonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "levitate",
     "neutralizinggas",
     "h:stench"
+  ],
+  "eggGroups": [
+    "amorphous"
   ],
   "baseStats": {
     "hp": 65,
@@ -16,62 +30,243 @@
     "special_defence": 70,
     "speed": 60
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "medium_fast",
   "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "eggCycles": 20,
+  "baseFriendship": 50,
   "features": [
     "galarian"
   ],
+  "baseScale": 1.2,
+  "hitbox": {
+    "width": 1.3,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "weezing",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:black_sludge",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:smoke_ball",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:poisongas",
+    "1:tackle",
+    "1:smog",
+    "1:smokescreen",
+    "1:doublehit",
+    "1:heatwave",
+    "12:clearsmog",
+    "16:assurance",
+    "20:sludge",
+    "24:haze",
+    "28:selfdestruct",
+    "32:sludgebomb",
+    "38:toxic",
+    "44:belch",
+    "50:explosion",
+    "56:memento",
+    "62:destinybond",
+    "egg:curse",
+    "egg:grudge",
+    "egg:painsplit",
+    "egg:psywave",
+    "egg:spite",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:swallow",
+    "tm:acidspray",
+    "tm:assurance",
+    "tm:bodyslam",
+    "tm:corrosivegas",
+    "tm:curse",
+    "tm:darkpulse",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:flamethrower",
+    "tm:flash",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:gyroball",
+    "tm:haze",
+    "tm:heatwave",
+    "tm:hyperbeam",
+    "tm:incinerate",
+    "tm:infestation",
+    "tm:painsplit",
+    "tm:payback",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rollout",
+    "tm:scaryface",
+    "tm:screech",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:spite",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:torment",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:willowisp",
+    "tutor:corrosivegas",
+    "tutor:darkpulse",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:heatwave",
+    "tutor:hyperbeam",
+    "tutor:painsplit",
+    "tutor:rest",
+    "tutor:rollout",
+    "tutor:shadowball",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spite",
+    "tutor:thunderbolt",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:uproar",
+    "legacy:zapcannon"
+  ],
+  "preEvolution": "koffing",
+  "evolutions": [],
   "forms": [
     {
       "name": "Galar",
       "primaryType": "poison",
       "secondaryType": "fairy",
+      "maleRatio": 0.5,
+      "height": 30,
+      "weight": 160,
+      "pokedex": [
+        "cobblemon.species.weezing-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
       "abilities": [
         "levitate",
         "neutralizinggas",
         "h:mistysurge"
       ],
-      "baseStats": {
-        "hp": 65,
-        "attack": 90,
-        "defence": 120,
-        "special_attack": 85,
-        "special_defence": 70,
-        "speed": 60
+      "drops": {
+        "amount": 3,
+        "entries": [
+          {
+            "item": "cobblemon:black_sludge",
+            "percentage": 5.0
+          },
+          {
+            "item": "cobblemon:payapa_berry",
+            "percentage": 5.0
+          },
+          {
+            "item": "cobblemon:smoke_ball",
+            "percentage": 5.0
+          }
+        ]
       },
-      "catchRate": 60,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 172,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 2,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "amorphous"
-      ],
       "moves": [
-        "1:aromaticmist",
+        "1:aromatherapy",
+        "1:doublehit",
+        "1:strangesteam",
         "1:defog",
-        "1:fairywind",
-        "1:haze",
         "1:heatwave",
-        "1:poisongas",
         "1:smog",
         "1:smokescreen",
-        "1:strangesteam",
+        "1:haze",
+        "1:poisongas",
         "1:tackle",
+        "1:aromaticmist",
         "12:clearsmog",
         "16:assurance",
         "20:sludge",
-        "24:aromatherapy",
         "24:fairywind",
         "28:selfdestruct",
         "32:sludgebomb",
@@ -81,16 +276,26 @@
         "56:memento",
         "62:destinybond",
         "68:mistyterrain",
+        "egg:curse",
+        "egg:grudge",
+        "egg:painsplit",
+        "egg:psywave",
+        "egg:spite",
+        "egg:spitup",
+        "egg:stockpile",
+        "egg:swallow",
         "tm:acidspray",
         "tm:assurance",
-        "tm:attract",
         "tm:bodyslam",
         "tm:brutalswing",
+        "tm:corrosivegas",
         "tm:curse",
         "tm:darkpulse",
         "tm:dazzlinggleam",
+        "tm:defog",
         "tm:doubleedge",
         "tm:endure",
+        "tm:explosion",
         "tm:facade",
         "tm:fireblast",
         "tm:flamethrower",
@@ -110,7 +315,6 @@
         "tm:psybeam",
         "tm:raindance",
         "tm:rest",
-        "tm:round",
         "tm:scaryface",
         "tm:screech",
         "tm:selfdestruct",
@@ -118,7 +322,6 @@
         "tm:sleeptalk",
         "tm:sludgebomb",
         "tm:sludgewave",
-        "tm:snore",
         "tm:spite",
         "tm:substitute",
         "tm:sunnyday",
@@ -130,224 +333,72 @@
         "tm:thunderbolt",
         "tm:toxic",
         "tm:toxicspikes",
-        "tm:uproar",
         "tm:venomdrench",
         "tm:venoshock",
         "tm:willowisp",
         "tm:wonderroom",
         "tutor:corrosivegas",
-        "tutor:mistyexplosion"
+        "tutor:darkpulse",
+        "tutor:dazzlinggleam",
+        "tutor:defog",
+        "tutor:flamethrower",
+        "tutor:gigaimpact",
+        "tutor:gunkshot",
+        "tutor:heatwave",
+        "tutor:hyperbeam",
+        "tutor:mistyexplosion",
+        "tutor:painsplit",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:shadowball",
+        "tutor:sleeptalk",
+        "tutor:sludgebomb",
+        "tutor:spite",
+        "tutor:thunderbolt",
+        "tutor:wonderroom",
+        "legacy:attract",
+        "legacy:bide",
+        "legacy:captivate",
+        "legacy:confide",
+        "legacy:doubleteam",
+        "legacy:frustration",
+        "legacy:headbutt",
+        "legacy:hiddenpower",
+        "legacy:mimic",
+        "legacy:naturalgift",
+        "legacy:rage",
+        "legacy:return",
+        "legacy:round",
+        "legacy:secretpower",
+        "legacy:snore",
+        "legacy:swagger",
+        "legacy:uproar",
+        "legacy:zapcannon"
       ],
-      "labels": [
-        "gen8",
-        "galar_regional"
-      ],
-      "aspects": [
-        "galarian"
-      ],
-      "height": 30,
-      "weight": 160,
       "preEvolution": "koffing",
-      "cannotDynamax": false,
-      "battleOnly": false,
-      "drops": {
-        "amount": 3,
-        "entries": [
-          {
-            "item": "cobblemon:black_sludge",
-            "percentage": 5.0
-          },
-          {
-            "item": "cobblemon:payapa_berry",
-            "percentage": 5.0
-          },
-          {
-            "item": "cobblemon:smoke_ball",
-            "percentage": 5.0
-          }
-        ]
-      }
+      "evolutions": [],
+      "battleOnly": false
     }
   ],
-  "baseExperienceYield": 172,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": "5-10"
+      },
+      "ACCELERATION": {
+        "ranges": "50-100"
+      },
+      "SKILL": {
+        "ranges": "30-60"
+      },
+      "JUMP": {
+        "ranges": "10-20"
+      },
+      "STAMINA": {
+        "ranges": "20-40"
       }
-    }
-  },
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:black_sludge",
-        "percentage": 5.0
-      }
-    ]
-  },
-  "moves": [
-    "1:doublehit",
-    "1:heatwave",
-    "1:poisongas",
-    "1:smog",
-    "1:smokescreen",
-    "1:tackle",
-    "12:clearsmog",
-    "16:assurance",
-    "20:sludge",
-    "24:haze",
-    "28:selfdestruct",
-    "29:gyroball",
-    "32:sludgebomb",
-    "38:toxic",
-    "44:belch",
-    "50:explosion",
-    "56:memento",
-    "62:destinybond",
-    "tm:acidspray",
-    "tm:assurance",
-    "tm:attract",
-    "tm:bodyslam",
-    "tm:captivate",
-    "tm:confide",
-    "tm:curse",
-    "tm:darkpulse",
-    "tm:doubleteam",
-    "tm:endure",
-    "tm:explosion",
-    "tm:facade",
-    "tm:fireblast",
-    "tm:flamethrower",
-    "tm:flash",
-    "tm:frustration",
-    "tm:gigaimpact",
-    "tm:gunkshot",
-    "tm:gyroball",
-    "tm:haze",
-    "tm:heatwave",
-    "tm:hiddenpower",
-    "tm:hyperbeam",
-    "tm:incinerate",
-    "tm:infestation",
-    "tm:naturalgift",
-    "tm:painsplit",
-    "tm:payback",
-    "tm:protect",
-    "tm:psybeam",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scaryface",
-    "tm:screech",
-    "tm:secretpower",
-    "tm:selfdestruct",
-    "tm:shadowball",
-    "tm:shockwave",
-    "tm:sleeptalk",
-    "tm:sludgebomb",
-    "tm:sludgewave",
-    "tm:snore",
-    "tm:spite",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:swagger",
-    "tm:takedown",
-    "tm:taunt",
-    "tm:terablast",
-    "tm:thief",
-    "tm:thunder",
-    "tm:thunderbolt",
-    "tm:torment",
-    "tm:toxic",
-    "tm:toxicspikes",
-    "tm:uproar",
-    "tm:venomdrench",
-    "tm:venoshock",
-    "tm:willowisp",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:clearsmog",
-    "tutor:corrosivegas",
-    "tutor:curse",
-    "tutor:darkpulse",
-    "tutor:destinybond",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:explosion",
-    "tutor:facade",
-    "tutor:fireblast",
-    "tutor:flamethrower",
-    "tutor:frustration",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hyperbeam",
-    "tutor:mimic",
-    "tutor:painsplit",
-    "tutor:poisongas",
-    "tutor:protect",
-    "tutor:psybeam",
-    "tutor:rage",
-    "tutor:rest",
-    "tutor:return",
-    "tutor:rollout",
-    "tutor:screech",
-    "tutor:selfdestruct",
-    "tutor:shadowball",
-    "tutor:shockwave",
-    "tutor:sleeptalk",
-    "tutor:sludge",
-    "tutor:sludgebomb",
-    "tutor:smog",
-    "tutor:smokescreen",
-    "tutor:snore",
-    "tutor:spite",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:taunt",
-    "tutor:thief",
-    "tutor:thunder",
-    "tutor:thunderbolt",
-    "tutor:toxic",
-    "tutor:uproar",
-    "tutor:willowisp",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1",
-    "kanto_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.weezing.desc"
-  ],
-  "preEvolution": "koffing",
-  "evolutions": [],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 95,
-  "aspects": [],
-  "cannotDynamax": false
+    },
+    "seats": [],
+    "behaviour": null
+  }
 }

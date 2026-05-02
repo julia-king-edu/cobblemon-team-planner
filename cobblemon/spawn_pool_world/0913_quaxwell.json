@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -23,7 +23,7 @@
                     "#cobblemon:is_river"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             },
             "anticondition": {
@@ -36,7 +36,7 @@
             "id": "quaxwell-2",
             "pokemon": "quaxwell",
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -59,7 +59,7 @@
             "id": "quaxwell-3",
             "pokemon": "quaxwell",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,

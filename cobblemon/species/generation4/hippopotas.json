@@ -1,15 +1,89 @@
 {
   "implemented": true,
-  "name": "Hippopotas",
   "nationalPokedexNumber": 449,
+  "name": "Hippopotas",
   "primaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 495,
+  "pokedex": [
+    "cobblemon.species.hippopotas.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "sandstream",
     "h:sandforce"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 68,
+    "attack": 72,
+    "defence": 78,
+    "special_attack": 38,
+    "special_defence": 42,
+    "speed": 32
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "slow",
+  "catchRate": 140,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.12
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "hippopotas",
+          "tier": 1
+        },
+        {
+          "pokemon": "hippowdon",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
-    "amount": 2,
+    "amount": 3,
     "entries": [
+      {
+        "item": "minecraft:sand",
+        "quantityRange": "0-1"
+      },
       {
         "item": "cobblemon:soft_sand",
         "percentage": 2.5
@@ -20,106 +94,60 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 68,
-    "attack": 72,
-    "defence": 78,
-    "special_attack": 38,
-    "special_defence": 42,
-    "speed": 32
-  },
-  "catchRate": 140,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "slow",
-  "eggCycles": 30,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "moving" : {
-      "walk": {
-        "walkSpeed": 0.12
-      }
-    }
-  },
   "moves": [
-    "1:sandattack",
     "1:tackle",
+    "1:sandattack",
     "4:bite",
-    "7:bite",
     "8:yawn",
     "12:sandtomb",
-    "13:yawn",
     "16:dig",
-    "19:dig",
-    "19:takedown",
     "20:crunch",
     "24:sandstorm",
-    "25:sandtomb",
     "28:takedown",
-    "31:crunch",
     "32:roar",
     "36:rest",
-    "37:earthquake",
     "40:earthquake",
     "44:doubleedge",
     "48:fissure",
-    "50:fissure",
     "52:slackoff",
-    "egg:bodyslam",
     "egg:curse",
-    "egg:revenge",
-    "egg:sandtomb",
-    "egg:slackoff",
-    "egg:sleeptalk",
+    "egg:mudbomb",
     "egg:spitup",
     "egg:stockpile",
     "egg:swallow",
     "egg:whirlwind",
     "tm:amnesia",
-    "tm:attract",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:firefang",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:icefang",
     "tm:irontail",
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
@@ -127,32 +155,42 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thunderfang",
-    "tm:toxic",
-    "tm:waterpulse",
-    "tm:weatherball",
-    "tutor:bite",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:headbutt",
+    "tutor:firefang",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:icefang",
     "tutor:irontail",
     "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scorchingsands",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:stockpile",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.hippopotas.desc"
+    "tutor:thunderfang",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:waterpulse",
+    "legacy:weatherball"
   ],
   "evolutions": [
     {
@@ -168,24 +206,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 495,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

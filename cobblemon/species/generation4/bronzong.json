@@ -1,13 +1,141 @@
 {
-  "name": "Bronzong",
+  "implemented": true,
   "nationalPokedexNumber": 437,
+  "name": "Bronzong",
   "primaryType": "steel",
   "secondaryType": "psychic",
+  "maleRatio": -1,
+  "height": 13,
+  "weight": 1870,
+  "pokedex": [
+    "cobblemon.species.bronzong.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "levitate",
     "heatproof",
     "h:heavymetal"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 67,
+    "attack": 89,
+    "defence": 116,
+    "special_attack": 79,
+    "special_defence": 116,
+    "speed": 33
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 175,
+  "experienceGroup": "medium_fast",
+  "catchRate": 90,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "height": 2.5,
+    "fixed": false,
+    "width": 1.35
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.saucer.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.saucer.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "40-65",
+          "JUMP": "30-50",
+          "SKILL": "25-40",
+          "SPEED": "15-30",
+          "STAMINA": "10-20"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0014,
+      "light": "0-14",
+      "rouseChance": 0.0042,
+      "sleepChance": "0.0023",
+      "times": [
+        "any"
+      ]
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -29,75 +157,41 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 67,
-    "attack": 89,
-    "defence": 116,
-    "special_attack": 79,
-    "special_defence": 116,
-    "speed": 33
-  },
-  "catchRate": 90,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 175,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
-    "1:block",
-    "1:confuseray",
-    "1:confusion",
-    "1:hypnosis",
-    "1:imprison",
-    "1:payback",
-    "1:raindance",
     "1:sunnyday",
     "1:tackle",
+    "1:confusion",
+    "1:confuseray",
+    "1:block",
+    "1:feintattack",
+    "1:payback",
+    "1:healblock",
+    "1:psywave",
     "1:weatherball",
-    "11:confuseray",
     "12:imprison",
-    "14:confuseray",
-    "15:psywave",
     "16:gyroball",
-    "19:extrasensory",
-    "19:irondefense",
     "20:hypnosis",
-    "21:feintattack",
     "24:safeguard",
-    "25:safeguard",
-    "26:irondefense",
     "28:extrasensory",
-    "29:futuresight",
-    "30:safeguard",
-    "31:metalsound",
     "32:heavyslam",
-    "33:block",
-    "36:gyroball",
-    "38:gyroball",
     "38:irondefense",
-    "42:extrasensory",
-    "43:futuresight",
     "44:metalsound",
-    "46:payback",
-    "50:feintattack",
     "50:futuresight",
-    "52:healblock",
     "56:raindance",
-    "58:heavyslam",
-    "61:payback",
-    "67:healblock",
+    "egg:feintattack",
+    "egg:gravity",
+    "egg:healblock",
+    "egg:psywave",
+    "egg:recycle",
     "tm:allyswitch",
+    "tm:ancientpower",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:calmmind",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:earthquake",
     "tm:endure",
@@ -106,7 +200,6 @@
     "tm:facade",
     "tm:flash",
     "tm:flashcannon",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
@@ -117,7 +210,6 @@
     "tm:heavyslam",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icespinner",
     "tm:imprison",
@@ -126,7 +218,6 @@
     "tm:lightscreen",
     "tm:metalsound",
     "tm:meteorbeam",
-    "tm:naturalgift",
     "tm:nightshade",
     "tm:payback",
     "tm:powergem",
@@ -142,34 +233,31 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:safeguard",
     "tm:sandstorm",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:speedswap",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:storedpower",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:telekinesis",
     "tm:terablast",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:weatherball",
@@ -178,49 +266,50 @@
     "tutor:allyswitch",
     "tutor:ancientpower",
     "tutor:block",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:expandingforce",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
     "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:irondefense",
     "tutor:ironhead",
     "tutor:meteorbeam",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
+    "tutor:shadowball",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:steelbeam",
     "tutor:steelroller",
+    "tutor:stompingtantrum",
     "tutor:telekinesis",
     "tutor:trick",
     "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.bronzong.desc"
+    "tutor:zenheadbutt",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "bronzor",
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 13,
-  "weight": 1870,
-  "aspects": [],
-  "cannotDynamax": false
+  "flyingEyeHeight": 0.25,
+  "standingEyeHeight": 0.25
 }

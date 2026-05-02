@@ -1,9 +1,24 @@
 {
-  "name": "Slaking",
+  "implemented": true,
   "nationalPokedexNumber": 289,
+  "name": "Slaking",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 20,
+  "weight": 1305,
+  "pokedex": [
+    "cobblemon.species.slaking.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
-    "truant"
+    "truant",
+    "h:truant"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 150,
@@ -13,50 +28,129 @@
     "special_defence": 65,
     "speed": 100
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 252,
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 285,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.25,
+  "hitbox": {
+    "height": 2.75,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "0-20",
+          "JUMP": "25-40",
+          "SKILL": "0-20",
+          "SPEED": "25-65",
+          "STAMINA": "60-100"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "8"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      },
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "wanderChance": "750"
+    },
+    "resting": {
+      "canSleep": true,
+      "depth": "comatose",
+      "drowsyChance": 0.0028,
+      "light": "0-14",
+      "rouseChance": 0.0028,
+      "sleepChance": "0.0023",
+      "times": [
+        "any"
+      ]
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
-    "1:encore",
-    "1:punishment",
     "1:scratch",
-    "1:slackoff",
-    "1:suckerpunch",
-    "1:swagger",
     "1:yawn",
-    "14:feintattack",
+    "1:encore",
+    "1:slackoff",
+    "1:feintattack",
+    "1:punishment",
+    "1:suckerpunch",
+    "1:chipaway",
+    "1:swagger",
+    "1:furyswipes",
+    "1:slash",
     "17:amnesia",
     "23:covet",
-    "27:chipaway",
     "27:throatchop",
     "33:counter",
     "39:flail",
     "45:fling",
     "52:megakick",
     "63:hammerarm",
+    "egg:afteryou",
+    "egg:bodyslam",
+    "egg:crushclaw",
+    "egg:curse",
+    "egg:hammerarm",
+    "egg:nightslash",
+    "egg:pursuit",
+    "egg:slash",
+    "egg:snore",
+    "egg:tickle",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:amnesia",
-    "tm:attract",
     "tm:blizzard",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:covet",
     "tm:curse",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:earthquake",
     "tm:encore",
@@ -69,14 +163,15 @@
     "tm:flamethrower",
     "tm:fling",
     "tm:focusblast",
+    "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:gunkshot",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:honeclaws",
     "tm:hyperbeam",
@@ -89,11 +184,12 @@
     "tm:lashout",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metalclaw",
     "tm:metronome",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:playrough",
     "tm:poisonjab",
@@ -104,26 +200,25 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:smackdown",
+    "tm:snore",
     "tm:solarbeam",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
     "tm:swagger",
     "tm:takedown",
@@ -135,10 +230,8 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
-    "tm:waterpulse",
     "tm:wildcharge",
     "tm:workup",
     "tm:xscissor",
@@ -146,73 +239,67 @@
     "tutor:aerialace",
     "tutor:afteryou",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:counter",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:covet",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:endure",
+    "tutor:drainpunch",
+    "tutor:endeavor",
+    "tutor:falseswipe",
     "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
     "tutor:furycutter",
     "tutor:gigaimpact",
     "tutor:gunkshot",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:lashout",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:return",
+    "tutor:outrage",
+    "tutor:playrough",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:seedbomb",
+    "tutor:shadowball",
     "tutor:shadowclaw",
     "tutor:shockwave",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:stompingtantrum",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:swagger",
+    "tutor:throatchop",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.slaking.desc"
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "tutor:xscissor",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:toxic",
+    "legacy:waterpulse"
   ],
   "preEvolution": "vigoroth",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 3,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 1305,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 10.0
-      }
-    ]
-  }
+  "evolutions": []
 }

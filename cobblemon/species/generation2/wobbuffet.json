@@ -1,10 +1,24 @@
 {
-  "name": "Wobbuffet",
+  "implemented": true,
   "nationalPokedexNumber": 202,
+  "name": "Wobbuffet",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 285,
+  "pokedex": [
+    "cobblemon.species.wobbuffet.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "shadowtag",
     "h:telepathy"
+  ],
+  "eggGroups": [
+    "amorphous"
   ],
   "baseStats": {
     "hp": 190,
@@ -14,50 +28,6 @@
     "special_defence": 58,
     "speed": 33
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
-  "moves": [
-    "1:amnesia",
-    "1:charm",
-    "1:counter",
-    "1:destinybond",
-    "1:encore",
-    "1:mirrorcoat",
-    "1:safeguard",
-    "1:splash",
-    "tm:amnesia",
-    "tm:charm",
-    "tm:encore",
-    "tm:safeguard",
-    "tutor:charm",
-    "tutor:counter",
-    "tutor:destinybond",
-    "tutor:encore",
-    "tutor:mirrorcoat",
-    "tutor:safeguard"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.wobbuffet.desc"
-  ],
-  "preEvolution": "wynaut",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.75,
-    "height": 1.55,
-    "fixed": false
-  },
-  "baseFriendship": 50,
   "evYield": {
     "hp": 2,
     "attack": 0,
@@ -66,10 +36,46 @@
     "special_defence": 0,
     "speed": 0
   },
-  "height": 13,
-  "weight": 285,
-  "aspects": [],
-  "cannotDynamax": false,
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.55,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.13
+      },
+      "resting": {
+        "canSleep": true,
+        "willSleepOnBed": false,
+        "depth": "normal",
+        "light": "0-4"
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -78,5 +84,22 @@
         "percentage": 5.0
       }
     ]
-  }
+  },
+  "moves": [
+    "1:counter",
+    "1:mirrorcoat",
+    "1:safeguard",
+    "1:destinybond",
+    "1:splash",
+    "1:charm",
+    "1:encore",
+    "1:amnesia",
+    "tm:amnesia",
+    "tm:charm",
+    "tm:encore",
+    "tm:safeguard",
+    "special:tickle"
+  ],
+  "preEvolution": "wynaut",
+  "evolutions": []
 }

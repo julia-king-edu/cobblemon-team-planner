@@ -1,9 +1,24 @@
 {
-  "name": "Vigoroth",
+  "implemented": true,
   "nationalPokedexNumber": 288,
+  "name": "Vigoroth",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 465,
+  "pokedex": [
+    "cobblemon.species.vigoroth.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
-    "vitalspirit"
+    "vitalspirit",
+    "h:vitalspirit"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 80,
@@ -13,44 +28,102 @@
     "special_defence": 55,
     "speed": 90
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
   "baseExperienceYield": 154,
   "experienceGroup": "slow",
+  "catchRate": 120,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.5
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "vigoroth",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:encore",
-    "1:focusenergy",
     "1:scratch",
+    "1:focusenergy",
+    "1:encore",
     "1:uproar",
+    "1:yawn",
+    "1:slackoff",
+    "1:flail",
+    "1:feintattack",
     "14:furyswipes",
     "17:endure",
     "23:slash",
     "27:chipaway",
-    "27:throatchop",
     "33:counter",
     "37:focuspunch",
     "43:reversal",
+    "egg:afteryou",
+    "egg:bodyslam",
+    "egg:crushclaw",
+    "egg:curse",
+    "egg:hammerarm",
+    "egg:nightslash",
+    "egg:pursuit",
+    "egg:slash",
+    "egg:snore",
+    "egg:tickle",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:amnesia",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:covet",
     "tm:curse",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:earthquake",
     "tm:encore",
@@ -63,11 +136,12 @@
     "tm:flamethrower",
     "tm:fling",
     "tm:focusblast",
+    "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hypervoice",
     "tm:icebeam",
@@ -78,11 +152,12 @@
     "tm:lashout",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metalclaw",
     "tm:metronome",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:playrough",
     "tm:poisonjab",
@@ -91,27 +166,25 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:shockwave",
     "tm:sleeptalk",
+    "tm:snore",
     "tm:solarbeam",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
@@ -121,49 +194,70 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
-    "tm:waterpulse",
     "tm:workup",
     "tm:xscissor",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:afteryou",
-    "tutor:bodyslam",
-    "tutor:counter",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:covet",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:endure",
+    "tutor:drainpunch",
+    "tutor:endeavor",
+    "tutor:falseswipe",
     "tutor:firepunch",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
     "tutor:furycutter",
     "tutor:gunkshot",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:lashout",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:playrough",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:shockwave",
     "tutor:sleeptalk",
     "tutor:snore",
-    "tutor:substitute",
+    "tutor:stompingtantrum",
     "tutor:suckerpunch",
-    "tutor:swagger",
+    "tutor:throatchop",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
     "tutor:uproar",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.vigoroth.desc"
+    "tutor:xscissor",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:waterpulse"
   ],
   "preEvolution": "slakoth",
   "evolutions": [
@@ -182,33 +276,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 14,
-  "weight": 465,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  ]
 }

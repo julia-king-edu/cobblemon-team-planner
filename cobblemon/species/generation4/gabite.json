@@ -1,13 +1,83 @@
 {
   "implemented": true,
-  "name": "Gabite",
   "nationalPokedexNumber": 444,
+  "name": "Gabite",
   "primaryType": "dragon",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 560,
+  "pokedex": [
+    "cobblemon.species.gabite.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "sandveil",
     "h:roughskin"
   ],
+  "eggGroups": [
+    "monster",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 68,
+    "attack": 90,
+    "defence": 65,
+    "special_attack": 50,
+    "special_defence": 55,
+    "speed": 82
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "garchomp mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "garchomp mega",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,37 +91,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 68,
-    "attack": 90,
-    "defence": 65,
-    "special_attack": 50,
-    "special_defence": 55,
-    "speed": 82
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 144,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "monster",
-    "dragon"
-  ],
   "moves": [
-    "1:dragonbreath",
-    "1:dragonrage",
-    "1:dualchop",
-    "1:sandattack",
-    "1:sandtomb",
     "1:tackle",
-    "7:dragonrage",
-    "13:sandstorm",
-    "15:takedown",
+    "1:sandattack",
+    "1:dragonrage",
+    "1:sandtomb",
+    "1:dualchop",
+    "1:dragonbreath",
     "18:bulldoze",
-    "19:sandtomb",
-    "24:dualchop",
     "27:bite",
     "34:slash",
     "42:dragonclaw",
@@ -59,23 +106,24 @@
     "58:sandstorm",
     "66:takedown",
     "74:dragonrush",
+    "egg:doubleedge",
+    "egg:metalclaw",
+    "egg:thrash",
+    "egg:twister",
     "tm:aerialace",
-    "tm:attract",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonclaw",
     "tm:dragonpulse",
     "tm:dragontail",
+    "tm:dualchop",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -84,73 +132,84 @@
     "tm:fireblast",
     "tm:firefang",
     "tm:flamethrower",
-    "tm:frustration",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:incinerate",
     "tm:ironhead",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:metalclaw",
     "tm:mudshot",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:powergem",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaleshot",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
     "tm:thunderfang",
-    "tm:toxic",
+    "tm:twister",
+    "tutor:bulldoze",
     "tutor:dracometeor",
     "tutor:dragonpulse",
     "tutor:dualchop",
     "tutor:earthpower",
+    "tutor:falseswipe",
+    "tutor:firefang",
+    "tutor:flamethrower",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:helpinghand",
     "tutor:ironhead",
     "tutor:irontail",
     "tutor:laserfocus",
-    "tutor:mudslap",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scaleshot",
     "tutor:scorchingsands",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:swift",
-    "tutor:twister"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.gabite.desc"
+    "tutor:thunderfang",
+    "tutor:twister",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "gible",
   "evolutions": [
@@ -169,24 +228,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 1,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 14,
-  "weight": 560,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

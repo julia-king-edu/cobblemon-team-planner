@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Drizzile",
   "nationalPokedexNumber": 817,
+  "name": "Drizzile",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 115,
+  "pokedex": [
+    "cobblemon.species.drizzile.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:sniper"
+  ],
+  "eggGroups": [
+    "water_1",
+    "field"
   ],
   "baseStats": {
     "hp": 65,
@@ -15,28 +29,43 @@
     "special_defence": 55,
     "speed": 90
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 147,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.95,
+    "height": 1.45,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -49,10 +78,10 @@
     ]
   },
   "moves": [
-    "1:bind",
-    "1:growl",
     "1:pound",
+    "1:growl",
     "1:watergun",
+    "1:bind",
     "12:waterpulse",
     "19:tearfullook",
     "24:suckerpunch",
@@ -60,11 +89,19 @@
     "36:liquidation",
     "42:soak",
     "48:raindance",
-    "tm:attract",
+    "egg:aquajet",
+    "egg:aquaring",
+    "egg:doubleteam",
+    "egg:fellstinger",
+    "egg:haze",
+    "egg:iceshard",
+    "egg:mist",
     "tm:batonpass",
+    "tm:bind",
     "tm:bounce",
     "tm:chillingwater",
     "tm:dive",
+    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:fling",
@@ -78,11 +115,10 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:round",
     "tm:safeguard",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:surf",
     "tm:swift",
     "tm:takedown",
@@ -94,13 +130,19 @@
     "tm:weatherball",
     "tm:whirlpool",
     "tm:workup",
-    "tutor:waterpledge"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.drizzile.desc"
+    "tutor:bind",
+    "tutor:bounce",
+    "tutor:dive",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:waterpledge",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "sobble",
   "evolutions": [
@@ -117,26 +159,18 @@
           "variant": "level",
           "minLevel": 35
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.95,
-    "height": 1.45,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 115,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

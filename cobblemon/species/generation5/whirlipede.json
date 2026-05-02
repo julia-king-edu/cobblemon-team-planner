@@ -1,14 +1,78 @@
 {
   "implemented": true,
-  "name": "Whirlipede",
   "nationalPokedexNumber": 544,
+  "name": "Whirlipede",
   "primaryType": "bug",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 585,
+  "pokedex": [
+    "cobblemon.species.whirlipede.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "poisonpoint",
     "swarm",
     "h:speedboost"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 99,
+    "special_attack": 40,
+    "special_defence": 79,
+    "speed": 47
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 126,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1.3,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.47
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "11-15",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,103 +86,88 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 55,
-    "defence": 99,
-    "special_attack": 40,
-    "special_defence": 79,
-    "speed": 47
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.47
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "11-15"
-    }
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 126,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
   "moves": [
     "1:defensecurl",
-    "1:irondefense",
-    "1:poisonsting",
-    "1:protect",
     "1:rollout",
+    "1:poisonsting",
+    "1:pursuit",
+    "1:protect",
+    "1:irondefense",
+    "1:steamroller",
     "12:poisontail",
-    "12:pursuit",
     "16:screech",
     "20:bugbite",
     "26:venoshock",
     "32:takedown",
-    "37:steamroller",
     "38:agility",
     "44:toxic",
-    "46:rockclimb",
     "50:venomdrench",
     "56:doubleedge",
+    "egg:bite",
+    "egg:furycutter",
+    "egg:steamroller",
+    "egg:twineedle",
     "tm:agility",
-    "tm:attract",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:bugbite",
+    "tm:doubleedge",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gyroball",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:infestation",
     "tm:irondefense",
     "tm:payback",
     "tm:pinmissile",
     "tm:poisonjab",
+    "tm:poisontail",
     "tm:protect",
     "tm:rest",
-    "tm:return",
+    "tm:rockclimb",
     "tm:rocksmash",
-    "tm:round",
+    "tm:rollout",
     "tm:screech",
-    "tm:secretpower",
+    "tm:signalbeam",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spikes",
+    "tm:steelroller",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
     "tm:toxic",
     "tm:toxicspikes",
     "tm:venomdrench",
     "tm:venoshock",
     "tutor:bugbite",
     "tutor:endeavor",
+    "tutor:furycutter",
     "tutor:irondefense",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:rollout",
     "tutor:signalbeam",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelroller"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.whirlipede.desc"
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:steelroller",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "preEvolution": "venipede",
   "evolutions": [
@@ -127,32 +176,26 @@
       "variant": "level_up",
       "result": "scolipede",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "batonpass"
+      ],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 30
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 585,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

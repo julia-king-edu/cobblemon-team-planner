@@ -1,12 +1,92 @@
 {
   "implemented": true,
-  "name": "Sprigatito",
   "nationalPokedexNumber": 906,
+  "name": "Sprigatito",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 41,
+  "pokedex": [
+    "cobblemon.species.sprigatito.desc"
+  ],
+  "labels": [
+    "gen9",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:protean"
   ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 61,
+    "defence": 54,
+    "special_attack": 45,
+    "special_defence": 45,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "florgato",
+          "tier": 1
+        },
+        {
+          "pokemon": "meowscarada",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,49 +96,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 61,
-    "defence": 54,
-    "special_attack": 45,
-    "special_defence": 45,
-    "speed": 65
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 62,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    }
-  },
   "moves": [
-    "1:leafage",
     "1:scratch",
     "1:tailwhip",
+    "1:leafage",
     "7:bite",
     "10:honeclaws",
     "13:magicalleaf",
@@ -76,6 +117,7 @@
     "egg:suckerpunch",
     "tm:acrobatics",
     "tm:agility",
+    "tm:allyswitch",
     "tm:bulletseed",
     "tm:charm",
     "tm:disarmingvoice",
@@ -89,6 +131,7 @@
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
+    "tm:honeclaws",
     "tm:leafstorm",
     "tm:magicalleaf",
     "tm:mudslap",
@@ -102,19 +145,31 @@
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:trailblaze",
-    "tm:uturn"
+    "tm:uturn",
+    "tm:worryseed",
+    "tutor:allyswitch",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:worryseed"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 4,
-  "weight": 41,
   "evolutions": [
     {
       "id": "sprigatito_floragato",
@@ -129,15 +184,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 1.0,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.sprigatito.desc"
   ]
 }

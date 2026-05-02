@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -44,7 +44,7 @@
             "id": "piplup-3",
             "pokemon": "piplup",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -53,7 +53,7 @@
                 "biomes": [
                     "#cobblemon:is_cold_ocean",
                     "#cobblemon:is_frozen_ocean",
-                    "#minecraft:frozen_river",
+                    "minecraft:frozen_river",
                     "#cobblemon:is_glacial",
                     "#cobblemon:is_tundra"
                 ]
@@ -66,7 +66,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -83,7 +83,7 @@
             "id": "piplup-5",
             "pokemon": "piplup",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -94,7 +94,7 @@
                 "biomes": [
                     "#cobblemon:is_cold_ocean",
                     "#cobblemon:is_frozen_ocean",
-                    "#minecraft:frozen_river",
+                    "minecraft:frozen_river",
                     "#cobblemon:is_glacial",
                     "#cobblemon:is_tundra"
                 ]

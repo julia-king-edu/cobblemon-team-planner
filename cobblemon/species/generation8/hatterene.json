@@ -1,12 +1,26 @@
 {
-  "name": "Hatterene",
+  "implemented": true,
   "nationalPokedexNumber": 858,
+  "name": "Hatterene",
   "primaryType": "psychic",
   "secondaryType": "fairy",
+  "maleRatio": 0,
+  "height": 21,
+  "weight": 51,
+  "pokedex": [
+    "cobblemon.species.hatterene.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "healer",
     "anticipation",
     "h:magicbounce"
+  ],
+  "eggGroups": [
+    "fairy"
   ],
   "baseStats": {
     "hp": 57,
@@ -16,70 +30,42 @@
     "special_defence": 103,
     "speed": 29
   },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Gmax",
-      "primaryType": "psychic",
-      "secondaryType": "fairy",
-      "abilities": [
-        "healer",
-        "anticipation",
-        "h:magicbounce"
-      ],
-      "baseStats": {
-        "hp": 57,
-        "attack": 90,
-        "defence": 95,
-        "special_attack": 136,
-        "special_defence": 103,
-        "speed": 29
-      },
-      "catchRate": 45,
-      "maleRatio": 0,
-      "baseExperienceYield": 255,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 3,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "fairy"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 260,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 255,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "fairy"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.5,
+    "height": 4,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:babiri_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
+    "1:psychocut",
     "1:brutalswing",
     "1:confusion",
-    "1:disarmingvoice",
-    "1:lifedew",
     "1:playnice",
-    "15:aromatherapy",
+    "1:lifedew",
+    "1:disarmingvoice",
+    "1:aromatherapy",
     "15:aromaticmist",
     "20:psybeam",
     "25:healpulse",
@@ -88,8 +74,13 @@
     "46:psychic",
     "55:healingwish",
     "64:magicpowder",
+    "egg:afteryou",
+    "egg:aromaticmist",
+    "egg:mysticalfire",
+    "egg:nuzzle",
+    "egg:quash",
+    "tm:afteryou",
     "tm:agility",
-    "tm:attract",
     "tm:batonpass",
     "tm:brutalswing",
     "tm:calmmind",
@@ -128,15 +119,14 @@
     "tm:psychocut",
     "tm:psychup",
     "tm:psyshock",
+    "tm:quash",
     "tm:reflect",
     "tm:rest",
-    "tm:round",
     "tm:safeguard",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:storedpower",
     "tm:substitute",
     "tm:swift",
@@ -146,43 +136,81 @@
     "tm:trick",
     "tm:trickroom",
     "tm:wonderroom",
+    "tutor:afteryou",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dazzlinggleam",
     "tutor:expandingforce",
-    "tutor:mistyexplosion"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.hatterene.desc"
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:magicalleaf",
+    "tutor:magicroom",
+    "tutor:mistyexplosion",
+    "tutor:mysticalfire",
+    "tutor:painsplit",
+    "tutor:playrough",
+    "tutor:psychic",
+    "tutor:psychocut",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "hattrem",
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 21,
-  "weight": 51,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:babiri_berry",
-        "percentage": 10.0
+  "forms": [
+    {
+      "name": "Gmax",
+      "primaryType": "psychic",
+      "secondaryType": "fairy",
+      "maleRatio": 0,
+      "height": 260,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.hatterene-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ],
+  "behaviour": {
+    "herd": {
+      "maxSize": "4"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
       }
-    ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    }
   }
 }

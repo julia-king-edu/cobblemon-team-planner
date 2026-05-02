@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Paras",
   "nationalPokedexNumber": 46,
+  "name": "Paras",
   "primaryType": "bug",
   "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 54,
+  "pokedex": [
+    "cobblemon.species.paras.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "effectspore",
     "dryskin",
     "h:damp"
+  ],
+  "eggGroups": [
+    "bug",
+    "grass"
   ],
   "baseStats": {
     "hp": 35,
@@ -17,27 +31,58 @@
     "special_defence": 55,
     "speed": 25
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 57,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1,
+    "height": 0.5,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
-      "canLook": false
+      "swim": {
+        "avoidsWater": true
+      }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "paras",
+          "tier": 1
+        },
+        {
+          "pokemon": "parasect",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 57,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "bug",
-    "grass"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -53,10 +98,9 @@
   },
   "moves": [
     "1:scratch",
-    "6:poisonpowder",
     "6:stunspore",
+    "6:poisonpowder",
     "11:absorb",
-    "11:leechlife",
     "17:furycutter",
     "22:spore",
     "27:slash",
@@ -65,137 +109,107 @@
     "43:aromatherapy",
     "49:ragepowder",
     "54:xscissor",
-    "egg:agility",
-    "egg:bugbite",
     "egg:counter",
-    "egg:crosspoison",
-    "egg:endure",
-    "egg:falseswipe",
     "egg:fellstinger",
     "egg:flail",
-    "egg:grassyterrain",
     "egg:leechseed",
-    "egg:lightscreen",
-    "egg:metalclaw",
     "egg:naturalgift",
-    "egg:psybeam",
     "egg:pursuit",
     "egg:rototiller",
-    "egg:screech",
     "egg:sweetscent",
     "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
+    "tm:afteryou",
+    "tm:agility",
+    "tm:bodyslam",
     "tm:brickbreak",
+    "tm:bugbite",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
+    "tm:crosspoison",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:endure",
-    "tm:energyball",
     "tm:facade",
     "tm:falseswipe",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:grassknot",
-    "tm:hiddenpower",
+    "tm:grassyglide",
+    "tm:grassyterrain",
     "tm:honeclaws",
+    "tm:knockoff",
     "tm:leechlife",
     "tm:lightscreen",
+    "tm:metalclaw",
     "tm:naturalgift",
     "tm:naturepower",
     "tm:protect",
+    "tm:psybeam",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:screech",
+    "tm:seedbomb",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:venoshock",
+    "tm:worryseed",
     "tm:xscissor",
-    "tutor:absorb",
+    "tutor:aerialace",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
     "tutor:bugbite",
-    "tutor:counter",
-    "tutor:crosspoison",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:facade",
     "tutor:falseswipe",
-    "tutor:flail",
-    "tutor:flash",
-    "tutor:frustration",
     "tutor:furycutter",
-    "tutor:furyswipes",
     "tutor:gigadrain",
-    "tutor:growth",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:grassyglide",
     "tutor:knockoff",
     "tutor:leechlife",
-    "tutor:lightscreen",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:poisonpowder",
-    "tutor:protect",
-    "tutor:psybeam",
-    "tutor:pursuit",
-    "tutor:rage",
-    "tutor:reflect",
-    "tutor:refresh",
     "tutor:rest",
-    "tutor:return",
     "tutor:rocksmash",
-    "tutor:scratch",
-    "tutor:screech",
     "tutor:seedbomb",
-    "tutor:skullbash",
-    "tutor:slash",
-    "tutor:sleeppowder",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:spore",
     "tutor:stringshot",
-    "tutor:stunspore",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:worryseed",
-    "tutor:xscissor"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.paras.desc"
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:energyball",
+    "legacy:frustration",
+    "legacy:furyswipes",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:megadrain",
+    "legacy:mimic",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:sleeppowder",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -209,26 +223,18 @@
           "variant": "level",
           "minLevel": 24
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 54,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

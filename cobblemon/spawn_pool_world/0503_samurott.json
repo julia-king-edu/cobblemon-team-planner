@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -34,7 +34,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -55,7 +55,7 @@
             "id": "samurott-3",
             "pokemon": "samurott",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -81,7 +81,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -105,7 +105,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -129,7 +129,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -148,7 +148,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,
@@ -164,7 +164,7 @@
             "id": "samurott-hisuian-8",
             "pokemon": "samurott hisuian",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "36-53",
             "weight": 0.4,

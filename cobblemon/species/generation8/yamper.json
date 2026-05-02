@@ -1,12 +1,70 @@
 {
   "implemented": true,
-  "name": "Yamper",
   "nationalPokedexNumber": 835,
+  "name": "Yamper",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 135,
+  "pokedex": [
+    "cobblemon.species.yamper.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "ballfetch",
     "h:rattled"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 59,
+    "attack": 45,
+    "defence": 50,
+    "special_attack": 40,
+    "special_defence": 50,
+    "speed": 26
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 54,
+  "experienceGroup": "fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "entityInteract": {
+      "avoidedBySkeleton": true
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,23 +78,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 59,
-    "attack": 45,
-    "defence": 50,
-    "special_attack": 40,
-    "special_defence": 50,
-    "speed": 26
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 54,
-  "experienceGroup": "fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
     "1:tackle",
     "1:tailwhip",
@@ -54,24 +95,27 @@
     "egg:flamecharge",
     "egg:howl",
     "egg:sandattack",
-    "tm:attract",
+    "tm:charge",
     "tm:charm",
     "tm:crunch",
     "tm:dig",
+    "tm:doubleedge",
     "tm:electroball",
     "tm:endure",
     "tm:facade",
     "tm:firefang",
+    "tm:flamecharge",
     "tm:helpinghand",
     "tm:playrough",
     "tm:protect",
     "tm:rest",
-    "tm:round",
+    "tm:risingvoltage",
+    "tm:roar",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:substitute",
     "tm:swift",
+    "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderfang",
@@ -79,13 +123,21 @@
     "tm:uproar",
     "tm:voltswitch",
     "tm:wildcharge",
-    "tutor:risingvoltage"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.yamper.desc"
+    "tutor:firefang",
+    "tutor:helpinghand",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:risingvoltage",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:thunderfang",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -101,24 +153,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.65,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 135,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

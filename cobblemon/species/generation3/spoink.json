@@ -1,11 +1,25 @@
 {
-  "name": "Spoink",
+  "implemented": true,
   "nationalPokedexNumber": 325,
+  "name": "Spoink",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 306,
+  "pokedex": [
+    "cobblemon.species.spoink.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "owntempo",
     "h:gluttony"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 60,
@@ -15,56 +29,77 @@
     "special_defence": 80,
     "speed": 60
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 66,
   "experienceGroup": "fast",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.6,
+    "height": 2.2,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:porkchop",
+        "quantityRange": "1-2"
+      },
+      {
+        "item": "minecraft:ender_pearl",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:tanga_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:splash",
+    "1:psywave",
+    "1:odorsleuth",
     "7:confusion",
-    "7:psywave",
     "10:growl",
-    "10:odorsleuth",
     "14:psybeam",
     "18:psychup",
-    "21:magiccoat",
     "22:confuseray",
-    "26:zenheadbutt",
-    "29:powergem",
     "29:rest",
+    "29:powergem",
     "33:snore",
     "38:psyshock",
     "40:payback",
     "44:psychic",
     "50:bounce",
     "egg:amnesia",
-    "egg:endure",
     "egg:extrasensory",
     "egg:futuresight",
     "egg:luckychant",
     "egg:mirrorcoat",
     "egg:simplebeam",
-    "egg:skillswap",
-    "egg:substitute",
     "egg:trick",
     "egg:whirlwind",
     "egg:zenheadbutt",
+    "tm:allyswitch",
     "tm:amnesia",
-    "tm:attract",
     "tm:bodyslam",
+    "tm:bounce",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
+    "tm:covet",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:encore",
     "tm:endeavor",
@@ -73,17 +108,17 @@
     "tm:facade",
     "tm:flash",
     "tm:flashcannon",
-    "tm:frustration",
     "tm:futuresight",
     "tm:grassknot",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icywind",
     "tm:imprison",
     "tm:irontail",
     "tm:lightscreen",
     "tm:lunge",
-    "tm:naturalgift",
+    "tm:magiccoat",
     "tm:nightshade",
     "tm:payback",
     "tm:powergem",
@@ -97,20 +132,19 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
+    "tm:roleplay",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snarl",
     "tm:snatch",
+    "tm:snore",
     "tm:snowscape",
     "tm:storedpower",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
@@ -119,49 +153,56 @@
     "tm:thief",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
     "tm:zenheadbutt",
     "tutor:allyswitch",
-    "tutor:bodyslam",
     "tutor:bounce",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:covet",
-    "tutor:doubleedge",
-    "tutor:dreameater",
-    "tutor:endure",
-    "tutor:headbutt",
+    "tutor:dazzlinggleam",
+    "tutor:endeavor",
+    "tutor:expandingforce",
+    "tutor:flashcannon",
     "tutor:healbell",
+    "tutor:helpinghand",
     "tutor:icywind",
     "tutor:irontail",
     "tutor:magiccoat",
-    "tutor:mimic",
-    "tutor:psychup",
-    "tutor:psywave",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:roleplay",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
+    "tutor:snarl",
     "tutor:snatch",
     "tutor:snore",
-    "tutor:splash",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:telekinesis",
     "tutor:trick",
     "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.spoink.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -180,40 +221,52 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 306,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 4,
-    "entries": [
-      {
-        "item": "minecraft:porkchop",
-        "quantityRange": "1-2"
-      },
-      {
-        "item": "minecraft:ender_pearl",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:tanga_berry",
-        "percentage": 2.5
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "spoink",
+          "tier": 1
+        },
+        {
+          "pokemon": "tepig",
+          "tier": 1
+        },
+        {
+          "pokemon": "lechonk",
+          "tier": 1
+        },
+        {
+          "pokemon": "grumpig",
+          "tier": 2
+        },
+        {
+          "pokemon": "pignite",
+          "tier": 2
+        },
+        {
+          "pokemon": "oinkologne",
+          "tier": 2
+        },
+        {
+          "pokemon": "emboar",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
       }
-    ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
   }
 }

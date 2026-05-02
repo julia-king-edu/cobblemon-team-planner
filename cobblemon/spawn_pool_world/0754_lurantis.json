@@ -11,7 +11,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "34-48",
             "weight": 1.0,
@@ -37,7 +37,7 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "34-48",
             "weight": 0.6,
@@ -60,7 +60,7 @@
             "id": "lurantis-3",
             "pokemon": "lurantis",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "34-48",
             "weight": 1.0,

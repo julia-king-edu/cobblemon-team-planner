@@ -1,10 +1,28 @@
 {
   "implemented": true,
-  "name": "Eiscue",
   "nationalPokedexNumber": 875,
+  "name": "Eiscue",
   "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 890,
+  "baseScale": 0.85,
+  "pokedex": [
+    "cobblemon.species.eiscue.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [
+    "ice_face"
+  ],
   "abilities": [
-    "iceface"
+    "iceface",
+    "h:iceface"
+  ],
+  "eggGroups": [
+    "water_1",
+    "field"
   ],
   "baseStats": {
     "hp": 75,
@@ -14,11 +32,6 @@
     "special_defence": 90,
     "speed": 50
   },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 165,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -27,12 +40,53 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 165,
   "experienceGroup": "slow",
+  "catchRate": 60,
   "eggCycles": 25,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "swim": {
+        "swimSpeed": "0.2",
+        "canWalkOnWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "prinplup",
+          "tier": 1
+        },
+        {
+          "pokemon": "eiscue",
+          "tier": 2
+        },
+        {
+          "pokemon": "empoleon",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -56,14 +110,6 @@
       }
     ]
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:powdersnow",
     "1:tackle",
@@ -73,7 +119,6 @@
     "24:headbutt",
     "30:amnesia",
     "36:freezedry",
-    "42:hail",
     "42:snowscape",
     "48:auroraveil",
     "54:surf",
@@ -86,7 +131,7 @@
     "egg:soak",
     "tm:agility",
     "tm:amnesia",
-    "tm:attract",
+    "tm:auroraveil",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodyslam",
@@ -100,6 +145,7 @@
     "tm:flipturn",
     "tm:gigaimpact",
     "tm:hail",
+    "tm:headbutt",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
@@ -115,9 +161,7 @@
     "tm:reflect",
     "tm:rest",
     "tm:reversal",
-    "tm:round",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:substitute",
     "tm:surf",
@@ -127,42 +171,46 @@
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:dive",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:waterpulse",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
-  "labels": [
-    "gen8"
-  ],
-  "aspects": [],
-  "height": 14,
-  "weight": 890,
   "evolutions": [],
-  "cannotDynamax": false,
   "forms": [
     {
-      "name": "Noice",
+      "name": "Noice-Face",
       "primaryType": "ice",
-      "abilities": [
-        "iceface"
+      "maleRatio": 0.5,
+      "height": 14,
+      "weight": 890,
+      "pokedex": [
+        "cobblemon.species.eiscue-noiceface.desc"
       ],
-      "drops": {
-        "amount": 4,
-        "entries": [
-          {
-            "item": "minecraft:feather",
-            "percentage": 50
-          },
-          {
-            "item": "minecraft:chicken"
-          },
-          {
-            "item": "minecraft:cod",
-            "percentage": 50
-          },
-          {
-            "item": "cobblemon:aspear_berry",
-            "percentage": 5
-          }
-        ]
+      "labels": [
+        "gen8"
+      ],
+      "aspects": [
+        "noice_face"
+      ],
+      "hitbox": {
+        "width": 0.65,
+        "height": 1.35,
+        "fixed": false
       },
       "baseStats": {
         "hp": 75,
@@ -172,37 +220,63 @@
         "special_defence": 50,
         "speed": 130
       },
-      "catchRate": 60,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 165,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 2,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
+      "evolutions": [],
+      "battleOnly": true,
+      "drops": {
+        "amount": 4,
+        "entries": [
+          {
+            "item": "minecraft:feather",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "minecraft:chicken"
+          },
+          {
+            "item": "minecraft:cod",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:aspear_berry",
+            "percentage": 5.0
+          }
+        ]
       },
-      "experienceGroup": "slow",
-      "eggCycles": 25,
-      "eggGroups": [
-        "water_1",
-        "field"
-      ],
-      "labels": [
-        "gen8"
-      ],
-      "aspects": [
-        "noice"
-      ],
-      "height": 14,
-      "weight": 890,
-      "cannotDynamax": false,
-      "battleOnly": true
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "walkSpeed": 0.15
+          },
+          "swim": {
+            "canBreatheUnderwater": true,
+            "swimSpeed": "0.2"
+          }
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "prinplup",
+              "tier": 1
+            },
+            {
+              "pokemon": "eiscue",
+              "tier": 2
+            },
+            {
+              "pokemon": "empoleon",
+              "tier": 3
+            }
+          ]
+        },
+        "combat": {
+          "willDefendOwner": true
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      }
     }
-  ],
-  "pokedex": [
-    "cobblemon.species.eiscue.desc"
   ]
 }

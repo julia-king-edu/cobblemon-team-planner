@@ -1,13 +1,90 @@
 {
   "implemented": true,
-  "name": "Illumise",
   "nationalPokedexNumber": 314,
+  "name": "Illumise",
   "primaryType": "bug",
+  "maleRatio": 0,
+  "height": 6,
+  "weight": 177,
+  "pokedex": [
+    "cobblemon.species.illumise.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "oblivious",
     "tintedlens",
     "h:prankster"
   ],
+  "eggGroups": [
+    "bug",
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 65,
+    "attack": 47,
+    "defence": 75,
+    "special_attack": 73,
+    "special_defence": 85,
+    "speed": 85
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 151,
+  "experienceGroup": "fluctuating",
+  "catchRate": 150,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "volbeat",
+          "tier": 1
+        },
+        {
+          "pokemon": "illumise",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,43 +98,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 65,
-    "attack": 47,
-    "defence": 75,
-    "special_attack": 73,
-    "special_defence": 85,
-    "speed": 85
-  },
-  "catchRate": 150,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "baseExperienceYield": 151,
-  "experienceGroup": "fluctuating",
-  "eggCycles": 15,
-  "eggGroups": [
-    "bug",
-    "human_like"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      },
-      "swim": {
-        "canWalkOnWater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:playnice",
     "1:tackle",
+    "1:playnice",
     "5:sweetscent",
     "9:charm",
     "12:quickattack",
@@ -70,19 +113,12 @@
     "36:helpinghand",
     "40:bugbuzz",
     "43:playrough",
-    "47:covet",
     "47:infestation",
     "egg:aromatherapy",
     "egg:attract",
-    "egg:batonpass",
-    "egg:bugbuzz",
     "egg:captivate",
-    "egg:confuseray",
-    "egg:encore",
-    "egg:faketears",
     "egg:growth",
     "egg:roost",
-    "egg:silverwind",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:aircutter",
@@ -95,12 +131,11 @@
     "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
     "tm:confuseray",
+    "tm:covet",
     "tm:dazzlinggleam",
     "tm:disarmingvoice",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:encore",
     "tm:endeavor",
@@ -110,16 +145,16 @@
     "tm:flash",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icepunch",
     "tm:infestation",
     "tm:lightscreen",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metronome",
     "tm:mudslap",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:playrough",
     "tm:pounce",
     "tm:poweruppunch",
@@ -127,20 +162,17 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
     "tm:silverwind",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
@@ -150,73 +182,60 @@
     "tm:thunderbolt",
     "tm:thunderpunch",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:uturn",
     "tm:waterpulse",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:charm",
-    "tutor:counter",
+    "tutor:chargebeam",
     "tutor:covet",
-    "tutor:defog",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:faketears",
+    "tutor:dazzlinggleam",
+    "tutor:endeavor",
     "tutor:focuspunch",
     "tutor:gigadrain",
     "tutor:helpinghand",
     "tutor:icepunch",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:ominouswind",
-    "tutor:psychup",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:roost",
-    "tutor:seismictoss",
+    "tutor:shadowball",
     "tutor:shockwave",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:tailwind",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
+    "tutor:trick",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.illumise.desc"
+    "tutor:zenheadbutt",
+    "legacy:bodyslam",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:defog",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 6,
-  "weight": 177,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 7,
+    "liquidGlowMode": "BOTH"
+  }
 }

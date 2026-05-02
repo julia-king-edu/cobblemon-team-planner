@@ -1,12 +1,88 @@
 {
   "implemented": true,
-  "name": "Naganadel",
   "nationalPokedexNumber": 804,
+  "name": "Naganadel",
   "primaryType": "poison",
   "secondaryType": "dragon",
-  "abilities": [
-    "beastboost"
+  "maleRatio": -1,
+  "height": 36,
+  "weight": 1500,
+  "pokedex": [
+    "cobblemon.species.naganadel.desc"
   ],
+  "labels": [
+    "gen7",
+    "ultra_beast"
+  ],
+  "aspects": [],
+  "abilities": [
+    "beastboost",
+    "h:beastboost"
+  ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 73,
+    "attack": 73,
+    "defence": 73,
+    "special_attack": 127,
+    "special_defence": 73,
+    "speed": 121
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 270,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 120,
+  "baseFriendship": 0,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.2,
+    "height": 4,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "naganadel",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -16,31 +92,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 73,
-    "attack": 73,
-    "defence": 73,
-    "special_attack": 127,
-    "special_defence": 73,
-    "speed": 121
-  },
-  "catchRate": 45,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 270,
-  "experienceGroup": "slow",
-  "eggCycles": 120,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:acid",
     "1:aircutter",
-    "1:airslash",
     "1:dragonpulse",
+    "1:peck",
     "1:growl",
     "1:helpinghand",
-    "1:peck",
+    "1:acid",
+    "1:airslash",
     "7:furyattack",
     "14:fellstinger",
     "21:charm",
@@ -53,34 +112,35 @@
     "70:dragonrush",
     "tm:acrobatics",
     "tm:aerialace",
+    "tm:aircutter",
     "tm:airslash",
     "tm:allyswitch",
     "tm:assurance",
     "tm:breakingswipe",
     "tm:charm",
-    "tm:confide",
     "tm:crosspoison",
     "tm:darkpulse",
-    "tm:doubleteam",
+    "tm:dracometeor",
     "tm:dragonclaw",
     "tm:dragondance",
     "tm:dragonpulse",
     "tm:dragontail",
+    "tm:dualwingbeat",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:fireblast",
     "tm:flamethrower",
     "tm:fly",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigaimpact",
     "tm:gunkshot",
     "tm:heatwave",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:leechlife",
     "tm:nastyplot",
     "tm:outrage",
@@ -88,19 +148,23 @@
     "tm:poisonjab",
     "tm:protect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:scaleshot",
     "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:signalbeam",
+    "tm:skyattack",
     "tm:skydrop",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
     "tm:smartstrike",
     "tm:snarl",
-    "tm:snore",
+    "tm:snatch",
     "tm:spikes",
     "tm:substitute",
     "tm:swift",
+    "tm:tailwind",
+    "tm:terablast",
     "tm:thief",
     "tm:throatchop",
     "tm:thunderbolt",
@@ -111,53 +175,50 @@
     "tm:venomdrench",
     "tm:venoshock",
     "tm:xscissor",
+    "tutor:aerialace",
+    "tutor:aircutter",
     "tutor:allyswitch",
+    "tutor:darkpulse",
     "tutor:dracometeor",
     "tutor:dragonpulse",
     "tutor:dualwingbeat",
+    "tutor:flamethrower",
     "tutor:gastroacid",
+    "tutor:gigaimpact",
     "tutor:gunkshot",
     "tutor:heatwave",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:irontail",
     "tutor:laserfocus",
+    "tutor:leechlife",
     "tutor:outrage",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:scaleshot",
+    "tutor:shadowclaw",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
+    "tutor:spikes",
+    "tutor:swift",
     "tutor:tailwind",
     "tutor:throatchop",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen7",
-    "ultra_beast"
-  ],
-  "pokedex": [
-    "cobblemon.species.naganadel.desc"
+    "tutor:thunderbolt",
+    "tutor:uproar",
+    "tutor:xscissor",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "poipole",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.2,
-    "height": 4,
-    "fixed": false
-  },
-  "baseFriendship": 0,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 36,
-  "weight": 1500,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

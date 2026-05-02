@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Murkrow",
   "nationalPokedexNumber": 198,
+  "name": "Murkrow",
   "primaryType": "dark",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 21,
+  "pokedex": [
+    "cobblemon.species.murkrow.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "insomnia",
     "superluck",
     "h:prankster"
+  ],
+  "eggGroups": [
+    "flying"
   ],
   "baseStats": {
     "hp": 60,
@@ -17,6 +30,26 @@
     "special_defence": 42,
     "speed": 91
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 81,
+  "experienceGroup": "medium_slow",
+  "catchRate": 30,
+  "eggCycles": 20,
+  "baseFriendship": 35,
+  "shoulderMountable": true,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.65,
+    "height": 1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
@@ -24,22 +57,45 @@
       },
       "walk": {
         "walkSpeed": 0.28
+      },
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "times": "day"
+      "times": [
+        "any"
+      ],
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "corvisquire",
+          "tier": 1
+        },
+        {
+          "pokemon": "murkrow",
+          "tier": 2
+        },
+        {
+          "pokemon": "corviknight",
+          "tier": 3
+        },
+        {
+          "pokemon": "honchkrow",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 30,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 81,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "flying"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -57,51 +113,44 @@
     ]
   },
   "moves": [
-    "1:astonish",
     "1:peck",
+    "1:astonish",
+    "1:pursuit",
     "5:gust",
-    "5:pursuit",
     "11:haze",
     "15:wingattack",
     "21:nightshade",
     "25:assurance",
     "31:taunt",
     "35:feintattack",
-    "35:meanlook",
     "40:foulplay",
     "50:suckerpunch",
-    "50:tailwind",
     "55:torment",
     "60:quash",
-    "egg:assurance",
     "egg:bravebird",
     "egg:confuseray",
     "egg:drillpeck",
     "egg:featherdance",
     "egg:feintattack",
     "egg:flatter",
+    "egg:meanlook",
     "egg:mirrormove",
     "egg:perishsong",
     "egg:psychoshift",
-    "egg:roost",
     "egg:screech",
     "egg:skyattack",
     "egg:whirlwind",
-    "egg:wingattack",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
+    "tm:assurance",
     "tm:bravebird",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
     "tm:confuseray",
     "tm:darkpulse",
     "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:dualwingbeat",
     "tm:embargo",
@@ -110,44 +159,40 @@
     "tm:featherdance",
     "tm:fly",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:haze",
     "tm:heatwave",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:icywind",
     "tm:lashout",
     "tm:mudslap",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:payback",
     "tm:pluck",
     "tm:protect",
     "tm:psychic",
     "tm:psychicnoise",
-    "tm:psychup",
     "tm:quash",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shadowball",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:snarl",
     "tm:snatch",
     "tm:spite",
     "tm:steelwing",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:tailwind",
     "tm:takedown",
     "tm:taunt",
@@ -155,71 +200,56 @@
     "tm:thief",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
+    "tm:twister",
     "tm:uproar",
     "tm:uturn",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:astonish",
-    "tutor:attract",
-    "tutor:confuseray",
-    "tutor:curse",
+    "tutor:calmmind",
     "tutor:darkpulse",
     "tutor:defog",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
-    "tutor:drillpeck",
-    "tutor:endure",
-    "tutor:feintattack",
-    "tutor:fly",
+    "tutor:dualwingbeat",
     "tutor:foulplay",
-    "tutor:frustration",
-    "tutor:haze",
+    "tutor:gigaimpact",
     "tutor:heatwave",
-    "tutor:hiddenpower",
+    "tutor:hyperbeam",
     "tutor:icywind",
-    "tutor:meanlook",
-    "tutor:mimic",
-    "tutor:mirrormove",
+    "tutor:lashout",
     "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:nightshade",
     "tutor:ominouswind",
-    "tutor:peck",
-    "tutor:protect",
-    "tutor:psychup",
-    "tutor:pursuit",
-    "tutor:quickattack",
+    "tutor:psychic",
     "tutor:rest",
-    "tutor:return",
     "tutor:roost",
     "tutor:shadowball",
     "tutor:skyattack",
     "tutor:sleeptalk",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:steelwing",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:swift",
     "tutor:tailwind",
-    "tutor:thief",
-    "tutor:thunderwave",
-    "tutor:toxic",
     "tutor:twister",
     "tutor:uproar",
-    "tutor:whirlwind",
-    "tutor:wingattack"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.murkrow.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:psychup",
+    "legacy:quickattack",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -231,24 +261,5 @@
       "requirements": [],
       "requiredContext": "cobblemon:dusk_stone"
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.65,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 5,
-  "weight": 21,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,10 +1,25 @@
 {
   "implemented": true,
-  "name": "Chingling",
   "nationalPokedexNumber": 433,
+  "name": "Chingling",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 6,
+  "pokedex": [
+    "cobblemon.species.chingling.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
-    "levitate"
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 45,
@@ -14,15 +29,26 @@
     "special_defence": 50,
     "speed": 45
   },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 57,
   "experienceGroup": "fast",
+  "catchRate": 120,
   "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.45,
+    "height": 0.5,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
@@ -30,69 +56,99 @@
       },
       "walk": {
         "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
       "canSleep": true,
       "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "chingling",
+          "tier": 1
+        },
+        {
+          "pokemon": "chimecho",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:colbur_berry",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:soothe_bell",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:cleanse_tag",
+        "percentage": 2.5
+      }
+    ]
   },
   "moves": [
     "1:wrap",
     "4:growl",
-    "6:growl",
     "7:astonish",
-    "9:astonish",
     "10:confusion",
     "13:yawn",
-    "14:confusion",
     "16:lastresort",
-    "17:uproar",
     "19:entrainment",
-    "22:lastresort",
-    "25:entrainment",
     "32:uproar",
     "egg:allyswitch",
     "egg:cosmicpower",
     "egg:curse",
     "egg:disable",
-    "egg:dreameater",
-    "egg:futuresight",
     "egg:hypnosis",
     "egg:recover",
     "egg:recycle",
-    "egg:skillswap",
-    "egg:storedpower",
     "egg:wish",
-    "tm:attract",
+    "tm:allyswitch",
     "tm:batonpass",
+    "tm:bind",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
-    "tm:confide",
+    "tm:cosmicpower",
     "tm:curse",
     "tm:dazzlinggleam",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:echoedvoice",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:futuresight",
     "tm:grassknot",
     "tm:gravity",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hypervoice",
     "tm:icywind",
     "tm:knockoff",
+    "tm:lastresort",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:magiccoat",
+    "tm:ominouswind",
     "tm:protect",
     "tm:psychic",
     "tm:psychicnoise",
@@ -102,31 +158,32 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:rollout",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
     "tm:storedpower",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:taunt",
     "tm:telekinesis",
     "tm:terablast",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
     "tm:zenheadbutt",
     "tutor:allyswitch",
     "tutor:bind",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
+    "tutor:energyball",
     "tutor:gravity",
     "tutor:healbell",
     "tutor:helpinghand",
@@ -135,26 +192,35 @@
     "tutor:knockoff",
     "tutor:lastresort",
     "tutor:magiccoat",
+    "tutor:ominouswind",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:rollout",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:swift",
     "tutor:telekinesis",
     "tutor:trick",
     "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen4",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.chingling.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -174,41 +240,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.45,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 2,
-  "weight": 6,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "cobblemon:colbur_berry",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:soothe_bell",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:cleanse_tag",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

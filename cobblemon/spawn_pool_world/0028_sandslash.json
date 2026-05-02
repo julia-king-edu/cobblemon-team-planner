@@ -10,13 +10,13 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "22-45",
             "weight": 1.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_sandy"
+                    "#cobblemon:is_arid"
                 ]
             }
         }

@@ -1,13 +1,103 @@
 {
   "implemented": true,
-  "name": "Teddiursa",
   "nationalPokedexNumber": 216,
+  "name": "Teddiursa",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 88,
+  "pokedex": [
+    "cobblemon.species.teddiursa.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "pickup",
     "quickfeet",
     "h:honeygather"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 80,
+    "defence": 50,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "medium_fast",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.16
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "teddiursa",
+          "tier": 1
+        },
+        {
+          "pokemon": "cubchoo",
+          "tier": 1
+        },
+        {
+          "pokemon": "beartic",
+          "tier": 2
+        },
+        {
+          "pokemon": "ursaring",
+          "tier": 3
+        },
+        {
+          "pokemon": "ursaluna bloodmoon=false",
+          "tier": 4
+        },
+        {
+          "pokemon": "ursaluna bloodmoon",
+          "tier": 5
+        }
+      ]
+    }
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -29,42 +119,15 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 80,
-    "defence": 50,
-    "special_attack": 50,
-    "special_defence": 50,
-    "speed": 40
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:babydolleyes",
     "1:covet",
-    "1:faketears",
-    "1:fling",
+    "1:scratch",
     "1:leer",
     "1:lick",
-    "1:scratch",
+    "1:fling",
+    "1:babydolleyes",
     "8:furyswipes",
     "13:payback",
-    "15:feintattack",
     "17:sweetscent",
     "22:slash",
     "25:playnice",
@@ -81,48 +144,47 @@
     "egg:crunch",
     "egg:doubleedge",
     "egg:faketears",
+    "egg:feintattack",
     "egg:furycutter",
     "egg:metalclaw",
     "egg:nightslash",
-    "egg:playrough",
     "egg:seismictoss",
-    "egg:sleeptalk",
-    "egg:takedown",
     "egg:yawn",
     "tm:aerialace",
-    "tm:attract",
     "tm:avalanche",
+    "tm:babydolleyes",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
     "tm:closecombat",
-    "tm:confide",
+    "tm:covet",
     "tm:crunch",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:faketears",
     "tm:firepunch",
     "tm:fling",
+    "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hypervoice",
     "tm:icepunch",
+    "tm:lastresort",
     "tm:lowkick",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metalclaw",
     "tm:metronome",
-    "tm:naturalgift",
     "tm:payback",
     "tm:playrough",
     "tm:poweruppunch",
@@ -130,21 +192,19 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
-    "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:seedbomb",
     "tm:shadowclaw",
     "tm:sleeptalk",
     "tm:smackdown",
+    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superpower",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
@@ -153,78 +213,57 @@
     "tm:thief",
     "tm:thunderpunch",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
     "tm:workup",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:counter",
+    "tutor:aerialace",
+    "tutor:babydolleyes",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:covet",
-    "tutor:crunch",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:defensecurl",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:endure",
-    "tutor:faketears",
-    "tutor:feintattack",
     "tutor:firepunch",
     "tutor:focusenergy",
     "tutor:focuspunch",
-    "tutor:frustration",
     "tutor:furycutter",
-    "tutor:furyswipes",
     "tutor:gunkshot",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hypervoice",
     "tutor:icepunch",
     "tutor:lastresort",
-    "tutor:leer",
-    "tutor:lick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metalclaw",
-    "tutor:metronome",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:protect",
-    "tutor:refresh",
+    "tutor:lowkick",
+    "tutor:playrough",
     "tutor:rest",
-    "tutor:return",
-    "tutor:roar",
+    "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:scratch",
     "tutor:seedbomb",
-    "tutor:seismictoss",
-    "tutor:slash",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
     "tutor:snore",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
     "tutor:superpower",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:thrash",
     "tutor:thunderpunch",
-    "tutor:toxic",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.teddiursa.desc"
+    "tutor:uproar",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:zapcannon",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -240,24 +279,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.55,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 88,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

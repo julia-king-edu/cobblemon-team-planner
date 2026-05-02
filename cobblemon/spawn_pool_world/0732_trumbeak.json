@@ -7,7 +7,7 @@
             "id": "trumbeak-1",
             "pokemon": "trumbeak",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "14-36",
             "weight": 0.9,

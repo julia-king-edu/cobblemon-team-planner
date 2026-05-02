@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Chikorita",
   "nationalPokedexNumber": 152,
+  "name": "Chikorita",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 9,
+  "weight": 64,
+  "pokedex": [
+    "cobblemon.species.chikorita.desc"
+  ],
+  "labels": [
+    "gen2",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:leafguard"
+  ],
+  "eggGroups": [
+    "monster",
+    "grass"
   ],
   "baseStats": {
     "hp": 45,
@@ -15,27 +30,72 @@
     "special_defence": 65,
     "speed": 45
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 64,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
       "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
         "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
       }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "chikorita",
+          "tier": 1
+        },
+        {
+          "pokemon": "amaura",
+          "tier": 2
+        },
+        {
+          "pokemon": "bayleef",
+          "tier": 3
+        },
+        {
+          "pokemon": "meganium",
+          "tier": 4
+        },
+        {
+          "pokemon": "tropius",
+          "tier": 5
+        },
+        {
+          "pokemon": "aurorus",
+          "tier": 6
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -48,47 +108,38 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "6:razorleaf",
     "9:poisonpowder",
     "12:synthesis",
     "17:reflect",
     "20:magicalleaf",
-    "23:leechseed",
     "23:naturalgift",
     "28:sweetscent",
     "31:lightscreen",
     "34:bodyslam",
     "39:safeguard",
-    "42:aromatherapy",
     "42:gigadrain",
     "45:solarbeam",
     "egg:ancientpower",
     "egg:aromatherapy",
-    "egg:bodyslam",
     "egg:counter",
     "egg:flail",
     "egg:grasswhistle",
-    "egg:grassyterrain",
     "egg:healpulse",
     "egg:ingrain",
-    "egg:leafstorm",
     "egg:leechseed",
-    "egg:naturepower",
     "egg:refresh",
     "egg:vinewhip",
     "egg:wringout",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:encore",
     "tm:endure",
@@ -96,94 +147,71 @@
     "tm:facade",
     "tm:faketears",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grasspledge",
     "tm:grassyglide",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:irontail",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:magicalleaf",
+    "tm:magiccoat",
     "tm:mudslap",
     "tm:naturalgift",
     "tm:naturepower",
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:solarblade",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:workup",
+    "tm:worryseed",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:flail",
-    "tutor:flash",
+    "tutor:energyball",
     "tutor:frenzyplant",
-    "tutor:frustration",
     "tutor:furycutter",
     "tutor:gigadrain",
     "tutor:grasspledge",
-    "tutor:growl",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
     "tutor:irontail",
-    "tutor:leechseed",
-    "tutor:lightscreen",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:poisonpowder",
-    "tutor:protect",
-    "tutor:razorleaf",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
-    "tutor:safeguard",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:tackle",
-    "tutor:toxic",
-    "tutor:vinewhip",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.chikorita.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:frenzyplant"
   ],
   "evolutions": [
     {
@@ -199,24 +227,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 64,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,13 +1,79 @@
 {
   "implemented": true,
-  "name": "Roggenrola",
   "nationalPokedexNumber": 524,
+  "name": "Roggenrola",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 180,
+  "pokedex": [
+    "cobblemon.species.roggenrola.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "weakarmor",
     "h:sandforce"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 75,
+    "defence": 85,
+    "special_attack": 25,
+    "special_defence": 25,
+    "speed": 15
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 56,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -29,39 +95,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 75,
-    "defence": 85,
-    "special_attack": 25,
-    "special_defence": 25,
-    "speed": 15
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 56,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "mineral"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.15
-      }
-    }
-  },
   "moves": [
-    "1:sandattack",
     "1:tackle",
+    "1:sandattack",
     "4:harden",
     "8:stealthrock",
     "12:mudslap",
@@ -76,63 +112,69 @@
     "egg:autotomize",
     "egg:curse",
     "egg:gravity",
-    "egg:heavyslam",
     "egg:lockon",
     "egg:magnitude",
-    "egg:rocktomb",
     "egg:takedown",
     "egg:wideguard",
-    "tm:attract",
+    "tm:block",
     "tm:bodypress",
     "tm:bulldoze",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:curse",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:explosion",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:gravity",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:irondefense",
+    "tm:meteorbeam",
+    "tm:mudslap",
     "tm:naturepower",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:takedown",
+    "tm:terablast",
     "tutor:block",
+    "tutor:bulldoze",
     "tutor:earthpower",
+    "tutor:flashcannon",
     "tutor:gravity",
     "tutor:irondefense",
     "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:stealthrock"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.roggenrola.desc"
+    "tutor:stealthrock",
+    "tutor:stoneedge",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -150,24 +192,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 180,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

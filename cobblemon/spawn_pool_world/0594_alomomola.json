@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "22-47",
             "weight": 6.0,
@@ -30,7 +30,7 @@
             "id": "alomomola-2",
             "pokemon": "alomomola",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "22-47",
             "weight": 6.0,
@@ -48,14 +48,14 @@
             "id": "alomomola-3",
             "pokemon": "alomomola",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "22-47",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -73,7 +73,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "22-47",
             "weight": 6.0,
@@ -95,7 +95,7 @@
             "id": "alomomola-5",
             "pokemon": "alomomola",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "22-47",
             "weight": 6.0,
@@ -115,14 +115,14 @@
             "id": "alomomola-6",
             "pokemon": "alomomola",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "22-47",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Squirtle",
   "nationalPokedexNumber": 7,
+  "name": "Squirtle",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 5,
+  "weight": 90,
+  "pokedex": [
+    "cobblemon.species.squirtle.desc"
+  ],
+  "labels": [
+    "gen1",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:raindish"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
   ],
   "baseStats": {
     "hp": 44,
@@ -15,31 +30,69 @@
     "special_defence": 64,
     "speed": 43
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 63,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "standingEyeHeight": 0.76,
+  "swimmingEyeHeight": 0.76,
+  "flyingEyeHeight": 0.76,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.2,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
       "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
-        "walkSpeed": 0.29
+        "walkSpeed": 0.26
       },
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "wartortle",
+          "tier": 1
+        },
+        {
+          "pokemon": "drednaw",
+          "tier": 1
+        },
+        {
+          "pokemon": "blastoise mega=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "blastoise mega",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -58,11 +111,11 @@
   "moves": [
     "1:tackle",
     "1:tailwhip",
+    "1:bubble",
     "3:watergun",
     "6:withdraw",
     "9:rapidspin",
     "12:bite",
-    "13:bubble",
     "15:waterpulse",
     "18:protect",
     "21:raindance",
@@ -71,50 +124,38 @@
     "30:irondefense",
     "33:hydropump",
     "36:skullbash",
-    "36:wavecrash",
     "egg:aquajet",
     "egg:aquaring",
-    "egg:aurasphere",
-    "egg:brine",
-    "egg:dragonpulse",
     "egg:fakeout",
     "egg:flail",
     "egg:foresight",
-    "egg:haze",
     "egg:lifedew",
     "egg:mirrorcoat",
     "egg:mist",
-    "egg:muddywater",
     "egg:mudsport",
     "egg:refresh",
     "egg:waterspout",
+    "egg:wavecrash",
     "egg:yawn",
-    "tm:attract",
-    "tm:aurasphere",
+    "tm:aquatail",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brine",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:dig",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
-    "tm:dragonpulse",
     "tm:endure",
     "tm:facade",
-    "tm:falseswipe",
     "tm:fling",
     "tm:flipturn",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gyroball",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icepunch",
@@ -127,27 +168,18 @@
     "tm:megapunch",
     "tm:muddywater",
     "tm:mudshot",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
-    "tm:waterfall",
     "tm:waterpledge",
     "tm:waterpulse",
     "tm:weatherball",
@@ -155,89 +187,63 @@
     "tm:workup",
     "tm:zenheadbutt",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bite",
-    "tutor:blizzard",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
-    "tutor:bubble",
-    "tutor:bubblebeam",
-    "tutor:celebrate",
-    "tutor:confusion",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:dig",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dragonpulse",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:falseswipe",
-    "tutor:flail",
     "tutor:flipturn",
     "tutor:focuspunch",
-    "tutor:followme",
-    "tutor:foresight",
-    "tutor:frustration",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hydrocannon",
-    "tutor:hydropump",
     "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:irontail",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mirrorcoat",
-    "tutor:mist",
-    "tutor:mudslap",
-    "tutor:outrage",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:rapidspin",
-    "tutor:reflect",
+    "tutor:liquidation",
     "tutor:rest",
-    "tutor:return",
-    "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:scald",
-    "tutor:seismictoss",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:strength",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:tailwhip",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpledge",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:withdraw",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.squirtle.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:aurasphere",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:confusion",
+    "legacy:counter",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dragonpulse",
+    "legacy:dynamicpunch",
+    "legacy:falseswipe",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:outrage",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:rockslide",
+    "legacy:rocktomb",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:submission",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:waterfall",
+    "special:block",
+    "special:celebrate",
+    "special:followme",
+    "special:hydrocannon"
   ],
   "evolutions": [
     {
@@ -251,26 +257,18 @@
           "variant": "level",
           "minLevel": 16
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "minecraft:turtle_scute",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 90,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

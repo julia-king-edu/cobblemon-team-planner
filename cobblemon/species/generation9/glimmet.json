@@ -1,13 +1,93 @@
 {
   "implemented": true,
-  "name": "Glimmet",
   "nationalPokedexNumber": 969,
+  "name": "Glimmet",
   "primaryType": "rock",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 80,
+  "pokedex": [
+    "cobblemon.species.glimmet.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "toxicdebris",
     "h:corrosion"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 48,
+    "attack": 35,
+    "defence": 42,
+    "special_attack": 105,
+    "special_defence": 60,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 70,
+  "experienceGroup": "medium_slow",
+  "catchRate": 70,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.45,
+  "hitbox": {
+    "width": 1,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "glimmet",
+          "tier": 1
+        },
+        {
+          "pokemon": "glimmora",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -25,48 +105,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 48,
-    "attack": 35,
-    "defence": 42,
-    "special_attack": 105,
-    "special_defence": 60,
-    "speed": 60
-  },
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 70,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 70,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 30,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
-    "1:harden",
     "1:rockthrow",
+    "1:harden",
     "1:smackdown",
     "7:acidspray",
     "11:ancientpower",
@@ -83,9 +124,11 @@
     "egg:memento",
     "egg:toxic",
     "tm:acidspray",
+    "tm:ancientpower",
     "tm:confuseray",
     "tm:dazzlinggleam",
     "tm:endure",
+    "tm:explosion",
     "tm:facade",
     "tm:gunkshot",
     "tm:irondefense",
@@ -98,10 +141,12 @@
     "tm:reflect",
     "tm:rest",
     "tm:rockblast",
+    "tm:rockpolish",
     "tm:rockslide",
     "tm:rocktomb",
     "tm:sandstorm",
     "tm:sandtomb",
+    "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
@@ -114,14 +159,20 @@
     "tm:terablast",
     "tm:toxic",
     "tm:toxicspikes",
-    "tm:venoshock"
+    "tm:venoshock",
+    "tutor:ancientpower",
+    "tutor:dazzlinggleam",
+    "tutor:gunkshot",
+    "tutor:irondefense",
+    "tutor:meteorbeam",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stoneedge"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 7,
-  "weight": 80,
   "evolutions": [
     {
       "id": "glimmet_glimmora",
@@ -138,15 +189,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.45,
-  "hitbox": {
-    "width": 1,
-    "height": 2,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.glimmet.desc"
   ]
 }

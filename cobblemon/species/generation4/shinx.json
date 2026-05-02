@@ -1,13 +1,108 @@
 {
   "implemented": true,
-  "name": "Shinx",
   "nationalPokedexNumber": 403,
+  "name": "Shinx",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 95,
+  "pokedex": [
+    "cobblemon.species.shinx.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "rivalry",
     "intimidate",
     "h:guts"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 65,
+    "defence": 34,
+    "special_attack": 40,
+    "special_defence": 34,
+    "speed": 45
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 53,
+  "experienceGroup": "medium_slow",
+  "catchRate": 235,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "shinx",
+          "tier": 1
+        },
+        {
+          "pokemon": "litleo",
+          "tier": 1
+        },
+        {
+          "pokemon": "luxio",
+          "tier": 2
+        },
+        {
+          "pokemon": "pyroar female",
+          "tier": 3
+        },
+        {
+          "pokemon": "pyroar male",
+          "tier": 4
+        },
+        {
+          "pokemon": "luxray female",
+          "tier": 5
+        },
+        {
+          "pokemon": "luxray male",
+          "tier": 6
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,76 +116,34 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 45,
-    "attack": 65,
-    "defence": 34,
-    "special_attack": 40,
-    "special_defence": 34,
-    "speed": 45
-  },
-  "catchRate": 235,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 53,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:leer",
     "1:tackle",
+    "1:leer",
     "4:thundershock",
-    "5:leer",
     "8:charge",
-    "9:charge",
-    "11:babydolleyes",
     "12:bite",
-    "13:bite",
-    "13:spark",
     "16:spark",
-    "17:bite",
     "20:roar",
-    "21:roar",
     "24:voltswitch",
-    "25:swagger",
     "28:scaryface",
-    "29:crunch",
-    "29:thunderfang",
     "32:thunderwave",
-    "33:crunch",
     "36:crunch",
-    "37:scaryface",
     "40:discharge",
-    "41:discharge",
     "44:swagger",
-    "45:wildcharge",
     "48:wildcharge",
     "egg:babydolleyes",
     "egg:doublekick",
-    "egg:eerieimpulse",
-    "egg:faketears",
-    "egg:firefang",
-    "egg:helpinghand",
     "egg:howl",
-    "egg:icefang",
     "egg:nightslash",
     "egg:quickattack",
     "egg:shockwave",
-    "egg:signalbeam",
-    "egg:swift",
     "egg:takedown",
-    "egg:thunderfang",
-    "tm:attract",
-    "tm:captivate",
+    "tm:babydolleyes",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
     "tm:crunch",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:eerieimpulse",
     "tm:electricterrain",
     "tm:electroball",
@@ -100,27 +153,25 @@
     "tm:faketears",
     "tm:firefang",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icefang",
     "tm:irontail",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:magnetrise",
     "tm:playrough",
     "tm:protect",
     "tm:psychicfangs",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
+    "tm:risingvoltage",
     "tm:roar",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
@@ -133,30 +184,42 @@
     "tm:thunderbolt",
     "tm:thunderfang",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:voltswitch",
     "tm:wildcharge",
-    "tutor:charge",
+    "tutor:babydolleyes",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:firefang",
     "tutor:furycutter",
-    "tutor:headbutt",
     "tutor:helpinghand",
+    "tutor:icefang",
     "tutor:irontail",
     "tutor:magnetrise",
-    "tutor:mudslap",
-    "tutor:nightslash",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:risingvoltage",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:swift"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.shinx.desc"
+    "tutor:snarl",
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:thunderfang",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -172,24 +235,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 95,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

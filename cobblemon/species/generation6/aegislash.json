@@ -1,11 +1,27 @@
 {
   "implemented": true,
-  "name": "Aegislash",
   "nationalPokedexNumber": 681,
+  "name": "Aegislash",
   "primaryType": "steel",
   "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 17,
+  "weight": 530,
+  "pokedex": [
+    "cobblemon.species.aegislash.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [
+    "shield-forme"
+  ],
   "abilities": [
-    "stancechange"
+    "stancechange",
+    "h:stancechange"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 60,
@@ -15,11 +31,6 @@
     "special_defence": 140,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 250,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -28,13 +39,45 @@
     "special_defence": 1,
     "speed": 0
   },
+  "baseExperienceYield": 250,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1.1,
+    "height": 3,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "walkSpeed": 0.4,
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
-    "amount": 5,
+    "amount": 6,
     "entries": [
       {
         "item": "minecraft:iron_nugget",
@@ -42,98 +85,115 @@
       },
       {
         "item": "minecraft:iron_sword",
-        "percentage": 25.0
+        "percentage": 10.0
       },
       {
         "item": "cobblemon:dusk_stone",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:ability_shield",
         "percentage": 10.0
       }
     ]
   },
   "moves": [
-    "1:aerialace",
-    "1:autotomize",
     "1:furycutter",
-    "1:headsmash",
-    "1:irondefense",
-    "1:ironhead",
-    "1:kingsshield",
-    "1:metalsound",
-    "1:nightslash",
-    "1:powertrick",
     "1:pursuit",
-    "1:retaliate",
-    "1:sacredsword",
+    "1:autotomize",
     "1:shadowsneak",
     "1:slash",
+    "1:irondefense",
+    "1:nightslash",
+    "1:powertrick",
+    "1:ironhead",
+    "1:headsmash",
     "1:swordsdance",
+    "1:aerialace",
+    "1:kingsshield",
+    "1:sacredsword",
+    "1:retaliate",
+    "1:metalsound",
     "1:tackle",
+    "egg:block",
+    "egg:destinybond",
+    "egg:wideguard",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:airslash",
-    "tm:attract",
+    "tm:block",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:closecombat",
-    "tm:confide",
     "tm:cut",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:gyroball",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:irondefense",
     "tm:ironhead",
+    "tm:laserfocus",
+    "tm:magnetrise",
+    "tm:metalsound",
     "tm:protect",
     "tm:psychocut",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
-    "tm:round",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shadowclaw",
+    "tm:shockwave",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarblade",
+    "tm:spite",
+    "tm:steelbeam",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
+    "tm:terablast",
+    "tutor:aerialace",
     "tutor:afteryou",
     "tutor:block",
+    "tutor:falseswipe",
     "tutor:flashcannon",
+    "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:ironhead",
-    "tutor:kingsshield",
     "tutor:laserfocus",
     "tutor:magnetrise",
+    "tutor:psychocut",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:shockwave",
-    "tutor:snore",
+    "tutor:sleeptalk",
     "tutor:spite",
     "tutor:steelbeam",
-    "tutor:wideguard"
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.aegislash.desc"
-  ],
-  "height": 17,
-  "weight": 530,
   "preEvolution": "doublade",
   "evolutions": [],
   "forms": [
@@ -141,8 +201,17 @@
       "name": "Blade",
       "primaryType": "steel",
       "secondaryType": "ghost",
-      "abilities": [
-        "stancechange"
+      "maleRatio": 0.5,
+      "height": 17,
+      "weight": 530,
+      "pokedex": [
+        "cobblemon.species.aegislash-blade.desc"
+      ],
+      "labels": [
+        "gen6"
+      ],
+      "aspects": [
+        "blade-forme"
       ],
       "baseStats": {
         "hp": 60,
@@ -152,10 +221,6 @@
         "special_defence": 50,
         "speed": 60
       },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 250,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 0,
         "attack": 2,
@@ -164,29 +229,93 @@
         "special_defence": 0,
         "speed": 0
       },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "mineral"
+      "moves": [
+        "1:furycutter",
+        "1:pursuit",
+        "1:autotomize",
+        "1:shadowsneak",
+        "1:slash",
+        "1:irondefense",
+        "1:nightslash",
+        "1:powertrick",
+        "1:ironhead",
+        "1:headsmash",
+        "1:swordsdance",
+        "1:aerialace",
+        "1:kingsshield",
+        "1:sacredsword",
+        "1:retaliate",
+        "1:metalsound",
+        "1:tackle",
+        "tm:aerialace",
+        "tm:afteryou",
+        "tm:airslash",
+        "tm:block",
+        "tm:brickbreak",
+        "tm:brutalswing",
+        "tm:closecombat",
+        "tm:cut",
+        "tm:destinybond",
+        "tm:endure",
+        "tm:facade",
+        "tm:falseswipe",
+        "tm:flashcannon",
+        "tm:furycutter",
+        "tm:gigaimpact",
+        "tm:gyroball",
+        "tm:hyperbeam",
+        "tm:irondefense",
+        "tm:ironhead",
+        "tm:laserfocus",
+        "tm:magnetrise",
+        "tm:metalsound",
+        "tm:protect",
+        "tm:psychocut",
+        "tm:raindance",
+        "tm:reflect",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:reversal",
+        "tm:rockslide",
+        "tm:rocksmash",
+        "tm:screech",
+        "tm:shadowball",
+        "tm:shadowclaw",
+        "tm:shockwave",
+        "tm:sleeptalk",
+        "tm:solarblade",
+        "tm:spite",
+        "tm:steelbeam",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swordsdance",
+        "tm:terablast",
+        "tm:wideguard",
+        "tutor:aerialace",
+        "tutor:afteryou",
+        "tutor:block",
+        "tutor:falseswipe",
+        "tutor:flashcannon",
+        "tutor:furycutter",
+        "tutor:gigaimpact",
+        "tutor:hyperbeam",
+        "tutor:irondefense",
+        "tutor:ironhead",
+        "tutor:laserfocus",
+        "tutor:magnetrise",
+        "tutor:psychocut",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rocksmash",
+        "tutor:shadowball",
+        "tutor:shadowclaw",
+        "tutor:shockwave",
+        "tutor:sleeptalk",
+        "tutor:spite",
+        "tutor:steelbeam"
       ],
-      "labels": [
-        "gen6"
-      ],
-      "aspects": [
-        "blade"
-      ],
-      "height": 17,
-      "weight": 530,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": true
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.9,
-    "fixed": false
-  },
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

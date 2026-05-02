@@ -1,13 +1,54 @@
 {
   "implemented": true,
-  "name": "Tandemaus",
   "nationalPokedexNumber": 924,
+  "name": "Tandemaus",
   "primaryType": "normal",
+  "maleRatio": -1,
+  "height": 3,
+  "weight": 18,
+  "pokedex": [
+    "cobblemon.species.tandemaus.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "pickup",
     "h:owntempo"
   ],
+  "eggGroups": [
+    "field",
+    "fairy"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 50,
+    "defence": 45,
+    "special_attack": 40,
+    "special_defence": 45,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "fast",
+  "catchRate": 150,
+  "eggCycles": 10,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1.25,
+    "height": 0.75,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,35 +62,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 50,
-    "attack": 50,
-    "defence": 45,
-    "special_attack": 40,
-    "special_defence": 45,
-    "speed": 75
-  },
-  "catchRate": 150,
-  "maleRatio": -1,
-  "baseExperienceYield": 61,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "experienceGroup": "fast",
-  "eggCycles": 10,
-  "eggGroups": [
-    "field",
-    "fairy"
-  ],
   "moves": [
-    "1:babydolleyes",
     "1:pound",
+    "1:babydolleyes",
     "5:echoedvoice",
     "8:helpinghand",
     "11:superfang",
@@ -69,13 +84,17 @@
     "egg:switcheroo",
     "egg:tickle",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:agility",
+    "tm:babydolleyes",
     "tm:batonpass",
+    "tm:beatup",
     "tm:bulletseed",
     "tm:charm",
     "tm:crunch",
     "tm:dig",
     "tm:doubleedge",
+    "tm:echoedvoice",
     "tm:encore",
     "tm:endure",
     "tm:facade",
@@ -104,20 +123,24 @@
     "tm:thief",
     "tm:thunderwave",
     "tm:uturn",
-    "tm:waterpulse"
+    "tm:waterpulse",
+    "tutor:aerialace",
+    "tutor:afteryou",
+    "tutor:babydolleyes",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:superfang",
+    "tutor:swift",
+    "tutor:waterpulse",
+    "special:celebrate"
   ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1.25,
-    "height": 0.75,
-    "fixed": false
-  },
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 3,
-  "weight": 18,
   "evolutions": [
     {
       "id": "tandemaus_maushold",
@@ -133,8 +156,32 @@
       ]
     }
   ],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.tandemaus.desc"
-  ]
+  "behaviour": {
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tandemaus",
+          "tier": 1
+        },
+        {
+          "pokemon": "maushold",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

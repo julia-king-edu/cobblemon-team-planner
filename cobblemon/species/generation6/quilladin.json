@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Quilladin",
   "nationalPokedexNumber": 651,
+  "name": "Quilladin",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 290,
+  "pokedex": [
+    "cobblemon.species.quilladin.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:bulletproof"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 61,
@@ -15,23 +28,54 @@
     "special_defence": 58,
     "speed": 57
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "quilladin",
+          "tier": 1
+        },
+        {
+          "pokemon": "chesnaught",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "drops": {
     "amount": 1,
     "entries": [
@@ -42,10 +86,10 @@
     ]
   },
   "moves": [
-    "1:growl",
-    "1:needlearm",
     "1:tackle",
+    "1:growl",
     "1:vinewhip",
+    "1:needlearm",
     "8:rollout",
     "11:bite",
     "15:leechseed",
@@ -57,19 +101,25 @@
     "43:bodyslam",
     "47:painsplit",
     "53:woodhammer",
+    "egg:bellydrum",
+    "egg:curse",
+    "egg:defensecurl",
+    "egg:quickguard",
+    "egg:spikes",
+    "egg:superfang",
+    "egg:synthesis",
+    "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
     "tm:bulletseed",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drainpunch",
+    "tm:dualchop",
     "tm:endeavor",
     "tm:endure",
     "tm:energyball",
@@ -77,7 +127,6 @@
     "tm:flash",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grasspledge",
@@ -85,10 +134,10 @@
     "tm:grassyterrain",
     "tm:gyroball",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:irondefense",
     "tm:ironhead",
+    "tm:irontail",
     "tm:leafstorm",
     "tm:lowkick",
     "tm:lowsweep",
@@ -98,6 +147,7 @@
     "tm:naturepower",
     "tm:painsplit",
     "tm:payback",
+    "tm:pinmissile",
     "tm:poisonjab",
     "tm:poweruppunch",
     "tm:protect",
@@ -105,18 +155,14 @@
     "tm:reflect",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:seedbomb",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:sludgebomb",
-    "tm:smackdown",
     "tm:solarbeam",
     "tm:spikes",
     "tm:stompingtantrum",
@@ -125,44 +171,64 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superfang",
-    "tm:swagger",
+    "tm:superpower",
     "tm:swift",
-    "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:workup",
+    "tm:worryseed",
     "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:bulldoze",
     "tutor:drainpunch",
     "tutor:dualchop",
     "tutor:endeavor",
+    "tutor:energyball",
     "tutor:focuspunch",
     "tutor:gigadrain",
     "tutor:grasspledge",
+    "tutor:grassyglide",
     "tutor:helpinghand",
-    "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
     "tutor:lowkick",
+    "tutor:magicalleaf",
     "tutor:painsplit",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
     "tutor:seedbomb",
-    "tutor:snore",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:spikes",
     "tutor:stompingtantrum",
     "tutor:superfang",
     "tutor:superpower",
+    "tutor:swift",
     "tutor:synthesis",
     "tutor:thunderpunch",
     "tutor:worryseed",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.quilladin.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:sludgebomb",
+    "legacy:smackdown",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swordsdance",
+    "legacy:toxic"
   ],
   "preEvolution": "chespin",
   "evolutions": [
@@ -181,24 +247,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 290,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

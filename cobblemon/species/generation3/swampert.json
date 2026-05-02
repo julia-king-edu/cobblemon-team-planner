@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Swampert",
   "nationalPokedexNumber": 260,
+  "name": "Swampert",
   "primaryType": "water",
   "secondaryType": "ground",
+  "maleRatio": 0.875,
+  "height": 15,
+  "weight": 819,
+  "pokedex": [
+    "cobblemon.species.swampert.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:damp"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
   ],
   "baseStats": {
     "hp": 100,
@@ -16,63 +30,45 @@
     "special_defence": 90,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "water",
-      "secondaryType": "ground",
-      "abilities": [
-        "swiftswim"
-      ],
-      "baseStats": {
-        "hp": 100,
-        "attack": 150,
-        "defence": 110,
-        "special_attack": 95,
-        "special_defence": 110,
-        "speed": 70
-      },
-      "catchRate": 45,
-      "maleRatio": 0.875,
-      "baseExperienceYield": 268,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 3,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "water_1"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 19,
-      "weight": 1020,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 268,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.6,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "herd": {
+      "maxSize": "5"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -86,32 +82,23 @@
       }
     ]
   },
-  "behaviour": {
-    "moving": {
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
-    "1:earthquake",
-    "1:growl",
-    "1:hammerarm",
-    "1:mudshot",
-    "1:mudslap",
-    "1:rocksmash",
-    "1:surf",
     "1:tackle",
+    "1:growl",
+    "1:mudslap",
     "1:watergun",
+    "1:bide",
+    "1:mudshot",
+    "1:foresight",
+    "1:mudbomb",
+    "1:earthquake",
+    "1:hammerarm",
+    "1:surf",
+    "1:rocksmash",
     "9:rockthrow",
-    "12:foresight",
     "12:protect",
     "15:supersonic",
-    "18:bide",
     "20:waterpulse",
-    "22:mudbomb",
-    "25:mudsport",
     "25:rockslide",
     "30:takedown",
     "35:amnesia",
@@ -119,8 +106,25 @@
     "49:screech",
     "56:endeavor",
     "63:hydropump",
+    "egg:ancientpower",
+    "egg:barrier",
+    "egg:bide",
+    "egg:bite",
+    "egg:counter",
+    "egg:curse",
+    "egg:doubleedge",
+    "egg:mirrorcoat",
+    "egg:mudbomb",
+    "egg:mudslap",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:sludge",
+    "egg:stomp",
+    "egg:wideguard",
+    "egg:yawn",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodypress",
@@ -128,15 +132,12 @@
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:darkestlariat",
     "tm:dig",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -147,12 +148,11 @@
     "tm:flipturn",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hydrocannon",
     "tm:hydropump",
@@ -169,29 +169,24 @@
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:poisonjab",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandtomb",
-    "tm:scald",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:sludgewave",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
@@ -199,10 +194,8 @@
     "tm:substitute",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterfall",
     "tm:waterpledge",
@@ -212,71 +205,114 @@
     "tm:workup",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:defensecurl",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
     "tutor:earthpower",
-    "tutor:earthquake",
     "tutor:endeavor",
-    "tutor:endure",
     "tutor:flipturn",
     "tutor:focuspunch",
-    "tutor:hammerarm",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
     "tutor:hydrocannon",
-    "tutor:hydropump",
+    "tutor:hyperbeam",
     "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:liquidation",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:outrage",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:substitute",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
     "tutor:uproar",
     "tutor:waterpledge",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.swampert.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "marshtomp",
   "evolutions": [],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 15,
-  "weight": 819,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "water",
+      "secondaryType": "ground",
+      "maleRatio": 0.875,
+      "height": 19,
+      "weight": 1020,
+      "pokedex": [
+        "cobblemon.species.swampert-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "swiftswim",
+        "h:swiftswim"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "attack": 150,
+        "defence": 110,
+        "special_attack": 95,
+        "special_defence": 110,
+        "speed": 70
+      },
+      "baseExperienceYield": 318,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true,
+      "behaviour": {
+        "herd": {
+          "maxSize": "6"
+        },
+        "moving": {
+          "swim": {
+            "canBreatheUnderwater": true
+          }
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      }
+    }
+  ]
 }

@@ -1,14 +1,88 @@
 {
   "implemented": true,
-  "name": "Pelipper",
   "nationalPokedexNumber": 279,
+  "name": "Pelipper",
   "primaryType": "water",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 280,
+  "pokedex": [
+    "cobblemon.species.pelipper.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "drizzle",
     "h:raindish"
   ],
+  "eggGroups": [
+    "water_1",
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 50,
+    "defence": 100,
+    "special_attack": 95,
+    "special_defence": 70,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 154,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.2,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "swimSpeed": "0.2",
+        "canWalkOnWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "kilowattrel",
+          "tier": 1
+        },
+        {
+          "pokemon": "pelipper",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -25,80 +99,48 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 50,
-    "defence": 100,
-    "special_attack": 95,
-    "special_defence": 70,
-    "speed": 65
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 154,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:agility",
-    "1:airslash",
     "1:growl",
-    "1:protect",
-    "1:quickattack",
-    "1:soak",
-    "1:supersonic",
-    "1:tailwind",
     "1:watergun",
     "1:watersport",
+    "1:supersonic",
+    "1:protect",
+    "1:tailwind",
+    "1:soak",
+    "1:quickattack",
+    "1:agility",
+    "1:airslash",
+    "1:pursuit",
     "15:wingattack",
-    "19:payback",
     "20:waterpulse",
-    "22:brine",
-    "28:spitup",
     "28:stockpile",
     "28:swallow",
+    "28:spitup",
     "34:fling",
     "41:mist",
     "48:roost",
     "55:hurricane",
     "62:hydropump",
+    "egg:aerialace",
+    "egg:aircutter",
+    "egg:aquaring",
+    "egg:gust",
+    "egg:knockoff",
+    "egg:soak",
+    "egg:twister",
+    "egg:watersport",
+    "egg:wideguard",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bravebird",
     "tm:brine",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:defog",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:echoedvoice",
     "tm:endure",
@@ -106,12 +148,10 @@
     "tm:featherdance",
     "tm:fling",
     "tm:fly",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:gunkshot",
     "tm:hail",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hydropump",
     "tm:hyperbeam",
@@ -120,90 +160,75 @@
     "tm:knockoff",
     "tm:liquidation",
     "tm:muddywater",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:payback",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shockwave",
+    "tm:skyattack",
     "tm:skydrop",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:steelwing",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
-    "tm:uproar",
+    "tm:twister",
     "tm:uturn",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
+    "tutor:aerialace",
     "tutor:aircutter",
     "tutor:defog",
-    "tutor:doubleedge",
     "tutor:dualwingbeat",
-    "tutor:endure",
+    "tutor:gigaimpact",
     "tutor:gunkshot",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:knockoff",
     "tutor:liquidation",
-    "tutor:mimic",
-    "tutor:mudslap",
     "tutor:ominouswind",
+    "tutor:rest",
     "tutor:roost",
     "tutor:seedbomb",
     "tutor:shockwave",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:tailwind",
     "tutor:twister",
-    "tutor:uproar",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.pelipper.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "wingull",
-  "evolutions": [],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 280,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

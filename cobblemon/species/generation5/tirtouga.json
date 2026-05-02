@@ -1,14 +1,94 @@
 {
   "implemented": true,
-  "name": "Tirtouga",
   "nationalPokedexNumber": 564,
+  "name": "Tirtouga",
   "primaryType": "water",
   "secondaryType": "rock",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 165,
+  "pokedex": [
+    "cobblemon.species.tirtouga.desc"
+  ],
+  "labels": [
+    "gen5",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "solidrock",
     "sturdy",
     "h:swiftswim"
   ],
+  "eggGroups": [
+    "water_1",
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 54,
+    "attack": 78,
+    "defence": 103,
+    "special_attack": 53,
+    "special_defence": 45,
+    "speed": 22
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 71,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1.1,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.12,
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.2,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tirtouga",
+          "tier": 1
+        },
+        {
+          "pokemon": "carracosta",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -18,49 +98,11 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 54,
-    "attack": 78,
-    "defence": 103,
-    "special_attack": 53,
-    "special_defence": 45,
-    "speed": 22
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": false,
-        "walkSpeed": 0.12
-      },
-      "swim": {
-        "swimSpeed": 0.2,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 71,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 30,
-  "eggGroups": [
-    "water_1",
-    "water_3"
-  ],
   "moves": [
     "1:bide",
-    "1:watergun",
     "1:withdraw",
+    "1:watergun",
     "3:protect",
-    "5:rollout",
     "6:aquajet",
     "9:smackdown",
     "12:ancientpower",
@@ -77,94 +119,94 @@
     "45:shellsmash",
     "egg:bide",
     "egg:block",
-    "egg:bodyslam",
     "egg:flail",
-    "egg:guardswap",
-    "egg:irondefense",
     "egg:knockoff",
-    "egg:liquidation",
     "egg:rockthrow",
     "egg:rollout",
     "egg:slam",
     "egg:waterpulse",
-    "egg:whirlpool",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:blizzard",
+    "tm:block",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulldoze",
-    "tm:confide",
     "tm:crunch",
+    "tm:curse",
     "tm:dig",
     "tm:dive",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:guardswap",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
     "tm:irondefense",
     "tm:irontail",
+    "tm:knockoff",
     "tm:liquidation",
+    "tm:meteorbeam",
     "tm:muddywater",
     "tm:mudshot",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterfall",
+    "tm:waterpulse",
     "tm:whirlpool",
     "tm:zenheadbutt",
-    "tutor:aquajet",
+    "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:bite",
     "tutor:block",
-    "tutor:bodyslam",
+    "tutor:bulldoze",
+    "tutor:dive",
     "tutor:earthpower",
-    "tutor:flail",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:liquidation",
     "tutor:meteorbeam",
-    "tutor:protect",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.tirtouga.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -178,26 +220,18 @@
           "variant": "level",
           "minLevel": 37
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "minecraft:turtle_scute",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 1.1,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 165,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

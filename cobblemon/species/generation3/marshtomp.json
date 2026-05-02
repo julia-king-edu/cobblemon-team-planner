@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Marshtomp",
   "nationalPokedexNumber": 259,
+  "name": "Marshtomp",
   "primaryType": "water",
   "secondaryType": "ground",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 280,
+  "pokedex": [
+    "cobblemon.species.marshtomp.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:damp"
+  ],
+  "eggGroups": [
+    "monster",
+    "water_1"
   ],
   "baseStats": {
     "hp": 70,
@@ -16,22 +30,53 @@
     "special_defence": 70,
     "speed": 50
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 142,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "swampert mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "swampert mega",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     }
   },
   "drops": {
@@ -48,22 +93,21 @@
     ]
   },
   "moves": [
-    "1:earthquake",
-    "1:growl",
-    "1:mudshot",
-    "1:mudslap",
-    "1:rocksmash",
-    "1:surf",
     "1:tackle",
+    "1:growl",
+    "1:mudslap",
     "1:watergun",
+    "1:bide",
+    "1:mudshot",
+    "1:foresight",
+    "1:mudbomb",
+    "1:earthquake",
+    "1:surf",
+    "1:rocksmash",
     "9:rockthrow",
-    "12:foresight",
     "12:protect",
     "15:supersonic",
-    "18:bide",
     "20:waterpulse",
-    "22:mudbomb",
-    "25:mudsport",
     "25:rockslide",
     "30:takedown",
     "35:amnesia",
@@ -71,21 +115,35 @@
     "45:screech",
     "50:endeavor",
     "55:hydropump",
+    "egg:ancientpower",
+    "egg:barrier",
+    "egg:bide",
+    "egg:bite",
+    "egg:counter",
+    "egg:curse",
+    "egg:doubleedge",
+    "egg:mirrorcoat",
+    "egg:mudbomb",
+    "egg:mudslap",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:sludge",
+    "egg:stomp",
+    "egg:wideguard",
+    "egg:yawn",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -94,10 +152,9 @@
     "tm:facade",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:hail",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icepunch",
@@ -110,33 +167,26 @@
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandtomb",
-    "tm:scald",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:sludgewave",
-    "tm:snore",
     "tm:stealthrock",
     "tm:strength",
     "tm:substitute",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterfall",
     "tm:waterpledge",
@@ -145,42 +195,47 @@
     "tm:workup",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:defensecurl",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
     "tutor:earthpower",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:headbutt",
+    "tutor:focuspunch",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:liquidation",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:substitute",
     "tutor:superpower",
-    "tutor:swagger",
     "tutor:uproar",
     "tutor:waterpledge",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.marshtomp.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "mudkip",
   "evolutions": [
@@ -197,24 +252,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 280,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

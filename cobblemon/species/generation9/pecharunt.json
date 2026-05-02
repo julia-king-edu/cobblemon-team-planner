@@ -1,10 +1,25 @@
 {
-  "name": "Pecharunt",
   "nationalPokedexNumber": 1025,
+  "name": "Pecharunt",
   "primaryType": "poison",
   "secondaryType": "ghost",
+  "maleRatio": -1,
+  "height": 3,
+  "weight": 3,
+  "pokedex": [
+    "cobblemon.species.pecharunt.desc"
+  ],
+  "labels": [
+    "gen9",
+    "mythical"
+  ],
+  "aspects": [],
   "abilities": [
-    "poisonpuppeteer"
+    "poisonpuppeteer",
+    "h:poisonpuppeteer"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 88,
@@ -14,10 +29,6 @@
     "special_defence": 88,
     "speed": 88
   },
-  "catchRate": 3,
-  "maleRatio": -1,
-  "baseExperienceYield": 0,
-  "baseFriendship": 0,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -26,19 +37,19 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 300,
   "experienceGroup": "slow",
+  "catchRate": 3,
   "eggCycles": 20,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 0,
   "moves": [
+    "1:smog",
+    "1:poisongas",
+    "1:memento",
     "1:astonish",
     "1:defensecurl",
-    "1:meanlook",
-    "1:memento",
-    "1:poisongas",
     "1:rollout",
-    "1:smog",
+    "1:meanlook",
     "8:withdraw",
     "16:destinybond",
     "24:faketears",
@@ -62,6 +73,7 @@
     "tm:poltergeist",
     "tm:protect",
     "tm:rest",
+    "tm:rollout",
     "tm:shadowball",
     "tm:sleeptalk",
     "tm:sludgebomb",
@@ -70,16 +82,48 @@
     "tm:substitute",
     "tm:terablast",
     "tm:toxic",
-    "tm:venoshock"
+    "tm:venoshock",
+    "tutor:foulplay",
+    "tutor:gunkshot",
+    "tutor:poltergeist",
+    "tutor:rest",
+    "tutor:rollout",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spite"
   ],
-  "labels": [
-    "gen9",
-    "mythical",
-    "legendary"
-  ],
-  "aspects": [],
-  "height": 3,
-  "weight": 3,
   "evolutions": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "pecharunt",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
 }

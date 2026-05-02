@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Pidgey",
   "nationalPokedexNumber": 16,
+  "name": "Pidgey",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 18,
+  "pokedex": [
+    "cobblemon.species.pidgey.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "tangledfeet",
     "h:bigpecks"
+  ],
+  "eggGroups": [
+    "flying"
   ],
   "baseStats": {
     "hp": 40,
@@ -17,26 +30,95 @@
     "special_defence": 35,
     "speed": 56
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 50,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.7,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "itemInteract": {
+      "desiredItems": [
+        {
+          "item": "#minecraft:chicken_food",
+          "pickupPriority": 1,
+          "fullnessValue": 1,
+          "onUseEffect": "q.entity.heal(1)"
+        }
+      ]
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "pidove",
+          "tier": 1
+        },
+        {
+          "pokemon": "starly",
+          "tier": 1
+        },
+        {
+          "pokemon": "pidgey",
+          "tier": 2
+        },
+        {
+          "pokemon": "tranquill",
+          "tier": 3
+        },
+        {
+          "pokemon": "staravia",
+          "tier": 3
+        },
+        {
+          "pokemon": "pidgeotto",
+          "tier": 4
+        },
+        {
+          "pokemon": "unfezant",
+          "tier": 5
+        },
+        {
+          "pokemon": "pidgeot mega=false",
+          "tier": 6
+        },
+        {
+          "pokemon": "pidgeot mega",
+          "tier": 7
+        }
+      ]
     }
   },
   "drops": {
@@ -70,103 +152,78 @@
     "45:mirrormove",
     "49:airslash",
     "53:hurricane",
-    "egg:aircutter",
-    "egg:airslash",
-    "egg:bravebird",
-    "egg:defog",
     "egg:feintattack",
     "egg:foresight",
     "egg:pursuit",
-    "egg:steelwing",
-    "egg:uproar",
     "tm:aerialace",
-    "tm:attract",
-    "tm:captivate",
-    "tm:confide",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:bravebird",
     "tm:defog",
-    "tm:doubleteam",
+    "tm:dualwingbeat",
     "tm:endure",
     "tm:facade",
+    "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
-    "tm:hiddenpower",
-    "tm:naturalgift",
+    "tm:hurricane",
+    "tm:mudslap",
+    "tm:ominouswind",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:tailwind",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:twister",
+    "tm:uproar",
     "tm:uturn",
     "tm:workup",
-    "tutor:agility",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:airslash",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:curse",
     "tutor:defog",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:feintattack",
-    "tutor:fly",
-    "tutor:foresight",
-    "tutor:frustration",
-    "tutor:gust",
-    "tutor:headbutt",
-    "tutor:heatwave",
-    "tutor:hiddenpower",
-    "tutor:mimic",
-    "tutor:mirrormove",
+    "tutor:dualwingbeat",
     "tutor:mudslap",
     "tutor:ominouswind",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:quickattack",
-    "tutor:rage",
-    "tutor:razorwind",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:roost",
-    "tutor:sandattack",
-    "tutor:secretpower",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelwing",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:swift",
-    "tutor:tackle",
     "tutor:tailwind",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:twister",
     "tutor:uproar",
-    "tutor:uturn",
-    "tutor:whirlwind",
-    "tutor:wingattack"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.pidgey.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:heatwave",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:razorwind",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:takedown",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -182,24 +239,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 18,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,12 +1,102 @@
 {
   "implemented": true,
-  "name": "Gorebyss",
   "nationalPokedexNumber": 368,
+  "name": "Gorebyss",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 226,
+  "pokedex": [
+    "cobblemon.species.gorebyss.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "h:hydration"
   ],
+  "eggGroups": [
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 84,
+    "defence": 105,
+    "special_attack": 114,
+    "special_defence": 75,
+    "speed": 52
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 170,
+  "experienceGroup": "erratic",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.25,
+    "height": 1.25,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "eelektrik",
+          "tier": 1
+        },
+        {
+          "pokemon": "huntail",
+          "tier": 2
+        },
+        {
+          "pokemon": "gorebyss",
+          "tier": 3
+        },
+        {
+          "pokemon": "eelektross",
+          "tier": 4
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,136 +106,108 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 84,
-    "defence": 105,
-    "special_attack": 114,
-    "special_defence": 75,
-    "speed": 52
-  },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 170,
-  "experienceGroup": "erratic",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "canWalk": true,
-        "avoidsLand": true
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:whirlpool",
+    "1:confusion",
+    "1:irondefense",
+    "1:watergun",
+    "1:shellsmash",
+    "1:clamp",
     "5:watersport",
-    "8:confusion",
+    "9:agility",
     "11:drainingkiss",
-    "15:agility",
-    "22:waterpulse",
-    "24:aquaring",
-    "28:captivate",
-    "29:amnesia",
-    "36:psychic",
-    "37:dive",
-    "43:batonpass",
+    "14:waterpulse",
+    "16:amnesia",
+    "19:aquaring",
+    "23:captivate",
+    "26:dive",
+    "29:batonpass",
+    "34:psychic",
+    "39:aquatail",
     "45:coil",
-    "46:aquatail",
     "50:hydropump",
-    "tm:attract",
+    "egg:aquaring",
+    "egg:barrier",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:supersonic",
+    "tm:agility",
+    "tm:amnesia",
+    "tm:aquatail",
+    "tm:batonpass",
+    "tm:bind",
     "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bounce",
     "tm:brine",
     "tm:captivate",
-    "tm:confide",
+    "tm:confuseray",
     "tm:dive",
-    "tm:doubleteam",
+    "tm:drainingkiss",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:flipturn",
     "tm:gigaimpact",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
+    "tm:icywind",
     "tm:infestation",
-    "tm:naturalgift",
+    "tm:irondefense",
+    "tm:muddywater",
+    "tm:mudslap",
     "tm:protect",
     "tm:psychic",
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:scald",
-    "tm:secretpower",
+    "tm:scaleshot",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tutor:aquatail",
     "tutor:bind",
-    "tutor:bodyslam",
     "tutor:bounce",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:endure",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:mimic",
+    "tutor:irondefense",
     "tutor:mudslap",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:scaleshot",
+    "tutor:shadowball",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swift",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.gorebyss.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
   "preEvolution": "clamperl",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.25,
-    "height": 1.25,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 226,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,13 +1,82 @@
 {
   "implemented": true,
-  "name": "Armarouge",
   "nationalPokedexNumber": 936,
+  "name": "Armarouge",
   "primaryType": "fire",
   "secondaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 15,
+  "weight": 850,
+  "pokedex": [
+    "cobblemon.species.armarouge.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "flashfire",
     "h:weakarmor"
   ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 60,
+    "defence": 100,
+    "special_attack": 125,
+    "special_defence": 80,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 263,
+  "experienceGroup": "slow",
+  "catchRate": 25,
+  "eggCycles": 35,
+  "baseFriendship": 20,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.75,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.23
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "9"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -29,57 +98,13 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 85,
-    "attack": 60,
-    "defence": 100,
-    "special_attack": 125,
-    "special_defence": 80,
-    "speed": 75
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.23
-      }
-    }
-  },
-  "catchRate": 25,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 263,
-  "baseFriendship": 20,
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.9,
-    "height": 2.1,
-    "fixed": false
-  },
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "slow",
-  "eggCycles": 35,
-  "eggGroups": [
-    "human_like"
-  ],
   "moves": [
-    "1:astonish",
-    "1:ember",
-    "1:leer",
-    "1:mysticalfire",
-    "1:wideguard",
     "1:psyshock",
+    "1:leer",
+    "1:ember",
+    "1:mysticalfire",
+    "1:astonish",
+    "1:wideguard",
     "8:clearsmog",
     "12:firespin",
     "16:willowisp",
@@ -92,7 +117,11 @@
     "48:flamethrower",
     "56:expandingforce",
     "62:armorcannon",
+    "egg:destinybond",
+    "egg:disable",
+    "egg:spite",
     "tm:acidspray",
+    "tm:allyswitch",
     "tm:aurasphere",
     "tm:calmmind",
     "tm:confuseray",
@@ -112,9 +141,11 @@
     "tm:focusblast",
     "tm:heatwave",
     "tm:helpinghand",
+    "tm:incinerate",
     "tm:irondefense",
     "tm:lightscreen",
     "tm:meteorbeam",
+    "tm:mysticalfire",
     "tm:nightshade",
     "tm:overheat",
     "tm:protect",
@@ -139,18 +170,33 @@
     "tm:trick",
     "tm:trickroom",
     "tm:weatherball",
-    "tm:willowisp"
+    "tm:willowisp",
+    "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dragonpulse",
+    "tutor:energyball",
+    "tutor:expandingforce",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:meteorbeam",
+    "tutor:mysticalfire",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:scorchingsands",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:spite",
+    "tutor:trick",
+    "special:celebrate"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 15,
-  "weight": 850,
   "preEvolution": "charcadet",
   "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.armarouge.desc"
-  ]
+  "lightingData": {
+    "lightLevel": 10,
+    "liquidGlowMode": "LAND"
+  }
 }

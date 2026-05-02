@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Mareep",
   "nationalPokedexNumber": 179,
+  "name": "Mareep",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 78,
+  "pokedex": [
+    "cobblemon.species.mareep.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "static",
     "h:plus"
+  ],
+  "eggGroups": [
+    "monster",
+    "field"
   ],
   "baseStats": {
     "hp": 55,
@@ -15,31 +29,84 @@
     "special_defence": 45,
     "speed": 35
   },
-  "catchRate": 235,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 56,
   "experienceGroup": "medium_slow",
+  "catchRate": 235,
   "eggCycles": 20,
+  "baseFriendship": 50,
   "features": [
     "sheared"
   ],
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.9,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
         "walkSpeed": "q.has_aspect('sheared') ? 0.25 : 0.2"
+      },
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "mareep",
+          "tier": 1
+        },
+        {
+          "pokemon": "wooloo",
+          "tier": 1
+        },
+        {
+          "pokemon": "flaaffy",
+          "tier": 2
+        },
+        {
+          "pokemon": "dubwool",
+          "tier": 3
+        },
+        {
+          "pokemon": "ampharos mega=false",
+          "tier": 4
+        },
+        {
+          "pokemon": "ampharos mega",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
+  "ai": [
+    {
+      "type": "apply_behaviours",
+      "behaviours": [
+        "cobblemon:pokemon_eats_grass"
+      ]
+    }
+  ],
   "drops": {
     "amount": 5,
     "entries": [
@@ -58,8 +125,8 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "4:thunderwave",
     "8:thundershock",
     "11:cottonspore",
@@ -71,36 +138,25 @@
     "32:discharge",
     "36:cottonguard",
     "39:dazzlinggleam",
-    "39:signalbeam",
     "43:lightscreen",
     "46:thunder",
     "egg:afteryou",
     "egg:agility",
-    "egg:bodyslam",
-    "egg:charge",
     "egg:eerieimpulse",
     "egg:electricterrain",
     "egg:electroweb",
     "egg:flatter",
-    "egg:irontail",
     "egg:odorsleuth",
-    "egg:reflect",
-    "egg:safeguard",
     "egg:sandattack",
-    "egg:screech",
-    "egg:takedown",
+    "tm:afteryou",
     "tm:agility",
-    "tm:attract",
     "tm:bodyslam",
-    "tm:captivate",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
     "tm:dazzlinggleam",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:eerieimpulse",
     "tm:electricterrain",
@@ -110,84 +166,68 @@
     "tm:endure",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:irontail",
     "tm:lightscreen",
-    "tm:naturalgift",
+    "tm:magnetrise",
     "tm:powergem",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:risingvoltage",
     "tm:safeguard",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:cottonspore",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
     "tutor:electroweb",
-    "tutor:endure",
-    "tutor:flash",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:endeavor",
     "tutor:healbell",
-    "tutor:hiddenpower",
-    "tutor:holdback",
+    "tutor:helpinghand",
     "tutor:irontail",
-    "tutor:lightscreen",
     "tutor:magnetrise",
-    "tutor:mimic",
-    "tutor:protect",
-    "tutor:raindance",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
-    "tutor:safeguard",
-    "tutor:screech",
+    "tutor:risingvoltage",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swift",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:thundershock",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.mareep.desc"
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic",
+    "legacy:zapcannon",
+    "special:holdback"
   ],
   "evolutions": [
     {
@@ -204,23 +244,8 @@
       ]
     }
   ],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 0.75,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 78,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 10,
+    "liquidGlowMode": "BOTH"
+  }
 }

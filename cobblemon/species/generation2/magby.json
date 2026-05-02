@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Magby",
   "nationalPokedexNumber": 240,
+  "name": "Magby",
   "primaryType": "fire",
+  "maleRatio": 0.75,
+  "height": 7,
+  "weight": 214,
+  "pokedex": [
+    "cobblemon.species.magby.desc"
+  ],
+  "labels": [
+    "gen2",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "flamebody",
     "h:vitalspirit"
+  ],
+  "eggGroups": [
+    "undiscovered"
   ],
   "baseStats": {
     "hp": 45,
@@ -15,15 +29,25 @@
     "special_defence": 55,
     "speed": 83
   },
-  "catchRate": 45,
-  "maleRatio": 0.75,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 73,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.2,
+    "fixed": false
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -42,16 +66,14 @@
     ]
   },
   "moves": [
-    "1:leer",
     "1:smog",
+    "1:leer",
+    "1:feintattack",
     "4:ember",
     "8:smokescreen",
     "12:clearsmog",
-    "12:feintattack",
-    "15:firespin",
     "16:flamewheel",
     "20:confuseray",
-    "22:flameburst",
     "24:scaryface",
     "28:firepunch",
     "32:lavaplume",
@@ -64,28 +86,20 @@
     "egg:bellydrum",
     "egg:crosschop",
     "egg:dynamicpunch",
-    "egg:flareblitz",
-    "egg:focusenergy",
+    "egg:flameburst",
     "egg:focuspunch",
     "egg:followme",
-    "egg:irontail",
     "egg:karatechop",
     "egg:machpunch",
-    "egg:megapunch",
-    "egg:powerswap",
-    "egg:screech",
-    "egg:thunderpunch",
     "tm:acidspray",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:burningjealousy",
-    "tm:captivate",
-    "tm:confide",
     "tm:confuseray",
+    "tm:covet",
     "tm:curse",
     "tm:doubleedge",
-    "tm:doubleteam",
+    "tm:dualchop",
     "tm:endure",
     "tm:facade",
     "tm:fireblast",
@@ -97,16 +111,14 @@
     "tm:fling",
     "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:incinerate",
     "tm:irontail",
     "tm:lowkick",
     "tm:megakick",
     "tm:megapunch",
-    "tm:naturalgift",
     "tm:overheat",
     "tm:poisonjab",
     "tm:powerswap",
@@ -114,80 +126,54 @@
     "tm:protect",
     "tm:psychic",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:temperflare",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
-    "tm:uproar",
     "tm:willowisp",
-    "tutor:attract",
-    "tutor:barrier",
-    "tutor:bodyslam",
-    "tutor:confuseray",
-    "tutor:counter",
+    "tutor:burningjealousy",
     "tutor:covet",
-    "tutor:crosschop",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dualchop",
-    "tutor:dynamicpunch",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:fireblast",
     "tutor:firepunch",
     "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
-    "tutor:frustration",
-    "tutor:headbutt",
     "tutor:heatwave",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
     "tutor:irontail",
-    "tutor:karatechop",
-    "tutor:leer",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:protect",
+    "tutor:lowkick",
+    "tutor:poisonjab",
     "tutor:psychic",
     "tutor:rest",
-    "tutor:return",
-    "tutor:screech",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:smog",
-    "tutor:smokescreen",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:thief",
     "tutor:thunderpunch",
-    "tutor:toxic",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen2",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.magby.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "evolutions": [
     {
@@ -204,23 +190,40 @@
       ]
     }
   ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 7,
-  "weight": 214,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "magby",
+          "tier": 1
+        },
+        {
+          "pokemon": "magmar",
+          "tier": 2
+        },
+        {
+          "pokemon": "magmortar",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  }
 }

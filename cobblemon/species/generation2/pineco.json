@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Pineco",
   "nationalPokedexNumber": 204,
+  "name": "Pineco",
   "primaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 72,
+  "pokedex": [
+    "cobblemon.species.pineco.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "h:overcoat"
+  ],
+  "eggGroups": [
+    "bug"
   ],
   "baseStats": {
     "hp": 50,
@@ -15,23 +28,45 @@
     "special_defence": 35,
     "speed": 15
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.95,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
       "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 58,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -50,15 +85,13 @@
     ]
   },
   "moves": [
-    "1:protect",
     "1:tackle",
+    "1:protect",
     "6:selfdestruct",
     "9:bugbite",
     "12:takedown",
     "17:rapidspin",
     "20:bide",
-    "20:rollout",
-    "23:curse",
     "23:naturalgift",
     "28:spikes",
     "31:payback",
@@ -67,39 +100,29 @@
     "42:gyroball",
     "45:doubleedge",
     "egg:counter",
-    "egg:doubleedge",
-    "egg:endure",
     "egg:flail",
     "egg:pinmissile",
     "egg:powertrick",
-    "egg:reflect",
-    "egg:revenge",
     "egg:sandtomb",
-    "egg:stealthrock",
     "egg:swift",
     "egg:toxicspikes",
-    "tm:attract",
+    "tm:autotomize",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drillrun",
-    "tm:earthquake",
     "tm:endure",
     "tm:explosion",
     "tm:facade",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gravity",
     "tm:gyroball",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icespinner",
     "tm:irondefense",
     "tm:lightscreen",
@@ -107,92 +130,74 @@
     "tm:naturalgift",
     "tm:painsplit",
     "tm:payback",
+    "tm:pinmissile",
     "tm:poisonjab",
     "tm:pounce",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
+    "tm:revenge",
     "tm:reversal",
     "tm:rockblast",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:seedbomb",
+    "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:spikes",
     "tm:stealthrock",
     "tm:strength",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:toxicspikes",
     "tm:venoshock",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
     "tutor:drillrun",
-    "tutor:endure",
-    "tutor:explosion",
-    "tutor:flail",
-    "tutor:frustration",
     "tutor:gigadrain",
     "tutor:gravity",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:irondefense",
-    "tutor:mimic",
     "tutor:painsplit",
-    "tutor:pinmissile",
-    "tutor:protect",
-    "tutor:rapidspin",
-    "tutor:reflect",
-    "tutor:refresh",
+    "tutor:poisonjab",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:selfdestruct",
+    "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
     "tutor:spikes",
     "tutor:stealthrock",
-    "tutor:strength",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
     "tutor:swift",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:toxicspikes"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.pineco.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:earthquake",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "evolutions": [
     {
@@ -201,6 +206,8 @@
       "result": "forretress",
       "consumeHeldItem": false,
       "learnableMoves": [
+        "mirrorshot",
+        "autotomize",
         "heavyslam"
       ],
       "requirements": [
@@ -208,46 +215,18 @@
           "variant": "level",
           "minLevel": 31
         }
-      ]
-    },
-    {
-      "id": "pineco_forretress_shulker",
-      "variant": "level_up",
-      "result": "forretress shulker",
-      "consumeHeldItem": true,
-      "permanent": true,
-      "learnableMoves": [
-        "heavyslam"
       ],
-      "requirements": [
-        {
-          "variant": "level",
-          "minLevel": 31
-        },
-        {
-          "variant": "held_item",
-          "itemCondition": "minecraft:shulker_shell"
-        }
-      ]
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.95,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 72,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

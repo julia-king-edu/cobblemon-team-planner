@@ -1,14 +1,88 @@
 {
   "implemented": true,
-  "name": "Krokorok",
   "nationalPokedexNumber": 552,
+  "name": "Krokorok",
   "primaryType": "ground",
   "secondaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 334,
+  "pokedex": [
+    "cobblemon.species.krokorok.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "intimidate",
     "moxie",
     "h:angerpoint"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 82,
+    "defence": 45,
+    "special_attack": 45,
+    "special_defence": 45,
+    "speed": 74
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 123,
+  "experienceGroup": "medium_slow",
+  "catchRate": 90,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 1.75,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": "q.is_standing_on_blocks(2, 'minecraft:sand', 'minecraft:red_sand') ? 0.3 : 0.22"
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "krokorok",
+          "tier": 1
+        },
+        {
+          "pokemon": "krookodile",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,72 +96,45 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 82,
-    "defence": 45,
-    "special_attack": 45,
-    "special_defence": 45,
-    "speed": 74
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.22
-      }
-    }
-  },
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 123,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:honeclaws",
     "1:leer",
-    "1:powertrip",
     "1:rage",
     "1:sandattack",
+    "1:honeclaws",
+    "1:powertrip",
     "9:sandtomb",
     "12:scaryface",
     "15:bite",
-    "16:assurance",
     "18:torment",
-    "19:mudslap",
     "21:dig",
-    "22:embargo",
     "24:swagger",
     "27:crunch",
     "32:sandstorm",
     "35:foulplay",
     "42:earthquake",
     "47:thrash",
+    "egg:aquatail",
+    "egg:counter",
+    "egg:doubleedge",
+    "egg:meanlook",
+    "egg:mefirst",
+    "egg:pursuit",
+    "egg:spite",
     "tm:aerialace",
+    "tm:aquatail",
     "tm:assurance",
-    "tm:attract",
     "tm:beatup",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulldoze",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:cut",
     "tm:darkpulse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragonclaw",
     "tm:dragontail",
     "tm:earthpower",
@@ -101,10 +148,8 @@
     "tm:focusenergy",
     "tm:focuspunch",
     "tm:foulplay",
-    "tm:frustration",
     "tm:grassknot",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:incinerate",
     "tm:irontail",
@@ -121,25 +166,22 @@
     "tm:protect",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:revenge",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaleshot",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:snarl",
-    "tm:snore",
+    "tm:snatch",
     "tm:spite",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -153,31 +195,49 @@
     "tm:thief",
     "tm:thunderfang",
     "tm:torment",
-    "tm:toxic",
-    "tm:uproar",
+    "tutor:aerialace",
     "tutor:aquatail",
+    "tutor:bulldoze",
     "tutor:darkpulse",
     "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:firefang",
+    "tutor:focusenergy",
     "tutor:focuspunch",
     "tutor:foulplay",
+    "tutor:helpinghand",
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:lashout",
     "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:scaleshot",
     "tutor:scorchingsands",
+    "tutor:shadowclaw",
     "tutor:skittersmack",
     "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
     "tutor:stealthrock",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.krokorok.desc"
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:thunderfang",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "sandile",
   "evolutions": [
@@ -194,24 +254,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1,
-    "height": 1.75,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 334,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

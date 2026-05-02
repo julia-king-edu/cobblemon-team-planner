@@ -1,13 +1,95 @@
 {
   "implemented": true,
-  "name": "Oinkologne",
   "nationalPokedexNumber": 916,
+  "name": "Oinkologne",
   "primaryType": "normal",
+  "maleRatio": 1,
+  "height": 10,
+  "weight": 1200,
+  "pokedex": [
+    "cobblemon.species.oinkologne.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [
+    "male"
+  ],
   "abilities": [
     "lingeringaroma",
     "gluttony",
     "h:thickfat"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 110,
+    "attack": 100,
+    "defence": 75,
+    "special_attack": 59,
+    "special_defence": 80,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 171,
+  "experienceGroup": "medium_fast",
+  "catchRate": 100,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.14
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "grumpig",
+          "tier": 1
+        },
+        {
+          "pokemon": "pignite",
+          "tier": 1
+        },
+        {
+          "pokemon": "oinkologne",
+          "tier": 1
+        },
+        {
+          "pokemon": "emboar",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -21,31 +103,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 110,
-    "attack": 100,
-    "defence": 75,
-    "special_attack": 59,
-    "special_defence": 80,
-    "speed": 65
-  },
-  "catchRate": 100,
-  "maleRatio": 1,
-  "baseExperienceYield": 171,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
     "1:tackle",
     "1:tailwhip",
@@ -62,21 +119,29 @@
     "42:doubleedge",
     "48:earthpower",
     "54:belch",
+    "egg:endeavor",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:stuffcheeks",
+    "egg:swallow",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:bulletseed",
     "tm:chillingwater",
+    "tm:covet",
     "tm:curse",
     "tm:dig",
     "tm:disarmingvoice",
     "tm:doubleedge",
     "tm:earthpower",
+    "tm:echoedvoice",
     "tm:endeavor",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:helpinghand",
     "tm:highhorsepower",
     "tm:hyperbeam",
@@ -100,21 +165,48 @@
     "tm:thief",
     "tm:trailblaze",
     "tm:uproar",
-    "tm:zenheadbutt"
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:bulldoze",
+    "tutor:covet",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:ironhead",
+    "tutor:lashout",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:superfang",
+    "tutor:uproar",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 10,
-  "weight": 1200,
   "preEvolution": "lechonk",
   "evolutions": [],
-  "cannotDynamax": false,
   "forms": [
     {
-      "name": "female",
+      "name": "F",
       "primaryType": "normal",
+      "maleRatio": 0,
+      "height": 10,
+      "weight": 1200,
+      "pokedex": [
+        "cobblemon.species.oinkologne-f.desc"
+      ],
+      "labels": [
+        "gen9"
+      ],
+      "aspects": [
+        "female"
+      ],
       "abilities": [
         "aromaveil",
         "gluttony",
@@ -128,23 +220,6 @@
         "special_defence": 90,
         "speed": 65
       },
-      "catchRate": 100,
-      "maleRatio": 0,
-      "baseExperienceYield": 171,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 2,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 15,
-      "eggGroups": [
-        "field"
-      ],
       "moves": [
         "1:tackle",
         "1:tailwhip",
@@ -161,21 +236,29 @@
         "39:doubleedge",
         "45:earthpower",
         "51:belch",
+        "egg:endeavor",
+        "egg:spitup",
+        "egg:stockpile",
+        "egg:stuffcheeks",
+        "egg:swallow",
         "tm:bodypress",
         "tm:bodyslam",
         "tm:bulldoze",
         "tm:bulletseed",
         "tm:chillingwater",
+        "tm:covet",
         "tm:curse",
         "tm:dig",
         "tm:disarmingvoice",
         "tm:doubleedge",
         "tm:earthpower",
+        "tm:echoedvoice",
         "tm:endeavor",
         "tm:endure",
         "tm:energyball",
         "tm:facade",
         "tm:gigaimpact",
+        "tm:headbutt",
         "tm:helpinghand",
         "tm:highhorsepower",
         "tm:hyperbeam",
@@ -199,29 +282,33 @@
         "tm:thief",
         "tm:trailblaze",
         "tm:uproar",
-        "tm:zenheadbutt"
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:bulldoze",
+        "tutor:covet",
+        "tutor:earthpower",
+        "tutor:endeavor",
+        "tutor:energyball",
+        "tutor:gigaimpact",
+        "tutor:helpinghand",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:hypervoice",
+        "tutor:ironhead",
+        "tutor:lashout",
+        "tutor:mudslap",
+        "tutor:playrough",
+        "tutor:rest",
+        "tutor:seedbomb",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:superfang",
+        "tutor:uproar",
+        "tutor:zenheadbutt"
       ],
-      "labels": [
-        "gen9"
-      ],
-      "aspects": [
-        "female"
-      ],
-      "height": 10,
-      "weight": 1200,
       "preEvolution": "lechonk",
       "evolutions": [],
-      "cannotDynamax": false,
       "battleOnly": false
     }
-  ],
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.1,
-    "fixed": false
-  },
-  "pokedex": [
-    "cobblemon.species.oinkologne.desc"
   ]
 }

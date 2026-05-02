@@ -9,12 +9,13 @@ def get_occuring_pokemon(spawn_pool_world_location) -> list:
     return poke_filenames
 
 def fix_names(poke_names) -> list:
-    # generate docstring by typing """
+    # fix names of pokemon keys
     rename_dict = {
         "nidoranf" : "nidoran-f", 
         "nidoranm" : "nidoran-m", 
         "mrmime" : "mr-mime", 
         "mimejr" : "mime-jr", 
+        "mrrime" : "mr-rime",
         "porygonz" : "porygon-z",
         "jangmoo" : "jangmo-o", 
         "hakamoo" : "hakamo-o",
@@ -23,11 +24,25 @@ def fix_names(poke_names) -> list:
     return [rename_dict.get(poke_name, poke_name) for poke_name in poke_names]
 
 def insert_missing(forms_keys) -> list:
-    # generate docstring by typing """
+    """Add missing forms to a pokemon forms list if necessary. CUrrently no missing pokemon have been found.
+
+    Args:
+        forms_keys (list of strings): list to check if something needs to be added
+
+    Returns:
+        list: fixed forms_keys object
+    """
     return forms_keys
 
 def is_exception(poke_name) -> bool:
-    # generate docstring by typing """
+    """Defines forms that should not be added to pokedex
+
+    Args:
+        poke_name (string): name of the form to potentially add to dex
+
+    Returns:
+        bool: TRUE if it is a must-remove exception
+    """
     if "-gmax" in poke_name:
         return True
     if "-mega" in poke_name:
@@ -38,34 +53,25 @@ def is_exception(poke_name) -> bool:
         "sandslash-alola", 
         "growlithe-hisui",
         "arcanine-hisui", 
-        "geodude-alola", 
-        "graveler-alola", 
-        "golem-alola", 
-        "slowpoke-galar", 
-        "slowbro-galar", 
-        "slowking-galar", 
-        "grimer-alola", 
-        "muk-alola", 
-        "weezing-galar", 
-        "mr-mime-galar",
-        "mr-rime", 
-        "tauros-paldea-combat",
-        "tauros-paldea-blaze",
-        "tauros-paldea-aqua",
+        # "geodude-alola", # added in 1.7 
+        # "graveler-alola", 
+        # "golem-alola", 
+        # "slowpoke-galar", 
+        # "slowbro-galar", 
+        # "slowking-galar", 
+        # "grimer-alola", 
+        # "muk-alola", 
+        # "weezing-galar", 
+        # "mr-mime-galar",
+        # "mr-rime", 
+        # "tauros-paldea-combat",
+        # "tauros-paldea-blaze",
+        # "tauros-paldea-aqua",
         "darumaka-galar", 
         "darmanitan-galar", 
         "yamask-galar", 
         "runerigus", 
-        "avalugg-hisui", 
-        "heracross-mega", 
-        "sceptile-mega", 
-        "blaziken-mega", 
-        "swampert-mega", 
-        "aggron-mega", 
-        "camerupt-mega", 
-        "metagross-mega", 
-        "lopunny-mega", 
-        "lucario-mega"
+        "avalugg-hisui"
     ]
     
     if poke_name in exceptions:
@@ -115,7 +121,7 @@ def generate_dex(poke_names, poke_filepath) -> dict:
         # per form, add the form and its evolutions to the dex. exception for gmax forms and megas.
         while len(forms_keys) > 0:
             key = forms_keys.pop()
-            # check if form is already in it. if not, add to dex
+            # check if form is already in it. if not, add to dex. this is necessary as a given form may have already been added during the "add all evolutions" stage below
             if not([[species_json[key]["base_id"],species_json[key]["form_id"] ]] in dex_order.values()): # do not include if pokemon is already in dex
                 if not(is_exception(key)):
                     dex_order[str(len(dex_order) + 1)] = [[species_json[key]["base_id"],species_json[key]["form_id"] ]]

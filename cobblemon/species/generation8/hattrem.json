@@ -1,11 +1,25 @@
 {
-  "name": "Hattrem",
+  "implemented": true,
   "nationalPokedexNumber": 857,
+  "name": "Hattrem",
   "primaryType": "psychic",
+  "maleRatio": 0,
+  "height": 6,
+  "weight": 48,
+  "pokedex": [
+    "cobblemon.species.hattrem.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "healer",
     "anticipation",
     "h:magicbounce"
+  ],
+  "eggGroups": [
+    "fairy"
   ],
   "baseStats": {
     "hp": 57,
@@ -15,21 +29,41 @@
     "special_defence": 73,
     "speed": 49
   },
-  "catchRate": 120,
-  "maleRatio": 0,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 130,
   "experienceGroup": "slow",
+  "catchRate": 120,
   "eggCycles": 20,
-  "eggGroups": [
-    "fairy"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1,
+    "height": 1.2,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:babiri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
+    "1:brutalswing",
     "1:confusion",
-    "1:disarmingvoice",
-    "1:lifedew",
     "1:playnice",
-    "15:aromatherapy",
+    "1:lifedew",
+    "1:disarmingvoice",
+    "1:aromatherapy",
     "15:aromaticmist",
     "20:psybeam",
     "25:healpulse",
@@ -37,7 +71,12 @@
     "37:calmmind",
     "44:psychic",
     "51:healingwish",
-    "tm:attract",
+    "egg:afteryou",
+    "egg:aromaticmist",
+    "egg:mysticalfire",
+    "egg:nuzzle",
+    "egg:quash",
+    "tm:afteryou",
     "tm:batonpass",
     "tm:brutalswing",
     "tm:calmmind",
@@ -65,13 +104,12 @@
     "tm:psychicterrain",
     "tm:psychup",
     "tm:psyshock",
+    "tm:quash",
     "tm:reflect",
     "tm:rest",
-    "tm:round",
     "tm:safeguard",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:storedpower",
     "tm:substitute",
     "tm:swift",
@@ -79,13 +117,25 @@
     "tm:thunderwave",
     "tm:trick",
     "tm:trickroom",
-    "tutor:expandingforce"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.hattrem.desc"
+    "tutor:afteryou",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dazzlinggleam",
+    "tutor:expandingforce",
+    "tutor:gigadrain",
+    "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:mysticalfire",
+    "tutor:playrough",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "preEvolution": "hatenna",
   "evolutions": [
@@ -105,32 +155,32 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 48,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:babiri_berry",
-        "percentage": 5.0
+  "behaviour": {
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "hatterene",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
       }
-    ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    }
   }
 }

@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Dreepy",
   "nationalPokedexNumber": 885,
+  "name": "Dreepy",
   "primaryType": "dragon",
   "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 20,
+  "pokedex": [
+    "cobblemon.species.dreepy.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "clearbody",
     "infiltrator",
     "h:cursedbody"
+  ],
+  "eggGroups": [
+    "amorphous",
+    "dragon"
   ],
   "baseStats": {
     "hp": 28,
@@ -17,40 +31,88 @@
     "special_defence": 30,
     "speed": 82
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 54,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.5,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
         "swimSpeed": 0.3,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
+        "canBreatheUnderwater": true
       },
       "fly": {
         "canFly": true
+      },
+      "walk": {
+        "canWalk": false
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "167-11833,13702-22299"
+      ],
+      "drowsyChance": 0.0021,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dreepy",
+          "tier": 1
+        },
+        {
+          "pokemon": "drakloak",
+          "tier": 2
+        },
+        {
+          "pokemon": "dragapult",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 54,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "amorphous",
-    "dragon"
-  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:phantom_membrane",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:astonish",
-    "1:bite",
     "1:infestation",
     "1:quickattack",
+    "1:bite",
     "egg:confuseray",
     "egg:curse",
     "egg:disable",
@@ -58,31 +120,33 @@
     "egg:dragontail",
     "egg:grudge",
     "egg:suckerpunch",
-    "tm:attract",
     "tm:batonpass",
     "tm:confuseray",
     "tm:curse",
+    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragontail",
     "tm:endure",
     "tm:facade",
     "tm:helpinghand",
+    "tm:infestation",
     "tm:protect",
     "tm:rest",
-    "tm:round",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:terablast",
     "tm:thunderwave",
-    "tutor:dracometeor"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.dreepy.desc"
+    "tutor:dracometeor",
+    "tutor:helpinghand",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -100,37 +164,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.75,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 5,
-  "weight": 20,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:phantom_membrane",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:haban_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

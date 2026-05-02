@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "29-48",
             "weight": 2.0,
@@ -19,6 +19,11 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_peak"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
                 ]
             }
         }

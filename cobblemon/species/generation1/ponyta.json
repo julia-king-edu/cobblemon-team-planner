@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Ponyta",
   "nationalPokedexNumber": 77,
+  "name": "Ponyta",
   "primaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 300,
+  "pokedex": [
+    "cobblemon.species.ponyta.desc"
+  ],
+  "labels": [
+    "gen1",
+    "kantonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "flashfire",
     "h:flamebody"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 50,
@@ -16,161 +30,85 @@
     "special_defence": 65,
     "speed": 90
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 82,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
   "features": [
     "galarian"
   ],
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Galar",
-      "primaryType": "psychic",
-      "abilities": [
-        "runaway",
-        "pastelveil",
-        "h:anticipation"
-      ],
-      "baseStats": {
-        "hp": 50,
-        "attack": 85,
-        "defence": 55,
-        "special_attack": 65,
-        "special_defence": 65,
-        "speed": 90
-      },
-      "catchRate": 190,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 82,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 1
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "field"
-      ],
-      "moves": [
-        "1:growl",
-        "1:tackle",
-        "5:tailwhip",
-        "10:confusion",
-        "15:fairywind",
-        "20:agility",
-        "25:psybeam",
-        "30:stomp",
-        "35:healpulse",
-        "41:takedown",
-        "45:dazzlinggleam",
-        "50:psychic",
-        "55:healingwish",
-        "egg:doubleedge",
-        "egg:doublekick",
-        "egg:horndrill",
-        "egg:hypnosis",
-        "egg:morningsun",
-        "egg:thrash",
-        "tm:agility",
-        "tm:allyswitch",
-        "tm:attract",
-        "tm:bodyslam",
-        "tm:bounce",
-        "tm:calmmind",
-        "tm:charm",
-        "tm:dazzlinggleam",
-        "tm:endure",
-        "tm:facade",
-        "tm:futuresight",
-        "tm:highhorsepower",
-        "tm:imprison",
-        "tm:irontail",
-        "tm:lowkick",
-        "tm:mysticalfire",
-        "tm:playrough",
-        "tm:protect",
-        "tm:psychic",
-        "tm:rest",
-        "tm:round",
-        "tm:sleeptalk",
-        "tm:snore",
-        "tm:storedpower",
-        "tm:substitute",
-        "tm:swift",
-        "tm:wildcharge",
-        "tm:zenheadbutt",
-        "tutor:confusion",
-        "tutor:expandingforce",
-        "tutor:fairywind",
-        "tutor:growl",
-        "tutor:tackle"
-      ],
-      "labels": [
-        "gen8",
-        "galar_regional"
-      ],
-      "aspects": [
-        "galarian"
-      ],
-      "height": 8,
-      "weight": 240,
-      "evolutions": [
-        {
-          "id": "ponyta_rapidash",
-          "variant": "level_up",
-          "result": "rapidash galarian",
-          "consumeHeldItem": false,
-          "learnableMoves": [
-            "psychocut"
-          ],
-          "requirements": [
-            {
-              "variant": "level",
-              "minLevel": 40
-            }
-          ]
-        }
-      ],
-      "cannotDynamax": false,
-      "battleOnly": false,
-      "drops": {
-        "amount": 2,
-        "entries": [
-          {
-            "item": "minecraft:leather",
-            "quantityRange": "0-1"
-          },
-          {
-            "item": "cobblemon:razz_berry",
-            "percentage": 2.5
-          }
-        ]
-      }
-    }
-  ],
-  "baseExperienceYield": 82,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
         "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "blitzle",
+          "tier": 1
+        },
+        {
+          "pokemon": "mudbray",
+          "tier": 1
+        },
+        {
+          "pokemon": "ponyta",
+          "tier": 2
+        },
+        {
+          "pokemon": "zebstrika",
+          "tier": 3
+        },
+        {
+          "pokemon": "mudsdale",
+          "tier": 3
+        },
+        {
+          "pokemon": "rapidash",
+          "tier": 4
+        },
+        {
+          "pokemon": "glastrier",
+          "tier": 5
+        },
+        {
+          "pokemon": "spectrier",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
   },
   "drops": {
     "amount": 3,
@@ -191,7 +129,6 @@
   },
   "moves": [
     "1:growl",
-    "1:quickattack",
     "1:tackle",
     "5:tailwhip",
     "10:ember",
@@ -201,31 +138,23 @@
     "30:stomp",
     "35:firespin",
     "41:takedown",
-    "45:bounce",
     "45:inferno",
     "50:fireblast",
     "55:flareblitz",
-    "egg:allyswitch",
     "egg:captivate",
-    "egg:charm",
     "egg:doubleedge",
     "egg:doublekick",
-    "egg:flamewheel",
-    "egg:highhorsepower",
     "egg:horndrill",
     "egg:hypnosis",
-    "egg:lowkick",
     "egg:morningsun",
     "egg:thrash",
     "tm:agility",
     "tm:allyswitch",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bounce",
     "tm:captivate",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
@@ -234,91 +163,60 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:incinerate",
     "tm:irontail",
     "tm:lowkick",
     "tm:mysticalfire",
-    "tm:naturalgift",
     "tm:overheat",
     "tm:playrough",
     "tm:protect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:solarblade",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
-    "tm:toxic",
+    "tm:takedown",
+    "tm:terablast",
     "tm:wildcharge",
     "tm:willowisp",
-    "tutor:agility",
     "tutor:allyswitch",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
     "tutor:bounce",
-    "tutor:charm",
-    "tutor:curse",
-    "tutor:doubleedge",
-    "tutor:doublekick",
-    "tutor:doubleteam",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fireblast",
-    "tutor:firespin",
     "tutor:flamethrower",
-    "tutor:flamewheel",
-    "tutor:flareblitz",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
     "tutor:heatwave",
-    "tutor:hiddenpower",
-    "tutor:horndrill",
-    "tutor:hypnosis",
+    "tutor:highhorsepower",
     "tutor:irontail",
     "tutor:lowkick",
-    "tutor:mimic",
-    "tutor:protect",
-    "tutor:quickattack",
-    "tutor:rage",
-    "tutor:reflect",
+    "tutor:mysticalfire",
+    "tutor:playrough",
     "tutor:rest",
-    "tutor:return",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:stomp",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:tackle",
-    "tutor:tailwhip",
-    "tutor:takedown",
-    "tutor:thrash",
-    "tutor:toxic",
-    "tutor:willowisp"
-  ],
-  "labels": [
-    "gen1",
-    "kanto_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.ponyta.desc"
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:quickattack",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -327,6 +225,7 @@
       "result": "rapidash",
       "consumeHeldItem": false,
       "learnableMoves": [
+        "furyattack",
         "smartstrike"
       ],
       "requirements": [
@@ -337,23 +236,188 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 10,
-  "weight": 300,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Galar",
+      "primaryType": "psychic",
+      "maleRatio": 0.5,
+      "height": 8,
+      "weight": 240,
+      "pokedex": [
+        "cobblemon.species.ponyta-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
+      "abilities": [
+        "runaway",
+        "pastelveil",
+        "h:anticipation"
+      ],
+      "drops": {
+        "amount": 2,
+        "entries": [
+          {
+            "item": "minecraft:leather",
+            "quantityRange": "0-1"
+          },
+          {
+            "item": "cobblemon:razz_berry",
+            "percentage": 2.5
+          }
+        ]
+      },
+      "moves": [
+        "1:tackle",
+        "1:growl",
+        "5:tailwhip",
+        "10:confusion",
+        "15:fairywind",
+        "20:agility",
+        "25:psybeam",
+        "30:stomp",
+        "35:healpulse",
+        "41:takedown",
+        "45:dazzlinggleam",
+        "50:psychic",
+        "55:healingwish",
+        "egg:doubleedge",
+        "egg:doublekick",
+        "egg:horndrill",
+        "egg:hypnosis",
+        "egg:morningsun",
+        "egg:thrash",
+        "tm:agility",
+        "tm:allyswitch",
+        "tm:bodyslam",
+        "tm:bounce",
+        "tm:calmmind",
+        "tm:charm",
+        "tm:dazzlinggleam",
+        "tm:doubleedge",
+        "tm:endure",
+        "tm:expandingforce",
+        "tm:facade",
+        "tm:futuresight",
+        "tm:highhorsepower",
+        "tm:imprison",
+        "tm:irontail",
+        "tm:lowkick",
+        "tm:mysticalfire",
+        "tm:playrough",
+        "tm:protect",
+        "tm:psybeam",
+        "tm:psychic",
+        "tm:rest",
+        "tm:sleeptalk",
+        "tm:storedpower",
+        "tm:substitute",
+        "tm:swift",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:wildcharge",
+        "tm:zenheadbutt",
+        "tutor:allyswitch",
+        "tutor:bounce",
+        "tutor:calmmind",
+        "tutor:dazzlinggleam",
+        "tutor:expandingforce",
+        "tutor:highhorsepower",
+        "tutor:irontail",
+        "tutor:lowkick",
+        "tutor:mysticalfire",
+        "tutor:playrough",
+        "tutor:psychic",
+        "tutor:rest",
+        "tutor:sleeptalk",
+        "tutor:swift",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt",
+        "legacy:attract",
+        "legacy:round",
+        "legacy:snore"
+      ],
+      "evolutions": [
+        {
+          "id": "ponyta_rapidashgalar",
+          "variant": "level_up",
+          "result": "rapidash galarian",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "psychocut"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 40
+            }
+          ]
+        }
+      ],
+      "battleOnly": false,
+      "behaviour": {
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "blitzle",
+              "tier": 1
+            },
+            {
+              "pokemon": "mudbray",
+              "tier": 1
+            },
+            {
+              "pokemon": "ponyta",
+              "tier": 2
+            },
+            {
+              "pokemon": "zebstrika",
+              "tier": 3
+            },
+            {
+              "pokemon": "mudsdale",
+              "tier": 3
+            },
+            {
+              "pokemon": "rapidash",
+              "tier": 4
+            },
+            {
+              "pokemon": "glastrier",
+              "tier": 5
+            },
+            {
+              "pokemon": "spectrier",
+              "tier": 5
+            }
+          ]
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          }
+        },
+        "combat": {
+          "willDefendOwner": true
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
+      "lightingData": {
+        "lightLevel": 10,
+        "liquidGlowMode": "LAND"
+      }
+    }
+  ],
+  "lightingData": {
+    "lightLevel": 15,
+    "liquidGlowMode": "LAND"
+  }
 }

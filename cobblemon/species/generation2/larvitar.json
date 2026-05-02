@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Larvitar",
   "nationalPokedexNumber": 246,
+  "name": "Larvitar",
   "primaryType": "rock",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 720,
+  "pokedex": [
+    "cobblemon.species.larvitar.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "guts",
     "h:sandveil"
+  ],
+  "eggGroups": [
+    "monster"
   ],
   "baseStats": {
     "hp": 50,
@@ -16,34 +29,99 @@
     "special_defence": 50,
     "speed": 41
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "shoulderMountable": true,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.95,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "larvitar",
+          "tier": 1
+        },
+        {
+          "pokemon": "axew",
+          "tier": 1
+        },
+        {
+          "pokemon": "fraxure",
+          "tier": 2
+        },
+        {
+          "pokemon": "haxorus",
+          "tier": 3
+        },
+        {
+          "pokemon": "tyranitar mega=false",
+          "tier": 4
+        },
+        {
+          "pokemon": "tyranitar mega",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 60,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "monster"
-  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:chople_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:leer",
+    "1:chipaway",
     "1:tackle",
     "3:rockthrow",
     "6:payback",
     "9:bite",
     "12:scaryface",
-    "14:chipaway",
     "15:rockslide",
     "18:stompingtantrum",
     "21:screech",
-    "24:darkpulse",
     "24:smackdown",
     "27:crunch",
     "31:earthquake",
@@ -58,42 +136,34 @@
     "egg:focusenergy",
     "egg:irondefense",
     "egg:ironhead",
-    "egg:irontail",
     "egg:outrage",
     "egg:pursuit",
-    "egg:stealthrock",
     "egg:stomp",
+    "tm:ancientpower",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:darkpulse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragondance",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
-    "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:payback",
     "tm:poweruppunch",
@@ -101,22 +171,18 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:snarl",
-    "tm:snore",
     "tm:spite",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -124,67 +190,50 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:torment",
-    "tm:toxic",
-    "tm:uproar",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bite",
-    "tutor:bodyslam",
-    "tutor:crunch",
-    "tutor:curse",
+    "tutor:bulldoze",
     "tutor:darkpulse",
-    "tutor:detect",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dragondance",
     "tutor:earthpower",
-    "tutor:earthquake",
-    "tutor:endure",
     "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
-    "tutor:sandstorm",
-    "tutor:scaryface",
-    "tutor:screech",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:snarl",
     "tutor:spite",
     "tutor:stealthrock",
-    "tutor:stomp",
-    "tutor:substitute",
-    "tutor:sunnyday",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:thrash",
-    "tutor:toxic",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.larvitar.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:muddywater",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "evolutions": [
     {
@@ -202,37 +251,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.95,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 720,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "cobblemon:hard_stone",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:chople_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

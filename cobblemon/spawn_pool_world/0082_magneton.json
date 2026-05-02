@@ -10,10 +10,10 @@
                 "redstone"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "30-47",
-            "weight": 1.52,
+            "weight": 15.2,
             "condition": {
                 "biomes": [
                     "#cobblemon:is_overworld"
@@ -29,10 +29,10 @@
             "id": "magneton-2",
             "pokemon": "magneton",
             "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
             "level": "30-47",
-            "weight": 15.2,
+            "weight": 0.19,
             "weightMultiplier": {
                 "multiplier": 5.0,
                 "condition": {

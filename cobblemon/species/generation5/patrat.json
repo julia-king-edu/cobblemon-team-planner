@@ -1,22 +1,26 @@
 {
   "implemented": true,
-  "name": "Patrat",
   "nationalPokedexNumber": 504,
+  "name": "Patrat",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 116,
+  "pokedex": [
+    "cobblemon.species.patrat.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "keeneye",
     "h:analytic"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:babiri_berry",
-        "percentage": 2.5
-      }
-    ]
-  },
+  "eggGroups": [
+    "field"
+  ],
   "baseStats": {
     "hp": 45,
     "attack": 55,
@@ -25,22 +29,64 @@
     "special_defence": 39,
     "speed": 42
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 51,
   "experienceGroup": "medium_fast",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.3,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
       "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "patrat",
+          "tier": 1
+        },
+        {
+          "pokemon": "watchog",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true,
+      "willFlee": true
     }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:babiri_berry",
+        "percentage": 2.5
+      }
+    ]
   },
   "moves": [
     "1:tackle",
@@ -69,54 +115,76 @@
     "egg:revenge",
     "egg:screech",
     "egg:tearfullook",
-    "tm:attract",
-    "tm:confide",
+    "tm:afteryou",
+    "tm:aquatail",
+    "tm:assurance",
+    "tm:batonpass",
+    "tm:bulletseed",
+    "tm:covet",
+    "tm:crunch",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
+    "tm:endeavor",
+    "tm:endure",
     "tm:facade",
     "tm:fling",
-    "tm:frustration",
+    "tm:focusenergy",
     "tm:grassknot",
-    "tm:hiddenpower",
+    "tm:gunkshot",
+    "tm:helpinghand",
+    "tm:irontail",
+    "tm:laserfocus",
+    "tm:lastresort",
+    "tm:lowkick",
+    "tm:nastyplot",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
+    "tm:revenge",
+    "tm:screech",
+    "tm:seedbomb",
     "tm:shadowball",
+    "tm:shockwave",
     "tm:sleeptalk",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superfang",
     "tm:swordsdance",
+    "tm:terablast",
     "tm:thunderbolt",
-    "tm:toxic",
     "tm:workup",
+    "tm:zenheadbutt",
     "tutor:afteryou",
     "tutor:aquatail",
     "tutor:covet",
     "tutor:endeavor",
+    "tutor:focusenergy",
     "tutor:gunkshot",
     "tutor:helpinghand",
     "tutor:irontail",
     "tutor:laserfocus",
     "tutor:lastresort",
     "tutor:lowkick",
+    "tutor:rest",
     "tutor:seedbomb",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:superfang",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.patrat.desc"
+    "tutor:thunderbolt",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -133,23 +201,8 @@
       ]
     }
   ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 116,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 3,
+    "liquidGlowMode": "BOTH"
+  }
 }

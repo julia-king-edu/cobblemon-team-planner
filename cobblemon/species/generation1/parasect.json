@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Parasect",
   "nationalPokedexNumber": 47,
+  "name": "Parasect",
   "primaryType": "bug",
   "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 295,
+  "pokedex": [
+    "cobblemon.species.parasect.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "effectspore",
     "dryskin",
     "h:damp"
+  ],
+  "eggGroups": [
+    "bug",
+    "grass"
   ],
   "baseStats": {
     "hp": 60,
@@ -17,31 +31,80 @@
     "special_defence": 80,
     "speed": 30
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "height": 1.3,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "50-70",
+          "JUMP": "0-15",
+          "SKILL": "45-65",
+          "SPEED": "15-30",
+          "STAMINA": "15-30"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
   "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "parasect",
+          "tier": 1
+        }
+      ]
+    },
     "moving": {
       "canLook": false,
-      "wanderChance": 20,
+      "swim": {
+        "avoidsWater": true
+      },
       "walk": {
         "walkSpeed": 0.45
-      }
+      },
+      "wanderChance": 20
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "drowsyChance": 0.0014,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
     }
   },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 142,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "bug",
-    "grass"
-  ],
   "drops": {
     "amount": 2,
     "entries": [
@@ -55,12 +118,11 @@
     ]
   },
   "moves": [
-    "1:absorb",
     "1:crosspoison",
-    "1:leechlife",
-    "1:poisonpowder",
     "1:scratch",
     "1:stunspore",
+    "1:poisonpowder",
+    "1:absorb",
     "17:furycutter",
     "22:spore",
     "29:slash",
@@ -69,137 +131,114 @@
     "51:aromatherapy",
     "59:ragepowder",
     "66:xscissor",
+    "egg:counter",
+    "egg:fellstinger",
+    "egg:flail",
+    "egg:leechseed",
+    "egg:naturalgift",
+    "egg:pursuit",
+    "egg:rototiller",
+    "egg:sweetscent",
+    "egg:wideguard",
     "tm:aerialace",
-    "tm:attract",
+    "tm:afteryou",
+    "tm:agility",
+    "tm:bodyslam",
     "tm:brickbreak",
+    "tm:bugbite",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
+    "tm:crosspoison",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:falseswipe",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
-    "tm:hiddenpower",
+    "tm:grassyglide",
+    "tm:grassyterrain",
     "tm:honeclaws",
     "tm:hyperbeam",
+    "tm:knockoff",
     "tm:leechlife",
     "tm:lightscreen",
+    "tm:metalclaw",
     "tm:naturalgift",
     "tm:naturepower",
     "tm:protect",
+    "tm:psybeam",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:screech",
+    "tm:seedbomb",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:throatchop",
     "tm:venoshock",
+    "tm:worryseed",
     "tm:xscissor",
-    "tutor:absorb",
+    "tutor:aerialace",
     "tutor:afteryou",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
     "tutor:bugbite",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flash",
-    "tutor:frustration",
+    "tutor:falseswipe",
     "tutor:furycutter",
-    "tutor:furyswipes",
     "tutor:gigadrain",
-    "tutor:growth",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:gigaimpact",
+    "tutor:grassyglide",
     "tutor:hyperbeam",
     "tutor:knockoff",
     "tutor:leechlife",
-    "tutor:leechseed",
-    "tutor:lightscreen",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:poisonpowder",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rocksmash",
-    "tutor:scratch",
-    "tutor:screech",
     "tutor:seedbomb",
-    "tutor:skullbash",
-    "tutor:slash",
-    "tutor:sleeppowder",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:spore",
     "tutor:stringshot",
-    "tutor:stunspore",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:takedown",
-    "tutor:thief",
     "tutor:throatchop",
-    "tutor:toxic",
     "tutor:worryseed",
-    "tutor:xscissor"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.parasect.desc"
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:furyswipes",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:megadrain",
+    "legacy:mimic",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:sleeppowder",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "preEvolution": "paras",
-  "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.2,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 295,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

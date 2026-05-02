@@ -11,7 +11,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "16-41",
             "weight": 10.0,
@@ -32,7 +32,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "16-41",
             "weight": 6.0,
@@ -53,7 +53,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "16-41",
             "weight": 10.0,
@@ -70,7 +70,7 @@
             "id": "chatot-4",
             "pokemon": "chatot",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "16-41",
             "weight": 6.0,
@@ -85,6 +85,27 @@
                 ],
                 "minY": -41,
                 "maxY": 9
+            }
+        },
+        {
+            "id": "chatot-8",
+            "pokemon": "chatot",
+            "presets": [
+                "natural",
+                "treetop"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "16-41",
+            "weight": 10.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
+                ]
             }
         }
     ]

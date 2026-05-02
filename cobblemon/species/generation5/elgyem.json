@@ -1,13 +1,93 @@
 {
   "implemented": true,
-  "name": "Elgyem",
   "nationalPokedexNumber": 605,
+  "name": "Elgyem",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 90,
+  "pokedex": [
+    "cobblemon.species.elgyem.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "telepathy",
     "synchronize",
     "h:analytic"
   ],
+  "eggGroups": [
+    "human_like"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 55,
+    "defence": 55,
+    "special_attack": 85,
+    "special_defence": 55,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 67,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "elgyem",
+          "tier": 1
+        },
+        {
+          "pokemon": "beheeyem",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -25,113 +105,82 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 55,
-    "defence": 55,
-    "special_attack": 85,
-    "special_defence": 55,
-    "speed": 30
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 67,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "human_like"
-  ],
   "moves": [
     "1:confusion",
     "1:growl",
+    "1:healblock",
+    "1:miracleeye",
     "6:imprison",
-    "8:healblock",
-    "11:miracleeye",
     "12:teleport",
     "18:psybeam",
-    "22:hiddenpower",
     "24:guardsplit",
     "24:powersplit",
-    "29:simplebeam",
     "30:headbutt",
-    "36:psychup",
     "36:zenheadbutt",
     "43:recover",
     "48:calmmind",
-    "53:synchronoise",
     "54:wonderroom",
     "60:psychic",
-    "egg:allyswitch",
     "egg:astonish",
     "egg:barrier",
-    "egg:cosmicpower",
     "egg:destinybond",
     "egg:disable",
-    "egg:guardswap",
-    "egg:nastyplot",
-    "egg:powerswap",
     "egg:psychup",
-    "egg:skillswap",
-    "egg:teleport",
+    "egg:simplebeam",
+    "egg:synchronoise",
+    "tm:afteryou",
     "tm:agility",
     "tm:allyswitch",
-    "tm:attract",
     "tm:calmmind",
     "tm:chargebeam",
-    "tm:confide",
     "tm:cosmicpower",
     "tm:darkpulse",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:echoedvoice",
     "tm:embargo",
     "tm:endure",
     "tm:energyball",
+    "tm:expandingforce",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
+    "tm:gravity",
     "tm:guardswap",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:imprison",
     "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:meteorbeam",
     "tm:nastyplot",
+    "tm:painsplit",
     "tm:powerswap",
     "tm:protect",
+    "tm:psybeam",
     "tm:psychic",
     "tm:psychup",
     "tm:psyshock",
     "tm:raindance",
+    "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:snatch",
     "tm:steelwing",
     "tm:storedpower",
     "tm:substitute",
-    "tm:swagger",
     "tm:telekinesis",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
@@ -139,34 +188,43 @@
     "tm:zenheadbutt",
     "tutor:afteryou",
     "tutor:allyswitch",
-    "tutor:barrier",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
+    "tutor:energyball",
     "tutor:expandingforce",
     "tutor:gravity",
-    "tutor:healblock",
     "tutor:magiccoat",
     "tutor:meteorbeam",
-    "tutor:nastyplot",
     "tutor:painsplit",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:roleplay",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:telekinesis",
+    "tutor:thunderbolt",
     "tutor:trick",
     "tutor:uproar",
     "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.elgyem.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -182,24 +240,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 90,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

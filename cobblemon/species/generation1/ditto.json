@@ -1,12 +1,72 @@
 {
   "implemented": true,
-  "name": "Ditto",
   "nationalPokedexNumber": 132,
+  "name": "Ditto",
   "primaryType": "normal",
+  "maleRatio": -1,
+  "height": 3,
+  "weight": 40,
+  "pokedex": [
+    "cobblemon.species.ditto.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "limber",
     "h:imposter"
   ],
+  "eggGroups": [
+    "ditto"
+  ],
+  "baseStats": {
+    "hp": 48,
+    "attack": 48,
+    "defence": 48,
+    "special_attack": 48,
+    "special_defence": 48,
+    "speed": 48
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 101,
+  "experienceGroup": "medium_fast",
+  "catchRate": 35,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,58 +80,51 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 48,
-    "attack": 48,
-    "defence": 48,
-    "special_attack": 48,
-    "special_defence": 48,
-    "speed": 48
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 35,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 101,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "ditto"
-  ],
   "moves": [
     "1:transform"
   ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.ditto.desc"
-  ],
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 40,
-  "aspects": [],
-  "cannotDynamax": false
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": {
+          "LAND": "10-20",
+          "LIQUID": "10-20",
+          "AIR": "10-20"
+        }
+      },
+      "ACCELERATION": {
+        "ranges": {
+          "LAND": "10-100",
+          "LIQUID": "10-100",
+          "AIR": "100-20"
+        }
+      },
+      "SKILL": {
+        "ranges": {
+          "LAND": "10-20",
+          "LIQUID": "10-20",
+          "AIR": "10-20"
+        }
+      },
+      "JUMP": {
+        "ranges": {
+          "LAND": "10-20",
+          "LIQUID": "10-20",
+          "AIR": "10-20"
+        }
+      },
+      "STAMINA": {
+        "ranges": {
+          "LAND": "10-20",
+          "LIQUID": "10-20",
+          "AIR": "10-20"
+        }
+      }
+    },
+    "seats": [],
+    "behaviour": {
+      "key": "cobblemon:land/vehicle"
+    }
+  }
 }

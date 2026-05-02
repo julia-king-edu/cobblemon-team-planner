@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Lileep",
   "nationalPokedexNumber": 345,
+  "name": "Lileep",
   "primaryType": "rock",
   "secondaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 10,
+  "weight": 238,
+  "pokedex": [
+    "cobblemon.species.lileep.desc"
+  ],
+  "labels": [
+    "gen3",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "suctioncups",
     "h:stormdrain"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 66,
@@ -16,15 +30,25 @@
     "special_defence": 87,
     "speed": 23
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 71,
   "experienceGroup": "erratic",
+  "catchRate": 45,
   "eggCycles": 30,
-  "eggGroups": [
-    "water_3"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
@@ -33,15 +57,30 @@
         "canBreatheUnderwater": true
       },
       "walk": {
+        "avoidsLand": true,
         "walkSpeed": 0.12
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 5.0
+      }
+    ]
   },
   "moves": [
     "1:astonish",
@@ -56,97 +95,92 @@
     "28:amnesia",
     "32:gastroacid",
     "36:gigadrain",
-    "41:spitup",
     "41:stockpile",
+    "41:spitup",
     "41:swallow",
     "44:energyball",
-    "52:wringout",
     "egg:barrier",
     "egg:bind",
     "egg:curse",
-    "egg:endure",
-    "egg:megadrain",
     "egg:mirrorcoat",
     "egg:recover",
-    "egg:rockslide",
-    "egg:stealthrock",
     "egg:tickle",
     "egg:wringout",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:bind",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:confuseray",
+    "tm:curse",
     "tm:earthpower",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigadrain",
     "tm:grassknot",
-    "tm:hiddenpower",
     "tm:infestation",
+    "tm:meteorbeam",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
+    "tm:painsplit",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:smackdown",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stealthrock",
+    "tm:stringshot",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
-    "tm:toxic",
-    "tutor:acid",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:worryseed",
     "tutor:ancientpower",
     "tutor:bind",
-    "tutor:bodyslam",
-    "tutor:constrict",
-    "tutor:doubleedge",
     "tutor:earthpower",
-    "tutor:endure",
+    "tutor:energyball",
     "tutor:gastroacid",
     "tutor:gigadrain",
     "tutor:meteorbeam",
-    "tutor:mimic",
-    "tutor:mirrorcoat",
     "tutor:mudslap",
     "tutor:painsplit",
-    "tutor:psychup",
-    "tutor:recover",
+    "tutor:rest",
     "tutor:rockslide",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
     "tutor:stealthrock",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.lileep.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:psychup",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -162,33 +196,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 238,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:big_root",
-        "percentage": 5.0
-      }
-    ]
-  }
+  ]
 }

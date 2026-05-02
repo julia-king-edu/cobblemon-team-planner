@@ -1,0 +1,13 @@
+1. get spawn_pool_world and species folders from https://gitlab.com/cable-mc/cobblemon/-/tree/main/common/src/main/resources/data/cobblemon and paste them into /cobblemon-team-planner
+
+2. open generate_dex.py, check the exceptions if any of them have been added to the mod. if yes, remove them.
+
+3. save and run generate_dex.py. if error about renaming pokemon occurs, do that in fix_names function in generate_dex. repeat until no error.
+
+4. open cobblemon-dict.json, copy everything except first { and last }.
+
+5. paste as new key in static/js/dexes.js. do the prettify thing descibed in the file.
+
+6. in static/js/games.js add new version by hand.
+
+7. commit and push.

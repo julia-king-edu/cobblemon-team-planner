@@ -1,14 +1,78 @@
 {
   "implemented": true,
-  "name": "Scolipede",
   "nationalPokedexNumber": 545,
+  "name": "Scolipede",
   "primaryType": "bug",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 25,
+  "weight": 2005,
+  "pokedex": [
+    "cobblemon.species.scolipede.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "poisonpoint",
     "swarm",
     "h:speedboost"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 100,
+    "defence": 89,
+    "special_attack": 55,
+    "special_defence": 69,
+    "speed": 112
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "baseExperienceYield": 243,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.95,
+  "hitbox": {
+    "width": 2.5,
+    "height": 3,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "11-15",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,74 +86,66 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 100,
-    "defence": 89,
-    "special_attack": 55,
-    "special_defence": 69,
-    "speed": 112
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.24
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "stats": {
+          "SPEED": "45-75",
+          "ACCELERATION": "20-25",
+          "SKILL": "25-35",
+          "JUMP": "25-35",
+          "STAMINA": "50-70"
+        }
       }
     },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "11-15"
-    }
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 243,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
   "moves": [
-    "1:batonpass",
     "1:defensecurl",
-    "1:irondefense",
-    "1:poisonsting",
-    "1:protect",
     "1:rollout",
+    "1:poisonsting",
+    "1:pursuit",
+    "1:protect",
+    "1:batonpass",
+    "1:steamroller",
+    "1:irondefense",
     "12:poisontail",
-    "12:pursuit",
     "16:screech",
     "20:bugbite",
     "26:venoshock",
     "34:takedown",
-    "39:steamroller",
     "42:agility",
-    "50:rockclimb",
     "50:toxic",
     "58:venomdrench",
     "66:doubleedge",
     "74:megahorn",
+    "egg:bite",
+    "egg:furycutter",
+    "egg:steamroller",
+    "egg:twineedle",
     "tm:agility",
+    "tm:aquatail",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
+    "tm:bugbite",
     "tm:bulldoze",
-    "tm:confide",
     "tm:crosspoison",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:earthquake",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:gyroball",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:infestation",
     "tm:irondefense",
@@ -98,29 +154,33 @@
     "tm:payback",
     "tm:pinmissile",
     "tm:poisonjab",
+    "tm:poisontail",
     "tm:protect",
     "tm:rest",
-    "tm:return",
+    "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:screech",
-    "tm:secretpower",
+    "tm:signalbeam",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:smartstrike",
-    "tm:snore",
+    "tm:snatch",
     "tm:solarbeam",
     "tm:spikes",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
     "tm:throatchop",
     "tm:toxic",
     "tm:toxicspikes",
@@ -129,46 +189,41 @@
     "tm:xscissor",
     "tutor:aquatail",
     "tutor:bugbite",
+    "tutor:bulldoze",
     "tutor:endeavor",
+    "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:irontail",
-    "tutor:poisontail",
+    "tutor:megahorn",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
     "tutor:signalbeam",
     "tutor:skittersmack",
     "tutor:sleeptalk",
+    "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
+    "tutor:spikes",
     "tutor:steelroller",
     "tutor:stompingtantrum",
     "tutor:superpower",
     "tutor:throatchop",
-    "tutor:toxicspikes"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.scolipede.desc"
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "preEvolution": "whirlipede",
-  "evolutions": [],
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 2.5,
-    "height": 3.0,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 25,
-  "weight": 2005,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

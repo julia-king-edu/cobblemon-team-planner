@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
+            "spawnablePositionType": "seafloor",
             "bucket": "ultra-rare",
             "level": "40-50",
             "weight": 4.0,

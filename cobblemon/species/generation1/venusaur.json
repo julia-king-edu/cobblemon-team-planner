@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Venusaur",
   "nationalPokedexNumber": 3,
+  "name": "Venusaur",
   "primaryType": "grass",
   "secondaryType": "poison",
+  "maleRatio": 0.875,
+  "height": 20,
+  "weight": 1000,
+  "pokedex": [
+    "cobblemon.species.venusaur.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:chlorophyll"
+  ],
+  "eggGroups": [
+    "monster",
+    "grass"
   ],
   "baseStats": {
     "hp": 80,
@@ -16,139 +30,98 @@
     "special_defence": 100,
     "speed": 80
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.3
-      }
-    }
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 1,
+    "speed": 0
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "grass",
-      "secondaryType": "poison",
-      "abilities": [
-        "thickfat"
-      ],
-      "baseStats": {
-        "hp": 80,
-        "attack": 100,
-        "defence": 123,
-        "special_attack": 122,
-        "special_defence": 120,
-        "speed": 80
-      },
-      "catchRate": 45,
-      "maleRatio": 0.875,
-      "baseExperienceYield": 263,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 2,
-        "special_defence": 1,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "grass"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 24,
-      "weight": 1555,
-      "cannotDynamax": false,
-      "battleOnly": true
-    },
-    {
-      "name": "Gmax",
-      "primaryType": "grass",
-      "secondaryType": "poison",
-      "abilities": [
-        "overgrow",
-        "h:chlorophyll"
-      ],
-      "baseStats": {
-        "hp": 80,
-        "attack": 82,
-        "defence": 83,
-        "special_attack": 100,
-        "special_defence": 100,
-        "speed": 80
-      },
-      "catchRate": 45,
-      "maleRatio": 0.875,
-      "baseExperienceYield": 263,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 2,
-        "special_defence": 1,
-        "speed": 0
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "grass"
-      ],
-      "labels": [
-        "gen8",
-        "gmax"
-      ],
-      "aspects": [
-        "gmax"
-      ],
-      "height": 20,
-      "weight": 0,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
   "baseExperienceYield": 263,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.2,
+  "hitbox": {
+    "height": 2,
+    "fixed": false,
+    "width": 2.2
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "40-75",
+          "JUMP": "40-60",
+          "SKILL": "10-40",
+          "SPEED": "30-55",
+          "STAMINA": "45-85"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "venusaur mega",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.135
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "night, noon"
+      ]
+    }
+  },
   "drops": {
-    "amount": 2,
+    "amount": 4,
     "entries": [
       {
-        "item": "minecraft:wheat_seeds"
+        "item": "minecraft:melon_seeds",
+        "quantityRange": "0-3"
       },
       {
-        "item": "cobblemon:coba_berry",
-        "percentage": 2.5
+        "item": "cobblemon:miracle_seed",
+        "percentage": 25.0
       }
     ]
   },
   "moves": [
+    "1:tackle",
     "1:growl",
+    "1:vinewhip",
     "1:growth",
     "1:petaldance",
-    "1:tackle",
-    "1:vinewhip",
+    "1:petalblizzard",
     "9:leechseed",
     "12:razorleaf",
     "15:poisonpowder",
@@ -158,23 +131,26 @@
     "30:sweetscent",
     "37:synthesis",
     "44:worryseed",
-    "50:petalblizzard",
-    "51:doubleedge",
     "51:powerwhip",
     "58:solarbeam",
+    "egg:curse",
+    "egg:grasswhistle",
+    "egg:ingrain",
+    "egg:petaldance",
+    "egg:skullbash",
+    "egg:sludge",
+    "egg:toxic",
     "tm:acidspray",
     "tm:amnesia",
-    "tm:attract",
+    "tm:bind",
+    "tm:block",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -184,143 +160,207 @@
     "tm:falseswipe",
     "tm:flash",
     "tm:frenzyplant",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grasspledge",
     "tm:grassyglide",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:knockoff",
     "tm:leafstorm",
-    "tm:lightscreen",
     "tm:magicalleaf",
-    "tm:naturalgift",
     "tm:naturepower",
-    "tm:outrage",
     "tm:petalblizzard",
     "tm:poisonjab",
     "tm:powerwhip",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockclimb",
     "tm:rocksmash",
-    "tm:round",
     "tm:safeguard",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stompingtantrum",
     "tm:strength",
+    "tm:stringshot",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
+    "tm:terrainpulse",
     "tm:toxic",
     "tm:trailblaze",
     "tm:venoshock",
     "tm:weatherball",
     "tm:workup",
-    "tutor:amnesia",
-    "tutor:attract",
-    "tutor:bide",
+    "tm:worryseed",
     "tutor:bind",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:earthquake",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flash",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:energyball",
+    "tutor:falseswipe",
     "tutor:frenzyplant",
-    "tutor:frustration",
     "tutor:furycutter",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grasspledge",
     "tutor:grassyglide",
-    "tutor:growl",
-    "tutor:growth",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:knockoff",
-    "tutor:leechseed",
-    "tutor:lightscreen",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:outrage",
-    "tutor:petaldance",
-    "tutor:poisonpowder",
-    "tutor:powerwhip",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:razorleaf",
-    "tutor:reflect",
+    "tutor:magicalleaf",
+    "tutor:poisonjab",
     "tutor:rest",
-    "tutor:return",
-    "tutor:roar",
+    "tutor:rocksmash",
     "tutor:seedbomb",
-    "tutor:sleeppowder",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
     "tutor:stompingtantrum",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:tackle",
-    "tutor:takedown",
     "tutor:terrainpulse",
-    "tutor:toxic",
-    "tutor:vinewhip",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.venusaur.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:lightscreen",
+    "legacy:megadrain",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:outrage",
+    "legacy:rage",
+    "legacy:razorwind",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "special:block",
+    "special:celebrate",
+    "special:frenzyplant"
   ],
   "preEvolution": "ivysaur",
   "evolutions": [],
-  "baseScale": 2,
-  "hitbox": {
-    "width": 1.5,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 1000,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "grass",
+      "secondaryType": "poison",
+      "maleRatio": 0.875,
+      "height": 24,
+      "weight": 1555,
+      "pokedex": [
+        "cobblemon.species.venusaur-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "thickfat",
+        "h:thickfat"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 100,
+        "defence": 123,
+        "special_attack": 122,
+        "special_defence": 120,
+        "speed": 80
+      },
+      "baseExperienceYield": 313,
+      "riding": {
+        "behaviour": {
+          "key": "cobblemon:land/horse"
+        },
+        "seats": [],
+        "stats": {
+          "ACCELERATION": {
+            "ranges": "10-65"
+          },
+          "JUMP": {
+            "ranges": "20-40"
+          },
+          "SKILL": {
+            "ranges": "40-85"
+          },
+          "SPEED": {
+            "ranges": "20-50"
+          },
+          "STAMINA": {
+            "ranges": "40-85"
+          }
+        }
+      },
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "herd": {
+          "maxSize": "8"
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042,
+          "times": [
+            "night, noon"
+          ]
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    },
+    {
+      "name": "Gmax",
+      "primaryType": "grass",
+      "secondaryType": "poison",
+      "maleRatio": 0.875,
+      "height": 240,
+      "weight": 0,
+      "pokedex": [
+        "cobblemon.species.venusaur-gmax.desc"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "aspects": [
+        "gmax"
+      ],
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    }
+  ],
+  "standingEyeHeight": 0.4,
+  "swimmingEyeHeight": 0.4
 }

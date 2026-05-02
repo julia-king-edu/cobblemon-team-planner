@@ -8,10 +8,11 @@
             "pokemon": "metapod",
             "presets": [
                 "natural",
+                "foliage",
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "7-21",
             "weight": 2.0,
@@ -19,7 +20,10 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_forest"
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
                 ]
             },
             "anticondition": {
@@ -30,35 +34,14 @@
             }
         },
         {
-            "id": "metapod-2",
-            "pokemon": "metapod",
-            "presets": [
-                "natural",
-                "foliage",
-                "treetop"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "7-21",
-            "weight": 2.0,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_plains"
-                ]
-            }
-        },
-        {
-            "id": "metapod-valencian-3",
+            "id": "metapod-valencian-2",
             "pokemon": "metapod valencian",
             "presets": [
                 "natural",
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "7-21",
             "weight": 2.0,
@@ -72,10 +55,10 @@
             }
         },
         {
-            "id": "metapod-valencian-4",
+            "id": "metapod-valencian-3",
             "pokemon": "metapod valencian",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "7-21",
             "weight": 1.0,

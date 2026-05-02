@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "6-31",
             "weight": 9.0,
@@ -25,6 +25,26 @@
                 "maxSkyLight": 15,
                 "biomes": [
                     "#cobblemon:is_savanna"
+                ]
+            }
+        },
+        {
+            "id": "doduo-2",
+            "pokemon": "doduo",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "6-31",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "aether:skyroot_grove",
+                    "aether:skyroot_meadow"
                 ]
             }
         }

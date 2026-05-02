@@ -1,12 +1,78 @@
 {
   "implemented": true,
-  "name": "Dachsbun",
   "nationalPokedexNumber": 927,
+  "name": "Dachsbun",
   "primaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 149,
+  "pokedex": [
+    "cobblemon.species.dachsbun.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "wellbakedbody",
     "h:aromaveil"
   ],
+  "eggGroups": [
+    "field",
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 57,
+    "attack": 80,
+    "defence": 115,
+    "special_attack": 50,
+    "special_defence": 80,
+    "speed": 95
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 167,
+  "experienceGroup": "medium_slow",
+  "catchRate": 90,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1.3,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "entityInteract": {
+      "avoidedBySkeleton": true
+    },
+    "herd": {
+      "maxSize": "3"
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -20,35 +86,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 57,
-    "attack": 80,
-    "defence": 115,
-    "special_attack": 50,
-    "special_defence": 80,
-    "speed": 95
-  },
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 167,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "mineral"
-  ],
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "3:lick",
     "6:tailwhip",
     "8:covet",
@@ -62,12 +102,19 @@
     "42:charm",
     "47:crunch",
     "53:lastresort",
+    "egg:copycat",
+    "egg:howl",
+    "egg:sweetscent",
+    "egg:wish",
+    "egg:yawn",
     "tm:agility",
     "tm:alluringvoice",
+    "tm:babydolleyes",
     "tm:batonpass",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:charm",
+    "tm:covet",
     "tm:crunch",
     "tm:dazzlinggleam",
     "tm:dig",
@@ -81,6 +128,7 @@
     "tm:helpinghand",
     "tm:hyperbeam",
     "tm:icefang",
+    "tm:lastresort",
     "tm:mistyterrain",
     "tm:mudshot",
     "tm:mudslap",
@@ -100,37 +148,26 @@
     "tm:takedown",
     "tm:terablast",
     "tm:thunderfang",
-    "tm:trailblaze"
+    "tm:trailblaze",
+    "tm:workup",
+    "tutor:babydolleyes",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:endeavor",
+    "tutor:firefang",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icefang",
+    "tutor:lastresort",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:stompingtantrum",
+    "tutor:thunderfang"
   ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.3
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.1,
-    "fixed": false
-  },
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 5,
-  "weight": 149,
   "preEvolution": "fidough",
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.dachsbun.desc"
-  ]
+  "evolutions": []
 }

@@ -1,14 +1,72 @@
 {
   "implemented": true,
-  "name": "Crabominable",
   "nationalPokedexNumber": 740,
+  "name": "Crabominable",
   "primaryType": "fighting",
   "secondaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 17,
+  "weight": 1800,
+  "pokedex": [
+    "cobblemon.species.crabominable.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "hypercutter",
     "ironfist",
     "h:angerpoint"
   ],
+  "eggGroups": [
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 97,
+    "attack": 132,
+    "defence": 77,
+    "special_attack": 62,
+    "special_defence": 67,
+    "speed": 43
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 167,
+  "experienceGroup": "medium_fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.8,
+    "height": 2.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "swimSpeed": "0.2",
+        "canSwimInWater": false
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -18,34 +76,18 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 97,
-    "attack": 132,
-    "defence": 77,
-    "special_attack": 62,
-    "special_defence": 67,
-    "speed": 43
-  },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 167,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_3"
-  ],
   "moves": [
-    "1:bubble",
     "1:icepunch",
-    "1:leer",
-    "1:protect",
-    "1:pursuit",
+    "1:bubble",
     "1:rocksmash",
+    "1:leer",
+    "1:pursuit",
+    "1:dizzypunch",
+    "1:protect",
+    "1:crabhammer",
+    "1:visegrip",
     "17:bubblebeam",
     "22:brickbreak",
-    "22:poweruppunch",
-    "25:dizzypunch",
     "25:slam",
     "29:avalanche",
     "33:reversal",
@@ -53,10 +95,15 @@
     "42:irondefense",
     "45:dynamicpunch",
     "49:closecombat",
+    "egg:endeavor",
+    "egg:focuspunch",
+    "egg:slam",
+    "egg:superpower",
+    "egg:wideguard",
     "tm:amnesia",
-    "tm:attract",
     "tm:avalanche",
     "tm:blizzard",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
@@ -66,10 +113,9 @@
     "tm:chillingwater",
     "tm:closecombat",
     "tm:coaching",
-    "tm:confide",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drainpunch",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:endeavor",
     "tm:endure",
@@ -78,13 +124,11 @@
     "tm:focusblast",
     "tm:focuspunch",
     "tm:frostbreath",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:gunkshot",
-    "tm:hardpress",
     "tm:hail",
+    "tm:hardpress",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icepunch",
@@ -97,71 +141,71 @@
     "tm:mudshot",
     "tm:mudslap",
     "tm:payback",
+    "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:rockslide",
+    "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
     "tm:scaryface",
     "tm:sleeptalk",
     "tm:snowscape",
     "tm:stompingtantrum",
-    "tm:stoneedge",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superpower",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:upperhand",
     "tm:workup",
     "tm:zenheadbutt",
     "tutor:block",
+    "tutor:bulkup",
+    "tutor:bulldoze",
+    "tutor:coaching",
     "tutor:drainpunch",
     "tutor:dualchop",
     "tutor:endeavor",
     "tutor:focuspunch",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:ironhead",
-    "tutor:snore",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
     "tutor:superpower",
+    "tutor:swift",
     "tutor:thunderpunch",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.crabominable.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:snore",
+    "legacy:stoneedge",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "crabrawler",
-  "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.8,
-    "height": 2.7,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 17,
-  "weight": 1800,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

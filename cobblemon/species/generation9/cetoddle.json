@@ -1,13 +1,85 @@
 {
   "implemented": true,
-  "name": "Cetoddle",
   "nationalPokedexNumber": 974,
+  "name": "Cetoddle",
   "primaryType": "ice",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 450,
+  "pokedex": [
+    "cobblemon.species.cetoddle.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "snowcloak",
     "h:sheerforce"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 108,
+    "attack": 68,
+    "defence": 45,
+    "special_attack": 30,
+    "special_defence": 40,
+    "speed": 43
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 67,
+  "experienceGroup": "medium_slow",
+  "catchRate": 150,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cetoddle",
+          "tier": 1
+        },
+        {
+          "pokemon": "cetitan",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,47 +93,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 108,
-    "attack": 68,
-    "defence": 45,
-    "special_attack": 30,
-    "special_defence": 40,
-    "speed": 43
-  },
-  "catchRate": 150,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 67,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 25,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:powdersnow",
     "1:tackle",
+    "1:powdersnow",
     "6:growl",
     "9:echoedvoice",
     "12:iceshard",
@@ -85,12 +119,14 @@
     "tm:blizzard",
     "tm:bodypress",
     "tm:bodyslam",
+    "tm:bounce",
     "tm:bulldoze",
     "tm:charm",
     "tm:chillingwater",
     "tm:curse",
     "tm:doubleedge",
     "tm:earthquake",
+    "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:heavyslam",
@@ -113,16 +149,28 @@
     "tm:snowscape",
     "tm:stompingtantrum",
     "tm:substitute",
+    "tm:superpower",
     "tm:takedown",
     "tm:terablast",
-    "tm:waterpulse"
+    "tm:waterpulse",
+    "tutor:bounce",
+    "tutor:bulldoze",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:icebeam",
+    "tutor:icefang",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:liquidation",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:waterpulse"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 12,
-  "weight": 450,
   "evolutions": [
     {
       "id": "cetoddle_cetitan",
@@ -133,15 +181,5 @@
       "requirements": [],
       "requiredContext": "cobblemon:ice_stone"
     }
-  ],
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 1.0,
-    "height": 1.0,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.cetoddle.desc"
   ]
 }

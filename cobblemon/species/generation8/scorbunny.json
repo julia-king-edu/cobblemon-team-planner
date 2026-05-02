@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Scorbunny",
   "nationalPokedexNumber": 813,
+  "name": "Scorbunny",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 3,
+  "weight": 45,
+  "pokedex": [
+    "cobblemon.species.scorbunny.desc"
+  ],
+  "labels": [
+    "gen8",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:libero"
+  ],
+  "eggGroups": [
+    "field",
+    "human_like"
   ],
   "baseStats": {
     "hp": 50,
@@ -15,16 +30,25 @@
     "special_defence": 40,
     "speed": 69
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
   "baseExperienceYield": 62,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "human_like"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.3,
+    "fixed": false
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -46,8 +70,8 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "6:ember",
     "8:quickattack",
     "12:doublekick",
@@ -65,7 +89,6 @@
     "tm:agility",
     "tm:allyswitch",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:blazekick",
     "tm:bounce",
@@ -83,20 +106,19 @@
     "tm:flareblitz",
     "tm:focusenergy",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:heatwave",
     "tm:helpinghand",
     "tm:lowkick",
     "tm:lowsweep",
     "tm:megakick",
-    "tm:mudshot",
     "tm:overheat",
     "tm:protect",
     "tm:rest",
     "tm:reversal",
-    "tm:round",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
     "tm:superfang",
     "tm:swift",
@@ -107,13 +129,26 @@
     "tm:trailblaze",
     "tm:uturn",
     "tm:workup",
-    "tutor:firepledge"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.scorbunny.desc"
+    "tutor:allyswitch",
+    "tutor:bounce",
+    "tutor:burningjealousy",
+    "tutor:firefang",
+    "tutor:firepledge",
+    "tutor:flamethrower",
+    "tutor:focusenergy",
+    "tutor:gunkshot",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:lowkick",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:superfang",
+    "tutor:swift",
+    "legacy:attract",
+    "legacy:mudshot",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -130,23 +165,58 @@
       ]
     }
   ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 45,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bunnelby",
+          "tier": 1
+        },
+        {
+          "pokemon": "buneary",
+          "tier": 2
+        },
+        {
+          "pokemon": "scorbunny",
+          "tier": 3
+        },
+        {
+          "pokemon": "lopunny mega=false",
+          "tier": 4
+        },
+        {
+          "pokemon": "diggersby",
+          "tier": 4
+        },
+        {
+          "pokemon": "raboot",
+          "tier": 4
+        },
+        {
+          "pokemon": "lopunny mega",
+          "tier": 5
+        },
+        {
+          "pokemon": "cinderace",
+          "tier": 6
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  }
 }

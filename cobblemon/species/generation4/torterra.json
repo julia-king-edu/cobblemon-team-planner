@@ -1,22 +1,27 @@
 {
   "implemented": true,
-  "name": "Torterra",
   "nationalPokedexNumber": 389,
+  "name": "Torterra",
   "primaryType": "grass",
   "secondaryType": "ground",
+  "maleRatio": 0.875,
+  "height": 22,
+  "weight": 3100,
+  "pokedex": [
+    "cobblemon.species.torterra.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:shellarmor"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:miracle_seed",
-        "percentage": 25.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
   "baseStats": {
     "hp": 95,
     "attack": 109,
@@ -25,59 +30,105 @@
     "special_defence": 85,
     "speed": 56
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 236,
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 263,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 2.25,
+    "height": 2.4,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
         "walkSpeed": 0.15
+      },
+      "swim": {
+        "avoidsWater": true
       }
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "torterra",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:apple",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 25.0
+      }
+    ]
+  },
   "moves": [
-    "1:absorb",
-    "1:earthquake",
-    "1:razorleaf",
+    "1:woodhammer",
     "1:tackle",
     "1:withdraw",
-    "1:woodhammer",
+    "1:absorb",
+    "1:razorleaf",
+    "1:earthquake",
     "17:curse",
     "22:bite",
     "27:megadrain",
-    "32:earthquake",
     "33:leechseed",
     "39:synthesis",
     "45:crunch",
     "51:gigadrain",
     "57:leafstorm",
     "63:headlongrush",
+    "egg:doubleedge",
+    "egg:growth",
+    "egg:shellsmash",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:superpower",
+    "egg:swallow",
+    "egg:thrash",
+    "egg:tickle",
+    "egg:wideguard",
+    "egg:worryseed",
     "tm:amnesia",
-    "tm:attract",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:curse",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -85,7 +136,6 @@
     "tm:facade",
     "tm:flash",
     "tm:frenzyplant",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
@@ -93,26 +143,25 @@
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:hypervoice",
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
+    "tm:leafage",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:magicalleaf",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:outrage",
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockblast",
     "tm:rockclimb",
@@ -120,13 +169,11 @@
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:smackdown",
@@ -137,61 +184,60 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superpower",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:workup",
+    "tm:worryseed",
     "tm:zenheadbutt",
     "tutor:block",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:earthquake",
+    "tutor:energyball",
     "tutor:frenzyplant",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grasspledge",
-    "tutor:headbutt",
+    "tutor:grassyglide",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
+    "tutor:magicalleaf",
     "tutor:mudslap",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:scorchingsands",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
     "tutor:stoneedge",
     "tutor:superpower",
     "tutor:synthesis",
-    "tutor:woodhammer",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.torterra.desc"
+    "tutor:worryseed",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "grotle",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 22,
-  "weight": 3100,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

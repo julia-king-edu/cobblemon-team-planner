@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -25,7 +25,7 @@
                     "#cobblemon:is_tropical_island"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ]
             },
             "anticondition": {
@@ -41,7 +41,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -65,7 +65,7 @@
             "id": "squirtle-3",
             "pokemon": "squirtle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -92,7 +92,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,
@@ -118,7 +118,7 @@
             "id": "squirtle-5",
             "pokemon": "squirtle",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "5-31",
             "weight": 6.0,

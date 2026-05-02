@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "32-53",
             "weight": 0.4,
@@ -18,6 +18,7 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_floral"
                 ]
             }
@@ -26,7 +27,7 @@
             "id": "meganium-2",
             "pokemon": "meganium",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "32-53",
             "weight": 0.4,

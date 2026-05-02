@@ -1,19 +1,95 @@
 {
   "implemented": true,
-  "name": "Litwick",
   "nationalPokedexNumber": 607,
+  "name": "Litwick",
   "primaryType": "ghost",
   "secondaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 31,
+  "pokedex": [
+    "cobblemon.species.litwick.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "flashfire",
     "flamebody",
     "h:infiltrator"
   ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 30,
+    "defence": 55,
+    "special_attack": 65,
+    "special_defence": 55,
+    "speed": 20
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 55,
+  "experienceGroup": "medium_slow",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "standingEyeHeight": 0.4,
+  "swimmingEyeHeight": 0.4,
+  "flyingEyeHeight": 0.4,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.65,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "12-15",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "litwick",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 3,
     "entries": [
       {
-        "item": "minecraft:candle"
+        "item": "minecraft:candle",
+        "quantityRange": "0-1"
       },
       {
         "item": "cobblemon:dusk_stone",
@@ -25,31 +101,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 50,
-    "attack": 30,
-    "defence": 55,
-    "special_attack": 65,
-    "special_defence": 55,
-    "speed": 20
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 55,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "12-15"
-    }
-  },
   "moves": [
     "1:astonish",
     "1:smog",
@@ -58,7 +109,6 @@
     "12:confuseray",
     "16:hex",
     "20:flameburst",
-    "20:willowisp",
     "24:firespin",
     "28:nightshade",
     "32:curse",
@@ -72,19 +122,15 @@
     "egg:acidarmor",
     "egg:captivate",
     "egg:clearsmog",
-    "egg:endure",
     "egg:haze",
-    "egg:heatwave",
     "egg:powersplit",
     "tm:allyswitch",
-    "tm:attract",
     "tm:burningjealousy",
     "tm:calmmind",
+    "tm:captivate",
     "tm:confuseray",
-    "tm:confide",
     "tm:curse",
     "tm:darkpulse",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:embargo",
     "tm:endure",
@@ -96,11 +142,9 @@
     "tm:flamethrower",
     "tm:flareblitz",
     "tm:flash",
-    "tm:frustration",
     "tm:haze",
     "tm:heatwave",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:imprison",
     "tm:incinerate",
     "tm:mysticalfire",
@@ -113,47 +157,53 @@
     "tm:psychic",
     "tm:psychup",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spite",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:taunt",
-    "tm:temperflare",
     "tm:telekinesis",
+    "tm:temperflare",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:willowisp",
     "tutor:allyswitch",
     "tutor:burningjealousy",
+    "tutor:calmmind",
     "tutor:darkpulse",
+    "tutor:energyball",
+    "tutor:flamethrower",
     "tutor:heatwave",
+    "tutor:mysticalfire",
     "tutor:painsplit",
     "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:spite",
     "tutor:telekinesis",
-    "tutor:trick"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.litwick.desc"
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -170,23 +220,8 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 31,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 11,
+    "liquidGlowMode": "LAND"
+  }
 }

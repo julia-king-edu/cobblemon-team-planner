@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "38-46",
             "weight": 0.96,
@@ -25,7 +25,7 @@
             "id": "palafin-2",
             "pokemon": "palafin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "38-46",
             "weight": 0.96,
@@ -43,14 +43,14 @@
             "id": "palafin-3",
             "pokemon": "palafin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "38-46",
             "weight": 0.2,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -68,7 +68,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "38-46",
             "weight": 0.96,
@@ -85,7 +85,7 @@
             "id": "palafin-5",
             "pokemon": "palafin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "38-46",
             "weight": 0.96,
@@ -105,14 +105,14 @@
             "id": "palafin-6",
             "pokemon": "palafin",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "38-46",
             "weight": 0.2,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

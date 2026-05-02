@@ -1,13 +1,79 @@
 {
   "implemented": true,
-  "name": "Boldore",
   "nationalPokedexNumber": 525,
+  "name": "Boldore",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 9,
+  "weight": 1020,
+  "pokedex": [
+    "cobblemon.species.boldore.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "weakarmor",
     "h:sandforce"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 70,
+    "attack": 105,
+    "defence": 105,
+    "special_attack": 50,
+    "special_defence": 40,
+    "speed": 20
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 137,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.12
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -29,42 +95,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 70,
-    "attack": 105,
-    "defence": 105,
-    "special_attack": 50,
-    "special_defence": 40,
-    "speed": 20
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 137,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "mineral"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.12
-      }
-    }
-  },
   "moves": [
-    "1:harden",
-    "1:powergem",
-    "1:sandattack",
-    "1:stealthrock",
     "1:tackle",
+    "1:harden",
+    "1:sandattack",
+    "1:powergem",
+    "1:stealthrock",
     "12:mudslap",
     "16:smackdown",
     "20:irondefense",
@@ -74,63 +110,75 @@
     "42:sandstorm",
     "48:stoneedge",
     "54:explosion",
-    "tm:attract",
+    "egg:autotomize",
+    "egg:curse",
+    "egg:gravity",
+    "egg:lockon",
+    "egg:magnitude",
+    "egg:takedown",
+    "egg:wideguard",
+    "tm:block",
     "tm:bodypress",
     "tm:bulldoze",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:curse",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:explosion",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:gravity",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:irondefense",
+    "tm:meteorbeam",
+    "tm:mudslap",
     "tm:naturepower",
     "tm:powergem",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:takedown",
+    "tm:terablast",
     "tutor:block",
-    "tutor:curse",
+    "tutor:bulldoze",
     "tutor:earthpower",
+    "tutor:flashcannon",
     "tutor:gravity",
-    "tutor:heavyslam",
     "tutor:irondefense",
     "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:smackdown",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:stompingtantrum"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.boldore.desc"
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "roggenrola",
   "evolutions": [
@@ -142,24 +190,5 @@
       "learnableMoves": [],
       "requirements": []
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 1020,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

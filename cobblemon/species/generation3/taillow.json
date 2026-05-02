@@ -1,13 +1,89 @@
 {
   "implemented": true,
-  "name": "Taillow",
   "nationalPokedexNumber": 276,
+  "name": "Taillow",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 23,
+  "pokedex": [
+    "cobblemon.species.taillow.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "guts",
     "h:scrappy"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 30,
+    "special_attack": 30,
+    "special_defence": 30,
+    "speed": 85
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 54,
+  "experienceGroup": "medium_slow",
+  "catchRate": 200,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.65,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "taillow",
+          "tier": 1
+        },
+        {
+          "pokemon": "swellow",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -24,39 +100,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 55,
-    "defence": 30,
-    "special_attack": 30,
-    "special_defence": 30,
-    "speed": 85
-  },
-  "catchRate": 200,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 54,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:growl",
     "1:peck",
+    "1:growl",
     "5:focusenergy",
     "9:quickattack",
     "13:wingattack",
@@ -69,79 +115,81 @@
     "41:bravebird",
     "45:reversal",
     "egg:boomburst",
-    "egg:bravebird",
-    "egg:defog",
-    "egg:hurricane",
     "egg:mirrormove",
     "egg:pursuit",
     "egg:rage",
     "egg:refresh",
-    "egg:roost",
-    "egg:skyattack",
-    "egg:steelwing",
     "egg:supersonic",
     "egg:whirlwind",
     "tm:aerialace",
-    "tm:attract",
-    "tm:captivate",
-    "tm:confide",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:assurance",
+    "tm:batonpass",
+    "tm:bravebird",
     "tm:defog",
     "tm:doubleteam",
+    "tm:dualwingbeat",
     "tm:echoedvoice",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:fly",
-    "tm:frustration",
-    "tm:hiddenpower",
-    "tm:naturalgift",
+    "tm:focusenergy",
+    "tm:heatwave",
+    "tm:hurricane",
+    "tm:mudslap",
+    "tm:ominouswind",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
+    "tm:reversal",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:tailwind",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
+    "tm:twister",
     "tm:uturn",
     "tm:workup",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:bravebird",
-    "tutor:counter",
     "tutor:defog",
-    "tutor:doubleedge",
+    "tutor:dualwingbeat",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:featherdance",
     "tutor:focusenergy",
-    "tutor:growl",
     "tutor:heatwave",
-    "tutor:mimic",
-    "tutor:mirrormove",
     "tutor:mudslap",
     "tutor:ominouswind",
-    "tutor:peck",
+    "tutor:rest",
     "tutor:roost",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swift",
     "tutor:tailwind",
-    "tutor:twister"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.taillow.desc"
+    "tutor:twister",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:doubleedge",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic",
+    "special:featherdance"
   ],
   "evolutions": [
     {
@@ -157,24 +205,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.65,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 23,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

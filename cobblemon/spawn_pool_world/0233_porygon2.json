@@ -7,7 +7,7 @@
             "id": "porygon2-1",
             "pokemon": "porygon2",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "35-52",
             "weight": 0.72,

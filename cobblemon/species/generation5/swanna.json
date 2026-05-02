@@ -1,13 +1,85 @@
 {
-  "name": "Swanna",
+  "implemented": true,
   "nationalPokedexNumber": 581,
+  "name": "Swanna",
   "primaryType": "water",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 13,
+  "weight": 242,
+  "pokedex": [
+    "cobblemon.species.swanna.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "bigpecks",
     "h:hydration"
   ],
+  "eggGroups": [
+    "water_1",
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 75,
+    "attack": 87,
+    "defence": 63,
+    "special_attack": 87,
+    "special_defence": 63,
+    "speed": 98
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 166,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.28
+      },
+      "swim": {
+        "swimSpeed": 0.17,
+        "canWalkOnWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "swanna",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -28,28 +100,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 75,
-    "attack": 87,
-    "defence": 63,
-    "special_attack": 87,
-    "special_defence": 63,
-    "speed": 98
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 166,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "flying"
-  ],
   "moves": [
-    "1:defog",
     "1:watergun",
     "1:watersport",
+    "1:defog",
     "1:wingattack",
     "13:waterpulse",
     "15:aerialace",
@@ -62,30 +116,37 @@
     "40:tailwind",
     "47:bravebird",
     "55:hurricane",
+    "egg:aquajet",
+    "egg:brine",
+    "egg:dive",
+    "egg:endeavor",
+    "egg:gust",
+    "egg:luckychant",
+    "egg:mefirst",
+    "egg:mirrormove",
+    "egg:mudsport",
+    "egg:steelwing",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:aircutter",
     "tm:airslash",
     "tm:alluringvoice",
-    "tm:attract",
     "tm:bravebird",
+    "tm:brine",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:defog",
     "tm:disarmingvoice",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:featherdance",
     "tm:flipturn",
     "tm:fly",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hydropump",
     "tm:hyperbeam",
@@ -97,61 +158,53 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
+    "tutor:aerialace",
+    "tutor:aircutter",
     "tutor:defog",
+    "tutor:dive",
     "tutor:endeavor",
+    "tutor:flipturn",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
+    "tutor:knockoff",
     "tutor:liquidation",
+    "tutor:rest",
     "tutor:roost",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:swift",
     "tutor:tailwind",
-    "tutor:uproar",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.swanna.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "ducklett",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 13,
-  "weight": 242,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

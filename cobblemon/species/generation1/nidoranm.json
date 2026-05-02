@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Nidoran-M",
   "nationalPokedexNumber": 32,
+  "name": "Nidoran-M",
   "primaryType": "poison",
+  "maleRatio": 1,
+  "height": 5,
+  "weight": 90,
+  "pokedex": [
+    "cobblemon.species.nidoranm.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "poisonpoint",
     "rivalry",
     "h:hustle"
+  ],
+  "eggGroups": [
+    "monster",
+    "field"
   ],
   "baseStats": {
     "hp": 46,
@@ -16,24 +30,71 @@
     "special_defence": 40,
     "speed": 50
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 55,
+  "experienceGroup": "medium_slow",
+  "catchRate": 235,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.8,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "nidoranf",
+          "tier": 1
+        },
+        {
+          "pokemon": "nidoranm",
+          "tier": 2
+        },
+        {
+          "pokemon": "nidorino",
+          "tier": 3
+        },
+        {
+          "pokemon": "nidorina",
+          "tier": 4
+        },
+        {
+          "pokemon": "nidoking",
+          "tier": 5
+        },
+        {
+          "pokemon": "nidoqueen",
+          "tier": 6
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 235,
-  "maleRatio": 1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 55,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "field"
-  ],
   "drops": {
     "amount": 2,
     "entries": [
@@ -58,68 +119,58 @@
     "30:hornattack",
     "35:helpinghand",
     "40:toxic",
-    "43:captivate",
     "45:flatter",
-    "45:horndrill",
     "50:poisonjab",
     "55:earthpower",
-    "egg:amnesia",
-    "egg:beatup",
+    "egg:captivate",
     "egg:chipaway",
     "egg:confusion",
     "egg:counter",
     "egg:disable",
-    "egg:endure",
     "egg:headsmash",
     "egg:horndrill",
-    "egg:irontail",
     "egg:poisontail",
     "egg:suckerpunch",
     "egg:supersonic",
     "egg:takedown",
     "egg:thrash",
-    "egg:venomdrench",
     "tm:amnesia",
-    "tm:attract",
     "tm:beatup",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:captivate",
-    "tm:confide",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drillrun",
     "tm:earthpower",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:icebeam",
     "tm:irontail",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:poisonjab",
+    "tm:poisontail",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:smartstrike",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superfang",
+    "tm:takedown",
+    "tm:terablast",
     "tm:thief",
     "tm:thunder",
     "tm:thunderbolt",
@@ -128,71 +179,45 @@
     "tm:venomdrench",
     "tm:venoshock",
     "tm:waterpulse",
-    "tutor:amnesia",
-    "tutor:attract",
-    "tutor:beatup",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:confusion",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:detect",
-    "tutor:dig",
-    "tutor:disable",
-    "tutor:doubleedge",
-    "tutor:doublekick",
-    "tutor:doubleteam",
     "tutor:drillrun",
-    "tutor:endure",
-    "tutor:facade",
+    "tutor:earthpower",
     "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:furyattack",
-    "tutor:headbutt",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
-    "tutor:hornattack",
-    "tutor:horndrill",
     "tutor:icebeam",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:peck",
     "tutor:poisonjab",
-    "tutor:poisonsting",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
+    "tutor:rocksmash",
+    "tutor:shadowclaw",
     "tutor:shockwave",
-    "tutor:skullbash",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:sunnyday",
     "tutor:superfang",
-    "tutor:supersonic",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:toxic",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.nidoranm.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:defensecurl",
+    "legacy:detect",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:tackle"
   ],
   "evolutions": [
     {
@@ -208,24 +233,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 90,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

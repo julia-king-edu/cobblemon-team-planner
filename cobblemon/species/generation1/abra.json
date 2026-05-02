@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Abra",
   "nationalPokedexNumber": 63,
+  "name": "Abra",
   "primaryType": "psychic",
+  "maleRatio": 0.75,
+  "height": 9,
+  "weight": 195,
+  "pokedex": [
+    "cobblemon.species.abra.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "synchronize",
     "innerfocus",
     "h:magicguard"
+  ],
+  "eggGroups": [
+    "human_like"
   ],
   "baseStats": {
     "hp": 25,
@@ -16,31 +29,48 @@
     "special_defence": 55,
     "speed": 90
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 200,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.85,
+  "hitbox": {
+    "width": 1,
+    "height": 1.2,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
-      "walk": {
-        "canWalk": false
-      },
       "fly": {
         "canFly": true
-      }
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "canLook": false
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.01,
+      "rouseChance": 0.0033
+    },
+    "entityInteract": {
+      "avoidedByPhantom": true
     }
   },
-  "catchRate": 200,
-  "maleRatio": 0.75,
-  "shoulderMountable": false,
-  "baseExperienceYield": 62,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "human_like"
-  ],
   "drops": {
     "amount": 3,
     "entries": [
@@ -60,30 +90,17 @@
   },
   "moves": [
     "1:teleport",
-    "egg:allyswitch",
     "egg:barrier",
     "egg:confusion",
-    "egg:encore",
-    "egg:firepunch",
     "egg:guardsplit",
-    "egg:guardswap",
-    "egg:icepunch",
-    "egg:knockoff",
     "egg:magiccoat",
     "egg:powertrick",
-    "egg:psychicterrain",
     "egg:psychoshift",
-    "egg:skillswap",
-    "egg:thunderpunch",
     "tm:allyswitch",
-    "tm:attract",
     "tm:bodyslam",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
-    "tm:confide",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:dreameater",
     "tm:embargo",
@@ -96,18 +113,19 @@
     "tm:fling",
     "tm:focuspunch",
     "tm:foulplay",
-    "tm:frustration",
     "tm:grassknot",
+    "tm:gravity",
     "tm:guardswap",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:icepunch",
     "tm:irontail",
+    "tm:knockoff",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
-    "tm:naturalgift",
     "tm:powerswap",
     "tm:protect",
     "tm:psychic",
@@ -118,112 +136,88 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
-    "tm:snore",
     "tm:speedswap",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:taunt",
     "tm:telekinesis",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:triattack",
     "tm:trick",
     "tm:trickroom",
     "tm:wonderroom",
     "tm:zenheadbutt",
     "tutor:allyswitch",
-    "tutor:attract",
-    "tutor:barrier",
-    "tutor:bide",
-    "tutor:bodyslam",
     "tutor:calmmind",
-    "tutor:counter",
-    "tutor:curse",
+    "tutor:chargebeam",
     "tutor:dazzlinggleam",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:drainpunch",
-    "tutor:dreameater",
-    "tutor:dynamicpunch",
-    "tutor:encore",
-    "tutor:endure",
-    "tutor:facade",
+    "tutor:energyball",
     "tutor:firepunch",
-    "tutor:flash",
     "tutor:focuspunch",
     "tutor:foulplay",
-    "tutor:frustration",
     "tutor:gravity",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:icepunch",
     "tutor:irontail",
     "tutor:knockoff",
-    "tutor:lightscreen",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
-    "tutor:nightmare",
-    "tutor:protect",
     "tutor:psychic",
-    "tutor:psychup",
-    "tutor:psywave",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:recycle",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:roleplay",
-    "tutor:seismictoss",
     "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
-    "tutor:skullbash",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:taunt",
+    "tutor:swift",
     "tutor:telekinesis",
-    "tutor:teleport",
-    "tutor:thief",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:triattack",
     "tutor:trick",
     "tutor:wonderroom",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.abra.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:psywave",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:submission",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:toxic",
+    "legacy:zapcannon"
   ],
   "evolutions": [
     {
@@ -232,6 +226,7 @@
       "result": "kadabra",
       "consumeHeldItem": false,
       "learnableMoves": [
+        "kinesis",
         "confusion"
       ],
       "requirements": [
@@ -241,24 +236,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.85,
-  "hitbox": {
-    "width": 1,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 195,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

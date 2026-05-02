@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Magneton",
   "nationalPokedexNumber": 82,
+  "name": "Magneton",
   "primaryType": "electric",
   "secondaryType": "steel",
+  "maleRatio": -1,
+  "height": 10,
+  "weight": 600,
+  "pokedex": [
+    "cobblemon.species.magneton.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "magnetpull",
     "sturdy",
     "h:analytic"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 50,
@@ -17,19 +30,32 @@
     "special_defence": 70,
     "speed": 70
   },
-  "catchRate": 60,
-  "maleRatio": -1,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 163,
   "experienceGroup": "medium_fast",
+  "catchRate": 60,
   "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
       },
       "walk": {
         "canWalk": false
@@ -37,9 +63,30 @@
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "magneton",
+          "tier": 1
+        },
+        {
+          "pokemon": "magnezone",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
     }
   },
   "drops": {
@@ -64,18 +111,18 @@
     ]
   },
   "moves": [
-    "1:electricterrain",
-    "1:magnetbomb",
-    "1:supersonic",
+    "1:triattack",
     "1:tackle",
     "1:thundershock",
+    "1:supersonic",
+    "1:sonicboom",
     "1:thunderwave",
-    "1:triattack",
+    "1:magnetbomb",
+    "1:mirrorshot",
+    "1:electricterrain",
     "12:electroball",
     "16:gyroball",
-    "17:sonicboom",
     "20:spark",
-    "23:mirrorshot",
     "24:screech",
     "28:magnetrise",
     "34:flashcannon",
@@ -84,11 +131,13 @@
     "52:lightscreen",
     "58:lockon",
     "64:zapcannon",
+    "egg:electroweb",
+    "egg:explosion",
+    "egg:mirrorshot",
+    "egg:sonicboom",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
-    "tm:doubleteam",
     "tm:eerieimpulse",
     "tm:electricterrain",
     "tm:electroball",
@@ -98,104 +147,83 @@
     "tm:facade",
     "tm:flash",
     "tm:flashcannon",
-    "tm:frustration",
-    "tm:gigaimpact",
     "tm:gravity",
     "tm:gyroball",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:irondefense",
     "tm:ironhead",
     "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magnetrise",
     "tm:metalsound",
-    "tm:naturalgift",
     "tm:protect",
-    "tm:psychup",
     "tm:raindance",
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:risingvoltage",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:screech",
-    "tm:secretpower",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:steelbeam",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:triattack",
     "tm:voltswitch",
     "tm:wildcharge",
-    "tutor:bide",
-    "tutor:curse",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:chargebeam",
     "tutor:electroweb",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flash",
     "tutor:flashcannon",
-    "tutor:frustration",
     "tutor:gravity",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:irondefense",
-    "tutor:lightscreen",
-    "tutor:lockon",
+    "tutor:ironhead",
     "tutor:magiccoat",
     "tutor:magnetrise",
-    "tutor:mimic",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:recycle",
-    "tutor:reflect",
-    "tutor:refresh",
     "tutor:rest",
-    "tutor:return",
     "tutor:risingvoltage",
     "tutor:rollout",
-    "tutor:screech",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:sonicboom",
     "tutor:steelbeam",
-    "tutor:substitute",
-    "tutor:supersonic",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:tackle",
-    "tutor:takedown",
-    "tutor:teleport",
-    "tutor:thunder",
     "tutor:thunderbolt",
-    "tutor:thundershock",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:triattack",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.magneton.desc"
+    "tutor:wildcharge",
+    "legacy:bide",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:gigaimpact",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:psychup",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:teleport",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "preEvolution": "magnemite",
   "evolutions": [
@@ -208,24 +236,5 @@
       "requirements": [],
       "requiredContext": "cobblemon:thunder_stone"
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 600,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

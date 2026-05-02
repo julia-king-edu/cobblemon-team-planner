@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Cufant",
   "nationalPokedexNumber": 878,
+  "name": "Cufant",
   "primaryType": "steel",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 1000,
+  "pokedex": [
+    "cobblemon.species.cufant.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "sheerforce",
     "h:heavymetal"
+  ],
+  "eggGroups": [
+    "field",
+    "mineral"
   ],
   "baseStats": {
     "hp": 72,
@@ -15,31 +29,77 @@
     "special_defence": 49,
     "speed": 40
   },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.15,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
         "walkSpeed": 0.12
+      },
+      "swim": {
+        "avoidsWater": true
       }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cufant",
+          "tier": 1
+        },
+        {
+          "pokemon": "copperajah",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "field",
-    "mineral"
-  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:raw_copper",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:lagging_tail",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "5:rollout",
     "10:rocksmash",
     "15:bulldoze",
@@ -59,7 +119,6 @@
     "egg:slam",
     "egg:swagger",
     "egg:whirlwind",
-    "tm:attract",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
@@ -87,30 +146,48 @@
     "tm:rest",
     "tm:rockblast",
     "tm:rockslide",
+    "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:screech",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:stoneedge",
+    "tm:strength",
     "tm:substitute",
     "tm:superpower",
+    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:workup",
     "tm:zenheadbutt",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:endeavor",
+    "tutor:flashcannon",
+    "tutor:highhorsepower",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
     "tutor:steelbeam",
-    "tutor:steelroller"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.cufant.desc"
+    "tutor:steelroller",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:superpower",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -128,37 +205,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.15,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 1000,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:raw_copper",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:nanab_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

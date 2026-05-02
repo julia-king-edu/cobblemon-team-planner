@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -36,7 +36,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -62,7 +62,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 8.4,
@@ -73,7 +73,7 @@
                     "#cobblemon:is_overworld"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
                 ],
                 "maxY": 62
             },
@@ -90,7 +90,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 8.4,
@@ -115,7 +115,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-21",
             "weight": 1.8,
@@ -140,7 +140,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 1.8,
@@ -163,7 +163,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 1.8,
@@ -185,7 +185,7 @@
             "id": "wooper-8",
             "pokemon": "wooper",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -193,6 +193,7 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_overworld"
                 ]
             }
@@ -201,7 +202,7 @@
             "id": "wooper-9",
             "pokemon": "wooper",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 1.8,
@@ -209,14 +210,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -237,7 +238,7 @@
             "id": "wooper-10",
             "pokemon": "wooper",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 1.8,
@@ -245,14 +246,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -278,7 +279,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -307,7 +308,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -330,10 +331,51 @@
             }
         },
         {
-            "id": "wooper-heart-13",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-13",
+            "pokemon": "wooper",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "1-21",
+            "weight": 8.4,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:water"
+                ]
+            }
+        },
+        {
+            "id": "wooper-14",
+            "pokemon": "wooper",
+            "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "submerged",
+            "bucket": "uncommon",
+            "level": "1-21",
+            "weight": 8.4,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
+                ]
+            }
+        },
+        {
+            "id": "wooper-true-15",
+            "pokemon": "wooper wooper_heart=true",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 10.0,
@@ -341,16 +383,17 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_overworld"
                 ],
-                "bobber": "cobblemon:love_ball"
+                "rodType": "cobblemon:love_rod"
             }
         },
         {
-            "id": "wooper-heart-14",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-true-16",
+            "pokemon": "wooper wooper_heart=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 2.0,
@@ -358,14 +401,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -375,7 +418,7 @@
                     "#cobblemon:is_mushroom",
                     "#cobblemon:is_swamp"
                 ],
-                    "bobber": "cobblemon:love_ball"
+                "rodType": "cobblemon:love_rod"
             },
             "anticondition": {
                 "biomes": [
@@ -384,10 +427,10 @@
             }
         },
         {
-            "id": "wooper-heart-15",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-true-17",
+            "pokemon": "wooper wooper_heart=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 20.0,
@@ -395,16 +438,17 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_overworld"
                 ],
                 "bait": "cobblemon:love_sweet"
             }
         },
         {
-            "id": "wooper-heart-16",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-true-18",
+            "pokemon": "wooper wooper_heart=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 20.0,
@@ -412,14 +456,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -438,10 +482,10 @@
             }
         },
         {
-            "id": "wooper-heart-17",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-true-19",
+            "pokemon": "wooper wooper_heart=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 2.0,
@@ -449,14 +493,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -468,7 +512,7 @@
                     "#cobblemon:is_mushroom",
                     "#cobblemon:is_swamp"
                 ],
-                "bobber": "cobblemon:love_ball"
+                "rodType": "cobblemon:love_rod"
             },
             "anticondition": {
                 "biomes": [
@@ -477,10 +521,10 @@
             }
         },
         {
-            "id": "wooper-heart-18",
-            "pokemon": "wooper wooper_pattern=heart",
+            "id": "wooper-true-20",
+            "pokemon": "wooper wooper_heart=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 20.0,
@@ -488,14 +532,14 @@
                 {
                     "multiplier": 3.0,
                     "condition": {
-                        "minLureLevel": "2",
-                        "maxLureLevel": "2"
+                        "minLureLevel": 2,
+                        "maxLureLevel": 2
                     }
                 },
                 {
                     "multiplier": 5.0,
                     "condition": {
-                        "minLureLevel": "3"
+                        "minLureLevel": 3
                     }
                 }
             ],
@@ -510,43 +554,6 @@
                 "bait": "cobblemon:love_sweet"
             },
             "anticondition": {
-                "biomes": [
-                    "#cobblemon:has_block/mud"
-                ]
-            }
-        },
-        {
-            "id": "wooper-paldean-19",
-            "pokemon": "wooper paldean",
-            "presets": [
-                "natural"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "1-21",
-            "weight": 9.0,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:has_block/mud"
-                ]
-            }
-        },
-        {
-            "id": "wooper-paldean-20",
-            "pokemon": "wooper paldean",
-            "presets": [
-                "water"
-            ],
-            "type": "pokemon",
-            "context": "submerged",
-            "bucket": "common",
-            "level": "1-21",
-            "weight": 9.0,
-            "condition": {
-                "canSeeSky": true,
                 "biomes": [
                     "#cobblemon:has_block/mud"
                 ]
@@ -559,18 +566,15 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
-            "bucket": "uncommon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
             "level": "1-21",
-            "weight": 8.4,
+            "weight": 9.0,
             "condition": {
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_savanna"
-                ],
-                "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "#cobblemon:has_block/mud"
                 ]
             }
         },
@@ -581,22 +585,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
-            "bucket": "uncommon",
-            "level": "1-21",
-            "weight": 8.4,
-            "condition": {
-                "canSeeSky": true,
-                "biomes": [
-                    "#cobblemon:is_savanna"
-                ]
-            }
-        },
-        {
-            "id": "wooper-paldean-23",
-            "pokemon": "wooper paldean",
-            "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -608,10 +597,65 @@
             }
         },
         {
+            "id": "wooper-paldean-23",
+            "pokemon": "wooper paldean",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "1-21",
+            "weight": 8.4,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_savanna"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:water"
+                ]
+            }
+        },
+        {
             "id": "wooper-paldean-24",
             "pokemon": "wooper paldean",
+            "presets": [
+                "water"
+            ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "submerged",
+            "bucket": "uncommon",
+            "level": "1-21",
+            "weight": 8.4,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_savanna"
+                ]
+            }
+        },
+        {
+            "id": "wooper-paldean-25",
+            "pokemon": "wooper paldean",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
+            "bucket": "common",
+            "level": "1-21",
+            "weight": 9.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:has_block/mud"
+                ]
+            }
+        },
+        {
+            "id": "wooper-paldean-26",
+            "pokemon": "wooper paldean",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 8.4,
@@ -626,18 +670,18 @@
             }
         },
         {
-            "id": "wooper-paldean-25",
+            "id": "wooper-paldean-27",
             "pokemon": "wooper paldean",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -649,50 +693,13 @@
             }
         },
         {
-            "id": "wooper-paldean-26",
-            "pokemon": "wooper paldean",
-            "presets": [
-                "water"
-            ],
-            "type": "pokemon",
-            "context": "submerged",
-            "bucket": "common",
-            "level": "1-21",
-            "weight": 9.0,
-            "condition": {
-                "canSeeSky": false,
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:has_block/mud"
-                ]
-            }
-        },
-        {
-            "id": "wooper-paldean-27",
-            "pokemon": "wooper paldean",
-            "presets": [
-                "water"
-            ],
-            "type": "pokemon",
-            "context": "submerged",
-            "bucket": "uncommon",
-            "level": "1-21",
-            "weight": 8.4,
-            "condition": {
-                "canSeeSky": false,
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_savanna"
-                ]
-            }
-        },
-        {
             "id": "wooper-paldean-28",
             "pokemon": "wooper paldean",
+            "presets": [
+                "water"
+            ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
@@ -708,8 +715,45 @@
         {
             "id": "wooper-paldean-29",
             "pokemon": "wooper paldean",
+            "presets": [
+                "water"
+            ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "submerged",
+            "bucket": "uncommon",
+            "level": "1-21",
+            "weight": 8.4,
+            "condition": {
+                "canSeeSky": false,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_savanna"
+                ]
+            }
+        },
+        {
+            "id": "wooper-paldean-30",
+            "pokemon": "wooper paldean",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
+            "bucket": "common",
+            "level": "1-21",
+            "weight": 9.0,
+            "condition": {
+                "canSeeSky": false,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:has_block/mud"
+                ]
+            }
+        },
+        {
+            "id": "wooper-paldean-31",
+            "pokemon": "wooper paldean",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "1-21",
             "weight": 8.4,
@@ -726,18 +770,18 @@
             }
         },
         {
-            "id": "wooper-paldean-30",
+            "id": "wooper-paldean-32",
             "pokemon": "wooper paldean",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "1-21",
             "weight": 9.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {

@@ -1,14 +1,93 @@
 {
   "implemented": true,
-  "name": "Drifloon",
   "nationalPokedexNumber": 425,
+  "name": "Drifloon",
   "primaryType": "ghost",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 12,
+  "pokedex": [
+    "cobblemon.species.drifloon.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "aftermath",
     "unburden",
     "h:flareboost"
   ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 90,
+    "attack": 50,
+    "defence": 34,
+    "special_attack": 60,
+    "special_defence": 44,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 70,
+  "experienceGroup": "fluctuating",
+  "catchRate": 125,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.7,
+    "height": 2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "drifloon",
+          "tier": 1
+        },
+        {
+          "pokemon": "drifblim",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -26,112 +105,41 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 90,
-    "attack": 50,
-    "defence": 34,
-    "special_attack": 60,
-    "special_defence": 44,
-    "speed": 70
-  },
-  "catchRate": 125,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 70,
-  "experienceGroup": "fluctuating",
-  "eggCycles": 30,
-  "eggGroups": [
-    "amorphous"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:astonish",
     "1:constrict",
     "1:minimize",
-    "4:astonish",
+    "1:astonish",
     "4:gust",
-    "6:astonish",
     "8:focusenergy",
-    "8:gust",
-    "11:gust",
     "12:payback",
-    "13:focusenergy",
-    "14:focusenergy",
     "16:hex",
-    "16:payback",
-    "17:payback",
-    "20:ominouswind",
     "20:shadowball",
-    "22:hex",
-    "22:stockpile",
-    "24:spitup",
     "24:stockpile",
     "24:swallow",
-    "25:stockpile",
-    "27:hex",
-    "27:spitup",
-    "27:stockpile",
-    "27:swallow",
+    "24:spitup",
     "29:selfdestruct",
-    "30:ominouswind",
-    "30:spitup",
-    "30:swallow",
     "32:destinybond",
-    "32:spitup",
-    "32:swallow",
-    "33:batonpass",
-    "33:ominouswind",
     "36:batonpass",
-    "36:shadowball",
-    "38:batonpass",
-    "38:shadowball",
-    "40:amnesia",
     "40:tailwind",
-    "43:explosion",
-    "43:shadowball",
-    "44:batonpass",
     "44:explosion",
-    "46:explosion",
-    "50:explosion",
-    "egg:bodyslam",
     "egg:clearsmog",
     "egg:defog",
-    "egg:destinybond",
     "egg:disable",
     "egg:haze",
     "egg:hypnosis",
     "egg:memento",
-    "egg:tailwind",
-    "egg:weatherball",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:aircutter",
     "tm:allyswitch",
     "tm:amnesia",
-    "tm:attract",
     "tm:batonpass",
-    "tm:bodyslam",
+    "tm:bind",
     "tm:brutalswing",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:chargebeam",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:defog",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:embargo",
     "tm:endure",
@@ -140,42 +148,37 @@
     "tm:flash",
     "tm:fly",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:gyroball",
     "tm:haze",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:icywind",
     "tm:imprison",
     "tm:knockoff",
-    "tm:naturalgift",
+    "tm:magiccoat",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:painsplit",
     "tm:payback",
     "tm:phantomforce",
     "tm:protect",
     "tm:psybeam",
     "tm:psychic",
-    "tm:psychup",
     "tm:raindance",
     "tm:recycle",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:selfdestruct",
     "tm:shadowball",
     "tm:shockwave",
     "tm:silverwind",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:spite",
     "tm:storedpower",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:telekinesis",
@@ -185,41 +188,55 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:weatherball",
     "tm:willowisp",
+    "tutor:aerialace",
     "tutor:aircutter",
     "tutor:allyswitch",
     "tutor:bind",
+    "tutor:calmmind",
     "tutor:defog",
-    "tutor:hypnosis",
+    "tutor:focusenergy",
+    "tutor:helpinghand",
     "tutor:icywind",
     "tutor:knockoff",
     "tutor:magiccoat",
-    "tutor:minimize",
-    "tutor:mudslap",
     "tutor:ominouswind",
     "tutor:painsplit",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
     "tutor:rollout",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:skillswap",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:spite",
     "tutor:suckerpunch",
     "tutor:swift",
     "tutor:tailwind",
     "tutor:telekinesis",
-    "tutor:trick"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.drifloon.desc"
+    "tutor:thunderbolt",
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:bodyslam",
+    "legacy:captivate",
+    "legacy:chargebeam",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:psychup",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -237,24 +254,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.7,
-    "height": 2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 12,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

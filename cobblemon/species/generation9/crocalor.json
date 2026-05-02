@@ -1,12 +1,84 @@
 {
   "implemented": true,
-  "name": "Crocalor",
   "nationalPokedexNumber": 910,
+  "name": "Crocalor",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 10,
+  "weight": 307,
+  "pokedex": [
+    "cobblemon.species.crocalor.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:unaware"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 81,
+    "attack": 55,
+    "defence": 78,
+    "special_attack": 90,
+    "special_defence": 58,
+    "speed": 49
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "crocalor",
+          "tier": 1
+        },
+        {
+          "pokemon": "skeledirge",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true,
+        "canWalkOnLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,43 +88,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 81,
-    "attack": 55,
-    "defence": 78,
-    "special_attack": 90,
-    "special_defence": 58,
-    "speed": 49
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 144,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:ember",
-    "1:leer",
     "1:tackle",
+    "1:leer",
+    "1:ember",
     "7:lick",
     "10:round",
     "12:bite",
@@ -64,6 +103,10 @@
     "38:hypervoice",
     "42:willowisp",
     "47:fireblast",
+    "egg:belch",
+    "egg:curse",
+    "egg:encore",
+    "egg:slackoff",
     "tm:bodyslam",
     "tm:crunch",
     "tm:curse",
@@ -82,12 +125,14 @@
     "tm:heatwave",
     "tm:helpinghand",
     "tm:hypervoice",
+    "tm:incinerate",
     "tm:mudslap",
     "tm:outrage",
     "tm:overheat",
     "tm:protect",
     "tm:rest",
     "tm:roar",
+    "tm:round",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:snarl",
@@ -99,14 +144,23 @@
     "tm:terablast",
     "tm:thunderfang",
     "tm:willowisp",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:firefang",
+    "tutor:firepledge",
+    "tutor:flamethrower",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:stompingtantrum",
+    "tutor:thunderfang",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 10,
-  "weight": 307,
   "preEvolution": "fuecoco",
   "evolutions": [
     {
@@ -125,14 +179,8 @@
       ]
     }
   ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1.0,
-    "height": 1.4,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.crocalor.desc"
-  ]
+  "lightingData": {
+    "lightLevel": 14,
+    "liquidGlowMode": "LAND"
+  }
 }

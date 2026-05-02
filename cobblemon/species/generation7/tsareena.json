@@ -1,22 +1,26 @@
 {
   "implemented": true,
-  "name": "Tsareena",
   "nationalPokedexNumber": 763,
+  "name": "Tsareena",
   "primaryType": "grass",
+  "maleRatio": 0,
+  "height": 12,
+  "weight": 214,
+  "pokedex": [
+    "cobblemon.species.tsareena.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "leafguard",
     "queenlymajesty",
     "h:sweetveil"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:persim_berry",
-        "percentage": 10.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "grass"
+  ],
   "baseStats": {
     "hp": 72,
     "attack": 120,
@@ -25,59 +29,86 @@
     "special_defence": 98,
     "speed": 72
   },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 255,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.2,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:grassy_seed",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
-    "1:doubleslap",
-    "1:flail",
-    "1:playnice",
-    "1:powerwhip",
+    "1:tropkick",
     "1:punishment",
-    "1:rapidspin",
-    "1:razorleaf",
+    "1:doubleslap",
     "1:splash",
     "1:swagger",
-    "1:tropkick",
+    "1:rapidspin",
+    "1:razorleaf",
+    "1:captivate",
+    "1:aromatherapy",
+    "1:powerwhip",
+    "1:flail",
+    "1:playnice",
     "16:sweetscent",
     "22:magicalleaf",
     "28:stomp",
     "34:teeterdance",
-    "37:captivate",
     "40:aromaticmist",
-    "46:aromatherapy",
     "46:leafstorm",
     "58:highjumpkick",
+    "egg:acupressure",
+    "egg:aromatherapy",
+    "egg:endeavor",
+    "egg:feint",
+    "egg:grasswhistle",
+    "egg:synthesis",
     "tm:acrobatics",
-    "tm:attract",
     "tm:bounce",
     "tm:bulletseed",
+    "tm:captivate",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:endeavor",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:fling",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:knockoff",
+    "tm:laserfocus",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:lowkick",
@@ -92,67 +123,76 @@
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:solarblade",
     "tm:substitute",
     "tm:sunnyday",
     "tm:swagger",
     "tm:swift",
+    "tm:synthesis",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:tripleaxel",
     "tm:uturn",
+    "tm:worryseed",
     "tm:zenheadbutt",
     "tutor:bounce",
     "tutor:covet",
+    "tutor:dazzlinggleam",
     "tutor:endeavor",
+    "tutor:energyball",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grassyglide",
     "tutor:helpinghand",
-    "tutor:knockoff",
+    "tutor:hyperbeam",
     "tutor:laserfocus",
     "tutor:lowkick",
+    "tutor:magicalleaf",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:seedbomb",
-    "tutor:snore",
+    "tutor:sleeptalk",
+    "tutor:swift",
     "tutor:synthesis",
     "tutor:tripleaxel",
     "tutor:worryseed",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.tsareena.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:toxic",
+    "special:celebrate"
   ],
   "preEvolution": "steenee",
   "evolutions": [],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.9,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 214,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "5"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  }
 }

@@ -1,12 +1,75 @@
 {
   "implemented": true,
-  "name": "Buizel",
   "nationalPokedexNumber": 418,
+  "name": "Buizel",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 295,
+  "pokedex": [
+    "cobblemon.species.buizel.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "h:waterveil"
   ],
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 65,
+    "defence": 35,
+    "special_attack": 60,
+    "special_defence": 30,
+    "speed": 85
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 66,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "swimSpeed": 0.35,
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.18
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,77 +83,27 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 65,
-    "defence": 35,
-    "special_attack": 60,
-    "special_defence": 30,
-    "speed": 85
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 66,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "swim": {
-        "canWalkOnWater": true,
-        "swimSpeed": 0.35,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      },
-      "walk": {
-        "walkSpeed": 0.18
-      }
-    }
-  },
   "moves": [
-    "1:growl",
     "1:sonicboom",
-    "1:tackle",
     "1:watersport",
-    "3:quickattack",
+    "1:tackle",
     "4:growl",
-    "6:watergun",
     "7:soak",
-    "7:watersport",
-    "10:pursuit",
     "11:quickattack",
-    "15:swift",
     "15:watergun",
-    "18:bite",
     "18:pursuit",
-    "21:aquajet",
     "21:swift",
     "24:aquajet",
     "27:doublehit",
-    "28:agility",
     "31:whirlpool",
-    "35:liquidation",
     "35:razorwind",
-    "36:whirlpool",
     "38:aquatail",
     "41:agility",
     "45:hydropump",
-    "45:razorwind",
     "49:wavecrash",
-    "55:aquatail",
     "egg:aquaring",
-    "egg:aquatail",
     "egg:batonpass",
+    "egg:bite",
     "egg:doubleslap",
     "egg:furycutter",
     "egg:furyswipes",
@@ -100,33 +113,28 @@
     "egg:mudslap",
     "egg:odorsleuth",
     "egg:slash",
-    "egg:soak",
     "egg:switcheroo",
-    "egg:tailslap",
     "tm:agility",
-    "tm:attract",
+    "tm:aquatail",
     "tm:batonpass",
     "tm:blizzard",
     "tm:brickbreak",
     "tm:brine",
     "tm:bulkup",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:crunch",
     "tm:dig",
     "tm:dive",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:fling",
     "tm:flipturn",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:hail",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icefang",
@@ -138,54 +146,61 @@
     "tm:lowkick",
     "tm:lowsweep",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:strength",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
+    "tm:tailslap",
+    "tm:tailwhip",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tutor:aquatail",
+    "tutor:bulkup",
     "tutor:dive",
+    "tutor:flipturn",
     "tutor:focuspunch",
-    "tutor:headbutt",
+    "tutor:furycutter",
     "tutor:helpinghand",
+    "tutor:icebeam",
+    "tutor:icefang",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:lowkick",
     "tutor:mudslap",
-    "tutor:slash",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:swift",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:watersport"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.buizel.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -201,24 +216,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 7,
-  "weight": 295,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

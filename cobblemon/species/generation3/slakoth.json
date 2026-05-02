@@ -1,9 +1,24 @@
 {
-  "name": "Slakoth",
+  "implemented": true,
   "nationalPokedexNumber": 287,
+  "name": "Slakoth",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 240,
+  "pokedex": [
+    "cobblemon.species.slakoth.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
-    "truant"
+    "truant",
+    "h:truant"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 60,
@@ -13,26 +28,73 @@
     "special_defence": 35,
     "speed": 30
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 56,
   "experienceGroup": "slow",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 0.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "wanderChance": "400",
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "sleepChance": "0.0019",
+      "light": "0-14",
+      "willSleepOnBed": true,
+      "depth": "comatose",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.01,
+      "rouseChance": 0.002
+    },
+    "herd": {
+      "maxSize": "6"
+    },
+    "combat": {
+      "willFlee": false
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:scratch",
     "1:yawn",
+    "1:feintattack",
     "6:encore",
     "9:slackoff",
-    "14:feintattack",
     "14:headbutt",
     "17:amnesia",
     "22:covet",
     "25:chipaway",
-    "25:throatchop",
     "30:counter",
     "33:flail",
     "38:playrough",
@@ -44,22 +106,19 @@
     "egg:nightslash",
     "egg:pursuit",
     "egg:slash",
-    "egg:sleeptalk",
     "egg:snore",
     "egg:tickle",
     "tm:aerialace",
+    "tm:afteryou",
     "tm:amnesia",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:covet",
     "tm:curse",
     "tm:cut",
-    "tm:doubleteam",
     "tm:encore",
     "tm:endure",
     "tm:facade",
@@ -69,20 +128,21 @@
     "tm:flamethrower",
     "tm:fling",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:icebeam",
     "tm:icepunch",
     "tm:icywind",
     "tm:incinerate",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metalclaw",
     "tm:metronome",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:playrough",
     "tm:poisonjab",
     "tm:poweruppunch",
@@ -90,22 +150,20 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:shockwave",
     "tm:sleeptalk",
+    "tm:snore",
     "tm:solarbeam",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
@@ -113,47 +171,58 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderpunch",
-    "tm:toxic",
-    "tm:waterpulse",
     "tm:workup",
     "tm:xscissor",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:afteryou",
-    "tutor:bodyslam",
-    "tutor:counter",
+    "tutor:bulkup",
     "tutor:covet",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:endure",
+    "tutor:falseswipe",
     "tutor:firepunch",
+    "tutor:flamethrower",
     "tutor:focuspunch",
     "tutor:furycutter",
     "tutor:gunkshot",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:nightslash",
+    "tutor:playrough",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
-    "tutor:seismictoss",
+    "tutor:rocksmash",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:shockwave",
     "tutor:sleeptalk",
     "tutor:snore",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:swagger",
+    "tutor:throatchop",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:waterpulse",
-    "tutor:yawn"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.slakoth.desc"
+    "tutor:xscissor",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:waterpulse"
   ],
   "evolutions": [
     {
@@ -169,33 +238,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 240,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

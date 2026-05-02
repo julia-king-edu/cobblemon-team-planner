@@ -1,14 +1,92 @@
 {
   "implemented": true,
-  "name": "Swoobat",
   "nationalPokedexNumber": 528,
+  "name": "Swoobat",
   "primaryType": "psychic",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 9,
+  "weight": 105,
+  "pokedex": [
+    "cobblemon.species.swoobat.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "unaware",
     "klutz",
     "h:simple"
   ],
+  "eggGroups": [
+    "field",
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 67,
+    "attack": 57,
+    "defence": 55,
+    "special_attack": 77,
+    "special_defence": 55,
+    "speed": 114
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 149,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "golbat",
+          "tier": 1
+        },
+        {
+          "pokemon": "crobat",
+          "tier": 2
+        },
+        {
+          "pokemon": "swoobat",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -22,39 +100,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 67,
-    "attack": 57,
-    "defence": 55,
-    "special_attack": 77,
-    "special_defence": 55,
-    "speed": 114
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 149,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying",
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
-    "1:attract",
     "1:confusion",
-    "1:endeavor",
-    "1:gust",
     "1:odorsleuth",
+    "1:gust",
+    "1:heartstamp",
+    "1:endeavor",
+    "1:attract",
     "15:aircutter",
-    "15:heartstamp",
     "20:imprison",
     "25:assurance",
     "30:amnesia",
@@ -63,8 +116,17 @@
     "45:calmmind",
     "50:futuresight",
     "55:simplebeam",
+    "egg:captivate",
+    "egg:flatter",
+    "egg:knockoff",
+    "egg:psychoshift",
+    "egg:roost",
+    "egg:supersonic",
+    "egg:synchronoise",
     "tm:acrobatics",
     "tm:aerialace",
+    "tm:afteryou",
+    "tm:aircutter",
     "tm:airslash",
     "tm:allyswitch",
     "tm:amnesia",
@@ -72,29 +134,33 @@
     "tm:attract",
     "tm:batonpass",
     "tm:calmmind",
+    "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:defog",
     "tm:dreameater",
+    "tm:dualwingbeat",
     "tm:embargo",
+    "tm:endeavor",
     "tm:endure",
     "tm:energyball",
+    "tm:expandingforce",
     "tm:facade",
     "tm:faketears",
     "tm:flash",
     "tm:fly",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:gyroball",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:imprison",
+    "tm:knockoff",
+    "tm:laserfocus",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:nastyplot",
     "tm:pluck",
     "tm:protect",
@@ -106,84 +172,80 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
+    "tm:skyattack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:speedswap",
     "tm:steelwing",
     "tm:storedpower",
     "tm:substitute",
-    "tm:swagger",
+    "tm:superfang",
     "tm:swift",
+    "tm:tailwind",
     "tm:taunt",
     "tm:telekinesis",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
     "tm:uturn",
     "tm:venomdrench",
     "tm:zenheadbutt",
+    "tutor:aerialace",
     "tutor:afteryou",
+    "tutor:aircutter",
     "tutor:allyswitch",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:defog",
     "tutor:dualwingbeat",
     "tutor:endeavor",
+    "tutor:energyball",
     "tutor:expandingforce",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:heatwave",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:knockoff",
     "tutor:laserfocus",
     "tutor:magiccoat",
+    "tutor:psychic",
+    "tutor:psychocut",
+    "tutor:rest",
     "tutor:roost",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:superfang",
+    "tutor:swift",
     "tutor:tailwind",
     "tutor:telekinesis",
     "tutor:trick",
     "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.swoobat.desc"
+    "tutor:zenheadbutt",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "woobat",
-  "evolutions": [],
-  "baseScale": 0.65,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 9,
-  "weight": 105,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

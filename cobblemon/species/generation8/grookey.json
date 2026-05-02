@@ -1,11 +1,26 @@
 {
   "implemented": true,
-  "name": "Grookey",
   "nationalPokedexNumber": 810,
+  "name": "Grookey",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 3,
+  "weight": 50,
+  "pokedex": [
+    "cobblemon.species.grookey.desc"
+  ],
+  "labels": [
+    "gen8",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:grassysurge"
+  ],
+  "eggGroups": [
+    "field",
+    "grass"
   ],
   "baseStats": {
     "hp": 50,
@@ -15,16 +30,25 @@
     "special_defence": 40,
     "speed": 65
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 62,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -39,8 +63,8 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:scratch",
+    "1:growl",
     "6:branchpoke",
     "8:taunt",
     "12:razorleaf",
@@ -54,12 +78,10 @@
     "egg:growth",
     "egg:hammerarm",
     "egg:leechseed",
-    "egg:naturepower",
     "egg:strength",
     "egg:worryseed",
     "tm:acrobatics",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulletseed",
     "tm:drainpunch",
@@ -81,15 +103,15 @@
     "tm:magicalleaf",
     "tm:megakick",
     "tm:megapunch",
+    "tm:naturepower",
     "tm:protect",
     "tm:rest",
-    "tm:round",
     "tm:screech",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:solarblade",
+    "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:swift",
@@ -102,14 +124,27 @@
     "tm:uproar",
     "tm:uturn",
     "tm:workup",
+    "tm:worryseed",
+    "tutor:drainpunch",
+    "tutor:endeavor",
+    "tutor:energyball",
+    "tutor:falseswipe",
+    "tutor:focusenergy",
+    "tutor:gigadrain",
     "tutor:grasspledge",
-    "tutor:grassyglide"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.grookey.desc"
+    "tutor:grassyglide",
+    "tutor:knockoff",
+    "tutor:lowkick",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:uproar",
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -128,23 +163,44 @@
       ]
     }
   ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 50,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "pansage",
+          "tier": 1
+        },
+        {
+          "pokemon": "grookey",
+          "tier": 2
+        },
+        {
+          "pokemon": "simisage",
+          "tier": 3
+        },
+        {
+          "pokemon": "thwackey",
+          "tier": 4
+        },
+        {
+          "pokemon": "rillaboom",
+          "tier": 5
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

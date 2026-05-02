@@ -7,7 +7,7 @@
             "id": "pikipek-1",
             "pokemon": "pikipek",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "2-27",
             "weight": 9.0,

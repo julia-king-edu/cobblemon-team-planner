@@ -1,13 +1,90 @@
 {
   "implemented": true,
-  "name": "Riolu",
   "nationalPokedexNumber": 447,
+  "name": "Riolu",
   "primaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 7,
+  "weight": 202,
+  "pokedex": [
+    "cobblemon.species.riolu.desc"
+  ],
+  "labels": [
+    "gen4",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "steadfast",
     "innerfocus",
     "h:prankster"
   ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 70,
+    "defence": 40,
+    "special_attack": 35,
+    "special_defence": 40,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 57,
+  "experienceGroup": "medium_slow",
+  "catchRate": 75,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.3,
+    "fixed": false
+  },
+  "shoulderMountable": true,
+  "behaviour": {
+    "entityInteract": {
+      "avoidedBySkeleton": true
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "lucario mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "lucario mega",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,106 +98,66 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 40,
-    "attack": 70,
-    "defence": 40,
-    "special_attack": 35,
-    "special_defence": 40,
-    "speed": 60
-  },
-  "catchRate": 75,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 57,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:endure",
-    "1:foresight",
     "1:quickattack",
+    "1:foresight",
+    "1:endure",
     "4:feint",
-    "6:counter",
     "8:metalclaw",
-    "11:feint",
-    "11:forcepalm",
     "12:counter",
-    "15:feint",
-    "15:forcepalm",
     "16:workup",
-    "19:copycat",
-    "19:reversal",
     "20:rocksmash",
-    "24:nastyplot",
-    "24:screech",
     "24:vacuumwave",
     "28:screech",
-    "29:copycat",
-    "29:reversal",
     "32:quickguard",
     "36:forcepalm",
     "40:swordsdance",
     "44:helpinghand",
-    "47:nastyplot",
     "48:copycat",
-    "50:finalgambit",
     "52:finalgambit",
-    "55:finalgambit",
     "56:reversal",
-    "egg:agility",
     "egg:bite",
-    "egg:blazekick",
     "egg:bulletpunch",
     "egg:circlethrow",
     "egg:crosschop",
-    "egg:crunch",
     "egg:detect",
     "egg:followme",
     "egg:highjumpkick",
     "egg:howl",
-    "egg:irondefense",
-    "egg:lowkick",
-    "egg:meteormash",
     "egg:mindreader",
     "egg:skyuppercut",
-    "egg:vacuumwave",
     "tm:aerialace",
     "tm:agility",
-    "tm:attract",
     "tm:blazekick",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:closecombat",
     "tm:coaching",
-    "tm:confide",
     "tm:crunch",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drainpunch",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icepunch",
-    "tm:irondefense",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:magnetrise",
     "tm:megakick",
     "tm:megapunch",
     "tm:metalclaw",
+    "tm:meteormash",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:payback",
     "tm:poisonjab",
     "tm:poweruppunch",
@@ -129,66 +166,70 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
-    "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
     "tm:screech",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:upperhand",
     "tm:vacuumwave",
     "tm:workup",
     "tm:zenheadbutt",
-    "tutor:aurasphere",
-    "tutor:bulletpunch",
+    "tutor:aerialace",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:coaching",
     "tutor:drainpunch",
     "tutor:dualchop",
-    "tutor:endure",
     "tutor:focuspunch",
     "tutor:furycutter",
-    "tutor:headbutt",
     "tutor:helpinghand",
     "tutor:icepunch",
-    "tutor:irondefense",
     "tutor:irontail",
     "tutor:laserfocus",
     "tutor:lowkick",
     "tutor:magnetrise",
-    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:roleplay",
     "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:swift",
     "tutor:thunderpunch",
     "tutor:vacuumwave",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen4",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.riolu.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:irondefense",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:aurasphere"
   ],
   "evolutions": [
     {
@@ -210,24 +251,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 202,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,11 +1,24 @@
 {
   "implemented": true,
-  "name": "Magmar",
   "nationalPokedexNumber": 126,
+  "name": "Magmar",
   "primaryType": "fire",
+  "maleRatio": 0.75,
+  "height": 13,
+  "weight": 445,
+  "pokedex": [
+    "cobblemon.species.magmar.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "flamebody",
     "h:vitalspirit"
+  ],
+  "eggGroups": [
+    "human_like"
   ],
   "baseStats": {
     "hp": 65,
@@ -15,15 +28,25 @@
     "special_defence": 85,
     "speed": 93
   },
-  "catchRate": 45,
-  "maleRatio": 0.75,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 173,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 25,
-  "eggGroups": [
-    "human_like"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.5,
+    "fixed": false
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -42,16 +65,15 @@
     ]
   },
   "moves": [
-    "1:ember",
-    "1:leer",
     "1:smog",
+    "1:leer",
+    "1:ember",
     "1:smokescreen",
+    "1:feintattack",
+    "1:flameburst",
     "12:clearsmog",
-    "12:feintattack",
-    "15:firespin",
     "16:flamewheel",
     "20:confuseray",
-    "22:flameburst",
     "24:scaryface",
     "28:firepunch",
     "34:lavaplume",
@@ -60,17 +82,25 @@
     "52:sunnyday",
     "58:fireblast",
     "64:hyperbeam",
-    "tm:attract",
+    "egg:barrier",
+    "egg:belch",
+    "egg:bellydrum",
+    "egg:crosschop",
+    "egg:dynamicpunch",
+    "egg:flameburst",
+    "egg:focuspunch",
+    "egg:followme",
+    "egg:karatechop",
+    "egg:machpunch",
     "tm:acidspray",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:burningjealousy",
-    "tm:captivate",
-    "tm:confide",
     "tm:confuseray",
+    "tm:covet",
     "tm:curse",
     "tm:doubleedge",
-    "tm:doubleteam",
+    "tm:dualchop",
     "tm:endure",
     "tm:facade",
     "tm:fireblast",
@@ -83,12 +113,11 @@
     "tm:focusblast",
     "tm:focusenergy",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:headbutt",
     "tm:heatcrash",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:incinerate",
     "tm:irontail",
@@ -98,7 +127,6 @@
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
-    "tm:naturalgift",
     "tm:overheat",
     "tm:poisonjab",
     "tm:powerswap",
@@ -106,102 +134,69 @@
     "tm:protect",
     "tm:psychic",
     "tm:rest",
-    "tm:return",
+    "tm:roar",
     "tm:rockclimb",
     "tm:rocksmash",
-    "tm:roar",
-    "tm:round",
     "tm:scaryface",
     "tm:scorchingsands",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:temperflare",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:uproar",
     "tm:willowisp",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
     "tutor:burningjealousy",
-    "tutor:clearsmog",
-    "tutor:confuseray",
-    "tutor:counter",
     "tutor:covet",
-    "tutor:crosschop",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dualchop",
-    "tutor:dynamicpunch",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:feintattack",
-    "tutor:fireblast",
     "tutor:firepunch",
-    "tutor:firespin",
     "tutor:flamethrower",
+    "tutor:focusenergy",
     "tutor:focuspunch",
-    "tutor:followme",
-    "tutor:frustration",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:heatwave",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
     "tutor:hyperbeam",
     "tutor:irontail",
-    "tutor:leer",
+    "tutor:knockoff",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:protect",
+    "tutor:poisonjab",
     "tutor:psychic",
-    "tutor:psywave",
-    "tutor:rage",
     "tutor:rest",
-    "tutor:return",
     "tutor:rocksmash",
     "tutor:scorchingsands",
-    "tutor:seismictoss",
-    "tutor:skullbash",
     "tutor:sleeptalk",
-    "tutor:smog",
-    "tutor:smokescreen",
-    "tutor:snore",
-    "tutor:strength",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:taunt",
-    "tutor:teleport",
-    "tutor:thief",
     "tutor:thunderpunch",
-    "tutor:toxic",
-    "tutor:willowisp"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.magmar.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:psywave",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:submission",
+    "legacy:swagger",
+    "legacy:teleport",
+    "legacy:toxic"
   ],
   "preEvolution": "magby",
   "evolutions": [
@@ -219,23 +214,35 @@
       ]
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.5,
-    "fixed": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "magmortar",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "fireImmune": true
   },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 13,
-  "weight": 445,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 9,
+    "liquidGlowMode": "LAND"
+  }
 }

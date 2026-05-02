@@ -1,22 +1,27 @@
 {
   "implemented": true,
-  "name": "Metagross",
   "nationalPokedexNumber": 376,
+  "name": "Metagross",
   "primaryType": "steel",
   "secondaryType": "psychic",
+  "maleRatio": -1,
+  "height": 16,
+  "weight": 5500,
+  "pokedex": [
+    "cobblemon.species.metagross.desc"
+  ],
+  "labels": [
+    "gen3",
+    "powerhouse"
+  ],
+  "aspects": [],
   "abilities": [
     "clearbody",
     "h:lightmetal"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:metal_coat",
-        "percentage": 10.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "mineral"
+  ],
   "baseStats": {
     "hp": 80,
     "attack": 135,
@@ -25,92 +30,155 @@
     "special_defence": 90,
     "speed": 70
   },
-  "catchRate": 3,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "steel",
-      "secondaryType": "psychic",
-      "abilities": [
-        "toughclaws"
-      ],
-      "baseStats": {
-        "hp": 80,
-        "attack": 145,
-        "defence": 150,
-        "special_attack": 105,
-        "special_defence": 110,
-        "speed": 110
-      },
-      "catchRate": 3,
-      "maleRatio": -1,
-      "baseExperienceYield": 300,
-      "baseFriendship": 35,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 3,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 40,
-      "eggGroups": [
-        "mineral"
-      ],
-      "labels": [
-        "gen6",
-        "mega",
-        "pseudo_legendary"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 25,
-      "weight": 9429,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 3,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 300,
   "experienceGroup": "slow",
+  "catchRate": 3,
   "eggCycles": 40,
-  "eggGroups": [
-    "mineral"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
+  "baseFriendship": 35,
+  "baseScale": 1.3,
+  "hitbox": {
+    "height": 1.6,
+    "fixed": false,
+    "width": 1.8
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.saucer.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.saucer.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "60-75",
+          "JUMP": "25-45",
+          "SKILL": "35-55",
+          "SPEED": "45-75",
+          "STAMINA": "10-25"
+        }
       },
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "50-70",
+          "JUMP": "30-45",
+          "SKILL": "35-50",
+          "SPEED": "10-20",
+          "STAMINA": "55-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      },
+      {
+        "locator": "seat_3"
+      },
+      {
+        "locator": "seat_4"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "6"
+    },
+    "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.25
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "drowsyChance": 0.0014,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
     }
   },
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:ender_pearl",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "cobblemon:metal_coat",
+        "percentage": 10.0
+      }
+    ]
+  },
   "moves": [
-    "1:bulletpunch",
-    "1:confusion",
-    "1:explosion",
-    "1:hammerarm",
-    "1:honeclaws",
     "1:metalclaw",
+    "1:confusion",
+    "1:pursuit",
+    "1:bulletpunch",
+    "1:hammerarm",
+    "1:explosion",
+    "1:miracleeye",
+    "1:honeclaws",
     "1:tackle",
     "6:zenheadbutt",
     "12:magnetrise",
     "16:flashcannon",
-    "23:pursuit",
     "26:takedown",
-    "29:miracleeye",
     "34:psychic",
     "42:scaryface",
     "52:meteormash",
@@ -120,16 +188,15 @@
     "tm:aerialace",
     "tm:agility",
     "tm:allyswitch",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulldoze",
-    "tm:confide",
     "tm:cosmicpower",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:expandingforce",
@@ -138,15 +205,15 @@
     "tm:flash",
     "tm:flashcannon",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:gravity",
     "tm:gyroball",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:icepunch",
@@ -154,11 +221,12 @@
     "tm:irondefense",
     "tm:ironhead",
     "tm:knockoff",
+    "tm:laserfocus",
     "tm:lightscreen",
+    "tm:magnetrise",
     "tm:metalclaw",
     "tm:meteorbeam",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:psychic",
@@ -170,112 +238,156 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:shadowball",
     "tm:shadowclaw",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:telekinesis",
     "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:zenheadbutt",
-    "tutor:agility",
+    "tutor:aerialace",
     "tutor:allyswitch",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:bulletpunch",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:endure",
+    "tutor:bulldoze",
     "tutor:expandingforce",
-    "tutor:explosion",
+    "tutor:flashcannon",
+    "tutor:focuspunch",
     "tutor:furycutter",
+    "tutor:gigaimpact",
     "tutor:gravity",
-    "tutor:hammerarm",
-    "tutor:headbutt",
     "tutor:hyperbeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:ironhead",
+    "tutor:knockoff",
     "tutor:laserfocus",
     "tutor:magnetrise",
     "tutor:meteorbeam",
-    "tutor:meteormash",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:protect",
     "tutor:psychic",
-    "tutor:psychup",
+    "tutor:psychocut",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:selfdestruct",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
     "tutor:stealthrock",
     "tutor:steelbeam",
     "tutor:steelroller",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:swagger",
+    "tutor:stoneedge",
     "tutor:swift",
     "tutor:telekinesis",
     "tutor:thunderpunch",
     "tutor:trick",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3",
-    "pseudo_legendary"
-  ],
-  "pokedex": [
-    "cobblemon.species.metagross.desc"
+    "tutor:zenheadbutt",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:holdback",
+    "special:refresh"
   ],
   "preEvolution": "metang",
   "evolutions": [],
-  "baseScale": 1.3,
-  "hitbox": {
-    "width": 1.8,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 3,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 5500,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "steel",
+      "secondaryType": "psychic",
+      "maleRatio": -1,
+      "height": 25,
+      "weight": 9429,
+      "pokedex": [
+        "cobblemon.species.metagross-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "toughclaws",
+        "h:toughclaws"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 145,
+        "defence": 150,
+        "special_attack": 105,
+        "special_defence": 110,
+        "speed": 110
+      },
+      "baseExperienceYield": 350,
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "herd": {
+          "maxSize": "7"
+        },
+        "moving": {
+          "fly": {
+            "canFly": true
+          },
+          "swim": {
+            "avoidsWater": true
+          },
+          "walk": {
+            "canWalk": false
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0014,
+          "rouseChance": 0.0042,
+          "times": [
+            "any"
+          ]
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    }
+  ]
 }

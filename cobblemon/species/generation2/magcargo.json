@@ -1,14 +1,89 @@
 {
   "implemented": true,
-  "name": "Magcargo",
   "nationalPokedexNumber": 219,
+  "name": "Magcargo",
   "primaryType": "fire",
   "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 550,
+  "pokedex": [
+    "cobblemon.species.magcargo.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "magmaarmor",
     "flamebody",
     "h:weakarmor"
   ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 50,
+    "defence": 120,
+    "special_attack": 90,
+    "special_defence": 80,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 151,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderlava": true,
+        "avoidsWater": true,
+        "canSwimInLava": true,
+        "canWalkOnLava": true
+      },
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "magcargo",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -25,55 +100,17 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 50,
-    "defence": 120,
-    "special_attack": 90,
-    "special_defence": 80,
-    "speed": 30
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "swim": {
-        "canWalkOnLava": true,
-        "canBreatheUnderlava": true,
-        "avoidsWater": true,
-        "canSwimInLava": true,
-        "canSwimInWater": false
-      },
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    }
-  },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 151,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
   "moves": [
-    "1:earthpower",
+    "1:yawn",
+    "1:smog",
     "1:ember",
     "1:rockthrow",
+    "1:earthpower",
+    "1:flameburst",
     "1:shellsmash",
-    "1:smog",
-    "1:yawn",
     "13:harden",
-    "15:incinerate",
     "20:clearsmog",
     "22:ancientpower",
-    "27:flameburst",
     "27:incinerate",
     "29:rockslide",
     "34:lavaplume",
@@ -81,15 +118,23 @@
     "43:bodyslam",
     "47:recover",
     "54:flamethrower",
-    "tm:attract",
+    "egg:acidarmor",
+    "egg:curse",
+    "egg:guardswap",
+    "egg:inferno",
+    "egg:memento",
+    "egg:rollout",
+    "egg:smokescreen",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:swallow",
+    "tm:afteryou",
     "tm:amnesia",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:burningjealousy",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -100,12 +145,11 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
     "tm:gigaimpact",
+    "tm:guardswap",
     "tm:gyroball",
     "tm:heatcrash",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:incinerate",
     "tm:infestation",
@@ -113,7 +157,6 @@
     "tm:lightscreen",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:overheat",
     "tm:painsplit",
@@ -121,17 +164,16 @@
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scorchingsands",
-    "tm:secretpower",
+    "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:solarbeam",
@@ -141,81 +183,53 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:temperflare",
     "tm:terablast",
-    "tm:toxic",
     "tm:willowisp",
     "tutor:afteryou",
-    "tutor:amnesia",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
+    "tutor:burningjealousy",
     "tutor:earthpower",
-    "tutor:earthquake",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:fireblast",
     "tutor:flamethrower",
-    "tutor:frustration",
-    "tutor:harden",
+    "tutor:gigaimpact",
     "tutor:heatwave",
-    "tutor:hiddenpower",
     "tutor:hyperbeam",
     "tutor:irondefense",
-    "tutor:mimic",
     "tutor:mudslap",
     "tutor:painsplit",
-    "tutor:protect",
-    "tutor:refresh",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
-    "tutor:rockthrow",
     "tutor:rollout",
-    "tutor:selfdestruct",
+    "tutor:scorchingsands",
     "tutor:sleeptalk",
-    "tutor:smog",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:toxic"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.magcargo.desc"
+    "tutor:stoneedge",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "preEvolution": "slugma",
   "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 550,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 15,
+    "liquidGlowMode": "LAND"
+  }
 }

@@ -1,12 +1,82 @@
 {
-  "name": "Purrloin",
+  "implemented": true,
   "nationalPokedexNumber": 509,
+  "name": "Purrloin",
   "primaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 101,
+  "pokedex": [
+    "cobblemon.species.purrloin.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "limber",
     "unburden",
     "h:prankster"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 41,
+    "attack": 50,
+    "defence": 37,
+    "special_attack": 50,
+    "special_defence": 37,
+    "speed": 66
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 56,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.55,
+  "shoulderMountable": true,
+  "hitbox": {
+    "width": 0.65,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.17
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,59 +90,35 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 41,
-    "attack": 50,
-    "defence": 37,
-    "special_attack": 50,
-    "special_defence": 37,
-    "speed": 66
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 56,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:growl",
     "1:scratch",
+    "1:growl",
+    "1:assist",
     "4:sandattack",
     "5:fakeout",
-    "6:assist",
     "12:furyswipes",
-    "15:pursuit",
     "16:torment",
     "21:assurance",
     "24:honeclaws",
     "28:suckerpunch",
-    "30:slash",
     "32:nastyplot",
-    "33:captivate",
     "36:nightslash",
-    "39:snatch",
     "40:playrough",
-    "egg:charm",
+    "egg:captivate",
     "egg:copycat",
     "egg:covet",
     "egg:doubleteam",
-    "egg:encore",
-    "egg:faketears",
     "egg:feintattack",
-    "egg:foulplay",
-    "egg:payday",
+    "egg:pursuit",
     "egg:quickattack",
     "egg:slash",
     "egg:yawn",
     "tm:aerialace",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
+    "tm:captivate",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:cut",
     "tm:darkpulse",
     "tm:doubleteam",
@@ -84,13 +130,13 @@
     "tm:facade",
     "tm:faketears",
     "tm:foulplay",
-    "tm:frustration",
     "tm:grassknot",
     "tm:gunkshot",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hypervoice",
     "tm:irontail",
+    "tm:knockoff",
+    "tm:lashout",
     "tm:nastyplot",
     "tm:payback",
     "tm:payday",
@@ -99,27 +145,27 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:roleplay",
     "tm:screech",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
+    "tm:snatch",
+    "tm:spite",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:uturn",
+    "tutor:aerialace",
     "tutor:covet",
     "tutor:darkpulse",
     "tutor:foulplay",
@@ -128,19 +174,29 @@
     "tutor:irontail",
     "tutor:knockoff",
     "tutor:lashout",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:roleplay",
     "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:trick"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.purrloin.desc"
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -156,24 +212,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 4,
-  "weight": 101,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

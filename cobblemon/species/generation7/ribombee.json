@@ -1,14 +1,87 @@
 {
   "implemented": true,
-  "name": "Ribombee",
   "nationalPokedexNumber": 743,
+  "name": "Ribombee",
   "primaryType": "bug",
   "secondaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 5,
+  "pokedex": [
+    "cobblemon.species.ribombee.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "honeygather",
     "shielddust",
     "h:sweetveil"
   ],
+  "eggGroups": [
+    "bug",
+    "fairy"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 55,
+    "defence": 60,
+    "special_attack": 95,
+    "special_defence": 70,
+    "speed": 124
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 162,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.85,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ribombee",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -22,189 +95,38 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 55,
-    "defence": 60,
-    "special_attack": 95,
-    "special_defence": 70,
-    "speed": 124
-  },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "behaviour": {
-    "moving": {
-      "swim": {
-        "canWalkOnWater": true
-      },
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "forms": [
-    {
-      "name": "Totem",
-      "primaryType": "bug",
-      "secondaryType": "fairy",
-      "abilities": [
-        "sweetveil"
-      ],
-      "baseStats": {
-        "hp": 60,
-        "attack": 55,
-        "defence": 60,
-        "special_attack": 95,
-        "special_defence": 70,
-        "speed": 124
-      },
-      "catchRate": 75,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 162,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 2
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "bug",
-        "fairy"
-      ],
-      "moves": [
-        "1:absorb",
-        "1:fairywind",
-        "1:pollenpuff",
-        "1:strugglebug",
-        "1:stunspore",
-        "13:silverwind",
-        "16:drainingkiss",
-        "21:sweetscent",
-        "28:bugbuzz",
-        "35:dazzlinggleam",
-        "42:aromatherapy",
-        "49:quiverdance",
-        "tm:acrobatics",
-        "tm:aerialace",
-        "tm:attract",
-        "tm:calmmind",
-        "tm:confide",
-        "tm:dazzlinggleam",
-        "tm:doubleteam",
-        "tm:dreameater",
-        "tm:energyball",
-        "tm:facade",
-        "tm:frustration",
-        "tm:hiddenpower",
-        "tm:infestation",
-        "tm:leechlife",
-        "tm:lightscreen",
-        "tm:naturepower",
-        "tm:protect",
-        "tm:psychic",
-        "tm:psychup",
-        "tm:reflect",
-        "tm:rest",
-        "tm:return",
-        "tm:roost",
-        "tm:round",
-        "tm:safeguard",
-        "tm:sleeptalk",
-        "tm:solarbeam",
-        "tm:substitute",
-        "tm:sunnyday",
-        "tm:swagger",
-        "tm:thief",
-        "tm:toxic",
-        "tm:uturn",
-        "tutor:afteryou",
-        "tutor:allyswitch",
-        "tutor:aromatherapy",
-        "tutor:bugbite",
-        "tutor:bugbuzz",
-        "tutor:covet",
-        "tutor:dazzlinggleam",
-        "tutor:defog",
-        "tutor:helpinghand",
-        "tutor:lastresort",
-        "tutor:magicroom",
-        "tutor:quiverdance",
-        "tutor:signalbeam",
-        "tutor:skillswap",
-        "tutor:snore",
-        "tutor:tailwind",
-        "tutor:telekinesis",
-        "tutor:trick",
-        "tutor:wonderroom"
-      ],
-      "labels": [
-        "gen7",
-        "totem"
-      ],
-      "aspects": [
-        "totem"
-      ],
-      "height": 4,
-      "weight": 20,
-      "cannotDynamax": false,
-      "battleOnly": false,
-      "baseScale": 0.9,
-      "hitbox": {
-        "width": 0.9,
-        "height": 2.6,
-        "fixed": false
-      }
-    }
-  ],
-  "baseExperienceYield": 162,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "bug",
-    "fairy"
-  ],
   "moves": [
-    "1:absorb",
-    "1:covet",
-    "1:fairywind",
     "1:pollenpuff",
+    "1:absorb",
+    "1:fairywind",
     "1:stunspore",
     "1:sweetscent",
-    "13:silverwind",
+    "1:aromatherapy",
     "18:drainingkiss",
     "24:strugglebug",
-    "32:aromatherapy",
     "32:covet",
     "40:switcheroo",
     "48:dazzlinggleam",
     "56:bugbuzz",
     "64:quiverdance",
+    "egg:aromaticmist",
+    "egg:bestow",
+    "egg:moonblast",
+    "egg:powder",
+    "egg:stickyweb",
     "tm:acrobatics",
-    "tm:aerialace",
+    "tm:afteryou",
     "tm:agility",
     "tm:alluringvoice",
     "tm:allyswitch",
-    "tm:attract",
     "tm:batonpass",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:calmmind",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
+    "tm:defog",
     "tm:drainingkiss",
     "tm:dreameater",
     "tm:dualwingbeat",
@@ -212,14 +134,13 @@
     "tm:energyball",
     "tm:facade",
     "tm:faketears",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:imprison",
     "tm:infestation",
+    "tm:lastresort",
     "tm:leechlife",
     "tm:lightscreen",
     "tm:lunge",
@@ -235,27 +156,25 @@
     "tm:psychup",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:safeguard",
+    "tm:signalbeam",
+    "tm:silverwind",
     "tm:skillswap",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:speedswap",
     "tm:storedpower",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:tailwind",
     "tm:takedown",
+    "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:uturn",
@@ -263,45 +182,43 @@
     "tutor:afteryou",
     "tutor:allyswitch",
     "tutor:bugbite",
+    "tutor:calmmind",
     "tutor:covet",
+    "tutor:dazzlinggleam",
     "tutor:defog",
-    "tutor:dualwingbeat",
+    "tutor:energyball",
+    "tutor:gigaimpact",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:lastresort",
+    "tutor:leechlife",
+    "tutor:magicalleaf",
     "tutor:magicroom",
+    "tutor:playrough",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:roost",
     "tutor:signalbeam",
     "tutor:skillswap",
-    "tutor:snore",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:swift",
     "tutor:tailwind",
     "tutor:telekinesis",
     "tutor:trick",
-    "tutor:wonderroom"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.ribombee.desc"
+    "tutor:wonderroom",
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "cutiefly",
-  "evolutions": [],
-  "baseScale": 0.35,
-  "hitbox": {
-    "width": 0.85,
-    "height": 2.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "height": 2,
-  "weight": 5,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

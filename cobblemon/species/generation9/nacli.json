@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Nacli",
   "nationalPokedexNumber": 932,
+  "name": "Nacli",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 4,
+  "weight": 160,
+  "pokedex": [
+    "cobblemon.species.nacli.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "purifyingsalt",
     "sturdy",
     "h:clearbody"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 55,
@@ -16,23 +29,6 @@
     "special_defence": 35,
     "speed": 25
   },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.125
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 56,
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -41,16 +37,47 @@
     "special_defence": 0,
     "speed": 0
   },
+  "baseExperienceYield": 56,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.125
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 2,
     "entries": [
       {
-        "item": "minecraft:quartz",
+        "item": "minecraft:calcite",
         "quantityRange": "0-1"
       },
       {
@@ -60,8 +87,8 @@
     ]
   },
   "moves": [
-    "1:harden",
     "1:tackle",
+    "1:harden",
     "5:rockthrow",
     "7:mudshot",
     "10:smackdown",
@@ -78,6 +105,7 @@
     "egg:curse",
     "egg:fissure",
     "egg:powergem",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:curse",
@@ -87,6 +115,7 @@
     "tm:endure",
     "tm:facade",
     "tm:flashcannon",
+    "tm:headbutt",
     "tm:heavyslam",
     "tm:helpinghand",
     "tm:irondefense",
@@ -97,6 +126,7 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
+    "tm:rockpolish",
     "tm:rockslide",
     "tm:sandstorm",
     "tm:sleeptalk",
@@ -108,14 +138,23 @@
     "tm:sunnyday",
     "tm:takedown",
     "tm:terablast",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:ancientpower",
+    "tutor:bulldoze",
+    "tutor:earthpower",
+    "tutor:flashcannon",
+    "tutor:helpinghand",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:meteorbeam",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 4,
-  "weight": 160,
   "evolutions": [
     {
       "id": "nacli_naclstack",
@@ -132,15 +171,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.5,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.nacli.desc"
   ]
 }

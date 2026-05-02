@@ -1,14 +1,56 @@
 {
   "implemented": true,
-  "name": "Smoochum",
   "nationalPokedexNumber": 238,
+  "name": "Smoochum",
   "primaryType": "ice",
   "secondaryType": "psychic",
+  "maleRatio": 0,
+  "height": 4,
+  "weight": 60,
+  "pokedex": [
+    "cobblemon.species.smoochum.desc"
+  ],
+  "labels": [
+    "gen2",
+    "baby"
+  ],
+  "aspects": [],
   "abilities": [
     "oblivious",
     "forewarn",
     "h:hydration"
   ],
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 30,
+    "defence": 15,
+    "special_attack": 85,
+    "special_defence": 65,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.9,
+    "fixed": false
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -18,52 +60,30 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 45,
-    "attack": 30,
-    "defence": 15,
-    "special_attack": 85,
-    "special_defence": 65,
-    "speed": 65
-  },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": true,
-  "baseExperienceYield": 61,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "undiscovered"
-  ],
   "moves": [
-    "1:lick",
     "1:pound",
+    "1:lick",
     "4:powdersnow",
     "8:copycat",
     "12:confusion",
     "16:covet",
     "20:sing",
-    "21:heartstamp",
     "24:faketears",
     "28:icepunch",
-    "31:luckychant",
     "32:psychic",
-    "35:avalanche",
     "36:sweetkiss",
     "40:meanlook",
     "44:perishsong",
     "48:blizzard",
     "egg:captivate",
     "egg:fakeout",
-    "egg:icepunch",
+    "egg:heartstamp",
+    "egg:luckychant",
     "egg:meditate",
     "egg:miracleeye",
-    "egg:nastyplot",
-    "egg:psychup",
     "egg:roleplay",
     "egg:wakeupslap",
     "egg:wish",
-    "tm:attract",
     "tm:auroraveil",
     "tm:avalanche",
     "tm:blizzard",
@@ -71,8 +91,7 @@
     "tm:calmmind",
     "tm:captivate",
     "tm:charm",
-    "tm:confide",
-    "tm:doubleteam",
+    "tm:covet",
     "tm:drainingkiss",
     "tm:dreameater",
     "tm:echoedvoice",
@@ -83,21 +102,21 @@
     "tm:flash",
     "tm:fling",
     "tm:frostbreath",
-    "tm:frustration",
     "tm:grassknot",
     "tm:hail",
+    "tm:healbell",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:icepunch",
     "tm:icywind",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
+    "tm:mudslap",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:payback",
     "tm:protect",
     "tm:psychic",
@@ -107,90 +126,64 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
+    "tm:roleplay",
     "tm:shadowball",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:storedpower",
     "tm:substitute",
-    "tm:swagger",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:uproar",
     "tm:waterpulse",
     "tm:wonderroom",
     "tm:zenheadbutt",
-    "tutor:attract",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:captivate",
-    "tutor:confusion",
-    "tutor:counter",
+    "tutor:calmmind",
     "tutor:covet",
-    "tutor:curse",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:frustration",
     "tutor:healbell",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
-    "tutor:lick",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:meanlook",
-    "tutor:meditate",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:perishsong",
-    "tutor:pound",
-    "tutor:powdersnow",
-    "tutor:protect",
     "tutor:psychic",
-    "tutor:psychup",
-    "tutor:raindance",
     "tutor:recycle",
     "tutor:rest",
-    "tutor:return",
     "tutor:roleplay",
-    "tutor:seismictoss",
     "tutor:shadowball",
     "tutor:signalbeam",
-    "tutor:sing",
     "tutor:skillswap",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:sweetkiss",
-    "tutor:sweetscent",
-    "tutor:thief",
-    "tutor:toxic",
     "tutor:trick",
     "tutor:uproar",
     "tutor:waterpulse",
     "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen2",
-    "baby"
-  ],
-  "pokedex": [
-    "cobblemon.species.smoochum.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -207,23 +200,32 @@
       ]
     }
   ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 60,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "smoochum",
+          "tier": 1
+        },
+        {
+          "pokemon": "jynx",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

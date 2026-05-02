@@ -1,14 +1,94 @@
 {
   "implemented": true,
-  "name": "Numel",
   "nationalPokedexNumber": 322,
+  "name": "Numel",
   "primaryType": "fire",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 240,
+  "pokedex": [
+    "cobblemon.species.numel.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "oblivious",
     "simple",
     "h:owntempo"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 60,
+    "defence": 40,
+    "special_attack": 65,
+    "special_defence": 45,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "depth": "comatose",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "numel",
+          "tier": 1
+        },
+        {
+          "pokemon": "camerupt mega=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "camerupt mega",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,52 +102,25 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 60,
-    "defence": 40,
-    "special_attack": 65,
-    "special_defence": 45,
-    "speed": 35
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 61,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:growl",
     "1:tackle",
+    "1:magnitude",
     "5:ember",
     "8:focusenergy",
     "12:bulldoze",
-    "12:magnitude",
     "15:flameburst",
-    "15:incinerate",
     "19:amnesia",
     "22:lavaplume",
     "26:earthpower",
     "29:curse",
     "31:takedown",
-    "36:yawn",
     "40:earthquake",
     "43:flamethrower",
     "47:doubleedge",
     "egg:ancientpower",
     "egg:bodyslam",
     "egg:defensecurl",
-    "egg:endure",
     "egg:growth",
     "egg:heatwave",
     "egg:heavyslam",
@@ -81,18 +134,16 @@
     "egg:stomp",
     "egg:swallow",
     "egg:yawn",
+    "tm:afteryou",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -103,36 +154,34 @@
     "tm:firespin",
     "tm:flamecharge",
     "tm:flamethrower",
+    "tm:flamewheel",
     "tm:flareblitz",
     "tm:flashcannon",
-    "tm:frustration",
+    "tm:focusenergy",
+    "tm:headbutt",
     "tm:heatcrash",
     "tm:heatwave",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:incinerate",
     "tm:ironhead",
     "tm:lashout",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:overheat",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -140,44 +189,50 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:temperflare",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:willowisp",
     "tm:zenheadbutt",
     "tutor:afteryou",
-    "tutor:bodyslam",
-    "tutor:charm",
-    "tutor:defensecurl",
-    "tutor:dig",
-    "tutor:doubleedge",
+    "tutor:ancientpower",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:endeavor",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:focusenergy",
     "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
     "tutor:ironhead",
-    "tutor:mimic",
+    "tutor:lashout",
     "tutor:mudslap",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
+    "tutor:scorchingsands",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:takedown"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.numel.desc"
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -195,24 +250,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 240,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

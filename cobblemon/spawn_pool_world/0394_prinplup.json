@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -44,7 +44,7 @@
             "id": "prinplup-3",
             "pokemon": "prinplup",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -53,7 +53,7 @@
                 "biomes": [
                     "#cobblemon:is_cold_ocean",
                     "#cobblemon:is_frozen_ocean",
-                    "#minecraft:frozen_river",
+                    "minecraft:frozen_river",
                     "#cobblemon:is_glacial",
                     "#cobblemon:is_tundra"
                 ]
@@ -66,7 +66,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -83,7 +83,7 @@
             "id": "prinplup-5",
             "pokemon": "prinplup",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "16-41",
             "weight": 3.6,
@@ -94,7 +94,7 @@
                 "biomes": [
                     "#cobblemon:is_cold_ocean",
                     "#cobblemon:is_frozen_ocean",
-                    "#minecraft:frozen_river",
+                    "minecraft:frozen_river",
                     "#cobblemon:is_glacial",
                     "#cobblemon:is_tundra"
                 ]

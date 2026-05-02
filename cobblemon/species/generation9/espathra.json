@@ -1,13 +1,107 @@
 {
   "implemented": true,
-  "name": "Espathra",
   "nationalPokedexNumber": 956,
+  "name": "Espathra",
   "primaryType": "psychic",
+  "maleRatio": 0.5,
+  "height": 19,
+  "weight": 900,
+  "pokedex": [
+    "cobblemon.species.espathra.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "opportunist",
     "frisk",
     "h:speedboost"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 95,
+    "attack": 60,
+    "defence": 60,
+    "special_attack": 101,
+    "special_defence": 60,
+    "speed": 105
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 168,
+  "experienceGroup": "medium_slow",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.87,
+  "hitbox": {
+    "height": 2.1,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "30-65",
+          "JUMP": "40-55",
+          "SKILL": "15-40",
+          "SPEED": "55-70",
+          "STAMINA": "25-35"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dodrio",
+          "tier": 1
+        },
+        {
+          "pokemon": "espathra",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "walkSpeed": 0.3
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,56 +114,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 95,
-    "attack": 60,
-    "defence": 60,
-    "special_attack": 101,
-    "special_defence": 60,
-    "speed": 105
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.3
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 168,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "flying"
-  ],
-  "baseScale": 0.87,
-  "hitbox": {
-    "width": 1.2,
-    "height": 2.1,
-    "fixed": false
-  },
   "moves": [
-    "1:drillpeck",
-    "1:featherdance",
+    "1:luminacrash",
     "1:growl",
     "1:peck",
-    "1:luminacrash",
+    "1:drillpeck",
+    "1:featherdance",
     "5:confusion",
     "8:babydolleyes",
     "11:disarmingvoice",
@@ -81,8 +131,13 @@
     "43:dazzlinggleam",
     "49:psychic",
     "54:lastresort",
+    "egg:allyswitch",
+    "egg:hypnosis",
+    "egg:roost",
     "tm:aerialace",
     "tm:agility",
+    "tm:allyswitch",
+    "tm:babydolleyes",
     "tm:batonpass",
     "tm:bodyslam",
     "tm:bravebird",
@@ -103,10 +158,12 @@
     "tm:hex",
     "tm:hyperbeam",
     "tm:hypervoice",
+    "tm:lastresort",
     "tm:lightscreen",
     "tm:lowkick",
     "tm:mudslap",
     "tm:nightshade",
+    "tm:pluck",
     "tm:pounce",
     "tm:protect",
     "tm:psybeam",
@@ -117,6 +174,7 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
+    "tm:roost",
     "tm:sandstorm",
     "tm:seedbomb",
     "tm:shadowball",
@@ -133,18 +191,35 @@
     "tm:trickroom",
     "tm:uproar",
     "tm:uturn",
-    "tm:zenheadbutt"
+    "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:allyswitch",
+    "tutor:babydolleyes",
+    "tutor:calmmind",
+    "tutor:dazzlinggleam",
+    "tutor:energyball",
+    "tutor:expandingforce",
+    "tutor:flashcannon",
+    "tutor:foulplay",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:lastresort",
+    "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:trick",
+    "tutor:uproar",
+    "tutor:zenheadbutt"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 19,
-  "weight": 900,
   "preEvolution": "flittle",
-  "evolutions": [],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.espathra.desc"
-  ]
+  "evolutions": []
 }

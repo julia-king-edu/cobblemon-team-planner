@@ -1,13 +1,85 @@
 {
   "implemented": true,
-  "name": "Empoleon",
   "nationalPokedexNumber": 395,
+  "name": "Empoleon",
   "primaryType": "water",
   "secondaryType": "steel",
+  "maleRatio": 0.875,
+  "height": 17,
+  "weight": 845,
+  "pokedex": [
+    "cobblemon.species.empoleon.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
-    "h:defiant"
+    "h:competitive"
   ],
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 84,
+    "attack": 86,
+    "defence": 88,
+    "special_attack": 111,
+    "special_defence": 101,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 265,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.3,
+    "height": 2.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      },
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "empoleon",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -24,84 +96,58 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 84,
-    "attack": 86,
-    "defence": 88,
-    "special_attack": 111,
-    "special_defence": 101,
-    "speed": 60
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 239,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      },
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:aquajet",
-    "1:bubble",
-    "1:growl",
-    "1:metalclaw",
     "1:tackle",
+    "1:growl",
+    "1:bubble",
+    "1:metalclaw",
+    "1:aquajet",
+    "1:pound",
     "1:watergun",
+    "1:bide",
+    "1:watersport",
     "11:swordsdance",
     "15:peck",
-    "16:metalclaw",
     "19:bubblebeam",
-    "19:swagger",
     "24:swagger",
     "28:furyattack",
     "33:brine",
-    "36:aquajet",
     "39:whirlpool",
     "46:mist",
     "52:drillpeck",
     "59:hydropump",
     "66:wavecrash",
+    "egg:aquaring",
+    "egg:bide",
+    "egg:doublehit",
+    "egg:featherdance",
+    "egg:flail",
+    "egg:mudsport",
+    "egg:powertrip",
+    "egg:roost",
+    "egg:snore",
+    "egg:supersonic",
+    "egg:swagger",
+    "egg:yawn",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:avalanche",
+    "tm:babydolleyes",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:charm",
     "tm:chillingwater",
-    "tm:confide",
+    "tm:covet",
     "tm:cut",
     "tm:defog",
-    "tm:dig",
     "tm:disarmingvoice",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -112,13 +158,13 @@
     "tm:flashcannon",
     "tm:fling",
     "tm:flipturn",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hydrocannon",
     "tm:hydropump",
@@ -128,30 +174,29 @@
     "tm:icywind",
     "tm:irondefense",
     "tm:knockoff",
+    "tm:laserfocus",
     "tm:lashout",
     "tm:liquidation",
     "tm:metalclaw",
     "tm:metalsound",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:pluck",
     "tm:protect",
     "tm:psychup",
     "tm:quash",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
+    "tm:roost",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:shadowclaw",
+    "tm:signalbeam",
     "tm:sleeptalk",
+    "tm:snore",
     "tm:snowscape",
     "tm:stealthrock",
     "tm:steelbeam",
@@ -165,7 +210,6 @@
     "tm:takedown",
     "tm:terablast",
     "tm:throatchop",
-    "tm:toxic",
     "tm:tripleaxel",
     "tm:uproar",
     "tm:vacuumwave",
@@ -175,55 +219,60 @@
     "tm:weatherball",
     "tm:whirlpool",
     "tm:workup",
-    "tutor:aquajet",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:babydolleyes",
+    "tutor:bulldoze",
     "tutor:covet",
     "tutor:defog",
     "tutor:dive",
+    "tutor:dualwingbeat",
+    "tutor:falseswipe",
+    "tutor:flashcannon",
+    "tutor:flipturn",
     "tutor:furycutter",
-    "tutor:grassknot",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
     "tutor:hydrocannon",
-    "tutor:hydropump",
+    "tutor:hyperbeam",
     "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:knockoff",
     "tutor:laserfocus",
+    "tutor:lashout",
     "tutor:liquidation",
-    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:shadowclaw",
     "tutor:signalbeam",
     "tutor:sleeptalk",
     "tutor:snore",
-    "tutor:stealthrock",
+    "tutor:steelbeam",
+    "tutor:swift",
     "tutor:throatchop",
+    "tutor:tripleaxel",
+    "tutor:uproar",
+    "tutor:vacuumwave",
     "tutor:waterpledge",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.empoleon.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:dig",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:toxic",
+    "special:sing"
   ],
   "preEvolution": "prinplup",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.85,
-    "height": 2.05,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 17,
-  "weight": 845,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

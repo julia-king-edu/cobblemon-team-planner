@@ -1,13 +1,107 @@
 {
   "implemented": true,
-  "name": "Bastiodon",
   "nationalPokedexNumber": 411,
+  "name": "Bastiodon",
   "primaryType": "rock",
   "secondaryType": "steel",
+  "maleRatio": 0.875,
+  "height": 13,
+  "weight": 1495,
+  "pokedex": [
+    "cobblemon.species.bastiodon.desc"
+  ],
+  "labels": [
+    "gen4",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "h:soundproof"
   ],
+  "eggGroups": [
+    "monster"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 52,
+    "defence": 168,
+    "special_attack": 47,
+    "special_defence": 138,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "erratic",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.95,
+    "fixed": false,
+    "width": 1.75
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "15-25",
+          "JUMP": "0-5",
+          "SKILL": "0-5",
+          "SPEED": "15-35",
+          "STAMINA": "50-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      },
+      {
+        "locator": "seat_2"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true,
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bastiodon",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      },
+      "walk": {
+        "walkSpeed": 0.12
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -17,59 +111,38 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 52,
-    "defence": 168,
-    "special_attack": 47,
-    "special_defence": 138,
-    "speed": 30
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 173,
-  "experienceGroup": "erratic",
-  "eggCycles": 30,
-  "eggGroups": [
-    "monster"
-  ],
-  "behaviour": {
-    "moving" : {
-      "walk": {
-        "walkSpeed": 0.12
-      }
-    }
-  },
   "moves": [
-    "1:block",
-    "1:metalsound",
-    "1:protect",
     "1:tackle",
+    "1:protect",
     "1:taunt",
+    "1:metalsound",
+    "1:block",
     "1:wideguard",
     "15:takedown",
     "19:irondefense",
     "24:swagger",
     "28:ancientpower",
-    "30:block",
     "36:endure",
     "43:metalburst",
     "51:ironhead",
-    "52:ironhead",
     "58:heavyslam",
-    "tm:attract",
+    "egg:counter",
+    "egg:fissure",
+    "egg:focusenergy",
+    "egg:guardsplit",
+    "egg:headbutt",
+    "egg:screech",
+    "egg:wideguard",
+    "tm:ancientpower",
     "tm:avalanche",
     "tm:blizzard",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -77,29 +150,30 @@
     "tm:fireblast",
     "tm:flamethrower",
     "tm:flashcannon",
+    "tm:focusenergy",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:incinerate",
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
+    "tm:magiccoat",
+    "tm:magnetrise",
     "tm:metalsound",
     "tm:meteorbeam",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:powergem",
+    "tm:powershift",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockblast",
@@ -107,17 +181,17 @@
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
@@ -130,50 +204,52 @@
     "tm:thunder",
     "tm:thunderbolt",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tutor:ancientpower",
     "tutor:block",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:headbutt",
+    "tutor:flamethrower",
+    "tutor:flashcannon",
+    "tutor:focusenergy",
+    "tutor:foulplay",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
     "tutor:magiccoat",
     "tutor:magnetrise",
+    "tutor:meteorbeam",
     "tutor:mudslap",
     "tutor:outrage",
+    "tutor:powershift",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:scorchingsands",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
-    "tutor:stompingtantrum"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.bastiodon.desc"
+    "tutor:steelbeam",
+    "tutor:steelroller",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:thunderbolt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:toxic"
   ],
   "preEvolution": "shieldon",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.75,
-    "height": 1.95,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 13,
-  "weight": 1495,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

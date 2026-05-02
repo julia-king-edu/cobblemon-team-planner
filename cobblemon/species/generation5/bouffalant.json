@@ -1,13 +1,104 @@
 {
   "implemented": true,
-  "name": "Bouffalant",
   "nationalPokedexNumber": 626,
+  "name": "Bouffalant",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 16,
+  "weight": 946,
+  "pokedex": [
+    "cobblemon.species.bouffalant.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "reckless",
     "sapsipper",
     "h:soundproof"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 95,
+    "attack": 110,
+    "defence": 95,
+    "special_attack": 40,
+    "special_defence": 95,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 2.5,
+    "fixed": false,
+    "width": 2.3
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "50-75",
+          "JUMP": "20-30",
+          "SKILL": "15-30",
+          "SPEED": "45-65",
+          "STAMINA": "55-70"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tauros",
+          "tier": 1
+        },
+        {
+          "pokemon": "bouffalant",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 8,
     "entries": [
@@ -29,29 +120,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 95,
-    "attack": 110,
-    "defence": 95,
-    "special_attack": 40,
-    "special_defence": 95,
-    "speed": 55
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 172,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:leer",
     "1:pursuit",
+    "1:leer",
+    "1:rage",
     "1:tackle",
     "5:focusenergy",
-    "6:rage",
     "10:furyattack",
     "15:revenge",
     "20:scaryface",
@@ -60,41 +134,35 @@
     "35:throatchop",
     "40:headcharge",
     "45:swordsdance",
-    "50:megahorn",
     "50:thrash",
     "55:gigaimpact",
-    "egg:amnesia",
     "egg:belch",
     "egg:cottonguard",
     "egg:endeavor",
     "egg:headbutt",
-    "egg:ironhead",
-    "egg:mudshot",
     "egg:mudslap",
-    "egg:rockclimb",
     "egg:skullbash",
     "egg:stomp",
     "tm:aerialace",
     "tm:amnesia",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:closecombat",
-    "tm:confide",
     "tm:cut",
-    "tm:doubleteam",
     "tm:earthquake",
+    "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:highhorsepower",
     "tm:ironhead",
+    "tm:lashout",
     "tm:megahorn",
     "tm:mudshot",
+    "tm:mudslap",
     "tm:outrage",
     "tm:payback",
     "tm:poisonjab",
@@ -102,18 +170,15 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
+    "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smartstrike",
-    "tm:snore",
     "tm:stompingtantrum",
     "tm:stoneedge",
     "tm:strength",
@@ -121,54 +186,49 @@
     "tm:sunnyday",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:taunt",
+    "tm:terablast",
     "tm:throatchop",
-    "tm:toxic",
     "tm:uproar",
     "tm:wildcharge",
     "tm:workup",
     "tm:zenheadbutt",
-    "tutor:earthquake",
+    "tutor:aerialace",
+    "tutor:bulldoze",
     "tutor:endeavor",
-    "tutor:facade",
-    "tutor:headcharge",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
+    "tutor:highhorsepower",
     "tutor:ironhead",
     "tutor:lashout",
+    "tutor:megahorn",
+    "tutor:mudslap",
     "tutor:outrage",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:superpower",
+    "tutor:throatchop",
     "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.bouffalant.desc"
+    "tutor:wildcharge",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [],
-  "baseScale": 1.6,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 946,
-  "aspects": [],
-  "cannotDynamax": false
+  "standingEyeHeight": 0.45
 }

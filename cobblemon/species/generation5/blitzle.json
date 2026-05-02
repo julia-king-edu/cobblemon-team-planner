@@ -1,12 +1,109 @@
 {
-  "name": "Blitzle",
+  "implemented": true,
   "nationalPokedexNumber": 522,
+  "name": "Blitzle",
   "primaryType": "electric",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 298,
+  "pokedex": [
+    "cobblemon.species.blitzle.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "lightningrod",
     "motordrive",
     "h:sapsipper"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 60,
+    "defence": 32,
+    "special_attack": 50,
+    "special_defence": 32,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 59,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "ponyta",
+          "tier": 1
+        },
+        {
+          "pokemon": "mudbray",
+          "tier": 1
+        },
+        {
+          "pokemon": "blitzle",
+          "tier": 2
+        },
+        {
+          "pokemon": "mudsdale",
+          "tier": 3
+        },
+        {
+          "pokemon": "rapidash",
+          "tier": 3
+        },
+        {
+          "pokemon": "zebstrika",
+          "tier": 4
+        },
+        {
+          "pokemon": "glastrier",
+          "tier": 5
+        },
+        {
+          "pokemon": "spectrier",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,23 +117,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 45,
-    "attack": 60,
-    "defence": 32,
-    "special_attack": 50,
-    "special_defence": 32,
-    "speed": 76
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 59,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
     "1:quickattack",
     "4:tailwhip",
@@ -45,32 +125,25 @@
     "15:thunderwave",
     "18:flamecharge",
     "22:pursuit",
-    "22:spark",
     "25:stomp",
     "29:discharge",
     "33:agility",
     "35:wildcharge",
     "40:thrash",
-    "egg:doubleedge",
     "egg:doublekick",
-    "egg:endure",
     "egg:feint",
     "egg:mefirst",
     "egg:rage",
     "egg:sandattack",
     "egg:screech",
-    "egg:shockwave",
-    "egg:snatch",
-    "egg:takedown",
-    "tm:attract",
+    "egg:spark",
     "tm:agility",
     "tm:batonpass",
     "tm:bodyslam",
+    "tm:bounce",
     "tm:charge",
     "tm:chargebeam",
-    "tm:confide",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:eerieimpulse",
     "tm:electricterrain",
     "tm:electroball",
@@ -80,48 +153,61 @@
     "tm:facade",
     "tm:flamecharge",
     "tm:flash",
-    "tm:frustration",
-    "tm:hiddenpower",
     "tm:helpinghand",
     "tm:lightscreen",
     "tm:lowkick",
+    "tm:magnetrise",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
+    "tm:risingvoltage",
+    "tm:screech",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:smartstrike",
+    "tm:snatch",
     "tm:substitute",
     "tm:sunnyday",
     "tm:supercellslam",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
     "tm:voltswitch",
     "tm:wildcharge",
     "tutor:bounce",
+    "tutor:chargebeam",
+    "tutor:electroweb",
+    "tutor:endeavor",
+    "tutor:helpinghand",
     "tutor:lowkick",
     "tutor:magnetrise",
+    "tutor:rest",
+    "tutor:risingvoltage",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.blitzle.desc"
+    "tutor:swift",
+    "tutor:thunderbolt",
+    "tutor:uproar",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -137,24 +223,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 8,
-  "weight": 298,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

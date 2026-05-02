@@ -1,14 +1,138 @@
 {
   "implemented": true,
-  "name": "Relicanth",
   "nationalPokedexNumber": 369,
+  "name": "Relicanth",
   "primaryType": "water",
   "secondaryType": "rock",
+  "maleRatio": 0.875,
+  "height": 10,
+  "weight": 234,
+  "pokedex": [
+    "cobblemon.species.relicanth.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "rockhead",
     "h:sturdy"
   ],
+  "eggGroups": [
+    "water_1",
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 100,
+    "attack": 90,
+    "defence": 130,
+    "special_attack": 45,
+    "special_defence": 65,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 170,
+  "experienceGroup": "slow",
+  "catchRate": 25,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.4,
+    "fixed": false,
+    "width": 1.5
+  },
+  "riding": {
+    "behaviours": {
+      "LIQUID": {
+        "key": "cobblemon:liquid/submarine",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "submerged": false,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.underwater.stereo",
+            "submerged": true,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "hitboxBreachPercentage": 0.9,
+        "stats": {
+          "ACCELERATION": "25-40",
+          "JUMP": "50-75",
+          "SKILL": "40-80",
+          "SPEED": "15-35",
+          "STAMINA": "50-90"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "relicanth",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": 0.1
+      },
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": 0.25
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,44 +146,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 100,
-    "attack": 90,
-    "defence": 130,
-    "special_attack": 45,
-    "special_defence": 65,
-    "speed": 55
-  },
-  "catchRate": 25,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 170,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "water_1",
-    "water_2"
-  ],
-  "behaviour": {
-    "moving": {
-      "canLook": false,
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.1,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
+    "1:tackle",
     "1:harden",
     "1:mudsport",
-    "1:tackle",
     "5:watergun",
     "10:ancientpower",
-    "15:rocktomb",
     "15:yawn",
     "20:dive",
     "25:takedown",
@@ -69,21 +161,14 @@
     "45:hydropump",
     "50:doubleedge",
     "55:headsmash",
-    "egg:amnesia",
-    "egg:aquatail",
-    "egg:brine",
     "egg:magnitude",
-    "egg:muddywater",
-    "egg:mudshot",
     "egg:mudslap",
-    "egg:rockslide",
     "egg:skullbash",
-    "egg:sleeptalk",
     "egg:snore",
     "egg:watersport",
-    "egg:zenheadbutt",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:blizzard",
     "tm:bodypress",
     "tm:bodyslam",
@@ -91,42 +176,38 @@
     "tm:brine",
     "tm:bulldoze",
     "tm:calmmind",
-    "tm:captivate",
-    "tm:confide",
     "tm:dive",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:irondefense",
     "tm:liquidation",
+    "tm:meteorbeam",
     "tm:muddywater",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scald",
-    "tm:secretpower",
+    "tm:scaleshot",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:snore",
@@ -135,62 +216,51 @@
     "tm:stoneedge",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:takedown",
+    "tm:terablast",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:zenheadbutt",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:bodyslam",
     "tutor:bounce",
+    "tutor:bulldoze",
+    "tutor:calmmind",
     "tutor:dive",
-    "tutor:doubleedge",
     "tutor:earthpower",
-    "tutor:endure",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:liquidation",
     "tutor:meteorbeam",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:psychup",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scaleshot",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:watergun",
+    "tutor:stoneedge",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.relicanth.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1.7,
-  "hitbox": {
-    "width": 0.8,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 234,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

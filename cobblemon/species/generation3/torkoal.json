@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Torkoal",
   "nationalPokedexNumber": 324,
+  "name": "Torkoal",
   "primaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 804,
+  "pokedex": [
+    "cobblemon.species.torkoal.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "whitesmoke",
     "drought",
     "h:shellarmor"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 70,
@@ -16,15 +29,42 @@
     "special_defence": 70,
     "speed": 20
   },
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 165,
   "experienceGroup": "medium_fast",
+  "catchRate": 90,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -49,10 +89,10 @@
   "moves": [
     "1:ember",
     "1:smog",
+    "1:flail",
     "4:withdraw",
     "8:rapidspin",
     "12:smokescreen",
-    "13:firespin",
     "16:clearsmog",
     "20:flamewheel",
     "24:protect",
@@ -60,7 +100,6 @@
     "32:bodyslam",
     "36:irondefense",
     "40:flamethrower",
-    "42:flail",
     "44:curse",
     "48:heatwave",
     "52:amnesia",
@@ -69,27 +108,21 @@
     "64:eruption",
     "egg:ancientpower",
     "egg:clearsmog",
-    "egg:earthquake",
-    "egg:endure",
     "egg:eruption",
     "egg:fissure",
     "egg:flail",
     "egg:flameburst",
     "egg:skullbash",
-    "egg:sleeptalk",
-    "egg:superpower",
     "egg:yawn",
+    "tm:afteryou",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:burningjealousy",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
@@ -100,35 +133,30 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:gyroball",
+    "tm:headbutt",
     "tm:heatcrash",
     "tm:heatwave",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:incinerate",
     "tm:irondefense",
     "tm:irontail",
-    "tm:naturalgift",
     "tm:naturepower",
     "tm:overheat",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stealthrock",
     "tm:stompingtantrum",
@@ -137,68 +165,55 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:temperflare",
     "tm:terablast",
-    "tm:toxic",
     "tm:weatherball",
     "tm:willowisp",
     "tm:zenheadbutt",
     "tutor:afteryou",
-    "tutor:bodypress",
-    "tutor:bodyslam",
+    "tutor:ancientpower",
+    "tutor:bulldoze",
     "tutor:burningjealousy",
-    "tutor:doubleedge",
     "tutor:earthpower",
-    "tutor:ember",
-    "tutor:endure",
-    "tutor:explosion",
-    "tutor:fissure",
-    "tutor:headbutt",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
     "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:irondefense",
     "tutor:irontail",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:protect",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
     "tutor:scorchingsands",
-    "tutor:selfdestruct",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
     "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:substitute",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:yawn"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.torkoal.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 804,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 8,
+    "liquidGlowMode": "LAND"
+  }
 }

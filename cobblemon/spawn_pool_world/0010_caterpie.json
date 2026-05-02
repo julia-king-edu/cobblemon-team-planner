@@ -8,10 +8,11 @@
             "pokemon": "caterpie",
             "presets": [
                 "natural",
+                "foliage",
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-20",
             "weight": 7.0,
@@ -19,7 +20,10 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
-                    "#cobblemon:is_forest"
+                    "#cobblemon:is_forest",
+                    "#cobblemon:is_plains",
+                    "aether:skyroot_forest",
+                    "aether:skyroot_woodland"
                 ]
             },
             "anticondition": {
@@ -30,35 +34,14 @@
             }
         },
         {
-            "id": "caterpie-2",
-            "pokemon": "caterpie",
-            "presets": [
-                "natural",
-                "foliage",
-                "treetop"
-            ],
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "1-20",
-            "weight": 7.0,
-            "condition": {
-                "minSkyLight": 8,
-                "maxSkyLight": 15,
-                "biomes": [
-                    "#cobblemon:is_plains"
-                ]
-            }
-        },
-        {
-            "id": "caterpie-valencian-3",
+            "id": "caterpie-valencian-2",
             "pokemon": "caterpie valencian",
             "presets": [
                 "natural",
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-20",
             "weight": 7.0,
@@ -72,10 +55,10 @@
             }
         },
         {
-            "id": "caterpie-valencian-4",
+            "id": "caterpie-valencian-3",
             "pokemon": "caterpie valencian",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "1-20",
             "weight": 4.5,

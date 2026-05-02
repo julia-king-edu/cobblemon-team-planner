@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "36-50",
             "weight": 0.96,
@@ -18,7 +18,8 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
-                    "#cobblemon:is_sandy"
+                    "#cobblemon:is_badlands",
+                    "#cobblemon:is_desert"
                 ],
                 "minY": 0
             },
@@ -36,7 +37,7 @@
                 "desert_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "36-50",
             "weight": 6.0,
@@ -52,7 +53,7 @@
             "id": "claydol-3",
             "pokemon": "claydol",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "36-50",
             "weight": 0.6,

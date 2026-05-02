@@ -1,12 +1,82 @@
 {
   "implemented": true,
-  "name": "Duskull",
   "nationalPokedexNumber": 355,
+  "name": "Duskull",
   "primaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 150,
+  "pokedex": [
+    "cobblemon.species.duskull.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "levitate",
     "h:frisk"
   ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 20,
+    "attack": 40,
+    "defence": 90,
+    "special_attack": 30,
+    "special_defence": 90,
+    "speed": 25
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 59,
+  "experienceGroup": "fast",
+  "catchRate": 190,
+  "eggCycles": 25,
+  "baseFriendship": 35,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -24,94 +94,54 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 20,
-    "attack": 40,
-    "defence": 90,
-    "special_attack": 30,
-    "special_defence": 90,
-    "speed": 25
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 59,
-  "experienceGroup": "fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "amorphous"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:astonish",
     "1:leer",
+    "1:foresight",
+    "1:astonish",
     "4:disable",
     "8:shadowsneak",
     "12:confuseray",
-    "14:foresight",
     "16:nightshade",
     "20:payback",
-    "22:pursuit",
     "24:willowisp",
     "28:meanlook",
     "32:hex",
     "36:curse",
     "40:shadowball",
     "44:futuresight",
-    "egg:darkpulse",
     "egg:destinybond",
     "egg:feintattack",
     "egg:grudge",
     "egg:haze",
-    "egg:imprison",
     "egg:memento",
-    "egg:ominouswind",
     "egg:painsplit",
-    "egg:skillswap",
+    "egg:pursuit",
     "tm:allyswitch",
-    "tm:attract",
     "tm:blizzard",
-    "tm:bodyslam",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:darkpulse",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:embargo",
     "tm:endure",
     "tm:facade",
     "tm:flash",
     "tm:fling",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gravity",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:icywind",
     "tm:imprison",
     "tm:infestation",
     "tm:leechlife",
-    "tm:naturalgift",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:painsplit",
     "tm:payback",
     "tm:phantomforce",
@@ -121,72 +151,66 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
-    "tm:round",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:skillswap",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:snatch",
-    "tm:snore",
     "tm:spite",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:taunt",
     "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:willowisp",
     "tm:wonderroom",
     "tutor:allyswitch",
-    "tutor:astonish",
-    "tutor:bodyslam",
-    "tutor:confuseray",
-    "tutor:curse",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
-    "tutor:disable",
-    "tutor:doubleedge",
-    "tutor:dreameater",
-    "tutor:endure",
     "tutor:gravity",
-    "tutor:headbutt",
     "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:meanlook",
-    "tutor:mimic",
-    "tutor:nightmare",
+    "tutor:leechlife",
     "tutor:ominouswind",
     "tutor:painsplit",
     "tutor:poltergeist",
-    "tutor:psychup",
-    "tutor:pursuit",
+    "tutor:psychic",
+    "tutor:rest",
     "tutor:shadowball",
     "tutor:skillswap",
     "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:swagger",
     "tutor:telekinesis",
     "tutor:trick",
-    "tutor:willowisp",
-    "tutor:wonderroom"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.duskull.desc"
+    "tutor:wonderroom",
+    "legacy:attract",
+    "legacy:bodyslam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -205,23 +229,8 @@
       ]
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.8,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 150,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 4,
+    "liquidGlowMode": "BOTH"
+  }
 }

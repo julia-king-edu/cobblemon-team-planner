@@ -11,7 +11,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "11-36",
             "weight": 5.4,
@@ -28,7 +28,7 @@
             "id": "aipom-2",
             "pokemon": "aipom",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "11-36",
             "weight": 5.4,

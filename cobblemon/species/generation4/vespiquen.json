@@ -1,15 +1,82 @@
 {
   "implemented": true,
-  "name": "Vespiquen",
   "nationalPokedexNumber": 416,
+  "name": "Vespiquen",
   "primaryType": "bug",
   "secondaryType": "flying",
+  "maleRatio": 0,
+  "height": 12,
+  "weight": 385,
+  "pokedex": [
+    "cobblemon.species.vespiquen.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "pressure",
     "h:unnerve"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 70,
+    "attack": 80,
+    "defence": 102,
+    "special_attack": 80,
+    "special_defence": 102,
+    "speed": 40
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 166,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1,
+    "height": 1.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "9"
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
-    "amount": 6,
+    "amount": 8,
     "entries": [
       {
         "item": "minecraft:honey_bottle",
@@ -17,7 +84,7 @@
       },
       {
         "item": "minecraft:honeycomb",
-        "percentage": 10.0
+        "quantityRange": "0-3"
       },
       {
         "item": "cobblemon:poison_barb",
@@ -29,142 +96,83 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 70,
-    "attack": 80,
-    "defence": 102,
-    "special_attack": 80,
-    "special_defence": 102,
-    "speed": 40
-  },
-  "catchRate": 45,
-  "maleRatio": 0,
-  "shoulderMountable": false,
-  "baseExperienceYield": 166,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "fly": {
-        "canFly": true,
-        "flySpeedHorizontal": 0.6
-      }
-    }
-  },
   "moves": [
-    "1:bugbite",
-    "1:confuseray",
-    "1:destinybond",
-    "1:fellstinger",
+    "1:sweetscent",
     "1:gust",
     "1:poisonsting",
+    "1:confuseray",
+    "1:pursuit",
+    "1:healorder",
     "1:slash",
+    "1:bugbite",
     "1:strugglebug",
-    "1:sweetscent",
-    "3:poisonsting",
+    "1:captivate",
+    "1:aromatherapy",
     "4:furycutter",
-    "5:furycutter",
-    "7:confuseray",
     "8:aromaticmist",
-    "9:furycutter",
-    "9:pursuit",
     "12:fellstinger",
-    "13:defendorder",
-    "13:furyswipes",
-    "15:pursuit",
     "16:furyswipes",
-    "17:defendorder",
-    "19:furyswipes",
     "20:swagger",
-    "21:powergem",
-    "21:slash",
-    "24:aromatherapy",
     "24:roost",
-    "25:healorder",
-    "25:powergem",
-    "27:toxic",
     "28:airslash",
-    "29:healorder",
-    "31:slash",
     "32:powergem",
-    "33:captivate",
-    "33:toxic",
     "36:toxic",
-    "37:airslash",
-    "37:attackorder",
-    "39:swagger",
-    "40:attackorder",
     "40:defendorder",
-    "41:captivate",
-    "43:destinybond",
+    "40:attackorder",
     "44:destinybond",
-    "45:attackorder",
-    "49:swagger",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:airslash",
     "tm:assurance",
-    "tm:attract",
     "tm:beatup",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:captivate",
-    "tm:confide",
     "tm:confuseray",
     "tm:crosspoison",
     "tm:cut",
     "tm:defog",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:flash",
     "tm:fling",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:infestation",
+    "tm:laserfocus",
     "tm:lunge",
-    "tm:naturalgift",
+    "tm:ominouswind",
     "tm:pinmissile",
     "tm:pollenpuff",
     "tm:pounce",
     "tm:powergem",
+    "tm:powershift",
     "tm:protect",
     "tm:psychicnoise",
     "tm:quash",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:revenge",
     "tm:reversal",
     "tm:roost",
-    "tm:round",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:silverwind",
     "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:spikes",
     "tm:spite",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
@@ -176,52 +184,45 @@
     "tm:thief",
     "tm:toxic",
     "tm:toxicspikes",
-    "tm:uproar",
     "tm:uturn",
     "tm:venoshock",
     "tm:xscissor",
-    "tutor:aircutter",
+    "tutor:aerialace",
     "tutor:bugbite",
     "tutor:defog",
-    "tutor:dualwingbeat",
     "tutor:endeavor",
     "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:laserfocus",
-    "tutor:mudslap",
     "tutor:ominouswind",
+    "tutor:powershift",
+    "tutor:rest",
     "tutor:roost",
     "tutor:signalbeam",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:spite",
     "tutor:stringshot",
-    "tutor:swift",
-    "tutor:tailwind"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.vespiquen.desc"
+    "tutor:xscissor",
+    "legacy:aircutter",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:tailwind",
+    "legacy:uproar"
   ],
   "preEvolution": "combee",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 385,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

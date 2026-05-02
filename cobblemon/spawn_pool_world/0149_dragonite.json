@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "55-60",
             "weight": 0.25,
@@ -22,7 +22,12 @@
                 ],
                 "maxY": 32,
                 "neededNearbyBlocks": [
-                    "#minecraft:water"
+                    "minecraft:water"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
                 ]
             }
         },
@@ -34,7 +39,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "55-60",
             "weight": 1.6,
@@ -52,7 +57,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "55-60",
             "weight": 0.4,
@@ -69,7 +74,7 @@
             "id": "dragonite-5",
             "pokemon": "dragonite",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "55-60",
             "weight": 0.05,
@@ -77,22 +82,29 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_overworld"
                 ],
                 "maxY": 32
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
             "id": "dragonite-6",
             "pokemon": "dragonite",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "55-60",
             "weight": 0.4,
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_magical",
                     "#cobblemon:is_ocean"
                 ]
@@ -111,7 +123,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "55-60",
             "weight": 1.6,
@@ -128,7 +140,7 @@
             "id": "dragonite-8",
             "pokemon": "dragonite",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "55-60",
             "weight": 0.4,
@@ -137,6 +149,7 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_magical",
                     "#cobblemon:is_ocean"
                 ]

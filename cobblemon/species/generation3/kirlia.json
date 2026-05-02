@@ -1,14 +1,100 @@
 {
   "implemented": true,
-  "name": "Kirlia",
   "nationalPokedexNumber": 281,
+  "name": "Kirlia",
   "primaryType": "psychic",
   "secondaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 202,
+  "pokedex": [
+    "cobblemon.species.kirlia.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "synchronize",
     "trace",
     "h:telepathy"
   ],
+  "eggGroups": [
+    "human_like",
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 38,
+    "attack": 35,
+    "defence": 35,
+    "special_attack": 65,
+    "special_defence": 55,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 97,
+  "experienceGroup": "slow",
+  "catchRate": 120,
+  "eggCycles": 20,
+  "baseFriendship": 35,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "kirlia",
+          "tier": 1
+        },
+        {
+          "pokemon": "gallade mega=false",
+          "tier": 2
+        },
+        {
+          "pokemon": "gardevoir mega=false",
+          "tier": 3
+        },
+        {
+          "pokemon": "gardevoir mega",
+          "tier": 4
+        },
+        {
+          "pokemon": "gallade mega",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -30,66 +116,39 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 38,
-    "attack": 35,
-    "defence": 35,
-    "special_attack": 65,
-    "special_defence": 55,
-    "speed": 50
-  },
-  "catchRate": 120,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 97,
-  "experienceGroup": "slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "human_like",
-    "amorphous"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    }
-  },
   "moves": [
-    "1:confusion",
-    "1:disarmingvoice",
-    "1:doubleteam",
     "1:growl",
+    "1:confusion",
+    "1:doubleteam",
+    "1:luckychant",
+    "1:disarmingvoice",
     "9:hypnosis",
     "12:drainingkiss",
-    "14:luckychant",
     "15:teleport",
-    "17:magicalleaf",
     "18:psybeam",
     "23:lifedew",
     "28:charm",
     "33:calmmind",
-    "33:imprison",
     "38:psychic",
     "43:healpulse",
     "48:dreameater",
-    "51:storedpower",
     "53:futuresight",
+    "egg:confuseray",
+    "egg:destinybond",
+    "egg:disable",
+    "egg:grudge",
+    "egg:knockoff",
+    "egg:meanlook",
+    "egg:memento",
+    "egg:mysticalfire",
+    "egg:shadowsneak",
+    "egg:synchronoise",
     "tm:alluringvoice",
     "tm:allyswitch",
-    "tm:attract",
     "tm:bodyslam",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
     "tm:confuseray",
     "tm:dazzlinggleam",
     "tm:disarmingvoice",
@@ -104,11 +163,10 @@
     "tm:firepunch",
     "tm:flash",
     "tm:fling",
-    "tm:frustration",
     "tm:futuresight",
     "tm:grassknot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:hypervoice",
     "tm:icepunch",
@@ -117,12 +175,13 @@
     "tm:knockoff",
     "tm:lightscreen",
     "tm:magicalleaf",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
     "tm:mistyterrain",
-    "tm:naturalgift",
+    "tm:mysticalfire",
     "tm:painsplit",
     "tm:protect",
     "tm:psybeam",
@@ -134,20 +193,16 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
-    "tm:snore",
     "tm:storedpower",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:taunt",
     "tm:telekinesis",
@@ -157,7 +212,6 @@
     "tm:thunderpunch",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:tripleaxel",
@@ -165,48 +219,58 @@
     "tm:wonderroom",
     "tm:zenheadbutt",
     "tutor:allyswitch",
-    "tutor:bodyslam",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:dreameater",
-    "tutor:endure",
+    "tutor:calmmind",
+    "tutor:chargebeam",
+    "tutor:dazzlinggleam",
     "tutor:expandingforce",
     "tutor:firepunch",
-    "tutor:headbutt",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:hypervoice",
     "tutor:icepunch",
     "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:nightmare",
+    "tutor:mysticalfire",
     "tutor:painsplit",
-    "tutor:psychup",
+    "tutor:psychic",
     "tutor:recycle",
+    "tutor:rest",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:telekinesis",
+    "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
     "tutor:trick",
     "tutor:tripleaxel",
     "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.kirlia.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:sing",
+    "special:wish"
   ],
   "preEvolution": "ralts",
   "evolutions": [
@@ -230,7 +294,9 @@
       "variant": "item_interact",
       "result": "gallade",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "slash"
+      ],
       "requirements": [
         {
           "variant": "properties",
@@ -239,24 +305,5 @@
       ],
       "requiredContext": "cobblemon:dawn_stone"
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.5,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 2,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 202,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

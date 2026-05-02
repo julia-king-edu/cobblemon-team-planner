@@ -1,11 +1,27 @@
 {
   "implemented": true,
-  "name": "Mimikyu",
   "nationalPokedexNumber": 778,
+  "name": "Mimikyu",
   "primaryType": "ghost",
   "secondaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 2,
+  "weight": 7,
+  "pokedex": [
+    "cobblemon.species.mimikyu.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [
+    "disguised-form"
+  ],
   "abilities": [
-    "disguise"
+    "disguise",
+    "h:disguise"
+  ],
+  "eggGroups": [
+    "amorphous"
   ],
   "baseStats": {
     "hp": 55,
@@ -15,15 +31,26 @@
     "special_defence": 105,
     "speed": 96
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
   "baseExperienceYield": 167,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -38,15 +65,15 @@
     ]
   },
   "moves": [
+    "1:woodhammer",
+    "1:splash",
+    "1:scratch",
     "1:astonish",
     "1:copycat",
-    "1:scratch",
-    "1:splash",
-    "1:woodhammer",
+    "1:feintattack",
     "6:shadowsneak",
     "12:doubleteam",
     "18:babydolleyes",
-    "23:feintattack",
     "24:mimic",
     "30:honeclaws",
     "36:slash",
@@ -58,14 +85,14 @@
     "egg:destinybond",
     "egg:grudge",
     "egg:nightmare",
-    "tm:attract",
+    "tm:afteryou",
+    "tm:babydolleyes",
     "tm:beatup",
     "tm:bulkup",
     "tm:burningjealousy",
-    "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
     "tm:confuseray",
+    "tm:covet",
     "tm:curse",
     "tm:darkpulse",
     "tm:dazzlinggleam",
@@ -77,20 +104,20 @@
     "tm:endure",
     "tm:facade",
     "tm:fling",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:hex",
-    "tm:hiddenpower",
+    "tm:honeclaws",
     "tm:hyperbeam",
     "tm:infestation",
+    "tm:lastresort",
     "tm:leechlife",
     "tm:lightscreen",
     "tm:magicroom",
     "tm:mistyterrain",
     "tm:nightshade",
-    "tm:payback",
     "tm:painsplit",
+    "tm:payback",
     "tm:phantomforce",
     "tm:playrough",
     "tm:pounce",
@@ -99,27 +126,24 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:screech",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:snatch",
     "tm:spite",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:takedown",
     "tm:taunt",
+    "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:trick",
     "tm:trickroom",
@@ -127,258 +151,196 @@
     "tm:workup",
     "tm:xscissor",
     "tutor:afteryou",
-    "tutor:astonish",
     "tutor:babydolleyes",
+    "tutor:bulkup",
     "tutor:burningjealousy",
-    "tutor:copycat",
     "tutor:covet",
+    "tutor:darkpulse",
+    "tutor:dazzlinggleam",
     "tutor:drainpunch",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
     "tutor:lastresort",
+    "tutor:leechlife",
     "tutor:magicroom",
-    "tutor:mimic",
     "tutor:painsplit",
     "tutor:playrough",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:splash",
-    "tutor:substitute",
     "tutor:telekinesis",
-    "tutor:trick"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.mimikyu.desc"
+    "tutor:thunderbolt",
+    "tutor:trick",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:chargebeam",
+    "legacy:confide",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 2,
-  "weight": 7,
   "forms": [
     {
       "name": "Busted",
       "primaryType": "ghost",
       "secondaryType": "fairy",
-      "abilities": [
-        "disguise"
-      ],
-      "baseStats": {
-        "hp": 55,
-        "attack": 90,
-        "defence": 80,
-        "special_attack": 50,
-        "special_defence": 105,
-        "speed": 96
-      },
-      "catchRate": 45,
       "maleRatio": 0.5,
-      "baseExperienceYield": 167,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "amorphous"
+      "height": 2,
+      "weight": 7,
+      "pokedex": [
+        "cobblemon.species.mimikyu-busted.desc"
       ],
       "labels": [
         "gen7"
       ],
       "aspects": [
-        "busted"
-      ],
-      "height": 2,
-      "weight": 7,
-      "cannotDynamax": false,
-      "battleOnly": true
-    },
-    {
-      "name": "Totem",
-      "primaryType": "ghost",
-      "secondaryType": "fairy",
-      "abilities": [
-        "disguise"
-      ],
-      "baseStats": {
-        "hp": 55,
-        "attack": 90,
-        "defence": 80,
-        "special_attack": 50,
-        "special_defence": 105,
-        "speed": 96
-      },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 167,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "amorphous"
+        "busted-form"
       ],
       "moves": [
+        "1:woodhammer",
+        "1:splash",
+        "1:scratch",
         "1:astonish",
         "1:copycat",
-        "1:scratch",
-        "1:splash",
-        "1:woodhammer",
-        "5:doubleteam",
-        "10:babydolleyes",
-        "14:shadowsneak",
-        "19:mimic",
-        "23:feintattack",
-        "28:charm",
-        "32:slash",
-        "37:shadowclaw",
-        "41:honeclaws",
-        "46:playrough",
-        "50:painsplit",
-        "tm:attract",
+        "1:feintattack",
+        "6:shadowsneak",
+        "12:doubleteam",
+        "18:babydolleyes",
+        "24:mimic",
+        "30:honeclaws",
+        "36:slash",
+        "42:shadowclaw",
+        "48:charm",
+        "54:playrough",
+        "60:painsplit",
+        "egg:destinybond",
+        "egg:grudge",
+        "egg:nightmare",
+        "tm:afteryou",
+        "tm:babydolleyes",
+        "tm:beatup",
         "tm:bulkup",
-        "tm:chargebeam",
-        "tm:confide",
+        "tm:burningjealousy",
+        "tm:charm",
+        "tm:confuseray",
+        "tm:covet",
+        "tm:curse",
         "tm:darkpulse",
         "tm:dazzlinggleam",
         "tm:doubleteam",
+        "tm:drainingkiss",
+        "tm:drainpunch",
         "tm:dreameater",
         "tm:embargo",
+        "tm:endure",
         "tm:facade",
         "tm:fling",
-        "tm:frustration",
-        "tm:hiddenpower",
+        "tm:gigadrain",
+        "tm:gigaimpact",
+        "tm:hex",
+        "tm:honeclaws",
         "tm:hyperbeam",
         "tm:infestation",
+        "tm:lastresort",
         "tm:leechlife",
         "tm:lightscreen",
+        "tm:magicroom",
+        "tm:mistyterrain",
+        "tm:nightshade",
+        "tm:painsplit",
         "tm:payback",
+        "tm:phantomforce",
+        "tm:playrough",
+        "tm:pounce",
         "tm:protect",
         "tm:psychic",
         "tm:psychup",
+        "tm:raindance",
         "tm:rest",
-        "tm:return",
-        "tm:round",
         "tm:safeguard",
+        "tm:screech",
         "tm:shadowball",
         "tm:shadowclaw",
         "tm:sleeptalk",
+        "tm:snatch",
+        "tm:spite",
         "tm:substitute",
-        "tm:swagger",
+        "tm:sunnyday",
         "tm:swordsdance",
+        "tm:takedown",
         "tm:taunt",
+        "tm:telekinesis",
+        "tm:terablast",
         "tm:thief",
         "tm:thunder",
         "tm:thunderbolt",
         "tm:thunderwave",
-        "tm:toxic",
+        "tm:trailblaze",
+        "tm:trick",
         "tm:trickroom",
         "tm:willowisp",
         "tm:workup",
         "tm:xscissor",
         "tutor:afteryou",
-        "tutor:charm",
+        "tutor:babydolleyes",
+        "tutor:bulkup",
+        "tutor:burningjealousy",
         "tutor:covet",
+        "tutor:darkpulse",
+        "tutor:dazzlinggleam",
         "tutor:drainpunch",
-        "tutor:feintattack",
         "tutor:gigadrain",
+        "tutor:gigaimpact",
+        "tutor:hyperbeam",
         "tutor:lastresort",
+        "tutor:leechlife",
         "tutor:magicroom",
         "tutor:painsplit",
+        "tutor:playrough",
+        "tutor:psychic",
+        "tutor:rest",
+        "tutor:shadowball",
         "tutor:shadowclaw",
-        "tutor:slash",
+        "tutor:sleeptalk",
         "tutor:snatch",
-        "tutor:snore",
         "tutor:spite",
         "tutor:telekinesis",
-        "tutor:trick"
+        "tutor:thunderbolt",
+        "tutor:trick",
+        "tutor:xscissor"
       ],
-      "labels": [
-        "gen7",
-        "totem"
-      ],
-      "aspects": [
-        "totem"
-      ],
-      "height": 4,
-      "weight": 28,
-      "cannotDynamax": false,
-      "battleOnly": false
-    },
-    {
-      "name": "Busted-Totem",
-      "primaryType": "ghost",
-      "secondaryType": "fairy",
-      "abilities": [
-        "disguise"
-      ],
-      "baseStats": {
-        "hp": 55,
-        "attack": 90,
-        "defence": 80,
-        "special_attack": 50,
-        "special_defence": 105,
-        "speed": 96
-      },
-      "catchRate": 45,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 167,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 20,
-      "eggGroups": [
-        "amorphous"
-      ],
-      "labels": [
-        "gen7",
-        "totem"
-      ],
-      "aspects": [
-        "busted-totem"
-      ],
-      "height": 4,
-      "weight": 28,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": true
     }
   ],
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
 }

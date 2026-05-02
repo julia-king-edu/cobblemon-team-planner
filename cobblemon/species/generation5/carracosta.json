@@ -1,14 +1,91 @@
 {
   "implemented": true,
-  "name": "Carracosta",
   "nationalPokedexNumber": 565,
+  "name": "Carracosta",
   "primaryType": "water",
   "secondaryType": "rock",
+  "maleRatio": 0.875,
+  "height": 12,
+  "weight": 810,
+  "pokedex": [
+    "cobblemon.species.carracosta.desc"
+  ],
+  "labels": [
+    "gen5",
+    "fossil"
+  ],
+  "aspects": [],
   "abilities": [
     "solidrock",
     "sturdy",
     "h:swiftswim"
   ],
+  "eggGroups": [
+    "water_1",
+    "water_3"
+  ],
+  "baseStats": {
+    "hp": 74,
+    "attack": 108,
+    "defence": 133,
+    "special_attack": 83,
+    "special_defence": 65,
+    "speed": 32
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 173,
+  "experienceGroup": "medium_fast",
+  "catchRate": 45,
+  "eggCycles": 30,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1.9,
+    "fixed": false,
+    "width": 1.1
+  },
+  "behaviour": {
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "carracosta",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": 0.2
+      },
+      "walk": {
+        "walkSpeed": 0.14
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -18,50 +95,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 74,
-    "attack": 108,
-    "defence": 133,
-    "special_attack": 83,
-    "special_defence": 65,
-    "speed": 32
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": false,
-        "walkSpeed": 0.14
-      },
-      "swim": {
-        "swimSpeed": 0.2,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 173,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 30,
-  "eggGroups": [
-    "water_1",
-    "water_3"
-  ],
   "moves": [
-    "1:aquajet",
     "1:bide",
-    "1:protect",
-    "1:rollout",
-    "1:watergun",
     "1:withdraw",
+    "1:watergun",
+    "1:protect",
+    "1:aquajet",
     "9:smackdown",
     "12:ancientpower",
     "15:bite",
@@ -75,25 +114,32 @@
     "41:raindance",
     "46:hydropump",
     "51:shellsmash",
-    "tm:attract",
+    "egg:bide",
+    "egg:block",
+    "egg:flail",
+    "egg:knockoff",
+    "egg:rockthrow",
+    "egg:rollout",
+    "egg:slam",
+    "egg:waterpulse",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:blizzard",
+    "tm:block",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulldoze",
-    "tm:confide",
     "tm:crunch",
+    "tm:curse",
     "tm:dig",
     "tm:dive",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:focusblast",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:guardswap",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
@@ -101,41 +147,46 @@
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
+    "tm:knockoff",
     "tm:liquidation",
     "tm:lowkick",
+    "tm:meteorbeam",
     "tm:muddywater",
     "tm:mudshot",
     "tm:protect",
     "tm:raindance",
     "tm:razorshell",
     "tm:rest",
-    "tm:return",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:scald",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:superpower",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterfall",
+    "tm:waterpulse",
     "tm:whirlpool",
     "tm:zenheadbutt",
+    "tutor:ancientpower",
     "tutor:aquatail",
     "tutor:block",
+    "tutor:bulldoze",
+    "tutor:dive",
     "tutor:earthpower",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:ironhead",
@@ -144,38 +195,28 @@
     "tutor:liquidation",
     "tutor:lowkick",
     "tutor:meteorbeam",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:superpower",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.carracosta.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "tirtouga",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 810,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,14 +1,92 @@
 {
   "implemented": true,
-  "name": "Tinkatink",
   "nationalPokedexNumber": 957,
+  "name": "Tinkatink",
   "primaryType": "fairy",
   "secondaryType": "steel",
+  "maleRatio": 0,
+  "height": 4,
+  "weight": 89,
+  "pokedex": [
+    "cobblemon.species.tinkatink.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "moldbreaker",
     "owntempo",
     "h:pickpocket"
   ],
+  "eggGroups": [
+    "fairy"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 45,
+    "defence": 45,
+    "special_attack": 35,
+    "special_defence": 64,
+    "speed": 58
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 59,
+  "experienceGroup": "medium_slow",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.45,
+    "height": 0.65,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tinkatink",
+          "tier": 1
+        },
+        {
+          "pokemon": "tinkatuff",
+          "tier": 2
+        },
+        {
+          "pokemon": "tinkaton",
+          "tier": 3
+        }
+      ]
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.14
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,39 +99,6 @@
         "percentage": 2.5
       }
     ]
-  },
-  "baseStats": {
-    "hp": 50,
-    "attack": 45,
-    "defence": 45,
-    "special_attack": 35,
-    "special_defence": 64,
-    "speed": 58
-  },
-  "catchRate": 190,
-  "maleRatio": 0,
-  "baseExperienceYield": 59,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "fairy"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
   },
   "moves": [
     "1:astonish",
@@ -75,6 +120,9 @@
     "egg:feint",
     "egg:icehammer",
     "egg:quash",
+    "tm:babydolleyes",
+    "tm:brutalswing",
+    "tm:covet",
     "tm:drainingkiss",
     "tm:encore",
     "tm:endeavor",
@@ -93,9 +141,11 @@
     "tm:playrough",
     "tm:pounce",
     "tm:protect",
+    "tm:quash",
     "tm:reflect",
     "tm:rest",
     "tm:rockslide",
+    "tm:rocksmash",
     "tm:rocktomb",
     "tm:skillswap",
     "tm:skittersmack",
@@ -107,14 +157,25 @@
     "tm:swordsdance",
     "tm:terablast",
     "tm:thief",
-    "tm:thunderwave"
+    "tm:thunderwave",
+    "tutor:babydolleyes",
+    "tutor:covet",
+    "tutor:endeavor",
+    "tutor:flashcannon",
+    "tutor:foulplay",
+    "tutor:helpinghand",
+    "tutor:knockoff",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:skillswap",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:stealthrock",
+    "tutor:steelbeam",
+    "tutor:stoneedge"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 4,
-  "weight": 89,
   "evolutions": [
     {
       "id": "tinkatink_tinkatuff",
@@ -129,15 +190,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1.0,
-  "hitbox": {
-    "width": 0.45,
-    "height": 0.65,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.tinkatink.desc"
   ]
 }

@@ -1,14 +1,88 @@
 {
   "implemented": true,
-  "name": "Whiscash",
   "nationalPokedexNumber": 340,
+  "name": "Whiscash",
   "primaryType": "water",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 9,
+  "weight": 236,
+  "pokedex": [
+    "cobblemon.species.whiscash.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "oblivious",
     "anticipation",
     "h:hydration"
   ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 110,
+    "attack": 78,
+    "defence": 73,
+    "special_attack": 76,
+    "special_defence": 71,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 164,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 2.3,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "whiscash",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -22,78 +96,51 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 110,
-    "attack": 78,
-    "defence": 73,
-    "special_attack": 76,
-    "special_defence": 71,
-    "speed": 60
-  },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 164,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_2"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
-    "1:belch",
+    "1:zenheadbutt",
+    "1:tickle",
     "1:mudslap",
     "1:mudsport",
-    "1:rest",
-    "1:snore",
-    "1:thrash",
-    "1:tickle",
-    "1:watergun",
     "1:watersport",
-    "1:zenheadbutt",
+    "1:watergun",
+    "1:mudbomb",
+    "1:magnitude",
+    "1:rest",
+    "1:thrash",
+    "1:belch",
+    "1:snore",
     "12:waterpulse",
-    "13:mudbomb",
     "18:amnesia",
-    "20:magnitude",
     "24:aquatail",
     "33:muddywater",
     "40:earthquake",
     "48:futuresight",
     "56:fissure",
+    "egg:flail",
+    "egg:magnitude",
+    "egg:spark",
+    "egg:takedown",
+    "egg:thrash",
     "tm:amnesia",
-    "tm:attract",
+    "tm:aquatail",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bounce",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragondance",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:hail",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hydropump",
     "tm:hyperbeam",
@@ -103,21 +150,16 @@
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:scald",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:snore",
     "tm:spikes",
@@ -128,12 +170,9 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
-    "tm:uproar",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
@@ -141,50 +180,46 @@
     "tm:zenheadbutt",
     "tutor:aquatail",
     "tutor:bounce",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
     "tutor:earthpower",
-    "tutor:earthquake",
-    "tutor:endure",
     "tutor:gigaimpact",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:mimic",
+    "tutor:liquidation",
     "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:sleeptalk",
     "tutor:snore",
+    "tutor:spikes",
+    "tutor:stealthrock",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:swagger",
+    "tutor:stoneedge",
+    "tutor:swift",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.whiscash.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "barboach",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 2.3,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 236,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

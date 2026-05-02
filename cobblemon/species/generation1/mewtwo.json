@@ -1,20 +1,27 @@
 {
   "implemented": true,
-  "name": "Mewtwo",
   "nationalPokedexNumber": 150,
+  "name": "Mewtwo",
   "primaryType": "psychic",
+  "maleRatio": -1,
+  "height": 20,
+  "weight": 1220,
+  "pokedex": [
+    "cobblemon.species.mewtwo.desc"
+  ],
+  "labels": [
+    "gen1",
+    "legendary",
+    "restricted"
+  ],
+  "aspects": [],
   "abilities": [
     "pressure",
     "h:unnerve"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:twisted_spoon"
-      }
-    ]
-  },
+  "eggGroups": [
+    "undiscovered"
+  ],
   "baseStats": {
     "hp": 106,
     "attack": 110,
@@ -23,140 +30,80 @@
     "special_defence": 90,
     "speed": 130
   },
-  "catchRate": 3,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega-X",
-      "primaryType": "psychic",
-      "secondaryType": "fighting",
-      "abilities": [
-        "steadfast"
-      ],
-      "baseStats": {
-        "hp": 106,
-        "attack": 190,
-        "defence": 100,
-        "special_attack": 154,
-        "special_defence": 100,
-        "speed": 130
-      },
-      "catchRate": 3,
-      "maleRatio": -1,
-      "baseExperienceYield": 340,
-      "baseFriendship": 0,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 3,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 120,
-      "eggGroups": [
-        "undiscovered"
-      ],
-      "labels": [
-        "gen6",
-        "mega",
-        "legendary"
-      ],
-      "aspects": [
-        "mega-x"
-      ],
-      "height": 23,
-      "weight": 1270,
-      "cannotDynamax": false,
-      "battleOnly": true
-    },
-    {
-      "name": "Mega-Y",
-      "primaryType": "psychic",
-      "abilities": [
-        "insomnia"
-      ],
-      "baseStats": {
-        "hp": 106,
-        "attack": 150,
-        "defence": 70,
-        "special_attack": 194,
-        "special_defence": 120,
-        "speed": 140
-      },
-      "catchRate": 3,
-      "maleRatio": -1,
-      "baseExperienceYield": 340,
-      "baseFriendship": 0,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 3,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 120,
-      "eggGroups": [
-        "undiscovered"
-      ],
-      "labels": [
-        "gen6",
-        "mega",
-        "legendary"
-      ],
-      "aspects": [
-        "mega-y"
-      ],
-      "height": 15,
-      "weight": 330,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 3,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 340,
   "experienceGroup": "slow",
+  "catchRate": 3,
   "eggCycles": 120,
-  "eggGroups": [
-    "undiscovered"
-  ],
+  "baseFriendship": 0,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1.25,
+    "height": 2.75,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "fly": {
         "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canWalkOnWater": true
       }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:twisted_spoon"
+      }
+    ]
   },
   "moves": [
     "1:confusion",
     "1:disable",
-    "1:laserfocus",
-    "1:lifedew",
-    "1:psywave",
+    "1:barrier",
     "1:swift",
+    "1:miracleeye",
+    "1:mefirst",
+    "1:laserfocus",
+    "1:psywave",
+    "1:lifedew",
     "8:ancientpower",
     "16:psychocut",
-    "22:psychup",
     "24:safeguard",
-    "29:miracleeye",
     "32:amnesia",
     "40:aurasphere",
     "48:psychic",
-    "56:guardswap",
     "56:powerswap",
-    "64:barrier",
+    "56:guardswap",
     "64:mist",
     "72:psystrike",
     "80:recover",
     "88:futuresight",
-    "93:mefirst",
-    "tm:aerialace",
     "tm:agility",
     "tm:allyswitch",
     "tm:amnesia",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:aurasphere",
     "tm:avalanche",
     "tm:blizzard",
@@ -166,15 +113,12 @@
     "tm:bulkup",
     "tm:bulldoze",
     "tm:calmmind",
-    "tm:chargebeam",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:darkpulse",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:dreameater",
     "tm:earthpower",
@@ -193,16 +137,15 @@
     "tm:focusblast",
     "tm:focuspunch",
     "tm:foulplay",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:gravity",
     "tm:guardswap",
     "tm:hail",
+    "tm:headbutt",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:icebeam",
@@ -212,16 +155,17 @@
     "tm:incinerate",
     "tm:irontail",
     "tm:knockoff",
+    "tm:laserfocus",
     "tm:lashout",
     "tm:lightscreen",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:megakick",
     "tm:megapunch",
     "tm:metronome",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
     "tm:payday",
     "tm:poisonjab",
@@ -240,24 +184,22 @@
     "tm:recycle",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:shadowball",
     "tm:shockwave",
+    "tm:signalbeam",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:snatch",
-    "tm:snore",
     "tm:solarbeam",
     "tm:speedswap",
     "tm:spite",
@@ -267,7 +209,6 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
@@ -278,152 +219,196 @@
     "tm:thunderpunch",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:triattack",
     "tm:trick",
     "tm:trickroom",
-    "tm:waterpulse",
     "tm:weatherball",
     "tm:willowisp",
     "tm:wonderroom",
     "tm:zenheadbutt",
-    "tutor:agility",
-    "tutor:amnesia",
+    "tutor:allyswitch",
+    "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:barrier",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:brickbreak",
-    "tutor:bubblebeam",
     "tutor:bulkup",
-    "tutor:confuseray",
-    "tutor:confusion",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:detect",
-    "tutor:disable",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:dive",
     "tutor:drainpunch",
-    "tutor:dreameater",
-    "tutor:dynamicpunch",
-    "tutor:earthquake",
-    "tutor:electroball",
-    "tutor:endure",
+    "tutor:earthpower",
+    "tutor:energyball",
     "tutor:expandingforce",
-    "tutor:facade",
-    "tutor:fireblast",
     "tutor:firepunch",
     "tutor:flamethrower",
-    "tutor:flash",
     "tutor:focuspunch",
     "tutor:foulplay",
-    "tutor:frustration",
-    "tutor:futuresight",
+    "tutor:gigaimpact",
     "tutor:gravity",
-    "tutor:guardswap",
-    "tutor:headbutt",
-    "tutor:healpulse",
-    "tutor:hiddenpower",
-    "tutor:hurricane",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:knockoff",
     "tutor:laserfocus",
-    "tutor:lightscreen",
+    "tutor:lashout",
     "tutor:lowkick",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:metronome",
-    "tutor:mimic",
-    "tutor:mist",
-    "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:payday",
     "tutor:poisonjab",
-    "tutor:powerswap",
-    "tutor:protect",
-    "tutor:psybeam",
     "tutor:psychic",
     "tutor:psychocut",
-    "tutor:psychup",
-    "tutor:psywave",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:recover",
     "tutor:recycle",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:roleplay",
-    "tutor:safeguard",
-    "tutor:seismictoss",
-    "tutor:selfdestruct",
     "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:skillswap",
-    "tutor:skullbash",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:strength",
-    "tutor:submission",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
+    "tutor:spite",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
     "tutor:swift",
-    "tutor:takedown",
-    "tutor:taunt",
     "tutor:telekinesis",
-    "tutor:teleport",
-    "tutor:thunder",
     "tutor:thunderbolt",
     "tutor:thunderpunch",
-    "tutor:thunderwave",
-    "tutor:toxic",
-    "tutor:triattack",
     "tutor:trick",
-    "tutor:watergun",
-    "tutor:waterpulse",
-    "tutor:willowisp",
     "tutor:wonderroom",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1",
-    "legendary"
-  ],
-  "pokedex": [
-    "cobblemon.species.mewtwo.desc"
+    "tutor:zenheadbutt",
+    "legacy:aerialace",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:chargebeam",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:submission",
+    "legacy:swagger",
+    "legacy:teleport",
+    "legacy:toxic",
+    "legacy:watergun",
+    "legacy:waterpulse",
+    "legacy:zapcannon",
+    "special:healpulse"
   ],
   "evolutions": [],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 0.75,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 0,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 3,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 1220,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega-X",
+      "primaryType": "psychic",
+      "secondaryType": "fighting",
+      "maleRatio": -1,
+      "height": 23,
+      "weight": 1270,
+      "pokedex": [
+        "cobblemon.species.mewtwo-megax.desc"
+      ],
+      "labels": [
+        "gen6",
+        "legendary",
+        "restricted",
+        "mega"
+      ],
+      "aspects": [
+        "mega_x"
+      ],
+      "abilities": [
+        "steadfast",
+        "h:steadfast"
+      ],
+      "baseStats": {
+        "hp": 106,
+        "attack": 190,
+        "defence": 100,
+        "special_attack": 154,
+        "special_defence": 100,
+        "speed": 130
+      },
+      "baseExperienceYield": 390,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    },
+    {
+      "name": "Mega-Y",
+      "primaryType": "psychic",
+      "maleRatio": -1,
+      "height": 15,
+      "weight": 330,
+      "pokedex": [
+        "cobblemon.species.mewtwo-megay.desc"
+      ],
+      "labels": [
+        "gen6",
+        "legendary",
+        "restricted",
+        "mega"
+      ],
+      "aspects": [
+        "mega_y"
+      ],
+      "abilities": [
+        "insomnia",
+        "h:insomnia"
+      ],
+      "baseStats": {
+        "hp": 106,
+        "attack": 150,
+        "defence": 70,
+        "special_attack": 194,
+        "special_defence": 120,
+        "speed": 140
+      },
+      "baseExperienceYield": 390,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true
+    }
+  ],
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": "40-80"
+      },
+      "ACCELERATION": {
+        "ranges": "45-90"
+      },
+      "SKILL": {
+        "ranges": "40-80"
+      },
+      "JUMP": {
+        "ranges": "50-100"
+      },
+      "STAMINA": {
+        "ranges": "45-90"
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ],
+    "behaviour": null
+  }
 }

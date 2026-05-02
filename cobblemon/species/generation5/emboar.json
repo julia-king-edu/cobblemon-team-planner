@@ -1,13 +1,86 @@
 {
   "implemented": true,
-  "name": "Emboar",
   "nationalPokedexNumber": 500,
+  "name": "Emboar",
   "primaryType": "fire",
   "secondaryType": "fighting",
+  "maleRatio": 0.875,
+  "height": 16,
+  "weight": 1500,
+  "pokedex": [
+    "cobblemon.species.emboar.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:reckless"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 110,
+    "attack": 123,
+    "defence": 65,
+    "special_attack": 100,
+    "special_defence": 65,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 3,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 264,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.15,
+  "hitbox": {
+    "width": 1.35,
+    "height": 2.2,
+    "fixed": false
+  },
+  "standingEyeHeight": 0.9,
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "emboar",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -21,39 +94,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 110,
-    "attack": 123,
-    "defence": 65,
-    "special_attack": 100,
-    "special_defence": 65,
-    "speed": 65
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 238,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
   "moves": [
-    "1:armthrust",
-    "1:ember",
-    "1:endure",
     "1:hammerarm",
-    "1:odorsleuth",
     "1:tackle",
     "1:tailwhip",
+    "1:ember",
+    "1:odorsleuth",
+    "1:armthrust",
+    "1:endure",
     "13:defensecurl",
     "15:flamecharge",
     "20:smog",
@@ -65,8 +113,15 @@
     "50:headsmash",
     "55:roar",
     "62:flareblitz",
-    "tm:attract",
+    "egg:burnup",
+    "egg:magnitude",
+    "egg:suckerpunch",
+    "egg:superpower",
+    "egg:thrash",
+    "egg:yawn",
+    "tm:assurance",
     "tm:blastburn",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:brickbreak",
@@ -74,11 +129,10 @@
     "tm:bulldoze",
     "tm:closecombat",
     "tm:coaching",
-    "tm:confide",
+    "tm:covet",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:earthquake",
     "tm:echoedvoice",
@@ -95,7 +149,6 @@
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:gyroball",
@@ -104,11 +157,11 @@
     "tm:heatwave",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:highhorsepower",
     "tm:hyperbeam",
     "tm:incinerate",
     "tm:ironhead",
+    "tm:irontail",
     "tm:knockoff",
     "tm:lowkick",
     "tm:lowsweep",
@@ -118,16 +171,14 @@
     "tm:poweruppunch",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:scald",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:smackdown",
     "tm:solarbeam",
@@ -135,14 +186,14 @@
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superpower",
     "tm:takedown",
     "tm:taunt",
     "tm:temperflare",
     "tm:terablast",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:wildcharge",
     "tm:willowisp",
@@ -150,54 +201,56 @@
     "tm:zenheadbutt",
     "tutor:blastburn",
     "tutor:block",
+    "tutor:bulkup",
+    "tutor:bulldoze",
+    "tutor:coaching",
     "tutor:covet",
+    "tutor:drainpunch",
     "tutor:endeavor",
     "tutor:firepledge",
     "tutor:firepunch",
-    "tutor:flareblitz",
+    "tutor:flamethrower",
     "tutor:focuspunch",
-    "tutor:hammerarm",
-    "tutor:headsmash",
+    "tutor:gigaimpact",
     "tutor:heatwave",
     "tutor:helpinghand",
-    "tutor:holdback",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
     "tutor:ironhead",
     "tutor:irontail",
+    "tutor:knockoff",
     "tutor:lowkick",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rollout",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:suckerpunch",
     "tutor:superpower",
-    "tutor:takedown",
     "tutor:thunderpunch",
     "tutor:wildcharge",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.emboar.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:holdback"
   ],
   "preEvolution": "pignite",
   "evolutions": [],
-  "baseScale": 1.25,
-  "hitbox": {
-    "width": 1.35,
-    "height": 2,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 3,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 16,
-  "weight": 1500,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 15,
+    "liquidGlowMode": "LAND"
+  }
 }

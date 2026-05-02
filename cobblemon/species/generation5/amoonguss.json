@@ -1,12 +1,88 @@
 {
-  "name": "Amoonguss",
+  "implemented": true,
   "nationalPokedexNumber": 591,
+  "name": "Amoonguss",
   "primaryType": "grass",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 105,
+  "pokedex": [
+    "cobblemon.species.amoonguss.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "effectspore",
     "h:regenerator"
   ],
+  "eggGroups": [
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 114,
+    "attack": 85,
+    "defence": 70,
+    "special_attack": 85,
+    "special_defence": 80,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 162,
+  "experienceGroup": "medium_fast",
+  "catchRate": 75,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.35,
+    "fixed": false
+  },
+  "standingEyeHeight": 0.6,
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "amoonguss",
+          "tier": 1
+        },
+        {
+          "pokemon": "brutebonnet",
+          "tier": 2
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -20,33 +96,16 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 114,
-    "attack": 85,
-    "defence": 70,
-    "special_attack": 85,
-    "special_defence": 80,
-    "speed": 30
-  },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 162,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
   "moves": [
     "1:absorb",
+    "1:growth",
     "1:astonish",
     "1:bide",
-    "1:growth",
+    "1:feintattack",
     "1:stunspore",
     "12:megadrain",
     "16:synthesis",
     "20:clearsmog",
-    "20:feintattack",
     "24:sweetscent",
     "28:gigadrain",
     "32:ingrain",
@@ -54,23 +113,25 @@
     "42:ragepowder",
     "48:solarbeam",
     "54:spore",
-    "tm:attract",
+    "egg:clearsmog",
+    "egg:defensecurl",
+    "egg:poisonpowder",
+    "egg:rollout",
+    "egg:worryseed",
+    "tm:afteryou",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
     "tm:foulplay",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grassyterrain",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:leafstorm",
     "tm:magicalleaf",
@@ -80,62 +141,47 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
+    "tm:rollout",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:stompingtantrum",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:synthesis",
     "tm:terablast",
     "tm:toxic",
     "tm:venoshock",
+    "tm:worryseed",
     "tutor:afteryou",
-    "tutor:clearsmog",
+    "tutor:energyball",
     "tutor:foulplay",
     "tutor:gastroacid",
     "tutor:gigadrain",
-    "tutor:protect",
-    "tutor:ragepowder",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:rollout",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:spore",
+    "tutor:sludgebomb",
     "tutor:stompingtantrum",
     "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.amoonguss.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "preEvolution": "foongus",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 2,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 105,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

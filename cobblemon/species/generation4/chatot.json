@@ -1,16 +1,84 @@
 {
   "implemented": true,
-  "name": "Chatot",
   "nationalPokedexNumber": 441,
+  "name": "Chatot",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 19,
+  "pokedex": [
+    "cobblemon.species.chatot.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "keeneye",
     "tangledfeet",
     "h:bigpecks"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 76,
+    "attack": 65,
+    "defence": 45,
+    "special_attack": 92,
+    "special_defence": 42,
+    "speed": 91
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "medium_slow",
+  "catchRate": 30,
+  "eggCycles": 20,
+  "baseFriendship": 35,
+  "shoulderMountable": true,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "chatot",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
-    "amount": 4,
+    "amount": 5,
     "entries": [
       {
         "item": "minecraft:feather",
@@ -20,148 +88,104 @@
         "item": "minecraft:chicken"
       },
       {
+        "item": "cobblemon:metronome",
+        "percentage": 5.0
+      },
+      {
         "item": "cobblemon:persim_berry",
         "percentage": 5.0
       }
     ]
   },
-  "baseStats": {
-    "hp": 76,
-    "attack": 65,
-    "defence": 45,
-    "special_attack": 92,
-    "special_defence": 42,
-    "speed": 91
-  },
-  "catchRate": 30,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 144,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
     "1:chatter",
-    "1:confide",
-    "1:hypervoice",
-    "1:peck",
     "1:taunt",
-    "5:growl",
+    "1:hypervoice",
+    "1:confide",
+    "5:peck",
     "9:mirrormove",
     "13:sing",
     "17:furyattack",
-    "21:chatter",
-    "25:taunt",
-    "29:mimic",
     "29:round",
     "33:mimic",
-    "33:roost",
     "37:echoedvoice",
-    "37:uproar",
-    "41:featherdance",
     "41:roost",
-    "45:hypervoice",
     "45:uproar",
     "49:synchronoise",
     "50:featherdance",
-    "53:featherdance",
-    "57:hypervoice",
-    "egg:agility",
-    "egg:aircutter",
     "egg:boomburst",
-    "egg:defog",
-    "egg:encore",
-    "egg:nastyplot",
-    "egg:nightshade",
-    "egg:sleeptalk",
-    "egg:steelwing",
     "egg:supersonic",
     "tm:aerialace",
-    "tm:attract",
-    "tm:captivate",
+    "tm:agility",
+    "tm:aircutter",
     "tm:confide",
     "tm:defog",
-    "tm:doubleteam",
+    "tm:dualwingbeat",
     "tm:echoedvoice",
+    "tm:encore",
     "tm:endure",
     "tm:facade",
+    "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
-    "tm:hiddenpower",
-    "tm:naturalgift",
+    "tm:growl",
+    "tm:heatwave",
+    "tm:hypervoice",
+    "tm:mudslap",
+    "tm:nastyplot",
+    "tm:nightshade",
+    "tm:ominouswind",
+    "tm:partingshot",
     "tm:pluck",
+    "tm:powershift",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
+    "tm:roleplay",
     "tm:roost",
     "tm:round",
-    "tm:secretpower",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:tailwind",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:torment",
-    "tm:toxic",
+    "tm:twister",
+    "tm:uproar",
     "tm:uturn",
     "tm:workup",
+    "tutor:aerialace",
     "tutor:aircutter",
-    "tutor:chatter",
     "tutor:defog",
-    "tutor:furyattack",
+    "tutor:dualwingbeat",
     "tutor:heatwave",
     "tutor:hypervoice",
-    "tutor:mirrormove",
     "tutor:mudslap",
-    "tutor:nastyplot",
     "tutor:ominouswind",
+    "tutor:powershift",
+    "tutor:rest",
     "tutor:roleplay",
     "tutor:roost",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:swift",
     "tutor:tailwind",
-    "tutor:taunt",
     "tutor:twister",
-    "tutor:uproar"
+    "tutor:uproar",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.chatot.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.5,
-    "height": 0.8,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 19,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,22 +1,26 @@
 {
   "implemented": true,
-  "name": "Bounsweet",
   "nationalPokedexNumber": 761,
+  "name": "Bounsweet",
   "primaryType": "grass",
+  "maleRatio": 0,
+  "height": 3,
+  "weight": 32,
+  "pokedex": [
+    "cobblemon.species.bounsweet.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "leafguard",
     "oblivious",
     "h:sweetveil"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:persim_berry",
-        "percentage": 2.5
-      }
-    ]
-  },
+  "eggGroups": [
+    "grass"
+  ],
   "baseStats": {
     "hp": 42,
     "attack": 30,
@@ -25,15 +29,38 @@
     "special_defence": 38,
     "speed": 32
   },
-  "catchRate": 235,
-  "maleRatio": 0,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 42,
   "experienceGroup": "medium_slow",
+  "catchRate": 235,
   "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:grassy_seed",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:splash",
     "4:playnice",
@@ -44,33 +71,27 @@
     "24:flail",
     "28:teeterdance",
     "32:aromaticmist",
-    "36:aromatherapy",
     "egg:acupressure",
-    "egg:charm",
+    "egg:aromatherapy",
     "egg:endeavor",
     "egg:feint",
     "egg:grasswhistle",
-    "egg:playrough",
     "egg:synthesis",
-    "tm:attract",
     "tm:bounce",
     "tm:bulletseed",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:endeavor",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:magicalleaf",
@@ -79,39 +100,46 @@
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
+    "tm:worryseed",
     "tm:zenheadbutt",
     "tutor:bounce",
     "tutor:covet",
+    "tutor:dazzlinggleam",
     "tutor:endeavor",
+    "tutor:energyball",
     "tutor:gigadrain",
     "tutor:grassyglide",
     "tutor:helpinghand",
+    "tutor:magicalleaf",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:seedbomb",
-    "tutor:snore",
+    "tutor:sleeptalk",
+    "tutor:swift",
     "tutor:synthesis",
     "tutor:worryseed",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.bounsweet.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -119,7 +147,9 @@
       "variant": "level_up",
       "result": "steenee",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "doubleslap"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -128,23 +158,36 @@
       ]
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 32,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bounsweet",
+          "tier": 1
+        },
+        {
+          "pokemon": "steenee",
+          "tier": 2
+        },
+        {
+          "pokemon": "tsareena",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

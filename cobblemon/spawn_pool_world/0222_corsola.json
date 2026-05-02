@@ -10,8 +10,8 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "seafloor",
-            "bucket": "uncommon",
+            "spawnablePositionType": "seafloor",
+            "bucket": "common",
             "level": "16-41",
             "weight": 10.0,
             "condition": {
@@ -24,50 +24,51 @@
         {
             "id": "corsola-2",
             "pokemon": "corsola",
+            "presets": [
+                "water"
+            ],
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "seafloor",
             "bucket": "uncommon",
             "level": "16-41",
             "weight": 10.0,
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
-                    "#cobblemon:is_warm_ocean"
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#minecraft:corals",
+                    "#minecraft:coral_blocks"
                 ]
             },
             "anticondition": {
-                "minLureLevel": 1
+                "biomes": [
+                    "#cobblemon:is_warm_ocean"
+                ]
             }
         },
         {
             "id": "corsola-3",
             "pokemon": "corsola",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "16-41",
             "weight": 10.0,
-            "weightMultiplier": {
-                "multiplier": 0.6,
-                "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
-                }
-            },
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
                     "#cobblemon:is_warm_ocean"
-                ],
-                "minLureLevel": 1
+                ]
             }
         },
         {
             "id": "corsola-4",
             "pokemon": "corsola",
             "type": "pokemon",
-            "context": "fishing",
-            "bucket": "uncommon",
+            "spawnablePositionType": "fishing",
+            "bucket": "common",
             "level": "16-41",
             "weight": 10.0,
             "condition": {
@@ -77,24 +78,177 @@
                 "biomes": [
                     "#cobblemon:is_warm_ocean"
                 ]
+            }
+        },
+        {
+            "id": "corsola-galarian-5",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "16-41",
+            "weight": 1.68,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_beach"
+                ]
+            }
+        },
+        {
+            "id": "corsola-galarian-6",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "16-41",
+            "weight": 9.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:dead_coral"
+                ]
+            }
+        },
+        {
+            "id": "corsola-galarian-7",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "water"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "seafloor",
+            "bucket": "common",
+            "level": "16-41",
+            "weight": 9.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:dead_coral"
+                ]
+            }
+        },
+        {
+            "id": "corsola-galarian-8",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "16-41",
+            "weight": 5.04,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:nether/is_quartz"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:quartz_block"
+                ]
+            }
+        },
+        {
+            "id": "corsola-galarian-9",
+            "pokemon": "corsola galarian",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "16-41",
+            "weight": 9.0,
+            "condition": {
+                "biomes": [
+                    "byg:warped_desert"
+                ]
+            }
+        },
+        {
+            "id": "corsola-galarian-10",
+            "pokemon": "corsola galarian",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
+            "bucket": "uncommon",
+            "level": "16-41",
+            "weight": 1.68,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_beach",
+                    "#cobblemon:is_warm_ocean"
+                ]
             },
             "anticondition": {
                 "minLureLevel": 1
             }
         },
         {
-            "id": "corsola-5",
-            "pokemon": "corsola",
+            "id": "corsola-galarian-11",
+            "pokemon": "corsola galarian",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "16-41",
-            "weight": 10.0,
+            "weight": 1.8,
             "weightMultiplier": {
-                "multiplier": 0.6,
+                "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 3
+                }
+            },
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_beach",
+                    "#cobblemon:is_warm_ocean"
+                ],
+                "minLureLevel": 1
+            }
+        },
+        {
+            "id": "corsola-galarian-12",
+            "pokemon": "corsola galarian",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
+            "bucket": "uncommon",
+            "level": "16-41",
+            "weight": 1.68,
+            "condition": {
+                "canSeeSky": false,
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#cobblemon:is_beach",
+                    "#cobblemon:is_warm_ocean"
+                ]
+            },
+            "anticondition": {
+                "minLureLevel": 1
+            }
+        },
+        {
+            "id": "corsola-galarian-13",
+            "pokemon": "corsola galarian",
+            "type": "pokemon",
+            "spawnablePositionType": "fishing",
+            "bucket": "common",
+            "level": "16-41",
+            "weight": 1.8,
+            "weightMultiplier": {
+                "multiplier": 3.0,
+                "condition": {
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -102,6 +256,7 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#cobblemon:is_beach",
                     "#cobblemon:is_warm_ocean"
                 ],
                 "minLureLevel": 1

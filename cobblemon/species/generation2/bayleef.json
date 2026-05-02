@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Bayleef",
   "nationalPokedexNumber": 153,
+  "name": "Bayleef",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 12,
+  "weight": 158,
+  "pokedex": [
+    "cobblemon.species.bayleef.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:leafguard"
+  ],
+  "eggGroups": [
+    "monster",
+    "grass"
   ],
   "baseStats": {
     "hp": 60,
@@ -15,27 +29,63 @@
     "special_defence": 80,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 142,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.7,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "walk": {
         "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
       }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bayleef",
+          "tier": 1
+        },
+        {
+          "pokemon": "meganium",
+          "tier": 2
+        },
+        {
+          "pokemon": "tropius",
+          "tier": 3
+        },
+        {
+          "pokemon": "aurorus",
+          "tier": 4
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -48,32 +98,39 @@
     ]
   },
   "moves": [
-    "1:growl",
-    "1:poisonpowder",
-    "1:razorleaf",
     "1:tackle",
+    "1:growl",
+    "1:razorleaf",
+    "1:poisonpowder",
+    "1:naturalgift",
     "12:synthesis",
     "18:reflect",
     "22:magicalleaf",
     "26:leechseed",
-    "26:naturalgift",
     "32:sweetscent",
     "36:lightscreen",
     "40:bodyslam",
     "46:safeguard",
-    "50:aromatherapy",
     "50:gigadrain",
     "54:solarbeam",
-    "tm:attract",
+    "egg:ancientpower",
+    "egg:aromatherapy",
+    "egg:counter",
+    "egg:flail",
+    "egg:grasswhistle",
+    "egg:healpulse",
+    "egg:ingrain",
+    "egg:leechseed",
+    "egg:refresh",
+    "egg:vinewhip",
+    "egg:wringout",
+    "tm:ancientpower",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
-    "tm:confide",
     "tm:curse",
     "tm:cut",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:echoedvoice",
     "tm:encore",
     "tm:endure",
@@ -81,30 +138,29 @@
     "tm:facade",
     "tm:faketears",
     "tm:flash",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grasspledge",
     "tm:grassyglide",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:knockoff",
-    "tm:hiddenpower",
     "tm:irontail",
+    "tm:knockoff",
+    "tm:laserfocus",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:magicalleaf",
+    "tm:magiccoat",
     "tm:mudslap",
     "tm:naturalgift",
     "tm:naturepower",
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:solarbeam",
@@ -113,65 +169,49 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:workup",
+    "tm:worryseed",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:detect",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:flash",
-    "tutor:frustration",
+    "tutor:energyball",
+    "tutor:frenzyplant",
     "tutor:furycutter",
     "tutor:gigadrain",
     "tutor:grasspledge",
-    "tutor:growl",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
     "tutor:irontail",
+    "tutor:knockoff",
     "tutor:laserfocus",
-    "tutor:lightscreen",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:poisonpowder",
-    "tutor:protect",
-    "tutor:razorleaf",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rocksmash",
-    "tutor:safeguard",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
+    "tutor:stompingtantrum",
     "tutor:synthesis",
-    "tutor:tackle",
-    "tutor:toxic",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.bayleef.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:frenzyplant"
   ],
   "preEvolution": "chikorita",
   "evolutions": [
@@ -180,7 +220,9 @@
       "variant": "level_up",
       "result": "meganium",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "petaldance"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -188,24 +230,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 158,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

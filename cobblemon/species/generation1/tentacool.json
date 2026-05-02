@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Tentacool",
   "nationalPokedexNumber": 72,
+  "name": "Tentacool",
   "primaryType": "water",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 9,
+  "weight": 455,
+  "pokedex": [
+    "cobblemon.species.tentacool.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "clearbody",
     "liquidooze",
     "h:raindish"
+  ],
+  "eggGroups": [
+    "water_3"
   ],
   "baseStats": {
     "hp": 40,
@@ -17,15 +30,25 @@
     "special_defence": 100,
     "speed": 70
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 67,
   "experienceGroup": "slow",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_3"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.8,
+    "height": 2.1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
@@ -33,15 +56,46 @@
       },
       "swim": {
         "swimSpeed": 0.2,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "frillish",
+          "tier": 1
+        },
+        {
+          "pokemon": "jellicent",
+          "tier": 2
+        },
+        {
+          "pokemon": "tentacool",
+          "tier": 3
+        },
+        {
+          "pokemon": "tentacruel",
+          "tier": 4
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 5
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -64,25 +118,21 @@
   },
   "moves": [
     "1:poisonsting",
+    "1:constrict",
+    "1:bubble",
     "1:watergun",
     "4:acid",
-    "7:constrict",
     "8:wrap",
     "12:supersonic",
-    "13:toxicspikes",
     "16:waterpulse",
     "20:screech",
-    "22:acidspray",
     "24:bubblebeam",
     "28:barrier",
-    "28:hex",
     "32:acidarmor",
-    "34:brine",
     "36:poisonjab",
     "40:surf",
     "44:sludgewave",
     "48:hydropump",
-    "49:wringout",
     "egg:acupressure",
     "egg:aquaring",
     "egg:aurorabeam",
@@ -91,62 +141,50 @@
     "egg:haze",
     "egg:knockoff",
     "egg:mirrorcoat",
-    "egg:muddywater",
     "egg:rapidspin",
-    "egg:safeguard",
     "egg:tickle",
+    "egg:wringout",
     "tm:acidspray",
-    "tm:attract",
+    "tm:bind",
     "tm:blizzard",
     "tm:brine",
     "tm:brutalswing",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
     "tm:crosspoison",
     "tm:cut",
     "tm:dazzlinggleam",
     "tm:dive",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:flipturn",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gunkshot",
     "tm:hail",
     "tm:haze",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
     "tm:infestation",
     "tm:knockoff",
     "tm:liquidation",
+    "tm:magiccoat",
     "tm:muddywater",
     "tm:mudshot",
-    "tm:naturalgift",
     "tm:payback",
     "tm:poisonjab",
     "tm:pounce",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:scald",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:terablast",
@@ -155,74 +193,50 @@
     "tm:toxic",
     "tm:toxicspikes",
     "tm:venoshock",
-    "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tutor:acid",
-    "tutor:acupressure",
-    "tutor:attract",
-    "tutor:aurorabeam",
-    "tutor:barrier",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:blizzard",
-    "tutor:bubblebeam",
-    "tutor:constrict",
-    "tutor:curse",
-    "tutor:cut",
     "tutor:dazzlinggleam",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:frustration",
+    "tutor:flipturn",
     "tutor:gigadrain",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
+    "tutor:gunkshot",
     "tutor:icebeam",
     "tutor:icywind",
     "tutor:knockoff",
+    "tutor:liquidation",
     "tutor:magiccoat",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:mirrorcoat",
     "tutor:poisonjab",
-    "tutor:poisonsting",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:rapidspin",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
-    "tutor:safeguard",
-    "tutor:scald",
-    "tutor:screech",
-    "tutor:skullbash",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:supersonic",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
+    "tutor:swift",
+    "tutor:throatchop",
     "tutor:waterpulse",
-    "tutor:whirlpool",
-    "tutor:wrap"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.tentacool.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:megadrain",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:takedown",
+    "legacy:waterfall"
   ],
   "evolutions": [
     {
@@ -239,23 +253,8 @@
       ]
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.8,
-    "height": 2.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 9,
-  "weight": 455,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 7,
+    "liquidGlowMode": "BOTH"
+  }
 }

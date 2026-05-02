@@ -1,14 +1,85 @@
 {
   "implemented": true,
-  "name": "Breloom",
   "nationalPokedexNumber": 286,
+  "name": "Breloom",
   "primaryType": "grass",
   "secondaryType": "fighting",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 392,
+  "pokedex": [
+    "cobblemon.species.breloom.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "effectspore",
     "poisonheal",
     "h:technician"
   ],
+  "eggGroups": [
+    "fairy",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 60,
+    "attack": 130,
+    "defence": 80,
+    "special_attack": 60,
+    "special_defence": 60,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 161,
+  "experienceGroup": "fluctuating",
+  "catchRate": 90,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "breloom",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -22,73 +93,46 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 60,
-    "attack": 130,
-    "defence": 80,
-    "special_attack": 60,
-    "special_defence": 60,
-    "speed": 70
-  },
-  "catchRate": 90,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 161,
-  "experienceGroup": "fluctuating",
-  "eggCycles": 15,
-  "eggGroups": [
-    "fairy",
-    "grass"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
     "1:absorb",
-    "1:growth",
+    "1:tackle",
+    "1:stunspore",
     "1:leechseed",
     "1:machpunch",
+    "1:skyuppercut",
+    "1:mindreader",
+    "1:gigadrain",
     "1:poisonpowder",
-    "1:spore",
-    "1:stunspore",
-    "1:tackle",
+    "1:growth",
     "1:toxic",
+    "1:spore",
     "12:megadrain",
     "15:headbutt",
     "19:feint",
     "22:counter",
     "28:forcepalm",
-    "33:mindreader",
     "33:worryseed",
     "39:brickbreak",
-    "39:skyuppercut",
     "44:seedbomb",
     "50:dynamicpunch",
     "55:focuspunch",
+    "egg:charm",
+    "egg:faketears",
+    "egg:helpinghand",
+    "egg:naturalgift",
+    "egg:swagger",
+    "egg:wakeupslap",
+    "egg:worryseed",
     "tm:aerialace",
-    "tm:attract",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:charm",
     "tm:closecombat",
-    "tm:confide",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:endure",
     "tm:energyball",
@@ -99,20 +143,23 @@
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grassyterrain",
     "tm:gunkshot",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:leafstorm",
     "tm:lowkick",
     "tm:lowsweep",
     "tm:magicalleaf",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:mudshot",
     "tm:mudslap",
     "tm:naturalgift",
@@ -123,14 +170,12 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
+    "tm:revenge",
     "tm:reversal",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
     "tm:sludgebomb",
@@ -140,72 +185,67 @@
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
+    "tm:superpower",
     "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
     "tm:thunderpunch",
     "tm:toxic",
     "tm:venoshock",
     "tm:workup",
+    "tm:worryseed",
     "tm:zenheadbutt",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:doubleedge",
+    "tutor:aerialace",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:drainpunch",
-    "tutor:dynamicpunch",
-    "tutor:endure",
-    "tutor:focuspunch",
+    "tutor:energyball",
+    "tutor:falseswipe",
     "tutor:furycutter",
     "tutor:gigadrain",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
+    "tutor:gunkshot",
     "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:irontail",
     "tutor:laserfocus",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
+    "tutor:lowkick",
+    "tutor:magicalleaf",
     "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:seedbomb",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
+    "tutor:sludgebomb",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:substitute",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger",
-    "tutor:swordsdance",
+    "tutor:swift",
     "tutor:synthesis",
     "tutor:thunderpunch",
-    "tutor:vacuumwave",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.breloom.desc"
+    "tutor:worryseed",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:vacuumwave",
+    "special:refresh"
   ],
   "preEvolution": "shroomish",
-  "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 392,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,12 +1,85 @@
 {
   "implemented": true,
-  "name": "Fidough",
   "nationalPokedexNumber": 926,
+  "name": "Fidough",
   "primaryType": "fairy",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 109,
+  "pokedex": [
+    "cobblemon.species.fidough.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "owntempo",
     "h:klutz"
   ],
+  "eggGroups": [
+    "field",
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 37,
+    "attack": 55,
+    "defence": 70,
+    "special_attack": 30,
+    "special_defence": 55,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 62,
+  "experienceGroup": "medium_slow",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "entityInteract": {
+      "avoidedBySkeleton": true
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dachsbun",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,35 +93,9 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 37,
-    "attack": 55,
-    "defence": 70,
-    "special_attack": 30,
-    "special_defence": 55,
-    "speed": 65
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 62,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "mineral"
-  ],
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "3:lick",
     "6:tailwhip",
     "8:covet",
@@ -69,9 +116,11 @@
     "egg:yawn",
     "tm:agility",
     "tm:alluringvoice",
+    "tm:babydolleyes",
     "tm:batonpass",
     "tm:bodyslam",
     "tm:charm",
+    "tm:covet",
     "tm:crunch",
     "tm:dazzlinggleam",
     "tm:dig",
@@ -82,6 +131,7 @@
     "tm:firefang",
     "tm:helpinghand",
     "tm:icefang",
+    "tm:lastresort",
     "tm:mistyterrain",
     "tm:mudshot",
     "tm:mudslap",
@@ -100,33 +150,24 @@
     "tm:takedown",
     "tm:terablast",
     "tm:thunderfang",
-    "tm:trailblaze"
+    "tm:trailblaze",
+    "tm:workup",
+    "tutor:babydolleyes",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:endeavor",
+    "tutor:firefang",
+    "tutor:helpinghand",
+    "tutor:icefang",
+    "tutor:lastresort",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:stompingtantrum",
+    "tutor:thunderfang"
   ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.3
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1,
-    "fixed": false
-  },
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 3,
-  "weight": 109,
   "evolutions": [
     {
       "id": "fidough_dachsbun",
@@ -141,9 +182,5 @@
         }
       ]
     }
-  ],
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.fidough.desc"
   ]
 }

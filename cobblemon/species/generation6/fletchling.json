@@ -1,13 +1,89 @@
 {
   "implemented": true,
-  "name": "Fletchling",
   "nationalPokedexNumber": 661,
+  "name": "Fletchling",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 17,
+  "pokedex": [
+    "cobblemon.species.fletchling.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "bigpecks",
     "h:galewings"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 45,
+    "attack": 50,
+    "defence": 43,
+    "special_attack": 40,
+    "special_defence": 38,
+    "speed": 62
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 56,
+  "experienceGroup": "medium_slow",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.45,
+    "height": 0.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "fletchling",
+          "tier": 1
+        },
+        {
+          "pokemon": "fletchinder",
+          "tier": 2
+        },
+        {
+          "pokemon": "talonflame",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -24,63 +100,33 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 45,
-    "attack": 50,
-    "defence": 43,
-    "special_attack": 40,
-    "special_defence": 38,
-    "speed": 62
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 56,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
+    "1:tackle",
     "1:growl",
     "1:peck",
-    "1:tackle",
     "5:quickattack",
     "10:ember",
     "15:flail",
     "20:acrobatics",
-    "25:agility",
     "25:razorwind",
-    "29:naturalgift",
     "30:aerialace",
-    "34:flamecharge",
     "35:tailwind",
     "40:steelwing",
-    "41:mefirst",
     "45:roost",
     "50:fly",
     "egg:defog",
     "egg:flamecharge",
+    "egg:mefirst",
+    "egg:naturalgift",
     "egg:quickguard",
-    "egg:snatch",
-    "egg:tailwind",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:bravebird",
-    "tm:confide",
+    "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:endure",
     "tm:facade",
@@ -88,24 +134,19 @@
     "tm:flamecharge",
     "tm:flareblitz",
     "tm:fly",
-    "tm:frustration",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:hurricane",
+    "tm:naturalgift",
     "tm:overheat",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:snatch",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:tailwind",
@@ -113,22 +154,31 @@
     "tm:taunt",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:uturn",
-    "tm:willowisp",
     "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
     "tutor:defog",
     "tutor:dualwingbeat",
     "tutor:heatwave",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:tailwind"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.fletchling.desc"
+    "tutor:swift",
+    "tutor:tailwind",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:willowisp"
   ],
   "evolutions": [
     {
@@ -137,6 +187,7 @@
       "result": "fletchinder",
       "consumeHeldItem": false,
       "learnableMoves": [
+        "ember",
         "flamecharge"
       ],
       "requirements": [
@@ -146,24 +197,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.45,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 17,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

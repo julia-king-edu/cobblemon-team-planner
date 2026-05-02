@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "uncommon",
             "level": "29-54",
             "weight": 2.0,
@@ -29,7 +29,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "ultra-rare",
             "level": "29-54",
             "weight": 10.0,
@@ -50,7 +50,7 @@
             "id": "lapras-3",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "29-54",
             "weight": 2.0,
@@ -68,14 +68,14 @@
             "id": "lapras-4",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "29-54",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -90,7 +90,7 @@
             "id": "lapras-5",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "29-54",
             "weight": 10.0,
@@ -110,7 +110,7 @@
             "id": "lapras-6",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "29-54",
             "weight": 2.0,
@@ -130,14 +130,14 @@
             "id": "lapras-7",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "29-54",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -154,7 +154,7 @@
             "id": "lapras-8",
             "pokemon": "lapras",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "29-54",
             "weight": 10.0,

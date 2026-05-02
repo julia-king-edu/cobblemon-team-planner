@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Lotad",
   "nationalPokedexNumber": 270,
+  "name": "Lotad",
   "primaryType": "water",
   "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 26,
+  "pokedex": [
+    "cobblemon.species.lotad.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "raindish",
     "h:owntempo"
+  ],
+  "eggGroups": [
+    "water_1",
+    "grass"
   ],
   "baseStats": {
     "hp": 40,
@@ -17,16 +31,25 @@
     "special_defence": 50,
     "speed": 30
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 44,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "water_1",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.6,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
@@ -34,16 +57,38 @@
       },
       "swim": {
         "swimSpeed": 0.3,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
         "canWalkOnWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "lotad",
+          "tier": 1
+        },
+        {
+          "pokemon": "lombre",
+          "tier": 2
+        },
+        {
+          "pokemon": "ludicolo",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -66,52 +111,42 @@
   "moves": [
     "1:astonish",
     "1:growl",
+    "1:bubble",
+    "1:naturalgift",
     "3:absorb",
     "6:watergun",
-    "9:bubble",
     "9:mist",
     "12:megadrain",
-    "12:naturalgift",
     "16:flail",
     "20:bubblebeam",
     "24:leechseed",
-    "24:naturepower",
     "28:gigadrain",
     "33:raindance",
     "38:zenheadbutt",
     "43:energyball",
     "egg:counter",
-    "egg:flail",
-    "egg:gigadrain",
-    "egg:leechseed",
     "egg:razorleaf",
     "egg:sweetscent",
     "egg:synthesis",
     "egg:teeterdance",
     "egg:tickle",
-    "egg:watergun",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:disarmingvoice",
-    "tm:doubleteam",
     "tm:doubleedge",
     "tm:echoedvoice",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:grassknot",
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:icebeam",
     "tm:icywind",
     "tm:magicalleaf",
@@ -121,57 +156,50 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scald",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:substitute",
     "tm:sunnyday",
     "tm:surf",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
     "tm:zenheadbutt",
-    "tutor:absorb",
-    "tutor:astonish",
-    "tutor:bodyslam",
-    "tutor:doubleedge",
-    "tutor:endure",
+    "tutor:energyball",
     "tutor:gigadrain",
     "tutor:grassyglide",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:icebeam",
     "tutor:icywind",
-    "tutor:leechseed",
-    "tutor:mimic",
+    "tutor:magicalleaf",
+    "tutor:rest",
     "tutor:seedbomb",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:swordsdance",
     "tutor:synthesis",
     "tutor:uproar",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.lotad.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -187,24 +215,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 26,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

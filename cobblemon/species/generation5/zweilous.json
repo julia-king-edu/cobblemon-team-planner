@@ -1,12 +1,53 @@
 {
   "implemented": true,
-  "name": "Zweilous",
   "nationalPokedexNumber": 634,
+  "name": "Zweilous",
   "primaryType": "dark",
   "secondaryType": "dragon",
-  "abilities": [
-    "hustle"
+  "maleRatio": 0.5,
+  "height": 14,
+  "weight": 500,
+  "pokedex": [
+    "cobblemon.species.zweilous.desc"
   ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "hustle",
+    "h:hustle"
+  ],
+  "eggGroups": [
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 72,
+    "attack": 85,
+    "defence": 70,
+    "special_attack": 65,
+    "special_defence": 70,
+    "speed": 58
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 147,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 35,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1.5,
+    "height": 1.8,
+    "fixed": false
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -20,29 +61,12 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 72,
-    "attack": 85,
-    "defence": 70,
-    "special_attack": 65,
-    "special_defence": 70,
-    "speed": 58
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 147,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "dragon"
-  ],
   "moves": [
-    "1:bite",
     "1:doublehit",
-    "1:dragonbreath",
     "1:dragonrage",
     "1:focusenergy",
+    "1:bite",
+    "1:dragonbreath",
     "1:tackle",
     "12:roar",
     "16:assurance",
@@ -57,14 +81,16 @@
     "54:dragonrush",
     "60:nastyplot",
     "66:outrage",
+    "egg:astonish",
+    "egg:belch",
+    "egg:doublehit",
+    "egg:headsmash",
+    "tm:aquatail",
     "tm:assurance",
-    "tm:attract",
     "tm:beatup",
     "tm:bodyslam",
-    "tm:confide",
     "tm:crunch",
     "tm:darkpulse",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonpulse",
@@ -74,9 +100,8 @@
     "tm:facade",
     "tm:firefang",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hypervoice",
     "tm:icefang",
     "tm:incinerate",
@@ -87,23 +112,19 @@
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rocksmash",
-    "tm:round",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
+    "tm:shockwave",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:spite",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
@@ -111,8 +132,6 @@
     "tm:thunderfang",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
-    "tm:uproar",
     "tm:workup",
     "tm:zenheadbutt",
     "tutor:aquatail",
@@ -120,21 +139,35 @@
     "tutor:dracometeor",
     "tutor:dragonpulse",
     "tutor:earthpower",
+    "tutor:firefang",
+    "tutor:focusenergy",
+    "tutor:helpinghand",
     "tutor:hypervoice",
+    "tutor:icefang",
+    "tutor:lashout",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:snarl",
     "tutor:spite",
+    "tutor:stompingtantrum",
     "tutor:superpower",
-    "tutor:uproar",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.zweilous.desc"
+    "tutor:thunderfang",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "preEvolution": "deino",
   "evolutions": [
@@ -152,23 +185,26 @@
       ]
     }
   ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 1.5,
-    "height": 1.8,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 14,
-  "weight": 500,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "3"
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  }
 }

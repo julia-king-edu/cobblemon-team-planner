@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Wooloo",
   "nationalPokedexNumber": 831,
+  "name": "Wooloo",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 60,
+  "pokedex": [
+    "cobblemon.species.wooloo.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "fluffy",
     "runaway",
     "h:bulletproof"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 42,
@@ -16,18 +29,37 @@
     "special_defence": 45,
     "speed": 48
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 122,
   "experienceGroup": "medium_fast",
+  "catchRate": 255,
   "eggCycles": 15,
+  "baseFriendship": 50,
   "features": [
     "sheared"
   ],
-  "eggGroups": [
-    "field"
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1,
+    "fixed": false
+  },
+  "ai": [
+    {
+      "type": "apply_behaviours",
+      "behaviours": [
+        "cobblemon:pokemon_eats_grass"
+      ]
+    }
   ],
+  "standingEyeHeight": 0.6,
   "drops": {
     "amount": 3,
     "entries": [
@@ -41,8 +73,8 @@
     ]
   },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "4:defensecurl",
     "8:copycat",
     "12:guardsplit",
@@ -57,28 +89,31 @@
     "egg:stomp",
     "egg:swagger",
     "tm:agility",
-    "tm:attract",
+    "tm:doubleedge",
     "tm:electroball",
     "tm:endure",
     "tm:facade",
+    "tm:grassyglide",
     "tm:guardswap",
+    "tm:headbutt",
     "tm:payback",
     "tm:protect",
     "tm:rest",
     "tm:reversal",
-    "tm:round",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
+    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
     "tm:thunderwave",
     "tm:wildcharge",
-    "tutor:grassyglide"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.wooloo.desc"
+    "tutor:grassyglide",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:wildcharge",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -95,23 +130,39 @@
       ]
     }
   ],
-  "baseScale": 1.1,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 60,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "mareep",
+          "tier": 1
+        },
+        {
+          "pokemon": "wooloo",
+          "tier": 1
+        },
+        {
+          "pokemon": "flaaffy",
+          "tier": 2
+        },
+        {
+          "pokemon": "dubwool",
+          "tier": 3
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  }
 }

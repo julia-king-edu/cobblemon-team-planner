@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Forretress",
   "nationalPokedexNumber": 205,
+  "name": "Forretress",
   "primaryType": "bug",
   "secondaryType": "steel",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 1258,
+  "pokedex": [
+    "cobblemon.species.forretress.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "h:overcoat"
+  ],
+  "eggGroups": [
+    "bug"
   ],
   "baseStats": {
     "hp": 75,
@@ -16,26 +29,89 @@
     "special_defence": 60,
     "speed": 40
   },
-  "features": [
-    "shulker"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
   },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
   "baseExperienceYield": 163,
   "experienceGroup": "medium_fast",
+  "catchRate": 75,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "height": 1.7,
+    "fixed": false,
+    "width": 1.25
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "key": "cobblemon:air/hover",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "20-40",
+          "JUMP": "5-10",
+          "SKILL": "25-45",
+          "SPEED": "15-25",
+          "STAMINA": "0-5"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0014,
+      "light": "0-4",
+      "rouseChance": 0.0042,
+      "times": [
+        "any"
+      ]
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -54,40 +130,45 @@
     ]
   },
   "moves": [
-    "1:autotomize",
-    "1:bugbite",
-    "1:heavyslam",
-    "1:magnetrise",
-    "1:mirrorshot",
+    "1:toxicspikes",
+    "1:tackle",
     "1:protect",
     "1:selfdestruct",
-    "1:tackle",
-    "1:toxicspikes",
+    "1:bugbite",
+    "1:bide",
+    "1:mirrorshot",
+    "1:magnetrise",
     "1:zapcannon",
+    "1:autotomize",
+    "1:heavyslam",
+    "1:naturalgift",
     "12:takedown",
     "17:rapidspin",
-    "20:bide",
     "20:rollout",
     "23:curse",
-    "23:naturalgift",
     "28:spikes",
     "32:payback",
     "36:explosion",
     "42:irondefense",
     "46:gyroball",
     "50:doubleedge",
-    "tm:attract",
+    "egg:counter",
+    "egg:flail",
+    "egg:pinmissile",
+    "egg:powertrick",
+    "egg:sandtomb",
+    "egg:swift",
+    "egg:toxicspikes",
+    "tm:allyswitch",
+    "tm:block",
     "tm:bodypress",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drillrun",
     "tm:earthpower",
     "tm:earthquake",
@@ -95,139 +176,120 @@
     "tm:explosion",
     "tm:facade",
     "tm:flashcannon",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:gravity",
     "tm:gyroball",
     "tm:hardpress",
+    "tm:headbutt",
     "tm:heavyslam",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icespinner",
     "tm:irondefense",
     "tm:ironhead",
+    "tm:laserfocus",
     "tm:lightscreen",
     "tm:lunge",
+    "tm:magnetrise",
     "tm:metalsound",
     "tm:naturalgift",
     "tm:painsplit",
     "tm:payback",
+    "tm:pinmissile",
     "tm:poisonjab",
     "tm:pounce",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
+    "tm:revenge",
     "tm:reversal",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
     "tm:seedbomb",
+    "tm:selfdestruct",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:smartstrike",
     "tm:solarbeam",
     "tm:spikes",
     "tm:stealthrock",
     "tm:steelbeam",
+    "tm:steelroller",
     "tm:stoneedge",
     "tm:strength",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
+    "tm:telekinesis",
     "tm:terablast",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:toxicspikes",
     "tm:venoshock",
     "tm:voltswitch",
     "tutor:allyswitch",
-    "tutor:attract",
-    "tutor:bide",
     "tutor:block",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:counter",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
     "tutor:drillrun",
-    "tutor:endure",
-    "tutor:explosion",
-    "tutor:frustration",
+    "tutor:earthpower",
+    "tutor:flashcannon",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:gravity",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
     "tutor:irondefense",
+    "tutor:ironhead",
     "tutor:laserfocus",
     "tutor:magnetrise",
-    "tutor:mimic",
     "tutor:painsplit",
-    "tutor:protect",
-    "tutor:rapidspin",
+    "tutor:poisonjab",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:sandstorm",
-    "tutor:selfdestruct",
+    "tutor:seedbomb",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
     "tutor:spikes",
     "tutor:stealthrock",
-    "tutor:strength",
+    "tutor:steelbeam",
+    "tutor:steelroller",
+    "tutor:stoneedge",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:tackle",
-    "tutor:takedown",
+    "tutor:swift",
     "tutor:telekinesis",
-    "tutor:toxic"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.forretress.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "preEvolution": "pineco",
   "evolutions": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 1.25,
-    "height": 1.7,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 2,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 12,
-  "weight": 1258,
-  "aspects": [],
-  "cannotDynamax": false
+  "features": [
+    "shulker"
+  ]
 }

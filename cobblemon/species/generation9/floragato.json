@@ -1,12 +1,88 @@
 {
   "implemented": true,
-  "name": "Floragato",
   "nationalPokedexNumber": 907,
+  "name": "Floragato",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 9,
+  "weight": 122,
+  "pokedex": [
+    "cobblemon.species.floragato.desc"
+  ],
+  "labels": [
+    "gen9"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:protean"
   ],
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "baseStats": {
+    "hp": 61,
+    "attack": 80,
+    "defence": 63,
+    "special_attack": 60,
+    "special_defence": 63,
+    "speed": 83
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "baseExperienceYield": 144,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "entityInteract": {
+      "avoidedByCreeper": true,
+      "avoidedByPhantom": true
+    },
+    "herd": {
+      "maxSize": "3",
+      "toleratedLeaders": [
+        {
+          "pokemon": "meowscarada",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,49 +92,10 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 61,
-    "attack": 80,
-    "defence": 63,
-    "special_attack": 60,
-    "special_defence": 63,
-    "speed": 83
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "baseExperienceYield": 144,
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 2
-  },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    }
-  },
   "moves": [
-    "1:leafage",
     "1:scratch",
     "1:tailwhip",
+    "1:leafage",
     "7:bite",
     "10:honeclaws",
     "13:magicalleaf",
@@ -70,9 +107,15 @@
     "38:energyball",
     "42:playrough",
     "46:leafstorm",
+    "egg:allyswitch",
+    "egg:copycat",
+    "egg:leechseed",
+    "egg:petalblizzard",
+    "egg:suckerpunch",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
+    "tm:allyswitch",
     "tm:bulletseed",
     "tm:charm",
     "tm:disarmingvoice",
@@ -87,6 +130,7 @@
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
+    "tm:honeclaws",
     "tm:leafstorm",
     "tm:lowkick",
     "tm:lowsweep",
@@ -102,20 +146,35 @@
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:thunderpunch",
     "tm:trailblaze",
-    "tm:uturn"
+    "tm:uturn",
+    "tm:worryseed",
+    "tutor:aerialace",
+    "tutor:allyswitch",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:lowkick",
+    "tutor:magicalleaf",
+    "tutor:mudslap",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "tutor:thunderpunch",
+    "tutor:worryseed"
   ],
-  "labels": [
-    "gen9"
-  ],
-  "aspects": [],
-  "height": 9,
-  "weight": 122,
   "preEvolution": "sprigatito",
   "evolutions": [
     {
@@ -133,15 +192,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 1.9,
-    "fixed": false
-  },
-  "cannotDynamax": false,
-  "pokedex": [
-    "cobblemon.species.floragato.desc"
   ]
 }

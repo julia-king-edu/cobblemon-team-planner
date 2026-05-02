@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Seel",
   "nationalPokedexNumber": 86,
+  "name": "Seel",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 900,
+  "pokedex": [
+    "cobblemon.species.seel.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "hydration",
     "h:icebody"
+  ],
+  "eggGroups": [
+    "water_1",
+    "field"
   ],
   "baseStats": {
     "hp": 65,
@@ -16,22 +30,78 @@
     "special_defence": 70,
     "speed": 45
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 65,
   "experienceGroup": "medium_fast",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
       }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "spheal",
+          "tier": 1
+        },
+        {
+          "pokemon": "popplio",
+          "tier": 1
+        },
+        {
+          "pokemon": "sealeo",
+          "tier": 2
+        },
+        {
+          "pokemon": "brionne",
+          "tier": 2
+        },
+        {
+          "pokemon": "seel",
+          "tier": 3
+        },
+        {
+          "pokemon": "primarina",
+          "tier": 4
+        },
+        {
+          "pokemon": "dewgong",
+          "tier": 5
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 6
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
   "drops": {
@@ -53,9 +123,9 @@
   },
   "moves": [
     "1:headbutt",
+    "1:watersport",
     "3:growl",
     "7:charm",
-    "7:watersport",
     "11:icywind",
     "13:encore",
     "17:iceshard",
@@ -69,38 +139,28 @@
     "43:aquatail",
     "47:icebeam",
     "51:safeguard",
-    "53:hail",
     "53:snowscape",
     "egg:belch",
     "egg:disable",
-    "egg:encore",
     "egg:entrainment",
     "egg:fakeout",
     "egg:horndrill",
-    "egg:iciclespear",
-    "egg:irontail",
     "egg:lick",
     "egg:perishsong",
-    "egg:signalbeam",
     "egg:slam",
-    "egg:sleeptalk",
     "egg:spitup",
     "egg:stockpile",
     "egg:swallow",
-    "egg:waterpulse",
-    "tm:attract",
+    "tm:aquatail",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brine",
-    "tm:captivate",
     "tm:charm",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drillrun",
     "tm:echoedvoice",
     "tm:encore",
@@ -108,102 +168,73 @@
     "tm:facade",
     "tm:fling",
     "tm:flipturn",
-    "tm:frustration",
     "tm:hail",
     "tm:haze",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icespinner",
     "tm:iciclespear",
     "tm:icywind",
+    "tm:irontail",
     "tm:muddywater",
-    "tm:naturalgift",
+    "tm:payday",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:smartstrike",
     "tm:snowscape",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:tripleaxel",
     "tm:uproar",
     "tm:waterfall",
+    "tm:watergun",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
-    "tutor:aquajet",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:aurorabeam",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:bubblebeam",
-    "tutor:curse",
-    "tutor:disable",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:drillrun",
-    "tutor:encore",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:flipturn",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
-    "tutor:horndrill",
     "tutor:icebeam",
-    "tutor:iceshard",
-    "tutor:iciclespear",
     "tutor:icywind",
     "tutor:irontail",
-    "tutor:lick",
-    "tutor:megahorn",
-    "tutor:mimic",
-    "tutor:payday",
-    "tutor:peck",
-    "tutor:perishsong",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
-    "tutor:safeguard",
     "tutor:signalbeam",
-    "tutor:skullbash",
-    "tutor:slam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:toxic",
-    "tutor:waterfall",
-    "tutor:watergun",
+    "tutor:tripleaxel",
+    "tutor:uproar",
     "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.seel.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:bubblebeam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:megahorn",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:peck",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:strength",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -211,7 +242,9 @@
       "variant": "level_up",
       "result": "dewgong",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "sheercold"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -219,24 +252,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.9,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 11,
-  "weight": 900,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

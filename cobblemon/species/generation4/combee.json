@@ -1,12 +1,106 @@
 {
   "implemented": true,
-  "name": "Combee",
   "nationalPokedexNumber": 415,
+  "name": "Combee",
   "primaryType": "bug",
   "secondaryType": "flying",
+  "maleRatio": 0.875,
+  "height": 3,
+  "weight": 55,
+  "pokedex": [
+    "cobblemon.species.combee.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
+  "features": [
+    "has_nectar"
+  ],
   "abilities": [
     "honeygather",
     "h:hustle"
+  ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 30,
+    "attack": 30,
+    "defence": 42,
+    "special_attack": 30,
+    "special_defence": 42,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 49,
+  "experienceGroup": "medium_slow",
+  "catchRate": 120,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "vespiquen",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true,
+      "willFlee": false,
+      "willDefendSelf": true
+    }
+  },
+  "ai": [
+    {
+      "type": "apply_behaviours",
+      "behaviours": [
+        "cobblemon:pokemon_bee",
+        "cobblemon:fights_melee"
+      ]
+    },
+    {
+      "type": "cobblemon:set_variables",
+      "variableValues": {
+        "hover_wander_minimum_height": 1,
+        "hover_wander_maximum_height": 3
+      }
+    }
   ],
   "drops": {
     "amount": 4,
@@ -17,7 +111,7 @@
       },
       {
         "item": "minecraft:honeycomb",
-        "percentage": 2.5
+        "quantityRange": "0-1"
       },
       {
         "item": "cobblemon:poison_barb",
@@ -29,69 +123,33 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 30,
-    "attack": 30,
-    "defence": 42,
-    "special_attack": 30,
-    "special_defence": 42,
-    "speed": 70
-  },
-  "catchRate": 120,
-  "maleRatio": 0.875,
-  "shoulderMountable": true,
-  "baseExperienceYield": 49,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "bug"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "fly": {
-        "canFly": true,
-        "flySpeedHorizontal": 0.6
-      }
-    }
-  },
   "moves": [
-    "1:bugbite",
-    "1:gust",
-    "1:strugglebug",
     "1:sweetscent",
-    "13:bugbite",
-    "29:bugbuzz",
+    "1:gust",
+    "1:bugbite",
+    "1:strugglebug",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:endeavor",
     "tm:lunge",
+    "tm:ominouswind",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:terablast",
-    "tutor:aircutter",
     "tutor:bugbite",
-    "tutor:dualwingbeat",
     "tutor:endeavor",
-    "tutor:gust",
-    "tutor:mudslap",
     "tutor:ominouswind",
-    "tutor:snore",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
     "tutor:stringshot",
-    "tutor:swift",
-    "tutor:tailwind"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.combee.desc"
+    "legacy:aircutter",
+    "legacy:dualwingbeat",
+    "legacy:mudslap",
+    "legacy:snore",
+    "legacy:swift",
+    "legacy:tailwind"
   ],
   "evolutions": [
     {
@@ -111,26 +169,18 @@
           "variant": "properties",
           "target": "gender=female"
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 3,
-  "weight": 55,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

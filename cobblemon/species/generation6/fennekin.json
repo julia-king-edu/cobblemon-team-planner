@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Fennekin",
   "nationalPokedexNumber": 653,
+  "name": "Fennekin",
   "primaryType": "fire",
+  "maleRatio": 0.875,
+  "height": 4,
+  "weight": 94,
+  "pokedex": [
+    "cobblemon.species.fennekin.desc"
+  ],
+  "labels": [
+    "gen6",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "blaze",
     "h:magician"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 40,
@@ -15,21 +29,71 @@
     "special_defence": 60,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 61,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
+  "baseFriendship": 50,
+  "standingEyeHeight": 0.7,
+  "swimmingEyeHeight": 0.7,
+  "flyingEyeHeight": 0.7,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
         "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
       }
-    }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "fennekin",
+          "tier": 1
+        },
+        {
+          "pokemon": "ninetales",
+          "tier": 2
+        },
+        {
+          "pokemon": "braixen",
+          "tier": 2
+        },
+        {
+          "pokemon": "delphox",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
   },
   "drops": {
     "amount": 2,
@@ -52,30 +116,24 @@
     "14:flamecharge",
     "17:psybeam",
     "20:firespin",
-    "25:lightscreen",
     "25:luckychant",
     "31:psyshock",
     "35:flamethrower",
     "38:willowisp",
     "41:psychic",
     "43:sunnyday",
-    "46:magicroom",
     "48:fireblast",
     "egg:copycat",
     "egg:heatwave",
     "egg:hypnosis",
-    "egg:magiccoat",
     "egg:magicroom",
-    "egg:psychicterrain",
     "egg:wish",
     "tm:agility",
-    "tm:attract",
     "tm:burningjealousy",
     "tm:calmmind",
     "tm:charm",
-    "tm:confide",
+    "tm:covet",
     "tm:cut",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:echoedvoice",
     "tm:embargo",
@@ -89,14 +147,15 @@
     "tm:flamethrower",
     "tm:flareblitz",
     "tm:foulplay",
-    "tm:frustration",
     "tm:grassknot",
     "tm:heatwave",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:imprison",
     "tm:incinerate",
+    "tm:irontail",
     "tm:lightscreen",
+    "tm:magiccoat",
+    "tm:magicroom",
     "tm:mudshot",
     "tm:mudslap",
     "tm:overheat",
@@ -105,47 +164,54 @@
     "tm:psybeam",
     "tm:psychic",
     "tm:psychicterrain",
-    "tm:psychup",
     "tm:psyshock",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:secretpower",
     "tm:skillswap",
     "tm:sleeptalk",
     "tm:solarbeam",
     "tm:storedpower",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:willowisp",
     "tm:workup",
+    "tutor:burningjealousy",
+    "tutor:calmmind",
     "tutor:covet",
     "tutor:firepledge",
     "tutor:flamethrower",
     "tutor:foulplay",
     "tutor:heatwave",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
     "tutor:irontail",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:scratch",
-    "tutor:snore"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.fennekin.desc"
+    "tutor:mudslap",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:trick",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:psychup",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -161,24 +227,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 4,
-  "weight": 94,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

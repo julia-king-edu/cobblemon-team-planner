@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Trapinch",
   "nationalPokedexNumber": 328,
+  "name": "Trapinch",
   "primaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 150,
+  "pokedex": [
+    "cobblemon.species.trapinch.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "hypercutter",
     "arenatrap",
     "h:sheerforce"
+  ],
+  "eggGroups": [
+    "bug",
+    "dragon"
   ],
   "baseStats": {
     "hp": 45,
@@ -16,90 +30,116 @@
     "special_defence": 45,
     "speed": 10
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 58,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.9,
+    "fixed": false
+  },
   "behaviour": {
-    "moving" : {
+    "moving": {
       "walk": {
         "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
       }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "trapinch",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     }
   },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:soft_sand",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:yache_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:astonish",
-    "1:bide",
-    "1:feintattack",
     "1:sandattack",
-    "4:laserfocus",
+    "1:feintattack",
+    "1:bide",
+    "1:astonish",
     "8:bite",
     "12:mudslap",
-    "15:rockslide",
     "16:sandtomb",
     "20:bulldoze",
     "24:dig",
     "28:crunch",
-    "29:feint",
     "32:sandstorm",
     "36:earthpower",
     "40:earthquake",
-    "43:hyperbeam",
     "44:superpower",
     "48:fissure",
     "egg:bugbite",
-    "egg:earthpower",
-    "egg:endure",
     "egg:feint",
     "egg:firstimpression",
     "egg:flail",
-    "egg:focusenergy",
     "egg:furycutter",
     "egg:gust",
-    "egg:mudshot",
     "egg:quickattack",
-    "egg:signalbeam",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hyperbeam",
+    "tm:laserfocus",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scorchingsands",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
-    "tm:solarbeam",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
@@ -107,35 +147,42 @@
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
-    "tutor:bite",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:doubleedge",
+    "tutor:bulldoze",
     "tutor:earthpower",
-    "tutor:endure",
+    "tutor:focusenergy",
     "tutor:furycutter",
     "tutor:gigadrain",
-    "tutor:headbutt",
-    "tutor:mimic",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
     "tutor:mudslap",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scorchingsands",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:superpower",
-    "tutor:swagger"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.trapinch.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:solarbeam",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -151,39 +198,18 @@
           "variant": "level",
           "minLevel": 35
         }
-      ]
-    }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.8,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 150,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "cobblemon:soft_sand",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:yache_berry",
-        "percentage": 2.5
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }

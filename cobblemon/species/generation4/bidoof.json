@@ -1,13 +1,88 @@
 {
   "implemented": true,
-  "name": "Bidoof",
   "nationalPokedexNumber": 399,
+  "name": "Bidoof",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 200,
+  "pokedex": [
+    "cobblemon.species.bidoof.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "simple",
     "unaware",
     "h:moody"
   ],
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "baseStats": {
+    "hp": 59,
+    "attack": 45,
+    "defence": 40,
+    "special_attack": 35,
+    "special_defence": 40,
+    "speed": 31
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 50,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.28
+      },
+      "swim": {
+        "swimSpeed": 0.17,
+        "canWalkOnWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bidoof",
+          "tier": 1
+        },
+        {
+          "pokemon": "bibarel",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,147 +96,107 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 59,
-    "attack": 45,
-    "defence": 40,
-    "special_attack": 35,
-    "special_defence": 40,
-    "speed": 31
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 50,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.28
-      },
-      "swim": {
-        "swimSpeed": 0.17,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:growl",
     "1:tackle",
+    "1:growl",
     "5:defensecurl",
-    "5:growl",
-    "9:defensecurl",
     "9:rollout",
     "13:headbutt",
-    "13:rollout",
-    "17:headbutt",
     "17:hyperfang",
-    "21:hyperfang",
     "21:yawn",
     "25:crunch",
-    "25:yawn",
-    "29:amnesia",
     "29:takedown",
     "33:superfang",
-    "33:takedown",
-    "37:superfang",
     "37:swordsdance",
     "41:amnesia",
-    "41:superpower",
-    "45:curse",
     "45:superpower",
     "49:curse",
-    "egg:aquatail",
     "egg:defensecurl",
-    "egg:doubleedge",
-    "egg:endure",
     "egg:furyswipes",
     "egg:mudsport",
     "egg:odorsleuth",
     "egg:quickattack",
-    "egg:rockclimb",
-    "egg:rollout",
     "egg:skullbash",
-    "egg:sleeptalk",
     "egg:watersport",
-    "tm:attract",
+    "tm:amnesia",
+    "tm:aquatail",
     "tm:blizzard",
-    "tm:captivate",
     "tm:chargebeam",
-    "tm:confide",
+    "tm:covet",
+    "tm:crunch",
+    "tm:curse",
     "tm:cut",
     "tm:dig",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:grassknot",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:icebeam",
+    "tm:icywind",
     "tm:irontail",
-    "tm:naturalgift",
+    "tm:lastresort",
+    "tm:mudslap",
     "tm:pluck",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
     "tm:shadowball",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:stealthrock",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:superfang",
+    "tm:superpower",
     "tm:swordsdance",
+    "tm:takedown",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:thunder",
     "tm:thunderbolt",
     "tm:thunderwave",
-    "tm:toxic",
     "tm:workup",
     "tutor:aquatail",
+    "tutor:chargebeam",
     "tutor:covet",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irontail",
     "tutor:lastresort",
     "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:secretpower",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:superfang",
     "tutor:superpower",
-    "tutor:swift",
-    "tutor:tackle"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.bidoof.desc"
+    "tutor:thunderbolt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:rockclimb",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:swift",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -169,7 +204,9 @@
       "variant": "level_up",
       "result": "bibarel",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "watergun"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -177,24 +214,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 1,
-    "height": 0.9,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 200,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

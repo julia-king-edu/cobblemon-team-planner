@@ -1,22 +1,27 @@
 {
   "implemented": true,
-  "name": "Shuckle",
   "nationalPokedexNumber": 213,
+  "name": "Shuckle",
   "primaryType": "bug",
   "secondaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 205,
+  "pokedex": [
+    "cobblemon.species.shuckle.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "sturdy",
     "gluttony",
     "h:contrary"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:berry_juice"
-      }
-    ]
-  },
+  "eggGroups": [
+    "bug"
+  ],
   "baseStats": {
     "hp": 20,
     "attack": 10,
@@ -25,42 +30,73 @@
     "special_defence": 230,
     "speed": 5
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 177,
   "experienceGroup": "medium_slow",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1,
+    "height": 1,
+    "fixed": false
+  },
   "behaviour": {
     "moving": {
       "walk": {
         "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
       }
     },
     "resting": {
       "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
     }
   },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:berry_juice"
+      },
+      {
+        "item": "cobblemon:luminous_moss",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:bide",
-    "1:constrict",
     "1:withdraw",
+    "1:constrict",
+    "1:bide",
     "1:wrap",
-    "5:encore",
     "5:rollout",
     "10:strugglebug",
     "15:rockthrow",
     "20:safeguard",
     "25:rest",
     "30:bugbite",
-    "35:guardsplit",
     "35:powersplit",
+    "35:guardsplit",
     "40:rockslide",
     "45:gastroacid",
     "50:stickyweb",
@@ -72,139 +108,101 @@
     "egg:covet",
     "egg:defensecurl",
     "egg:finalgambit",
-    "egg:helpinghand",
     "egg:infestation",
     "egg:knockoff",
-    "egg:mudslap",
-    "egg:rockblast",
-    "egg:sandtomb",
     "egg:sweetscent",
     "egg:toxic",
-    "tm:attract",
+    "tm:afteryou",
+    "tm:ancientpower",
+    "tm:bind",
     "tm:bodyslam",
+    "tm:bugbite",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
+    "tm:covet",
     "tm:dig",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:earthquake",
     "tm:encore",
     "tm:endure",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gyroball",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:infestation",
     "tm:irondefense",
+    "tm:knockoff",
+    "tm:meteorbeam",
     "tm:mudshot",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:rockblast",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:sandtomb",
-    "tm:secretpower",
+    "tm:skittersmack",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
+    "tm:steelroller",
     "tm:stoneedge",
     "tm:strength",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
+    "tm:terablast",
     "tm:toxic",
     "tm:venoshock",
     "tutor:afteryou",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:bodyslam",
     "tutor:bugbite",
-    "tutor:constrict",
-    "tutor:curse",
-    "tutor:defensecurl",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
+    "tutor:bulldoze",
+    "tutor:covet",
     "tutor:earthpower",
-    "tutor:earthquake",
-    "tutor:encore",
-    "tutor:endure",
-    "tutor:flash",
-    "tutor:frustration",
     "tutor:gastroacid",
-    "tutor:headbutt",
     "tutor:helpinghand",
-    "tutor:hiddenpower",
+    "tutor:irondefense",
     "tutor:knockoff",
     "tutor:meteorbeam",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:protect",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
     "tutor:rocksmash",
     "tutor:rollout",
-    "tutor:safeguard",
-    "tutor:sandstorm",
-    "tutor:shellsmash",
     "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
     "tutor:stealthrock",
     "tutor:steelroller",
-    "tutor:strength",
+    "tutor:stoneedge",
     "tutor:stringshot",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:toxic",
-    "tutor:withdraw",
-    "tutor:wrap"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.shuckle.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 205,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

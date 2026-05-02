@@ -1,22 +1,26 @@
 {
   "implemented": true,
-  "name": "Comfey",
   "nationalPokedexNumber": 764,
+  "name": "Comfey",
   "primaryType": "fairy",
+  "maleRatio": 0.25,
+  "height": 1,
+  "weight": 3,
+  "pokedex": [
+    "cobblemon.species.comfey.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "flowerveil",
     "triage",
     "h:naturalcure"
   ],
-  "drops": {
-    "amount": 1,
-    "entries": [
-      {
-        "item": "cobblemon:kebia_berry",
-        "percentage": 5.0
-      }
-    ]
-  },
+  "eggGroups": [
+    "grass"
+  ],
   "baseStats": {
     "hp": 51,
     "attack": 52,
@@ -25,153 +29,6 @@
     "special_defence": 110,
     "speed": 100
   },
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 60,
-  "maleRatio": 0.25,
-  "shoulderMountable": true,
-  "baseExperienceYield": 170,
-  "experienceGroup": "fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
-  "moves": [
-    "1:growth",
-    "1:wrap",
-    "3:vinewhip",
-    "6:helpinghand",
-    "9:drainingkiss",
-    "12:charm",
-    "12:flowershield",
-    "15:magicalleaf",
-    "18:synthesis",
-    "21:leechseed",
-    "22:naturalgift",
-    "24:grassknot",
-    "27:sweetkiss",
-    "30:floralhealing",
-    "33:petalblizzard",
-    "36:aromatherapy",
-    "36:bind",
-    "39:playrough",
-    "42:sweetscent",
-    "45:petaldance",
-    "48:grassyterrain",
-    "egg:afteryou",
-    "egg:amnesia",
-    "egg:endure",
-    "egg:leaftornado",
-    "egg:luckychant",
-    "egg:worryseed",
-    "tm:acrobatics",
-    "tm:alluringvoice",
-    "tm:allyswitch",
-    "tm:amnesia",
-    "tm:attract",
-    "tm:bulletseed",
-    "tm:calmmind",
-    "tm:charm",
-    "tm:confide",
-    "tm:dazzlinggleam",
-    "tm:disarmingvoice",
-    "tm:doubleteam",
-    "tm:drainingkiss",
-    "tm:echoedvoice",
-    "tm:encore",
-    "tm:endure",
-    "tm:energyball",
-    "tm:facade",
-    "tm:fling",
-    "tm:frustration",
-    "tm:gigadrain",
-    "tm:grassknot",
-    "tm:grassyglide",
-    "tm:grassyterrain",
-    "tm:helpinghand",
-    "tm:hiddenpower",
-    "tm:hyperbeam",
-    "tm:knockoff",
-    "tm:lightscreen",
-    "tm:magicalleaf",
-    "tm:naturepower",
-    "tm:painsplit",
-    "tm:petalblizzard",
-    "tm:playrough",
-    "tm:pollenpuff",
-    "tm:protect",
-    "tm:psychup",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:safeguard",
-    "tm:seedbomb",
-    "tm:sleeptalk",
-    "tm:snore",
-    "tm:solarbeam",
-    "tm:storedpower",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:swagger",
-    "tm:swift",
-    "tm:tailwind",
-    "tm:taunt",
-    "tm:terablast",
-    "tm:thief",
-    "tm:toxic",
-    "tm:trailblaze",
-    "tm:trick",
-    "tm:trickroom",
-    "tm:uturn",
-    "tutor:afteryou",
-    "tutor:allyswitch",
-    "tutor:bind",
-    "tutor:celebrate",
-    "tutor:covet",
-    "tutor:defog",
-    "tutor:drainingkiss",
-    "tutor:gigadrain",
-    "tutor:grassyglide",
-    "tutor:healbell",
-    "tutor:helpinghand",
-    "tutor:leechseed",
-    "tutor:magicalleaf",
-    "tutor:magiccoat",
-    "tutor:painsplit",
-    "tutor:roleplay",
-    "tutor:seedbomb",
-    "tutor:snore",
-    "tutor:synthesis",
-    "tutor:tailwind",
-    "tutor:telekinesis",
-    "tutor:trick",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.comfey.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.37,
-  "hitbox": {
-    "width": 1.5,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -180,8 +37,196 @@
     "special_defence": 2,
     "speed": 0
   },
-  "height": 1,
-  "weight": 3,
-  "aspects": [],
-  "cannotDynamax": false
+  "baseExperienceYield": 170,
+  "experienceGroup": "fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.37,
+  "hitbox": {
+    "width": 1.5,
+    "height": 2.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "floette",
+          "tier": 1
+        },
+        {
+          "pokemon": "floette eternal",
+          "tier": 2
+        },
+        {
+          "pokemon": "comfey",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:misty_seed",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "moves": [
+    "1:flowershield",
+    "1:growth",
+    "1:wrap",
+    "1:naturalgift",
+    "1:aromatherapy",
+    "3:vinewhip",
+    "6:helpinghand",
+    "9:drainingkiss",
+    "12:charm",
+    "15:magicalleaf",
+    "18:synthesis",
+    "21:leechseed",
+    "24:grassknot",
+    "27:sweetkiss",
+    "30:floralhealing",
+    "33:petalblizzard",
+    "36:bind",
+    "39:playrough",
+    "42:sweetscent",
+    "45:petaldance",
+    "48:grassyterrain",
+    "egg:afteryou",
+    "egg:leaftornado",
+    "egg:luckychant",
+    "egg:worryseed",
+    "tm:acrobatics",
+    "tm:afteryou",
+    "tm:alluringvoice",
+    "tm:allyswitch",
+    "tm:amnesia",
+    "tm:bind",
+    "tm:bulletseed",
+    "tm:calmmind",
+    "tm:charm",
+    "tm:covet",
+    "tm:dazzlinggleam",
+    "tm:defog",
+    "tm:disarmingvoice",
+    "tm:drainingkiss",
+    "tm:echoedvoice",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:fling",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:grassyterrain",
+    "tm:healbell",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:knockoff",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:magiccoat",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:painsplit",
+    "tm:petalblizzard",
+    "tm:playrough",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:psychup",
+    "tm:rest",
+    "tm:roleplay",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:synthesis",
+    "tm:tailwind",
+    "tm:taunt",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:uturn",
+    "tm:worryseed",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:bind",
+    "tutor:calmmind",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:defog",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:magicalleaf",
+    "tutor:magiccoat",
+    "tutor:painsplit",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:roleplay",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:celebrate"
+  ],
+  "evolutions": []
 }

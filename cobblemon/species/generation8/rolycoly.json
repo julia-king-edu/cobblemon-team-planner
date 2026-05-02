@@ -1,11 +1,25 @@
 {
-  "name": "Rolycoly",
+  "implemented": true,
   "nationalPokedexNumber": 837,
+  "name": "Rolycoly",
   "primaryType": "rock",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 120,
+  "pokedex": [
+    "cobblemon.species.rolycoly.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "steamengine",
     "heatproof",
     "h:flashfire"
+  ],
+  "eggGroups": [
+    "mineral"
   ],
   "baseStats": {
     "hp": 30,
@@ -15,18 +29,82 @@
     "special_defence": 50,
     "speed": 30
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 48,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 15,
-  "eggGroups": [
-    "mineral"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.7,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "rolycoly",
+          "tier": 1
+        },
+        {
+          "pokemon": "carkol",
+          "tier": 2
+        },
+        {
+          "pokemon": "coalossal",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:coal",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:black_augurite",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:smokescreen",
     "1:tackle",
+    "1:smokescreen",
     "5:rapidspin",
     "10:smackdown",
     "15:rockpolish",
@@ -38,15 +116,18 @@
     "egg:block",
     "egg:explosion",
     "egg:mudslap",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:block",
     "tm:bodyslam",
     "tm:bulldoze",
     "tm:curse",
     "tm:dig",
     "tm:endure",
+    "tm:explosion",
     "tm:facade",
     "tm:gyroball",
     "tm:heatcrash",
+    "tm:incinerate",
     "tm:irondefense",
     "tm:ironhead",
     "tm:meteorbeam",
@@ -56,15 +137,14 @@
     "tm:reflect",
     "tm:rest",
     "tm:rockblast",
+    "tm:rockpolish",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:selfdestruct",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:spikes",
     "tm:stealthrock",
     "tm:stoneedge",
@@ -73,13 +153,22 @@
     "tm:temperflare",
     "tm:terablast",
     "tm:willowisp",
-    "tutor:meteorbeam"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.rolycoly.desc"
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bulldoze",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:meteorbeam",
+    "tutor:mudslap",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:sleeptalk",
+    "tutor:spikes",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -97,41 +186,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 120,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:coal",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:black_augurite",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:passho_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

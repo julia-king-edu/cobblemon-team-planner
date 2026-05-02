@@ -1,14 +1,91 @@
 {
   "implemented": true,
-  "name": "Skrelp",
   "nationalPokedexNumber": 690,
+  "name": "Skrelp",
   "primaryType": "poison",
   "secondaryType": "water",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 73,
+  "pokedex": [
+    "cobblemon.species.skrelp.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "poisonpoint",
     "poisontouch",
     "h:adaptability"
   ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 60,
+    "defence": 60,
+    "special_attack": 60,
+    "special_defence": 60,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 64,
+  "experienceGroup": "medium_fast",
+  "catchRate": 225,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "skrelp",
+          "tier": 1
+        },
+        {
+          "pokemon": "dragalge",
+          "tier": 2
+        },
+        {
+          "pokemon": "dhelmise",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -22,44 +99,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 50,
-    "attack": 60,
-    "defence": 60,
-    "special_attack": 60,
-    "special_defence": 60,
-    "speed": 30
-  },
-  "catchRate": 225,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
-  "baseExperienceYield": 64,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
-    "1:smokescreen",
     "1:tackle",
+    "1:smokescreen",
+    "1:feintattack",
+    "1:bubble",
     "5:acid",
-    "5:feintattack",
     "10:watergun",
-    "12:bubble",
     "15:tailwhip",
-    "19:camouflage",
     "20:doubleteam",
     "25:poisontail",
     "30:waterpulse",
@@ -69,17 +116,14 @@
     "50:sludgebomb",
     "55:hydropump",
     "egg:acidarmor",
+    "egg:camouflage",
     "egg:dragontail",
     "egg:haze",
-    "egg:playrough",
-    "egg:toxicspikes",
     "egg:twister",
-    "egg:venomdrench",
     "tm:acidspray",
-    "tm:attract",
+    "tm:aquatail",
     "tm:bounce",
     "tm:chillingwater",
-    "tm:confide",
     "tm:dive",
     "tm:doubleteam",
     "tm:dragonpulse",
@@ -87,11 +131,9 @@
     "tm:endure",
     "tm:facade",
     "tm:flipturn",
-    "tm:frustration",
     "tm:gunkshot",
     "tm:hail",
     "tm:haze",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icywind",
     "tm:irontail",
@@ -105,28 +147,24 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:scald",
     "tm:scaleshot",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
     "tm:snowscape",
     "tm:spite",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
     "tm:thunderbolt",
     "tm:toxic",
     "tm:toxicspikes",
+    "tm:twister",
     "tm:venomdrench",
     "tm:venoshock",
     "tm:waterfall",
@@ -134,22 +172,36 @@
     "tm:whirlpool",
     "tutor:aquatail",
     "tutor:bounce",
+    "tutor:dive",
     "tutor:dragonpulse",
     "tutor:flipturn",
     "tutor:gunkshot",
     "tutor:icywind",
     "tutor:irontail",
+    "tutor:liquidation",
+    "tutor:mudslap",
     "tutor:outrage",
+    "tutor:playrough",
+    "tutor:rest",
     "tutor:scaleshot",
+    "tutor:shadowball",
     "tutor:shockwave",
-    "tutor:snore",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.skrelp.desc"
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spite",
+    "tutor:thunderbolt",
+    "tutor:twister",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "evolutions": [
     {
@@ -157,7 +209,9 @@
       "variant": "level_up",
       "result": "dragalge",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "twister"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -165,24 +219,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.5,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 73,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

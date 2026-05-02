@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Eldegoss",
   "nationalPokedexNumber": 830,
+  "name": "Eldegoss",
   "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 25,
+  "pokedex": [
+    "cobblemon.species.eldegoss.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "cottondown",
     "regenerator",
     "h:effectspore"
+  ],
+  "eggGroups": [
+    "grass"
   ],
   "baseStats": {
     "hp": 60,
@@ -16,19 +29,83 @@
     "special_defence": 120,
     "speed": 60
   },
-  "catchRate": 75,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
   "baseExperienceYield": 161,
   "experienceGroup": "medium_fast",
+  "catchRate": 75,
   "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.1,
+    "fixed": false
+  },
+  "standingEyeHeight": 0.8,
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "jumpluff",
+          "tier": 1
+        },
+        {
+          "pokemon": "whimsicott",
+          "tier": 1
+        },
+        {
+          "pokemon": "eldegoss",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:white_wool",
+        "quantityRange": "1-2"
+      },
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
+    "1:cottonspore",
     "1:leafage",
-    "1:rapidspin",
     "1:sing",
+    "1:rapidspin",
     "1:sweetscent",
     "12:razorleaf",
     "16:round",
@@ -38,7 +115,12 @@
     "40:aromatherapy",
     "46:leafstorm",
     "52:cottonguard",
-    "tm:attract",
+    "egg:growth",
+    "egg:leechseed",
+    "egg:poisonpowder",
+    "egg:sleeppowder",
+    "egg:stunspore",
+    "egg:worryseed",
     "tm:bulletseed",
     "tm:charm",
     "tm:endure",
@@ -47,6 +129,7 @@
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
+    "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
     "tm:hyperbeam",
@@ -60,51 +143,29 @@
     "tm:round",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:substitute",
     "tm:sunnyday",
+    "tm:synthesis",
+    "tm:terablast",
     "tm:weatherball",
-    "tutor:grassyglide"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.eldegoss.desc"
+    "tm:worryseed",
+    "tutor:energyball",
+    "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
+    "tutor:hypervoice",
+    "tutor:magicalleaf",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:synthesis",
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:snore"
   ],
   "preEvolution": "gossifleur",
-  "evolutions": [],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.6,
-    "height": 0.7,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 25,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 3,
-    "entries": [
-      {
-        "item": "minecraft:white_wool",
-        "quantityRange": "1-2"
-      },
-      {
-        "item": "cobblemon:coba_berry",
-        "percentage": 5.0
-      }
-    ]
-  }
+  "evolutions": []
 }

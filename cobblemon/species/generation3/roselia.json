@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Roselia",
   "nationalPokedexNumber": 315,
+  "name": "Roselia",
   "primaryType": "grass",
   "secondaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 20,
+  "pokedex": [
+    "cobblemon.species.roselia.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "naturalcure",
     "poisonpoint",
     "h:leafguard"
+  ],
+  "eggGroups": [
+    "fairy",
+    "grass"
   ],
   "baseStats": {
     "hp": 50,
@@ -17,164 +31,6 @@
     "special_defence": 80,
     "speed": 65
   },
-  "catchRate": 150,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 140,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "fairy",
-    "grass"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.12
-      }
-    }
-  },
-  "moves": [
-    "1:absorb",
-    "1:growth",
-    "1:stunspore",
-    "1:worryseed",
-    "5:megadrain",
-    "7:poisonsting",
-    "10:leechseed",
-    "15:magicalleaf",
-    "20:toxicspikes",
-    "22:grasswhistle",
-    "25:sweetscent",
-    "30:gigadrain",
-    "35:synthesis",
-    "40:toxic",
-    "45:petalblizzard",
-    "50:aromatherapy",
-    "55:ingrain",
-    "60:petaldance",
-    "egg:bulletseed",
-    "egg:cottonspore",
-    "egg:extrasensory",
-    "egg:gigadrain",
-    "egg:grasswhistle",
-    "egg:leafstorm",
-    "egg:lifedew",
-    "egg:mindreader",
-    "egg:naturalgift",
-    "egg:pinmissile",
-    "egg:powerwhip",
-    "egg:razorleaf",
-    "egg:seedbomb",
-    "egg:sleeppowder",
-    "egg:spikes",
-    "egg:synthesis",
-    "tm:attract",
-    "tm:bodyslam",
-    "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
-    "tm:cut",
-    "tm:dazzlinggleam",
-    "tm:doubleteam",
-    "tm:endure",
-    "tm:energyball",
-    "tm:facade",
-    "tm:flash",
-    "tm:frustration",
-    "tm:gigadrain",
-    "tm:grassknot",
-    "tm:hiddenpower",
-    "tm:leafstorm",
-    "tm:magicalleaf",
-    "tm:naturalgift",
-    "tm:naturepower",
-    "tm:pinmissile",
-    "tm:poisonjab",
-    "tm:powerwhip",
-    "tm:protect",
-    "tm:psychup",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:secretpower",
-    "tm:seedbomb",
-    "tm:shadowball",
-    "tm:sleeptalk",
-    "tm:sludgebomb",
-    "tm:snore",
-    "tm:solarbeam",
-    "tm:spikes",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:swagger",
-    "tm:swift",
-    "tm:swordsdance",
-    "tm:toxic",
-    "tm:toxicspikes",
-    "tm:uproar",
-    "tm:venoshock",
-    "tm:weatherball",
-    "tutor:absorb",
-    "tutor:bodyslam",
-    "tutor:covet",
-    "tutor:doubleedge",
-    "tutor:endure",
-    "tutor:furycutter",
-    "tutor:gigadrain",
-    "tutor:grasswhistle",
-    "tutor:grassyglide",
-    "tutor:growth",
-    "tutor:leechseed",
-    "tutor:magicalleaf",
-    "tutor:mimic",
-    "tutor:mudslap",
-    "tutor:nightmare",
-    "tutor:poisonsting",
-    "tutor:psychup",
-    "tutor:seedbomb",
-    "tutor:sleeppowder",
-    "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
-    "tutor:sweetkiss",
-    "tutor:swift",
-    "tutor:swordsdance",
-    "tutor:synthesis",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.roselia.desc"
-  ],
-  "preEvolution": "budew",
-  "evolutions": [
-    {
-      "id": "roselia_roserade",
-      "variant": "item_interact",
-      "result": "roserade",
-      "consumeHeldItem": false,
-      "learnableMoves": [],
-      "requirements": [],
-      "requiredContext": "cobblemon:shiny_stone"
-    }
-  ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.65,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -183,10 +39,50 @@
     "special_defence": 0,
     "speed": 0
   },
-  "height": 3,
-  "weight": 20,
-  "aspects": [],
-  "cannotDynamax": false,
+  "baseExperienceYield": 140,
+  "experienceGroup": "medium_slow",
+  "catchRate": 150,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.65,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.12
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "5",
+      "toleratedLeaders": [
+        {
+          "pokemon": "roselia",
+          "tier": 1
+        },
+        {
+          "pokemon": "roserade",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -207,5 +103,125 @@
         "percentage": 5.0
       }
     ]
-  }
+  },
+  "moves": [
+    "1:absorb",
+    "1:growth",
+    "1:poisonsting",
+    "1:stunspore",
+    "1:grasswhistle",
+    "1:worryseed",
+    "1:watersport",
+    "5:megadrain",
+    "10:leechseed",
+    "15:magicalleaf",
+    "20:toxicspikes",
+    "25:sweetscent",
+    "30:gigadrain",
+    "35:synthesis",
+    "40:toxic",
+    "45:petalblizzard",
+    "50:aromatherapy",
+    "55:ingrain",
+    "60:petaldance",
+    "egg:cottonspore",
+    "egg:extrasensory",
+    "egg:grasswhistle",
+    "egg:lifedew",
+    "egg:mindreader",
+    "egg:naturalgift",
+    "egg:razorleaf",
+    "egg:sleeppowder",
+    "egg:synthesis",
+    "tm:bodyslam",
+    "tm:bulletseed",
+    "tm:covet",
+    "tm:cut",
+    "tm:dazzlinggleam",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:furycutter",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyglide",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:mudslap",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:petalblizzard",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:uproar",
+    "tm:venoshock",
+    "tm:weatherball",
+    "tm:worryseed",
+    "tutor:covet",
+    "tutor:dazzlinggleam",
+    "tutor:energyball",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:magicalleaf",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:spikes",
+    "tutor:swift",
+    "tutor:synthesis",
+    "tutor:uproar",
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "special:sweetkiss"
+  ],
+  "preEvolution": "budew",
+  "evolutions": [
+    {
+      "id": "roselia_roserade",
+      "variant": "item_interact",
+      "result": "roserade",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [],
+      "requiredContext": "cobblemon:shiny_stone"
+    }
+  ]
 }

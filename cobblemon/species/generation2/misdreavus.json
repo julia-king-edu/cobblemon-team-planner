@@ -1,10 +1,24 @@
 {
   "implemented": true,
-  "name": "Misdreavus",
   "nationalPokedexNumber": 200,
+  "name": "Misdreavus",
   "primaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 10,
+  "pokedex": [
+    "cobblemon.species.misdreavus.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
-    "levitate"
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "amorphous"
   ],
   "baseStats": {
     "hp": 60,
@@ -14,15 +28,79 @@
     "special_defence": 85,
     "speed": 85
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 87,
   "experienceGroup": "fast",
+  "catchRate": 45,
   "eggCycles": 25,
-  "eggGroups": [
-    "amorphous"
-  ],
+  "baseFriendship": 35,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "gastly",
+          "tier": 1
+        },
+        {
+          "pokemon": "misdreavus",
+          "tier": 1
+        },
+        {
+          "pokemon": "shuppet",
+          "tier": 1
+        },
+        {
+          "pokemon": "duskull",
+          "tier": 1
+        },
+        {
+          "pokemon": "mismagius",
+          "tier": 2
+        },
+        {
+          "pokemon": "fluttermane",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -41,10 +119,9 @@
     ]
   },
   "moves": [
-    "1:confusion",
     "1:growl",
     "1:psywave",
-    "5:spite",
+    "1:confusion",
     "10:astonish",
     "14:confuseray",
     "19:meanlook",
@@ -54,35 +131,26 @@
     "37:payback",
     "41:shadowball",
     "46:perishsong",
-    "50:grudge",
     "50:powergem",
     "egg:curse",
     "egg:destinybond",
     "egg:imprison",
     "egg:mefirst",
     "egg:memento",
-    "egg:nastyplot",
-    "egg:ominouswind",
-    "egg:psychup",
     "egg:screech",
     "egg:shadowsneak",
-    "egg:skillswap",
     "egg:spite",
     "egg:suckerpunch",
     "egg:wonderroom",
-    "tm:aerialace",
-    "tm:attract",
+    "tm:allyswitch",
     "tm:burningjealousy",
     "tm:calmmind",
-    "tm:captivate",
     "tm:chargebeam",
     "tm:charm",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:darkpulse",
     "tm:dazzlinggleam",
-    "tm:doubleteam",
     "tm:drainingkiss",
     "tm:dreameater",
     "tm:echoedvoice",
@@ -93,21 +161,24 @@
     "tm:faketears",
     "tm:flash",
     "tm:foulplay",
-    "tm:frustration",
     "tm:futuresight",
     "tm:gigaimpact",
     "tm:grassknot",
+    "tm:grudge",
+    "tm:headbutt",
+    "tm:healbell",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:hypervoice",
     "tm:icywind",
     "tm:imprison",
     "tm:magicalleaf",
+    "tm:magiccoat",
+    "tm:magicroom",
     "tm:nastyplot",
-    "tm:naturalgift",
     "tm:nightshade",
+    "tm:ominouswind",
     "tm:painsplit",
     "tm:payback",
     "tm:phantomforce",
@@ -121,10 +192,8 @@
     "tm:psyshock",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shadowball",
     "tm:shockwave",
     "tm:skillswap",
@@ -134,8 +203,8 @@
     "tm:spite",
     "tm:storedpower",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:taunt",
     "tm:telekinesis",
@@ -145,75 +214,65 @@
     "tm:thunderbolt",
     "tm:thunderwave",
     "tm:torment",
-    "tm:toxic",
     "tm:trick",
     "tm:trickroom",
     "tm:willowisp",
+    "tm:wonderroom",
     "tutor:allyswitch",
-    "tutor:attract",
-    "tutor:confuseray",
-    "tutor:curse",
+    "tutor:burningjealousy",
+    "tutor:calmmind",
+    "tutor:chargebeam",
     "tutor:darkpulse",
-    "tutor:defensecurl",
-    "tutor:destinybond",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dreameater",
-    "tutor:endure",
-    "tutor:flash",
+    "tutor:dazzlinggleam",
+    "tutor:energyball",
     "tutor:foulplay",
-    "tutor:frustration",
-    "tutor:growl",
-    "tutor:headbutt",
+    "tutor:gigaimpact",
     "tutor:healbell",
-    "tutor:hiddenpower",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:hypervoice",
     "tutor:icywind",
-    "tutor:inferno",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
     "tutor:magicroom",
-    "tutor:meanlook",
-    "tutor:mimic",
-    "tutor:nightmare",
     "tutor:ominouswind",
     "tutor:painsplit",
-    "tutor:perishsong",
-    "tutor:protect",
-    "tutor:psybeam",
+    "tutor:poltergeist",
     "tutor:psychic",
-    "tutor:psychup",
-    "tutor:psywave",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
-    "tutor:screech",
     "tutor:shadowball",
     "tutor:shockwave",
     "tutor:skillswap",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
     "tutor:suckerpunch",
-    "tutor:sunnyday",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:telekinesis",
-    "tutor:thief",
-    "tutor:thunder",
-    "tutor:thunderwave",
-    "tutor:toxic",
+    "tutor:thunderbolt",
     "tutor:trick",
-    "tutor:uproar",
     "tutor:wonderroom",
-    "tutor:zapcannon"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.misdreavus.desc"
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:defensecurl",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:inferno",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:nightmare",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar",
+    "legacy:zapcannon"
   ],
   "evolutions": [
     {
@@ -226,23 +285,8 @@
       "requiredContext": "cobblemon:dusk_stone"
     }
   ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.1,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 10,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 6,
+    "liquidGlowMode": "BOTH"
+  }
 }

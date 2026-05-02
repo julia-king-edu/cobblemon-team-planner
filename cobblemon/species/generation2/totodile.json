@@ -1,12 +1,92 @@
 {
   "implemented": true,
-  "name": "Totodile",
   "nationalPokedexNumber": 158,
+  "name": "Totodile",
   "primaryType": "water",
+  "maleRatio": 0.875,
+  "height": 6,
+  "weight": 95,
+  "pokedex": [
+    "cobblemon.species.totodile.desc"
+  ],
+  "labels": [
+    "gen2",
+    "starter"
+  ],
+  "aspects": [],
   "abilities": [
     "torrent",
     "h:sheerforce"
   ],
+  "eggGroups": [
+    "monster",
+    "water_1"
+  ],
+  "baseStats": {
+    "hp": 50,
+    "attack": 65,
+    "defence": 64,
+    "special_attack": 44,
+    "special_defence": 48,
+    "speed": 43
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 63,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 0.85,
+    "height": 1.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      },
+      "walk": {
+        "walkSpeed": 0.25
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "croconaw",
+          "tier": 1
+        },
+        {
+          "pokemon": "feraligatr",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -16,53 +96,16 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 50,
-    "attack": 65,
-    "defence": 64,
-    "special_attack": 44,
-    "special_defence": 48,
-    "speed": 43
-  },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": true,
-  "baseExperienceYield": 63,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "water_1"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true,
-        "canWalkOnWater": true
-      },
-      "walk": {
-        "walkSpeed": 0.25
-      }
-    }
-  },
   "moves": [
-    "1:leer",
     "1:scratch",
+    "1:leer",
+    "1:rage",
     "6:watergun",
-    "8:rage",
     "9:bite",
     "13:scaryface",
     "19:icefang",
     "22:flail",
     "27:crunch",
-    "29:chipaway",
     "30:slash",
     "33:screech",
     "37:thrash",
@@ -72,35 +115,25 @@
     "egg:ancientpower",
     "egg:aquajet",
     "egg:block",
+    "egg:chipaway",
     "egg:counter",
-    "egg:crunch",
-    "egg:dragonclaw",
-    "egg:dragondance",
-    "egg:faketears",
     "egg:flatter",
-    "egg:hydropump",
-    "egg:icepunch",
-    "egg:metalclaw",
     "egg:mudsport",
-    "egg:rockslide",
-    "egg:thrash",
-    "egg:waterpulse",
     "egg:watersport",
     "tm:aerialace",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:aquatail",
     "tm:blizzard",
+    "tm:block",
     "tm:breakingswipe",
     "tm:brickbreak",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:crunch",
-    "tm:cut",
     "tm:curse",
+    "tm:cut",
     "tm:dig",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragonclaw",
     "tm:dragondance",
     "tm:endeavor",
@@ -110,9 +143,8 @@
     "tm:fling",
     "tm:flipturn",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:honeclaws",
     "tm:hydropump",
     "tm:icebeam",
@@ -122,32 +154,29 @@
     "tm:irontail",
     "tm:liquidation",
     "tm:lowkick",
+    "tm:megakick",
+    "tm:megapunch",
     "tm:metalclaw",
     "tm:muddywater",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:poweruppunch",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
-    "tm:scald",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:shadowclaw",
     "tm:sleeptalk",
     "tm:spite",
     "tm:substitute",
+    "tm:superpower",
     "tm:surf",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uproar",
     "tm:waterfall",
@@ -155,72 +184,53 @@
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:workup",
+    "tutor:aerialace",
     "tutor:ancientpower",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:bite",
-    "tutor:blizzard",
     "tutor:block",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:crunch",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:detect",
-    "tutor:dig",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:dynamicpunch",
-    "tutor:endure",
+    "tutor:endeavor",
+    "tutor:flipturn",
     "tutor:focuspunch",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:hydrocannon",
-    "tutor:hydropump",
+    "tutor:icebeam",
+    "tutor:icefang",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irontail",
-    "tutor:leer",
+    "tutor:liquidation",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:protect",
-    "tutor:rage",
-    "tutor:raindance",
-    "tutor:razorwind",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
-    "tutor:scaryface",
-    "tutor:scratch",
-    "tutor:screech",
-    "tutor:seismictoss",
-    "tutor:slash",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:substitute",
     "tutor:superpower",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:swordsdance",
-    "tutor:thrash",
-    "tutor:toxic",
     "tutor:uproar",
-    "tutor:watergun",
     "tutor:waterpledge",
     "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.totodile.desc"
+    "legacy:attract",
+    "legacy:bodyslam",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:detect",
+    "legacy:doubleteam",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:razorwind",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:hydrocannon"
   ],
   "evolutions": [
     {
@@ -236,24 +246,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 0.85,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 95,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

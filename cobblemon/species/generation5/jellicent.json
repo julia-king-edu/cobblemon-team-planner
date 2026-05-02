@@ -1,14 +1,100 @@
 {
   "implemented": true,
-  "name": "Jellicent",
   "nationalPokedexNumber": 593,
+  "name": "Jellicent",
   "primaryType": "water",
   "secondaryType": "ghost",
+  "maleRatio": 0.5,
+  "height": 22,
+  "weight": 1350,
+  "pokedex": [
+    "cobblemon.species.jellicent.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "waterabsorb",
     "cursedbody",
     "h:damp"
   ],
+  "eggGroups": [
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 100,
+    "attack": 60,
+    "defence": 70,
+    "special_attack": 85,
+    "special_defence": 105,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 168,
+  "experienceGroup": "medium_fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1,
+  "hitbox": {
+    "width": 2,
+    "height": 2.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.2,
+        "canBreatheUnderwater": true,
+        "canWalkOnWater": true
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tentacruel",
+          "tier": 1
+        },
+        {
+          "pokemon": "jellicent",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -22,154 +108,119 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 100,
-    "attack": 60,
-    "defence": 70,
-    "special_attack": 85,
-    "special_defence": 105,
-    "speed": 60
-  },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.2,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 168,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "amorphous"
-  ],
   "moves": [
-    "1:absorb",
-    "1:acidarmor",
     "1:bubble",
-    "1:nightshade",
-    "1:poisonsting",
-    "1:watergun",
     "1:watersport",
+    "1:absorb",
+    "1:nightshade",
+    "1:bubblebeam",
     "1:wringout",
+    "1:acidarmor",
+    "1:watergun",
+    "1:poisonsting",
     "12:waterpulse",
-    "13:bubblebeam",
     "16:raindance",
     "20:hex",
     "24:brine",
-    "27:ominouswind",
     "28:recover",
     "32:shadowball",
     "36:whirlpool",
     "43:hydropump",
     "48:destinybond",
     "54:waterspout",
-    "tm:attract",
+    "egg:acidarmor",
+    "egg:bubblebeam",
+    "egg:confuseray",
+    "egg:constrict",
+    "egg:mist",
+    "egg:painsplit",
+    "egg:strengthsap",
+    "egg:wringout",
+    "tm:bind",
     "tm:blizzard",
     "tm:brine",
-    "tm:confide",
+    "tm:confuseray",
     "tm:darkpulse",
     "tm:dazzlinggleam",
     "tm:dive",
-    "tm:doubleteam",
     "tm:dreameater",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:hail",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:imprison",
+    "tm:magiccoat",
     "tm:muddywater",
+    "tm:nightshade",
+    "tm:ominouswind",
+    "tm:painsplit",
+    "tm:poltergeist",
     "tm:protect",
     "tm:psychic",
     "tm:psychup",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:scald",
-    "tm:secretpower",
     "tm:shadowball",
+    "tm:shockwave",
     "tm:sleeptalk",
     "tm:sludgebomb",
     "tm:sludgewave",
-    "tm:snore",
+    "tm:spite",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:taunt",
-    "tm:toxic",
+    "tm:terablast",
     "tm:trick",
     "tm:trickroom",
     "tm:waterfall",
+    "tm:waterpulse",
     "tm:whirlpool",
     "tm:willowisp",
     "tutor:bind",
-    "tutor:brine",
     "tutor:darkpulse",
+    "tutor:dazzlinggleam",
+    "tutor:dive",
+    "tutor:energyball",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:magiccoat",
     "tutor:ominouswind",
     "tutor:painsplit",
     "tutor:poltergeist",
-    "tutor:raindance",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:sludgebomb",
     "tutor:spite",
     "tutor:trick",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.jellicent.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "frillish",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 2,
-    "height": 2.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 22,
-  "weight": 1350,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

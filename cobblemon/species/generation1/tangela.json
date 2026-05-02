@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Tangela",
   "nationalPokedexNumber": 114,
+  "name": "Tangela",
   "primaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 10,
+  "weight": 350,
+  "pokedex": [
+    "cobblemon.species.tangela.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "chlorophyll",
     "leafguard",
     "h:regenerator"
+  ],
+  "eggGroups": [
+    "grass"
   ],
   "baseStats": {
     "hp": 65,
@@ -16,15 +29,25 @@
     "special_defence": 40,
     "speed": 60
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 87,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.5,
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.6,
+    "fixed": false
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -39,9 +62,9 @@
     ]
   },
   "moves": [
+    "1:constrict",
     "1:absorb",
     "1:bind",
-    "1:constrict",
     "4:stunspore",
     "8:growth",
     "12:megadrain",
@@ -50,140 +73,103 @@
     "24:ancientpower",
     "28:knockoff",
     "32:gigadrain",
-    "33:naturalgift",
     "36:sleeppowder",
     "40:slam",
     "44:tickle",
-    "46:wringout",
     "48:powerwhip",
     "52:ingrain",
     "56:grassyterrain",
-    "egg:amnesia",
     "egg:confusion",
     "egg:endeavor",
     "egg:flail",
-    "egg:gigadrain",
-    "egg:leafstorm",
     "egg:leechseed",
-    "egg:megadrain",
     "egg:naturalgift",
     "egg:naturepower",
-    "egg:powerswap",
     "egg:ragepowder",
-    "egg:reflect",
     "egg:wakeupslap",
+    "egg:wringout",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
+    "tm:bind",
     "tm:bodyslam",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
     "tm:cut",
-    "tm:doubleteam",
+    "tm:endeavor",
     "tm:endure",
     "tm:energyball",
     "tm:facade",
     "tm:flash",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
+    "tm:grassyglide",
     "tm:grassyterrain",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hyperbeam",
     "tm:infestation",
+    "tm:knockoff",
     "tm:leafstorm",
     "tm:naturalgift",
     "tm:naturepower",
+    "tm:painsplit",
     "tm:powerswap",
     "tm:powerwhip",
     "tm:protect",
     "tm:psychup",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shockwave",
     "tm:sleeptalk",
     "tm:sludgebomb",
-    "tm:snore",
     "tm:solarbeam",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swordsdance",
+    "tm:synthesis",
+    "tm:terablast",
     "tm:thief",
-    "tm:toxic",
-    "tutor:absorb",
-    "tutor:amnesia",
+    "tm:worryseed",
     "tutor:ancientpower",
-    "tutor:attract",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:bodyslam",
-    "tutor:confusion",
-    "tutor:constrict",
-    "tutor:curse",
-    "tutor:cut",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:flail",
-    "tutor:flash",
-    "tutor:frustration",
+    "tutor:energyball",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grassyglide",
-    "tutor:growth",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:hyperbeam",
-    "tutor:ingrain",
     "tutor:knockoff",
-    "tutor:leechseed",
-    "tutor:megadrain",
-    "tutor:mimic",
-    "tutor:morningsun",
     "tutor:painsplit",
-    "tutor:poisonpowder",
-    "tutor:powerwhip",
-    "tutor:protect",
-    "tutor:psychup",
-    "tutor:rage",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
+    "tutor:rocksmash",
     "tutor:seedbomb",
     "tutor:shockwave",
-    "tutor:skullbash",
-    "tutor:slam",
-    "tutor:sleeppowder",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:stunspore",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:sweetscent",
-    "tutor:swordsdance",
     "tutor:synthesis",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
-    "tutor:vinewhip",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.tangela.desc"
+    "tutor:worryseed",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:sweetscent",
+    "legacy:takedown",
+    "legacy:toxic",
+    "special:morningsun"
   ],
   "evolutions": [
     {
@@ -200,23 +186,34 @@
       ]
     }
   ],
-  "baseScale": 1.5,
-  "hitbox": {
-    "width": 0.8,
-    "height": 0.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 350,
-  "aspects": [],
-  "cannotDynamax": false
+  "behaviour": {
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "tangela",
+          "tier": 1
+        },
+        {
+          "pokemon": "tangrowth",
+          "tier": 2
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  }
 }

@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Smeargle",
   "nationalPokedexNumber": 235,
+  "name": "Smeargle",
   "primaryType": "normal",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 580,
+  "pokedex": [
+    "cobblemon.species.smeargle.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "owntempo",
     "technician",
     "h:moody"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 55,
@@ -16,50 +29,6 @@
     "special_defence": 45,
     "speed": 75
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 88,
-  "experienceGroup": "fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "moves": [
-    "1:sketch",
-    "tutor:captivate",
-    "tutor:falseswipe",
-    "tutor:flamethrower",
-    "tutor:furyswipes",
-    "tutor:meanlook",
-    "tutor:odorsleuth",
-    "tutor:seismictoss",
-    "tutor:sketch",
-    "tutor:sleeptalk",
-    "tutor:spore"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.smeargle.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 0.6,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.8,
-    "fixed": false
-  },
-  "baseFriendship": 70,
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -68,8 +37,50 @@
     "special_defence": 0,
     "speed": 1
   },
-  "height": 12,
-  "weight": 580,
-  "aspects": [],
-  "cannotDynamax": false
+  "baseExperienceYield": 88,
+  "experienceGroup": "fast",
+  "catchRate": 45,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.8,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "entityInteract": {
+      "avoidedBySkeleton": true
+    },
+    "characteristicRainbow": true,
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
+  "moves": [
+    "1:sketch",
+    "tutor:falseswipe",
+    "tutor:flamethrower",
+    "legacy:captivate",
+    "legacy:sleeptalk",
+    "special:falseswipe",
+    "special:flamethrower",
+    "special:furyswipes",
+    "special:meanlook",
+    "special:odorsleuth",
+    "special:seismictoss",
+    "special:spore"
+  ],
+  "evolutions": []
 }

@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Ekans",
   "nationalPokedexNumber": 23,
+  "name": "Ekans",
   "primaryType": "poison",
+  "maleRatio": 0.5,
+  "height": 20,
+  "weight": 69,
+  "pokedex": [
+    "cobblemon.species.ekans.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "intimidate",
     "shedskin",
     "h:unnerve"
+  ],
+  "eggGroups": [
+    "field",
+    "dragon"
   ],
   "baseStats": {
     "hp": 35,
@@ -16,27 +30,44 @@
     "special_defence": 54,
     "speed": 55
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
   },
+  "baseExperienceYield": 58,
+  "experienceGroup": "medium_fast",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
   "features": [
     "snake-pattern"
   ],
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 58,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "dragon"
-  ],
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.7,
+    "height": 0.4,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -47,56 +78,50 @@
     ]
   },
   "moves": [
-    "1:leer",
     "1:wrap",
+    "1:leer",
     "4:poisonsting",
     "9:bite",
     "12:glare",
     "17:screech",
     "20:acid",
-    "25:spitup",
     "25:stockpile",
     "25:swallow",
+    "25:spitup",
     "28:acidspray",
     "33:mudbomb",
-    "33:sludgebomb",
     "36:gastroacid",
     "38:belch",
     "41:haze",
     "44:coil",
     "49:gunkshot",
-    "egg:beatup",
     "egg:disable",
-    "egg:irontail",
     "egg:poisonfang",
     "egg:poisontail",
     "egg:pursuit",
     "egg:scaryface",
     "egg:slam",
-    "egg:snatch",
     "egg:spite",
     "egg:suckerpunch",
     "egg:switcheroo",
     "tm:acidspray",
-    "tm:attract",
+    "tm:aquatail",
+    "tm:beatup",
+    "tm:bind",
     "tm:brutalswing",
-    "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:crunch",
     "tm:darkpulse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
     "tm:firefang",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigadrain",
     "tm:gunkshot",
     "tm:haze",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:infestation",
     "tm:irontail",
     "tm:knockoff",
@@ -104,7 +129,6 @@
     "tm:leechlife",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:payback",
     "tm:poisonjab",
     "tm:poisontail",
@@ -112,13 +136,11 @@
     "tm:psychicfangs",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:scaleshot",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:screech",
     "tm:seedbomb",
     "tm:skittersmack",
     "tm:sleeptalk",
@@ -129,8 +151,8 @@
     "tm:spite",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
@@ -139,67 +161,51 @@
     "tm:toxicspikes",
     "tm:trailblaze",
     "tm:venoshock",
-    "tutor:acid",
     "tutor:aquatail",
-    "tutor:attract",
-    "tutor:beatup",
-    "tutor:bide",
     "tutor:bind",
-    "tutor:bite",
-    "tutor:bodyslam",
-    "tutor:crunch",
-    "tutor:curse",
     "tutor:darkpulse",
-    "tutor:dig",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:earthquake",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fissure",
-    "tutor:frustration",
+    "tutor:firefang",
     "tutor:gastroacid",
     "tutor:gigadrain",
-    "tutor:glare",
     "tutor:gunkshot",
-    "tutor:haze",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
     "tutor:irontail",
-    "tutor:leer",
-    "tutor:megadrain",
-    "tutor:mimic",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:leechlife",
+    "tutor:mudslap",
     "tutor:poisonjab",
-    "tutor:poisonsting",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:rage",
     "tutor:rest",
-    "tutor:return",
     "tutor:rockslide",
-    "tutor:screech",
+    "tutor:scaleshot",
     "tutor:seedbomb",
-    "tutor:skullbash",
-    "tutor:slam",
+    "tutor:skittersmack",
     "tutor:sleeptalk",
     "tutor:sludgebomb",
+    "tutor:snarl",
     "tutor:snatch",
-    "tutor:snore",
     "tutor:spite",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:swagger",
-    "tutor:takedown",
-    "tutor:thief",
-    "tutor:toxic",
-    "tutor:wrap"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.ekans.desc"
+    "tutor:suckerpunch",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:bodyslam",
+    "legacy:bulldoze",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleteam",
+    "legacy:fissure",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:megadrain",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "evolutions": [
     {
@@ -207,32 +213,26 @@
       "variant": "level_up",
       "result": "arbok",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "crunch"
+      ],
       "requirements": [
         {
           "variant": "level",
           "minLevel": 22
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.7,
-    "height": 0.4,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 20,
-  "weight": 69,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

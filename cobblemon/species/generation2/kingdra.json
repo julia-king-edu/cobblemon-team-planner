@@ -1,13 +1,27 @@
 {
   "implemented": true,
-  "name": "Kingdra",
   "nationalPokedexNumber": 230,
+  "name": "Kingdra",
   "primaryType": "water",
   "secondaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 1520,
+  "pokedex": [
+    "cobblemon.species.kingdra.desc"
+  ],
+  "labels": [
+    "gen2"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "sniper",
     "h:damp"
+  ],
+  "eggGroups": [
+    "water_1",
+    "dragon"
   ],
   "baseStats": {
     "hp": 75,
@@ -17,19 +31,65 @@
     "special_defence": 95,
     "speed": 85
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 1,
+    "special_defence": 1,
+    "speed": 0
+  },
   "baseExperienceYield": 270,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 3,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "herd": {
+      "maxSize": "6",
+      "toleratedLeaders": [
+        {
+          "pokemon": "kingdra",
+          "tier": 1
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 2
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
-    "amount": 4,
+    "amount": 7,
     "entries": [
+      {
+        "item": "minecraft:ink_sac",
+        "quantityRange": "0-3"
+      },
       {
         "item": "minecraft:prismarine_shard",
         "quantityRange": "0-3"
@@ -40,50 +100,41 @@
       }
     ]
   },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
-  },
   "moves": [
-    "1:bubble",
-    "1:leer",
-    "1:smokescreen",
-    "1:twister",
-    "1:watergun",
-    "1:whirlpool",
     "1:yawn",
+    "1:bubble",
+    "1:smokescreen",
+    "1:leer",
+    "1:watergun",
+    "1:twister",
+    "1:whirlpool",
     "15:focusenergy",
     "20:dragonbreath",
     "25:bubblebeam",
     "30:agility",
-    "31:brine",
-    "37:laserfocus",
     "37:waterpulse",
     "44:dragonpulse",
     "51:hydropump",
     "58:dragondance",
     "65:raindance",
     "72:wavecrash",
+    "egg:aurorabeam",
+    "egg:clearsmog",
+    "egg:disable",
+    "egg:dragonrage",
+    "egg:flail",
+    "egg:octazooka",
+    "egg:razorwind",
+    "egg:splash",
     "tm:agility",
-    "tm:attract",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bounce",
     "tm:breakingswipe",
     "tm:brine",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:dive",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragondance",
     "tm:dragonpulse",
@@ -92,116 +143,80 @@
     "tm:flashcannon",
     "tm:flipturn",
     "tm:focusenergy",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hurricane",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:ironhead",
+    "tm:laserfocus",
     "tm:liquidation",
     "tm:muddywater",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:quash",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scald",
     "tm:scaleshot",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:swift",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
+    "tm:twister",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:weatherball",
     "tm:whirlpool",
-    "tutor:agility",
-    "tutor:attract",
-    "tutor:blizzard",
-    "tutor:bodyslam",
     "tutor:bounce",
-    "tutor:bubble",
-    "tutor:curse",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
     "tutor:dracometeor",
-    "tutor:dragonbreath",
     "tutor:dragonpulse",
-    "tutor:endure",
+    "tutor:flashcannon",
     "tutor:flipturn",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
-    "tutor:hydropump",
+    "tutor:focusenergy",
+    "tutor:gigaimpact",
     "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:ironhead",
     "tutor:laserfocus",
-    "tutor:leer",
-    "tutor:mimic",
-    "tutor:muddywater",
+    "tutor:liquidation",
     "tutor:outrage",
-    "tutor:protect",
-    "tutor:raindance",
     "tutor:rest",
-    "tutor:return",
     "tutor:scaleshot",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:smokescreen",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:surf",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:toxic",
     "tutor:twister",
-    "tutor:waterfall",
-    "tutor:watergun",
     "tutor:waterpulse",
-    "tutor:whirlpool"
-  ],
-  "labels": [
-    "gen2"
-  ],
-  "pokedex": [
-    "cobblemon.species.kingdra.desc"
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:rage",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "seadra",
-  "evolutions": [],
-  "baseScale": 1.2,
-  "hitbox": {
-    "width": 0.9,
-    "height": 2.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 1,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 1520,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

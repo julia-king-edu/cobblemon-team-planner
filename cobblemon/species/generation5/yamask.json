@@ -1,11 +1,84 @@
 {
   "implemented": true,
-  "name": "Yamask",
   "nationalPokedexNumber": 562,
+  "name": "Yamask",
   "primaryType": "ghost",
-  "abilities": [
-    "mummy"
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 15,
+  "pokedex": [
+    "cobblemon.species.yamask.desc"
   ],
+  "labels": [
+    "gen5",
+    "unovan_form"
+  ],
+  "aspects": [],
+  "abilities": [
+    "mummy",
+    "h:mummy"
+  ],
+  "eggGroups": [
+    "mineral",
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 38,
+    "attack": 30,
+    "defence": 85,
+    "special_attack": 55,
+    "special_defence": 65,
+    "speed": 30
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "features": [
+    "galarian"
+  ],
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
+  "standingEyeHeight": 0.6,
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -15,37 +88,151 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 38,
-    "attack": 30,
-    "defence": 85,
-    "special_attack": 55,
-    "special_defence": 65,
-    "speed": 30
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    },
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
+  "moves": [
+    "1:astonish",
+    "1:protect",
+    "4:haze",
+    "8:nightshade",
+    "12:disable",
+    "16:willowisp",
+    "20:craftyshield",
+    "24:hex",
+    "28:meanlook",
+    "32:grudge",
+    "36:curse",
+    "40:shadowball",
+    "44:darkpulse",
+    "48:powersplit",
+    "48:guardsplit",
+    "52:destinybond",
+    "egg:healblock",
+    "egg:memento",
+    "egg:nightmare",
+    "tm:afteryou",
+    "tm:allyswitch",
+    "tm:block",
+    "tm:calmmind",
+    "tm:curse",
+    "tm:darkpulse",
+    "tm:dreameater",
+    "tm:embargo",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:flash",
+    "tm:haze",
+    "tm:hex",
+    "tm:imprison",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:knockoff",
+    "tm:magiccoat",
+    "tm:nastyplot",
+    "tm:nightshade",
+    "tm:ominouswind",
+    "tm:painsplit",
+    "tm:payback",
+    "tm:poltergeist",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:roleplay",
+    "tm:safeguard",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snatch",
+    "tm:spite",
+    "tm:substitute",
+    "tm:telekinesis",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxicspikes",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:willowisp",
+    "tm:wonderroom",
+    "tm:zenheadbutt",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:block",
+    "tutor:calmmind",
+    "tutor:darkpulse",
+    "tutor:energyball",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:magiccoat",
+    "tutor:ominouswind",
+    "tutor:painsplit",
+    "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:roleplay",
+    "tutor:shadowball",
+    "tutor:shockwave",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:snatch",
+    "tutor:spite",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
+  ],
+  "evolutions": [
+    {
+      "id": "yamask_cofagrigus",
+      "variant": "level_up",
+      "result": "cofagrigus",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "scaryface",
+        "shadowclaw"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 34
+        }
+      ]
     }
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  ],
   "forms": [
     {
       "name": "Galar",
       "primaryType": "ground",
       "secondaryType": "ghost",
+      "maleRatio": 0.5,
+      "height": 5,
+      "weight": 15,
+      "pokedex": [
+        "cobblemon.species.yamask-galar.desc"
+      ],
+      "labels": [
+        "gen8",
+        "galarian_form"
+      ],
+      "aspects": [
+        "galarian"
+      ],
       "abilities": [
-        "wanderingspirit"
+        "wanderingspirit",
+        "h:wanderingspirit"
       ],
       "baseStats": {
         "hp": 38,
@@ -55,24 +242,15 @@
         "special_defence": 65,
         "speed": 30
       },
-      "catchRate": 190,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 61,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 1,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "item": "cobblemon:kasib_berry",
+            "percentage": 2.5
+          }
+        ]
       },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 25,
-      "eggGroups": [
-        "mineral",
-        "amorphous"
-      ],
       "moves": [
         "1:astonish",
         "1:protect",
@@ -87,14 +265,14 @@
         "36:curse",
         "40:shadowball",
         "44:earthquake",
-        "48:guardsplit",
         "48:powersplit",
+        "48:guardsplit",
         "52:destinybond",
         "egg:memento",
         "tm:allyswitch",
-        "tm:attract",
         "tm:brutalswing",
         "tm:calmmind",
+        "tm:curse",
         "tm:darkpulse",
         "tm:earthpower",
         "tm:earthquake",
@@ -102,25 +280,27 @@
         "tm:energyball",
         "tm:facade",
         "tm:faketears",
+        "tm:haze",
         "tm:hex",
         "tm:imprison",
         "tm:irondefense",
         "tm:nastyplot",
+        "tm:nightshade",
         "tm:payback",
+        "tm:poltergeist",
         "tm:protect",
         "tm:psychic",
         "tm:raindance",
         "tm:rest",
         "tm:rockslide",
         "tm:rocktomb",
-        "tm:round",
         "tm:safeguard",
         "tm:sandstorm",
         "tm:shadowball",
         "tm:skillswap",
         "tm:sleeptalk",
-        "tm:snore",
         "tm:substitute",
+        "tm:terablast",
         "tm:thief",
         "tm:toxicspikes",
         "tm:trick",
@@ -128,188 +308,73 @@
         "tm:willowisp",
         "tm:wonderroom",
         "tm:zenheadbutt",
-        "tutor:poltergeist"
+        "tutor:allyswitch",
+        "tutor:calmmind",
+        "tutor:darkpulse",
+        "tutor:earthpower",
+        "tutor:energyball",
+        "tutor:irondefense",
+        "tutor:poltergeist",
+        "tutor:psychic",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:shadowball",
+        "tutor:skillswap",
+        "tutor:sleeptalk",
+        "tutor:trick",
+        "tutor:wonderroom",
+        "tutor:zenheadbutt",
+        "legacy:attract",
+        "legacy:round",
+        "legacy:snore"
       ],
-      "labels": [
-        "gen8",
-        "galar_regional"
-      ],
-      "aspects": [
-        "galarian"
-      ],
-      "height": 5,
-      "weight": 15,
       "evolutions": [
         {
           "id": "yamask_runerigus",
           "variant": "level_up",
           "result": "runerigus",
           "consumeHeldItem": false,
-          "learnableMoves": [],
+          "learnableMoves": [
+            "shadowclaw"
+          ],
           "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 0
+            },
             {
               "variant": "damage_taken",
               "amount": 49
+            },
+            {
+              "variant": "biome",
+              "biomeCondition": "#cobblemon:is_sandy"
             }
           ]
         }
       ],
-      "cannotDynamax": false,
       "battleOnly": false,
-      "drops": {
-        "amount": 1,
-        "entries": [
-          {
-            "item": "cobblemon:kasib_berry",
-            "percentage": 2.5
+      "behaviour": {
+        "resting": {
+          "willSleepOnBed": true,
+          "times": [
+            "any"
+          ],
+          "drowsyChance": 0.0014,
+          "rouseChance": 0.0042
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          },
+          "fly": {
+            "canFly": true
           }
-        ]
+        },
+        "combat": {
+          "willDefendOwner": true
+        }
       }
     }
-  ],
-  "baseExperienceYield": 61,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "mineral",
-    "amorphous"
-  ],
-  "moves": [
-    "1:astonish",
-    "1:protect",
-    "4:haze",
-    "8:nightshade",
-    "12:disable",
-    "16:willowisp",
-    "20:craftyshield",
-    "24:hex",
-    "25:ominouswind",
-    "28:meanlook",
-    "32:grudge",
-    "36:curse",
-    "40:shadowball",
-    "44:darkpulse",
-    "48:guardsplit",
-    "48:powersplit",
-    "52:destinybond",
-    "egg:allyswitch",
-    "egg:craftyshield",
-    "egg:disable",
-    "egg:endure",
-    "egg:faketears",
-    "egg:healblock",
-    "egg:imprison",
-    "egg:memento",
-    "egg:nastyplot",
-    "egg:nightmare",
-    "egg:toxicspikes",
-    "tm:allyswitch",
-    "tm:attract",
-    "tm:calmmind",
-    "tm:confide",
-    "tm:darkpulse",
-    "tm:doubleteam",
-    "tm:dreameater",
-    "tm:embargo",
-    "tm:endure",
-    "tm:energyball",
-    "tm:facade",
-    "tm:faketears",
-    "tm:flash",
-    "tm:frustration",
-    "tm:hex",
-    "tm:hiddenpower",
-    "tm:imprison",
-    "tm:infestation",
-    "tm:irondefense",
-    "tm:nastyplot",
-    "tm:payback",
-    "tm:protect",
-    "tm:psychic",
-    "tm:psychup",
-    "tm:raindance",
-    "tm:rest",
-    "tm:return",
-    "tm:round",
-    "tm:safeguard",
-    "tm:secretpower",
-    "tm:shadowball",
-    "tm:skillswap",
-    "tm:sleeptalk",
-    "tm:snore",
-    "tm:substitute",
-    "tm:swagger",
-    "tm:telekinesis",
-    "tm:thief",
-    "tm:toxic",
-    "tm:toxicspikes",
-    "tm:trick",
-    "tm:trickroom",
-    "tm:willowisp",
-    "tm:wonderroom",
-    "tm:zenheadbutt",
-    "tutor:afteryou",
-    "tutor:allyswitch",
-    "tutor:block",
-    "tutor:darkpulse",
-    "tutor:irondefense",
-    "tutor:knockoff",
-    "tutor:magiccoat",
-    "tutor:painsplit",
-    "tutor:poltergeist",
-    "tutor:roleplay",
-    "tutor:shockwave",
-    "tutor:skillswap",
-    "tutor:sleeptalk",
-    "tutor:snatch",
-    "tutor:snore",
-    "tutor:spite",
-    "tutor:telekinesis",
-    "tutor:trick",
-    "tutor:wonderroom",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5",
-    "unova_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.yamask.desc"
-  ],
-  "evolutions": [
-    {
-      "id": "yamask_cofagrigus",
-      "variant": "level_up",
-      "result": "cofagrigus",
-      "consumeHeldItem": false,
-      "learnableMoves": [
-        "shadowclaw"
-      ],
-      "requirements": [
-        {
-          "variant": "level",
-          "minLevel": 34
-        }
-      ]
-    }
-  ],
-  "baseScale": 0.5,
-  "hitbox": {
-    "width": 1,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 5,
-  "weight": 15,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

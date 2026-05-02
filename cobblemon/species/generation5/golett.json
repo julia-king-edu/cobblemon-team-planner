@@ -1,14 +1,85 @@
 {
   "implemented": true,
-  "name": "Golett",
   "nationalPokedexNumber": 622,
+  "name": "Golett",
   "primaryType": "ground",
   "secondaryType": "ghost",
+  "maleRatio": -1,
+  "height": 10,
+  "weight": 920,
+  "pokedex": [
+    "cobblemon.species.golett.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "ironfist",
     "klutz",
     "h:noguard"
   ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 59,
+    "attack": 74,
+    "defence": 50,
+    "special_attack": 35,
+    "special_defence": 50,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 61,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.3,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInWater": false
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "golurk",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 3,
     "entries": [
@@ -26,43 +97,16 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 59,
-    "attack": 74,
-    "defence": 50,
-    "special_attack": 35,
-    "special_defence": 50,
-    "speed": 35
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 190,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 61,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
     "1:astonish",
     "1:mudslap",
     "4:defensecurl",
     "8:pound",
-    "9:rollout",
     "12:shadowpunch",
     "16:curse",
     "20:nightshade",
     "24:stompingtantrum",
     "28:irondefense",
-    "30:magnitude",
     "32:megapunch",
     "36:shadowball",
     "40:heavyslam",
@@ -70,17 +114,16 @@
     "48:hammerarm",
     "52:earthquake",
     "56:dynamicpunch",
-    "61:focuspunch",
+    "egg:magnitude",
     "tm:allyswitch",
+    "tm:block",
     "tm:bodyslam",
     "tm:brickbreak",
     "tm:bulldoze",
-    "tm:confide",
     "tm:confuseray",
     "tm:curse",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:earthpower",
     "tm:earthquake",
@@ -91,14 +134,12 @@
     "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
     "tm:grassknot",
     "tm:gravity",
     "tm:gyroball",
     "tm:heavyslam",
     "tm:helpinghand",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:icebeam",
     "tm:icepunch",
     "tm:icywind",
@@ -107,6 +148,7 @@
     "tm:knockoff",
     "tm:lowkick",
     "tm:lowsweep",
+    "tm:magiccoat",
     "tm:megakick",
     "tm:megapunch",
     "tm:mudslap",
@@ -120,63 +162,74 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockpolish",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
+    "tm:rollout",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:selfdestruct",
     "tm:shadowball",
+    "tm:shockwave",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:smackdown",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stompingtantrum",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
     "tm:superpower",
-    "tm:swagger",
     "tm:takedown",
     "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
     "tm:thunderpunch",
-    "tm:toxic",
     "tutor:allyswitch",
     "tutor:block",
+    "tutor:bulldoze",
     "tutor:drainpunch",
     "tutor:earthpower",
     "tutor:firepunch",
     "tutor:focuspunch",
     "tutor:gravity",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icepunch",
     "tutor:icywind",
     "tutor:irondefense",
+    "tutor:knockoff",
     "tutor:lowkick",
     "tutor:magiccoat",
+    "tutor:mudslap",
     "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
     "tutor:scorchingsands",
+    "tutor:shadowball",
     "tutor:shockwave",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
+    "tutor:stompingtantrum",
     "tutor:superpower",
     "tutor:telekinesis",
-    "tutor:thunderpunch"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.golett.desc"
+    "tutor:thunderpunch",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -184,7 +237,9 @@
       "variant": "level_up",
       "result": "golurk",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "heavyslam"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -193,23 +248,8 @@
       ]
     }
   ],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 0.7,
-    "height": 1.3,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 10,
-  "weight": 920,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 8,
+    "liquidGlowMode": "BOTH"
+  }
 }

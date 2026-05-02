@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "rare",
             "level": "30-42",
             "weight": 2.25,
@@ -21,6 +21,11 @@
                     "#cobblemon:is_overworld"
                 ],
                 "maxY": 32
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
@@ -30,7 +35,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "rare",
             "level": "30-42",
             "weight": 2.25,
@@ -41,6 +46,11 @@
                     "#cobblemon:is_overworld"
                 ],
                 "maxY": 32
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
@@ -51,7 +61,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "30-42",
             "weight": 14.4,
@@ -66,7 +76,7 @@
             "id": "dragonair-4",
             "pokemon": "dragonair",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "30-42",
             "weight": 0.45,
@@ -74,22 +84,29 @@
                 "minSkyLight": 0,
                 "maxSkyLight": 7,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_overworld"
                 ],
                 "maxY": 32
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_deep_dark"
+                ]
             }
         },
         {
             "id": "dragonair-5",
             "pokemon": "dragonair",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "30-42",
             "weight": 3.6,
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_magical",
                     "#cobblemon:is_ocean"
                 ]
@@ -108,7 +125,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "30-42",
             "weight": 14.4,
@@ -125,7 +142,7 @@
             "id": "dragonair-7",
             "pokemon": "dragonair",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "ultra-rare",
             "level": "30-42",
             "weight": 3.6,
@@ -134,6 +151,7 @@
                 "minSkyLight": 8,
                 "maxSkyLight": 15,
                 "biomes": [
+                    "#aether:is_aether",
                     "#cobblemon:is_magical",
                     "#cobblemon:is_ocean"
                 ]

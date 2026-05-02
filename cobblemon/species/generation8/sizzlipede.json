@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Sizzlipede",
   "nationalPokedexNumber": 850,
+  "name": "Sizzlipede",
   "primaryType": "fire",
   "secondaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 10,
+  "pokedex": [
+    "cobblemon.species.sizzlipede.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "flashfire",
     "whitesmoke",
     "h:flamebody"
+  ],
+  "eggGroups": [
+    "bug"
   ],
   "baseStats": {
     "hp": 50,
@@ -17,27 +30,45 @@
     "special_defence": 50,
     "speed": 45
   },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": true,
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 61,
   "experienceGroup": "medium_fast",
+  "catchRate": 190,
   "eggCycles": 20,
-  "eggGroups": [
-    "bug"
-  ],
+  "baseFriendship": 50,
+  "shoulderMountable": true,
+  "baseScale": 0.45,
+  "hitbox": {
+    "width": 1,
+    "height": 0.2,
+    "fixed": false
+  },
   "behaviour": {
     "resting": {
       "canSleep": true,
-      "depth": "normal",
-      "light": "0-4"
+      "light": "0-4",
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
     },
     "moving": {
       "swim": {
-        "canSwimInLava": true,
-        "canBreatheUnderlava": true
+        "canBreatheUnderlava": true,
+        "avoidsWater": true,
+        "canSwimInLava": true
       }
-    }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
   },
   "drops": {
     "amount": 2,
@@ -70,8 +101,8 @@
     "egg:knockoff",
     "egg:rollout",
     "egg:strugglebug",
-    "tm:attract",
     "tm:brutalswing",
+    "tm:bugbite",
     "tm:bugbuzz",
     "tm:crunch",
     "tm:endure",
@@ -79,25 +110,34 @@
     "tm:firespin",
     "tm:heatcrash",
     "tm:heatwave",
+    "tm:knockoff",
     "tm:leechlife",
+    "tm:lunge",
     "tm:powerwhip",
     "tm:protect",
     "tm:rest",
-    "tm:round",
+    "tm:rollout",
     "tm:scald",
+    "tm:scorchingsands",
+    "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
+    "tm:terablast",
     "tm:venoshock",
+    "tutor:bugbite",
+    "tutor:heatwave",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:rest",
+    "tutor:rollout",
     "tutor:scorchingsands",
-    "tutor:skittersmack"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.sizzlipede.desc"
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -111,26 +151,22 @@
           "variant": "level",
           "minLevel": 28
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
   ],
-  "baseScale": 0.45,
-  "hitbox": {
-    "width": 1,
-    "height": 0.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 10,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 6,
+    "liquidGlowMode": "BOTH"
+  }
 }

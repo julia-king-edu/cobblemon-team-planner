@@ -1,12 +1,26 @@
 {
   "implemented": true,
-  "name": "Tauros",
   "nationalPokedexNumber": 128,
+  "name": "Tauros",
   "primaryType": "normal",
+  "maleRatio": 1,
+  "height": 14,
+  "weight": 884,
+  "pokedex": [
+    "cobblemon.species.tauros.desc"
+  ],
+  "labels": [
+    "gen1",
+    "kantonian_form"
+  ],
+  "aspects": [],
   "abilities": [
     "intimidate",
     "angerpoint",
     "h:sheerforce"
+  ],
+  "eggGroups": [
+    "field"
   ],
   "baseStats": {
     "hp": 75,
@@ -16,16 +30,258 @@
     "special_defence": 70,
     "speed": 110
   },
-  "features": [
-    "paldean-breed"
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 172,
+  "experienceGroup": "slow",
   "catchRate": 45,
-  "maleRatio": 1,
-  "shoulderMountable": false,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.3,
+  "hitbox": {
+    "height": 1.4,
+    "fixed": false,
+    "width": 1.3
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "15-50",
+          "JUMP": "25-35",
+          "SKILL": "15-30",
+          "SPEED": "55-75",
+          "STAMINA": "35-55"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "bouffalant",
+          "tier": 1
+        },
+        {
+          "pokemon": "miltank",
+          "tier": 2
+        },
+        {
+          "pokemon": "tauros",
+          "tier": 3
+        },
+        {
+          "pokemon": "tauros bull_breed=combat",
+          "tier": 3
+        },
+        {
+          "pokemon": "tauros bull_breed=aqua",
+          "tier": 4
+        },
+        {
+          "pokemon": "tauros bull_breed=blaze",
+          "tier": 4
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "swimSpeed": "0.25"
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:leather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:beef",
+        "quantityRange": "1-3"
+      }
+    ]
+  },
+  "moves": [
+    "1:tackle",
+    "1:tailwhip",
+    "1:rage",
+    "1:pursuit",
+    "5:workup",
+    "10:payback",
+    "15:assurance",
+    "20:hornattack",
+    "25:scaryface",
+    "30:zenheadbutt",
+    "35:ragingbull",
+    "40:rest",
+    "45:swagger",
+    "50:thrash",
+    "55:doubleedge",
+    "60:gigaimpact",
+    "egg:curse",
+    "egg:endeavor",
+    "tm:assurance",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:closecombat",
+    "tm:curse",
+    "tm:dig",
+    "tm:doubleedge",
+    "tm:earthquake",
+    "tm:endeavor",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:flamethrower",
+    "tm:gigaimpact",
+    "tm:headbutt",
+    "tm:helpinghand",
+    "tm:highhorsepower",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:incinerate",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:lashout",
+    "tm:megahorn",
+    "tm:outrage",
+    "tm:payback",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:reversal",
+    "tm:rockclimb",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:roleplay",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:solarbeam",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:surf",
+    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:trailblaze",
+    "tm:wildcharge",
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:bulldoze",
+    "tutor:endeavor",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
+    "tutor:highhorsepower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:ironhead",
+    "tutor:irontail",
+    "tutor:lashout",
+    "tutor:megahorn",
+    "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:roleplay",
+    "tutor:shadowball",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:stompingtantrum",
+    "tutor:stoneedge",
+    "tutor:throatchop",
+    "tutor:thunderbolt",
+    "tutor:wildcharge",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:fissure",
+    "legacy:focusenergy",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:horndrill",
+    "legacy:leer",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:spite",
+    "legacy:stomp",
+    "legacy:toxic",
+    "legacy:uproar",
+    "legacy:waterpulse",
+    "legacy:whirlpool",
+    "legacy:zapcannon",
+    "special:refresh"
+  ],
+  "evolutions": [],
   "forms": [
     {
       "name": "Paldea-Combat",
       "primaryType": "fighting",
+      "maleRatio": 1,
+      "height": 14,
+      "weight": 1150,
+      "pokedex": [
+        "cobblemon.species.tauros-paldeacombat.desc"
+      ],
+      "labels": [
+        "gen9",
+        "paldean_form"
+      ],
+      "aspects": [
+        "paldean"
+      ],
       "abilities": [
         "intimidate",
         "angerpoint",
@@ -39,10 +295,6 @@
         "special_defence": 70,
         "speed": 100
       },
-      "catchRate": 45,
-      "maleRatio": 1,
-      "baseExperienceYield": 172,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 0,
         "attack": 2,
@@ -51,11 +303,71 @@
         "special_defence": 0,
         "speed": 0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "field"
-      ],
+      "riding": {
+        "behaviours": {
+          "LAND": {
+            "key": "cobblemon:land/horse",
+            "rideSounds": [],
+            "stats": {
+              "ACCELERATION": "15-50",
+              "JUMP": "25-35",
+              "SKILL": "15-30",
+              "SPEED": "55-75",
+              "STAMINA": "35-55"
+            }
+          }
+        },
+        "seats": [
+          {
+            "locator": "seat_1"
+          }
+        ]
+      },
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "bouffalant",
+              "tier": 1
+            },
+            {
+              "pokemon": "miltank",
+              "tier": 2
+            },
+            {
+              "pokemon": "tauros",
+              "tier": 3
+            },
+            {
+              "pokemon": "tauros bull_breed=combat",
+              "tier": 3
+            },
+            {
+              "pokemon": "tauros bull_breed=aqua",
+              "tier": 4
+            },
+            {
+              "pokemon": "tauros bull_breed=blaze",
+              "tier": 4
+            }
+          ]
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
       "moves": [
         "1:tackle",
         "1:tailwhip",
@@ -73,6 +385,7 @@
         "60:closecombat",
         "egg:curse",
         "egg:endeavor",
+        "tm:assurance",
         "tm:bodypress",
         "tm:bodyslam",
         "tm:bulkup",
@@ -87,6 +400,7 @@
         "tm:endure",
         "tm:facade",
         "tm:gigaimpact",
+        "tm:headbutt",
         "tm:highhorsepower",
         "tm:hyperbeam",
         "tm:ironhead",
@@ -107,30 +421,55 @@
         "tm:substitute",
         "tm:sunnyday",
         "tm:surf",
+        "tm:swagger",
         "tm:takedown",
         "tm:terablast",
         "tm:thief",
         "tm:throatchop",
         "tm:trailblaze",
         "tm:wildcharge",
-        "tm:zenheadbutt"
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:bulkup",
+        "tutor:bulldoze",
+        "tutor:drillrun",
+        "tutor:endeavor",
+        "tutor:gigaimpact",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:ironhead",
+        "tutor:lashout",
+        "tutor:outrage",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:stoneedge",
+        "tutor:throatchop",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt"
       ],
-      "labels": [
-        "gen9",
-        "paldea_regional"
-      ],
-      "aspects": [
-        "paldean-breed-combat"
-      ],
-      "height": 14,
-      "weight": 884,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": false
     },
     {
       "name": "Paldea-Blaze",
       "primaryType": "fighting",
       "secondaryType": "fire",
+      "maleRatio": 1,
+      "height": 14,
+      "weight": 850,
+      "pokedex": [
+        "cobblemon.species.tauros-paldeablaze.desc"
+      ],
+      "labels": [
+        "gen9",
+        "paldean_form"
+      ],
+      "aspects": [
+        "blaze-breed",
+        "paldean"
+      ],
       "abilities": [
         "intimidate",
         "angerpoint",
@@ -144,10 +483,6 @@
         "special_defence": 70,
         "speed": 100
       },
-      "catchRate": 45,
-      "maleRatio": 1,
-      "baseExperienceYield": 172,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 0,
         "attack": 2,
@@ -156,11 +491,53 @@
         "special_defence": 0,
         "speed": 0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "field"
-      ],
+      "riding": {
+        "behaviours": {
+          "LAND": {
+            "key": "cobblemon:land/horse",
+            "rideSounds": [],
+            "stats": {
+              "ACCELERATION": "20-55",
+              "JUMP": "25-40",
+              "SKILL": "15-30",
+              "SPEED": "55-75",
+              "STAMINA": "30-50"
+            }
+          }
+        },
+        "seats": [
+          {
+            "locator": "seat_1"
+          }
+        ]
+      },
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "fireImmune": true,
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "tauros bull_breed=blaze",
+              "tier": 1
+            }
+          ]
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true,
+            "canSwimInLava": true
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
       "moves": [
         "1:tackle",
         "1:tailwhip",
@@ -197,6 +574,7 @@
         "tm:flamethrower",
         "tm:flareblitz",
         "tm:gigaimpact",
+        "tm:headbutt",
         "tm:highhorsepower",
         "tm:hyperbeam",
         "tm:ironhead",
@@ -217,6 +595,7 @@
         "tm:stoneedge",
         "tm:substitute",
         "tm:sunnyday",
+        "tm:swagger",
         "tm:takedown",
         "tm:temperflare",
         "tm:terablast",
@@ -224,24 +603,48 @@
         "tm:trailblaze",
         "tm:wildcharge",
         "tm:willowisp",
-        "tm:zenheadbutt"
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:bulkup",
+        "tutor:bulldoze",
+        "tutor:drillrun",
+        "tutor:endeavor",
+        "tutor:flamethrower",
+        "tutor:gigaimpact",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:ironhead",
+        "tutor:lashout",
+        "tutor:outrage",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:stoneedge",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt"
       ],
-      "labels": [
-        "gen9",
-        "paldea_regional"
-      ],
-      "aspects": [
-        "paldean-breed-blaze"
-      ],
-      "height": 14,
-      "weight": 884,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": false
     },
     {
       "name": "Paldea-Aqua",
       "primaryType": "fighting",
       "secondaryType": "water",
+      "maleRatio": 1,
+      "height": 14,
+      "weight": 1100,
+      "pokedex": [
+        "cobblemon.species.tauros-paldeaaqua.desc"
+      ],
+      "labels": [
+        "gen9",
+        "paldean_form"
+      ],
+      "aspects": [
+        "paldean",
+        "aqua-breed"
+      ],
       "abilities": [
         "intimidate",
         "angerpoint",
@@ -255,10 +658,6 @@
         "special_defence": 70,
         "speed": 100
       },
-      "catchRate": 45,
-      "maleRatio": 1,
-      "baseExperienceYield": 172,
-      "baseFriendship": 50,
       "evYield": {
         "hp": 0,
         "attack": 2,
@@ -267,11 +666,71 @@
         "special_defence": 0,
         "speed": 0
       },
-      "experienceGroup": "slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "field"
-      ],
+      "riding": {
+        "behaviours": {
+          "LAND": {
+            "key": "cobblemon:land/horse",
+            "rideSounds": [],
+            "stats": {
+              "ACCELERATION": "15-50",
+              "JUMP": "25-30",
+              "SKILL": "15-30",
+              "SPEED": "50-70",
+              "STAMINA": "40-60"
+            }
+          },
+          "LIQUID": {
+            "key": "cobblemon:liquid/boat",
+            "rideSounds": [
+              {
+                "muffleEnabled": true,
+                "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+                "playForNonPassengers": true,
+                "soundLocation": "cobblemon:ride.loop.water_surface",
+                "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+              }
+            ],
+            "stats": {
+              "ACCELERATION": "55-65",
+              "JUMP": "20-30",
+              "SKILL": "40-55",
+              "SPEED": "30-40",
+              "STAMINA": "30-65"
+            },
+            "surfaceLevelOffset": -0.9
+          }
+        },
+        "seats": [
+          {
+            "locator": "seat_1"
+          }
+        ]
+      },
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "tauros bull_breed=aqua",
+              "tier": 1
+            }
+          ]
+        },
+        "moving": {
+          "swim": {
+            "canWalkOnWater": true
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
       "moves": [
         "1:tackle",
         "1:tailwhip",
@@ -304,6 +763,7 @@
         "tm:endure",
         "tm:facade",
         "tm:gigaimpact",
+        "tm:headbutt",
         "tm:highhorsepower",
         "tm:hydropump",
         "tm:hyperbeam",
@@ -325,6 +785,7 @@
         "tm:stoneedge",
         "tm:substitute",
         "tm:surf",
+        "tm:swagger",
         "tm:takedown",
         "tm:terablast",
         "tm:thief",
@@ -332,229 +793,34 @@
         "tm:waterpulse",
         "tm:whirlpool",
         "tm:wildcharge",
-        "tm:zenheadbutt"
+        "tm:workup",
+        "tm:zenheadbutt",
+        "tutor:bulkup",
+        "tutor:bulldoze",
+        "tutor:drillrun",
+        "tutor:endeavor",
+        "tutor:gigaimpact",
+        "tutor:highhorsepower",
+        "tutor:hyperbeam",
+        "tutor:ironhead",
+        "tutor:lashout",
+        "tutor:liquidation",
+        "tutor:outrage",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:sleeptalk",
+        "tutor:stompingtantrum",
+        "tutor:stoneedge",
+        "tutor:waterpulse",
+        "tutor:wildcharge",
+        "tutor:zenheadbutt"
       ],
-      "labels": [
-        "gen9",
-        "paldea_regional"
-      ],
-      "aspects": [
-        "paldean-breed-aqua"
-      ],
-      "height": 14,
-      "weight": 884,
-      "cannotDynamax": false,
+      "evolutions": [],
       "battleOnly": false
     }
   ],
-  "baseExperienceYield": 172,
-  "experienceGroup": "slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "field"
-  ],
-  "drops": {
-    "amount": 5,
-    "entries": [
-      {
-        "item": "minecraft:leather",
-        "quantityRange": "0-2"
-      },
-      {
-        "item": "minecraft:beef",
-        "quantityRange": "1-3"
-      }
-    ]
-  },
-  "moves": [
-    "1:tackle",
-    "1:tailwhip",
-    "5:rage",
-    "5:workup",
-    "10:payback",
-    "15:assurance",
-    "15:pursuit",
-    "20:hornattack",
-    "25:scaryface",
-    "30:zenheadbutt",
-    "35:ragingbull",
-    "35:takedown",
-    "40:rest",
-    "45:swagger",
-    "50:thrash",
-    "55:doubleedge",
-    "60:gigaimpact",
-    "egg:curse",
-    "egg:endeavor",
-    "tm:assurance",
-    "tm:attract",
-    "tm:blizzard",
-    "tm:bodyslam",
-    "tm:bulldoze",
-    "tm:captivate",
-    "tm:closecombat",
-    "tm:confide",
-    "tm:curse",
-    "tm:dig",
-    "tm:doubleedge",
-    "tm:doubleteam",
-    "tm:earthquake",
-    "tm:endeavor",
-    "tm:endure",
-    "tm:facade",
-    "tm:fireblast",
-    "tm:flamethrower",
-    "tm:frustration",
-    "tm:gigaimpact",
-    "tm:helpinghand",
-    "tm:hiddenpower",
-    "tm:highhorsepower",
-    "tm:hyperbeam",
-    "tm:icebeam",
-    "tm:icywind",
-    "tm:incinerate",
-    "tm:ironhead",
-    "tm:irontail",
-    "tm:lashout",
-    "tm:megahorn",
-    "tm:naturalgift",
-    "tm:outrage",
-    "tm:payback",
-    "tm:protect",
-    "tm:raindance",
-    "tm:rest",
-    "tm:retaliate",
-    "tm:return",
-    "tm:revenge",
-    "tm:reversal",
-    "tm:rockclimb",
-    "tm:rockslide",
-    "tm:rocksmash",
-    "tm:rocktomb",
-    "tm:round",
-    "tm:sandstorm",
-    "tm:scaryface",
-    "tm:secretpower",
-    "tm:shadowball",
-    "tm:shockwave",
-    "tm:sleeptalk",
-    "tm:smartstrike",
-    "tm:snore",
-    "tm:solarbeam",
-    "tm:stompingtantrum",
-    "tm:stoneedge",
-    "tm:strength",
-    "tm:substitute",
-    "tm:sunnyday",
-    "tm:surf",
-    "tm:swagger",
-    "tm:takedown",
-    "tm:terablast",
-    "tm:thief",
-    "tm:throatchop",
-    "tm:thunder",
-    "tm:thunderbolt",
-    "tm:toxic",
-    "tm:trailblaze",
-    "tm:uproar",
-    "tm:waterpulse",
-    "tm:whirlpool",
-    "tm:wildcharge",
-    "tm:workup",
-    "tm:zenheadbutt",
-    "tutor:attract",
-    "tutor:bide",
-    "tutor:blizzard",
-    "tutor:bodyslam",
-    "tutor:curse",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:earthquake",
-    "tutor:endeavor",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fireblast",
-    "tutor:fissure",
-    "tutor:flamethrower",
-    "tutor:focusenergy",
-    "tutor:frustration",
-    "tutor:headbutt",
-    "tutor:helpinghand",
-    "tutor:hiddenpower",
-    "tutor:hornattack",
-    "tutor:horndrill",
-    "tutor:hyperbeam",
-    "tutor:icebeam",
-    "tutor:icywind",
-    "tutor:ironhead",
-    "tutor:irontail",
-    "tutor:lashout",
-    "tutor:leer",
-    "tutor:mimic",
-    "tutor:outrage",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:rage",
-    "tutor:refresh",
-    "tutor:rest",
-    "tutor:return",
-    "tutor:rockclimb",
-    "tutor:rockslide",
-    "tutor:rocksmash",
-    "tutor:roleplay",
-    "tutor:scaryface",
-    "tutor:shockwave",
-    "tutor:skullbash",
-    "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:solarbeam",
-    "tutor:spite",
-    "tutor:stomp",
-    "tutor:stompingtantrum",
-    "tutor:strength",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:surf",
-    "tutor:swagger",
-    "tutor:tackle",
-    "tutor:tailwhip",
-    "tutor:takedown",
-    "tutor:thrash",
-    "tutor:thunder",
-    "tutor:thunderbolt",
-    "tutor:toxic",
-    "tutor:uproar",
-    "tutor:waterpulse",
-    "tutor:zapcannon",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen1",
-    "kanto_regional",
-    "kanto_regional",
-    "kanto_regional"
-  ],
-  "pokedex": [
-    "cobblemon.species.tauros.desc"
-  ],
-  "evolutions": [],
-  "baseScale": 1.3,
-  "hitbox": {
-    "width": 1.3,
-    "height": 1.4,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 14,
-  "weight": 884,
-  "aspects": [],
-  "cannotDynamax": false
+  "features": [
+    "paldean",
+    "bull_breed"
+  ]
 }

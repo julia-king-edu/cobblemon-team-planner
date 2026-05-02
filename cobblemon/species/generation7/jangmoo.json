@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Jangmo-o",
   "nationalPokedexNumber": 782,
+  "name": "Jangmo-o",
   "primaryType": "dragon",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 297,
+  "pokedex": [
+    "cobblemon.species.jangmoo.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "bulletproof",
     "soundproof",
     "h:overcoat"
+  ],
+  "eggGroups": [
+    "dragon"
   ],
   "baseStats": {
     "hp": 45,
@@ -16,21 +29,48 @@
     "special_defence": 45,
     "speed": 45
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 1,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 60,
   "experienceGroup": "slow",
+  "catchRate": 45,
   "eggCycles": 40,
-  "eggGroups": [
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.2,
+    "fixed": false
+  },
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:dragon_scale",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:razor_claw",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:roseli_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
-    "1:leer",
     "1:tackle",
+    "1:leer",
+    "1:bide",
     "4:protect",
     "8:dragontail",
-    "9:bide",
     "12:scaryface",
     "16:headbutt",
     "20:workup",
@@ -43,32 +83,27 @@
     "egg:counter",
     "egg:dragonbreath",
     "egg:focuspunch",
-    "egg:reversal",
-    "tm:aerialace",
-    "tm:attract",
+    "tm:aquatail",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:bulkup",
     "tm:bulldoze",
-    "tm:confide",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonclaw",
     "tm:dragondance",
     "tm:dragonpulse",
     "tm:dragontail",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:echoedvoice",
     "tm:endure",
     "tm:facade",
     "tm:falseswipe",
-    "tm:fling",
     "tm:focusblast",
     "tm:focuspunch",
-    "tm:frustration",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:irondefense",
     "tm:ironhead",
     "tm:irontail",
@@ -77,12 +112,10 @@
     "tm:payback",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:reversal",
     "tm:roar",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:sandstorm",
     "tm:scaleshot",
@@ -90,35 +123,45 @@
     "tm:screech",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
-    "tm:swagger",
     "tm:swordsdance",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
-    "tm:toxic",
-    "tm:uproar",
     "tm:workup",
     "tm:xscissor",
     "tutor:aquatail",
+    "tutor:bulkup",
+    "tutor:bulldoze",
     "tutor:dracometeor",
     "tutor:dragonpulse",
     "tutor:dualchop",
+    "tutor:falseswipe",
+    "tutor:focuspunch",
     "tutor:irondefense",
     "tutor:ironhead",
     "tutor:irontail",
     "tutor:lowkick",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:scaleshot",
-    "tutor:snore",
-    "tutor:uproar"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.jangmoo.desc"
+    "tutor:shadowclaw",
+    "tutor:sleeptalk",
+    "tutor:xscissor",
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:fling",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "legacy:uproar"
   ],
   "evolutions": [
     {
@@ -126,7 +169,9 @@
       "variant": "level_up",
       "result": "hakamoo",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "skyuppercut"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -135,44 +180,38 @@
       ]
     }
   ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.75,
-    "height": 1.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 1,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 297,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 4,
-    "entries": [
-      {
-        "item": "minecraft:turtle_scute",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:razor_claw",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:dragon_scale",
-        "percentage": 2.5
-      },
-      {
-        "item": "cobblemon:roseli_berry",
-        "percentage": 2.5
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "jangmoo",
+          "tier": 1
+        },
+        {
+          "pokemon": "hakamoo",
+          "tier": 2
+        },
+        {
+          "pokemon": "kommoo",
+          "tier": 3
+        }
+      ]
+    },
+    "resting": {
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
       }
-    ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
   }
 }

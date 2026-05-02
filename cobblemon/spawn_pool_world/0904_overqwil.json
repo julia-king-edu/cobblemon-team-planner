@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -22,7 +22,7 @@
             },
             "anticondition": {
                 "structures": [
-                    "minecraft:ocean_monument"
+                    "minecraft:monument"
                 ]
             }
         },
@@ -34,7 +34,7 @@
                 "ocean_monument"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "39-51",
             "weight": 6.0,
@@ -50,7 +50,7 @@
             "id": "overqwil-3",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -71,15 +71,15 @@
             "id": "overqwil-4",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "39-51",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -99,15 +99,15 @@
             "id": "overqwil-5",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "39-51",
             "weight": 6.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "0",
-                    "maxLureLevel": "1"
+                    "minLureLevel": 0,
+                    "maxLureLevel": 1
                 }
             },
             "condition": {
@@ -128,7 +128,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -142,7 +142,7 @@
             },
             "anticondition": {
                 "structures": [
-                    "minecraft:ocean_monument"
+                    "minecraft:monument"
                 ]
             }
         },
@@ -154,7 +154,7 @@
                 "ocean_monument"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "39-51",
             "weight": 6.0,
@@ -172,7 +172,7 @@
             "id": "overqwil-8",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -195,15 +195,15 @@
             "id": "overqwil-9",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "39-51",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {
@@ -225,15 +225,15 @@
             "id": "overqwil-10",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "39-51",
             "weight": 6.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "0",
-                    "maxLureLevel": "1"
+                    "minLureLevel": 0,
+                    "maxLureLevel": 1
                 }
             },
             "condition": {
@@ -256,7 +256,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -276,7 +276,7 @@
             "id": "overqwil-12",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "39-51",
             "weight": 1.6,
@@ -299,15 +299,15 @@
             "id": "overqwil-13",
             "pokemon": "overqwil",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "39-51",
             "weight": 1.0,
             "weightMultiplier": {
                 "multiplier": 0.6,
                 "condition": {
-                    "minLureLevel": "1",
-                    "maxLureLevel": "2"
+                    "minLureLevel": 1,
+                    "maxLureLevel": 2
                 }
             },
             "condition": {

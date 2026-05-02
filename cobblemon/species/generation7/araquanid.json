@@ -1,12 +1,76 @@
 {
-  "name": "Araquanid",
+  "implemented": true,
   "nationalPokedexNumber": 752,
+  "name": "Araquanid",
   "primaryType": "water",
   "secondaryType": "bug",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 820,
+  "pokedex": [
+    "cobblemon.species.araquanid.desc"
+  ],
+  "labels": [
+    "gen7"
+  ],
+  "aspects": [],
   "abilities": [
     "waterbubble",
     "h:waterabsorb"
   ],
+  "eggGroups": [
+    "water_1",
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 68,
+    "attack": 70,
+    "defence": 92,
+    "special_attack": 50,
+    "special_defence": 132,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 159,
+  "experienceGroup": "medium_fast",
+  "catchRate": 100,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 2.5,
+    "height": 2.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "canSwimInWater": false,
+        "swimSpeed": "0.2"
+      }
+    },
+    "resting": {
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "blockInteract": {
+      "immuneToCobwebBlock": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,138 +84,15 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 68,
-    "attack": 70,
-    "defence": 92,
-    "special_attack": 50,
-    "special_defence": 132,
-    "speed": 42
-  },
-  "catchRate": 100,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Totem",
-      "primaryType": "water",
-      "secondaryType": "bug",
-      "abilities": [
-        "waterbubble"
-      ],
-      "baseStats": {
-        "hp": 68,
-        "attack": 70,
-        "defence": 92,
-        "special_attack": 50,
-        "special_defence": 132,
-        "speed": 42
-      },
-      "catchRate": 100,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 159,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 2,
-        "speed": 0
-      },
-      "experienceGroup": "medium_fast",
-      "eggCycles": 15,
-      "eggGroups": [
-        "water_1",
-        "bug"
-      ],
-      "moves": [
-        "1:bubble",
-        "1:bugbite",
-        "1:infestation",
-        "1:soak",
-        "1:spiderweb",
-        "1:wideguard",
-        "16:bubblebeam",
-        "21:bite",
-        "26:aquaring",
-        "33:leechlife",
-        "38:crunch",
-        "45:lunge",
-        "50:mirrorcoat",
-        "57:liquidation",
-        "62:entrainment",
-        "tm:attract",
-        "tm:blizzard",
-        "tm:confide",
-        "tm:doubleteam",
-        "tm:facade",
-        "tm:frostbreath",
-        "tm:frustration",
-        "tm:hiddenpower",
-        "tm:icebeam",
-        "tm:infestation",
-        "tm:leechlife",
-        "tm:poisonjab",
-        "tm:protect",
-        "tm:raindance",
-        "tm:reflect",
-        "tm:rest",
-        "tm:return",
-        "tm:round",
-        "tm:safeguard",
-        "tm:scald",
-        "tm:sleeptalk",
-        "tm:substitute",
-        "tm:surf",
-        "tm:swagger",
-        "tm:toxic",
-        "tm:waterfall",
-        "tm:xscissor",
-        "tutor:bite",
-        "tutor:bubblebeam",
-        "tutor:bugbite",
-        "tutor:gigadrain",
-        "tutor:icywind",
-        "tutor:irondefense",
-        "tutor:laserfocus",
-        "tutor:liquidation",
-        "tutor:magiccoat",
-        "tutor:magicroom",
-        "tutor:signalbeam",
-        "tutor:snore",
-        "tutor:spiderweb",
-        "tutor:waterpulse",
-        "tutor:wonderroom"
-      ],
-      "labels": [
-        "gen7",
-        "totem"
-      ],
-      "aspects": [
-        "totem"
-      ],
-      "height": 31,
-      "weight": 2175,
-      "cannotDynamax": false,
-      "battleOnly": false
-    }
-  ],
-  "baseExperienceYield": 159,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "water_1",
-    "bug"
-  ],
   "moves": [
-    "1:bite",
+    "1:wideguard",
     "1:bubble",
-    "1:bugbite",
     "1:infestation",
     "1:spiderweb",
+    "1:bugbite",
+    "1:bite",
     "1:watergun",
-    "1:wideguard",
+    "1:watersport",
     "12:bubblebeam",
     "16:aquaring",
     "20:headbutt",
@@ -162,33 +103,36 @@
     "50:liquidation",
     "56:leechlife",
     "62:mirrorcoat",
-    "tm:attract",
+    "egg:aurorabeam",
+    "egg:powersplit",
+    "egg:spitup",
+    "egg:stickyweb",
+    "egg:stockpile",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bugbuzz",
-    "tm:confide",
     "tm:chillingwater",
     "tm:crunch",
     "tm:dive",
-    "tm:doubleteam",
     "tm:endeavor",
     "tm:endure",
     "tm:facade",
     "tm:frostbreath",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
-    "tm:hiddenpower",
+    "tm:headbutt",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icywind",
     "tm:infestation",
     "tm:irondefense",
+    "tm:laserfocus",
     "tm:leechlife",
     "tm:liquidation",
     "tm:lunge",
+    "tm:magiccoat",
     "tm:magicroom",
     "tm:poisonjab",
     "tm:pounce",
@@ -196,63 +140,53 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
-    "tm:scald",
     "tm:scaryface",
+    "tm:signalbeam",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:wonderroom",
     "tm:xscissor",
     "tutor:bugbite",
+    "tutor:dive",
+    "tutor:endeavor",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
     "tutor:laserfocus",
+    "tutor:leechlife",
     "tutor:liquidation",
     "tutor:magiccoat",
     "tutor:magicroom",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:signalbeam",
     "tutor:skittersmack",
-    "tutor:snore",
+    "tutor:sleeptalk",
     "tutor:waterpulse",
-    "tutor:wonderroom"
-  ],
-  "labels": [
-    "gen7"
-  ],
-  "pokedex": [
-    "cobblemon.species.araquanid.desc"
+    "tutor:wonderroom",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "dewpider",
-  "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 820,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "7-32",
             "weight": 5.04,
@@ -25,7 +25,7 @@
             "id": "finizen-2",
             "pokemon": "finizen",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "7-32",
             "weight": 5.04,
@@ -43,14 +43,14 @@
             "id": "finizen-3",
             "pokemon": "finizen",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "7-32",
             "weight": 1.8,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -68,7 +68,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "7-32",
             "weight": 5.04,
@@ -85,7 +85,7 @@
             "id": "finizen-5",
             "pokemon": "finizen",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "7-32",
             "weight": 5.04,
@@ -105,14 +105,14 @@
             "id": "finizen-6",
             "pokemon": "finizen",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "7-32",
             "weight": 1.8,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

@@ -1,17 +1,94 @@
 {
   "implemented": true,
-  "name": "Trevenant",
   "nationalPokedexNumber": 709,
+  "name": "Trevenant",
   "primaryType": "ghost",
   "secondaryType": "grass",
+  "maleRatio": 0.5,
+  "height": 15,
+  "weight": 710,
+  "pokedex": [
+    "cobblemon.species.trevenant.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "naturalcure",
     "frisk",
     "h:harvest"
   ],
+  "eggGroups": [
+    "grass",
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 85,
+    "attack": 110,
+    "defence": 76,
+    "special_attack": 65,
+    "special_defence": 82,
+    "speed": 56
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 166,
+  "experienceGroup": "medium_fast",
+  "catchRate": 60,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 1.3,
+  "hitbox": {
+    "width": 1,
+    "height": 2.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "7",
+      "toleratedLeaders": [
+        {
+          "pokemon": "trevenant",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
-    "amount": 2,
+    "amount": 3,
     "entries": [
+      {
+        "item": "minecraft:jack_o_lantern"
+      },
       {
         "item": "cobblemon:spell_tag",
         "percentage": 5.0
@@ -22,46 +99,15 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 85,
-    "attack": 110,
-    "defence": 76,
-    "special_attack": 65,
-    "special_defence": 82,
-    "speed": 56
-  },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 166,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "grass",
-    "amorphous"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.2
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
+    "1:tackle",
     "1:astonish",
-    "1:branchpoke",
+    "1:feintattack",
     "1:leechseed",
     "1:shadowclaw",
-    "1:tackle",
+    "1:branchpoke",
     "12:confuseray",
     "16:willowisp",
-    "19:feintattack",
     "20:hex",
     "24:growth",
     "28:hornleech",
@@ -71,19 +117,23 @@
     "44:woodhammer",
     "48:destinybond",
     "52:forestscurse",
+    "egg:allyswitch",
+    "egg:bestow",
+    "egg:disable",
+    "egg:feintattack",
+    "egg:grudge",
+    "egg:suckerpunch",
     "tm:allyswitch",
-    "tm:attract",
+    "tm:block",
     "tm:brutalswing",
     "tm:bulldoze",
     "tm:burningjealousy",
     "tm:calmmind",
-    "tm:confide",
     "tm:confuseray",
-    "tm:cut",
     "tm:curse",
+    "tm:cut",
     "tm:darkpulse",
     "tm:dig",
-    "tm:doubleteam",
     "tm:drainpunch",
     "tm:dreameater",
     "tm:earthquake",
@@ -92,7 +142,6 @@
     "tm:facade",
     "tm:focusblast",
     "tm:foulplay",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
@@ -100,7 +149,6 @@
     "tm:grassyterrain",
     "tm:haze",
     "tm:hex",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:imprison",
@@ -108,6 +156,7 @@
     "tm:lashout",
     "tm:leafstorm",
     "tm:magicalleaf",
+    "tm:magiccoat",
     "tm:naturepower",
     "tm:nightshade",
     "tm:painsplit",
@@ -122,27 +171,25 @@
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
-    "tm:round",
+    "tm:roleplay",
     "tm:safeguard",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:shadowball",
     "tm:shadowclaw",
     "tm:skillswap",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:spite",
     "tm:strength",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
+    "tm:telekinesis",
     "tm:terablast",
     "tm:thief",
     "tm:toxic",
@@ -151,51 +198,56 @@
     "tm:trickroom",
     "tm:venomdrench",
     "tm:willowisp",
+    "tm:worryseed",
     "tm:xscissor",
     "tutor:allyswitch",
     "tutor:block",
+    "tutor:bulldoze",
+    "tutor:burningjealousy",
+    "tutor:calmmind",
+    "tutor:darkpulse",
     "tutor:drainpunch",
+    "tutor:energyball",
     "tutor:foulplay",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grassyglide",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:magicalleaf",
     "tutor:magiccoat",
     "tutor:painsplit",
+    "tutor:poisonjab",
     "tutor:poltergeist",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:roleplay",
     "tutor:seedbomb",
+    "tutor:shadowball",
+    "tutor:shadowclaw",
     "tutor:skillswap",
     "tutor:skittersmack",
-    "tutor:snore",
+    "tutor:sleeptalk",
     "tutor:spite",
+    "tutor:suckerpunch",
     "tutor:telekinesis",
     "tutor:trick",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.trevenant.desc"
+    "tutor:worryseed",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger"
   ],
   "preEvolution": "phantump",
-  "evolutions": [],
-  "baseScale": 1.3,
-  "hitbox": {
-    "width": 1,
-    "height": 2.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 15,
-  "weight": 710,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

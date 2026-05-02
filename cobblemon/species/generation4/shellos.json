@@ -1,12 +1,78 @@
 {
-  "name": "Shellos",
+  "implemented": true,
   "nationalPokedexNumber": 422,
+  "name": "Shellos",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 3,
+  "weight": 63,
+  "pokedex": [
+    "cobblemon.species.shellos.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [
+    "west-sea"
+  ],
   "abilities": [
     "stickyhold",
     "stormdrain",
     "h:sandforce"
   ],
+  "eggGroups": [
+    "water_1",
+    "amorphous"
+  ],
+  "baseStats": {
+    "hp": 76,
+    "attack": 48,
+    "defence": 48,
+    "special_attack": 57,
+    "special_defence": 62,
+    "speed": 34
+  },
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 65,
+  "experienceGroup": "medium_fast",
+  "catchRate": 190,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.55,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.15,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": "0.14"
+      },
+      "swim": {
+        "canSwimInWater": false,
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.14"
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -20,55 +86,27 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 76,
-    "attack": 48,
-    "defence": 48,
-    "special_attack": 57,
-    "special_defence": 62,
-    "speed": 34
-  },
-  "catchRate": 190,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 65,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "amorphous"
-  ],
   "moves": [
     "1:mudslap",
+    "1:mudsport",
     "1:watergun",
-    "2:mudsport",
-    "4:harden",
     "5:harden",
-    "7:waterpulse",
     "10:recover",
-    "11:mudbomb",
     "15:waterpulse",
-    "16:hiddenpower",
     "20:ancientpower",
-    "22:raindance",
     "25:bodyslam",
-    "29:bodyslam",
     "31:muddywater",
     "35:earthpower",
-    "37:muddywater",
     "40:raindance",
     "45:memento",
-    "46:recover",
     "egg:acidarmor",
-    "egg:amnesia",
-    "egg:brine",
     "egg:clearsmog",
     "egg:counter",
     "egg:curse",
     "egg:fissure",
-    "egg:memento",
     "egg:mirrorcoat",
     "egg:mist",
+    "egg:mudbomb",
     "egg:sludge",
     "egg:spitup",
     "egg:stockpile",
@@ -76,24 +114,20 @@
     "egg:trumpcard",
     "egg:yawn",
     "tm:amnesia",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:chillingwater",
-    "tm:confide",
     "tm:curse",
     "tm:dive",
-    "tm:doubleteam",
     "tm:earthpower",
     "tm:endure",
     "tm:facade",
-    "tm:frustration",
     "tm:hail",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:icebeam",
     "tm:icywind",
@@ -102,53 +136,58 @@
     "tm:muddywater",
     "tm:mudshot",
     "tm:mudslap",
-    "tm:naturalgift",
     "tm:painsplit",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
-    "tm:scald",
-    "tm:secretpower",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:stealthrock",
     "tm:stoneedge",
+    "tm:stringshot",
     "tm:substitute",
     "tm:surf",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tutor:ancientpower",
+    "tutor:bulldoze",
     "tutor:dive",
     "tutor:earthpower",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:icebeam",
     "tutor:icywind",
+    "tutor:liquidation",
     "tutor:mudslap",
     "tutor:painsplit",
-    "tutor:secretpower",
+    "tutor:rest",
+    "tutor:rockslide",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:stringshot",
     "tutor:waterpulse",
-    "tutor:yawn"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.shellos.desc"
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -165,23 +204,60 @@
       ]
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 3,
-  "weight": 63,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "East",
+      "primaryType": "water",
+      "maleRatio": 0.5,
+      "height": 3,
+      "weight": 63,
+      "pokedex": [
+        "cobblemon.species.shellos-east.desc"
+      ],
+      "labels": [
+        "gen4"
+      ],
+      "aspects": [
+        "east-sea"
+      ],
+      "evolutions": [
+        {
+          "id": "shellos_gastrodon",
+          "variant": "level_up",
+          "result": "gastrodon",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 30
+            }
+          ]
+        }
+      ],
+      "battleOnly": false,
+      "behaviour": {
+        "moving": {
+          "walk": {
+            "avoidsLand": true,
+            "walkSpeed": "0.14"
+          },
+          "swim": {
+            "canSwimInWater": false,
+            "canBreatheUnderwater": true,
+            "swimSpeed": "0.14"
+          }
+        },
+        "resting": {
+          "canSleep": true,
+          "willSleepOnBed": true,
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        },
+        "combat": {
+          "willDefendOwner": true
+        }
+      }
+    }
+  ]
 }

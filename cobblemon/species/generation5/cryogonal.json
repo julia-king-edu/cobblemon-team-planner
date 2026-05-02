@@ -1,11 +1,88 @@
 {
   "implemented": true,
-  "name": "Cryogonal",
   "nationalPokedexNumber": 615,
+  "name": "Cryogonal",
   "primaryType": "ice",
-  "abilities": [
-    "levitate"
+  "maleRatio": -1,
+  "height": 11,
+  "weight": 1480,
+  "pokedex": [
+    "cobblemon.species.cryogonal.desc"
   ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
+  "abilities": [
+    "levitate",
+    "h:levitate"
+  ],
+  "eggGroups": [
+    "mineral"
+  ],
+  "baseStats": {
+    "hp": 80,
+    "attack": 50,
+    "defence": 50,
+    "special_attack": 95,
+    "special_defence": 135,
+    "speed": 105
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "baseExperienceYield": 180,
+  "experienceGroup": "medium_fast",
+  "catchRate": 25,
+  "eggCycles": 25,
+  "baseFriendship": 50,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 1.5,
+    "height": 2.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      },
+      "fly": {
+        "canFly": true
+      },
+      "walk": {
+        "canWalk": false
+      }
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "cryogonal",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -19,31 +96,6 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 80,
-    "attack": 50,
-    "defence": 50,
-    "special_attack": 95,
-    "special_defence": 135,
-    "speed": 105
-  },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
-  "catchRate": 25,
-  "maleRatio": -1,
-  "shoulderMountable": false,
-  "baseExperienceYield": 180,
-  "experienceGroup": "medium_fast",
-  "eggCycles": 25,
-  "eggGroups": [
-    "mineral"
-  ],
   "moves": [
     "1:bind",
     "1:iceshard",
@@ -51,9 +103,8 @@
     "4:confuseray",
     "8:rapidspin",
     "12:icywind",
-    "12:laserfocus",
-    "16:haze",
     "16:mist",
+    "16:haze",
     "20:ancientpower",
     "24:aurorabeam",
     "28:slash",
@@ -70,90 +121,81 @@
     "egg:explosion",
     "egg:frostbreath",
     "tm:acrobatics",
-    "tm:attract",
+    "tm:ancientpower",
     "tm:auroraveil",
     "tm:avalanche",
+    "tm:bind",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:chillingwater",
-    "tm:confide",
     "tm:confuseray",
-    "tm:doubleteam",
+    "tm:defog",
     "tm:endure",
     "tm:explosion",
     "tm:facade",
     "tm:flashcannon",
     "tm:frostbreath",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:hail",
     "tm:haze",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icespinner",
     "tm:iciclespear",
     "tm:icywind",
     "tm:irondefense",
+    "tm:laserfocus",
     "tm:lightscreen",
+    "tm:magiccoat",
     "tm:poisonjab",
     "tm:protect",
     "tm:raindance",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:selfdestruct",
+    "tm:signalbeam",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:snowscape",
     "tm:solarbeam",
     "tm:substitute",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
     "tm:tripleaxel",
-    "tm:toxic",
     "tm:waterpulse",
+    "tutor:ancientpower",
     "tutor:bind",
     "tutor:defog",
+    "tutor:flashcannon",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irondefense",
-    "tutor:knockoff",
     "tutor:laserfocus",
     "tutor:magiccoat",
+    "tutor:poisonjab",
+    "tutor:rest",
     "tutor:signalbeam",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:tripleaxel",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.cryogonal.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:knockoff",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [],
-  "baseScale": 0.9,
-  "hitbox": {
-    "width": 1.5,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 2,
-    "speed": 0
-  },
-  "height": 11,
-  "weight": 1480,
-  "aspects": [],
-  "cannotDynamax": false
+  "lightingData": {
+    "lightLevel": 7,
+    "liquidGlowMode": "BOTH"
+  }
 }

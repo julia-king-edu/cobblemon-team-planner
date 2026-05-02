@@ -11,7 +11,7 @@
                 "desert_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "11-36",
             "weight": 84.0,
@@ -31,7 +31,7 @@
                 "jungle_pyramid"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "11-36",
             "weight": 84.0,
@@ -51,7 +51,7 @@
                 "treetop"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "11-36",
             "weight": 8.4,
@@ -80,6 +80,25 @@
                         "item": "cobblemon:charti_berry",
                         "percentage": 2.5
                     }
+                ]
+            }
+        },
+        {
+            "id": "larvesta-4",
+            "pokemon": "larvesta",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "11-36",
+            "weight": 9.0,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
+                ],
+                "structures": [
+                    "#aether:dungeons"
                 ]
             }
         }

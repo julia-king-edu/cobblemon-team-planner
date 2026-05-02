@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "ultra-rare",
             "level": "45-60",
             "weight": 0.4,
@@ -28,7 +28,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "45-60",
             "weight": 0.25,
@@ -41,8 +41,46 @@
         {
             "id": "metagross-3",
             "pokemon": "metagross",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
+            "bucket": "rare",
+            "level": "45-60",
+            "weight": 0.25,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
+                ]
+            }
+        },
+        {
+            "id": "metagross-4",
+            "pokemon": "metagross",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "45-60",
+            "weight": 0.032,
+            "condition": {
+                "minSkyLight": 0,
+                "maxSkyLight": 7,
+                "biomes": [
+                    "#aether:is_aether"
+                ],
+                "structures": [
+                    "#aether:dungeons"
+                ]
+            }
+        },
+        {
+            "id": "metagross-5",
+            "pokemon": "metagross",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "45-60",
             "weight": 0.25,

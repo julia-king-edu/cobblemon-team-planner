@@ -1,13 +1,81 @@
 {
   "implemented": true,
-  "name": "Larvesta",
   "nationalPokedexNumber": 636,
+  "name": "Larvesta",
   "primaryType": "bug",
   "secondaryType": "fire",
+  "maleRatio": 0.5,
+  "height": 11,
+  "weight": 288,
+  "pokedex": [
+    "cobblemon.species.larvesta.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "flamebody",
     "h:swarm"
   ],
+  "eggGroups": [
+    "bug"
+  ],
+  "baseStats": {
+    "hp": 55,
+    "attack": 85,
+    "defence": 55,
+    "special_attack": 50,
+    "special_defence": 55,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 72,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 1.2,
+    "height": 0.85,
+    "fixed": false
+  },
+  "behaviour": {
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "larvesta",
+          "tier": 1
+        }
+      ]
+    },
+    "resting": {
+      "times": [
+        "any"
+      ],
+      "drowsyChance": 0.0014,
+      "rouseChance": 0.0042
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -29,28 +97,11 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 55,
-    "attack": 85,
-    "defence": 55,
-    "special_attack": 50,
-    "special_defence": 55,
-    "speed": 60
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 72,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "bug"
-  ],
   "moves": [
     "1:ember",
     "1:stringshot",
+    "1:absorb",
     "6:flamecharge",
-    "10:absorb",
     "12:strugglebug",
     "18:flamewheel",
     "24:bugbite",
@@ -61,26 +112,18 @@
     "54:amnesia",
     "60:doubleedge",
     "66:flareblitz",
-    "90:thrash",
     "egg:absorb",
-    "egg:endure",
     "egg:foresight",
     "egg:harden",
-    "egg:magnetrise",
     "egg:morningsun",
-    "egg:stringshot",
     "egg:thrash",
-    "egg:zenheadbutt",
     "tm:acrobatics",
     "tm:amnesia",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bugbite",
     "tm:bugbuzz",
     "tm:calmmind",
-    "tm:confide",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:endure",
     "tm:facade",
     "tm:fireblast",
@@ -88,55 +131,61 @@
     "tm:flamecharge",
     "tm:flamethrower",
     "tm:flareblitz",
-    "tm:frustration",
     "tm:gigadrain",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:incinerate",
     "tm:leechlife",
     "tm:lightscreen",
     "tm:lunge",
+    "tm:magnetrise",
     "tm:overheat",
     "tm:pounce",
     "tm:protect",
     "tm:psychic",
     "tm:rest",
-    "tm:return",
-    "tm:round",
     "tm:safeguard",
     "tm:screech",
-    "tm:secretpower",
+    "tm:signalbeam",
     "tm:skittersmack",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
+    "tm:stringshot",
     "tm:strugglebug",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:takedown",
     "tm:terablast",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:uturn",
     "tm:wildcharge",
     "tm:willowisp",
     "tm:zenheadbutt",
     "tutor:bugbite",
+    "tutor:calmmind",
+    "tutor:flamethrower",
     "tutor:gigadrain",
     "tutor:heatwave",
+    "tutor:leechlife",
     "tutor:magnetrise",
+    "tutor:psychic",
+    "tutor:rest",
     "tutor:signalbeam",
     "tutor:skittersmack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.larvesta.desc"
+    "tutor:stringshot",
+    "tutor:wildcharge",
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -152,26 +201,18 @@
           "variant": "level",
           "minLevel": 59
         }
-      ]
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "type": "evolution",
+            "item": "cobblemon:shed_shell",
+            "percentage": 100.0,
+            "requirements": [ ]
+          }
+        ]
+      }
     }
-  ],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 1.2,
-    "height": 0.85,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 11,
-  "weight": 288,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

@@ -1,13 +1,83 @@
 {
   "implemented": true,
-  "name": "Talonflame",
   "nationalPokedexNumber": 663,
+  "name": "Talonflame",
   "primaryType": "fire",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 12,
+  "weight": 245,
+  "pokedex": [
+    "cobblemon.species.talonflame.desc"
+  ],
+  "labels": [
+    "gen6"
+  ],
+  "aspects": [],
   "abilities": [
     "flamebody",
     "h:galewings"
   ],
+  "eggGroups": [
+    "flying"
+  ],
+  "baseStats": {
+    "hp": 78,
+    "attack": 81,
+    "defence": 71,
+    "special_attack": 74,
+    "special_defence": 69,
+    "speed": 126
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "baseExperienceYield": 175,
+  "experienceGroup": "medium_slow",
+  "catchRate": 45,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.725,
+  "hitbox": {
+    "width": 1.15,
+    "height": 1.65,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "avoidsWater": true,
+        "canSwimInLava": true
+      }
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "talonflame",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "fireImmune": true
+  },
   "drops": {
     "amount": 6,
     "entries": [
@@ -28,62 +98,41 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 78,
-    "attack": 81,
-    "defence": 71,
-    "special_attack": 74,
-    "special_defence": 69,
-    "speed": 126
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 175,
-  "experienceGroup": "medium_slow",
-  "eggCycles": 15,
-  "eggGroups": [
-    "flying"
-  ],
-  "behaviour": {
-    "moving": {
-      "fly": {
-        "canFly": true
-      }
-    }
-  },
   "moves": [
-    "1:ember",
-    "1:feint",
-    "1:flamecharge",
     "1:flareblitz",
-    "1:growl",
-    "1:peck",
-    "1:quickattack",
     "1:tackle",
+    "1:growl",
+    "1:quickattack",
+    "1:peck",
+    "1:ember",
+    "1:razorwind",
+    "1:flamecharge",
+    "1:mefirst",
+    "1:naturalgift",
+    "1:feint",
     "15:flail",
     "22:acrobatics",
-    "27:razorwind",
     "29:agility",
-    "31:naturalgift",
     "38:aerialace",
     "47:tailwind",
-    "49:mefirst",
     "56:steelwing",
     "65:roost",
     "74:fly",
     "83:bravebird",
+    "egg:defog",
+    "egg:flamecharge",
+    "egg:mefirst",
+    "egg:naturalgift",
+    "egg:quickguard",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:aircutter",
     "tm:airslash",
-    "tm:attract",
     "tm:bravebird",
     "tm:bulkup",
-    "tm:confide",
+    "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dualwingbeat",
     "tm:endure",
     "tm:facade",
@@ -94,29 +143,24 @@
     "tm:flamethrower",
     "tm:flareblitz",
     "tm:fly",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:heatwave",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hurricane",
     "tm:hyperbeam",
     "tm:incinerate",
+    "tm:naturalgift",
     "tm:overheat",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
-    "tm:secretpower",
     "tm:sleeptalk",
-    "tm:snore",
+    "tm:snatch",
     "tm:solarbeam",
     "tm:steelwing",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:tailwind",
@@ -125,43 +169,37 @@
     "tm:temperflare",
     "tm:terablast",
     "tm:thief",
-    "tm:toxic",
     "tm:upperhand",
     "tm:uturn",
     "tm:willowisp",
     "tm:workup",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:bulkup",
     "tutor:defog",
     "tutor:dualwingbeat",
+    "tutor:flamethrower",
+    "tutor:gigaimpact",
     "tutor:heatwave",
+    "tutor:hyperbeam",
+    "tutor:rest",
+    "tutor:roost",
+    "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:tailwind"
-  ],
-  "labels": [
-    "gen6"
-  ],
-  "pokedex": [
-    "cobblemon.species.talonflame.desc"
+    "tutor:swift",
+    "tutor:tailwind",
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "fletchinder",
-  "evolutions": [],
-  "baseScale": 0.8,
-  "hitbox": {
-    "width": 0.8,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 12,
-  "weight": 245,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

@@ -1,13 +1,26 @@
 {
   "implemented": true,
-  "name": "Dodrio",
   "nationalPokedexNumber": 85,
+  "name": "Dodrio",
   "primaryType": "normal",
   "secondaryType": "flying",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 852,
+  "pokedex": [
+    "cobblemon.species.dodrio.desc"
+  ],
+  "labels": [
+    "gen1"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "earlybird",
     "h:tangledfeet"
+  ],
+  "eggGroups": [
+    "flying"
   ],
   "baseStats": {
     "hp": 60,
@@ -17,15 +30,59 @@
     "special_defence": 60,
     "speed": 110
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 165,
   "experienceGroup": "medium_fast",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "flying"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.6,
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.6,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.4
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "dodrio",
+          "tier": 1
+        },
+        {
+          "pokemon": "espathra",
+          "tier": 1
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -46,27 +103,15 @@
       }
     ]
   },
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "walkSpeed": 0.4
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:growl",
     "1:peck",
+    "1:growl",
     "1:quickattack",
     "1:rage",
+    "1:pursuit",
     "1:triattack",
+    "1:jumpkick",
     "12:furyattack",
-    "15:pursuit",
     "15:pluck",
     "19:doublehit",
     "23:agility",
@@ -75,19 +120,26 @@
     "34:swordsdance",
     "38:drillpeck",
     "43:endeavor",
-    "43:jumpkick",
     "50:thrash",
+    "egg:assurance",
+    "egg:feintattack",
+    "egg:flail",
+    "egg:jumpkick",
+    "egg:mirrormove",
+    "egg:naturalgift",
+    "egg:pursuit",
+    "egg:skyattack",
+    "egg:supersonic",
+    "egg:whirlwind",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
-    "tm:attract",
+    "tm:assurance",
     "tm:batonpass",
+    "tm:beatup",
     "tm:bodyslam",
     "tm:bravebird",
-    "tm:captivate",
-    "tm:confide",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:drillrun",
     "tm:echoedvoice",
     "tm:endeavor",
@@ -95,12 +147,11 @@
     "tm:facade",
     "tm:featherdance",
     "tm:fly",
-    "tm:frustration",
     "tm:gigaimpact",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
     "tm:knockoff",
+    "tm:leer",
     "tm:lowkick",
     "tm:lunge",
     "tm:mudslap",
@@ -111,17 +162,14 @@
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:roost",
-    "tm:round",
     "tm:scaryface",
-    "tm:secretpower",
+    "tm:skyattack",
     "tm:sleeptalk",
     "tm:steelwing",
     "tm:stompingtantrum",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:tailwind",
@@ -131,90 +179,73 @@
     "tm:thief",
     "tm:throatchop",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
+    "tm:triattack",
     "tm:uproar",
+    "tm:wingattack",
     "tm:workup",
-    "tutor:agility",
-    "tutor:aircutter",
-    "tutor:attract",
-    "tutor:batonpass",
-    "tutor:bide",
-    "tutor:bodyslam",
-    "tutor:curse",
-    "tutor:doubleedge",
-    "tutor:doubleteam",
-    "tutor:drillpeck",
+    "tutor:aerialace",
+    "tutor:drillrun",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:facade",
-    "tutor:fly",
-    "tutor:frustration",
-    "tutor:furyattack",
-    "tutor:growl",
-    "tutor:headbutt",
-    "tutor:hiddenpower",
+    "tutor:gigaimpact",
+    "tutor:helpinghand",
     "tutor:hyperbeam",
-    "tutor:jumpkick",
     "tutor:knockoff",
-    "tutor:mimic",
-    "tutor:mirrormove",
+    "tutor:lowkick",
     "tutor:mudslap",
-    "tutor:peck",
-    "tutor:protect",
-    "tutor:pursuit",
-    "tutor:quickattack",
-    "tutor:rage",
-    "tutor:reflect",
     "tutor:rest",
-    "tutor:return",
     "tutor:roost",
-    "tutor:skullbash",
     "tutor:skyattack",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:steelwing",
     "tutor:stompingtantrum",
-    "tutor:substitute",
-    "tutor:sunnyday",
-    "tutor:supersonic",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
-    "tutor:takedown",
-    "tutor:taunt",
-    "tutor:thief",
-    "tutor:thrash",
-    "tutor:toxic",
-    "tutor:triattack",
+    "tutor:tailwind",
+    "tutor:throatchop",
     "tutor:uproar",
-    "tutor:whirlwind"
-  ],
-  "labels": [
-    "gen1"
-  ],
-  "pokedex": [
-    "cobblemon.species.dodrio.desc"
+    "legacy:aircutter",
+    "legacy:attract",
+    "legacy:bide",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:curse",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:haze",
+    "legacy:headbutt",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:reflect",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:skullbash",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "doduo",
   "evolutions": [],
-  "baseScale": 1.6,
-  "hitbox": {
-    "width": 0.6,
-    "height": 1.6,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 852,
-  "aspects": [],
-  "cannotDynamax": false
+  "riding": {
+    "stats": {
+      "SPEED": {
+        "ranges": "45-75"
+      },
+      "ACCELERATION": {
+        "ranges": "50-70"
+      },
+      "SKILL": {
+        "ranges": "25-55"
+      },
+      "JUMP": {
+        "ranges": "45-100"
+      },
+      "STAMINA": {
+        "ranges": "30-60"
+      }
+    },
+    "seats": [],
+    "behaviour": {
+      "key": "cobblemon:land/horse"
+    }
+  }
 }

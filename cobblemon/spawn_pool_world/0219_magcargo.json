@@ -4,47 +4,49 @@
     "neededUninstalledMods": [],
     "spawns": [
         {
-            "id": "magcargo-1",
+            "id": "magcargo-3",
             "pokemon": "magcargo",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "38-43",
             "weight": 0.6,
             "condition": {
                 "biomes": [
-                    "#cobblemon:nether/is_basalt"
+                    "#cobblemon:nether/is_basalt",
+                    "#cobblemon:nether/is_wasteland"
                 ]
             }
         },
         {
-            "id": "magcargo-2",
+            "id": "magcargo-4",
             "pokemon": "magcargo",
             "presets": [
                 "lava"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "common",
             "level": "38-43",
             "weight": 1.0,
             "condition": {
                 "biomes": [
-                    "#minecraft:is_nether"
+                    "#minecraft:is_nether",
+                    "#cobblemon:is_volcanic"
                 ]
             }
         },
         {
-            "id": "magcargo-3",
+            "id": "magcargo-1",
             "pokemon": "magcargo",
             "presets": [
                 "lava"
             ],
             "type": "pokemon",
-            "context": "surface",
+            "spawnablePositionType": "surface",
             "bucket": "common",
             "level": "38-43",
             "weight": 0.2,
@@ -60,13 +62,13 @@
             }
         },
         {
-            "id": "magcargo-4",
+            "id": "magcargo-2",
             "pokemon": "magcargo",
             "presets": [
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "38-43",
             "weight": 1.0,
@@ -75,24 +77,7 @@
                     "#cobblemon:is_volcanic"
                 ],
                 "neededNearbyBlocks": [
-                    "#minecraft:lava"
-                ]
-            }
-        },
-        {
-            "id": "magcargo-5",
-            "pokemon": "magcargo",
-            "presets": [
-                "lava"
-            ],
-            "type": "pokemon",
-            "context": "surface",
-            "bucket": "common",
-            "level": "38-43",
-            "weight": 1.0,
-            "condition": {
-                "biomes": [
-                    "#cobblemon:is_volcanic"
+                    "minecraft:lava"
                 ]
             }
         }

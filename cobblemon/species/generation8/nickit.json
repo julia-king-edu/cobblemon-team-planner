@@ -1,13 +1,82 @@
 {
   "implemented": true,
-  "name": "Nickit",
   "nationalPokedexNumber": 827,
+  "name": "Nickit",
   "primaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 6,
+  "weight": 89,
+  "pokedex": [
+    "cobblemon.species.nickit.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "runaway",
     "unburden",
     "h:stakeout"
   ],
+  "eggGroups": [
+    "field"
+  ],
+  "baseStats": {
+    "hp": 40,
+    "attack": 28,
+    "defence": 28,
+    "special_attack": 47,
+    "special_defence": 52,
+    "speed": 50
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 1,
+    "speed": 0
+  },
+  "baseExperienceYield": 49,
+  "experienceGroup": "fast",
+  "catchRate": 255,
+  "eggCycles": 15,
+  "baseFriendship": 50,
+  "baseScale": 0.7,
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.1,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "light": "0-4",
+      "times": [
+        "day"
+      ],
+      "drowsyChance": 0.0033,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "2",
+      "toleratedLeaders": [
+        {
+          "pokemon": "thievul",
+          "tier": 1
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 5,
     "entries": [
@@ -24,31 +93,6 @@
         "percentage": 2.5
       }
     ]
-  },
-  "baseStats": {
-    "hp": 40,
-    "attack": 28,
-    "defence": 28,
-    "special_attack": 47,
-    "special_defence": 52,
-    "speed": 50
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 49,
-  "experienceGroup": "fast",
-  "eggCycles": 15,
-  "eggGroups": [
-    "field"
-  ],
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": true,
-      "depth": "normal",
-      "light": "0-4"
-    }
   },
   "moves": [
     "1:quickattack",
@@ -68,7 +112,6 @@
     "egg:torment",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:batonpass",
     "tm:beatup",
     "tm:dig",
@@ -76,28 +119,37 @@
     "tm:facade",
     "tm:faketears",
     "tm:foulplay",
+    "tm:honeclaws",
+    "tm:knockoff",
+    "tm:lashout",
     "tm:mudshot",
     "tm:nastyplot",
     "tm:playrough",
     "tm:protect",
     "tm:rest",
-    "tm:round",
     "tm:screech",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
     "tm:substitute",
+    "tm:suckerpunch",
     "tm:swift",
     "tm:tailslap",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
-    "tutor:lashout"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.nickit.desc"
+    "tm:torment",
+    "tutor:foulplay",
+    "tutor:knockoff",
+    "tutor:lashout",
+    "tutor:playrough",
+    "tutor:rest",
+    "tutor:sleeptalk",
+    "tutor:snarl",
+    "tutor:suckerpunch",
+    "tutor:swift",
+    "legacy:attract",
+    "legacy:round",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -115,24 +167,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.9,
-    "height": 1.1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 1,
-    "speed": 0
-  },
-  "height": 6,
-  "weight": 89,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

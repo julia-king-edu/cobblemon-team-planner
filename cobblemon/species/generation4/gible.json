@@ -1,13 +1,106 @@
 {
   "implemented": true,
-  "name": "Gible",
   "nationalPokedexNumber": 443,
+  "name": "Gible",
   "primaryType": "dragon",
   "secondaryType": "ground",
+  "maleRatio": 0.5,
+  "height": 7,
+  "weight": 205,
+  "pokedex": [
+    "cobblemon.species.gible.desc"
+  ],
+  "labels": [
+    "gen4"
+  ],
+  "aspects": [],
   "abilities": [
     "sandveil",
     "h:roughskin"
   ],
+  "eggGroups": [
+    "monster",
+    "dragon"
+  ],
+  "baseStats": {
+    "hp": 58,
+    "attack": 70,
+    "defence": 45,
+    "special_attack": 40,
+    "special_defence": 45,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "baseExperienceYield": 60,
+  "experienceGroup": "slow",
+  "catchRate": 45,
+  "eggCycles": 40,
+  "baseFriendship": 50,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.93,
+    "height": 0.93,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      },
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "gible",
+          "tier": 1
+        },
+        {
+          "pokemon": "axew",
+          "tier": 1
+        },
+        {
+          "pokemon": "fraxure",
+          "tier": 2
+        },
+        {
+          "pokemon": "gabite",
+          "tier": 3
+        },
+        {
+          "pokemon": "haxorus",
+          "tier": 4
+        },
+        {
+          "pokemon": "garchomp mega=false",
+          "tier": 5
+        },
+        {
+          "pokemon": "garchomp mega",
+          "tier": 6
+        }
+      ]
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -21,69 +114,29 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 58,
-    "attack": 70,
-    "defence": 45,
-    "special_attack": 40,
-    "special_defence": 45,
-    "speed": 42
-  },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 60,
-  "experienceGroup": "slow",
-  "eggCycles": 40,
-  "eggGroups": [
-    "monster",
-    "dragon"
-  ],
   "moves": [
-    "1:sandtomb",
     "1:tackle",
-    "3:sandattack",
+    "1:dragonrage",
+    "1:sandtomb",
     "6:sandattack",
-    "7:dragonrage",
     "12:dragonbreath",
-    "13:sandstorm",
-    "15:takedown",
     "18:bulldoze",
-    "19:sandtomb",
     "25:bite",
-    "25:slash",
-    "27:dragonclaw",
     "30:slash",
-    "31:dig",
     "36:dragonclaw",
-    "37:dragonrush",
     "42:dig",
     "48:sandstorm",
     "54:takedown",
     "60:dragonrush",
-    "egg:bodyslam",
     "egg:doubleedge",
-    "egg:dragonbreath",
-    "egg:ironhead",
-    "egg:irontail",
     "egg:metalclaw",
-    "egg:mudshot",
-    "egg:outrage",
-    "egg:rockclimb",
-    "egg:sandtomb",
-    "egg:scaryface",
     "egg:thrash",
     "egg:twister",
-    "tm:aerialace",
-    "tm:attract",
     "tm:bodyslam",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
     "tm:cut",
     "tm:dig",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dracometeor",
     "tm:dragoncheer",
     "tm:dragonclaw",
@@ -97,72 +150,81 @@
     "tm:fireblast",
     "tm:firefang",
     "tm:flamethrower",
-    "tm:frustration",
+    "tm:furycutter",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:incinerate",
     "tm:ironhead",
     "tm:irontail",
     "tm:metalclaw",
     "tm:mudshot",
-    "tm:naturalgift",
     "tm:outrage",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
-    "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:sandstorm",
     "tm:sandtomb",
     "tm:scaleshot",
     "tm:scaryface",
     "tm:scorchingsands",
-    "tm:secretpower",
     "tm:shadowclaw",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:stealthrock",
     "tm:stoneedge",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
     "tm:takedown",
     "tm:terablast",
     "tm:thunderfang",
-    "tm:toxic",
+    "tm:twister",
+    "tutor:bulldoze",
     "tutor:dracometeor",
     "tutor:dragonpulse",
-    "tutor:dragonrage",
     "tutor:earthpower",
-    "tutor:endure",
+    "tutor:falseswipe",
+    "tutor:firefang",
+    "tutor:flamethrower",
     "tutor:furycutter",
-    "tutor:headbutt",
+    "tutor:helpinghand",
     "tutor:ironhead",
     "tutor:irontail",
-    "tutor:mudslap",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scaleshot",
     "tutor:scorchingsands",
+    "tutor:shadowclaw",
     "tutor:sleeptalk",
-    "tutor:snore",
     "tutor:stealthrock",
+    "tutor:stoneedge",
     "tutor:swift",
-    "tutor:twister"
-  ],
-  "labels": [
-    "gen4"
-  ],
-  "pokedex": [
-    "cobblemon.species.gible.desc"
+    "tutor:thunderfang",
+    "tutor:twister",
+    "legacy:aerialace",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mudslap",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:roar",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "evolutions": [
     {
@@ -170,7 +232,9 @@
       "variant": "level_up",
       "result": "gabite",
       "consumeHeldItem": false,
-      "learnableMoves": [],
+      "learnableMoves": [
+        "dualchop"
+      ],
       "requirements": [
         {
           "variant": "level",
@@ -178,24 +242,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.75,
-  "hitbox": {
-    "width": 0.93,
-    "height": 0.93,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 1,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 7,
-  "weight": 205,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

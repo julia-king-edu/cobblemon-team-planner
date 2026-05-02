@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Serperior",
   "nationalPokedexNumber": 497,
+  "name": "Serperior",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 33,
+  "weight": 630,
+  "pokedex": [
+    "cobblemon.species.serperior.desc"
+  ],
+  "labels": [
+    "gen5"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:contrary"
+  ],
+  "eggGroups": [
+    "field",
+    "grass"
   ],
   "baseStats": {
     "hp": 75,
@@ -15,16 +29,70 @@
     "special_defence": 95,
     "speed": 113
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "baseExperienceYield": 238,
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
+  "baseExperienceYield": 264,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "field",
-    "grass"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.15,
+  "hitbox": {
+    "height": 1.85,
+    "fixed": false,
+    "width": 1.4
+  },
+  "riding": {
+    "behaviours": {
+      "LAND": {
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "stats": {
+          "ACCELERATION": "65-80",
+          "JUMP": "0-5",
+          "SKILL": "0-30",
+          "SPEED": "25-45",
+          "STAMINA": "35-55"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "5"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "drowsyChance": 0.0333,
+      "light": "0-4",
+      "rouseChance": 0.0042
+    },
+    "walk": {
+      "canWalk": true,
+      "walkSpeed": 0.19
+    }
+  },
   "drops": {
     "amount": 1,
     "entries": [
@@ -34,21 +102,14 @@
       }
     ]
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:leer",
     "1:tackle",
+    "1:leer",
     "1:vinewhip",
     "1:wrap",
+    "1:leaftornado",
+    "1:wringout",
     "13:growth",
-    "16:leaftornado",
     "16:magicalleaf",
     "20:leechseed",
     "24:megadrain",
@@ -56,20 +117,30 @@
     "32:leafblade",
     "38:coil",
     "44:gigadrain",
-    "50:wringout",
     "50:gastroacid",
     "56:leafstorm",
+    "egg:captivate",
+    "egg:glare",
+    "egg:irontail",
+    "egg:meanlook",
+    "egg:mirrorcoat",
+    "egg:naturalgift",
+    "egg:pursuit",
+    "egg:sweetscent",
+    "egg:synthesis",
+    "egg:twister",
     "tm:aerialace",
-    "tm:attract",
+    "tm:aquatail",
+    "tm:bind",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brutalswing",
     "tm:bulletseed",
     "tm:calmmind",
-    "tm:confide",
+    "tm:captivate",
     "tm:cut",
+    "tm:defog",
     "tm:doubleedge",
-    "tm:doubleteam",
     "tm:dragonpulse",
     "tm:dragontail",
     "tm:endure",
@@ -77,7 +148,7 @@
     "tm:facade",
     "tm:flash",
     "tm:frenzyplant",
-    "tm:frustration",
+    "tm:gastroacid",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
@@ -85,89 +156,85 @@
     "tm:grassyglide",
     "tm:grassyterrain",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:hyperbeam",
+    "tm:irontail",
     "tm:knockoff",
+    "tm:leafblade",
     "tm:leafstorm",
     "tm:lightscreen",
     "tm:magicalleaf",
+    "tm:naturalgift",
     "tm:naturepower",
     "tm:outrage",
     "tm:petalblizzard",
     "tm:protect",
     "tm:reflect",
     "tm:rest",
-    "tm:return",
     "tm:rocksmash",
-    "tm:round",
     "tm:safeguard",
     "tm:scaleshot",
     "tm:scaryface",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
+    "tm:snatch",
     "tm:solarbeam",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:taunt",
     "tm:terablast",
     "tm:torment",
-    "tm:toxic",
     "tm:trailblaze",
+    "tm:twister",
     "tm:workup",
+    "tm:worryseed",
+    "tutor:aerialace",
     "tutor:aquatail",
     "tutor:bind",
+    "tutor:calmmind",
     "tutor:defog",
     "tutor:dragonpulse",
+    "tutor:energyball",
     "tutor:frenzyplant",
     "tutor:gastroacid",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grasspledge",
-    "tutor:holdback",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:irontail",
     "tutor:knockoff",
-    "tutor:leafstorm",
-    "tutor:leechseed",
+    "tutor:magicalleaf",
     "tutor:outrage",
+    "tutor:rest",
+    "tutor:rocksmash",
+    "tutor:scaleshot",
     "tutor:seedbomb",
     "tutor:sleeptalk",
     "tutor:snatch",
-    "tutor:snore",
-    "tutor:substitute",
+    "tutor:swift",
     "tutor:synthesis",
+    "tutor:twister",
     "tutor:worryseed",
-    "tutor:wringout"
-  ],
-  "labels": [
-    "gen5"
-  ],
-  "pokedex": [
-    "cobblemon.species.serperior.desc"
+    "legacy:attract",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:aromatherapy",
+    "special:holdback"
   ],
   "preEvolution": "servine",
-  "evolutions": [],
-  "baseScale": 1.15,
-  "hitbox": {
-    "width": 1.4,
-    "height": 1.85,
-    "fixed": false
-  },
-  "baseFriendship": 70,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 33,
-  "weight": 630,
-  "aspects": [],
-  "cannotDynamax": false
+  "evolutions": []
 }

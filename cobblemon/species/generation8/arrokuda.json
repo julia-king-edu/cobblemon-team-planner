@@ -1,12 +1,90 @@
 {
   "implemented": true,
-  "name": "Arrokuda",
   "nationalPokedexNumber": 846,
+  "name": "Arrokuda",
   "primaryType": "water",
+  "maleRatio": 0.5,
+  "height": 5,
+  "weight": 10,
+  "pokedex": [
+    "cobblemon.species.arrokuda.desc"
+  ],
+  "labels": [
+    "gen8"
+  ],
+  "aspects": [],
   "abilities": [
     "swiftswim",
     "h:propellertail"
   ],
+  "eggGroups": [
+    "water_2"
+  ],
+  "baseStats": {
+    "hp": 41,
+    "attack": 63,
+    "defence": 40,
+    "special_attack": 40,
+    "special_defence": 30,
+    "speed": 66
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 1
+  },
+  "baseExperienceYield": 56,
+  "experienceGroup": "slow",
+  "catchRate": 255,
+  "eggCycles": 20,
+  "baseFriendship": 50,
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.5,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true,
+        "canWalk": false
+      },
+      "swim": {
+        "swimSpeed": 0.5,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "arrokuda",
+          "tier": 1
+        },
+        {
+          "pokemon": "barraskewda",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -19,50 +97,14 @@
       }
     ]
   },
-  "baseStats": {
-    "hp": 41,
-    "attack": 63,
-    "defence": 40,
-    "special_attack": 40,
-    "special_defence": 30,
-    "speed": 66
-  },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "baseExperienceYield": 56,
-  "experienceGroup": "slow",
-  "eggCycles": 20,
-  "eggGroups": [
-    "water_2"
-  ],
-  "behaviour": {
-    "moving": {
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.5,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    },
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:aquajet",
     "1:peck",
+    "1:aquajet",
     "6:furyattack",
     "12:bite",
     "18:agility",
     "24:dive",
     "30:focusenergy",
-    "30:laserfocus",
     "36:crunch",
     "42:liquidation",
     "48:doubleedge",
@@ -72,7 +114,6 @@
     "egg:thrash",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:bounce",
     "tm:brickbreak",
     "tm:chillingwater",
@@ -87,17 +128,14 @@
     "tm:focusenergy",
     "tm:hydropump",
     "tm:icefang",
+    "tm:laserfocus",
     "tm:liquidation",
-    "tm:poisonjab",
     "tm:protect",
     "tm:psychicfangs",
     "tm:raindance",
     "tm:rest",
-    "tm:round",
-    "tm:scald",
     "tm:scaleshot",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:substitute",
     "tm:surf",
     "tm:swift",
@@ -107,13 +145,25 @@
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
-    "tutor:scaleshot"
-  ],
-  "labels": [
-    "gen8"
-  ],
-  "pokedex": [
-    "cobblemon.species.arrokuda.desc"
+    "tutor:bounce",
+    "tutor:dive",
+    "tutor:drillrun",
+    "tutor:flipturn",
+    "tutor:focusenergy",
+    "tutor:icefang",
+    "tutor:laserfocus",
+    "tutor:liquidation",
+    "tutor:rest",
+    "tutor:scaleshot",
+    "tutor:sleeptalk",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:poisonjab",
+    "legacy:round",
+    "legacy:scald",
+    "legacy:snore"
   ],
   "evolutions": [
     {
@@ -129,24 +179,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 0.65,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.5,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 1
-  },
-  "height": 5,
-  "weight": 10,
-  "aspects": [],
-  "cannotDynamax": false
+  ]
 }

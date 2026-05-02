@@ -1,12 +1,27 @@
 {
-  "name": "Spheal",
+  "implemented": true,
   "nationalPokedexNumber": 363,
+  "name": "Spheal",
   "primaryType": "ice",
   "secondaryType": "water",
+  "maleRatio": 0.5,
+  "height": 8,
+  "weight": 395,
+  "pokedex": [
+    "cobblemon.species.spheal.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "thickfat",
     "icebody",
     "h:oblivious"
+  ],
+  "eggGroups": [
+    "water_1",
+    "field"
   ],
   "baseStats": {
     "hp": 70,
@@ -16,23 +31,100 @@
     "special_defence": 50,
     "speed": 25
   },
-  "catchRate": 255,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "evYield": {
+    "hp": 1,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
   "baseExperienceYield": 58,
   "experienceGroup": "medium_slow",
+  "catchRate": 255,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_1",
-    "field"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 0.8,
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.9,
+    "fixed": false
+  },
+  "behaviour": {
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": "0.2"
+      }
+    },
+    "herd": {
+      "maxSize": "4",
+      "toleratedLeaders": [
+        {
+          "pokemon": "seel",
+          "tier": 1
+        },
+        {
+          "pokemon": "popplio",
+          "tier": 1
+        },
+        {
+          "pokemon": "spheal",
+          "tier": 2
+        },
+        {
+          "pokemon": "dewgong",
+          "tier": 3
+        },
+        {
+          "pokemon": "brionne",
+          "tier": 3
+        },
+        {
+          "pokemon": "primarina",
+          "tier": 4
+        },
+        {
+          "pokemon": "sealeo",
+          "tier": 5
+        },
+        {
+          "pokemon": "walrein",
+          "tier": 6
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 7
+        }
+      ]
+    },
+    "combat": {
+      "willDefendOwner": true
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:cod",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "moves": [
     "1:defensecurl",
     "1:rollout",
     "4:growl",
     "8:watergun",
     "12:powdersnow",
-    "13:iceball",
     "16:rest",
     "20:snore",
     "24:brine",
@@ -47,89 +139,86 @@
     "egg:bellydrum",
     "egg:curse",
     "egg:fissure",
-    "egg:rockslide",
-    "egg:rollout",
-    "egg:signalbeam",
-    "egg:sleeptalk",
     "egg:spitup",
     "egg:stockpile",
     "egg:swallow",
     "egg:waterpulse",
     "egg:watersport",
     "egg:yawn",
-    "tm:attract",
+    "tm:aquatail",
+    "tm:babydolleyes",
     "tm:blizzard",
     "tm:bodyslam",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
-    "tm:confide",
+    "tm:curse",
     "tm:dive",
-    "tm:doubleteam",
     "tm:earthquake",
     "tm:echoedvoice",
     "tm:encore",
     "tm:endure",
     "tm:facade",
     "tm:frostbreath",
-    "tm:frustration",
     "tm:hail",
-    "tm:hiddenpower",
+    "tm:headbutt",
+    "tm:iceball",
     "tm:icebeam",
     "tm:icywind",
     "tm:irontail",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:protect",
     "tm:raindance",
     "tm:rest",
-    "tm:return",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
-    "tm:secretpower",
+    "tm:rollout",
+    "tm:signalbeam",
     "tm:sleeptalk",
     "tm:snore",
+    "tm:steelroller",
     "tm:strength",
     "tm:substitute",
+    "tm:superfang",
     "tm:surf",
-    "tm:swagger",
-    "tm:toxic",
+    "tm:terablast",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tutor:aquatail",
-    "tutor:aurorabeam",
-    "tutor:bodyslam",
-    "tutor:charm",
-    "tutor:defensecurl",
+    "tutor:babydolleyes",
+    "tutor:bulldoze",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:endure",
-    "tutor:fissure",
-    "tutor:headbutt",
+    "tutor:iceball",
+    "tutor:icebeam",
     "tutor:icywind",
     "tutor:irontail",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:powdersnow",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:rollout",
     "tutor:signalbeam",
     "tutor:sleeptalk",
     "tutor:snore",
     "tutor:steelroller",
-    "tutor:substitute",
     "tutor:superfang",
-    "tutor:swagger",
-    "tutor:watergun",
-    "tutor:waterpulse"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.spheal.desc"
+    "tutor:waterpulse",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleedge",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:swagger",
+    "legacy:toxic",
+    "special:charm"
   ],
   "evolutions": [
     {
@@ -147,37 +236,5 @@
         }
       ]
     }
-  ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 1,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 8,
-  "weight": 395,
-  "aspects": [],
-  "cannotDynamax": false,
-  "drops": {
-    "amount": 2,
-    "entries": [
-      {
-        "item": "minecraft:cod",
-        "quantityRange": "0-1"
-      },
-      {
-        "item": "cobblemon:chesto_berry",
-        "percentage": 2.5
-      }
-    ]
-  }
+  ]
 }

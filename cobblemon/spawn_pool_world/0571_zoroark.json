@@ -11,14 +11,14 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
             "weight": 0.96,
             "weightMultiplier": {
                 "multiplier": 5.0,
                 "condition": {
-                    "moonPhase": "4"
+                    "moonPhase": 4
                 }
             },
             "condition": {
@@ -43,14 +43,14 @@
                 "wild"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
             "weight": 0.96,
             "weightMultiplier": {
                 "multiplier": 5.0,
                 "condition": {
-                    "moonPhase": "4"
+                    "moonPhase": 4
                 }
             },
             "condition": {
@@ -71,7 +71,7 @@
                 "nether_fossil"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "uncommon",
             "level": "30-51",
             "weight": 16.0,

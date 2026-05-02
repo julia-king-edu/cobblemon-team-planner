@@ -10,7 +10,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -38,7 +38,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -66,7 +66,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -94,7 +94,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -122,7 +122,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -150,7 +150,7 @@
                 "natural"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
@@ -172,113 +172,35 @@
             }
         },
         {
-            "id": "floette-red-7",
-            "pokemon": "floette flower=red",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "19-37",
-            "weight": 0.95,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "floette-yellow-7",
-            "pokemon": "floette flower=yellow",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "19-37",
-            "weight": 0.95,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "floette-orange-7",
-            "pokemon": "floette flower=orange",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "19-37",
-            "weight": 0.95,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
-            "id": "floette-blue-7",
-            "pokemon": "floette flower=blue",
-            "type": "pokemon",
-            "context": "grounded",
-            "bucket": "common",
-            "level": "19-37",
-            "weight": 0.95,
-            "weightMultiplier": {
-                "multiplier": 0.25,
-                "condition": {
-                    "timeRange": "night"
-                }
-            },
-            "condition": {
-                "biomes": [
-                    "the_bumblezone:floral_meadow"
-                ]
-            },
-            "anticondition": {
-                "structures": [
-                    "#the_bumblezone:sempiternal_sanctums"
-                ]
-            }
-        },
-        {
             "id": "floette-white-7",
             "pokemon": "floette flower=white",
+            "presets": [
+                "natural"
+            ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
             "weight": 0.95,
+            "condition": {
+                "minSkyLight": 8,
+                "maxSkyLight": 15,
+                "biomes": [
+                    "#aether:is_aether"
+                ],
+                "neededNearbyBlocks": [
+                    "#cobblemon:white_flowers"
+                ]
+            }
+        },
+        {
+            "id": "floette-red-8",
+            "pokemon": "floette flower=red",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "19-37",
+            "weight": 0.158,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {
@@ -297,13 +219,113 @@
             }
         },
         {
-            "id": "floette-pink-7",
-            "pokemon": "floette flower=pink",
+            "id": "floette-yellow-8",
+            "pokemon": "floette flower=yellow",
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "common",
             "level": "19-37",
-            "weight": 0.95,
+            "weight": 0.158,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "floette-orange-8",
+            "pokemon": "floette flower=orange",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "19-37",
+            "weight": 0.158,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "floette-blue-8",
+            "pokemon": "floette flower=blue",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "19-37",
+            "weight": 0.158,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "floette-white-8",
+            "pokemon": "floette flower=white",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "19-37",
+            "weight": 0.158,
+            "weightMultiplier": {
+                "multiplier": 0.25,
+                "condition": {
+                    "timeRange": "night"
+                }
+            },
+            "condition": {
+                "biomes": [
+                    "the_bumblezone:floral_meadow"
+                ]
+            },
+            "anticondition": {
+                "structures": [
+                    "#the_bumblezone:sempiternal_sanctums"
+                ]
+            }
+        },
+        {
+            "id": "floette-pink-8",
+            "pokemon": "floette flower=pink",
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "19-37",
+            "weight": 0.158,
             "weightMultiplier": {
                 "multiplier": 0.25,
                 "condition": {

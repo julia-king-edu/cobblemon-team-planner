@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "30-47",
             "weight": 1.0,
@@ -28,7 +28,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "30-47",
             "weight": 1.6,
@@ -44,7 +44,7 @@
             "id": "whiscash-3",
             "pokemon": "whiscash",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "30-47",
             "weight": 1.0,
@@ -69,7 +69,7 @@
             "id": "whiscash-4",
             "pokemon": "whiscash",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "30-47",
             "weight": 1.0,
@@ -82,10 +82,10 @@
             }
         },
         {
-            "id": "whiscash-5",
-            "pokemon": "whiscash",
+            "id": "whiscash-true-5",
+            "pokemon": "whiscash whiscash_nero=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "30-47",
             "weight": 10.0,
@@ -99,7 +99,7 @@
                     "#cobblemon:is_mushroom",
                     "#cobblemon:is_temperate"
                 ],
-                "bobber": "cobblemon:master_ball"
+                "rodType": "cobblemon:master_rod"
             },
             "anticondition": {
                 "biomes": [
@@ -108,10 +108,10 @@
             }
         },
         {
-            "id": "whiscash-6",
-            "pokemon": "whiscash",
+            "id": "whiscash-true-6",
+            "pokemon": "whiscash whiscash_nero=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "30-47",
             "weight": 10.0,
@@ -121,7 +121,7 @@
                 "biomes": [
                     "#cobblemon:is_overworld"
                 ],
-                "bobber": "cobblemon:master_ball"
+                "rodType": "cobblemon:master_rod"
             }
         },
         {
@@ -131,7 +131,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "30-47",
             "weight": 1.0,
@@ -148,7 +148,7 @@
             "id": "whiscash-8",
             "pokemon": "whiscash",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "30-47",
             "weight": 1.0,
@@ -172,10 +172,10 @@
             }
         },
         {
-            "id": "whiscash-9",
-            "pokemon": "whiscash",
+            "id": "whiscash-true-9",
+            "pokemon": "whiscash whiscash_nero=true",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "30-47",
             "weight": 10.0,
@@ -191,7 +191,7 @@
                     "#cobblemon:is_mushroom",
                     "#cobblemon:is_temperate"
                 ],
-                "bobber": "cobblemon:master_ball"
+                "rodType": "cobblemon:master_rod"
             },
             "anticondition": {
                 "biomes": [

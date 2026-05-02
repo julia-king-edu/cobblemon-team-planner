@@ -10,7 +10,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "24-49",
             "weight": 2.0,
@@ -29,7 +29,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "24-49",
             "weight": 20.0,
@@ -47,7 +47,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "rare",
             "level": "24-49",
             "weight": 10.0,
@@ -70,7 +70,7 @@
             "id": "relicanth-4",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "24-49",
             "weight": 2.0,
@@ -87,14 +87,14 @@
             "id": "relicanth-5",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "24-49",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -108,7 +108,7 @@
             "id": "relicanth-6",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "24-49",
             "weight": 6.0,
@@ -128,7 +128,7 @@
             "id": "relicanth-7",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "24-49",
             "weight": 2.0,
@@ -152,14 +152,14 @@
             "id": "relicanth-8",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "24-49",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {
@@ -186,7 +186,7 @@
                 "ocean_ruins"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "common",
             "level": "24-49",
             "weight": 20.0,
@@ -203,7 +203,7 @@
             "id": "relicanth-10",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "rare",
             "level": "24-49",
             "weight": 6.0,
@@ -228,7 +228,7 @@
                 "water"
             ],
             "type": "pokemon",
-            "context": "submerged",
+            "spawnablePositionType": "submerged",
             "bucket": "uncommon",
             "level": "24-49",
             "weight": 2.0,
@@ -248,7 +248,7 @@
             "id": "relicanth-12",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "uncommon",
             "level": "24-49",
             "weight": 2.0,
@@ -271,14 +271,14 @@
             "id": "relicanth-13",
             "pokemon": "relicanth",
             "type": "pokemon",
-            "context": "fishing",
+            "spawnablePositionType": "fishing",
             "bucket": "common",
             "level": "24-49",
             "weight": 2.0,
             "weightMultiplier": {
                 "multiplier": 3.0,
                 "condition": {
-                    "minLureLevel": "3"
+                    "minLureLevel": 3
                 }
             },
             "condition": {

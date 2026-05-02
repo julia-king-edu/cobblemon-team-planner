@@ -1,11 +1,25 @@
 {
   "implemented": true,
-  "name": "Sceptile",
   "nationalPokedexNumber": 254,
+  "name": "Sceptile",
   "primaryType": "grass",
+  "maleRatio": 0.875,
+  "height": 17,
+  "weight": 522,
+  "pokedex": [
+    "cobblemon.species.sceptile.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "overgrow",
     "h:unburden"
+  ],
+  "eggGroups": [
+    "monster",
+    "dragon"
   ],
   "baseStats": {
     "hp": 70,
@@ -15,63 +29,46 @@
     "special_defence": 85,
     "speed": 120
   },
-  "catchRate": 45,
-  "maleRatio": 0.875,
-  "shoulderMountable": false,
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "grass",
-      "secondaryType": "dragon",
-      "abilities": [
-        "lightningrod"
-      ],
-      "baseStats": {
-        "hp": 70,
-        "attack": 110,
-        "defence": 75,
-        "special_attack": 145,
-        "special_defence": 85,
-        "speed": 145
-      },
-      "catchRate": 45,
-      "maleRatio": 0.875,
-      "baseExperienceYield": 265,
-      "baseFriendship": 50,
-      "evYield": {
-        "hp": 0,
-        "attack": 0,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 3
-      },
-      "experienceGroup": "medium_slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "monster",
-        "dragon"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 19,
-      "weight": 552,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 3
+  },
   "baseExperienceYield": 265,
   "experienceGroup": "medium_slow",
+  "catchRate": 45,
   "eggCycles": 20,
-  "eggGroups": [
-    "monster",
-    "dragon"
-  ],
+  "baseFriendship": 50,
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 1,
+    "height": 2.2,
+    "fixed": false
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "light": "0-4",
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    },
+    "herd": {
+      "maxSize": "5"
+    },
+    "moving": {
+      "swim": {
+        "avoidsWater": true
+      }
+    },
+    "combat": {
+      "willDefendSelf": true,
+      "willDefendOwner": true,
+      "willFlee": false
+    }
+  },
   "drops": {
     "amount": 4,
     "entries": [
@@ -85,53 +82,56 @@
       }
     ]
   },
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "willSleepOnBed": false,
-      "depth": "normal",
-      "light": "0-4"
-    }
-  },
   "moves": [
-    "1:absorb",
-    "1:dualchop",
-    "1:energyball",
-    "1:falseswipe",
-    "1:furycutter",
-    "1:leafage",
-    "1:leer",
     "1:nightslash",
     "1:pound",
+    "1:leer",
+    "1:absorb",
     "1:quickattack",
-    "1:shedtail",
     "1:xscissor",
+    "1:pursuit",
+    "1:leafblade",
+    "1:agility",
+    "1:falseswipe",
+    "1:furycutter",
+    "1:energyball",
+    "1:dualchop",
+    "1:leafage",
+    "1:shedtail",
     "5:megadrain",
     "12:detect",
     "15:quickguard",
-    "18:pursuit",
     "20:assurance",
     "25:gigadrain",
-    "28:agility",
     "30:slam",
     "35:doubleteam",
-    "42:leafblade",
     "42:screech",
     "49:endeavor",
     "56:leafstorm",
+    "egg:absorb",
+    "egg:crushclaw",
+    "egg:doublekick",
+    "egg:dragonbreath",
+    "egg:grasswhistle",
+    "egg:leechseed",
+    "egg:mudsport",
+    "egg:naturalgift",
+    "egg:nightslash",
+    "egg:pursuit",
+    "egg:razorwind",
+    "egg:slash",
+    "egg:synthesis",
+    "egg:worryseed",
     "tm:acrobatics",
     "tm:aerialace",
     "tm:agility",
     "tm:assurance",
-    "tm:attract",
     "tm:bodyslam",
     "tm:breakingswipe",
     "tm:brickbreak",
     "tm:brutalswing",
     "tm:bulldoze",
     "tm:bulletseed",
-    "tm:captivate",
-    "tm:confide",
     "tm:crosspoison",
     "tm:crunch",
     "tm:cut",
@@ -144,6 +144,7 @@
     "tm:dragonpulse",
     "tm:dragontail",
     "tm:drainpunch",
+    "tm:dualchop",
     "tm:earthquake",
     "tm:endeavor",
     "tm:endure",
@@ -155,18 +156,19 @@
     "tm:focusblast",
     "tm:focuspunch",
     "tm:frenzyplant",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigadrain",
     "tm:gigaimpact",
     "tm:grassknot",
     "tm:grasspledge",
     "tm:grassyglide",
     "tm:grassyterrain",
+    "tm:headbutt",
     "tm:helpinghand",
-    "tm:hiddenpower",
     "tm:honeclaws",
     "tm:hyperbeam",
     "tm:irontail",
+    "tm:laserfocus",
     "tm:leafblade",
     "tm:leafstorm",
     "tm:lowkick",
@@ -180,105 +182,141 @@
     "tm:poweruppunch",
     "tm:protect",
     "tm:rest",
-    "tm:return",
     "tm:roar",
     "tm:rockclimb",
     "tm:rockslide",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:safeguard",
     "tm:scaleshot",
     "tm:screech",
-    "tm:secretpower",
     "tm:seedbomb",
     "tm:sleeptalk",
-    "tm:snore",
     "tm:solarbeam",
     "tm:solarblade",
     "tm:strength",
     "tm:substitute",
     "tm:sunnyday",
-    "tm:swagger",
     "tm:swift",
     "tm:swordsdance",
+    "tm:synthesis",
     "tm:takedown",
     "tm:terablast",
     "tm:thief",
     "tm:throatchop",
     "tm:thunderpunch",
-    "tm:toxic",
     "tm:trailblaze",
     "tm:upperhand",
     "tm:vacuumwave",
     "tm:workup",
+    "tm:worryseed",
     "tm:xscissor",
-    "tutor:bodyslam",
-    "tutor:counter",
-    "tutor:doubleedge",
+    "tutor:aerialace",
+    "tutor:bulldoze",
     "tutor:dragonpulse",
     "tutor:drainpunch",
     "tutor:dualchop",
-    "tutor:dynamicpunch",
     "tutor:endeavor",
-    "tutor:endure",
-    "tutor:focusblast",
-    "tutor:focuspunch",
+    "tutor:energyball",
+    "tutor:falseswipe",
     "tutor:frenzyplant",
     "tutor:furycutter",
     "tutor:gigadrain",
+    "tutor:gigaimpact",
     "tutor:grasspledge",
     "tutor:grassyglide",
-    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hyperbeam",
     "tutor:irontail",
     "tutor:laserfocus",
-    "tutor:leafstorm",
     "tutor:lowkick",
-    "tutor:megakick",
-    "tutor:megapunch",
-    "tutor:mimic",
-    "tutor:mudslap",
+    "tutor:magicalleaf",
     "tutor:outrage",
+    "tutor:rest",
     "tutor:rockslide",
+    "tutor:rocksmash",
     "tutor:scaleshot",
     "tutor:seedbomb",
-    "tutor:seismictoss",
     "tutor:sleeptalk",
-    "tutor:snore",
-    "tutor:substitute",
-    "tutor:swagger",
     "tutor:swift",
-    "tutor:swordsdance",
     "tutor:synthesis",
     "tutor:throatchop",
     "tutor:thunderpunch",
-    "tutor:worryseed"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.sceptile.desc"
+    "tutor:vacuumwave",
+    "tutor:worryseed",
+    "tutor:xscissor",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:counter",
+    "legacy:dynamicpunch",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:mudslap",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:seismictoss",
+    "legacy:snore",
+    "legacy:swagger",
+    "legacy:toxic"
   ],
   "preEvolution": "grovyle",
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1,
-    "height": 2.2,
-    "fixed": false
-  },
-  "baseFriendship": 50,
-  "evYield": {
-    "hp": 0,
-    "attack": 0,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 3
-  },
-  "height": 17,
-  "weight": 522,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "grass",
+      "secondaryType": "dragon",
+      "maleRatio": 0.875,
+      "height": 19,
+      "weight": 552,
+      "pokedex": [
+        "cobblemon.species.sceptile-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "lightningrod",
+        "h:lightningrod"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 110,
+        "defence": 75,
+        "special_attack": 145,
+        "special_defence": 85,
+        "speed": 145
+      },
+      "baseExperienceYield": 315,
+      "dynamaxBlocked": true,
+      "evolutions": [],
+      "battleOnly": true,
+      "behaviour": {
+        "herd": {
+          "maxSize": "6"
+        },
+        "moving": {
+          "swim": {
+            "avoidsWater": true
+          }
+        },
+        "combat": {
+          "willDefendSelf": true,
+          "willDefendOwner": true,
+          "willFlee": false
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      }
+    }
+  ]
 }

@@ -1,12 +1,25 @@
 {
   "implemented": true,
-  "name": "Sharpedo",
   "nationalPokedexNumber": 319,
+  "name": "Sharpedo",
   "primaryType": "water",
   "secondaryType": "dark",
+  "maleRatio": 0.5,
+  "height": 18,
+  "weight": 888,
+  "pokedex": [
+    "cobblemon.species.sharpedo.desc"
+  ],
+  "labels": [
+    "gen3"
+  ],
+  "aspects": [],
   "abilities": [
     "roughskin",
     "h:speedboost"
+  ],
+  "eggGroups": [
+    "water_2"
   ],
   "baseStats": {
     "hp": 70,
@@ -16,74 +29,110 @@
     "special_defence": 40,
     "speed": 95
   },
-  "catchRate": 60,
-  "maleRatio": 0.5,
-  "shoulderMountable": false,
-  "behaviour": {
-    "moving": {
-      "canLook": false,
-      "walk": {
-        "avoidsLand": true
-      },
-      "swim": {
-        "swimSpeed": 0.7,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
-      }
-    }
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
   },
-  "forms": [
-    {
-      "name": "Mega",
-      "primaryType": "water",
-      "secondaryType": "dark",
-      "abilities": [
-        "strongjaw"
-      ],
-      "baseStats": {
-        "hp": 70,
-        "attack": 140,
-        "defence": 70,
-        "special_attack": 110,
-        "special_defence": 65,
-        "speed": 105
-      },
-      "catchRate": 60,
-      "maleRatio": 0.5,
-      "baseExperienceYield": 161,
-      "baseFriendship": 35,
-      "evYield": {
-        "hp": 0,
-        "attack": 2,
-        "defence": 0,
-        "special_attack": 0,
-        "special_defence": 0,
-        "speed": 0
-      },
-      "experienceGroup": "slow",
-      "eggCycles": 20,
-      "eggGroups": [
-        "water_2"
-      ],
-      "labels": [
-        "gen6",
-        "mega"
-      ],
-      "aspects": [
-        "mega"
-      ],
-      "height": 25,
-      "weight": 1303,
-      "cannotDynamax": false,
-      "battleOnly": true
-    }
-  ],
   "baseExperienceYield": 161,
   "experienceGroup": "slow",
+  "catchRate": 60,
   "eggCycles": 20,
-  "eggGroups": [
-    "water_2"
-  ],
+  "baseFriendship": 35,
+  "baseScale": 1,
+  "hitbox": {
+    "height": 1,
+    "fixed": false,
+    "width": 1.2
+  },
+  "riding": {
+    "behaviours": {
+      "LIQUID": {
+        "key": "cobblemon:liquid/dolphin",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.water_sufrace.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.water_surface.mono",
+            "submerged": false,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.underwater.stereo",
+            "submerged": true,
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "stats": {
+          "ACCELERATION": "55-85",
+          "JUMP": "45-75",
+          "SKILL": "25-65",
+          "SPEED": "55-85",
+          "STAMINA": "20-45"
+        }
+      }
+    },
+    "seats": [
+      {
+        "locator": "seat_1"
+      }
+    ]
+  },
+  "behaviour": {
+    "combat": {
+      "willDefendOwner": true,
+      "willDefendSelf": true,
+      "willFlee": false
+    },
+    "herd": {
+      "maxSize": "9",
+      "toleratedLeaders": [
+        {
+          "pokemon": "sharpedo mega=false",
+          "tier": 1
+        },
+        {
+          "pokemon": "sharpedo mega",
+          "tier": 2
+        },
+        {
+          "pokemon": "manaphy",
+          "tier": 3
+        }
+      ]
+    },
+    "moving": {
+      "swim": {
+        "canBreatheUnderwater": true,
+        "swimSpeed": 0.7
+      },
+      "walk": {
+        "avoidsLand": true,
+        "walkSpeed": 0.7
+      }
+    },
+    "resting": {
+      "drowsyChance": 0.0333,
+      "rouseChance": 0.0042
+    }
+  },
   "drops": {
     "amount": 2,
     "entries": [
@@ -98,16 +147,16 @@
     ]
   },
   "moves": [
-    "1:aquajet",
     "1:feint",
-    "1:focusenergy",
     "1:leer",
+    "1:rage",
+    "1:focusenergy",
+    "1:slash",
+    "1:aquajet",
+    "1:skullbash",
     "1:nightslash",
     "1:poisonfang",
-    "1:rage",
-    "1:slash",
     "12:scaryface",
-    "15:assurance",
     "16:bite",
     "20:icefang",
     "24:screech",
@@ -115,39 +164,40 @@
     "34:crunch",
     "40:agility",
     "46:liquidation",
-    "51:skullbash",
     "52:takedown",
-    "56:taunt",
+    "egg:ancientpower",
+    "egg:destinybond",
+    "egg:doubleedge",
+    "egg:thrash",
+    "egg:waterpulse",
     "tm:agility",
+    "tm:ancientpower",
     "tm:assurance",
-    "tm:attract",
     "tm:avalanche",
     "tm:blizzard",
     "tm:bounce",
     "tm:brine",
     "tm:bulldoze",
-    "tm:captivate",
     "tm:closecombat",
-    "tm:confide",
     "tm:crunch",
     "tm:darkpulse",
     "tm:dive",
-    "tm:doubleteam",
+    "tm:doubleedge",
     "tm:earthquake",
     "tm:endure",
     "tm:facade",
+    "tm:flipturn",
     "tm:focusenergy",
-    "tm:frustration",
+    "tm:furycutter",
     "tm:gigaimpact",
     "tm:hail",
-    "tm:hiddenpower",
     "tm:hydropump",
     "tm:hyperbeam",
     "tm:icebeam",
     "tm:icefang",
     "tm:icywind",
     "tm:liquidation",
-    "tm:naturalgift",
+    "tm:mudslap",
     "tm:payback",
     "tm:poisonjab",
     "tm:protect",
@@ -155,88 +205,143 @@
     "tm:raindance",
     "tm:rest",
     "tm:retaliate",
-    "tm:return",
     "tm:roar",
     "tm:rocksmash",
     "tm:rocktomb",
-    "tm:round",
     "tm:scald",
+    "tm:scaleshot",
     "tm:scaryface",
     "tm:screech",
-    "tm:secretpower",
     "tm:sleeptalk",
     "tm:snarl",
-    "tm:snore",
+    "tm:spite",
     "tm:strength",
     "tm:substitute",
+    "tm:superfang",
     "tm:surf",
     "tm:swagger",
     "tm:swift",
+    "tm:takedown",
     "tm:taunt",
+    "tm:terablast",
     "tm:thief",
     "tm:torment",
-    "tm:toxic",
     "tm:uproar",
     "tm:waterfall",
     "tm:waterpulse",
     "tm:whirlpool",
     "tm:zenheadbutt",
     "tutor:ancientpower",
-    "tutor:aquajet",
     "tutor:bounce",
-    "tutor:crunch",
+    "tutor:bulldoze",
     "tutor:darkpulse",
-    "tutor:destinybond",
     "tutor:dive",
-    "tutor:doubleedge",
-    "tutor:endure",
     "tutor:flipturn",
+    "tutor:focusenergy",
     "tutor:furycutter",
+    "tutor:gigaimpact",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
     "tutor:icefang",
     "tutor:icywind",
     "tutor:liquidation",
-    "tutor:mimic",
     "tutor:mudslap",
-    "tutor:poisonfang",
+    "tutor:poisonjab",
+    "tutor:rest",
+    "tutor:rocksmash",
     "tutor:scaleshot",
-    "tutor:scaryface",
-    "tutor:slash",
     "tutor:sleeptalk",
-    "tutor:snore",
+    "tutor:snarl",
     "tutor:spite",
-    "tutor:substitute",
     "tutor:superfang",
-    "tutor:swagger",
     "tutor:swift",
     "tutor:uproar",
     "tutor:waterpulse",
-    "tutor:zenheadbutt"
-  ],
-  "labels": [
-    "gen3"
-  ],
-  "pokedex": [
-    "cobblemon.species.sharpedo.desc"
+    "tutor:zenheadbutt",
+    "legacy:attract",
+    "legacy:captivate",
+    "legacy:confide",
+    "legacy:doubleteam",
+    "legacy:frustration",
+    "legacy:hiddenpower",
+    "legacy:mimic",
+    "legacy:naturalgift",
+    "legacy:return",
+    "legacy:round",
+    "legacy:secretpower",
+    "legacy:snore",
+    "legacy:toxic",
+    "special:refresh"
   ],
   "preEvolution": "carvanha",
   "evolutions": [],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 1.2,
-    "height": 1,
-    "fixed": false
-  },
-  "baseFriendship": 35,
-  "evYield": {
-    "hp": 0,
-    "attack": 2,
-    "defence": 0,
-    "special_attack": 0,
-    "special_defence": 0,
-    "speed": 0
-  },
-  "height": 18,
-  "weight": 888,
-  "aspects": [],
-  "cannotDynamax": false
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "water",
+      "secondaryType": "dark",
+      "maleRatio": 0.5,
+      "height": 25,
+      "weight": 1303,
+      "pokedex": [
+        "cobblemon.species.sharpedo-mega.desc"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "aspects": [
+        "mega"
+      ],
+      "abilities": [
+        "strongjaw",
+        "h:strongjaw"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 140,
+        "defence": 70,
+        "special_attack": 110,
+        "special_defence": 65,
+        "speed": 105
+      },
+      "baseExperienceYield": 196,
+      "behaviour": {
+        "combat": {
+          "willDefendOwner": true,
+          "willDefendSelf": true,
+          "willFlee": false
+        },
+        "herd": {
+          "maxSize": "9",
+          "toleratedLeaders": [
+            {
+              "pokemon": "sharpedo mega",
+              "tier": 1
+            },
+            {
+              "pokemon": "manaphy",
+              "tier": 2
+            }
+          ]
+        },
+        "moving": {
+          "swim": {
+            "canBreatheUnderwater": true,
+            "swimSpeed": "0.2"
+          },
+          "walk": {
+            "avoidsLand": true
+          }
+        },
+        "resting": {
+          "drowsyChance": 0.0333,
+          "rouseChance": 0.0042
+        }
+      },
+      "evolutions": [],
+      "battleOnly": true,
+      "dynamaxBlocked": true
+    }
+  ]
 }
