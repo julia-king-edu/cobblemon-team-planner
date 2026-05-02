@@ -1,7 +1,7 @@
 # Pokémon Team Planner
 A non-competitive team planner tool for cobblemon based on richi3f's pokemon planner
 
-Access the planner via ![this link](http://julia-king.eu/cobblemon-team-planner/).
+Access the planner via ![this link](http://julia-king.de/cobblemon-team-planner/).
 
 Access the original planner this was forked from via ![this link](https://richi3f.github.io/pokemon-team-planner/).
 
